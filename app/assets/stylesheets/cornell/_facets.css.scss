@@ -1,0 +1,47 @@
+// Facet style
+// -----------------------//
+
+.twiddle {
+	i { 
+		color: $medium-gray;
+		float: right;
+		line-height: inherit;
+	}
+}
+#facets {
+	li {
+		font-size: 14px;
+	}
+	span.selected { color: $brown; }
+	.btn-navbar { 
+		padding: 4px 10px;
+		margin-top: -4px;
+		margin-bottom: 3px;
+	}
+	h5 {
+		a:hover { background: inherit; }
+	}
+}
+
+
+// swap out chevron-down when facet is open
+.twiddle-open .fa-chevron-right {
+  @extend .fa-chevron-down;
+  	opacity: 1;
+}
+
+
+
+// Mobile nav
+// -----------------------//
+
+.facets {
+	.btn-navbar,
+	.btn-navbar:hover,
+	.btn-navbar:active {
+		background: $blue;
+		border-radius: 0;
+		margin-right: 0;
+		text-transform: uppercase;
+	}
+}

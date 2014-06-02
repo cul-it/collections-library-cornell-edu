@@ -1,0 +1,26 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.sea-identity {
+		h1 {
+			font-size: 36px;
+			span {
+				font-size: 16px;
+			}
+		}
+	}
+	#sortAndPerPage {
+		.btn { 
+			padding: 3px 5px;
+			font-size: 12px;
+		}
+		.dropdown.pull-right {
+			margin-left: 0;
+		}
+	}
+	.document-data {
+		width: 82%;
+	}
+}

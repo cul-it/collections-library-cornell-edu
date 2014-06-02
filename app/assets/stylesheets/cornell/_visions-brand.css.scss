@@ -1,0 +1,22 @@
+.sea-identity {
+	background: url("cornell/layout/oceanbar.gif") repeat-x;
+	height: 80px;
+	h1 {
+		font-family: $visionsFontFamily;
+		color: white;
+		text-transform: uppercase;
+		line-height: .75em;
+		margin: 12px 0 0;
+		padding: 0;
+		font-size: 43px;
+		span {
+			display: block;
+			font-size: 19px;
+			line-height: 28px;
+		}
+		a, a:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<%#= debug params %>
+<%#= debug params.inspect %>
+
+
+<div class="facet_limit blacklight-<%= facet_field.field.parameterize %>">
+  <h5><%= link_to facet_field.label, "#" -%> <i class="fa fa-chevron-right"></i></h5>
+  <%= yield %>
+</div>

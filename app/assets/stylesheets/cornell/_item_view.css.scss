@@ -1,0 +1,79 @@
+.blacklight-catalog-show {
+	#document {
+		margin-top: 0;
+		h2  {
+			margin: 0 0 .25em;
+			line-height: 1.25em;
+			font-size: 24px;
+			font-family: $baseFontFamily;
+			color: $gray;
+		}
+	}
+	#sidebar {
+		.well {
+			text-align: center;
+		}
+		.label {
+			font-weight: normal;
+			padding: .75em 1em;
+			font-size: 16px;
+		}
+		.label:hover { background: $blue; }
+	}
+}
+
+.label-online {
+	background: $medium-blue;
+}
+.label-book {
+	background: $light-blue;
+}
+
+
+#sidebar {
+	.nav-list {
+		a {
+			font-size: 14px;
+		}
+	}
+	.bookmark_toggle {
+		margin-bottom: 5px; 
+	}
+	.well {
+		padding: 19px;
+	}
+}
+
+.cover {
+	text-align: center;
+	color:$pale-gray;
+	a {font-size:75%;
+		}
+	img {
+		margin-bottom:1em;
+	}
+}
+.reader-link {
+	margin-bottom: 10px;
+}
+.item-links {
+	margin: 15px 0 0 0;
+	list-style: none;
+	li { 
+		font-size: 14px;
+		line-height: 2em;
+	}
+}
+
+.ocr {
+	border-top: 1px solid $light-gray;
+	margin-top: 40px;
+	padding-top: 10px;
+	h4 {
+		margin: 10px 0;
+	}
+}
+.show-nav {
+	margin-bottom: 20px;
+}
+#previousNextDocument { margin-top: 10px; }

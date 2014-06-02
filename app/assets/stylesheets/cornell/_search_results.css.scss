@@ -1,0 +1,50 @@
+h2.blacklight-title_display {
+	margin: 0 0 .25em;
+	font-weight: normal;
+	line-height: 1.25em;
+	font-size: 1.4em;
+	font-family: $baseFontFamily;
+	color: $medium-gray;
+}
+
+.data-block {
+	.blacklight-author_display { font-size: 1em; }
+}
+
+.select-item {
+	float: right;
+	margin-left: 30px;
+}
+
+.book-cover {
+	float: left;
+	margin-right: 1em;
+	height: 120px;
+	width:70px
+}
+
+.document-data {
+	float: left;
+	width: 89%;
+}
+
+.blacklight-catalog-index, 
+.blacklight-bookmarks-index {
+	.document {
+		clear: both;
+		border-bottom: 1px solid #edebe7;
+		padding: 20px 0;
+	}
+}
+
+.blacklight-ocr_display {
+	color: #777;
+	font-size: 13px;
+	margin-top: 5px;
+	// em {
+	// 	background-color: $nude
+	// }
+}
+.blacklight-page_turner_link {
+	margin-top: 5px;
+}

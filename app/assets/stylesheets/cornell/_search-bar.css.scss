@@ -1,0 +1,19 @@
+.search-bar {
+	background: $blue;
+}
+//override app
+#searchbar {
+	padding: 5px 0;
+}
+
+// Utility links
+// ----------------------//
+.util-links-other {
+	float: right;
+	margin-right: 25px;
+	margin-top: 10px;
+	a { color: $light-blue; }
+	a:hover {
+		color: white;
+	}
+}

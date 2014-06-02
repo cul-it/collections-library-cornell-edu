@@ -1,0 +1,108 @@
+// Home page
+// ----------------------//
+.home-text {
+	margin: 20px 0 10px;
+	p {
+		font-size: 18px;
+	}
+	// search box header
+	h3 {
+		margin-top: 20px;
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
+
+.bridge {
+	margin: 20px 0;
+	padding-top: 20px;
+	border-bottom: 1px solid $pale-gray;
+}
+.bridge-section {
+	margin-left: 0;
+	padding: 0 0 20px;
+	img { margin-right: 20px; }
+	h3 { margin: 0; }
+}
+
+.more-info {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid $pale-gray;
+	h3 { font-size: 14px; }
+	li { font-size: 14px; }
+}
+
+.disclaimer {
+	p {
+		font-size: 12px;
+		color: $gray;
+	}
+	img { margin-right: 10px; }
+}
+
+// About subnavigation
+// ----------------------//
+
+.blacklight-about-collection .nav-list .about-collection,
+.blacklight-about-collection .nav-list .about-collection:hover,
+.blacklight-about-geographic .nav-list .about-geographic,
+.blacklight-about-geographic .nav-list .about-geographic:hover,
+.blacklight-about-map .nav-list .about-geographic,
+.blacklight-about-map .nav-list .about-geographic:hover,
+.blacklight-about-significance .nav-list .about-significance,
+.blacklight-about-significance .nav-list .about-significance:hover,
+.blacklight-about-bibliography .nav-list .about-bibliography,
+.blacklight-about-bibliography .nav-list .about-bibliography:hover,
+.blacklight-about-project .nav-list .about-project,
+.blacklight-about-project .nav-list .about-project:hover,
+.blacklight-about-contact .nav-list .about-contact,
+.blacklight-about-contact .nav-list .about-contact:hover,
+.blacklight-about-copyright .nav-list .about-copyright,
+.blacklight-about-copyright .nav-list .about-copyright:hover,
+.blacklight-about-credits .nav-list .about-credits,
+.blacklight-about-credits .nav-list .about-credits:hover,
+.blacklight-about-delivery .nav-list .about-delivery,
+.blacklight-about-delivery .nav-list .about-delivery:hover,
+.blacklight-about-digitization .nav-list .about-digitization,
+.blacklight-about-digitization .nav-list .about-digitization:hover,
+.blacklight-about-images .nav-list .about-credits,
+.blacklight-about-images .nav-list .about-credits:hover,
+.blacklight-about-press .nav-list .about-press,
+.blacklight-about-press .nav-list .about-press:hover,
+.blacklight-about-pod .nav-list .about-pod,
+.blacklight-about-pod .nav-list .about-pod:hover,
+.blacklight-about-sponsor .nav-list .about-sponsor,
+.blacklight-about-sponsor .nav-list .about-sponsor:hover,
+.blacklight-about-survey .nav-list .about-survey,
+.blacklight-about-survey .nav-list .about-survey:hover {
+	background: $peach;
+	color: $dark-gray;
+}
+.sidebar {
+	.nav-list {
+		a { 
+			text-shadow: none;
+			padding: 5px 15px;
+		}
+		a:hover { background: $nude; }
+	}
+}
+
+// Map
+// ----------------------//
+.map {
+	margin-bottom: 20px;
+	ol {
+		li { font-size: 14px; }
+	}
+}
+
+// Image credits
+// ----------------------//
+.blacklight-about-images {
+	figure {
+		margin: 0 0 20px;
+		img { margin-bottom: 5px; }
+	}
+}
