@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'blacklight', '~> 5.4.0'
 gem 'hydra'
 gem 'active-fedora'
+gem 'httpclient'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
