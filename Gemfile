@@ -50,6 +50,9 @@ end
 
 gem "bootstrap-sass"
 
+gem 'blacklight-gallery'
+
+
 group :development, :test do
   gem "rspec-rails"
   gem "jettywrapper"
