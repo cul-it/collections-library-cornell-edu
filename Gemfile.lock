@@ -44,6 +44,10 @@ GEM
       nokogiri (~> 1.6)
       rails (>= 3.2.6, < 5)
       rsolr (~> 1.0.6)
+    blacklight-gallery (0.0.1)
+      blacklight (>= 5.0.0.pre4, < 6.0)
+      bootstrap-sass (~> 3.0)
+      rails
     block_helpers (0.3.3)
       activesupport (>= 2.0)
     bootstrap-sass (3.1.1.1)
@@ -328,6 +332,7 @@ PLATFORMS
 DEPENDENCIES
   active-fedora
   blacklight (~> 5.4.0)
+  blacklight-gallery
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   devise
