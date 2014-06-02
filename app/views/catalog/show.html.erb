@@ -1,7 +1,7 @@
 <%= render 'previous_next_doc' %>
 <div class="row">
 
-  <div id="sidebar" class="span3 pull-right">
+  <div id="sidebar" class="col-md-3 pull-right">
 
     <%# display if it's a book -%>
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
@@ -46,12 +46,12 @@
     <%= render_document_sidebar_partial  %>
   </div>
 
-  <div id="content" class="span9 show-document">
+  <div id="content" class="col-md-9 show-document">
 
     <%# display if it's a book -%>
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
       <div class="row" data-no-turbolink>
-        <div class="span3 cover">
+        <div class="col-md-3 cover">
           <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/get/seapage:<%= sea_id %>_1/thumbnailImage" class="img-responsive img-polaroid"></a>
           <p><a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
 
@@ -60,7 +60,7 @@
     <%# display if it's a page -%>
     <% else %>
       <div class="row" data-no-turbolink>
-        <div class="span3 cover">
+        <div class="col-md-3 cover">
           <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/seapage:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive img-polaroid"></a>
           <p><a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a></p>
     <% end %>
@@ -68,7 +68,7 @@
         </div><%# close span3 -%>
 
 
-    <div class="span6">
+    <div class="col-md-6">
       <% @page_title = t('blacklight.search.show.title', :document_title => document_show_html_title, :application_name => application_name) %>
       <%# extra_head_content << render_link_rel_alternates %>
       <%# sidebar_items << render_document_sidebar_partial %>
