@@ -6,10 +6,10 @@
                   <% page_turner = render_index_field_value :document => document, :field => 'book_id_tesim' %>
                   <% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
                   <% sea_id = page_turner[4..7] %>
-                  <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/seapage:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-polaroid"></a>
+                  <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/seapage:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail"></a>
             <% else %>
                   <% sea_id=page_turner[3..7] %>
-                  <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/1/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/seapage:<%= sea_id %>_1/datastreams/thumbnailImage/content" class="img-responsive book-cover img-polaroid"></a>
+                  <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/1/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/seapage:<%= sea_id %>_1/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail"></a>
             <% end %>
        <div class="document-data" data-no-turbolink >
          <%= render :partial => 'document_header', :locals => { :document => document, :document_counter => document_counter } %>
