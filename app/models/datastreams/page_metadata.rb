@@ -14,7 +14,7 @@ class PageMetadata < ActiveFedora::OmDatastream
     t.image_dim(index_as: :stored_searchable)
     t.image_ftr(index_as: :stored_searchable)
     t.image_n(index_as: :stored_searchable)
-    t.image_format(index_as: :stored_searchable)
+    t.image_format(index_as: :stored_searchable, type: :string)
     t.image_geo(index_as: :stored_searchable)
     t.image_date(index_as: :stored_searchable)
     t.image_ethnic(index_as: :stored_searchable)
@@ -22,12 +22,12 @@ class PageMetadata < ActiveFedora::OmDatastream
     t.image_caption(index_as: :stored_searchable)
     t.image_ocr(index_as: :stored_searchable)
     t.image_metadata(index_as: :stored_searchable)
-    t.book_author(index_as: :stored_searchable)
+    t.book_author(index_as: :stored_searchable, type: :string)
     t.book_publisher(index_as: :stored_searchable)
     t.book_pubplace(index_as: :stored_searchable)
     t.book_pubdate(index_as: :stored_searchable)
     t.book_bibid(index_as: :stored_searchable)
-#    t.image(index_as: :stored_searchable)
+    t.image(index_as: :stored_searchable)
 #    t.thumbnail(index_as: :stored_searchable)
   end
 

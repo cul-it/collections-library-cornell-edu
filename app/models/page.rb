@@ -33,7 +33,8 @@ class Page < ActiveFedora::Base
   has_attributes :book_pubplace, datastream: 'descMetadata', multiple: false
   has_attributes :book_pubdate, datastream: 'descMetadata', multiple: false
   has_attributes :book_bibid, datastream: 'descMetadata', multiple: false
-#  has_attributes :image, datastream: 'digitalImage', multiple: false
+  has_attributes :image, datastream: 'descMetadata', multiple: false
 #  has_attributes :thumbnail, datastream: 'digitalImage', multiple: false
 
 end
+
