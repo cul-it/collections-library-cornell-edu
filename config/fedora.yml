@@ -1,7 +1,7 @@
 development:
   user: fedoraAdmin
-  password: fedoraAdmin
-  url: http://hydradev-store.library.cornell.edu/fedora
+  password: fedorasea3admin_password
+  url: http://hydrastg.library.cornell.edu/fedora
 test: &TEST  
   user: fedoraAdmin
   password: fedoraAdmin
