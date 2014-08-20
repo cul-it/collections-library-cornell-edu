@@ -57,5 +57,9 @@ class BookMetadata < ActiveFedora::OmDatastream
     Nokogiri::XML.parse("<DLPSTEXTCLASS/>")
   end
   
+  def prefix
+    return ""
+  end
+  
 
 end

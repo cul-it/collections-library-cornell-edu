@@ -12,9 +12,60 @@
 
   <!-- solr lib dirs -->
   <lib dir="../lib/contrib/analysis-extras/lib" />
-  <lib dir="../lib/contrib/analysis-extras/lucene-libs" /> 
+  <lib dir="../lib/contrib/analysis-extras/lucene-libs" />
   
   <dataDir>${solr.data.dir:}</dataDir>
+
+    <!-- The default high-performance update handler -->
+  <updateHandler class="solr.DirectUpdateHandler2">
+
+    <!-- Enables a transaction log, used for real-time get, durability, and
+         and solr cloud replica recovery.  The log can grow as big as
+         uncommitted changes to the index, so use of a hard autoCommit
+         is recommended (see below).
+         "dir" - the target directory for transaction logs, defaults to the
+                solr data directory.  --> 
+    <updateLog>
+      <str name="dir">${solr.ulog.dir:}</str>
+    </updateLog>
+ 
+    <!-- AutoCommit
+
+         Perform a hard commit automatically under certain conditions.
+         Instead of enabling autoCommit, consider using "commitWithin"
+         when adding documents. 
+
+         http://wiki.apache.org/solr/UpdateXmlMessages
+
+         maxDocs - Maximum number of documents to add since the last
+                   commit before automatically triggering a new commit.
+
+         maxTime - Maximum amount of time in ms that is allowed to pass
+                   since a document was added before automatically
+                   triggering a new commit. 
+         openSearcher - if false, the commit causes recent index changes
+           to be flushed to stable storage, but does not cause a new
+           searcher to be opened to make those changes visible.
+
+         If the updateLog is enabled, then it's highly recommended to
+         have some sort of hard autoCommit to limit the log size.
+      -->
+     <autoCommit> 
+       <maxTime>${solr.autoCommit.maxTime:15000}</maxTime> 
+       <openSearcher>false</openSearcher> 
+     </autoCommit>
+
+    <!-- softAutoCommit is like autoCommit except it causes a
+         'soft' commit which only ensures that changes are visible
+         but does not ensure that data is synced to disk.  This is
+         faster and more near-realtime friendly than a hard commit.
+      -->
+
+     <autoSoftCommit> 
+       <maxTime>${solr.autoSoftCommit.maxTime:-1}</maxTime> 
+     </autoSoftCommit>
+
+  </updateHandler>
 
   <requestHandler name="search" class="solr.SearchHandler" default="true">
     <!-- default values for query parameters can be specified, these
@@ -22,7 +73,7 @@
       -->
      <lst name="defaults">
        <str name="defType">edismax</str>
-       <str name="echoParams">all</str>
+       <str name="echoParams">explicit</str>
        <str name="q.alt">*:*</str>
        <str name="mm">2&lt;-1 5&lt;-2 6&lt;90%</str>
        <int name="qs">1</int>
@@ -37,41 +88,29 @@
        -->
         <str name="qf">
           id
-          all_text_timv
           active_fedora_model_ssi
-          extent_tesim
-          publisher_tesim
-          book_publisher_tesim
-          book_title_tesim
-          book_author_tesim
-          image_format_tesim
+          title_tesim
+          author_tesim
           subject_tesim
-          pubdate_tesim
-          keywords_tesim
-          image_tesim
-          image_ocr_tesim
-          object_type_si
         </str>
         <str name="pf">
           all_text_timv^10
         </str>
+
        <str name="author_qf">
-       	 book_author_tesim
+          author_tesim
        </str>
        <str name="author_pf">
        </str>
        <str name="title_qf">
-       	 book_title_tesim
+          title_tesim
        </str>
        <str name="title_pf">
        </str>
        <str name="subject_qf">
+          subject_tesim
        </str>
        <str name="subject_pf">
-       </str>
-       <str name="publisher_qf">
-       </str>
-       <str name="publisher_pf">
        </str>
        
        <str name="fl">
@@ -79,25 +118,11 @@
          score
        </str>
 
-
-
-
        <str name="facet">true</str>
        <str name="facet.mincount">1</str>
        <str name="facet.limit">10</str>
        <str name="facet.field">active_fedora_model_ssi</str>
-       <str name="facet.field">extent_tesim</str>
-       <str name="facet.field">image_format_tesim</str>
-       <str name="facet.field">image_ethnic_tesim</str>
-       <str name="facet.field">image_keyword_tesim</str>
-       <str name="facet.field">publisher_tesim</str>
-       <str name="facet.field">author_tesim</str> 
-       <str name="facet.field">title_tesim</str>
-       <str name="facet.field">pubdate_tesim</str>
-       <str name="facet.field">keywords_tesim</str>
-       <str name="facet.field">image_date_tesim</str>
-       <str name="facet.field">image_geo_tesim</str>
-       <str name="facet.field">object_type_si</str>
+       <str name="facet.field">subject_sim</str>
        
        <str name="spellcheck">true</str>
        <str name="spellcheck.dictionary">default</str>

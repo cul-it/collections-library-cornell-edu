@@ -35,5 +35,9 @@ class PageMetadata < ActiveFedora::OmDatastream
     Nokogiri::XML.parse("<PAGE/>")
   end
   
+  def prefix
+    return ""
+  end
+  
 
 end
