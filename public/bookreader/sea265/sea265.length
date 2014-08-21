@@ -1,0 +1,135 @@
+if (index == 0) {
+     return 1313;
+    }
+if (index == 1) {
+     return 1286;
+    }
+if (index == 2) {
+     return 1251;
+    }
+if (index == 3) {
+     return 1269;
+    }
+if (index == 4) {
+     return 1255;
+    }
+if (index == 5) {
+     return 1177;
+    }
+if (index == 6) {
+     return 1256;
+    }
+if (index == 7) {
+     return 1247;
+    }
+if (index == 8) {
+     return 1229;
+    }
+if (index == 9) {
+     return 1231;
+    }
+if (index == 10) {
+     return 1240;
+    }
+if (index == 11) {
+     return 1234;
+    }
+if (index == 12) {
+     return 1243;
+    }
+if (index == 13) {
+     return 1242;
+    }
+if (index == 14) {
+     return 1238;
+    }
+if (index == 15) {
+     return 1239;
+    }
+if (index == 16) {
+     return 1238;
+    }
+if (index == 17) {
+     return 1250;
+    }
+if (index == 18) {
+     return 1236;
+    }
+if (index == 19) {
+     return 1249;
+    }
+if (index == 20) {
+     return 1245;
+    }
+if (index == 21) {
+     return 1247;
+    }
+if (index == 22) {
+     return 1242;
+    }
+if (index == 23) {
+     return 1240;
+    }
+if (index == 24) {
+     return 1251;
+    }
+if (index == 25) {
+     return 1255;
+    }
+if (index == 26) {
+     return 1243;
+    }
+if (index == 27) {
+     return 1264;
+    }
+if (index == 28) {
+     return 1238;
+    }
+if (index == 29) {
+     return 1256;
+    }
+if (index == 30) {
+     return 1235;
+    }
+if (index == 31) {
+     return 1244;
+    }
+if (index == 32) {
+     return 1235;
+    }
+if (index == 33) {
+     return 1240;
+    }
+if (index == 34) {
+     return 1245;
+    }
+if (index == 35) {
+     return 1247;
+    }
+if (index == 36) {
+     return 1271;
+    }
+if (index == 37) {
+     return 1231;
+    }
+if (index == 38) {
+     return 1250;
+    }
+if (index == 39) {
+     return 1235;
+    }
+if (index == 40) {
+     return 1257;
+    }
+if (index == 41) {
+     return 1237;
+    }
+if (index == 42) {
+     return 1168;
+    }
+if (index == 43) {
+     return 1225;
+    }
+if (index > 43) {
+    return 1200;
+    }
