@@ -11,7 +11,7 @@
 
       <div class="well" data-no-turbolink>
         <div class="reader-link">
-          <a class="label label-online" href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
+          <a class="label label-online" href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
         </div>
 
         <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
@@ -26,13 +26,13 @@
     <% else %>
        <% page_turner = render_document_show_field_value :document => @document, :field => 'id' %>
        <% page = render_document_show_field_value :document => @document, :field => 'image_seq_tesim' %>
-       <% sea_id=page_turner %>
+       <% sea_id=page_turner[8..10] %>
       <div class="well" data-no-turbolink>
         <div class="reader-link">
-          <a class="label label-online" href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a>
+          <a class="label label-online" href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a>
         </div>
         <div class="reader-link">
-          <a class="label label-book" href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/">Read book</a>
+          <a class="label label-book" href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/">Read book</a>
         </div>
         <ul class="item-links">
           <li><a href="/catalog/sea:<%= sea_id %>/">Book information <i class="fa fa-book"></i></a></li>
@@ -52,8 +52,8 @@
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
       <div class="row" data-no-turbolink>
         <div class="col-md-3 cover">
-          <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/get/seapage:<%= sea_id %>_1/thumbnailImage" class="img-responsive img-polaroid"></a>
-          <p><a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
+          <a href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/get/seapage:<%= sea_id %>_1/thumbnailImage" class="img-responsive img-polaroid"></a>
+          <p><a href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
 
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
     
@@ -61,8 +61,8 @@
     <% else %>
       <div class="row" data-no-turbolink>
         <div class="col-md-3 cover">
-          <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/<%= sea_id %>/datastreams/thumbnailImage/content" class="img-responsive img-polaroid"></a>
-          <p><a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a></p>
+          <a href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/<%= page_turner %>/datastreams/thumbnailImage/content" class="img-responsive img-polaroid"></a>
+          <p><a href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a></p>
     <% end %>
 
         </div><%# close span3 -%>
