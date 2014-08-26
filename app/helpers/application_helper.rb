@@ -39,7 +39,6 @@ module ApplicationHelper
 #    render(options)
 #  end
   def render_table_of_contents(pid)
-    Rails.logger.info("TICTOC0 = #{params}")
     tocHash = {}
     output = []
     presortArray = []
@@ -47,7 +46,8 @@ module ApplicationHelper
     page_reader_url = "/bookreader/"
 #    @toc = JSON.parse(HTTPClient.get_content("http://rossini.cul.columbia.edu/voyager_backend/holdings/retrieve/#{params[:id]}"))[params[:id]]
      clnt = HTTPClient.new
-     toc = clnt.get_content("http://hydrastg.library.cornell.edu/solr/development_core/select?q=id%3Aseapage*"+seapage+"*+AND+head_tesim%3A*&rows=1000&sort=id+asc&fl=head_tesim%2C+id%2C+node_tesim%2C+image_seq_tesim&wt=ruby") # do |chunk|
+     solr = Blacklight.solr_config[:url]
+     toc = clnt.get_content("#{solr}/select?q=id%3Aseapage*"+seapage+"*+AND+head_tesim%3A*&rows=1000&sort=id+asc&fl=head_tesim%2C+id%2C+node_tesim%2C+image_seq_tesim&wt=ruby") # do |chunk|
        tocArray = eval(toc)
        i = 0
        tocArray['response']['docs'].each do |doctary|
@@ -55,7 +55,6 @@ module ApplicationHelper
          i = i + 1
        end
        presortArray.sort_by! {|e| e[2]}
-       Rails.logger.info("SORTAKINDA = #{tocArray['response']['docs']}")
        printArray = ""
 #        tocArray['response']['docs'].each do |doc|
         presortArray.each do |doc|
