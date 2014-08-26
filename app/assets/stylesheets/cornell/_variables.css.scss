@@ -44,7 +44,13 @@ $visionsFontFamily:        'Sorts Mill Goudy';        @import
 url(//fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
 $baseFontFamily: 'Open Sans'; 		@import
 url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+$font-family-base: 'Open Sans'; 		@import
+url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
 
+
+
+$font-family-sans-serif:  Oxygen;        @import
+url(//fonts.googleapis.com/css?family=Oxygen);
 
 // // Buttons
 // // -------------------------
