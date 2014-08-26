@@ -3183,7 +3183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:024_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:024_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3242,7 +3242,7 @@ br.bookTitle= "Letters of Gilbert Little Stark, July 23, 1907-March 12, 1908";
 br.bookAuthor= "Stark, Gilbert Little";
 br.bookPub= "Cambridge: Priv. print. at the Riverside press, 1908";
 br.bookKeyword= "East Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:024';
+br.bookUrl  = '/catalog/sea:024';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

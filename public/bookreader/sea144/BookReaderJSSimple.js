@@ -1707,7 +1707,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:144_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:144_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1766,7 +1766,7 @@ br.bookTitle= "The narrative of Captain David Woodard and four seamen : who lost
 br.bookAuthor= "Woodard, D. N. (David N.)";
 br.bookPub= "London: Printed for J. Johnson, 1805";
 br.bookKeyword= "Celebes (Indonesia)--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipwrecks<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voyages and travels";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:144';
+br.bookUrl  = '/catalog/sea:144';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

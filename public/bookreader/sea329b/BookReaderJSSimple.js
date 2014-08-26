@@ -2859,7 +2859,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:329b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:329b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2918,7 +2918,7 @@ br.bookTitle= "The silken East; a record of life and travel in Burma, vol.2";
 br.bookAuthor= "O'Connor, V. C. Scott (Vincent Clarence Scott)";
 br.bookPub= "London: Hutchinson and co, 1904";
 br.bookKeyword= "Burma--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Social life and customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:329b';
+br.bookUrl  = '/catalog/sea:329b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

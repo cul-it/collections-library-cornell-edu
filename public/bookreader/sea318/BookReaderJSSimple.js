@@ -1383,7 +1383,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:318_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:318_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1442,7 +1442,7 @@ br.bookTitle= "Burmah and the Burmese";
 br.bookAuthor= "Mackenzie, Kenneth R. H. (Kenneth Robert Henderson)";
 br.bookPub= "London: G. Routledge, 1853";
 br.bookKeyword= "Burma--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--History--1824-1948";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:318';
+br.bookUrl  = '/catalog/sea:318';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

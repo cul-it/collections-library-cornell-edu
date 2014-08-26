@@ -1935,7 +1935,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:358_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:358_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1994,7 +1994,7 @@ br.bookTitle= "Narrative of the Burmese war, in 1824-25";
 br.bookAuthor= "Wilson, H. H. (Horace Hayman)";
 br.bookPub= "London: W.H. Allen and Co, 1852";
 br.bookKeyword= "Burmese War, 1824-1826";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:358';
+br.bookUrl  = '/catalog/sea:358';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -2775,7 +2775,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:149b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:149b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2834,7 +2834,7 @@ br.bookTitle= "Life in the forests of the Far East; or, Travels in northern Born
 br.bookAuthor= "St. John, Spenser Sir";
 br.bookPub= "London: Smith, Elder and co, 1863";
 br.bookKeyword= "Borneo--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:149b';
+br.bookUrl  = '/catalog/sea:149b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

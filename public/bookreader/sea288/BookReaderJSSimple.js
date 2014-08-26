@@ -1971,7 +1971,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:288_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:288_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2030,7 +2030,7 @@ br.bookTitle= "In the land of pagodas";
 br.bookAuthor= "Thurber, Robert Bruce";
 br.bookPub= "Nashville: Southern Pub. Association, 1921";
 br.bookKeyword= "Missions--Burma<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:288';
+br.bookUrl  = '/catalog/sea:288';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

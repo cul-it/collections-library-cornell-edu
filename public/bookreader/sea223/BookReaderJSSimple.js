@@ -3243,7 +3243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:223_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:223_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3302,7 +3302,7 @@ br.bookTitle= "The inhabitants of the Philippines";
 br.bookAuthor= "Sawyer, Frederic Henry Read";
 br.bookPub= "London: S. Low, Marston and company, 1900";
 br.bookKeyword= "Ethnology--Philippines<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines--Social life and customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:223';
+br.bookUrl  = '/catalog/sea:223';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

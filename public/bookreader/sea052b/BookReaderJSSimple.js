@@ -1947,7 +1947,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:052b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:052b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2006,7 +2006,7 @@ br.bookTitle= "The World in miniature : the Asiatic islands and New Holland : be
 br.bookAuthor= "Shoberl, Frederic";
 br.bookPub= "London: Printed for R. Ackermann, Repository of Arts, Strand, 1824";
 br.bookKeyword= "Southeast Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Southeast Asia--Social life and customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:052b';
+br.bookUrl  = '/catalog/sea:052b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

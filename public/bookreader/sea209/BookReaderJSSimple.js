@@ -2271,7 +2271,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:209_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:209_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2330,7 +2330,7 @@ br.bookTitle= "Philippine life in town and country";
 br.bookAuthor= "LeRoy, James A. (James Alfred)";
 br.bookPub= "New York: Putnam, 1905";
 br.bookKeyword= "Philippines--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines--Politics and government";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:209';
+br.bookUrl  = '/catalog/sea:209';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

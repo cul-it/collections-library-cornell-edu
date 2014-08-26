@@ -1779,7 +1779,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:130_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:130_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1838,7 +1838,7 @@ br.bookTitle= "A new historical relation of the kingdom of Siam";
 br.bookAuthor= "La Loubere, Simon de";
 br.bookPub= "London: Printed by F.L. for Tho. Horne ... [and 2 others], 1693";
 br.bookKeyword= "Thailand--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:130';
+br.bookUrl  = '/catalog/sea:130';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

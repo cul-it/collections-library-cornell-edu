@@ -1107,7 +1107,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:340_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:340_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1166,7 +1166,7 @@ br.bookTitle= "Memoir of Mrs. Eliza G. Jones : missionary to Burmah and Siam";
 br.bookAuthor= "Jones, Eliza G. (Eliza Grew)";
 br.bookPub= "Philadelphia: American Baptist Publication and Sunday School Society, 1842";
 br.bookKeyword= "Jones, Eliza G.--(Eliza Grew),--1803-1838<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Missionaries--Southeast Asia--Biography<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baptists--Missions--Southeast Asia";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:340';
+br.bookUrl  = '/catalog/sea:340';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

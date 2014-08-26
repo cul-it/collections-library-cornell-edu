@@ -3003,7 +3003,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:218_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:218_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3062,7 +3062,7 @@ br.bookTitle= "Perak and the Malays";
 br.bookAuthor= "McNair, John Frederick Adolphus, 1828-1910";
 br.bookPub= "Kuala Lumpur: Oxford University Press, 1878";
 br.bookKeyword= "Perak--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perak--History";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:218';
+br.bookUrl  = '/catalog/sea:218';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

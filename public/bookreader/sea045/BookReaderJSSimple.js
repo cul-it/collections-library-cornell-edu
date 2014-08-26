@@ -2811,7 +2811,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:045_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:045_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2870,7 +2870,7 @@ br.bookTitle= "Voyages au Laos et chez les sauvages du sud-est de l'Indo-Chine";
 br.bookAuthor= "Cupet, P";
 br.bookPub= "Paris: E. Leroux, 1900";
 br.bookKeyword= "Laos--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vietnam--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ethnology--Vietnam";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:045';
+br.bookUrl  = '/catalog/sea:045';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

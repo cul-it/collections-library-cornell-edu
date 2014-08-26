@@ -2775,7 +2775,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:042_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:042_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2834,7 +2834,7 @@ br.bookTitle= "Amongst the Shans";
 br.bookAuthor= "Colquhoun, Archibald R. (Archibald Ross)";
 br.bookPub= "London, New York: Field and Tuer [etc]; Scribner and Welford, 1885";
 br.bookKeyword= "Indochina--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shan (Asian people)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Missions--Indochina";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:042';
+br.bookUrl  = '/catalog/sea:042';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

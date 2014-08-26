@@ -2319,7 +2319,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:022_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:022_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2378,7 +2378,7 @@ br.bookTitle= "To Siam and Malaya in the Duke of Sutherland's yacht 'Sans peur'"
 br.bookAuthor= "Caddy, Florence";
 br.bookPub= "London: Hurst and Blackett, Ltd, 1889";
 br.bookKeyword= "Southeast Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:022';
+br.bookUrl  = '/catalog/sea:022';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -2655,7 +2655,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:291_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:291_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2714,7 +2714,7 @@ br.bookTitle= "A yankee on the Yangtze : being a narrative of a journey from Sha
 br.bookAuthor= "Geil, William Edgar";
 br.bookPub= "London: Hodder and Stoughton, 1904";
 br.bookKeyword= "Yangtze River (China)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:291';
+br.bookUrl  = '/catalog/sea:291';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

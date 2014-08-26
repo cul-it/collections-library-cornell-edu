@@ -2415,7 +2415,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:145_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:145_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2474,7 +2474,7 @@ br.bookTitle= "Voyages of the Dutch brig of war Dourga : through the southern an
 br.bookAuthor= "Kolff, Dirk Hendrik";
 br.bookPub= "London: James Madden, and Co., Leadenhall Street, 1840";
 br.bookKeyword= "Maluku (Indonesia)--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Papua New Guinea--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dourga (Ship)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:145';
+br.bookUrl  = '/catalog/sea:145';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

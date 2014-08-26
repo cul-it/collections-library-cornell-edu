@@ -3015,7 +3015,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:102_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:102_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3074,7 +3074,7 @@ br.bookTitle= "The East and West Indian mirror : being an account of Joris van S
 br.bookAuthor= "Spilbergen, Joris van";
 br.bookPub= "London: Printed for the Hakluyt Sciety, 1906";
 br.bookKeyword= "Nederlandsche Oost-Indische Compagnie<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voyages around the world<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Peru--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maluku (Indonesia)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:102';
+br.bookUrl  = '/catalog/sea:102';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

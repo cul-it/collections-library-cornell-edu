@@ -1887,7 +1887,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:180_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:180_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1946,7 +1946,7 @@ br.bookTitle= "In the land of the Filipino";
 br.bookAuthor= "Buckland, Ralph Kent";
 br.bookPub= "New York: Every Where Publishing Company, 1912";
 br.bookKeyword= "Education--Philippines<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:180';
+br.bookUrl  = '/catalog/sea:180';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

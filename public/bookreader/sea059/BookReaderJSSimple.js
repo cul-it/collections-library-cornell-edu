@@ -1899,7 +1899,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:059_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:059_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1958,7 +1958,7 @@ br.bookTitle= "A winter in India and Malaysia among the Methodist missions";
 br.bookAuthor= "Knox, Martin Van Buren";
 br.bookPub= "New York : Cincinatti: Hunt and Eaton ; Cranston and Stowe, 1891";
 br.bookKeyword= "India--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Methodist Episcopal Church--Missions<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Missions--India<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Southeast Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:059';
+br.bookUrl  = '/catalog/sea:059';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

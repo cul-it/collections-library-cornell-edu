@@ -4023,7 +4023,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:264_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:264_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -4082,7 +4082,7 @@ br.bookTitle= "The Malay Archipelago: the land of the orang-utan, and the bird o
 br.bookAuthor= "Wallace, Alfred Russel";
 br.bookPub= "New York: Harper and Brothers, 1869";
 br.bookKeyword= "Natural history--Malay Archipelago<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethnology--Malay Archipelago<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Archipelago--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:264';
+br.bookUrl  = '/catalog/sea:264';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

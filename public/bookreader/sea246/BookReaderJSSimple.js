@@ -1671,7 +1671,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:246_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:246_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1730,7 +1730,7 @@ br.bookTitle= "In court and kampong : being tales and sketches of native life in
 br.bookAuthor= "Clifford, Hugh Charles, Sir";
 br.bookPub= "London: G. Richards, 1897";
 br.bookKeyword= "Malays (Asian people)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Peninsula--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:246';
+br.bookUrl  = '/catalog/sea:246';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

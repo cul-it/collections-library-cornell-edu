@@ -891,7 +891,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:189_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:189_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -950,7 +950,7 @@ br.bookTitle= "Navy guide to Cavite and Manila : ... a practical guide and beaut
 br.bookAuthor= "no recorded author";
 br.bookPub= "Manila: [s.n.], 1908";
 br.bookKeyword= "Manila (Philippines)--Guidebooks<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cavite, Philippines (City)--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:189';
+br.bookUrl  = '/catalog/sea:189';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

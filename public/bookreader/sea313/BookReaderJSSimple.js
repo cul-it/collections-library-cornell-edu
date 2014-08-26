@@ -555,7 +555,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:313_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:313_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -614,7 +614,7 @@ br.bookTitle= "Burma and the Burmans, or, The best unopened market in the world"
 br.bookAuthor= "Colquhoun, Archibald R. (Archibald Ross)";
 br.bookPub= "London: Field and Tuer, the Leadenhall Press : Simpkin, Marshall, 1885";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:313';
+br.bookUrl  = '/catalog/sea:313';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

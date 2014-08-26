@@ -1935,7 +1935,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:298_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:298_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1994,7 +1994,7 @@ br.bookTitle= "A Burmese wonderland : a tale of travel in Lower and Upper Burma"
 br.bookAuthor= "Enriquez, C. M. (Colin Metcalfe)";
 br.bookPub= "Calcutta: Thacker, Spink, 1922";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:298';
+br.bookUrl  = '/catalog/sea:298';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

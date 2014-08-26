@@ -1515,7 +1515,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:252a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:252a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1574,7 +1574,7 @@ br.bookTitle= "The Claims of Japan and Malaysia upon Christendom : exhibited in 
 br.bookAuthor= "Lay, G. Tradescant";
 br.bookPub= "New York: E. French, 1839";
 br.bookKeyword= "Missions--East Asia<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morrison (Ship)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Himmaleh (Brig)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:252a';
+br.bookUrl  = '/catalog/sea:252a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -4047,7 +4047,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:338_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:338_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -4106,7 +4106,7 @@ br.bookTitle= "A Handbook for travellers in India, Pakistan, Burma and Ceylon";
 br.bookAuthor= "John Murray (Firm)";
 br.bookPub= "London: J. Murray, 1901";
 br.bookKeyword= "South Asia--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:338';
+br.bookUrl  = '/catalog/sea:338';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

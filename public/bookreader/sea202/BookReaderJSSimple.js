@@ -4179,7 +4179,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:202_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:202_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -4238,7 +4238,7 @@ br.bookTitle= "The gems of the East; sixteen thousand miles of research travel a
 br.bookAuthor= "Landor, Arnold Henry Savage";
 br.bookPub= "New York and London: Harper and brothers, 1904";
 br.bookKeyword= "Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:202';
+br.bookUrl  = '/catalog/sea:202';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

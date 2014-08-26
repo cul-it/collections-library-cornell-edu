@@ -2139,7 +2139,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:071_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:071_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2198,7 +2198,7 @@ br.bookTitle= "Some glimpses into life in the Far East";
 br.bookAuthor= "Thomson, John Turnbull";
 br.bookPub= "London: Richardson and Company, 1864";
 br.bookKeyword= "East Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:071';
+br.bookUrl  = '/catalog/sea:071';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

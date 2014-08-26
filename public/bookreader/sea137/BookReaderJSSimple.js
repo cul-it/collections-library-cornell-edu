@@ -2307,7 +2307,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:137_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:137_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2366,7 +2366,7 @@ br.bookTitle= "In the shadow of the pagoda : sketches of Burmese life and charac
 br.bookAuthor= "Cuming, E. D. (Edward William Dirom), 1862-1941";
 br.bookPub= "London: W.H. Allen and Co., Ltd, 1893";
 br.bookKeyword= "Burma--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:137';
+br.bookUrl  = '/catalog/sea:137';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -3723,7 +3723,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:282_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:282_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3782,7 +3782,7 @@ br.bookTitle= "Wanderings in Burma";
 br.bookAuthor= "Bird, George W";
 br.bookPub= "Bournemouth [England] : London: F.J. Bright and Son ; Simpkin, Marshall, Hamilton, Kent and Co., Ltd, 1897";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:282';
+br.bookUrl  = '/catalog/sea:282';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

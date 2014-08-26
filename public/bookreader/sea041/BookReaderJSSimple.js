@@ -2223,7 +2223,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:041_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:041_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2282,7 +2282,7 @@ br.bookTitle= "Douze mois chez les sauvages du Laos";
 br.bookAuthor= "Coussot, Alfred";
 br.bookPub= "Paris: A. Challamel, 1898";
 br.bookKeyword= "Laos--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:041';
+br.bookUrl  = '/catalog/sea:041';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

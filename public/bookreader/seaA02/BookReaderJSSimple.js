@@ -111,7 +111,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A02_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A02_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -170,7 +170,7 @@ br.bookTitle= "La Cochinchine en 1859 : notes extraits d'une correspondance ined
 br.bookAuthor= "no recorded author";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1860";
 br.bookKeyword= "Vietnam";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A02';
+br.bookUrl  = '/catalog/sea:A02';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

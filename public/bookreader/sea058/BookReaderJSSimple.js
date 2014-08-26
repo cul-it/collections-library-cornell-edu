@@ -1311,7 +1311,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:058_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:058_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1370,7 +1370,7 @@ br.bookTitle= "A geography of the Malay Peninsula, Indo-China, the Eastern Archi
 br.bookAuthor= "Keane, A. H. (Augustus Henry)";
 br.bookPub= "London: E. Stanford, 1892";
 br.bookKeyword= "Southeast Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:058';
+br.bookUrl  = '/catalog/sea:058';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

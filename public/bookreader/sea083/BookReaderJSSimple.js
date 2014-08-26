@@ -3015,7 +3015,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:083_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:083_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3074,7 +3074,7 @@ br.bookTitle= "A voyage to New Guinea, and the Moluccas, from Balambangan : incl
 br.bookAuthor= "Forrest, Thomas";
 br.bookPub= "London: J. Robson, 1779";
 br.bookKeyword= "New Guinea--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maluku (Indonesia)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Magindanao language";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:083';
+br.bookUrl  = '/catalog/sea:083';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

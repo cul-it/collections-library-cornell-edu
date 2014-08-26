@@ -2391,7 +2391,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:258_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:258_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2450,7 +2450,7 @@ br.bookTitle= "Six months among the Malays, and a year in China";
 br.bookAuthor= "Yvan, Dr.";
 br.bookPub= "London: J. Blackwood, 1855, 1855";
 br.bookKeyword= "Malay Archipelago--Description and travel--Personal narratives<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China--Description and travel--Personal narratives";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:258';
+br.bookUrl  = '/catalog/sea:258';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

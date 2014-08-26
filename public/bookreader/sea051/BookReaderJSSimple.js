@@ -111,7 +111,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:051_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:051_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -170,7 +170,7 @@ br.bookTitle= "Report by Consul Parker on Annam";
 br.bookAuthor= "Great Britain. Foreign Office.";
 br.bookPub= "London: Printed for H.M. Stat. Off., by Harrison, 1892";
 br.bookKeyword= "Vietnam--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:051';
+br.bookUrl  = '/catalog/sea:051';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

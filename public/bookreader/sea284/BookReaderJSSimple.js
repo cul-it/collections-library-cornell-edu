@@ -1647,7 +1647,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:284_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:284_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1706,7 +1706,7 @@ br.bookTitle= "Through Burmah to western China, being notes of a journey in 1863
 br.bookAuthor= "Williams, Clement";
 br.bookPub= "Edinburgh, London: W. Blackwood and sons, 1868";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:284';
+br.bookUrl  = '/catalog/sea:284';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

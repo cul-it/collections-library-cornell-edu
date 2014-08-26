@@ -2319,7 +2319,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:359_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:359_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2378,7 +2378,7 @@ br.bookTitle= "A Burmese loneliness : a tale of travel in Burma, the Southern Sh
 br.bookAuthor= "Enriquez, C. M. (Colin Metcalfe)";
 br.bookPub= "Calcutta: Thacker, Spink and Co, 1918";
 br.bookKeyword= "Keng Tung (Burma : State)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:359';
+br.bookUrl  = '/catalog/sea:359';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

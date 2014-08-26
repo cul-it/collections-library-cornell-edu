@@ -1503,7 +1503,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:251_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:251_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1562,7 +1562,7 @@ br.bookTitle= "Matahari; impressions of the Siamese-Malayan jungle";
 br.bookAuthor= "Morgenthaler, Hans";
 br.bookPub= "New York: George H. Doran Company, 1923";
 br.bookKeyword= "Thailand--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Peninsula--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morgenthaler, Hans,--1890-1928";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:251';
+br.bookUrl  = '/catalog/sea:251';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

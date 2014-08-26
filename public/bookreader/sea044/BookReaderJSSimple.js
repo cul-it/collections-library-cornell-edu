@@ -495,7 +495,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:044_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:044_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -554,7 +554,7 @@ br.bookTitle= "Cochin-China : Containing many admirable Rarities and Singulariti
 br.bookAuthor= "Borri, Cristoforo";
 br.bookPub= "London: Printed by Robert Raworth; for Richard Clutterbuck, and are to be sold at the signe of the Ball in Little-Brittaine, 1633";
 br.bookKeyword= "Missions--Cochin China<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jesuits--Cochin China<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cochin China<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam--History--To 1858";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:044';
+br.bookUrl  = '/catalog/sea:044';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

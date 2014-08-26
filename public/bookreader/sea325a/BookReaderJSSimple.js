@@ -2967,7 +2967,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:325a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:325a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3026,7 +3026,7 @@ br.bookTitle= "Across Chryse : being the narrative of a journey of exploration t
 br.bookAuthor= "Colquhoun, Archibald R. (Archibald Ross)";
 br.bookPub= "London: S. Low, Marston, Searle, and Rivington, 1883";
 br.bookKeyword= "China--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:325a';
+br.bookUrl  = '/catalog/sea:325a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

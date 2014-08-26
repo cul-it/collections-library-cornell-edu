@@ -2883,7 +2883,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:062_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:062_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2942,7 +2942,7 @@ br.bookTitle= "The Philippine islands, Moluccas, Siam, Cambodia, Japan, and Chin
 br.bookAuthor= "Morga, Antonio de";
 br.bookPub= "London: Printed for the Hakluyt Society, 1868";
 br.bookKeyword= "Philippines--History--1521-1812<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:062';
+br.bookUrl  = '/catalog/sea:062';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

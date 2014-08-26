@@ -2415,7 +2415,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:129_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:129_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2474,7 +2474,7 @@ br.bookTitle= "Journal de marche (1888-1889) Evenements du Siam (1891-1893)";
 br.bookAuthor= "Pavie, Auguste, 1847-1925";
 br.bookPub= "Paris: E. Leroux, 1919";
 br.bookKeyword= "Indochina--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:129';
+br.bookUrl  = '/catalog/sea:129';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

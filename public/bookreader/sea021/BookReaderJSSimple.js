@@ -1479,7 +1479,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:021_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:021_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1538,7 +1538,7 @@ br.bookTitle= "A padre in partibus : being notes and impressions of a brief holi
 br.bookAuthor= "Reith, G. M. (George Murray)";
 br.bookPub= "Singapore: Singapore and Straits Print. Off, 1897";
 br.bookKeyword= "Java (Indonesia)--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Archipelago--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:021';
+br.bookUrl  = '/catalog/sea:021';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

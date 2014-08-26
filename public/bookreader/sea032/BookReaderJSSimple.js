@@ -2757,7 +2757,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:032_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:032_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2816,7 +2816,7 @@ br.bookTitle= "Voyage au Cambodge : l'architecture khmer";
 br.bookAuthor= "Delaporte, Louis";
 br.bookPub= "Paris: C. Delagrave, 1880";
 br.bookKeyword= "Cambodia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architecture--Cambodia";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:032';
+br.bookUrl  = '/catalog/sea:032';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

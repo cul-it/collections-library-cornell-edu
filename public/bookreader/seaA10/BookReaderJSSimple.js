@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A10_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A10_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -278,7 +278,7 @@ br.bookTitle= "La conquete du delta du Tong-King";
 br.bookAuthor= "Romanet du Caillaud, F. (Frederic)";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1877";
 br.bookKeyword= "military campaigns<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tonkin<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam--Bac Phan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam, Northern";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A10';
+br.bookUrl  = '/catalog/sea:A10';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

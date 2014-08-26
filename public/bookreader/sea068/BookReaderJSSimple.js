@@ -2199,7 +2199,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:068_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:068_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2258,7 +2258,7 @@ br.bookTitle= "A narrative of travel and sport in Burmah, Siam and the Malay Pen
 br.bookAuthor= "Bradley, John";
 br.bookPub= "London: S. Tinsley, 1876";
 br.bookKeyword= "Southeast Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:068';
+br.bookUrl  = '/catalog/sea:068';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -1803,7 +1803,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:122_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:122_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1862,7 +1862,7 @@ br.bookTitle= "Guide through Netherlands India";
 br.bookAuthor= "Bemmelen, J. F. van (Johan Frans van)";
 br.bookPub= "London, Amsterdam: T. Cook and son; J. H. de Bussy, 1903";
 br.bookKeyword= "Indonesia--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:122';
+br.bookUrl  = '/catalog/sea:122';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

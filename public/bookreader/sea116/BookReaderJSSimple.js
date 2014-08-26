@@ -2559,7 +2559,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:116_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:116_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2618,7 +2618,7 @@ br.bookTitle= "Siam, or, The heart of farther India";
 br.bookAuthor= "Cort, Mary L";
 br.bookPub= "New York: A.D.F. Randolph and Co, 1886";
 br.bookKeyword= "Missions--Thailand<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:116';
+br.bookUrl  = '/catalog/sea:116';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

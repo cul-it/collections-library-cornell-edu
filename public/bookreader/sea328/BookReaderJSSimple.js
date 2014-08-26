@@ -3579,7 +3579,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:328_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:328_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3638,7 +3638,7 @@ br.bookTitle= "An account of an embassy to the kingdom of Ava, : sent by the Gov
 br.bookAuthor= "Symes, Michael";
 br.bookPub= "London: Printed by W. Bulmer and Co.; and sold by Messrs. G. and W. Nicol; and J. Wright, 1800";
 br.bookKeyword= "British--Burma<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:328';
+br.bookUrl  = '/catalog/sea:328';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -2487,7 +2487,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:006_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:006_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2546,7 +2546,7 @@ br.bookTitle= "The land of the white elephant: : sights and scenes in south-east
 br.bookAuthor= "Vincent, Frank";
 br.bookPub= "London: S.Low, Marston, Low and Searle, 1873";
 br.bookKeyword= "Southeast Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:006';
+br.bookUrl  = '/catalog/sea:006';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

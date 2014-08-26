@@ -2079,7 +2079,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:229_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:229_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2138,7 +2138,7 @@ br.bookTitle= "Unaddressed letters";
 br.bookAuthor= "Swettenham, Frank Athelstane, Sir";
 br.bookPub= "London ; New York: J. Lane the Bodley Head, 1898";
 br.bookKeyword= "Malaya--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Folklore--Malaysia--Malaya";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:229';
+br.bookUrl  = '/catalog/sea:229';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

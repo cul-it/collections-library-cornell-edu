@@ -3063,7 +3063,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:109_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:109_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3122,7 +3122,7 @@ br.bookTitle= "Java and her neighbours; a traveller's notes in Java, Celebes, th
 br.bookAuthor= "Walcott, Arthur Stuart";
 br.bookPub= "New York, London: G. P. Putnam's sons, 1914";
 br.bookKeyword= "Indonesia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:109';
+br.bookUrl  = '/catalog/sea:109';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

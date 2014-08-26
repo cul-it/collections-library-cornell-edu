@@ -3447,7 +3447,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:158_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:158_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3506,7 +3506,7 @@ br.bookTitle= "The North Pacific surveying and exploring expedition : or, My las
 br.bookAuthor= "Habersham, Alexander Wylly";
 br.bookPub= "Philadelphia : London: J.B. Lippincott ; Trubner, 1857";
 br.bookKeyword= "East Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voyages and travels<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explorers";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:158';
+br.bookUrl  = '/catalog/sea:158';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

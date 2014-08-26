@@ -1599,7 +1599,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:355b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:355b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1658,7 +1658,7 @@ br.bookTitle= "The Chersonese with the gilding off, v.2";
 br.bookAuthor= "Innes, Emily";
 br.bookPub= "London: R. Benteley and Son, 1885";
 br.bookKeyword= "Malaya--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:355b';
+br.bookUrl  = '/catalog/sea:355b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

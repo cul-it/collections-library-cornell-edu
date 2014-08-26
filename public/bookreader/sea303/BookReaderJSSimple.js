@@ -2355,7 +2355,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:303_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:303_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2414,7 +2414,7 @@ br.bookTitle= "Sunny days in Burma";
 br.bookAuthor= "Wills, Arthur Winkler";
 br.bookPub= "Birmingham: Midland Counties Herald Press, 1905";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:303';
+br.bookUrl  = '/catalog/sea:303';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

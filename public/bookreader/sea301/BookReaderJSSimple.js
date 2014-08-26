@@ -771,7 +771,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:301_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:301_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -830,7 +830,7 @@ br.bookTitle= "Burma";
 br.bookAuthor= "Kelly, R. Talbot (Robert Talbot)";
 br.bookPub= "London: A. and C. Black, 1908";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:301';
+br.bookUrl  = '/catalog/sea:301';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

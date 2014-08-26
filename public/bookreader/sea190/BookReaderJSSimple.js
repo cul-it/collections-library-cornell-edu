@@ -1155,7 +1155,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:190_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:190_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1214,7 +1214,7 @@ br.bookTitle= "Interesting Manila";
 br.bookAuthor= "Miller, George A. (George Amos)";
 br.bookPub= "Manila, P.I: [E.C. McCullough and Co.], 1906";
 br.bookKeyword= "Manila (Philippines)--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:190';
+br.bookUrl  = '/catalog/sea:190';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A05_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A05_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -98,7 +98,7 @@ br.bookTitle= "Notes ecrites de  Cochinchine. Les femmes. Le betel.";
 br.bookAuthor= "no recorded author";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1861";
 br.bookKeyword= "women<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;betel palm<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A05';
+br.bookUrl  = '/catalog/sea:A05';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

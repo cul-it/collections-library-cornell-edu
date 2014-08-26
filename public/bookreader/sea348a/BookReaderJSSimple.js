@@ -1767,7 +1767,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:348a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:348a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1826,7 +1826,7 @@ br.bookTitle= "Sport in British Burmah, Assam and the Cassyah and Jyntiah Hills 
 br.bookAuthor= "Pollok, Fitz William Thomas";
 br.bookPub= "London: Chapman and Hall, 1879";
 br.bookKeyword= "Hunting--India<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:348a';
+br.bookUrl  = '/catalog/sea:348a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

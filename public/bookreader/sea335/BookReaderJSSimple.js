@@ -183,7 +183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:335_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:335_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -242,7 +242,7 @@ br.bookTitle= "Burman photograph album";
 br.bookAuthor= "no author";
 br.bookPub= "Ithaca, NY: Division of Rare and Manuscript Collections, Cornell University Library, 1897";
 br.bookKeyword= "Missions--Burma<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Funeral Customs--Burma<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Pictorial Works<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and Travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monywa(Burma)--Pictorial Works";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:335';
+br.bookUrl  = '/catalog/sea:335';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

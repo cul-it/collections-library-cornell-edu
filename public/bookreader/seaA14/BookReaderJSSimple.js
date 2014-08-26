@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A14_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A14_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -278,7 +278,7 @@ br.bookTitle= "Six semaines a Java";
 br.bookAuthor= "Charnay, Desire";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1880";
 br.bookKeyword= "Indonesia--Java";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A14';
+br.bookUrl  = '/catalog/sea:A14';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

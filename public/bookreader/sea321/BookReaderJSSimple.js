@@ -2235,7 +2235,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:321_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:321_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2294,7 +2294,7 @@ br.bookTitle= "Burma : after the conquest : viewed in its political, social, and
 br.bookAuthor= "Geary, Grattan";
 br.bookPub= "London: S. Low, Marston, Searle, and Rivington, 1886";
 br.bookKeyword= "Burma--History";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:321';
+br.bookUrl  = '/catalog/sea:321';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

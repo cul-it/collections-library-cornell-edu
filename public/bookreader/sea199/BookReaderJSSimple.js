@@ -4593,7 +4593,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:199_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:199_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -4652,7 +4652,7 @@ br.bookTitle= "The Philippine Islands; a political, geographical, ethnographical
 br.bookAuthor= "Foreman, John, F.R.G.S.";
 br.bookPub= "New York: C. Scribner's sons, 1906";
 br.bookKeyword= "Philippines";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:199';
+br.bookUrl  = '/catalog/sea:199';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

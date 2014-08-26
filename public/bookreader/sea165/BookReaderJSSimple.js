@@ -1545,7 +1545,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:165_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:165_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1604,7 +1604,7 @@ br.bookTitle= "Guide to the Dutch East Indies:Composed by invitation of the Koni
 br.bookAuthor= "Bemmelen, J. F. van (Johan Frans van)";
 br.bookPub= "London, Batavia: Luzac and Co.; G. Kolff and Co, 1897";
 br.bookKeyword= "Indonesia--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:165';
+br.bookUrl  = '/catalog/sea:165';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

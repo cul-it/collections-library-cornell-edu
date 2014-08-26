@@ -2739,7 +2739,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:119_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:119_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2798,7 +2798,7 @@ br.bookTitle= "Siam and China";
 br.bookAuthor= "Besso, Salvatore";
 br.bookPub= "London: Simpkin, Marshall, Hamilton, Kent and Co., Ltd, 1914";
 br.bookKeyword= "Thailand--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:119';
+br.bookUrl  = '/catalog/sea:119';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

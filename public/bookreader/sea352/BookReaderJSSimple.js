@@ -2019,7 +2019,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:352_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:352_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2078,7 +2078,7 @@ br.bookTitle= "Ralph Fitch, England's pioneer to India and Burma : his companion
 br.bookAuthor= "Ryley, J. Horton (John Horton)";
 br.bookPub= "London: T.F. Unwin, 1899";
 br.bookKeyword= "Fitch, Ralph,--fl. 1583-1606<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Indies--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:352';
+br.bookUrl  = '/catalog/sea:352';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

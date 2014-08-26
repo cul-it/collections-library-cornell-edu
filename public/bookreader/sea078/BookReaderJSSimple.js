@@ -3399,7 +3399,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:078_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:078_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3458,7 +3458,7 @@ br.bookTitle= "Journal of three voyages along the coast of China, in 1831, 1832 
 br.bookAuthor= "Gutzlaff, Karl Friedrich August";
 br.bookPub= "London: Frederick Westley and A. H. Davis, 1834";
 br.bookKeyword= "Missions--China<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voyages and travels<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Southeast Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:078';
+br.bookUrl  = '/catalog/sea:078';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

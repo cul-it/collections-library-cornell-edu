@@ -1227,7 +1227,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:159_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:159_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1286,7 +1286,7 @@ br.bookTitle= "An account of the wild tribes inhabiting the Malayan Peninsula, S
 br.bookAuthor= "Favre, Pierre Etienne Lazare";
 br.bookPub= "Paris: Printed at the Imperial Printing-office, 1865";
 br.bookKeyword= "Ethnology--Malay Peninsula<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Peninsula--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:159';
+br.bookUrl  = '/catalog/sea:159';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

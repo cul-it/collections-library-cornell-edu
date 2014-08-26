@@ -3063,7 +3063,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:281_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:281_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3122,7 +3122,7 @@ br.bookTitle= "Report and gazetteer of Burma, native and British";
 br.bookAuthor= "Macneill, Douglas";
 br.bookPub= "Simla: Govt. Central Branch Press, 1883";
 br.bookKeyword= "Burma--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Gazetteers";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:281';
+br.bookUrl  = '/catalog/sea:281';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

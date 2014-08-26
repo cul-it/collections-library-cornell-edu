@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A29a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A29a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -278,7 +278,7 @@ br.bookTitle= "A la recherche des negritos (voyage du yacht Semiramis), Les Anda
 br.bookAuthor= "Lapicque, Louis";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1895";
 br.bookKeyword= "Andamanese<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blacks<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Andaman and Nicobar Islands";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A29a';
+br.bookUrl  = '/catalog/sea:A29a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

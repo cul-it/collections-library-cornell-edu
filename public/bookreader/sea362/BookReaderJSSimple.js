@@ -2547,7 +2547,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:362_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:362_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2606,7 +2606,7 @@ br.bookTitle= "Twentieth century impressions of Burma : its history, people, com
 br.bookAuthor= "Wright, Arnold";
 br.bookPub= "London ; Durban ; Perth (W.A.): Lloyd's Greater Britain Pub. Co., 1910";
 br.bookKeyword= "Burma";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:362';
+br.bookUrl  = '/catalog/sea:362';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

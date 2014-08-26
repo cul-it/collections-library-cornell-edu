@@ -1083,7 +1083,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:082_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:082_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1142,7 +1142,7 @@ br.bookTitle= "A voyage from Calcutta to the Mergui Archipelago, lying on the ea
 br.bookAuthor= "Forrest, Thomas";
 br.bookPub= "London: J. Robson, [etc., etc.], 1792";
 br.bookKeyword= "Typhoons<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mergui Archipelago (Burma)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Archipelago--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Southeast Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:082';
+br.bookUrl  = '/catalog/sea:082';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

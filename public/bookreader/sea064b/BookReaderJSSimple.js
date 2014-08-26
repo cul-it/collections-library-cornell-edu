@@ -2199,7 +2199,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:064b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:064b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2258,7 +2258,7 @@ br.bookTitle= "Recollections of a happy life, being the autobiography of Mariann
 br.bookAuthor= "North, Marianne";
 br.bookPub= "New York and London: Macmillan and co, 1894";
 br.bookKeyword= "North, Marianne,--1830-1890<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Botanical artists--England--Biography<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voyages and travels<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Southeast Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:064b';
+br.bookUrl  = '/catalog/sea:064b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -2115,7 +2115,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:212_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:212_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2174,7 +2174,7 @@ br.bookTitle= "The Philippine Islands";
 br.bookAuthor= "Lala, Ramon Reyes";
 br.bookPub= "New York: Continental publishing company, 1899";
 br.bookKeyword= "Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:212';
+br.bookUrl  = '/catalog/sea:212';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

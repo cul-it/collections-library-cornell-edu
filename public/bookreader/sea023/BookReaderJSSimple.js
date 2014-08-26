@@ -2523,7 +2523,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:023_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:023_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2582,7 +2582,7 @@ br.bookTitle= "European settlements in the Far East; China, Japan, Corea, Indo-C
 br.bookAuthor= "Smith, D. Warres";
 br.bookPub= "London: S. Low, Marston and company, 1900";
 br.bookKeyword= "Colonies<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:023';
+br.bookUrl  = '/catalog/sea:023';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

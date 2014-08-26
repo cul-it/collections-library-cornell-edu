@@ -2907,7 +2907,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:146_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:146_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2966,7 +2966,7 @@ br.bookTitle= "Mission to the east coast of Sumatra, in M.DCCC.XXIII, under the 
 br.bookAuthor= "Anderson, John, 1795-1845";
 br.bookPub= "Edinburgh: W. Blackwood, 1826";
 br.bookKeyword= "Sumatra (Indonesia)--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batak (Indonesian people)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:146';
+br.bookUrl  = '/catalog/sea:146';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

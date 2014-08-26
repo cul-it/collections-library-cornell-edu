@@ -2055,7 +2055,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:214b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:214b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2114,7 +2114,7 @@ br.bookTitle= "The private letters of Sir James Brooke, K.C.B., Rajah of Sarawak
 br.bookAuthor= "Brooke, James, Sir";
 br.bookPub= "London: Richard Bentley, 1853";
 br.bookKeyword= "Sarawak--History--Sources";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:214b';
+br.bookUrl  = '/catalog/sea:214b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

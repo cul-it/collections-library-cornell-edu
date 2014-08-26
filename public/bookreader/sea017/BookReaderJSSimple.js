@@ -2067,7 +2067,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:017_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:017_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2126,7 +2126,7 @@ br.bookTitle= "A Burmese arcady, an account of a long and intimate sojourn among
 br.bookAuthor= "Enriquez, C. M. (Colin Metcalfe)";
 br.bookPub= "London: Seeley, Service and Co., Ltd, 1923";
 br.bookKeyword= "Kachin (Asian people)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:017';
+br.bookUrl  = '/catalog/sea:017';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

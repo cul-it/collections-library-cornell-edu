@@ -1803,7 +1803,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:174_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:174_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1862,7 +1862,7 @@ br.bookTitle= "Voyages and travels, into Brasil, and the East-Indies: containing
 br.bookAuthor= "Nieuhof, Johannes";
 br.bookPub= "London: Printed for A. and J. Churchill, 1703";
 br.bookKeyword= "Brazil--Description and travel--To 1800<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brazil--History--Dutch Conquest, 1624-1654<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dutch East Indies--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1703<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;London (England)--Imprints (A. and J. Churchill)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:174';
+br.bookUrl  = '/catalog/sea:174';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

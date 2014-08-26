@@ -2199,7 +2199,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:216_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:216_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2258,7 +2258,7 @@ br.bookTitle= "Camping and tramping in Malaya : fifteen years' pioneering in the
 br.bookAuthor= "Rathborne, Ambrose Beatty";
 br.bookPub= "London: S. Sonnenschein, 1898";
 br.bookKeyword= "Malaya--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:216';
+br.bookUrl  = '/catalog/sea:216';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

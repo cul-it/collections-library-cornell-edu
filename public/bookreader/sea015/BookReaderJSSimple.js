@@ -2007,7 +2007,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:015_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:015_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2066,7 +2066,7 @@ br.bookTitle= "From Golden Gate to golden sun : a record of travel, sport and ob
 br.bookAuthor= "Norden, Hermann";
 br.bookPub= "London: H.F. and G. Witherby, 1923";
 br.bookKeyword= "Thailand--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Archipelago--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:015';
+br.bookUrl  = '/catalog/sea:015';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

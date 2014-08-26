@@ -831,7 +831,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A07_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A07_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -890,7 +890,7 @@ br.bookTitle= "Voyage dans les royaumes de Siam, de Cambodge, de Laos et autres 
 br.bookAuthor= "Mouhot, Henri";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1863";
 br.bookKeyword= "Thailand<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cambodia<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laos";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A07';
+br.bookUrl  = '/catalog/sea:A07';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

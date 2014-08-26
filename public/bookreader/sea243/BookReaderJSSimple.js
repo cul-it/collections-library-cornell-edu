@@ -2655,7 +2655,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:243_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:243_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2714,7 +2714,7 @@ br.bookTitle= "Our tropical possessions in Malayan India : being a descriptive a
 br.bookAuthor= "Cameron, John";
 br.bookPub= "London: Smith, Elder, 1865";
 br.bookKeyword= "Straits Settlements";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:243';
+br.bookUrl  = '/catalog/sea:243';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

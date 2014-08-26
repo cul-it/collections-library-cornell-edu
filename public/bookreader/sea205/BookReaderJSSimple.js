@@ -1203,7 +1203,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:205_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:205_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1262,7 +1262,7 @@ br.bookTitle= "Scenes taken in the Philippines, China, Japan, and on the Pacific
 br.bookAuthor= "Givens, James David";
 br.bookPub= "San Francisco: Hicks-Judd Co., 1912";
 br.bookKeyword= "Philippines--Pictorial works<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China--Description and travel--Views<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japan--Pictorial works";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:205';
+br.bookUrl  = '/catalog/sea:205';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

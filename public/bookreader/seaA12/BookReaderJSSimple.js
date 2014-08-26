@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A12_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A12_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -470,7 +470,7 @@ br.bookTitle= "Voyage en Nouvelle-Guine, 1876-1877";
 br.bookAuthor= "Raffray, Achille";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1879";
 br.bookKeyword= "Voyages and travels--Periodicals<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ethnology<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Guinea";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A12';
+br.bookUrl  = '/catalog/sea:A12';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

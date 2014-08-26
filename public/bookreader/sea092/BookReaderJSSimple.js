@@ -201,7 +201,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:092_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:092_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -260,7 +260,7 @@ br.bookTitle= "The Fascination of Siam";
 br.bookAuthor= "Oriental Hotel, Bangkok, Thailand";
 br.bookPub= "Bangkok: Oriental Hotel, 1920";
 br.bookKeyword= "Bangkok (Thailand)--Guidebooks<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:092';
+br.bookUrl  = '/catalog/sea:092';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -2223,7 +2223,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:241_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:241_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2282,7 +2282,7 @@ br.bookTitle= "With eastern merchandise : a landsman's log of life on board a ca
 br.bookAuthor= "Powell, Francis Edward";
 br.bookPub= "London: T. Murby, 1913";
 br.bookKeyword= "East Asia<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malaya--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japan--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:241';
+br.bookUrl  = '/catalog/sea:241';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

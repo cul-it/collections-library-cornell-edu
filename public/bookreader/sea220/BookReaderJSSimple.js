@@ -3411,7 +3411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:220_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:220_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3470,7 +3470,7 @@ br.bookTitle= "The cruise of the Marchesa to Kamschatka and New Guinea. With not
 br.bookAuthor= "Guillemard, F. H. H. (Francis Henry Hill)";
 br.bookPub= "London: J. Murray, 1889";
 br.bookKeyword= "Oceania--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marchesa (Schooner yacht)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Natural history--Oceania<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kamchatskaia oblast' (Russia)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Natural history--Russia (Federation)--Kamchatskaia oblast'";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:220';
+br.bookUrl  = '/catalog/sea:220';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

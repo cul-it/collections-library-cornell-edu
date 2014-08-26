@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A21_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A21_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -278,7 +278,7 @@ br.bookTitle= "De Koutei a Bandjirmasin, voyage a travers Borneo";
 br.bookAuthor= "Bock, Carl";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1890";
 br.bookKeyword= "Borneo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indonesia--Kalimantan";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A21';
+br.bookUrl  = '/catalog/sea:A21';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

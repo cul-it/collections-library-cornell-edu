@@ -2121,7 +2121,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:204_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:204_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2180,7 +2180,7 @@ br.bookTitle= "Hong Kong to Manilla and the lakes of Luzon, in the Philippine Is
 br.bookAuthor= "Ellis, Henry Thomas";
 br.bookPub= "London: Smith, Elder and co, 1859";
 br.bookKeyword= "Philippines--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manila (Philippines)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:204';
+br.bookUrl  = '/catalog/sea:204';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

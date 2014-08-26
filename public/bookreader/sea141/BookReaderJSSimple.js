@@ -633,7 +633,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:141_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:141_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -692,7 +692,7 @@ br.bookTitle= "Photograph album of Siam, 1900";
 br.bookAuthor= "no author";
 br.bookPub= "Ithaca, NY: Division of Rare and Manuscript Collections, Cornell University, 1900";
 br.bookKeyword= "Pictorial works<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kings and Rulers<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20th Century<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Life and Customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Religious Life and Customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:141';
+br.bookUrl  = '/catalog/sea:141';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

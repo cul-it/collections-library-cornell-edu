@@ -2547,7 +2547,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:090_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:090_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2606,7 +2606,7 @@ br.bookTitle= "The kingdom of the yellow robe. Being sketches of the domestic an
 br.bookAuthor= "Young, Ernest";
 br.bookPub= "Westminster: A. Constable, 1898";
 br.bookKeyword= "Thailand--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Religion";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:090';
+br.bookUrl  = '/catalog/sea:090';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

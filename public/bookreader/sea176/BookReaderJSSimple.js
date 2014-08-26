@@ -2079,7 +2079,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:176_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:176_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2138,7 +2138,7 @@ br.bookTitle= "Adventures among the Dyaks of Borneo";
 br.bookAuthor= "Boyle, Frederick";
 br.bookPub= "London: Hurst and Blackett, 1865";
 br.bookKeyword= "Dayak language<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Borneo--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:176';
+br.bookUrl  = '/catalog/sea:176';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

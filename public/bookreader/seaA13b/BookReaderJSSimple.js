@@ -507,7 +507,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A13b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A13b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -566,7 +566,7 @@ br.bookTitle= "Le Laos et les populations sauvages de l'Indo-Chine, 1877, XI-XXV
 br.bookAuthor= "Harmand, Jules";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1880";
 br.bookKeyword= "ethnic minorities<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ethnology<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indochina<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laos";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A13b';
+br.bookUrl  = '/catalog/sea:A13b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

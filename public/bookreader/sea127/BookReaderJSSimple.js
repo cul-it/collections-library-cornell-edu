@@ -2151,7 +2151,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:127_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:127_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2210,7 +2210,7 @@ br.bookTitle= "The English Governess at the Siamese Court: Being Recollections o
 br.bookAuthor= "Leonowens, Anna Harriette";
 br.bookPub= "Philadelphia: Porter and Coates, 1870";
 br.bookKeyword= "Leonowens, Anna Harriette,--1834-1914<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Social life and custom";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:127';
+br.bookUrl  = '/catalog/sea:127';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

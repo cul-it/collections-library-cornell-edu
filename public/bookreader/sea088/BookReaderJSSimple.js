@@ -2103,7 +2103,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:088_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:088_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2162,7 +2162,7 @@ br.bookTitle= "Siam : on the Meinam from the gulf to Ayuthia : together with thr
 br.bookAuthor= "Sommerville, Maxwell";
 br.bookPub= "London: S. Low, Marston and Co., Ltd, 1897";
 br.bookKeyword= "Thailand--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Social life and customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:088';
+br.bookUrl  = '/catalog/sea:088';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

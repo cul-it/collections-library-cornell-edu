@@ -399,7 +399,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:100_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:100_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -458,7 +458,7 @@ br.bookTitle= "Java : information for travellers : trips in the Isle of Java, wi
 br.bookAuthor= "Officieel Toeristenbureau voor Nederlandsch-Indie";
 br.bookPub= "Batavia: Official Tourist Bureau, 1913";
 br.bookKeyword= "Java (Indonesia)--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:100';
+br.bookUrl  = '/catalog/sea:100';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

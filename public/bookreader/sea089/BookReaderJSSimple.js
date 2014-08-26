@@ -807,7 +807,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:089_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:089_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -866,7 +866,7 @@ br.bookTitle= "Notes of a journey on the Upper Mekong, Siam";
 br.bookAuthor= "Smyth, H. Warington (Herbert Warington)";
 br.bookPub= "London: Published for the Royal Geographical Society by J. Murray, 1895";
 br.bookKeyword= "Thailand--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smyth, H. Warington--(Herbert Warington),--1867-1943--Journeys--Thailand";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:089';
+br.bookUrl  = '/catalog/sea:089';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

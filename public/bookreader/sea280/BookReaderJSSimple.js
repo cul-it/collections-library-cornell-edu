@@ -2427,7 +2427,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:280_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:280_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2486,7 +2486,7 @@ br.bookTitle= "Exploration of Mount Kina Balu, North Borneo";
 br.bookAuthor= "Whitehead, John";
 br.bookPub= "London: Gurney and Jackson, 1893";
 br.bookKeyword= "Zoology--Borneo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kinabalu, Mount (Sabah)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:280';
+br.bookUrl  = '/catalog/sea:280';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

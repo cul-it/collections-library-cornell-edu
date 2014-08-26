@@ -78,7 +78,7 @@ if (index == 22) {
      return 297;
     }
 if (index == 23) {
-     return 1525;
+     return 763;
     }
 if (index == 24) {
      return 295;
@@ -216,7 +216,7 @@ if (index == 68) {
      return 288;
     }
 if (index == 69) {
-     return 1088;
+     return 544;
     }
 if (index == 70) {
      return 295;
@@ -564,7 +564,7 @@ if (index == 184) {
      return 297;
     }
 if (index == 185) {
-     return 1128;
+     return 564;
     }
 if (index == 186) {
      return 295;
@@ -672,7 +672,7 @@ if (index == 220) {
      return 294;
     }
 if (index == 221) {
-     return 1145;
+     return 573;
     }
 if (index == 222) {
      return 295;
@@ -750,7 +750,7 @@ if (index == 246) {
      return 291;
     }
 if (index == 247) {
-     return 1136;
+     return 568;
     }
 if (index == 248) {
      return 295;
@@ -930,7 +930,7 @@ if (index == 306) {
      return 412;
     }
 if (index == 307) {
-     return 1174;
+     return 587;
     }
 if (index == 308) {
      return 295;
@@ -1056,7 +1056,7 @@ if (index == 348) {
      return 312;
     }
 if (index == 349) {
-     return 1421;
+     return 711;
     }
 if (index == 350) {
      return 295;
@@ -1170,7 +1170,7 @@ if (index == 386) {
      return 429;
     }
 if (index == 387) {
-     return 1153;
+     return 577;
     }
 if (index == 388) {
      return 295;
@@ -1212,7 +1212,7 @@ if (index == 400) {
      return 399;
     }
 if (index == 401) {
-     return 1956;
+     return 489;
     }
 if (index == 402) {
      return 295;
@@ -1344,7 +1344,7 @@ if (index == 444) {
      return 394;
     }
 if (index == 445) {
-     return 1174;
+     return 587;
     }
 if (index == 446) {
      return 295;
@@ -1590,7 +1590,7 @@ if (index == 526) {
      return 320;
     }
 if (index == 527) {
-     return 864;
+     return 432;
     }
 if (index == 528) {
      return 295;
@@ -1614,7 +1614,7 @@ if (index == 534) {
      return 315;
     }
 if (index == 535) {
-     return 1140;
+     return 570;
     }
 if (index == 536) {
      return 295;
@@ -1827,7 +1827,7 @@ if (index == 605) {
      return 301;
     }
 if (index == 606) {
-     return 909;
+     return 455;
     }
 if (index == 607) {
      return 337;
@@ -1909,7 +1909,7 @@ if (index == 22) {
      return 461;
     }
 if (index == 23) {
-     return 1729;
+     return 865;
     }
 if (index == 24) {
      return 452;
@@ -2047,7 +2047,7 @@ if (index == 68) {
      return 458;
     }
 if (index == 69) {
-     return 1617;
+     return 809;
     }
 if (index == 70) {
      return 452;
@@ -2761,7 +2761,7 @@ if (index == 306) {
      return 615;
     }
 if (index == 307) {
-     return 1656;
+     return 828;
     }
 if (index == 308) {
      return 452;
@@ -2887,7 +2887,7 @@ if (index == 348) {
      return 453;
     }
 if (index == 349) {
-     return 1727;
+     return 864;
     }
 if (index == 350) {
      return 452;
@@ -3175,7 +3175,7 @@ if (index == 444) {
      return 616;
     }
 if (index == 445) {
-     return 1596;
+     return 798;
     }
 if (index == 446) {
      return 452;
@@ -3361,7 +3361,7 @@ if (index == 506) {
      return 467;
     }
 if (index == 507) {
-     return 1773;
+     return 887;
     }
 if (index == 508) {
      return 452;
@@ -3421,7 +3421,7 @@ if (index == 526) {
      return 467;
     }
 if (index == 527) {
-     return 1432;
+     return 716;
     }
 if (index == 528) {
      return 452;
@@ -3675,7 +3675,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:001_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:001_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3734,7 +3734,7 @@ br.bookTitle= "An official guide to eastern Asia v.5";
 br.bookAuthor= "Japan. Tetsud¯osh¯o";
 br.bookPub= "Tokyo, Japan: Department of Railways, 1920";
 br.bookKeyword= "Railroads<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EastAsia<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:001';
+br.bookUrl  = '/catalog/sea:001';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

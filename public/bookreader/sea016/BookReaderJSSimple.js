@@ -3129,7 +3129,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:016_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:016_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3188,7 +3188,7 @@ br.bookTitle= "Observations in the Orient : the account of a journey to Catholic
 br.bookAuthor= "Walsh, James Anthony";
 br.bookPub= "Ossining, NY: Catholic Foreign Mission Society of America, 1919";
 br.bookKeyword= "Catholic Church--Missions--East Asia<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Missions--East Asia<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Asia--Civilization";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:016';
+br.bookUrl  = '/catalog/sea:016';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

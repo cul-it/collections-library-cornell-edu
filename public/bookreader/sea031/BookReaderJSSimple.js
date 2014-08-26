@@ -111,7 +111,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:031_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:031_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -170,7 +170,7 @@ br.bookTitle= "Report by Sir B. Robertson respecting his visit to Haiphong and H
 br.bookAuthor= "Roberston, B.";
 br.bookPub= "London: Harrison, 1876";
 br.bookKeyword= "Haiphong (Vietnam)--Description and travel.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tonkin--Description and travel.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indochina--Description and travel.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hanoi (Vietnam)--Description and travel.";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:031';
+br.bookUrl  = '/catalog/sea:031';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

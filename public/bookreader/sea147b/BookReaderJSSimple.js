@@ -2955,7 +2955,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:147b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:147b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3014,7 +3014,7 @@ br.bookTitle= "Memoir of the life and public services of Sir Thomas Stamford Raf
 br.bookAuthor= "Raffles, Sophia, Lady";
 br.bookPub= "London: J. Duncan, 1835";
 br.bookKeyword= "Raffles, Thomas Stamford,--Sir,--1781-1826<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colonial administrators--Indonesia--Java--Biography<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colonial administrators--Singapore--Biography<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colonial administrators--Great Britain--Biography";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:147b';
+br.bookUrl  = '/catalog/sea:147b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

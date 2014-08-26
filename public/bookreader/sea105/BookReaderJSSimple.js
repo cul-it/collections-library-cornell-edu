@@ -2091,7 +2091,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:105_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:105_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2150,7 +2150,7 @@ br.bookTitle= "Come to Java [1922-1923]";
 br.bookAuthor= "Officieel Toeristenbureau voor Nederlandsch-Indie";
 br.bookPub= "Batavia: Photo-Engravers and Printers G. Kolff, 1923";
 br.bookKeyword= "Java (Indonesia)--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:105';
+br.bookUrl  = '/catalog/sea:105';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

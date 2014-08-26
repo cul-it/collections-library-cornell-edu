@@ -2667,7 +2667,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:028_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:028_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2726,7 +2726,7 @@ br.bookTitle= "An eastern voyage : a journal of the travels of Count Fritz Hochb
 br.bookAuthor= "Hochberg, Friedrich Maximilian, Graf von";
 br.bookPub= "London : New York: J.M. Dent ; E.P. Dutton, 1910";
 br.bookKeyword= "East Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Southeast Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:028';
+br.bookUrl  = '/catalog/sea:028';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

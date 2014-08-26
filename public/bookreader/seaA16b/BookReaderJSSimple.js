@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A16b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A16b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -374,7 +374,7 @@ br.bookTitle= "Voyage aux Philippines 1879-1881, V-VIII";
 br.bookAuthor= "Montano, Joseph";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1884";
 br.bookKeyword= "Philippines";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A16b';
+br.bookUrl  = '/catalog/sea:A16b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

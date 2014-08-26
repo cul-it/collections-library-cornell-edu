@@ -879,7 +879,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:101_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:101_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -938,7 +938,7 @@ br.bookTitle= "From jungle to Java : the trivial impresssions of a short excursi
 br.bookAuthor= "Keyser, Arthur Louis";
 br.bookPub= "Westminster [London]: Roxburghe Press, Ltd, 1897";
 br.bookKeyword= "Java (Indonesia)--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java (Indonesia)--Social life and customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:101';
+br.bookUrl  = '/catalog/sea:101';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

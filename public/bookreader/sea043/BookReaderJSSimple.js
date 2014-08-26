@@ -1965,7 +1965,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:043_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:043_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2024,7 +2024,7 @@ br.bookTitle= "A seaman's narrative of his adventures during a captivity among C
 br.bookAuthor= "Brown, Edward, seaman";
 br.bookPub= "London: Charles Westerton, 1861";
 br.bookKeyword= "Vietnam--History--To 1858<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pirates<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cochin China--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:043';
+br.bookUrl  = '/catalog/sea:043';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

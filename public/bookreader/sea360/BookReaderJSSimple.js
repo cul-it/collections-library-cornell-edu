@@ -1317,7 +1317,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:360_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:360_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1376,7 +1376,7 @@ br.bookTitle= "Barbara's Philippine journey, by Frances Williston Burks; with an
 br.bookAuthor= "Burks, Frances Williston";
 br.bookPub= "Yonkers-on-Hudson and Manila: World Book Company, 1913";
 br.bookKeyword= "Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:360';
+br.bookUrl  = '/catalog/sea:360';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A11_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A11_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -278,7 +278,7 @@ br.bookTitle= "Huit jours d'ambassade a Hue (Royaume d'Annam)";
 br.bookAuthor= "Brossard de Corbigny, Jules Michel";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1878";
 br.bookKeyword= "Vietnam--Binh Tri Thien--Hue";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A11';
+br.bookUrl  = '/catalog/sea:A11';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

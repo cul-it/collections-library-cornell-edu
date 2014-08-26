@@ -2055,7 +2055,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:308_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:308_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2114,7 +2114,7 @@ br.bookTitle= "The golden Dagon; or, Up and down the Irrawaddi. Being passages o
 br.bookAuthor= "Palmer, John Williamson";
 br.bookPub= "New York: Dix, Edwards and co, 1856";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:308';
+br.bookUrl  = '/catalog/sea:308';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

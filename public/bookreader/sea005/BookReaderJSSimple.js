@@ -2283,7 +2283,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:005_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:005_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2342,7 +2342,7 @@ br.bookTitle= "Wanderings among South sea savages and in Borneo and the Philippi
 br.bookAuthor= "Walker, H. Wilfrid";
 br.bookPub= "London: Witherby, 1910";
 br.bookKeyword= "Oceania--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethnology--Oceania<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Walker, H. Wilfrid--Journeys--Oceania<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Borneo--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:005';
+br.bookUrl  = '/catalog/sea:005';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

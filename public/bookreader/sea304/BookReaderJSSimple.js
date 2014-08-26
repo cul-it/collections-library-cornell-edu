@@ -1599,7 +1599,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:304_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:304_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1658,7 +1658,7 @@ br.bookTitle= "Into the East : notes on Burma and Malaya";
 br.bookAuthor= "Curle, Richard";
 br.bookPub= "London: Macmillan and Co., Ltd, 1923";
 br.bookKeyword= "Burma--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malaya--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:304';
+br.bookUrl  = '/catalog/sea:304';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

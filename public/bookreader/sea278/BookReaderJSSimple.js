@@ -507,7 +507,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:278_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:278_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -566,7 +566,7 @@ br.bookTitle= "A short account of the settlement, produce, and commerce, of Prin
 br.bookAuthor= "Leith, George, Sir";
 br.bookPub= "London: Printed for J. Booth, 1804";
 br.bookKeyword= "Pinang";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:278';
+br.bookUrl  = '/catalog/sea:278';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

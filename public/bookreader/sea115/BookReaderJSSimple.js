@@ -1047,7 +1047,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:115_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:115_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1106,7 +1106,7 @@ br.bookTitle= "Illustrated tourist guide to East Java, Bali and Lombok";
 br.bookAuthor= "Officieel Toeristenbureau voor Nederlandsch-Indie";
 br.bookPub= "Weltevreden (Batavia): Official Tourist Bureau, 1914";
 br.bookKeyword= "Jawa Timur (Indonesia)--Guidebooks<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bali Island (Indonesia)--Guidebooks<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lombok (Indonesia)--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:115';
+br.bookUrl  = '/catalog/sea:115';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

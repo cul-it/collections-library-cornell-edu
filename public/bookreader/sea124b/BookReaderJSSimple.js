@@ -2919,7 +2919,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:124b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:124b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2978,7 +2978,7 @@ br.bookTitle= "The kingdom and people of Siam : with a narrative of the mission 
 br.bookAuthor= "Bowring, John, Sir";
 br.bookPub= "London: J.W. Parker and son, 1857";
 br.bookKeyword= "Thailand";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:124b';
+br.bookUrl  = '/catalog/sea:124b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

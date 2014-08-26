@@ -5835,7 +5835,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:233_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:233_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -5894,7 +5894,7 @@ br.bookTitle= "Twentieth century impressions of British Malaya: its history, peo
 br.bookAuthor= "Wright, Arnold";
 br.bookPub= "London, Durban, Colombo, Perth (W. A.), Singapore, Hongkong, and Shanghai: Lloyd's Greater Britain Publishing Company, limited, 1908";
 br.bookKeyword= "Straits Settlements<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Federated Malay States";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:233';
+br.bookUrl  = '/catalog/sea:233';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -711,7 +711,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:117_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:117_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -770,7 +770,7 @@ br.bookTitle= "Across the equator : a holiday trip in Java";
 br.bookAuthor= "Reid, Thomas H";
 br.bookPub= "Singapore: Kelly and Walsh, 1908";
 br.bookKeyword= "Java (Indonesia)--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java (Indonesia)--History";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:117';
+br.bookUrl  = '/catalog/sea:117';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

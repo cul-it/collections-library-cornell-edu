@@ -2265,7 +2265,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:061_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:061_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2324,7 +2324,7 @@ br.bookTitle= "The first voyage round the world, by Magellan. Translated from th
 br.bookAuthor= "Stanley, Henry Edward John Stanley, Baron";
 br.bookPub= "London: Printed for the Hakluyt society, 1874";
 br.bookKeyword= "Magalhaes, Fernao de,--d. 1521<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voyages around the world";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:061';
+br.bookUrl  = '/catalog/sea:061';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

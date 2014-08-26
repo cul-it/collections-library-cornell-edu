@@ -1587,7 +1587,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:240_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:240_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1646,7 +1646,7 @@ br.bookTitle= "Through the Malay Archipelago";
 br.bookAuthor= "Richings, Emily";
 br.bookPub= "London: H. Drane, 1909";
 br.bookKeyword= "Malay Archipelago--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:240';
+br.bookUrl  = '/catalog/sea:240';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

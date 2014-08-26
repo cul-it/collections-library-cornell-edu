@@ -615,7 +615,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:314_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:314_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -674,7 +674,7 @@ br.bookTitle= "Myam-ma, the home of the Burman";
 br.bookAuthor= "Tsaya";
 br.bookPub= "Calcutta: Thacker, Spink and Co, 1886";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:314';
+br.bookUrl  = '/catalog/sea:314';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

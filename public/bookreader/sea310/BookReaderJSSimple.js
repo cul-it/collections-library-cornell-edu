@@ -2079,7 +2079,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:310_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:310_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2138,7 +2138,7 @@ br.bookTitle= "Narrative of the Burmese war, detailing the operations of Major-G
 br.bookAuthor= "Snodgrass, Major (John James)";
 br.bookPub= "London: J. Murray, 1827";
 br.bookKeyword= "Burmese War, 1824-1826";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:310';
+br.bookUrl  = '/catalog/sea:310';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

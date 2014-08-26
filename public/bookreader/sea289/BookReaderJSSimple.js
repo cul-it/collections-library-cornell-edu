@@ -381,7 +381,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:289_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:289_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -440,7 +440,7 @@ br.bookTitle= "Tourist guide and shopping list : where to go, what to see, where
 br.bookAuthor= "California Directory Co";
 br.bookPub= "Calcutta: s.n, 1920";
 br.bookKeyword= "Calcutta (India)--Guidebooks<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:289';
+br.bookUrl  = '/catalog/sea:289';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

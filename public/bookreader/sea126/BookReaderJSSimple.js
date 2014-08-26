@@ -1791,7 +1791,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:126_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:126_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1850,7 +1850,7 @@ br.bookTitle= "Narrative of a residence at the capital of the kingdom of Siam; w
 br.bookAuthor= "Neale, Fred Arthur";
 br.bookPub= "London: Office of the National Illustrated Library, 1852";
 br.bookKeyword= "Thailand--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:126';
+br.bookUrl  = '/catalog/sea:126';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

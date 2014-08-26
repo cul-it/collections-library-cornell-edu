@@ -3735,7 +3735,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:235_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:235_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3794,7 +3794,7 @@ br.bookTitle= "A naturalist's wanderings in the Eastern archipelago; a narrative
 br.bookAuthor= "Forbes, Henry O. (Henry Ogg)";
 br.bookPub= "New York: Harper, 1885";
 br.bookKeyword= "Natural history--Malay Archipelago<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Archipelago--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:235';
+br.bookUrl  = '/catalog/sea:235';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

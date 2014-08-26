@@ -1011,7 +1011,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:253_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:253_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1070,7 +1070,7 @@ br.bookTitle= "Federated Malay States Railways, 1921; pamphlet of information fo
 br.bookAuthor= "Federated Malay States Railway";
 br.bookPub= "[London?]: no recorded publisher, 1921";
 br.bookKeyword= "Malaya--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:253';
+br.bookUrl  = '/catalog/sea:253';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

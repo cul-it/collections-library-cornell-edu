@@ -1599,7 +1599,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:215_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:215_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1658,7 +1658,7 @@ br.bookTitle= "The magic of Malaya";
 br.bookAuthor= "Harrison, Cuthbert Woodville";
 br.bookPub= "London: Bodley Head, 1916";
 br.bookKeyword= "Malay Peninsula--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:215';
+br.bookUrl  = '/catalog/sea:215';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

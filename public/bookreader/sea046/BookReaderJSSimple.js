@@ -2199,7 +2199,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:046_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:046_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2258,7 +2258,7 @@ br.bookTitle= "Voyages au centre de l'Annam et du Laos et dans les regions sauva
 br.bookAuthor= "Malglaive, J. de (Joseph)";
 br.bookPub= "Paris: E. Leroux, 1902";
 br.bookKeyword= "Indochina--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:046';
+br.bookUrl  = '/catalog/sea:046';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -3051,7 +3051,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:276_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:276_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3110,7 +3110,7 @@ br.bookTitle= "An army officer on leave in Japan : including a sketch of Manila 
 br.bookAuthor= "Maus, Louis Mervin";
 br.bookPub= "Chicago, IL: A.C. McClurg, 1911";
 br.bookKeyword= "Japan--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:276';
+br.bookUrl  = '/catalog/sea:276';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

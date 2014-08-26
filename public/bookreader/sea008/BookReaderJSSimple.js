@@ -1467,7 +1467,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:008_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:008_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1526,7 +1526,7 @@ br.bookTitle= "Siam";
 br.bookAuthor= "Loti, Pierre";
 br.bookPub= "London: T.W.  Laurie ltd, 1913";
 br.bookKeyword= "Loti, Pierre,--1850-1923--Journeys--Cambodia<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cambodia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angkor (Extinct City)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:008';
+br.bookUrl  = '/catalog/sea:008';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

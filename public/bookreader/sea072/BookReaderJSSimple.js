@@ -2871,7 +2871,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:072_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:072_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2930,7 +2930,7 @@ br.bookTitle= "A descriptive dictionary of the Indian Islands and adjacent count
 br.bookAuthor= "Crawfurd, John";
 br.bookPub= "London: Bradbury and Evans, 1856";
 br.bookKeyword= "Southeast Asia--Dictionaries<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Southeast Asia--Encyclopedias";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:072';
+br.bookUrl  = '/catalog/sea:072';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

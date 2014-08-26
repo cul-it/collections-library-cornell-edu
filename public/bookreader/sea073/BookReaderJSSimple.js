@@ -2559,7 +2559,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:073_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:073_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2618,7 +2618,7 @@ br.bookTitle= "Missionary journals and letters : written during eleven years' re
 br.bookAuthor= "Tomlin, J. (Jacob), 1793-1880";
 br.bookPub= "London: Nisbet, 1844";
 br.bookKeyword= "Southeast Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomlin, J.--(Jacob),--1793-1880<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Missionaries--Southeast Asia--Biography<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Missionaries--England--Biography<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Missions--Southeast Asia--History--19th century--Sources";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:073';
+br.bookUrl  = '/catalog/sea:073';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

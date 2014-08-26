@@ -255,7 +255,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A06_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A06_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -314,7 +314,7 @@ br.bookTitle= "Voyages dans l'ile de Borneo 1847-1852 ";
 br.bookAuthor= "no recorded author";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1862";
 br.bookKeyword= "Indonesia--Kalimantan";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A06';
+br.bookUrl  = '/catalog/sea:A06';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

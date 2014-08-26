@@ -2919,7 +2919,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:255_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:255_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2978,7 +2978,7 @@ br.bookTitle= "China and Japan, and a voyage thither: an account of a cruise in 
 br.bookAuthor= "Lawrence, James B";
 br.bookPub= "Hartford: Press of Case, Lockwood and Brainard, 1870";
 br.bookKeyword= "Lawrence, James B<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voyages around the world";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:255';
+br.bookUrl  = '/catalog/sea:255';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

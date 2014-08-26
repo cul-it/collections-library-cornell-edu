@@ -2463,7 +2463,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:231_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:231_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2522,7 +2522,7 @@ br.bookTitle= "The Adventures of Reuben Davidger : seventeen years and four mont
 br.bookAuthor= "Greenwood, James";
 br.bookPub= "London ; New York ; Melbourne: Ward Lock and Co, 1899";
 br.bookKeyword= "Borneo";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:231';
+br.bookUrl  = '/catalog/sea:231';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

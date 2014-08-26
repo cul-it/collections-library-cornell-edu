@@ -2175,7 +2175,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:182_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:182_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2234,7 +2234,7 @@ br.bookTitle= "A woman's journey through the Philippines on a cable ship that li
 br.bookAuthor= "Russel, Florence Kimball";
 br.bookPub= "Boston: L. C. Page and company, 1907";
 br.bookKeyword= "Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:182';
+br.bookUrl  = '/catalog/sea:182';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

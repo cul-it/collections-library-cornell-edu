@@ -3819,7 +3819,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:239_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:239_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3878,7 +3878,7 @@ br.bookTitle= "Two years in the jungle : the experiences of a hunter and natural
 br.bookAuthor= "Hornaday, William Temple";
 br.bookPub= "New York: Scribner, 1904";
 br.bookKeyword= "East Indies--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hunting";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:239';
+br.bookUrl  = '/catalog/sea:239';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

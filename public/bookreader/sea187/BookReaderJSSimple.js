@@ -1317,7 +1317,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:187_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:187_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1376,7 +1376,7 @@ br.bookTitle= "The Philippine Islands";
 br.bookAuthor= "Boyce, William Dickson, 1848-";
 br.bookPub= "Chicago, New York: Rand, McNally, 1914";
 br.bookKeyword= "Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:187';
+br.bookUrl  = '/catalog/sea:187';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

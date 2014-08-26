@@ -2955,7 +2955,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:054_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:054_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3014,7 +3014,7 @@ br.bookTitle= "From Tonkin to India by the sources of the Irawadi, January '95-J
 br.bookAuthor= "Orleans, Henri Philippe Marie, prince d'";
 br.bookPub= "London: Methuen, 1898";
 br.bookKeyword= "Natural history--Indochina<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indochina--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:054';
+br.bookUrl  = '/catalog/sea:054';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

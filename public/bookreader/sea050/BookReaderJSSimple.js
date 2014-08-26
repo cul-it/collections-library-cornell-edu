@@ -1635,7 +1635,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:050_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:050_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1694,7 +1694,7 @@ br.bookTitle= "The French in Indo-China : with a narrative of Garnier's explorat
 br.bookAuthor= "no recorded author";
 br.bookPub= "London ; New York: Nelson, 1884";
 br.bookKeyword= "Garnier, Francis,--1839-1873.--Voyage d'exploration en Indo-Chine<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indochina--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:050';
+br.bookUrl  = '/catalog/sea:050';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

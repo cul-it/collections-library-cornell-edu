@@ -2871,7 +2871,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:219_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:219_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2930,7 +2930,7 @@ br.bookTitle= "In savage isles and settled lands : Malaysia, Australasia and Pol
 br.bookAuthor= "Baden-Powell, Baden Fletcher Smyth";
 br.bookPub= "London: R. Bentley and Son, 1892";
 br.bookKeyword= "Voyages and travels<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oceania--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:219';
+br.bookUrl  = '/catalog/sea:219';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

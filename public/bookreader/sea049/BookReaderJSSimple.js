@@ -2463,7 +2463,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:049_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:049_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2522,7 +2522,7 @@ br.bookTitle= "Travels in Indo-China and the Chinese empire";
 br.bookAuthor= "Carne, Louis-Joseph-Marie de";
 br.bookPub= "London: Chapman and Hall, 1872";
 br.bookKeyword= "Indochina--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:049';
+br.bookUrl  = '/catalog/sea:049';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

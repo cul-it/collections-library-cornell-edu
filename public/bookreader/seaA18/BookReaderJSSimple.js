@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A18_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A18_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -182,7 +182,7 @@ br.bookTitle= "Krakatau et le detroit de la Sonde";
 br.bookAuthor= "Cotteau, Edmond";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1886";
 br.bookKeyword= "Indonesia--Lampung--Rakata--Krakatau<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indonesia--Sunda Strait";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A18';
+br.bookUrl  = '/catalog/sea:A18';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

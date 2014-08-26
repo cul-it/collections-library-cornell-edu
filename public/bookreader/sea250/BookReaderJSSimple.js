@@ -1167,7 +1167,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:250_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:250_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1226,7 +1226,7 @@ br.bookTitle= "Handbook to Singapore with map";
 br.bookAuthor= "Reith, G. M. (George Murray)";
 br.bookPub= "Singapore: Fraser and Neave, Ltd, 1907";
 br.bookKeyword= "Singapore--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:250';
+br.bookUrl  = '/catalog/sea:250';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

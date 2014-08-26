@@ -1851,7 +1851,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:227b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:227b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1910,7 +1910,7 @@ br.bookTitle= "An historical view of the Philippine Islands: exhibiting their di
 br.bookAuthor= "Martinez de Zuniga, Joaquin";
 br.bookPub= "London: Printed for J. Asperne [etc.] by T. Davison, 1814";
 br.bookKeyword= "Philippines--History--1521-1812";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:227b';
+br.bookUrl  = '/catalog/sea:227b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

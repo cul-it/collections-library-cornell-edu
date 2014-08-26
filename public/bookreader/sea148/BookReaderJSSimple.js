@@ -2847,7 +2847,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:148_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:148_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2906,7 +2906,7 @@ br.bookTitle= "Sketches, civil and military, of the island of Java and its immed
 br.bookAuthor= "Stockdale, John Joseph";
 br.bookPub= "London: no recorded publisher, 1812";
 br.bookKeyword= "Java (Indonesia)--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jakarta (Indonesia)--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upas";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:148';
+br.bookUrl  = '/catalog/sea:148';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

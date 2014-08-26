@@ -3411,7 +3411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:211_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:211_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3470,7 +3470,7 @@ br.bookTitle= "The Philippine Islands and their people; a record of personal obs
 br.bookAuthor= "Worcester, Dean C. (Dean Conant)";
 br.bookPub= "New York, London: The Macmillan company; Macmillan and co., ltd, 1899";
 br.bookKeyword= "Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:211';
+br.bookUrl  = '/catalog/sea:211';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

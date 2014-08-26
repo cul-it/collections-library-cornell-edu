@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:A26_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:A26_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -278,7 +278,7 @@ br.bookTitle= "Saigon";
 br.bookAuthor= "Barrelon, Pierre";
 br.bookPub= "Ithaca, NY: Cornell University Library, 1893";
 br.bookKeyword= "Saigon<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam--Than Pho Ho Chi Minh--Ho Chi Minh City";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:A26';
+br.bookUrl  = '/catalog/sea:A26';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

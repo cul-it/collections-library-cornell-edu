@@ -1863,7 +1863,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:363_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:363_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1922,7 +1922,7 @@ br.bookTitle= "Twentieth century impressions of Siam : its history, people, comm
 br.bookAuthor= "Wright, Arnold";
 br.bookPub= "London: Lloyd's Greater Britain Pub. Co., 1908";
 br.bookKeyword= "Thailand<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Straits Settlements<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malaya";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:363';
+br.bookUrl  = '/catalog/sea:363';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

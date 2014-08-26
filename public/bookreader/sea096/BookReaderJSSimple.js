@@ -1203,7 +1203,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:096_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:096_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1262,7 +1262,7 @@ br.bookTitle= "Short guide of Sumatra, with a more complete description of the P
 br.bookAuthor= "Officieel Toeristenbureau voor Nederlandsch-Indie";
 br.bookPub= "Batavia: Printed by G. Kolff and co, 1921";
 br.bookKeyword= "Sumatra (Indonesia)--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:096';
+br.bookUrl  = '/catalog/sea:096';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -2379,7 +2379,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:260_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:260_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2438,7 +2438,7 @@ br.bookTitle= "My journal in Malayan waters, or, The blockade of Quedah";
 br.bookAuthor= "Osborn, Sherard";
 br.bookPub= "London ; New York: Routledge, Warne and Routledge, 1861";
 br.bookKeyword= "Kedah--History<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kedah--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:260';
+br.bookUrl  = '/catalog/sea:260';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

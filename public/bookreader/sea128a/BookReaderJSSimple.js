@@ -2895,7 +2895,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:128a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:128a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2954,7 +2954,7 @@ br.bookTitle= "Narrative of a voyage round the world, during the years 1835, 36,
 br.bookAuthor= "Ruschenberger, W. S. W. (William Samuel Waithman)";
 br.bookPub= "London: R. Bentley, 1838";
 br.bookKeyword= "Voyages around the world<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oman--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:128a';
+br.bookUrl  = '/catalog/sea:128a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

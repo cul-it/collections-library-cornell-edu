@@ -1251,7 +1251,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:066_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:066_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1310,7 +1310,7 @@ br.bookTitle= "Eighteen hundred miles on a Burmese tat : through Burmah, Siam, a
 br.bookAuthor= "Younghusband, G. J. (George John)";
 br.bookPub= "London: Allen and Co, 1888";
 br.bookKeyword= "Southeast Asia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:066';
+br.bookUrl  = '/catalog/sea:066';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

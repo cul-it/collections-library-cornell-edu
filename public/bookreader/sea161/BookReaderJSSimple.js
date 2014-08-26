@@ -1605,7 +1605,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:161_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:161_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1664,7 +1664,7 @@ br.bookTitle= "Acheen, and the ports on the north and east coasts of Sumatra : w
 br.bookAuthor= "Anderson, John";
 br.bookPub= "London: W.H. Allen and Co, 1840";
 br.bookKeyword= "Achim (Sumatra)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sumatra (Indonesia)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Great Britain--Commerce--Netherlands<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Netherlands--Commerce--Great Britain";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:161';
+br.bookUrl  = '/catalog/sea:161';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

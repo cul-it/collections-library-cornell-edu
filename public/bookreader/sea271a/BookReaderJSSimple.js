@@ -2397,7 +2397,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:271a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:271a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2456,7 +2456,7 @@ br.bookTitle= "The expedition to Borneo of H.M.S. Dido for the suppression of pi
 br.bookAuthor= "Keppel, Henry, Sir";
 br.bookPub= "New York: Harper and Brothers, 1846";
 br.bookKeyword= "Borneo--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:271a';
+br.bookUrl  = '/catalog/sea:271a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -5535,7 +5535,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:357b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:357b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -5594,7 +5594,7 @@ br.bookTitle= "Pagan races of the Malay Peninsula, vol.2";
 br.bookAuthor= "Skeat, Walter William";
 br.bookPub= "London, New York: Macmillan, 1906";
 br.bookKeyword= "Ethnology--Malay Peninsula<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Peninsula--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Peninsula--Religion<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay language--Dialects<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Folklore, Malayan";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:357b';
+br.bookUrl  = '/catalog/sea:357b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

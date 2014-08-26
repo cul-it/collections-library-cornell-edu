@@ -1935,7 +1935,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:222_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:222_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1994,7 +1994,7 @@ br.bookTitle= "Guide for the American in the Philippines. A description of each 
 br.bookAuthor= "Verea, F. G.";
 br.bookPub= "Manila: Chofre y comp, 1899";
 br.bookKeyword= "Philippines<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philippines--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:222';
+br.bookUrl  = '/catalog/sea:222';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

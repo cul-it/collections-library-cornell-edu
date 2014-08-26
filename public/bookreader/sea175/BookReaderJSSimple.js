@@ -1503,7 +1503,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:175_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:175_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1562,7 +1562,7 @@ br.bookTitle= "A voyage to and from the island of Borneo, in the East Indies : w
 br.bookAuthor= "Beeckman, Daniel";
 br.bookPub= "London: Printed for T. Warner at the Black Boy, and J. Batley at th Dove, in Pater-noster-Row, 1718";
 br.bookKeyword= "Borneo--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voyages and travels";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:175';
+br.bookUrl  = '/catalog/sea:175';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

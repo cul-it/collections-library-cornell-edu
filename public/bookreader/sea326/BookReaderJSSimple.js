@@ -555,7 +555,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:326_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:326_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -614,7 +614,7 @@ br.bookTitle= "Journal of the Salween surveying expedition";
 br.bookAuthor= "Sconce, Gideon Colquhoun";
 br.bookPub= "s.1: s.n, 1864";
 br.bookKeyword= "Salween River--Discovery and exploration<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:326';
+br.bookUrl  = '/catalog/sea:326';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

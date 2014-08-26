@@ -1119,7 +1119,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:048_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:048_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1178,7 +1178,7 @@ br.bookTitle= "Cambodge et Siam : voyage et sejour aux ruines des monuments kmer
 br.bookAuthor= "Filoz, Auguste Achille Hippolyte";
 br.bookPub= "Paris: Gedalge, 1896";
 br.bookKeyword= "Khmers--Antiquities<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cambodia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:048';
+br.bookUrl  = '/catalog/sea:048';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

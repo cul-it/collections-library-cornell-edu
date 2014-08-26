@@ -1779,7 +1779,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:123_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:123_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1838,7 +1838,7 @@ br.bookTitle= "Jottings of an invalid in search of health, comprising a run thro
 br.bookAuthor= "Walker, William, of Bombay";
 br.bookPub= "Bombay: Times of India Office, 1865";
 br.bookKeyword= "India--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Singapore--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java (Indonesia)--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:123';
+br.bookUrl  = '/catalog/sea:123';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

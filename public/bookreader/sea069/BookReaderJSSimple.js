@@ -3795,7 +3795,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:069_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:069_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3854,7 +3854,7 @@ br.bookTitle= "The Straits of Malacca, Indo-China, and China, or, Ten years' tra
 br.bookAuthor= "Thomson, John";
 br.bookPub= "New York: Harper and Bros, 1875";
 br.bookKeyword= "China--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indochina--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malacca, Strait of";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:069';
+br.bookUrl  = '/catalog/sea:069';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

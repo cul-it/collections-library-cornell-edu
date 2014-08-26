@@ -3375,7 +3375,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:087_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:087_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3434,7 +3434,7 @@ br.bookTitle= "Siam and Laos : as seen by our American missionaries";
 br.bookAuthor= "Backus, Mary";
 br.bookPub= "Philadelphia: Presbyterian board of publication, 1884";
 br.bookKeyword= "Missions--Thailand<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Missions--Laos<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laos--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:087';
+br.bookUrl  = '/catalog/sea:087';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -615,7 +615,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:056_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:056_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -674,7 +674,7 @@ br.bookTitle= "The Chinaman abroad, or, A desultory account of the Malayan archi
 br.bookAuthor= "Wang, Ta-hai";
 br.bookPub= "Shanghae: Printed at the Mission Press, 1849";
 br.bookKeyword= "Southeast Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:056';
+br.bookUrl  = '/catalog/sea:056';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

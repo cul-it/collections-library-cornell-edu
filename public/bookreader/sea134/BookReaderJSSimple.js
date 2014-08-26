@@ -183,7 +183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:134_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:134_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -242,7 +242,7 @@ br.bookTitle= "Siam 250 years ago. A description of the kingdom of Siam, written
 br.bookAuthor= "Schouten, Joost";
 br.bookPub= "Bangkok: Bang'olem Press, 1889";
 br.bookKeyword= "Thailand--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--History--Sources";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:134';
+br.bookUrl  = '/catalog/sea:134';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

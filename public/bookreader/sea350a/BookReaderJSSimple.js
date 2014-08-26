@@ -2043,7 +2043,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:350a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:350a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2102,7 +2102,7 @@ br.bookTitle= "Four years in Burmah, v.1";
 br.bookAuthor= "Marshall, W. H.";
 br.bookPub= "London: C.J. Skeet, 1860";
 br.bookKeyword= "Burma--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Social life and customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:350a';
+br.bookUrl  = '/catalog/sea:350a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

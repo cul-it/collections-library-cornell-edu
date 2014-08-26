@@ -2559,7 +2559,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:038_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:038_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2618,7 +2618,7 @@ br.bookTitle= "France and Tongking : a narrative of the campaign of 1884 and the
 br.bookAuthor= "Scott, James George, Sir";
 br.bookPub= "London: T.F. Unwin, 1885";
 br.bookKeyword= "Tonkin--History<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chinese-French War, 1884-1885<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France--Colonies--Indochina<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam--History";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:038';
+br.bookUrl  = '/catalog/sea:038';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

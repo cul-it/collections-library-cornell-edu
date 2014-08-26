@@ -2415,7 +2415,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:320a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:320a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2474,7 +2474,7 @@ br.bookTitle= "Burma past and present ; with personal reminiscences of the count
 br.bookAuthor= "Fytche, Albert";
 br.bookPub= "London: C.K. Paul and Co, 1878";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:320a';
+br.bookUrl  = '/catalog/sea:320a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

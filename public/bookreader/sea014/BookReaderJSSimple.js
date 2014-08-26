@@ -1707,7 +1707,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:014_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:014_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1766,7 +1766,7 @@ br.bookTitle= "The Kachins, their customs and traditions";
 br.bookAuthor= "Hanson, O. (Ola), 1864-1929";
 br.bookPub= "Rangoon: American Baptist Mission Press, 1913";
 br.bookKeyword= "Kachin (Asian people)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:014';
+br.bookUrl  = '/catalog/sea:014';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

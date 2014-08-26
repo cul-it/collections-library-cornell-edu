@@ -1995,7 +1995,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:317_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:317_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2054,7 +2054,7 @@ br.bookTitle= "Insulinde : experiences of a naturalist's wife in the eastern arc
 br.bookAuthor= "Forbes, Anna";
 br.bookPub= "London ; Edinburgh: Wm. Blackwood and Sons, 1887";
 br.bookKeyword= "Malay Archipelago--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:317';
+br.bookUrl  = '/catalog/sea:317';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

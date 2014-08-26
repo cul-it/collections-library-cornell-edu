@@ -1479,7 +1479,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:188_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:188_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1538,7 +1538,7 @@ br.bookTitle= "Through Luzon on highways and byways";
 br.bookAuthor= "Wilcox, W. B. (Willis Bliss)";
 br.bookPub= "Philadelphia: Franklin Book Company, 1901";
 br.bookKeyword= "Philippines--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luzon (Philippines)--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:188';
+br.bookUrl  = '/catalog/sea:188';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

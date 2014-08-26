@@ -1851,7 +1851,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:249_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:249_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1910,7 +1910,7 @@ br.bookTitle= "From the Himalayas to the equator; letters, sketches. and address
 br.bookAuthor= "Foss, Cyrus D. (Cyrus David)";
 br.bookPub= "New York and Cincinnati: Eaton and Mains, 1899";
 br.bookKeyword= "Missions--India<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:249';
+br.bookUrl  = '/catalog/sea:249';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

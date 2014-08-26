@@ -3291,7 +3291,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:345_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:345_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3350,7 +3350,7 @@ br.bookTitle= "Wild sports of Burma and Assam";
 br.bookAuthor= "Pollok, Fitz William Thomas";
 br.bookPub= "London: Hurst and Blackett, Ltd, 1900";
 br.bookKeyword= "Hunting--Burma<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hunting--India--Assam<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assam (India)--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:345';
+br.bookUrl  = '/catalog/sea:345';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

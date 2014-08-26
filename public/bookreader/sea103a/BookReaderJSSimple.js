@@ -3171,7 +3171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:103a_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:103a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3230,7 +3230,7 @@ br.bookTitle= "The voyage of Francois Pyrard of Laval to the East Indies, the Ma
 br.bookAuthor= "Payard, Francois";
 br.bookPub= "London: Printed for the Hakluyt Society, 1887";
 br.bookKeyword= "Voyages and travels<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maldives<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Indies--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:103a';
+br.bookUrl  = '/catalog/sea:103a';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -2583,7 +2583,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:206_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:206_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2642,7 +2642,7 @@ br.bookTitle= "Rambles in eastern Asia, including China and Manilla : during sev
 br.bookAuthor= "Ball, Benjamin Lincoln";
 br.bookPub= "Boston: J. French and Co, 1855";
 br.bookKeyword= "China--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manila (Philippines)--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:206';
+br.bookUrl  = '/catalog/sea:206';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

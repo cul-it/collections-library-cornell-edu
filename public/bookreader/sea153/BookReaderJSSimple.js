@@ -3243,7 +3243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:153_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:153_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3302,7 +3302,7 @@ br.bookTitle= "The prison of Weltevreden : and a glance at the East Indian Archi
 br.bookAuthor= "Gibson, Walter Murray";
 br.bookPub= "New York: J. C. Riker, 1855";
 br.bookKeyword= "Prisons--Indonesia--Jakarta<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indonesia--Social life and customs<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indonesia--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Archipelago--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:153';
+br.bookUrl  = '/catalog/sea:153';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -663,7 +663,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:244_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:244_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -722,7 +722,7 @@ br.bookTitle= "Ten days in the jungle";
 br.bookAuthor= "L., J. E";
 br.bookPub= "Boston: Cupples, Upham, 1885";
 br.bookKeyword= "Malaya--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:244';
+br.bookUrl  = '/catalog/sea:244';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

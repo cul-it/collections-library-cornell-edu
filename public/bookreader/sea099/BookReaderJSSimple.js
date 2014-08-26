@@ -915,7 +915,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:099_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:099_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -974,7 +974,7 @@ br.bookTitle= "Over five seas and oceans, from New York to Bangkok, Siam, and re
 br.bookAuthor= "Miller, Thomas";
 br.bookPub= "New York: A. Metz, 1893";
 br.bookKeyword= "Voyages and travels<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:099';
+br.bookUrl  = '/catalog/sea:099';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

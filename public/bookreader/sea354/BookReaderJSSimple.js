@@ -2271,7 +2271,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:354_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:354_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2330,7 +2330,7 @@ br.bookTitle= "Fifty years' reminiscences of India : a retrospect of travel, adv
 br.bookAuthor= "Pollok, Fitz William Thomas";
 br.bookPub= "London: Edward Arnold, 1896";
 br.bookKeyword= "India--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hunting--India<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hunting--Burma";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:354';
+br.bookUrl  = '/catalog/sea:354';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

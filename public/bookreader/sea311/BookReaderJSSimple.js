@@ -735,7 +735,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:311_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:311_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -794,7 +794,7 @@ br.bookTitle= "A sketch of the services of the Madras European Regiment during t
 br.bookAuthor= "[Butler, John] Major";
 br.bookPub= "London: Smith, Elder, 1839";
 br.bookKeyword= "East India Company.--Army<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Great Britain.--Army--Colonial forces<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burmese War, 1824-1826";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:311';
+br.bookUrl  = '/catalog/sea:311';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

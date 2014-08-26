@@ -1,13 +1,21 @@
 #!/bin/sh
 
 fix_dns(){
-              perl -p -e 's/hydradev-store/hydrastg/g' $1 > temp
+              perl -p -e 's/http:\/\/hydrastg.library.cornell.edu//g' $1 > temp
               mv temp $1
-              perl -p -e 's/hydradev/hydraprod/g' $1 > temp
+              perl -p -e 's/http:\/\/hydraprod.library.cornell.edu//g' $1 > temp
               mv temp $1
               rm $1.bak
               echo "fixing $1"
               }
+fix_dns sea002/BookReaderJSSimple.js
+fix_dns sea003/BookReaderJSSimple.js
+fix_dns sea004/BookReaderJSSimple.js
+fix_dns sea005/BookReaderJSSimple.js
+fix_dns sea006/BookReaderJSSimple.js
+fix_dns sea007/BookReaderJSSimple.js
+fix_dns sea008/BookReaderJSSimple.js
+fix_dns sea010/BookReaderJSSimple.js
 fix_dns sea011b/BookReaderJSSimple.js
 fix_dns sea011c/BookReaderJSSimple.js
 fix_dns sea011d/BookReaderJSSimple.js

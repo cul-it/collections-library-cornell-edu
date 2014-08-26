@@ -849,7 +849,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:259_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:259_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -908,7 +908,7 @@ br.bookTitle= "The manners and customs of the Chinese of the Straits Settlements
 br.bookAuthor= "Vaughan, Jonas Daniel, 1825-1891";
 br.bookPub= "Singapore: printed at the Mission Press, 1879";
 br.bookKeyword= "Chinese--Straits Settlements--Social life and customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:259';
+br.bookUrl  = '/catalog/sea:259';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

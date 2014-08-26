@@ -1719,7 +1719,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:356_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:356_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1778,7 +1778,7 @@ br.bookTitle= "Myamma: a retrospect of life and travel in Lower Burmah";
 br.bookAuthor= "Paske, Charles Thomas";
 br.bookPub= "London: W. H. Allen and Co., Limited, 1893";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:356';
+br.bookUrl  = '/catalog/sea:356';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

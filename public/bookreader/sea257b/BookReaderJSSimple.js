@@ -3279,7 +3279,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:257b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:257b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -3338,7 +3338,7 @@ br.bookTitle= "Political and statistical account of the British settlements in t
 br.bookAuthor= "Newbold, Thomas John";
 br.bookPub= "London: J. Murray, 1839";
 br.bookKeyword= "Malays (Asian people)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Great Britain--Colonies--Straits Settlements<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Federated Malay States";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:257b';
+br.bookUrl  = '/catalog/sea:257b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

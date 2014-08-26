@@ -2343,7 +2343,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:030_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:030_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2402,7 +2402,7 @@ br.bookTitle= "On and off duty in Annam";
 br.bookAuthor= "Hoenstadt, Gabrielle von, Countess";
 br.bookPub= "London: W. Heinemann, 1910";
 br.bookKeyword= "Vietnam--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam--Social life and customs";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:030';
+br.bookUrl  = '/catalog/sea:030';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

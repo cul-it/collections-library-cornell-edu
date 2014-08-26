@@ -1971,7 +1971,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:256_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:256_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2030,7 +2030,7 @@ br.bookTitle= "Yesterdays in the Philippines";
 br.bookAuthor= "Stevens, Joseph Earle";
 br.bookPub= "New York: C. Scribner's sons, 1899";
 br.bookKeyword= "Philippines--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:256';
+br.bookUrl  = '/catalog/sea:256';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

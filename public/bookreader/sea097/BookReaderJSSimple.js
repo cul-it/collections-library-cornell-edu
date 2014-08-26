@@ -735,7 +735,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:097_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:097_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -794,7 +794,7 @@ br.bookTitle= "A trip through the Dutch East Indies";
 br.bookAuthor= "Barnouw, A. J";
 br.bookPub= "Gouda: Doch and Knuttel, 1920";
 br.bookKeyword= "Indonesia--Description and trave";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:097';
+br.bookUrl  = '/catalog/sea:097';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

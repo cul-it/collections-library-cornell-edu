@@ -1539,7 +1539,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:057_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:057_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1598,7 +1598,7 @@ br.bookTitle= "The French in Tonkin and South China";
 br.bookAuthor= "Cunningham, Alfred";
 br.bookPub= "Hongkong : London: Printed at the office of the Hongkong daily press ; Low, Marston, 1902";
 br.bookKeyword= "French--China<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France--Colonies--Vietnam, Northern<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tonkin--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guangdong Sheng (China)--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:057';
+br.bookUrl  = '/catalog/sea:057';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

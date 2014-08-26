@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:047_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:047_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -374,7 +374,7 @@ br.bookTitle= "A travers le Laos : guide a l'usage des voyageurs";
 br.bookAuthor= "Baudenne, A";
 br.bookPub= "Saigon: Inspecteur-Conseil des services agricoles et commerciaux, 1911";
 br.bookKeyword= "Laos--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:047';
+br.bookUrl  = '/catalog/sea:047';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -2451,7 +2451,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:201_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:201_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2510,7 +2510,7 @@ br.bookTitle= "The gardens of the sun: or A naturalist's journal on the mountain
 br.bookAuthor= "Burbidge, F. W. (Frederick William)";
 br.bookPub= "London: J. Murray, 1880";
 br.bookKeyword= "Botany--Borneo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Botany--Philippines--Sulu Archipelago<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Birds--Borneo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Birds--Philippines--Sulu Archipelago<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Borneo--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sulu Archipelago (Philippines)";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:201';
+br.bookUrl  = '/catalog/sea:201';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

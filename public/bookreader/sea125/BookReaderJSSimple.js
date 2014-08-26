@@ -1371,7 +1371,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:125_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:125_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1430,7 +1430,7 @@ br.bookTitle= "Siam : its government, manners, customs, and c.";
 br.bookAuthor= "McDonald, N. A.";
 br.bookPub= "Philadelphia: A. Martien, 1871";
 br.bookKeyword= "Thailand";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:125';
+br.bookUrl  = '/catalog/sea:125';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

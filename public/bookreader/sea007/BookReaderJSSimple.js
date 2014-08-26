@@ -2139,7 +2139,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:007_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:007_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2198,7 +2198,7 @@ br.bookTitle= "Isles of the East : an illustrated guide : Australia, New Guinea,
 br.bookAuthor= "Koninklijke Paketvaart Maatschappij";
 br.bookPub= "Batavia, Java: Distributed gratis by the Royal Packet Steam Navigation Co. (K.P.M.), 1912";
 br.bookKeyword= "Indonesia--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:007';
+br.bookUrl  = '/catalog/sea:007';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

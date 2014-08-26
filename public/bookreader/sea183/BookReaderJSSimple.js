@@ -1599,7 +1599,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:183_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:183_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1658,7 +1658,7 @@ br.bookTitle= "An army woman in the Philippines; extracts from letters of an arm
 br.bookAuthor= "Shunk, Caroline Saxe (Merrill)";
 br.bookPub= "Kansas City, Mo: Franklin Hudson Publishing Co, 1914";
 br.bookKeyword= "Philippines--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Asia--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:183';
+br.bookUrl  = '/catalog/sea:183';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

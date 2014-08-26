@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:118_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:118_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -422,7 +422,7 @@ br.bookTitle= "Guide to Tosari and the Tenggermountains";
 br.bookAuthor= "Mook, Hubertus J. van (Hubertus Johannes)";
 br.bookPub= "Koog on the Zaan: P. Out, 1916";
 br.bookKeyword= "Tosari (Indonesia)--Guidebooks<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tengger Mountains (Indonesia)--Guidebooks";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:118';
+br.bookUrl  = '/catalog/sea:118';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

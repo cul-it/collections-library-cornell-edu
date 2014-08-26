@@ -651,7 +651,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:139_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:139_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -710,7 +710,7 @@ br.bookTitle= "Rough pencillings of a rough trip to Rangoon in 1846";
 br.bookAuthor= "Grant, Colesworthey";
 br.bookPub= "Calcutta: Thacker, Spink and Co, 1853";
 br.bookKeyword= "Burma--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rangoon (Burma)--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:139';
+br.bookUrl  = '/catalog/sea:139';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

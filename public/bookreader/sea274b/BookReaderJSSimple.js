@@ -2235,7 +2235,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:274b_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:274b_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2294,7 +2294,7 @@ br.bookTitle= "Ten years in Sarawak, vol.2";
 br.bookAuthor= "Brooke, Charles Anthoni Johnson, Rajah of Sarawak";
 br.bookPub= "London: Tinsley Bros, 1866";
 br.bookKeyword= "Sarawak";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:274b';
+br.bookUrl  = '/catalog/sea:274b';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

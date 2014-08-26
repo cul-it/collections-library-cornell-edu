@@ -423,7 +423,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:111_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:111_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -482,7 +482,7 @@ br.bookTitle= "Notes of a journey across the Isthmus of Kra, made with the Frenc
 br.bookAuthor= "Loftus, Alfred John";
 br.bookPub= "Singapore: Singapore and Straits Printing Office, 1883";
 br.bookKeyword= "Kra, Isthmus of (Thailand)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malay Peninsula";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:111';
+br.bookUrl  = '/catalog/sea:111';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

@@ -1239,7 +1239,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:270_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:270_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1298,7 +1298,7 @@ br.bookTitle= "Handbook of British North Borneo";
 br.bookAuthor= "British North Borneo Chartered Company";
 br.bookPub= "London: W. Clowes, 1890";
 br.bookKeyword= "Sabah";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:270';
+br.bookUrl  = '/catalog/sea:270';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

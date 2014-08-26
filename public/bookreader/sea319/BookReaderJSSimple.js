@@ -1995,7 +1995,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:319_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:319_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2054,7 +2054,7 @@ br.bookTitle= "Our trip to Burmah : with notes on that country";
 br.bookAuthor= "Gordon, Charles Alexander, Sir";
 br.bookPub= "London: Bailliere, Tindall, and Cox, 1877";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:319';
+br.bookUrl  = '/catalog/sea:319';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

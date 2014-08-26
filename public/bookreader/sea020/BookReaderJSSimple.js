@@ -2031,7 +2031,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:020_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:020_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2090,7 +2090,7 @@ br.bookTitle= "Quaint corners of ancient empires : southern India, Burma, and Ma
 br.bookAuthor= "Shoemaker, Michael Myers";
 br.bookPub= "New York: Putnam, 1899";
 br.bookKeyword= "India--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burma--Description and travel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manila (Philippines)--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:020';
+br.bookUrl  = '/catalog/sea:020';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

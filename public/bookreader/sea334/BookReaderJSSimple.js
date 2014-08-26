@@ -189,7 +189,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:334_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:334_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -248,7 +248,7 @@ br.bookTitle= "Photographs of British Burma and the Straits, 1876-7-8-9";
 br.bookAuthor= "no recorded author";
 br.bookPub= "S.1: no recorded publisher, 1926";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:334';
+br.bookUrl  = '/catalog/sea:334';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';

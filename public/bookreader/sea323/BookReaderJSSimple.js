@@ -1887,7 +1887,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = 'http://hydrastg.library.cornell.edu/fedora/get/seapage:323_' + imgStr + '/digitalImage';
+    var url = '/fedora/get/seapage:323_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1946,7 +1946,7 @@ br.bookTitle= "Six months in British Burmah; or, India beyond the Ganges in 1857
 br.bookAuthor= "Winter, Christopher Tatchell";
 br.bookPub= "London: R. Bentley, 1858";
 br.bookKeyword= "Burma--Description and travel";
-br.bookUrl  = 'http://hydraprod.library.cornell.edu/catalog/sea:323';
+br.bookUrl  = '/catalog/sea:323';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '../BookReader/images/';
