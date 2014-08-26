@@ -44,10 +44,10 @@ module ApplicationHelper
     output = []
     presortArray = []
     seapage = pid.split(':')[1]
-    page_reader_url = "http://hydradev.library.cornell.edu/bookreader/"
+    page_reader_url = "/bookreader/"
 #    @toc = JSON.parse(HTTPClient.get_content("http://rossini.cul.columbia.edu/voyager_backend/holdings/retrieve/#{params[:id]}"))[params[:id]]
      clnt = HTTPClient.new
-     toc = clnt.get_content("http://hydradev-store.library.cornell.edu/solr/development/select?q=id%3Aseapage*"+seapage+"*+AND+head_tesim%3A*&rows=1000&sort=id+asc&fl=head_tesim%2C+id%2C+node_tesim%2C+image_seq_tesim&wt=ruby") # do |chunk|
+     toc = clnt.get_content("http://hydrastg.library.cornell.edu/solr/development_core/select?q=id%3Aseapage*"+seapage+"*+AND+head_tesim%3A*&rows=1000&sort=id+asc&fl=head_tesim%2C+id%2C+node_tesim%2C+image_seq_tesim&wt=ruby") # do |chunk|
        tocArray = eval(toc)
        i = 0
        tocArray['response']['docs'].each do |doctary|
