@@ -20,6 +20,12 @@ footer {
 	color: #ccc;
 	a, a:hover { color: white; }
 }
+.sidebar {
+	@include make-md-column(3);
+}
+.main-text {
+	@include make-md-column(9);
+}
 
 // Links
 // ---------------------------------//
