@@ -92,10 +92,16 @@
 // Map
 // ----------------------//
 .map {
-	margin-bottom: 20px;
-	ol {
-		li { font-size: 14px; }
+	margin-bottom: 2em;
+	li {
+		font-size: 14px;
 	}
+}
+.map-image {
+	@include make-md-column(4);
+}
+.map-list {
+	@include make-md-column(8);
 }
 
 // Image credits
