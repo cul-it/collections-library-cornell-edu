@@ -7,7 +7,7 @@ module DisplayHelper
   def render_selected_facet_value(facet_solr_field, item)
     #Updated class for Bootstrap Blacklight 
     content_tag(:span, render_facet_value(facet_solr_field, item, :suppress_link => true), :class => "selected") +
-      link_to(content_tag(:i, '', :class => "fa fa-times") + content_tag(:span, '[remove]', :class => 'hide-text'), remove_facet_params(facet_solr_field, item, params), :class=>"remove")
+      link_to(content_tag(:i, '', :class => "fa fa-times") + content_tag(:span, '[remove]', :class => 'sr-only'), remove_facet_params(facet_solr_field, item, params), :class=>"remove")
   end
 
 end
