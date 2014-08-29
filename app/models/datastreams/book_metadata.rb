@@ -38,7 +38,7 @@ class BookMetadata < ActiveFedora::OmDatastream
     t.pubstmt_idno(index_as: :stored_searchable)
     t.bibl_titletype(index_as: :stored_searchable)
     t.title(index_as: :stored_searchable)
-    t.author(index_as: :stored_searchable)
+    t.author(index_as: :stored_searchable, type: :string)
     t.publisher(index_as: :stored_searchable)
     t.pubplace(index_as: :stored_searchable)
     t.pubdate(index_as: :stored_searchable)
