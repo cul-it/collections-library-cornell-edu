@@ -1,9 +1,9 @@
 class Book < ActiveFedora::Base
   
-  has_metadata 'descMetadata', type: BookMetadata
+  has_metadata 'descMetadata', type: BookMetadata, :versionable=>false
   
   
-  has_file_datastream :name=>'digitalImage', :type=>ActiveFedora::Datastream, :mimeType=>"image/jpeg", :controlGroup=>'M'
+  has_file_datastream :name=>'digitalImage', :type=>ActiveFedora::Datastream, :mimeType=>"image/jpeg", :controlGroup=>'M', :versionable=>false
   
   
   belongs_to :derivation, :property=>:has_derivation
