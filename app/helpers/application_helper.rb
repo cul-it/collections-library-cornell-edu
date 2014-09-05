@@ -47,7 +47,7 @@ module ApplicationHelper
 #    @toc = JSON.parse(HTTPClient.get_content("http://rossini.cul.columbia.edu/voyager_backend/holdings/retrieve/#{params[:id]}"))[params[:id]]
      clnt = HTTPClient.new
      solr = Blacklight.solr_config[:url]
-     toc = clnt.get_content("#{solr}/select?q=id%3Aseapage*"+seapage+"*+AND+head_tesim%3A*&rows=1000&sort=id+asc&fl=head_tesim%2C+id%2C+node_tesim%2C+image_seq_tesim&wt=ruby") # do |chunk|
+     toc = clnt.get_content("http://hydrastg.library.cornell.edu/solr/development_core/select?q=id%3Aseapage*"+seapage+"*+AND+head_tesim%3A*&rows=1000&sort=id+asc&fl=head_tesim%2C+id%2C+node_tesim%2C+image_seq_tesim&wt=ruby") # do |chunk|
        tocArray = eval(toc)
        i = 0
        tocArray['response']['docs'].each do |doctary|
