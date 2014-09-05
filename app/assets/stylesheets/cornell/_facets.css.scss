@@ -12,6 +12,10 @@
 	li {
 		font-size: 14px;
 		padding-bottom:0.3em;
+
+		.more_facets_link {
+			float:right;
+		}
 	}
 	span.selected { color: $brown; }
 	.btn-navbar { 
@@ -21,6 +25,14 @@
 	}
 	h5 {
 		a:hover { background: inherit; }
+	}
+
+	.panel-heading {
+		background-color:#fff;
+	}
+
+	.panel-body {
+		border-top:none;
 	}
 }
 
@@ -32,22 +44,11 @@
 }
 
 .facet-values {
-	li{
+	
 		.remove {
 		color: #666;
 margin-left: 0px;
 padding: 3px 5px;
-	}
-		.facet-count {
-			text-align: right;
-float: right;
-		}
-
-		.facet-label{
-			display:inline;
-			padding:0;
-			text-indent:0;
-		}
 }
 
 }
