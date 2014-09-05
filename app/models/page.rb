@@ -1,12 +1,12 @@
 class Page < ActiveFedora::Base
   
-  has_metadata 'descMetadata', type: PageMetadata
+  has_metadata 'descMetadata', type: PageMetadata, :versionable=>false
  
   belongs_to :book, :property=>:is_page_of
 #  has_many :inspirations, :property=>:has_derivation  
 
-  has_file_datastream :name=>'digitalImage', :type=>ActiveFedora::Datastream, :mimeType=>'image/jpeg', :controlGroup=>'M'
-  has_file_datastream :name=>'thumbnailImage', :type=>ActiveFedora::Datastream, :mimeType=>'image/jpeg', :controlGroup=>'M'
+  has_file_datastream :name=>'digitalImage', :type=>ActiveFedora::Datastream, :mimeType=>'image/jpeg', :controlGroup=>'M', :versionable=>false
+  has_file_datastream :name=>'thumbnailImage', :type=>ActiveFedora::Datastream, :mimeType=>'image/jpeg', :controlGroup=>'M', :versionable=>false
 
   has_attributes :head, datastream: 'descMetadata', multiple: false
   has_attributes :book_id, datastream: 'descMetadata', multiple: false
