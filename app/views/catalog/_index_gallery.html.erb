@@ -1,3 +1,6 @@
+<% page_book_title = render_index_field_value :document => document, :field => 'book_title_tesim' %>
+<% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
+<% display_book_title = page_book_title + ', pg. ' + page %>
 <div class="document col-xs-6 col-md-4">
   <div class="thumbnail">
   	<% if document[:active_fedora_model_ssi] == 'Book'%>
@@ -7,7 +10,13 @@
       <%= render_thumbnail_tag document %>
     <% end %>
     <div class="caption">
-      <%= render_document_partials document, blacklight_config.view_config(:gallery).partials, :document_counter => document_counter %>
+    <% if document[:active_fedora_model_ssi] == 'Page' %>
+     <% if page_book_title.present? %>
+  <%= link_to_document document, :label=>display_book_title, :counter => (document_counter + 1 + @response.params[:start].to_i) %>
+  <% else %>
+    <%= link_to_document document, :label=>document_show_link_field(document), :counter => (document_counter + 1 + @response.params[:start].to_i) %>
+    <% end %>
+      <% end %>
     </div>
   </div>
 </div>
