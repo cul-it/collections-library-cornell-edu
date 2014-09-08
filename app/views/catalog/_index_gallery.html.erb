@@ -1,6 +1,11 @@
 <div class="document col-xs-6 col-md-4">
   <div class="thumbnail">
-    <%= render_thumbnail_tag document %>
+  	<% if document[:active_fedora_model_ssi] == 'Book'%>
+  	  <% @id = document[:id].split(':') %>
+  	  <img src="http://hydrastg.library.cornell.edu/fedora/get/seapage:<%= @id[1] %>_1/thumbnailImage">
+  	<% else%>
+      <%= render_thumbnail_tag document %>
+    <% end %>
     <div class="caption">
       <%= render_document_partials document, blacklight_config.view_config(:gallery).partials, :document_counter => document_counter %>
     </div>
