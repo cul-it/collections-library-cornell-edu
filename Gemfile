@@ -34,6 +34,9 @@ gem 'jbuilder', '~> 1.2'
 # Font awesome
 gem "font-awesome-rails"
 
+gem 'comfortable_mexican_sofa', '~> 1.12.0'
+
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -54,7 +57,7 @@ end
 
 gem "bootstrap-sass"
 
-gem 'blacklight-gallery'
+gem 'blacklight-gallery', '~>0.0.2'
 
 
 group :development, :test do
