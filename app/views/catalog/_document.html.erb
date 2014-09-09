@@ -7,7 +7,7 @@
                   <% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
                   <% page_turner_array =  page_turner.split('_') %>
                    <% sea_id = page_turner_array[0][8..11] %>
-             
+             <%= sea_id %>
                   <a href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/seapage:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail"></a>
             <% else %>
                   <% sea_id=page_turner[3..7] %>
