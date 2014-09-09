@@ -3,7 +3,8 @@
 <% if page_turner.blank? %>
   <% page_turner = render_index_field_value :document => document, :field => 'id'%>
 	<% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
-  <% sea_id = page_turner[8..10] %>
+  <% page_turner_array =  page_turner.split('_') %>
+  <% sea_id = page_turner_array[0][8..11] %>
   <div class="data-block">
     <div class="blacklight-author_display"><%= render_index_field_value :document => document, :field => 'book_author_tesim' %></div>
     <div class="blacklight-publisher_display"><%= render_index_field_value :document => document, :field => 'book_pubplace_tesim' %>, <%= render_index_field_value :document => document, :field => 'book_publisher_tesim' %>, 
