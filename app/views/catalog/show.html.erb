@@ -26,7 +26,8 @@
     <% else %>
        <% page_turner = render_document_show_field_value :document => @document, :field => 'id' %>
        <% page = render_document_show_field_value :document => @document, :field => 'image_seq_tesim' %>
-       <% sea_id=page_turner[8..10] %>
+       <% page_turner_array =  page_turner.split('_') %>
+               <% sea_id = page_turner_array[0][8..11] %>
       <div class="well" data-no-turbolink>
         <div class="reader-link">
           <a class="label label-online" href="http://hydrastg.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a>
