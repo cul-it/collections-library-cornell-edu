@@ -1,12 +1,13 @@
 Bl5::Application.routes.draw do
+  comfy_route :cms_admin, :path => '/admin'
+
+
   root :to => "catalog#index"
   blacklight_for :catalog
   devise_for :users
-  get "about/collection"
   get "about/geographic"
   get "about/significance"
   get "about/bibliography"
-  get "about/project"
   get "about/help"
   get "about/map"
   get "about/cataloging"
@@ -18,6 +19,10 @@ Bl5::Application.routes.draw do
   get "about/press"
   get "about/sponsor"
   devise_for :sessions
+
+  # Make sure this routeset is defined last
+  comfy_route :cms, :path => '/', :sitemap => false
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
