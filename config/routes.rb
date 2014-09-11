@@ -5,19 +5,6 @@ Bl5::Application.routes.draw do
   root :to => "catalog#index"
   blacklight_for :catalog
   devise_for :users
-  get "about/geographic"
-  get "about/significance"
-  get "about/bibliography"
-  get "about/help"
-  get "about/map"
-  get "about/cataloging"
-  get "about/contact"
-  get "about/copyright"
-  get "about/credits"
-  get "about/digitization"
-  get "about/images"
-  get "about/press"
-  get "about/sponsor"
   devise_for :sessions
 
   # Make sure this routeset is defined last
