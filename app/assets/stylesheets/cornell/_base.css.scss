@@ -21,10 +21,10 @@ footer {
 	a, a:hover { color: white; }
 }
 .sidebar {
-	@include make-md-column(3);
+	@include make-sm-column(3);
 }
 .main-text {
-	@include make-md-column(9);
+	@include make-sm-column(9);
 }
 
 // Links

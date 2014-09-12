@@ -3,7 +3,13 @@
 }
 //override app
 #searchbar {
-	padding: 5px 0;
+	margin: 5px 0;
+	.form-group {
+		margin-bottom: 0;
+	}
+	.search_q {
+		border-radius: 4px 0 0 4px;
+	}
 }
 
 .search-query-form {
@@ -23,4 +29,35 @@
 	a:hover {
 		color: white;
 	}
+}
+
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	#searchbar {
+		.form-group {
+			margin-left: 0;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+
 }
