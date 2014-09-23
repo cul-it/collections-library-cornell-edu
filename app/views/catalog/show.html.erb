@@ -15,7 +15,7 @@
         </div>
 
         <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
-        <% if bibid_display.present? %>       
+        <% if bibid_display.present? && bibid_display != "000000" %>       
           <ul class="item-links">   
             <li><a href="http://newcatalog.library.cornell.edu/catalog/<%= bibid_display %>">View in Library Catalog <i class="fa fa-external-link"></i></a></li>
           </ul>
