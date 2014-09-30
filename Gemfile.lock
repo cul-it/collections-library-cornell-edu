@@ -46,9 +46,7 @@ GEM
       nokogiri (~> 1.6)
       rails (>= 3.2.6, < 5)
       rsolr (~> 1.0.6)
-
     blacklight-gallery (0.1.0)
-
       blacklight (~> 5.0)
       bootstrap-sass (~> 3.0)
       rails
@@ -379,11 +377,7 @@ PLATFORMS
 DEPENDENCIES
   active-fedora
   blacklight (~> 5.4.0)
-<<<<<<< HEAD
-  blacklight-gallery (~> 0.0.2)
-=======
   blacklight-gallery (~> 0.1.0)
->>>>>>> origin/dev
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   comfortable_mexican_sofa (~> 1.12.0)
