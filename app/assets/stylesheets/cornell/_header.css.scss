@@ -21,6 +21,21 @@
 	}
 }
 
+.logos {
+	@include make-sm-column(6)
+}
+.site-title {
+	@include make-sm-column(3)
+}
+.navigation-bar {
+	@include make-sm-column(9)
+}
+.searchbar{
+	@include make-sm-column(8)
+}
+.utility-links {
+	@include make-sm-column(4)
+}
 .navbar-collapse {
 	.nav {
 		float: right;

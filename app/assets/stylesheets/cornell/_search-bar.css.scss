@@ -19,6 +19,10 @@
 	}
 }
 
+.search-input {
+	@include make-xs-column(8);
+	@include make-sm-column(4);
+}
 // Utility links
 // ----------------------//
 .util-links-other {
