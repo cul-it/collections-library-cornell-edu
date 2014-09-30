@@ -20,12 +20,31 @@ footer {
 	color: #ccc;
 	a, a:hover { color: white; }
 }
+.page-content {
+	@include make-sm-column(12)
+}
 .sidebar {
 	@include make-sm-column(3);
+	@include make-sm-column-push(9);
 }
+.facet-sidebar {
+	@include make-sm-column(3);
+}
+
+.search-results {
+@include make-sm-column(9);
+}
+
 .main-text {
-	@include make-sm-column(9);
+@include make-sm-column(9);
+@include make-sm-column-pull(3);
 }
+
+.more-info-links, .more-info-sponsors {
+	@include make-sm-column(6);
+}
+
+
 
 // Links
 // ---------------------------------//

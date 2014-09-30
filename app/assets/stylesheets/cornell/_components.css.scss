@@ -42,13 +42,14 @@
 }
 
 .disclaimer {
+	@include make-sm-column(12);
 	p {
 		font-size: 12px;
 		color: $gray;
 	}
 	img { margin-right: 10px; }
 }
-.sponsors {
+.more-info-sponsors {
 	text-align: center;
 }
 

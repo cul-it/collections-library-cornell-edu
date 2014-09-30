@@ -1,5 +1,7 @@
 .blacklight-catalog-show {
 	#document {
+			@include make-sm-column(6);
+
 		margin-top: 0;
 		h2  {
 			margin: 0 0 .25em;
@@ -10,6 +12,7 @@
 		}
 	}
 	#sidebar {
+
 		.well {
 			text-align: center;
 		}
@@ -74,6 +77,7 @@
 }
 
 .cover {
+	@include make-sm-column(3);
 	text-align: center;
 	color:$pale-gray;
 	a {font-size:75%;
