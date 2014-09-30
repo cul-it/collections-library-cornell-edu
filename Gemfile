@@ -57,7 +57,8 @@ end
 
 gem "bootstrap-sass"
 
-gem 'blacklight-gallery', '~>0.0.2'
+
+gem 'blacklight-gallery',"~> 0.1.0"
 
 
 group :development, :test do
