@@ -36,6 +36,11 @@ h2.blacklight-title_display {
 	}
 }
 
+.gallery .document {
+	@include make-xs-column(6);
+	@include make-sm-column(4);
+}
+
 .blacklight-ocr_display {
 	color: #777;
 	font-size: 13px;

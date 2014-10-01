@@ -1,7 +1,7 @@
 <%= render 'previous_next_doc' %>
 <div class="row">
 
-  <div id="sidebar" class="col-sm-3 pull-right">
+  <div id="sidebar" class="sidebar">
 
     <%# display if it's a book -%>
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
@@ -47,12 +47,12 @@
     <%= render_document_sidebar_partial  %>
   </div>
 
-  <div id="content" class="col-sm-9 show-document">
+  <div id="content" class="main-content show-document main-text">
 
     <%# display if it's a book -%>
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
       <div class="row" data-no-turbolink>
-        <div class="col-sm-3 cover">
+        <div class="cover">
           <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/get/seapage:<%= sea_id %>_1/thumbnailImage" class="img-responsive img-thumbnail"></a>
           <p><a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
 
@@ -61,7 +61,7 @@
     <%# display if it's a page -%>
     <% else %>
       <div class="row" data-no-turbolink>
-        <div class="col-sm-3 cover">
+        <div class="cover">
           <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/<%= page_turner %>/datastreams/thumbnailImage/content" class="img-responsive img-thumbnail"></a>
           <p><a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a></p>
     <% end %>
@@ -69,7 +69,7 @@
         </div><%# close span3 -%>
 
 
-    <div class="col-sm-6">
+    <div class="">
       <%if @document[:active_fedora_model_ssi] == 'Page'%>
         <% @page_title = t('blacklight.search.show.title', :document_title => document_show_html_title, :application_name => application_name) %>
       <% else %>

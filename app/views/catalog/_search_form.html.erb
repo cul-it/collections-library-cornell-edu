@@ -11,8 +11,8 @@
       <% end %>
       </div>
       </div>
-      <div class="pull-left col-xs-8 col-sm-4">
-       <div class="input-group  ">
+      <div class="pull-left search-input">
+       <div class="input-group">
         <label for="q" class="sr-only"><%= t('blacklight.search.form.q') %></label>
          <%= text_field_tag :q, params[:q], :placeholder => t('blacklight.search.form.q'), :class => "form-control search_q q ", :id => "q", :type => 'text'%>
         <span class="input-group-btn"><button type="submit" class="btn btn-primary search-btn" id="search">
