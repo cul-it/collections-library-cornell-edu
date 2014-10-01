@@ -123,7 +123,8 @@ class Parser
                 when /^Image\ caption/i
                   image_caption = pee1.content().split(':',2)[1]
                 when /^Image\ Keyword/i
-                  image_keyword = pee1.content().split(':')[1] #.strip.gsub!(';','')
+                  image_keyword = pee1.content().split(':')[1].gsub!(';','')
+                  image_keyword = image_keyword.gsub!(' ', '')
                 when /^Image\ Caption/i
                   image_caption = pee1.content().split(':',2)[1] #.gsub!('\"',' ')
                 when /^No\ valid/i
@@ -163,8 +164,7 @@ class Parser
 #          "\", image_date: \"" + image_date + "\", image_ethnic: \"" + image_ethnic + "\", image_keyword: \"" + image_keyword + "\", image_caption: \"" + 
           image_caption + "\", image_ocr: \"" + image_ocr + "\")"
 #          puts "Got Here before page.create"
-           page = Page.create(pid: pagepid, book_id: "sea:" + ARGV[0], book_title: title, node: node, node_type: node_type, head: head, image_ref: image_ref, image_seq: image_seq, image_res: image_res, image_fmt: image_fmt, image_dim: image_dim, image_ftr: image_ftr, image_n: image_n, image_format: image_format, image_geo: image_geo, image_date: image_date, image_ethnic: image_ethnic, image_keyword: image_keyword, image_caption: image_caption, image_ocr: image_ocr,
-                  book_author: author, book_publisher: publisher, book_pubplace: pubplace, book_pubdate: pubdate, book_bibid: ARGV[1], image: thumbnail)
+           page = Page.create(pid: pagepid, book_id: "sea:" + ARGV[0], book_title: title, node: node, node_type: node_type, head: head, image_ref: image_ref, image_seq: image_seq, image_res: image_res, image_fmt: image_fmt, image_dim: image_dim, image_ftr: image_ftr, image_n: image_n, image_format: image_format, image_geo: image_geo, image_date: image_date, image_ethnic: image_ethnic, image_keyword: image_keyword, image_caption: image_caption, image_ocr: image_ocr, book_author: author, author: author, book_publisher: publisher, book_pubplace: pubplace, book_pubdate: pubdate, book_bibid: ARGV[1], image: thumbnail)
    #        puts "Got Here"
            page.add_relationship(:is_page_of, "info:fedora/sea:" + ARGV[0], versionable=false )
    #        puts "Here too"
@@ -262,7 +262,7 @@ class Parser
               case test
                when /^Image format/i
 #                 puts "MOTHERFUQUA!!!!!!!!!!!!!!!!!!"
-                 image_format = pee.content().split(':')[1]
+                 image_format = pee.content().split(':')[1].gsub!(' ','')
                #  puts image_format
                when /^Image\ geographic/i
                  image_geo = pee.content().split(':')[1]
@@ -273,7 +273,10 @@ class Parser
 #               when /^Image Ethnic/i
 #                 image_ethnic = pee.content().split(':')[1]
                when /^Image\ keyword/i
-                 image_keyword = pee.content().split(':')[1] #.strip.gsub!(';','')
+                 image_keyword = pee.content().split(':')[1].gsub!(';','')
+                 unless image_keyword.nil?
+                   image_keyword = image_keyword.gsub!(' ', '')
+                 end
                when /^Image\ caption/i
                  image_caption = pee.content().split(':')[1]
 #               when /^Image\ Keyword/i
@@ -343,7 +346,7 @@ class Parser
 #           "\", image_date: \"" + image_date + "\", image_ethnic: \"" + image_ethnic + "\", image_keyword: \"" + image_keyword + 
 #           "\", image_caption: \"" + image_caption + "\", image_ocr: \"" + image_ocr + "\")"
 #           puts "KUKAMUNGA !!!!!!!!!!!!! " + image_format
-           page = Page.create(pid: pagepid, book_id: "sea:" + ARGV[0], book_title: title, node: node, node_type: node_type, head: head2, image_ref: image_ref, image_seq: image_seq, image_res: image_res, image_fmt: image_fmt, image_dim: image_dim, image_ftr: image_ftr, image_n: image_n, image_format: image_format, image_geo: image_geo, image_date: image_date, image_ethnic: image_ethnic, image_keyword: image_keyword, image_caption: image_caption, image_ocr: image_ocr, book_author: author, book_publisher: publisher, book_pubplace: pubplace, book_pubdate: pubdate, book_bibid: ARGV[1], image: thumbnail)
+           page = Page.create(pid: pagepid, book_id: "sea:" + ARGV[0], book_title: title, node: node, node_type: node_type, head: head2, image_ref: image_ref, image_seq: image_seq, image_res: image_res, image_fmt: image_fmt, image_dim: image_dim, image_ftr: image_ftr, image_n: image_n, image_format: image_format, image_geo: image_geo, image_date: image_date, image_ethnic: image_ethnic, image_keyword: image_keyword, image_caption: image_caption, image_ocr: image_ocr, book_author: author, author: author, book_publisher: publisher, book_pubplace: pubplace, book_pubdate: pubdate, book_bibid: ARGV[1], image: thumbnail)
            page.add_relationship(:is_page_of, "info:fedora/sea:" + ARGV[0], versionable=false )
            page.digitalImage.content = File.open("/cul/data/collections/sea/" + ARGV[0] +"/jpg/" + image_ref)
            page.thumbnailImage.content = File.open("/cul/data/collections/sea/" + ARGV[0] +"/thumbs/" + image_ref)

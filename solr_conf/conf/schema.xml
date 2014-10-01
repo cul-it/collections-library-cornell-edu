@@ -19,7 +19,7 @@
   	<field name="image_format_t" type="string" stored="true" indexed="true"/>
   	<field name="publisher_t" type="string" stored="true" indexed="true"/>
   	<field name="book_publisher_t" type="string" stored="true" indexed="true"/>
-  	<field name="book_author_t" type="string" stored="true" indexed="true"/>
+  	<field name="book_author_t" type="text" stored="true" indexed="true"/>
     <field name="author_t" type="string" stored="true" indexed="true"/>
   	<field name="subject_t" type="string" stored="true" indexed="true"/>
   	<field name="pubdate_t" type="string" stored="true" indexed="true"/>
@@ -67,7 +67,7 @@
     <dynamicField name="*_teim" type="string" stored="false" indexed="true" multiValued="true"/>
     <dynamicField name="*_tes" type="string" stored="true" indexed="false" multiValued="false"/>
     <dynamicField name="*_tesm" type="string" stored="true" indexed="false" multiValued="true"/>
-    <dynamicField name="*_tesi" type="string" stored="true" indexed="true" multiValued="false"/>
+    <dynamicField name="*_tesi" type="text" stored="true" indexed="true" multiValued="false"/>
     <dynamicField name="*_tesim" type="string" stored="true" indexed="true" multiValued="true"/>
     <dynamicField name="*_teiv" type="string" stored="false" indexed="true" multiValued="false" termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_teimv" type="string" stored="false" indexed="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
