@@ -94,7 +94,7 @@
             <dt class="blacklight-publication-info-label">Publication Info:</dt>
             <dd class="blacklight-publication-info"><%= render_document_show_field_value :document => @document, :field => 'pubstmt_pubplace_tesim'%>: <%= render_document_show_field_value :document => @document, :field => 'pubstmt_publisher_tesim'%> </dd>
             <dt class="blacklight-publication-info-label">Table of Contents:</dt>
-            <dd class="blacklight-publication-info toc"><%= render_table_of_contents(params[:id]).html_safe %></dd>
+            <dd class="blacklight-publication-info"><%= render_table_of_contents(params[:id]).html_safe %></dd>
           </dl>
          <% else %>
          <h2><a href="/catalog/sea:<%= sea_id %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a></h2>
