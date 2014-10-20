@@ -5,6 +5,9 @@
 
     <%# display if it's a book -%>
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
+    <% page_turner = render_document_show_field_value :document => @document, :field => 'pubstmt_idno_tesim' %>
+    <% page = 1 %>
+    <% sea_id=page_turner[3..7] %>
       <div class="row" data-no-turbolink>
         <div class="cover">
           <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/get/seapage:<%= sea_id %>_1/thumbnailImage" class="img-responsive img-thumbnail"></a>
@@ -96,9 +99,6 @@
 
   <%# display if it's a book -%>
   <%if @document[:active_fedora_model_ssi] == 'Book'%>
-    <% page_turner = render_document_show_field_value :document => @document, :field => 'pubstmt_idno_tesim' %>
-    <% page = 1 %>
-    <% sea_id=page_turner[3..7] %>
 
     <div class="well" data-no-turbolink>
       <div class="reader-link">
