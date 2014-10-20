@@ -97,8 +97,7 @@
             <dd class="blacklight-publication-info"><%= render_table_of_contents(params[:id]).html_safe %></dd>
           </dl>
          <% else %>
-         <h2><a href="/catalog/sea:<%= sea_id %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a></h2>
-         <h3>Page <%= page %></h3>
+         <h2><a href="/catalog/sea:<%= sea_id %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a> / Page <%= page %></h2>
           <div class="document"> <%= render_document_partial @document, :show %> </div>
 
           <dl class="dl-horizontal">
