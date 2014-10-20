@@ -9,6 +9,10 @@
 			font-size: 24px;
 			font-family: $baseFontFamily;
 			color: $gray;
+			.label {
+				font-weight: normal;
+				font-size: 70%;
+			}
 		}
 	}
 	#sidebar {
@@ -95,7 +99,6 @@ ul.item-links {
 	list-style: none;
 	li { 
 		font-size: 14px;
-		line-height: 2em;
 	}
 }
 
@@ -116,7 +119,6 @@ ul.item-links {
 // ------------------
 .toc-section {
 	margin: 0 0 .5em;
-	font-weight: 700;
 }
 .toc-chapter {
 	margin: 0 0 .5em 1em;
