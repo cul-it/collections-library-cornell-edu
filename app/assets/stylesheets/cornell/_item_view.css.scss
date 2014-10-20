@@ -111,3 +111,14 @@ ul.item-links {
 	margin-bottom: 20px;
 }
 #previousNextDocument { margin-top: 10px; }
+
+// TOC
+// ------------------
+.toc-section {
+	margin: 0 0 .5em;
+	font-weight: 700;
+}
+.toc-chapter {
+	margin: 0 0 .5em 1em;
+	line-height: 1.4em;
+}

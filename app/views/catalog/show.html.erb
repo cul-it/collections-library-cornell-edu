@@ -36,7 +36,6 @@
           <a class="label label-book" href="/bookreader/sea:<%= sea_id %>/">Read book</a>
         </div>
         <ul class="item-links">
-          <li><a href="/catalog/sea:<%= sea_id %>/">Book information <i class="fa fa-book"></i></a></li>
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'book_bibid_tesim' %>
           <% if bibid_display.present? %>
             <li><a href="http://newcatalog.library.cornell.edu/catalog/<%= bibid_display %>">View in Library Catalog <i class="fa fa-external-link"></a></i></li>
@@ -47,7 +46,7 @@
     <%= render_document_sidebar_partial  %>
   </div>
 
-  <div id="content" class="main-content show-document main-text">
+  <div id="content" class="show-document main-text">
 
     <%# display if it's a book -%>
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
@@ -95,7 +94,7 @@
             <dt class="blacklight-publication-info-label">Publication Info:</dt>
             <dd class="blacklight-publication-info"><%= render_document_show_field_value :document => @document, :field => 'pubstmt_pubplace_tesim'%>: <%= render_document_show_field_value :document => @document, :field => 'pubstmt_publisher_tesim'%> </dd>
             <dt class="blacklight-publication-info-label">Table of Contents:</dt>
-            <dd class="blacklight-publication-info"><%= render_table_of_contents(params[:id]).html_safe %></dd>
+            <dd class="blacklight-publication-info toc"><%= render_table_of_contents(params[:id]).html_safe %></dd>
           </dl>
          <% else %>
          <h2><a href="/catalog/sea:<%= sea_id %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a></h2>

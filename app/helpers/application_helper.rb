@@ -61,10 +61,12 @@ module ApplicationHelper
 #         pageNum = doc['id'].split('_')[1]
          pageNum = doc[0].split('_')[1]
          if doc[3].include? "."
-            printArray << "&nbsp;&nbsp;&nbsp;<a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc[1] + "</a><br>"      
+            data = "<p>Hello!</p>"
+            data.html_safe
+            printArray << "<div class=\"toc-chapter\"><a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc[1] + "</a></div>"      
 #         printArray << "<a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc['head_tesim'][0] + "</a><br>"
          else      
-            printArray << "<a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc[1] + "</a><br>"
+            printArray << "<div class=\"toc-section\"><a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc[1] + "</a></div>"
          end      
        end
 #       tocArray['response']['docs'].each do |doc|
