@@ -38,8 +38,9 @@
 }
 .navbar-collapse {
 	.nav {
-		float: right;
-		margin-top: 30px;
+		position: relative;
+		z-index: 5000;
+		background: $blue;
 		li {
 			a {
 				text-shadow: none;
@@ -54,37 +55,21 @@
 		}
 	}
 }
-
-// Mobile nav
-// -----------------------//
-
 .navbar-header {
-	button.btn-navbar,
-	 {
+	.navbar-toggle {
 		background: $blue;
 		border-radius: 0;
 		margin-right: 0;
 		text-transform: uppercase;
 		padding: 4px 10px;
-		color:white
+		color: white;
+		margin-top: -60px;
 	}
 }
-.navbar-collapse.in {
-	z-index: 1000;
-	.nav {
-		margin-top: 0;
-		width: auto;
-		background: #011b32;
-		a {
-			font-weight: normal;
-			font-size: 18px;
-		}
-		a:hover {
-			background: $blue;
-		}
-	}
+.navigation-bar {
+	padding-left: 0;
+	padding-right: 0;
 }
-
 
 // MEDIA QUERIES
 // -------------------------
@@ -111,6 +96,18 @@
 				font-size: 17px;
 			}
 		}
+	}
+	.navbar-collapse {
+		.nav {
+			float: right;
+			width: auto;
+			margin-top: 30px;
+			background: inherit;
+		}
+	}
+	.navigation-bar {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
