@@ -19,7 +19,8 @@ h2.blacklight-title_display {
 h2 {
 	.label {
 		font-weight:normal;
-		font-size:.65em;}
+		font-size: .6em;
+	}
 }
 
 .book-cover {
@@ -31,7 +32,7 @@ h2 {
 
 .document-data {
 	float: left;
-	width: 89%;
+	width: 77%;
 }
 
 .blacklight-catalog-index, 
@@ -61,4 +62,34 @@ h2 {
 
 .slideshow-image {
 	width:30%
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	.document-data {
+		width: 84%;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+	.document-data {
+		width: 87%;
+	}
 }
