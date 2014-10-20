@@ -12,7 +12,8 @@ body {
 	background: white;
 	min-height: 400px;
 	.container { 
-		padding: 40px 0 50px;
+		padding-top: 40px;
+		padding-bottom: 50px;
 	}
 }
 footer {
@@ -25,19 +26,17 @@ footer {
 }
 .sidebar {
 	@include make-sm-column(3);
-	@include make-sm-column-push(9);
 }
 .facet-sidebar {
 	@include make-sm-column(3);
 }
 
 .search-results {
-@include make-sm-column(9);
+	@include make-sm-column(9);
 }
 
 .main-text {
-@include make-sm-column(9);
-@include make-sm-column-pull(3);
+	@include make-sm-column(9);
 }
 
 .more-info-links, .more-info-sponsors {
