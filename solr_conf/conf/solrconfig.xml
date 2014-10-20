@@ -37,6 +37,7 @@
        -->
         <str name="qf">
           id
+          book_id_tesim
           all_text_timv
           active_fedora_model_ssi
           extent_tesim
@@ -50,20 +51,24 @@
           keywords_tesim
           image_tesim
           image_ocr_tesim
+          author_tesim
+          title_tesim
           object_type_si
         </str>
         <str name="pf">
           all_text_timv^10
         </str>
        <str name="author_qf">
-       	 book_author_tesim
+       	  author_tesim
        </str>
        <str name="author_pf">
+       	  author_tesim^10
        </str>
        <str name="title_qf">
-       	 book_title_tesim
+       	 title_tesim
        </str>
        <str name="title_pf">
+       	 title_tesim^10
        </str>
        <str name="subject_qf">
        </str>

@@ -47,7 +47,6 @@ class BookMetadata < ActiveFedora::OmDatastream
     t.editorialdecl(index_as: :stored_searchable)
     t.keywords(index_as: :stored_searchable) 
     t.image(indes_as: :stored_searchable)
-    t.subject(index_as: :stored_searchable)
     t.bibid(index_as: :stored_searchable)
   #  (index_as: :stored_searchable)
   #  t.author(index_as: :stored_searchable)

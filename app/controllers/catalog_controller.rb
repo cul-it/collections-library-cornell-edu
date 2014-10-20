@@ -13,7 +13,8 @@ class CatalogController < ApplicationController
 
   configure_blacklight do |config|
     config.default_solr_params = {
-#      :qf => 'book_id_tesim title_tesim author_tesim subject_tesim pubdate_tesim publisher_tesim book_publisher_tesim active_fedora_model_ssi image_ocr_tesim book_title_tesim', 
+     :defType => 'edismax', 
+     :qf => 'author_timv title_tesim subject_tesim publisher_tesim image_ocr_timv active_fedora_model_ssi', 
      :qt => 'search',
      :fl => '*,score',
       :rows => 10
@@ -59,14 +60,15 @@ class CatalogController < ApplicationController
 ##    config.add_facet_field solr_name('subject_era', :facetable), :label => 'Era'
 
     config.add_facet_field 'active_fedora_model_ssi', :label => 'Format', :limit => 3 , :show => true
-    config.add_facet_field 'book_author_tesim', :label => 'Author', :limit => 5
+    config.add_facet_field 'author_tesim', :label => 'Author', :limit => 5
     config.add_facet_field 'pubdate_tesim', :label => 'Book Date', :limit => 5
     config.add_facet_field 'image_date_tesim', :label => 'Image Date', :limit => 5
     config.add_facet_field 'image_ethnic_tesim', :label => 'Image Ethnic Information', :limit => 5
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_geo_tesim', :label => 'Image Geographic Information', :limit => 5
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
-
+    config.add_facet_field 'keywords_tesim', :label => 'Book Keyword', :limit => 5
+    config.add_facet_field 'subject_tesim', :label => 'Subject', :limit => 5
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
@@ -77,9 +79,11 @@ class CatalogController < ApplicationController
 
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display
-    config.add_index_field solr_name('title', :stored_searchable, type: :string), :label => 'Title:'
+  #  config.add_index_field solr_name('title', :stored_searchable, type: :string), :label => 'Title:'
+    config.add_index_field 'title_tesim', :label => 'Title:'
 #    config.add_index_field solr_name('title_vern', :stored_searchable, type: :string), :label => 'Title:'
-    config.add_index_field solr_name('author', :stored_searchable, type: :string), :label => 'Author:'
+#    config.add_index_field solr_name('author', :stored_searchable, type: :string), :label => 'Author:'
+    config.add_index_field 'author_tesim', :label => 'Author:'
 #    config.add_index_field solr_name('author_vern', :stored_searchable, type: :string), :label => 'Author:'
 #    config.add_index_field solr_name('format', :symbol), :label => 'Format:'
 #    config.add_index_field solr_name('language', :stored_searchable, type: :string), :label => 'Language:'
@@ -87,12 +91,18 @@ class CatalogController < ApplicationController
 #    config.add_index_field solr_name('published_vern', :stored_searchable, type: :string), :label => 'Published:'
 #    config.add_index_field solr_name('lc_callnum', :stored_searchable, type: :string), :label => 'Call number:'
 
-    config.add_index_field solr_name('publisher', :stored_searchable, type: :string), :label => 'Publisher:'
-    config.add_index_field solr_name('book_publisher', :stored_searchable, type: :string), :label => 'Book Publisher:'
-    config.add_index_field solr_name('pubdate', :stored_searchable, type: :string), :label => 'Published:'
-    config.add_index_field solr_name('image_ocr', :stored_searchable, type: :string), :label => ' ', :highlight => true
-    config.add_index_field solr_name('book_title', :stored_searchable, type: :string), :label => 'Book Title:'
-    config.add_index_field solr_name('book_author', :stored_searchable, type: :string), :label => 'Book Author:'
+#    config.add_index_field solr_name('publisher', :stored_searchable, type: :string), :label => 'Publisher:'
+    config.add_index_field 'publisher', :label => 'Publisher:'
+#    config.add_index_field solr_name('book_publisher', :stored_searchable, type: :string), :label => 'Book Publisher:'
+    config.add_index_field 'book_publisher', :label => 'Book Publisher:'
+#    config.add_index_field solr_name('pubdate', :stored_searchable, type: :string), :label => 'Published:'
+    config.add_index_field 'pubdate', :label => 'Published:'
+#    config.add_index_field solr_name('image_ocr', :stored_searchable, type: :string), :label => ' ', :highlight => true
+    config.add_index_field 'image_ocr', :label => ' ', :highlight => true
+#    config.add_index_field solr_name('book_title', :stored_searchable, type: :string), :label => 'Book Title:'
+    config.add_index_field 'book_title', :label => 'Book Title:'
+#    config.add_index_field solr_name('book_author', :stored_searchable, type: :string), :label => 'Book Author:'
+    config.add_index_field 'book_author', :label => 'Book Author:'
 
 
     # solr fields to be displayed in the show (single result) view
@@ -137,6 +147,7 @@ class CatalogController < ApplicationController
     # Now we see how to over-ride Solr request handler defaults, in this
     # case for a BL "search field", which is really a dismax aggregate
     # of Solr search fields.
+    
 
     config.add_search_field('title') do |field|
       # :solr_local_parameters will be sent using Solr LocalParams
@@ -182,7 +193,7 @@ class CatalogController < ApplicationController
     config.add_sort_field 'pub_date_dtsi desc, title_tesi asc', :label => 'year'
     config.add_sort_field 'book_author_tesi asc, title_tesi asc', :label => 'author'
     config.add_sort_field 'title_tesi asc, pub_date_dtsi desc', :label => 'title'
-    config.add_field_configuration_to_solr_request!
+#    config.add_field_configuration_to_solr_request!
 
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.

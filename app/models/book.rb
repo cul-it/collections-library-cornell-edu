@@ -33,7 +33,6 @@ class Book < ActiveFedora::Base
   has_attributes :editorialdecl, datastream: 'descMetadata', multiple: false
   has_attributes :keywords, datastream: 'descMetadata', multiple: true
   has_attributes :image, datastream: 'descMetadata', multiple: false
-  has_attributes :subject, datastream: 'descMetadata', multiple: false
   has_attributes :bibid, datastream: 'descMetadata', multiple: false
 #  has_attributes :image, datastream: 'digitalImage', multiple: false
 
