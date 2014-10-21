@@ -4,6 +4,8 @@ gem 'blacklight', '~> 5.4.0'
 gem 'hydra'
 gem 'active-fedora'
 gem 'httpclient'
+gem 'dotenv'
+gem 'dotenv-deployment'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -34,6 +36,9 @@ gem 'jbuilder', '~> 1.2'
 # Font awesome
 gem "font-awesome-rails"
 
+gem 'comfortable_mexican_sofa', '~> 1.12.0'
+
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -53,6 +58,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem "bootstrap-sass"
+
 
 gem 'blacklight-gallery',"~> 0.1.0"
 
