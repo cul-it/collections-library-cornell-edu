@@ -13,8 +13,8 @@
 
   <%= t('blacklight.search.documents.counter', :counter => (document_counter + 1 + @response.params[:start].to_i)) %>
   <% if page_book_title.present? %>
-  <%= link_to_document document, :label=>display_book_title, :counter => (document_counter + 1 + @response.params[:start].to_i) %>
+  <%= link_to_document document, :label=>page_book_title, :counter => (document_counter + 1 + @response.params[:start].to_i) %> <span class="label label-default">Page <%= page %> </span>
   <% else %>
-    <%= link_to_document document, :label=>document_show_link_field(document), :counter => (document_counter + 1 + @response.params[:start].to_i) %>
+    <%= link_to_document document, :label=>document_show_link_field(document), :counter => (document_counter + 1 + @response.params[:start].to_i) %> 
     <% end %>
 </h2>

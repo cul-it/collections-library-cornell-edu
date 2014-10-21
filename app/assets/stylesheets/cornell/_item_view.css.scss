@@ -1,14 +1,16 @@
 .blacklight-catalog-show {
 	#document {
-			@include make-sm-column(9);
-
+		@include make-sm-column(9);
 		margin-top: 0;
 		h2  {
 			margin: 0 0 .25em;
 			line-height: 1.25em;
 			font-size: 24px;
 			font-family: $baseFontFamily;
-			color: $gray;
+			.label {
+				font-weight: normal;
+				font-size: 70%;
+			}
 		}
 	}
 	#sidebar {
@@ -83,7 +85,8 @@
 	a {font-size:75%;
 		}
 	img {
-		margin-bottom:1em;
+		margin-bottom: 1em;
+		height: 150px; // for mobile devices
 	}
 }
 .reader-link {
@@ -95,7 +98,6 @@ ul.item-links {
 	list-style: none;
 	li { 
 		font-size: 14px;
-		line-height: 2em;
 	}
 }
 
@@ -116,9 +118,37 @@ ul.item-links {
 // ------------------
 .toc-section {
 	margin: 0 0 .5em;
-	font-weight: 700;
 }
 .toc-chapter {
 	margin: 0 0 .5em 1em;
 	line-height: 1.4em;
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) { 
+	.cover {
+		img {
+			height: auto;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+
 }
