@@ -14,7 +14,7 @@ class CatalogController < ApplicationController
   configure_blacklight do |config|
     config.default_solr_params = {
      :defType => 'edismax', 
-     :qf => 'author_timv title_tesim subject_tesim publisher_tesim image_ocr_timv active_fedora_model_ssi', 
+     :qf => 'author_timv title_tesim pubdate_timv subject_timv publisher_timv image_ocr_timv active_fedora_model_ssi', 
      :qt => 'search',
      :fl => '*,score',
       :rows => 10
@@ -141,7 +141,7 @@ class CatalogController < ApplicationController
     # since we aren't specifying it otherwise.
 
     config.add_search_field 'all_fields', :label => 'All Fields'
-    config.add_search_field 'pubdate', :label => 'Pub Date'
+#    config.add_search_field 'pubdate', :label => 'Pub Date'
 
 
     # Now we see how to over-ride Solr request handler defaults, in this
@@ -155,22 +155,30 @@ class CatalogController < ApplicationController
       # Solr parameter de-referencing like $title_qf.
       # See: http://wiki.apache.org/solr/LocalParams
       field.solr_local_parameters = {
-        :qf => '$title_tesim_qf',
-        :pf => '$title_tesim_pf'
+        :qf => '$title_qf',
+        :pf => '$title_pf'
       }
     end
 
     config.add_search_field('author') do |field|
       field.solr_local_parameters = {
-        :qf => '$author_tesim_qf',
-        :pf => '$author_tesim_pf'
+        :qf => '$author_qf',
+        :pf => '$author_pf'
       }
     end
 
     config.add_search_field('publisher') do |field|
       field.solr_local_parameters = {
-        :qf => '$publisher_tesim_qf',
-        :pf => '$publisher_tesim_pf'
+        :qf => '$publisher_qf',
+        :pf => '$publisher_pf'
+      }
+    end
+
+    config.add_search_field('pub date') do |field|
+      field.solr_local_parameters = {
+        :qf => '$pubdate_qf',
+        :pf => '$pubdate_pf',
+        :label => 'Pub Date'
       }
     end
 
@@ -180,8 +188,8 @@ class CatalogController < ApplicationController
     config.add_search_field('subject') do |field|
       field.qt = 'search'
       field.solr_local_parameters = {
-        :qf => '$subject_tesim_qf',
-        :pf => '$subject_tesim_pf'
+        :qf => '$subject_qf',
+        :pf => '$subject_pf'
       }
     end
 
