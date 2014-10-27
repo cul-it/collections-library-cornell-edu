@@ -28,7 +28,8 @@
 	}
 
 	.panel-heading {
-		background-color:#fff;
+		background-color: #fff;
+		overflow: hidden;
 	}
 
 	.panel-body {
@@ -40,6 +41,14 @@
 	}
 	.panel-heading.collapse-toggle .panel-title:after {
 		line-height: inherit;
+	}
+	.facets-toggle {
+		margin: 0;
+		padding: 5px 10px;
+		border-radius: 0;
+	}
+	h4 {
+		line-height: 1.6em;
 	}
 }
 
@@ -63,7 +72,9 @@
 		float: none !important;
 	}
 }
-
+.view-type {
+	margin-top: .5em;
+}
 
 // Mobile nav
 // -----------------------//
