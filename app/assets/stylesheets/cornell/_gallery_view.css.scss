@@ -1,12 +1,16 @@
 #documents.gallery {
 	.document {
-		height:375px;
-		margin-bottom:3em;
-		padding:1em;
+		// height:375px;
+		// margin-bottom:3em;
+		// padding:1em;
+		// max-width: 250px;
 	}
 
 	.index-document-functions {
 		position:relative;
 		left:1em;
+	}
+	img {
+		max-height: 195px;
 	}
 }
