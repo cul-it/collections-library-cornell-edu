@@ -45,7 +45,7 @@ h2 {
 
 .gallery .document {
 	@include make-xs-column(6);
-	@include make-sm-column(4);
+	@include make-sm-column(3);
 }
 
 .blacklight-ocr_display {
