@@ -61,6 +61,7 @@ gem "bootstrap-sass"
 
 
 gem 'blacklight-gallery',"~> 0.1.0"
+gem "blacklight_range_limit"
 
 
 group :development, :test do
