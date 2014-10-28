@@ -120,11 +120,33 @@ class Parser
               #    image_ethnic = pee1.content()#.split(':')[1]
                 when /^Image keyword/i
                   image_keyword = pee1.content().split(':')[1] #.strip.gsub!(';','')
-                when /^Image\ caption/i
-                  image_caption = pee1.content().split(':',2)[1]
-                when /^Image\ Keyword/i
-                  image_keyword = pee1.content().split(':')[1].gsub!(';','')
-                  image_keyword = image_keyword.gsub!(' ', '')
+                  image_keyword = image_keyword.strip
+                  if !image_keyword.nil? and (image_keyword.include? " ; " or image_keyword.include? " | ")
+                    if image_keyword.include? " ; "
+                      image_keyword = image_keyword.split(' ; ')
+                    end
+                    if image_keyword.include? " | "
+                      image_keyword = image_keyword.split(" | ")
+                    end
+                    if image_keyword.include? ";"
+                      image_keyword = image_keyword.split(';')
+                    end
+                    if image_keyword.include? " ;"
+                      image_keyword = image_keyword.split(' ;')
+                    end
+#                  image_keyword.collect{|x| x.strip}
+                   image_keyword[0] = image_keyword[0].strip
+                   puts image_keyword[0]
+                  else
+                    image_keyword = image_keyword.strip
+                    puts image_keyword
+                  end
+                  
+#                when /^Image\ caption/i
+#                  image_caption = pee1.content().split(':',2)[1]
+#                when /^Image\ Keyword/i
+#                  image_keyword = pee1.content().split(':')[1].gsub!(';','')
+#                  image_keyword = image_keyword.gsub!(' ', '')
                 when /^Image\ Caption/i
                   image_caption = pee1.content().split(':',2)[1] #.gsub!('\"',' ')
                 when /^No\ valid/i
@@ -162,7 +184,7 @@ class Parser
 #          "\", image_res: \"" + image_res + "\", image_fmt: \"" + image_fmt + "\", image_ftr: \"" + image_ftr + 
 #          "\", image_n: \"" + image_n + "\", image_format: \"" + image_format + "\", image_geo: \"" + image_geo + 
 #          "\", image_date: \"" + image_date + "\", image_ethnic: \"" + image_ethnic + "\", image_keyword: \"" + image_keyword + "\", image_caption: \"" + 
-          image_caption + "\", image_ocr: \"" + image_ocr + "\")"
+#          image_caption + "\", image_ocr: \"" + image_ocr + "\")"
 #          puts "Got Here before page.create"
            page = Page.create(pid: pagepid, book_id: "sea:" + ARGV[0], book_title: title, node: node, node_type: node_type, head: head, image_ref: image_ref, image_seq: image_seq, image_res: image_res, image_fmt: image_fmt, image_dim: image_dim, image_ftr: image_ftr, image_n: image_n, image_format: image_format, image_geo: image_geo, image_date: image_date, image_ethnic: image_ethnic, image_keyword: image_keyword, image_caption: image_caption, image_ocr: image_ocr, book_author: author, author: author, book_publisher: publisher, book_pubplace: pubplace, book_pubdate: pubdate, book_bibid: ARGV[1], image: thumbnail)
    #        puts "Got Here"
@@ -273,10 +295,29 @@ class Parser
 #               when /^Image Ethnic/i
 #                 image_ethnic = pee.content().split(':')[1]
                when /^Image\ keyword/i
-                 image_keyword = pee.content().split(':')[1].gsub!(';','')
-                 unless image_keyword.nil?
-                   image_keyword = image_keyword.gsub!(' ', '')
-                 end
+#                 image_keyword = pee.content().split(':')[1].gsub!(';','')
+                  image_keyword = pee.content().split(':')[1] #.strip.gsub!(';','')
+                  image_keyword = image_keyword.strip
+                  if !image_keyword.nil? and (image_keyword.include? " ; " or image_keyword.include? " | ")
+                    if image_keyword.include? " ; "
+                      image_keyword = image_keyword.split(' ; ')
+                    end
+                    if image_keyword.include? " | "
+                      image_keyword = image_keyword.split(" | ")
+                    end
+                    if image_keyword.include? ";"
+                      image_keyword = image_keyword.split(';')
+                    end
+                    if image_keyword.include? " ;"
+                      image_keyword = image_keyword.split(' ;')
+                    end
+#                  image_keyword.collect{|x| x.strip}
+                   image_keyword[0] = image_keyword[0].strip
+                   puts image_keyword[0]
+                  else
+                    image_keyword = image_keyword.strip
+                    puts image_keyword
+                  end
                when /^Image\ caption/i
                  image_caption = pee.content().split(':')[1]
 #               when /^Image\ Keyword/i

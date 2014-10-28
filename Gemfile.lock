@@ -50,6 +50,10 @@ GEM
       blacklight (~> 5.0)
       bootstrap-sass (~> 3.0)
       rails
+    blacklight_range_limit (5.0.2)
+      blacklight (>= 5.0.0.pre4, < 6)
+      jquery-rails
+      rails (>= 3.0, < 5.0)
     block_helpers (0.3.3)
       activesupport (>= 2.0)
     bootstrap-sass (3.1.1.1)
@@ -381,6 +385,7 @@ DEPENDENCIES
   active-fedora
   blacklight (~> 5.4.0)
   blacklight-gallery (~> 0.1.0)
+  blacklight_range_limit
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   comfortable_mexican_sofa (~> 1.12.0)
