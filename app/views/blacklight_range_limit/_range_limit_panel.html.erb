@@ -17,7 +17,7 @@
       <li class="selected">
         <span class="facet-label ">
           <span class="selected "><%= range_display(solr_field) %></span> 
-           <%= link_to remove_range_param(solr_field), :class=>"remove", :title => "remove" do %>
+           <%= link_to search_action_path(remove_range_param(solr_field)), :class=>"remove", :title => "remove" do %>
             <span class="glyphicon glyphicon-remove"></span>
             <span class="sr-only">[remove]</span>
            <% end %>
