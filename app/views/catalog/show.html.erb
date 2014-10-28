@@ -118,9 +118,6 @@
       <div class="reader-link">
         <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a>
       </div>
-      <div class="reader-link">
-        <a class="label label-book" href="/bookreader/sea:<%= sea_id %>/">Read book</a>
-      </div>
       <ul class="item-links">
         <% bibid_display = render_document_show_field_value :document => @document, :field => 'book_bibid_tesim' %>
         <% if bibid_display.present? %>
