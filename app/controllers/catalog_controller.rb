@@ -24,12 +24,12 @@ class CatalogController < ApplicationController
     config.index.title_field = 'title_tesim'
     config.index.display_type_field = 'has_model_ssim'
     config.index.thumbnail_field = 'image_tesim'
-    config.index.show_link = 'title_tesim'
-    config.index.record_display_type = 'has_model_ssi'
+#    config.index.show_link = 'title_tesim'
+#    config.index.record_display_type = 'has_model_ssi'
 
-    config.show.html_title = 'title_tesim'
-    config.show.heading = 'title_tesim'
-    config.show.display_type = 'has_model_ssi'
+#    config.show.html_title = 'title_tesim'
+#    config.show.heading = 'title_tesim'
+#    config.show.display_type = 'has_model_ssi'
 
 
     # solr fields that will be treated as facets by the blacklight application
