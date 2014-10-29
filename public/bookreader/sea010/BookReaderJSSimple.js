@@ -9,13 +9,13 @@ br = new BookReader();
 // Return the width of a given page.  Here we assume all images are 800 pixels wide
 br.getPageWidth = function(index) {
 if (index == 0) {
-     return 1292;
+     return 646;
     }
 if (index == 1) {
-     return 1259;
+     return 630;
     }
 if (index == 2) {
-     return 1202;
+     return 601;
     }
 if (index == 3) {
      return 743;
@@ -1960,13 +1960,13 @@ if (index > 647) {
 // Return the height of a given page.  Here we assume all images are 1200 pixels high
 br.getPageHeight = function(index) {
 if (index == 0) {
-     return 1612;
+     return 806;
     }
 if (index == 1) {
-     return 1564;
+     return 782;
     }
 if (index == 2) {
-     return 1552;
+     return 776;
     }
 if (index == 3) {
      return 1036;

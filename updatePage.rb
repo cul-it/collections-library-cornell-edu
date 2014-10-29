@@ -109,55 +109,37 @@ class Parser
                test = pee1.content()
                 case test
                 when /^Image\ format/i
-                  image_format = pee1.content().split(':')[1]
-                  image_format = image_format.strip
-                  if !image_format.nil? and (image_format.include? ";" or image_format.include? "|")
-                    if image_format.include? ";"
-                      image_format = image_format.split(';')
-                    end
-                    if image_format.include? "|"
-                      image_format = image_format.split("|")
-                    end
-                    image_format = image_format.collect{|x| x.strip}
-                   puts image_format
-                  else
-                    image_format = image_format.strip
-                    puts image_format
-                  end
-                 when /^Image\ geographic/i
+                  image_format = pee1.content().split(':')[1].gsub!(' ', '')
+                when /^Image\ geographic/i
                   image_geo = pee1.content().split(':')[1]
                 when /^Image\ Date/i
                   image_date = pee1.content().split(':')[1]
                 when /^Image Ethnic/i
                   image_ethnic = pee1.content().split(':')[1]
-                  image_ethnic = image_ethnic.strip
-                  if !image_ethnic.nil? and (image_ethnic.include? ";" or image_ethnic.include? "|")
-                    if image_ethnic.include? ";"
-                      image_ethnic = image_ethnic.split(';')
-                    end
-                    if image_ethnic.include? "|"
-                      image_ethnic = image_ethnic.split("|")
-                    end
-                    image_ethnic = image_ethnic.collect{|x| x.strip}
-                   puts image_ethnic
-                  else
-                    image_ethnic = image_ethnic.strip
-                    puts image_ethnic
-                  end
               #  when /^Image ethnic/i
               #    image_ethnic = pee1.content()#.split(':')[1]
                 when /^Image keyword/i
                   image_keyword = pee1.content().split(':')[1] #.strip.gsub!(';','')
                   image_keyword = image_keyword.strip
-                  if !image_keyword.nil? and (image_keyword.include? ";" or image_keyword.include? "|")
+                  if !image_keyword.nil? and (image_keyword.include? " ; " or image_keyword.include? " | ")
+                    if image_keyword.include? " ; "
+                      image_keyword = image_keyword.split(' ; ')
+                    end
+                    if image_keyword.include? " | "
+                      image_keyword = image_keyword.split(" | ")
+                    end
                     if image_keyword.include? ";"
                       image_keyword = image_keyword.split(';')
                     end
-                    if image_keyword.include? "|"
-                      image_keyword = image_keyword.split("|")
+                    if image_keyword.include? " ;"
+                      image_keyword = image_keyword.split(' ;')
                     end
-                    image_keyword = image_keyword.collect{|x| x.strip}
-                   puts image_keyword
+                    if image_keyword.include? "; "
+                      image_keyword = image_keyword.split('; ')
+                    end
+#                  image_keyword.collect{|x| x.strip}
+                   image_keyword[0] = image_keyword[0].strip
+                   puts image_keyword[0]
                   else
                     image_keyword = image_keyword.strip
                     puts image_keyword
@@ -305,56 +287,39 @@ class Parser
               case test
                when /^Image format/i
 #                 puts "MOTHERFUQUA!!!!!!!!!!!!!!!!!!"
-                 image_format = pee.content().split(':')[1]
-                  image_format = image_format.strip
-                  if !image_format.nil? and (image_format.include? ";" or image_format.include? "|")
-                    if image_format.include? ";"
-                      image_format = image_format.split(';')
-                    end
-                    if image_format.include? "|"
-                      image_format = image_format.split("|")
-                    end
-                    image_format = image_format.collect{|x| x.strip}
-                   puts image_format
-                  else
-                    image_format = image_format.strip
-                    puts image_format
-                  end
+                 image_format = pee.content().split(':')[1].gsub!(' ','')
+               #  puts image_format
                when /^Image\ geographic/i
                  image_geo = pee.content().split(':')[1]
                when /^Image\ Date/i
                  image_date = pee.content().split(':')[1]
                when /^Image ethnic/i
                  image_ethnic = pee.content().split(':')[1]
-                  image_ethnic = image_ethnic.strip
-                  if !image_ethnic.nil? and (image_ethnic.include? ";" or image_ethnic.include? "|")
-                    if image_ethnic.include? ";"
-                      image_ethnic = image_ethnic.split(';')
-                    end
-                    if image_ethnic.include? "|"
-                      image_ethnic = image_ethnic.split("|")
-                    end
-                    image_ethnic = image_ethnic.collect{|x| x.strip}
-                   puts image_ethnic
-                  else
-                    image_ethnic = image_ethnic.strip
-                    puts image_ethnic
-                  end
 #               when /^Image Ethnic/i
 #                 image_ethnic = pee.content().split(':')[1]
                when /^Image\ keyword/i
 #                 image_keyword = pee.content().split(':')[1].gsub!(';','')
                   image_keyword = pee.content().split(':')[1] #.strip.gsub!(';','')
                   image_keyword = image_keyword.strip
-                  if !image_keyword.nil? and (image_keyword.include? ";" or image_keyword.include? "|")
+                  if !image_keyword.nil? and (image_keyword.include? " ; " or image_keyword.include? " | ")
+                    if image_keyword.include? " ; "
+                      image_keyword = image_keyword.split(' ; ')
+                    end
+                    if image_keyword.include? " | "
+                      image_keyword = image_keyword.split(" | ")
+                    end
                     if image_keyword.include? ";"
                       image_keyword = image_keyword.split(';')
                     end
-                    if image_keyword.include? "|"
-                      image_keyword = image_keyword.split("|")
+                    if image_keyword.include? " ;"
+                      image_keyword = image_keyword.split(' ;')
                     end
-                    image_keyword = image_keyword.collect{|x| x.strip}
-                   puts image_keyword
+                    if image_keyword.include? "; "
+                      image_keyword = image_keyword.split('; ')
+                    end
+#                  image_keyword.collect{|x| x.strip}
+                   image_keyword[0] = image_keyword[0].strip
+                   puts image_keyword[0]
                   else
                     image_keyword = image_keyword.strip
                     puts image_keyword
