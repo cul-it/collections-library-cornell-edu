@@ -1,30 +1,49 @@
 <%= render 'previous_next_doc' %>
+<%= render_document_sidebar_partial  %>
 <div class="row">
 
-  <div id="content" class="show-document main-text">
+  <div id="content" class="show-document">
 
     <%# display if it's a book -%>
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
     <% page_turner = render_document_show_field_value :document => @document, :field => 'pubstmt_idno_tesim' %>
     <% page = 1 %>
     <% sea_id=page_turner[3..7] %>
-      <div class="row" data-no-turbolink>
-        <div class="cover">
+        <div class="cover" data-no-turbolink>
           <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/get/seapage:<%= sea_id %>_1/thumbnailImage" class="img-responsive img-thumbnail"></a>
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
-    
+          <div class="reader-link" data-no-turbolink>
+            <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
+          </div>
+
+          <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
+          <% if bibid_display.present? && bibid_display != "000000" %>       
+            <ul class="item-links">   
+              <li><a href="http://newcatalog.library.cornell.edu/catalog/<%= bibid_display %>">View print copy <i class="fa fa-external-link"></i></a></li>
+            </ul>
+          <% end %>
+        </div>
+        
     <%# display if it's a page -%>
     <% else %>
       <% page_turner = render_document_show_field_value :document => @document, :field => 'id' %>
       <% page = render_document_show_field_value :document => @document, :field => 'image_seq_tesim' %>
       <% page_turner_array =  page_turner.split('_') %>
       <% sea_id = page_turner_array[0][8..11] %>
-      <div class="row" data-no-turbolink>
-        <div class="cover">
+        <div class="cover" data-no-turbolink>
           <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/<%= page_turner %>/datastreams/thumbnailImage/content" class="img-responsive img-thumbnail"></a>
+          <div class="reader-link" data-no-turbolink>
+            <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a>
+          </div>
+          <ul class="item-links">
+            <% bibid_display = render_document_show_field_value :document => @document, :field => 'book_bibid_tesim' %>
+            <% if bibid_display.present? %>
+              <li><a href="http://newcatalog.library.cornell.edu/catalog/<%= bibid_display %>">View print copy <i class="fa fa-external-link"></a></i></li>
+            <% end %>
+          </ul>
+        </div>
     <% end %>
 
-        </div><%# close cover -%>
 
 
     <div class="metadata">
@@ -42,6 +61,7 @@
         <div id="doc_<%= @document.id.to_s.parameterize %>">
           <% # bookmark/folder functions -%>
           <%if @document[:active_fedora_model_ssi] == 'Book'%>
+          <% @page_title = render_document_show_field_value :document => @document, :field => 'titlestmt_title_tesim' %>
           <%#= render_document_heading(:h2).html_safe %>
           <div class="document"> <%= render_document_partial @document, :show %> </div>
           <dl class="dl-horizontal">
@@ -92,41 +112,6 @@
       </div>
     </div>
   </div>
-</div>
-
-<div id="sidebar" class="sidebar">
-
-  <%# display if it's a book -%>
-  <%if @document[:active_fedora_model_ssi] == 'Book'%>
-
-    <div class="well" data-no-turbolink>
-      <div class="reader-link">
-        <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
-      </div>
-
-      <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
-      <% if bibid_display.present? && bibid_display != "000000" %>       
-        <ul class="item-links">   
-          <li><a href="http://newcatalog.library.cornell.edu/catalog/<%= bibid_display %>">View in Library Catalog <i class="fa fa-external-link"></i></a></li>
-        </ul>
-      <% end %>
-    </div>
-  
-  <%# display if it's a page -%>
-  <% else %>
-    <div class="well" data-no-turbolink>
-      <div class="reader-link">
-        <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a>
-      </div>
-      <ul class="item-links">
-        <% bibid_display = render_document_show_field_value :document => @document, :field => 'book_bibid_tesim' %>
-        <% if bibid_display.present? %>
-          <li><a href="http://newcatalog.library.cornell.edu/catalog/<%= bibid_display %>">View in Library Catalog <i class="fa fa-external-link"></a></i></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <%= render_document_sidebar_partial  %>
 </div>
   
 
