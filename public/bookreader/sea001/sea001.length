@@ -1,4 +1,3 @@
-br.getPageHeight = function(index) {
 if (index == 0) {
      return 478;
     }
@@ -1826,4 +1825,3 @@ if (index == 607) {
 if (index > 607) {
     return 600;
     }
-}

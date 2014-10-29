@@ -1,4 +1,3 @@
-br.getPageWidth = function(index) {
 if (index == 0) {
      return 345;
     }
@@ -1826,4 +1825,3 @@ if (index == 607) {
 if (index > 607) {
     return 400;
     }
-}

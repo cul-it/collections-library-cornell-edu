@@ -1087,7 +1087,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 134;
+br.numLeafs = 168;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Siam and the Siamese as described by American missionaries";

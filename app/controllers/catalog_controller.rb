@@ -28,7 +28,7 @@ class CatalogController < ApplicationController
 #    config.index.record_display_type = 'has_model_ssi'
 
     config.show.title_field = 'book_title_tesim'
-    config.show.display_type = 'has_model_ssi'
+#    config.show.display_type = 'has_model_ssi'
 
 
     # solr fields that will be treated as facets by the blacklight application

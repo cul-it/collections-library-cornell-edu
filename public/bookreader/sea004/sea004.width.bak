@@ -1,5 +1,5 @@
 if (index == 0) {
-     return 450;
+     return 900;
     }
 if (index == 1) {
      return 763;
@@ -62,7 +62,7 @@ if (index == 20) {
      return 548;
     }
 if (index == 21) {
-     return 452;
+     return 902;
     }
 if (index > 21) {
     return 800;

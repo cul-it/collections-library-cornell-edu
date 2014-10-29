@@ -7,7 +7,9 @@ class RecordMailer < ActionMailer::Base
         
 #    subject = I18n.t('blacklight.email.text.subject', :count => documents.length, :title => (documents.first.to_semantic_values[:title] rescue 'N/A') )
     subject = "Item(s) from the SEAVisions"
-    
+    Rails.logger.info("Shrike Documents = #{documents}")
+    Rails.logger.info("Shrike details = #{details}")
+    Rails.logger.info("Shrike url_gen_params = #{url_gen_params}")
     @documents      = documents
     @message        = details[:message]
     @url_gen_params = url_gen_params
