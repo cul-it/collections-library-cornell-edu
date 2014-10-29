@@ -3,7 +3,7 @@
 }
 //override app
 #searchbar {
-	margin: 5px 0;
+	margin: 10px 0;
 	.form-group {
 		margin-bottom: 0;
 	}
@@ -20,15 +20,14 @@
 }
 
 .search-input {
-	@include make-xs-column(8);
-	@include make-sm-column(4);
+	@include make-xs-column(12);
+	@include make-sm-column(6);
 }
 // Utility links
 // ----------------------//
 .util-links-other {
-	float: right;
-	margin-right: 25px;
-	margin-top: 10px;
+	margin-top: 1em;
+	margin-bottom: .5em;
 	a { color: $light-blue; }
 	a:hover {
 		color: white;
@@ -58,6 +57,11 @@
 		.form-group {
 			margin-left: 0;
 		}
+	}
+	.util-links-other {
+		float: right;
+		margin-right: 25px;
+		margin-bottom: 0;
 	}
 }
 
