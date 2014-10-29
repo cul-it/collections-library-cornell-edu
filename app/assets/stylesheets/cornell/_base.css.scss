@@ -16,11 +16,6 @@ body {
 		padding-bottom: 50px;
 	}
 }
-footer {
-	margin: 30px 0 15px;
-	color: #ccc;
-	a, a:hover { color: white; }
-}
 .page-content {
 	@include make-sm-column(12)
 }
