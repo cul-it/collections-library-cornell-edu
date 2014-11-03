@@ -1,3 +1,4 @@
+    <% real_page = render_index_field_value :document => document, :field => 'image_n_tesim' %>
     <% # container for a single doc -%>
     <div class="document clearfix<%= render_document_class document %>" data-no-turbolink >
     	   <%#= debug document %>
@@ -5,6 +6,7 @@
             <% if page_turner.blank? %>
                   <% page_turner = render_index_field_value :document => document, :field => 'id' %>
                   <% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
+
                   <% page_turner_array =  page_turner.split('_') %>
                    <% sea_id = page_turner_array[0][8..11] %>
                   <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/seapage:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail"></a>

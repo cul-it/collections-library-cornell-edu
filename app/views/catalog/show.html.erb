@@ -28,12 +28,14 @@
     <% else %>
       <% page_turner = render_document_show_field_value :document => @document, :field => 'id' %>
       <% page = render_document_show_field_value :document => @document, :field => 'image_seq_tesim' %>
+
+      <% real_page = render_document_show_field_value :document => @document, :field => 'image_n_tesim' %>
       <% page_turner_array =  page_turner.split('_') %>
       <% sea_id = page_turner_array[0][8..11] %>
         <div class="cover" data-no-turbolink>
           <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/<%= page_turner %>/datastreams/thumbnailImage/content" class="img-responsive img-thumbnail"></a>
           <div class="reader-link" data-no-turbolink>
-            <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a>
+            <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= real_page %></a>
           </div>
           <ul class="item-links">
             <% bibid_display = render_document_show_field_value :document => @document, :field => 'book_bibid_tesim' %>
@@ -75,7 +77,7 @@
             <dd class="blacklight-publication-info"><%= render_table_of_contents(params[:id]).html_safe %></dd>
           </dl>
          <% else %>
-         <h2><a href="/catalog/sea:<%= sea_id %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a> <span class="label label-default">Page <%= page %></span></h2>
+         <h2><a href="/catalog/sea:<%= sea_id %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a> <span class="label label-default">Page <%= real_page %></span></h2>
           <div class="document"> <%= render_document_partial @document, :show %> </div>
 
           <dl class="dl-horizontal">
@@ -98,12 +100,12 @@
               <% if book_pubdate.present? %>
               <%= book_pubdate + ',' %>
               <% end %>
-              <span class="blacklight-publisher_uniform_display">pg <%= render_document_show_field_value :document => @document, :field => 'image_seq_tesim' %></span></dd>
+              <span class="blacklight-publisher_uniform_display">pg <%= render_document_show_field_value :document => @document, :field => 'image_n_tesim' %></span></dd>
           </dl>
           <% display_ocr = render_document_show_field_value :document => @document, :field => 'image_ocr_tesim' %>
           <% if display_ocr.present? %>
           <div class="ocr">
-            <h4>Page Text</h4>
+            <h4>Text on Page <%= render_document_show_field_value :document => @document, :field => 'image_n_tesim' %></h4>
             <%= display_ocr %>
           </div>
          <% end %>
