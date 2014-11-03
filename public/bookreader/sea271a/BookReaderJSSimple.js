@@ -2449,7 +2449,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 398;
+br.numLeafs = 395;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "The expedition to Borneo of H.M.S. Dido for the suppression of piracy : with extracts from the journal of James Brooke, esq., of Sarawak, vol.1";

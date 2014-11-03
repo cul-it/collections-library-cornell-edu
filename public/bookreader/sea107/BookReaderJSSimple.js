@@ -2263,7 +2263,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 372;
+br.numLeafs = 364;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Java, the garden of the East";

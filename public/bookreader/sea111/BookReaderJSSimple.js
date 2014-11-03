@@ -475,7 +475,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 67;
+br.numLeafs = 66;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Notes of a journey across the Isthmus of Kra, made with the French government survey expedition, January-April, 1883 : with explanatory map and sections, and appendix containing reprint of a report to the Indian government";

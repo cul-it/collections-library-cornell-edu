@@ -859,7 +859,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 134;
+br.numLeafs = 130;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Notes of a journey on the Upper Mekong, Siam";

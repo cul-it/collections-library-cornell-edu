@@ -3871,7 +3871,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 634;
+br.numLeafs = 632;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Two years in the jungle : the experiences of a hunter and naturalist in India, Ceylon, the Malay Peninsula and Borneo";

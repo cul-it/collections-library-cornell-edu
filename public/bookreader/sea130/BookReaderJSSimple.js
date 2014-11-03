@@ -1831,7 +1831,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 296;
+br.numLeafs = 292;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "A new historical relation of the kingdom of Siam";

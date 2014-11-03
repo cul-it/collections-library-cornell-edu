@@ -2611,7 +2611,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 425;
+br.numLeafs = 422;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Missionary journals and letters : written during eleven years' residence and travels amongst the Chinese, Siamese, Javanese, Khassias, and other Eastern nations";

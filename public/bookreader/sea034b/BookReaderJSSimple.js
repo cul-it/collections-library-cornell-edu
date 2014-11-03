@@ -145,7 +145,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 10;
+br.numLeafs = 11;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Les monuments du Cambodge; etudes d'architecture khmere. D'apres les documents recueillis au cours des missions qu'il a dirigees en 1873 et 1882-1883 et de la mission complementaire de M. Faraut en 1874-1875, vol.2";

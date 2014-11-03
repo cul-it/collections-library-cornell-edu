@@ -2059,7 +2059,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 331;
+br.numLeafs = 330;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "The voyage of Francois Pyrard of Laval to the East Indies, the Maldives, the Moluccas and Brazil, v.3";

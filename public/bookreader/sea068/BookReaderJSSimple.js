@@ -2251,7 +2251,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 364;
+br.numLeafs = 362;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "A narrative of travel and sport in Burmah, Siam and the Malay Peninsula";

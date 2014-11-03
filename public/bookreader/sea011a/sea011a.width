@@ -1,5 +1,5 @@
 if (index == 0) {
-     return 1150;
+     return 575;
     }
 if (index == 1) {
      return 976;
@@ -464,10 +464,10 @@ if (index == 154) {
      return 961;
     }
 if (index == 155) {
-     return 1456;
+     return 728;
     }
 if (index == 156) {
-     return 1442;
+     return 721;
     }
 if (index == 157) {
      return 960;
@@ -497,7 +497,7 @@ if (index == 165) {
      return 958;
     }
 if (index == 166) {
-     return 1960;
+     return 980;
     }
 if (index == 167) {
      return 944;
@@ -653,7 +653,7 @@ if (index == 217) {
      return 953;
     }
 if (index == 218) {
-     return 1959;
+     return 979;
     }
 if (index == 219) {
      return 955;
@@ -725,7 +725,7 @@ if (index == 241) {
      return 962;
     }
 if (index == 242) {
-     return 1395;
+     return 698;
     }
 if (index == 243) {
      return 967;
@@ -1808,7 +1808,7 @@ if (index == 602) {
      return 931;
     }
 if (index == 603) {
-     return 1389;
+     return 695;
     }
 if (index == 604) {
      return 937;
@@ -1871,7 +1871,7 @@ if (index == 623) {
      return 931;
     }
 if (index == 624) {
-     return 1055;
+     return 528;
     }
 if (index > 624) {
     return 800;

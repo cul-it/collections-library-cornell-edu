@@ -955,7 +955,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 148;
+br.numLeafs = 146;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "History and description of the picturesque Philippines, with entertaining accounts of the people and their modes of living, customs, industries, climate and present conditions";

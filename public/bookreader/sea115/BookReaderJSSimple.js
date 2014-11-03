@@ -1099,7 +1099,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 167;
+br.numLeafs = 170;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Illustrated tourist guide to East Java, Bali and Lombok";

@@ -763,7 +763,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 116;
+br.numLeafs = 114;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Views in the Eastern Archipelago : Borneo, Sarawak, Labuan, and c.";

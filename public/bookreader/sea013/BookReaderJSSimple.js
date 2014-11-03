@@ -334,7 +334,7 @@ if (index > 105) {
 // Return the height of a given page.  Here we assume all images are 1200 pixels high
 br.getPageHeight = function(index) {
 if (index == 0) {
-     return 1523;
+     return 1400;
     }
 if (index == 1) {
      return 1434;

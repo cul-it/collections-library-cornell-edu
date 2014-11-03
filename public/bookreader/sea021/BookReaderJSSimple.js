@@ -231,7 +231,7 @@ if (index == 73) {
      return 684;
     }
 if (index == 74) {
-     return 0;
+     return 643;
     }
 if (index == 75) {
      return 684;
@@ -255,7 +255,7 @@ if (index == 81) {
      return 665;
     }
 if (index == 82) {
-     return 0;
+     return 634;
     }
 if (index == 83) {
      return 658;
@@ -282,7 +282,7 @@ if (index == 90) {
      return 632;
     }
 if (index == 91) {
-     return 0;
+     return 672;
     }
 if (index == 92) {
      return 635;
@@ -306,7 +306,7 @@ if (index == 98) {
      return 641;
     }
 if (index == 99) {
-     return 0;
+     return 672;
     }
 if (index == 100) {
      return 632;
@@ -333,7 +333,7 @@ if (index == 107) {
      return 669;
     }
 if (index == 108) {
-     return 0;
+     return 645;
     }
 if (index == 109) {
      return 664;
@@ -360,7 +360,7 @@ if (index == 116) {
      return 631;
     }
 if (index == 117) {
-     return 0;
+     return 630;
     }
 if (index == 118) {
      return 641;
@@ -438,7 +438,7 @@ if (index == 142) {
      return 631;
     }
 if (index == 143) {
-     return 0;
+     return 677;
     }
 if (index == 144) {
      return 647;
@@ -964,7 +964,7 @@ if (index == 73) {
      return 1085;
     }
 if (index == 74) {
-     return 0;
+     return 1083;
     }
 if (index == 75) {
      return 1085;
@@ -988,7 +988,7 @@ if (index == 81) {
      return 1073;
     }
 if (index == 82) {
-     return 0;
+     return 1078;
     }
 if (index == 83) {
      return 1069;
@@ -1015,7 +1015,7 @@ if (index == 90) {
      return 1077;
     }
 if (index == 91) {
-     return 0;
+     return 1077;
     }
 if (index == 92) {
      return 1079;
@@ -1039,7 +1039,7 @@ if (index == 98) {
      return 1082;
     }
 if (index == 99) {
-     return 0;
+     return 1077;
     }
 if (index == 100) {
      return 1077;
@@ -1066,7 +1066,7 @@ if (index == 107) {
      return 1075;
     }
 if (index == 108) {
-     return 0;
+     return 1085;
     }
 if (index == 109) {
      return 1072;
@@ -1093,7 +1093,7 @@ if (index == 116) {
      return 1077;
     }
 if (index == 117) {
-     return 0;
+     return 1068;
     }
 if (index == 118) {
      return 1083;
@@ -1171,7 +1171,7 @@ if (index == 142) {
      return 1077;
     }
 if (index == 143) {
-     return 0;
+     return 1080;
     }
 if (index == 144) {
      return 1086;
@@ -1531,7 +1531,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 248;
+br.numLeafs = 242;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "A padre in partibus : being notes and impressions of a brief holiday tour through Java, the Eastern Archipelago and Siam";

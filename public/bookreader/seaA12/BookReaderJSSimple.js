@@ -463,7 +463,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 306;
+br.numLeafs = 64;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Voyage en Nouvelle-Guine, 1876-1877";

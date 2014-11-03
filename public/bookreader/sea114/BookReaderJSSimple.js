@@ -1579,7 +1579,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 254;
+br.numLeafs = 250;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "The isle of vanishing men : a narrative of adventure in cannibal-land";

@@ -1255,7 +1255,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 200;
+br.numLeafs = 196;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Short guide of Sumatra, with a more complete description of the Padang highlands";

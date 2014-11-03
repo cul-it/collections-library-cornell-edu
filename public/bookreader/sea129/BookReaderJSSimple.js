@@ -2467,7 +2467,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 400;
+br.numLeafs = 398;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Journal de marche (1888-1889) Evenements du Siam (1891-1893)";

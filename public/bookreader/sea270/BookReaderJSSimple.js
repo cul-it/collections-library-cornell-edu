@@ -1291,7 +1291,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 204;
+br.numLeafs = 202;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Handbook of British North Borneo";

@@ -1651,7 +1651,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 282;
+br.numLeafs = 262;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Into the East : notes on Burma and Malaya";
