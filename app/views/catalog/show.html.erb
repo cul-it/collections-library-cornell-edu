@@ -105,7 +105,7 @@
           <% display_ocr = render_document_show_field_value :document => @document, :field => 'image_ocr_tesim' %>
           <% if display_ocr.present? %>
           <div class="ocr">
-            <h4>Text on Page <%= render_document_show_field_value :document => @document, :field => 'image_n_tesim' %></h4>
+            <h4>Text on page <%= render_document_show_field_value :document => @document, :field => 'image_n_tesim' %></h4>
             <%= display_ocr %>
           </div>
          <% end %>
