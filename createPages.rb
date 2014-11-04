@@ -139,7 +139,13 @@ class Parser
                     image_format = image_format.collect{|x| (x == "coloredplates") ? "plates (color)" : x}
                     image_format = image_format.collect{|x| (x == "genealogicaltables") ? "genealogical tables" : x}
                     image_format.collect{|x| (!image_format_values.include(x)) ? image_keyword_add << x : nil}
-                    image_format.delete_if { |x| !image_keyword_values.include?(x)}
+                    image_format = image_format.reject! { |x| !image_format_values.include?(x)}
+                   puts "line 143 image_keyword_add begin"
+                   puts image_keyword_add
+                   puts "image_keyword_add end"
+                      puts "here is "
+                      puts image_keyword_add
+                      puts "image_keyword_add"
                    puts image_format
                   else
                     image_format = image_format.strip
@@ -191,7 +197,14 @@ class Parser
                     end
                     if !image_format_values.include?(image_format)
                       image_keyword_add << image_format
+                      puts "here is "
+                      puts image_keyword_add
+                      puts "image_keyword_add"
+                      image_format = ""
                     end
+                    puts "line 197 image_keyword_add begin"  
+                    puts image_keyword_add  
+                    puts "image_keyword_add end"
                     puts image_format
                   end
                  when /^Image\ geographic/i
@@ -406,8 +419,11 @@ class Parser
                     image_format = image_format.collect{|x| (x == "diagram") ? "diagrams" : x}
                     image_format = image_format.collect{|x| (x == "coloredplates") ? "plates (color)" : x}
                     image_format = image_format.collect{|x| (x == "genealogicaltables") ? "genealogical tables" : x}
-                    image_format.collect{|x| (!image_format_values.include(x)) ? image_keyword_add << x : nil}
-                    image_format.delete_if { |x| !image_keyword_values.include?(x)}
+                    image_format.collect{|x| (!image_format_values.include?(x)) ? image_keyword_add << x : nil}
+                    image_format = image_format.reject! { |x| !image_format_values.include?(x)}
+                   puts "Line 413 image_keyword_add begin"
+                   puts image_keyword_add
+                   puts "image_keyword_add end"
                    puts image_format
                   else
                     image_format = image_format.strip
@@ -459,7 +475,11 @@ class Parser
                     end
                     if !image_format_values.include?(image_format)
                       image_keyword_add << image_format
+                      image_format = ""
                     end
+                    puts "line 468 image_keyword_add begin" 
+                    puts image_keyword_add
+                    puts "image_keyword_add end"
                     puts image_format
                   end
                when /^Image\ geographic/i
@@ -501,6 +521,9 @@ class Parser
                   else
                     image_keyword = image_keyword.strip
                     if image_keyword_add.size > 0
+                      puts "here is "
+                      puts image_keyword_add
+                      puts "image_keyword_add"
                       image_keyword = image_keyword_add << image_keyword
                     end
                     puts image_keyword
