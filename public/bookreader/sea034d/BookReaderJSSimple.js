@@ -57,13 +57,8 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-//    var url = '/fedora/get/seapage:034d_' + imgStr + '/digitalImage';
-//    return url;
-    var leafStr = '000';
-    var re = new RegExp("0{"+imgStr.length+"}$");
-    var url = 'http://sf-lib-dig-016.serverfarm.cornell.edu/sea/034d/jpg/00'+leafStr.replace(re, imgStr) + '.jpg';
+    var url = '/fedora/get/seapage:034d_' + imgStr + '/digitalImage';
     return url;
-
 }
 
 // Return which side, left or right, that a given page should be displayed on
