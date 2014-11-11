@@ -9,7 +9,7 @@ br = new BookReader();
 // Return the width of a given page.  Here we assume all images are 800 pixels wide
 br.getPageWidth = function(index) {
 if (index == 0) {
-     return 1076;
+     return 845;
     }
 if (index == 1) {
      return 845;
@@ -2212,7 +2212,7 @@ if (index > 731) {
 // Return the height of a given page.  Here we assume all images are 1200 pixels high
 br.getPageHeight = function(index) {
 if (index == 0) {
-     return 1480;
+     return 1300;
     }
 if (index == 1) {
      return 1314;
@@ -4471,7 +4471,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 734;
+br.numLeafs = 732;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "The peoples and politics of the Far East : travels and studies in the British, French, Spanish and Portuguese colonies, Siberia, China, Japan, Korea, Siam and Malaya";

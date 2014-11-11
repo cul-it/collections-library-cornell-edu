@@ -9,7 +9,7 @@ br = new BookReader();
 // Return the width of a given page.  Here we assume all images are 800 pixels wide
 br.getPageWidth = function(index) {
 if (index == 0) {
-     return 1150;
+     return 575;
     }
 if (index == 1) {
      return 976;
@@ -474,10 +474,10 @@ if (index == 154) {
      return 961;
     }
 if (index == 155) {
-     return 1456;
+     return 728;
     }
 if (index == 156) {
-     return 1442;
+     return 721;
     }
 if (index == 157) {
      return 960;
@@ -507,7 +507,7 @@ if (index == 165) {
      return 958;
     }
 if (index == 166) {
-     return 1960;
+     return 980;
     }
 if (index == 167) {
      return 944;
@@ -663,7 +663,7 @@ if (index == 217) {
      return 953;
     }
 if (index == 218) {
-     return 1959;
+     return 979;
     }
 if (index == 219) {
      return 955;
@@ -735,7 +735,7 @@ if (index == 241) {
      return 962;
     }
 if (index == 242) {
-     return 1395;
+     return 698;
     }
 if (index == 243) {
      return 967;
@@ -1818,7 +1818,7 @@ if (index == 602) {
      return 931;
     }
 if (index == 603) {
-     return 1389;
+     return 695;
     }
 if (index == 604) {
      return 937;
@@ -1881,7 +1881,7 @@ if (index == 623) {
      return 931;
     }
 if (index == 624) {
-     return 1055;
+     return 528;
     }
 if (index > 624) {
     return 800;
@@ -1891,7 +1891,7 @@ if (index > 624) {
 // Return the height of a given page.  Here we assume all images are 1200 pixels high
 br.getPageHeight = function(index) {
 if (index == 0) {
-     return 1476;
+     return 738;
     }
 if (index == 1) {
      return 1309;
@@ -2356,10 +2356,10 @@ if (index == 154) {
      return 1324;
     }
 if (index == 155) {
-     return 1964;
+     return 982;
     }
 if (index == 156) {
-     return 1970;
+     return 985;
     }
 if (index == 157) {
      return 1312;
@@ -2389,7 +2389,7 @@ if (index == 165) {
      return 1307;
     }
 if (index == 166) {
-     return 1469;
+     return 735;
     }
 if (index == 167) {
      return 1324;
@@ -2545,7 +2545,7 @@ if (index == 217) {
      return 1324;
     }
 if (index == 218) {
-     return 1449;
+     return 725;
     }
 if (index == 219) {
      return 1317;
@@ -2617,7 +2617,7 @@ if (index == 241) {
      return 1309;
     }
 if (index == 242) {
-     return 1944;
+     return 972;
     }
 if (index == 243) {
      return 1305;
@@ -3700,7 +3700,7 @@ if (index == 602) {
      return 1296;
     }
 if (index == 603) {
-     return 1871;
+     return 936;
     }
 if (index == 604) {
      return 1304;
@@ -3763,7 +3763,7 @@ if (index == 623) {
      return 1296;
     }
 if (index == 624) {
-     return 1401;
+     return 701;
     }
 if (index > 624) {
     return 1200;

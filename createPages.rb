@@ -20,7 +20,9 @@ class Parser
   end
   
   def parseRecords(tagname)
-    
+    image_format_values = [ 'photographs', 'engravings', 'engravings (color)', 'drawings', 'drawings (color)', 'tables', 'etchings', 'portraits', 'maps',
+                             'maps (color)', 'paintings', 'plans', 'watercolors', 'sketches', 'woodcuts', 'postcards', 'diagrams', 'lithographs', 'timetables',
+                             'photocollages', 'plates', 'plates (color)', 'symbols', 'genealogical tables', 'lists', 'sculptures' ]
     title = @doc.xpath(sprintf('//%s', 'TITLE'))[0].content
     author = @doc.xpath(sprintf('//%s', 'AUTHOR'))[0].content
     publisher = @doc.xpath(sprintf('//%s', 'BIBL//PUBLISHER'))[0].content
@@ -70,6 +72,7 @@ class Parser
    #    puts head      
        epbs1 = record.xpath('.//EPB1')
        epbs1count = 0
+               image_keyword_add = []
        record.xpath('PB1').each do |pb1|
 #            puts 
 #            puts "START OF DIV1 IMAGE INFO"
@@ -107,38 +110,143 @@ class Parser
           epbs1[epbs1count].xpath('.//P').each do |pee1|
           #   puts "Ralph" + pee1.content()
                test = pee1.content()
-                case test
+               case test
                 when /^Image\ format/i
-                  image_format = pee1.content().split(':')[1].gsub!(' ', '')
-                when /^Image\ geographic/i
+                  image_format = pee1.content().split(':')[1]
+                  image_format = image_format.strip
+                  if !image_format.nil? and (image_format.include? ";" or image_format.include? "|")
+                    if image_format.include? ";"
+                      image_format = image_format.split(';')
+                    end
+                    if image_format.include? "|"
+                      image_format = image_format.split("|")
+                    end
+                    image_format = image_format.collect{|x| x.strip}
+                    image_format = image_format.collect{|x| x.downcase}
+                    image_format = image_format.collect{|x| (x == "photos" or x == "phots" or x == "photos ") ? "photographs" : x}
+                    image_format = image_format.collect{|x| (x == "engraving") ? "engravings" : x}
+                    image_format = image_format.collect{|x| (x == "coloredengravings") ? "engravings (color)" : x}
+                    image_format = image_format.collect{|x| (x == "drawing") ? "drawings" : x}
+                    image_format = image_format.collect{|x| (x == "drawings--color" or x == "coloreddrawings") ? "drawings (color)" : x}
+                    image_format = image_format.collect{|x| (x == "table") ? "tables" : x}
+                    image_format = image_format.collect{|x| (x == "etchigns" or x == "etching") ? "etchings" : x}
+                    image_format = image_format.collect{|x| (x == "portrait") ? "portraits" : x}
+                    image_format = image_format.collect{|x| (x == "map") ? "maps" : x}
+                    image_format = image_format.collect{|x| (x == "coloredmaps") ? "maps (color)" : x}
+                    image_format = image_format.collect{|x| (x == "painting") ? "paintings" : x}
+                    image_format = image_format.collect{|x| (x == "plan") ? "plans" : x}
+                    image_format = image_format.collect{|x| (x == "diagram") ? "diagrams" : x}
+                    image_format = image_format.collect{|x| (x == "coloredplates") ? "plates (color)" : x}
+                    image_format = image_format.collect{|x| (x == "genealogicaltables") ? "genealogical tables" : x}
+                    image_format.collect{|x| (!image_format_values.include(x)) ? image_keyword_add << x : nil}
+                    image_format = image_format.reject! { |x| !image_format_values.include?(x)}
+                   puts "line 143 image_keyword_add begin"
+                   puts image_keyword_add
+                   puts "image_keyword_add end"
+                      puts "here is "
+                      puts image_keyword_add
+                      puts "image_keyword_add"
+                   puts image_format
+                  else
+                    image_format = image_format.strip
+                    image_format = image_format.downcase
+                    if image_format == "photos" or image_format == "phots" or image_format == "photos " 
+                       image_format = "photographs" 
+                    end
+                    if image_format == "engraving"
+                      image_format = "engravings"
+                    end
+                    if image_format == "coloredengravings"
+                      image_format = "engravings (color)"
+                    end
+                    if image_format == "drawing"
+                      image_format = "drawings"
+                    end
+                    if image_format == "drawings--color" or image_format == "coloreddrawings"
+                      image_format = "drawings (color)"
+                    end
+                    if image_format == "table"
+                      image_format = "tables"
+                    end
+                    if image_format == "etchigns" or image_format == "etching"
+                      image_format = "etchings"
+                    end
+                    if image_format == "portrait"
+                      image_format = "portraits"
+                    end
+                    if image_format == "map"
+                      image_format = "maps"
+                    end
+                    if image_format == "coloredmaps"
+                      image_format = "maps (color)"
+                    end
+                    if image_format == "painting"
+                      image_format = "paintings"
+                    end
+                    if image_format == "plan"
+                      image_format = "plans"
+                    end
+                    if image_format == "diagram"
+                      image_format = "diagrams"
+                    end
+                    if image_format == "coloredplates"
+                      image_format == "plates (color)"
+                    end
+                    if image_format == "genealogicaltables"
+                      image_format = "genealogical tables"
+                    end
+                    if !image_format_values.include?(image_format)
+                      image_keyword_add << image_format
+                      puts "here is "
+                      puts image_keyword_add
+                      puts "image_keyword_add"
+                      image_format = ""
+                    end
+                    puts "line 197 image_keyword_add begin"  
+                    puts image_keyword_add  
+                    puts "image_keyword_add end"
+                    puts image_format
+                  end
+                 when /^Image\ geographic/i
                   image_geo = pee1.content().split(':')[1]
                 when /^Image\ Date/i
                   image_date = pee1.content().split(':')[1]
                 when /^Image Ethnic/i
                   image_ethnic = pee1.content().split(':')[1]
+                  image_ethnic = image_ethnic.strip
+                  if !image_ethnic.nil? and (image_ethnic.include? ";" or image_ethnic.include? "|")
+                    if image_ethnic.include? ";"
+                      image_ethnic = image_ethnic.split(';')
+                    end
+                    if image_ethnic.include? "|"
+                      image_ethnic = image_ethnic.split("|")
+                    end
+                    image_ethnic = image_ethnic.collect{|x| x.strip}
+                   puts image_ethnic
+                  else
+                    image_ethnic = image_ethnic.strip
+                    puts image_ethnic
+                  end
               #  when /^Image ethnic/i
               #    image_ethnic = pee1.content()#.split(':')[1]
                 when /^Image keyword/i
                   image_keyword = pee1.content().split(':')[1] #.strip.gsub!(';','')
                   image_keyword = image_keyword.strip
-                  if !image_keyword.nil? and (image_keyword.include? " ; " or image_keyword.include? " | ")
-                    if image_keyword.include? " ; "
-                      image_keyword = image_keyword.split(' ; ')
-                    end
-                    if image_keyword.include? " | "
-                      image_keyword = image_keyword.split(" | ")
-                    end
+                  if !image_keyword.nil? and (image_keyword.include? ";" or image_keyword.include? "|")
                     if image_keyword.include? ";"
                       image_keyword = image_keyword.split(';')
                     end
-                    if image_keyword.include? " ;"
-                      image_keyword = image_keyword.split(' ;')
+                    if image_keyword.include? "|"
+                      image_keyword = image_keyword.split("|")
                     end
-#                  image_keyword.collect{|x| x.strip}
-                   image_keyword[0] = image_keyword[0].strip
-                   puts image_keyword[0]
+                    image_keyword = image_keyword.collect{|x| x.strip}
+                    image_keyword = image_keyword.concat image_keyword_add
+                   puts image_keyword
                   else
                     image_keyword = image_keyword.strip
+                    if image_keyword_add.size > 0
+                      image_keyword = image_keyword_add << image_keyword
+                    end
                     puts image_keyword
                   end
                   
@@ -250,6 +358,7 @@ class Parser
          image_ocr = ""
             
          epbcount = 0
+               image_keyword_add = []
          div3.xpath('.//PB').each do |pb|
 #            puts 
 #            puts "START OF IMAGE INFO"
@@ -284,38 +393,139 @@ class Parser
               case test
                when /^Image format/i
 #                 puts "MOTHERFUQUA!!!!!!!!!!!!!!!!!!"
-                 image_format = pee.content().split(':')[1].gsub!(' ','')
-               #  puts image_format
+                 image_format = pee.content().split(':')[1]
+                  image_format = image_format.strip
+                  if !image_format.nil? and (image_format.include? ";" or image_format.include? "|")
+                    if image_format.include? ";"
+                      image_format = image_format.split(';')
+                    end
+                    if image_format.include? "|"
+                      image_format = image_format.split("|")
+                    end
+                    image_format = image_format.collect{|x| x.strip}
+                    image_format = image_format.collect{|x| x.downcase}
+                    image_format = image_format.collect{|x| (x == "photos" or x == "phots" or x == "photos ") ? "photographs" : x}
+                    image_format = image_format.collect{|x| (x == "engraving") ? "engravings" : x}
+                    image_format = image_format.collect{|x| (x == "coloredengravings") ? "engravings (color)" : x}
+                    image_format = image_format.collect{|x| (x == "drawing") ? "drawings" : x}
+                    image_format = image_format.collect{|x| (x == "drawings--color" or x == "coloreddrawings") ? "drawings (color)" : x}
+                    image_format = image_format.collect{|x| (x == "table") ? "tables" : x}
+                    image_format = image_format.collect{|x| (x == "etchigns" or x == "etching") ? "etchings" : x}
+                    image_format = image_format.collect{|x| (x == "portrait") ? "portraits" : x}
+                    image_format = image_format.collect{|x| (x == "map") ? "maps" : x}
+                    image_format = image_format.collect{|x| (x == "coloredmaps") ? "maps (color)" : x}
+                    image_format = image_format.collect{|x| (x == "painting") ? "paintings" : x}
+                    image_format = image_format.collect{|x| (x == "plan") ? "plans" : x}
+                    image_format = image_format.collect{|x| (x == "diagram") ? "diagrams" : x}
+                    image_format = image_format.collect{|x| (x == "coloredplates") ? "plates (color)" : x}
+                    image_format = image_format.collect{|x| (x == "genealogicaltables") ? "genealogical tables" : x}
+                    image_format.collect{|x| (!image_format_values.include?(x)) ? image_keyword_add << x : nil}
+                    image_format = image_format.reject! { |x| !image_format_values.include?(x)}
+                   puts "Line 413 image_keyword_add begin"
+                   puts image_keyword_add
+                   puts "image_keyword_add end"
+                   puts image_format
+                  else
+                    image_format = image_format.strip
+                    image_format = image_format.downcase
+                    if image_format == "photos" or image_format == "phots" or image_format == "photos " 
+                       image_format = "photographs" 
+                    end
+                    if image_format == "engraving"
+                      image_format = "engravings"
+                    end
+                    if image_format == "coloredengravings"
+                      image_format = "engravings (color)"
+                    end
+                    if image_format == "drawing"
+                      image_format = "drawings"
+                    end
+                    if image_format == "drawings--color" or image_format == "coloreddrawings"
+                      image_format = "drawings (color)"
+                    end
+                    if image_format == "table"
+                      image_format = "tables"
+                    end
+                    if image_format == "etchigns" or image_format == "etching"
+                      image_format = "etchings"
+                    end
+                    if image_format == "portrait"
+                      image_format = "portraits"
+                    end
+                    if image_format == "map"
+                      image_format = "maps"
+                    end
+                    if image_format == "coloredmaps"
+                      image_format = "maps (color)"
+                    end
+                    if image_format == "painting"
+                      image_format = "paintings"
+                    end
+                    if image_format == "plan"
+                      image_format = "plans"
+                    end
+                    if image_format == "diagram"
+                      image_format = "diagrams"
+                    end
+                    if image_format == "coloredplates"
+                      image_format == "plates (color)"
+                    end
+                    if image_format == "genealogicaltables"
+                      image_format = "genealogical tables"
+                    end
+                    if !image_format_values.include?(image_format)
+                      image_keyword_add << image_format
+                      image_format = ""
+                    end
+                    puts "line 468 image_keyword_add begin" 
+                    puts image_keyword_add
+                    puts "image_keyword_add end"
+                    puts image_format
+                  end
                when /^Image\ geographic/i
                  image_geo = pee.content().split(':')[1]
                when /^Image\ Date/i
                  image_date = pee.content().split(':')[1]
                when /^Image ethnic/i
                  image_ethnic = pee.content().split(':')[1]
+                  image_ethnic = image_ethnic.strip
+                  if !image_ethnic.nil? and (image_ethnic.include? ";" or image_ethnic.include? "|")
+                    if image_ethnic.include? ";"
+                      image_ethnic = image_ethnic.split(';')
+                    end
+                    if image_ethnic.include? "|"
+                      image_ethnic = image_ethnic.split("|")
+                    end
+                    image_ethnic = image_ethnic.collect{|x| x.strip}
+                   puts image_ethnic
+                  else
+                    image_ethnic = image_ethnic.strip
+                    puts image_ethnic
+                  end
 #               when /^Image Ethnic/i
 #                 image_ethnic = pee.content().split(':')[1]
                when /^Image\ keyword/i
 #                 image_keyword = pee.content().split(':')[1].gsub!(';','')
                   image_keyword = pee.content().split(':')[1] #.strip.gsub!(';','')
                   image_keyword = image_keyword.strip
-                  if !image_keyword.nil? and (image_keyword.include? " ; " or image_keyword.include? " | ")
-                    if image_keyword.include? " ; "
-                      image_keyword = image_keyword.split(' ; ')
-                    end
-                    if image_keyword.include? " | "
-                      image_keyword = image_keyword.split(" | ")
-                    end
+                  if !image_keyword.nil? and (image_keyword.include? ";" or image_keyword.include? "|")
                     if image_keyword.include? ";"
                       image_keyword = image_keyword.split(';')
                     end
-                    if image_keyword.include? " ;"
-                      image_keyword = image_keyword.split(' ;')
+                    if image_keyword.include? "|"
+                      image_keyword = image_keyword.split("|")
                     end
-#                  image_keyword.collect{|x| x.strip}
-                   image_keyword[0] = image_keyword[0].strip
-                   puts image_keyword[0]
+                    image_keyword = image_keyword.collect{|x| x.strip}
+                    image_keyword = image_keyword.concat image_keyword_add
+                   puts image_keyword
                   else
                     image_keyword = image_keyword.strip
+                    if image_keyword_add.size > 0
+                      puts "here is "
+                      puts image_keyword_add
+                      puts "image_keyword_add"
+                      image_keyword = image_keyword_add << image_keyword
+                    end
                     puts image_keyword
                   end
                when /^Image\ caption/i

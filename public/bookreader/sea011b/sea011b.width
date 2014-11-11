@@ -1,8 +1,8 @@
 if (index == 0) {
-     return 1548;
+     return 1302;
     }
 if (index == 1) {
-     return 1433;
+     return 1302;
     }
 if (index == 2) {
      return 1302;

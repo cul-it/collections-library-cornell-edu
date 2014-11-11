@@ -23,8 +23,8 @@ class Page < ActiveFedora::Base
   has_attributes :image_format, datastream: 'descMetadata', multiple: false
   has_attributes :image_geo, datastream: 'descMetadata', multiple: true
   has_attributes :image_date, datastream: 'descMetadata', multiple: false
-  has_attributes :image_ethnic, datastream: 'descMetadata', multiple: false
-  has_attributes :image_keyword, datastream: 'descMetadata', multiple: false
+  has_attributes :image_ethnic, datastream: 'descMetadata', multiple: true
+  has_attributes :image_keyword, datastream: 'descMetadata', multiple: true
   has_attributes :image_caption, datastream: 'descMetadata', multiple: false
   has_attributes :image_ocr, datastream: 'descMetadata', multiple: false
   has_attributes :image_metadata, datastream: 'descMetadata', multiple: true

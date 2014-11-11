@@ -1657,7 +1657,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 264;
+br.numLeafs = 263;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Acheen, and the ports on the north and east coasts of Sumatra : with incidental notices of the trade in the eastern seas, and the aggressions of the Dutch";

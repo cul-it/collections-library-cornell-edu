@@ -2683,7 +2683,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 436;
+br.numLeafs = 434;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Narrative of events in Borneo and Celebes, down to the occupation of Labuan: from the journals of James Brooke, esq., Rajah of Sarawak, and governor of Labuan. Together with a narrative of the operations of H.M.S. Iris. By Captain Rodney Mundy, R.N. With numerous plates, maps, charts, and woodcuts, vol.1";

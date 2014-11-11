@@ -16,11 +16,6 @@ body {
 		padding-bottom: 50px;
 	}
 }
-footer {
-	margin: 30px 0 15px;
-	color: #ccc;
-	a, a:hover { color: white; }
-}
 .page-content {
 	@include make-sm-column(12)
 }
@@ -95,6 +90,16 @@ p, li {
 // Miscellaneous
 // ---------------------------------//
 
-//.pull-right {
-//	margin: 0 0 20px 20px; 
-//}
+.btn-visions {
+	background: $medium-blue;
+	border: $blue;
+	color: white;
+	i {
+		margin-left: .25em;
+		color: $peach;
+	}
+}
+.btn-visions:hover {
+	background: $blue;
+	color: white;
+}

@@ -2515,7 +2515,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 408;
+br.numLeafs = 406;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Travels in Indo-China and the Chinese empire";

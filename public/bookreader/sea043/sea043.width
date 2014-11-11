@@ -37,6 +37,9 @@ if (index == 11) {
 if (index == 12) {
      return 606;
     }
+if (index == 13) {
+     return 606;
+    }
 if (index == 14) {
      return 597;
     }
@@ -45,6 +48,12 @@ if (index == 15) {
     }
 if (index == 16) {
      return 597;
+    }
+if (index == 17) {
+     return 600;
+    }
+if (index == 18) {
+     return 600;
     }
 if (index == 19) {
      return 637;

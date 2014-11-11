@@ -1,3 +1,4 @@
+<% real_page = render_index_field_value :document => document, :field => 'image_n_tesim' %>
 <% docmodel = render_index_field_value :document => document, :field => 'active_fedora_model_ssi'%>
 <% seaid = render_index_field_value :document => document, :field => 'id'%>
 
@@ -20,7 +21,7 @@
               <% else %>
       <% page_book_title = render_index_field_value :document => document, :field => 'book_title_tesim' %>
 <% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
-<% display_book_title = page_book_title + ', pg. ' + page %>
+<% display_book_title = page_book_title + ', pg. ' + real_page %>
 
   <%= t('blacklight.search.documents.counter', :counter => (document_counter + 1 + @response.params[:start].to_i)) %>
   <% if page_book_title.present? %>

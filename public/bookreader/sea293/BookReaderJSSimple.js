@@ -1555,7 +1555,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 248;
+br.numLeafs = 246;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Burma";

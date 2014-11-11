@@ -367,7 +367,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 95;
+br.numLeafs = 48;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Voyage aux Philippines 1879-1881, I-IV";

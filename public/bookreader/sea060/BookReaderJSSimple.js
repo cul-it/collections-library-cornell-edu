@@ -1723,7 +1723,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 278;
+br.numLeafs = 274;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Geography of the Eastern Peninsula : comprising a descriptive outline of the whole territory, and a geographical, commercial, social and political account of each of its divisions, with a full and connective history of Burmah, Siam, Anam, Cambodia, French Cochin-China, Yunan, and Malaya";

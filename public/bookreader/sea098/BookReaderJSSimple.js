@@ -799,7 +799,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 126;
+br.numLeafs = 120;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Java, the wonderland : [Guide and tourist's hand book] This book describes one of the most beautiful countries in the world";

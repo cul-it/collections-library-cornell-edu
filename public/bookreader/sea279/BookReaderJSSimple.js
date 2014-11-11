@@ -1819,7 +1819,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 292;
+br.numLeafs = 290;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Borneo and the Indian Archipelago : with drawings of costume and scenery";

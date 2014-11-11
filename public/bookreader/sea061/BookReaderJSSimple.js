@@ -2317,7 +2317,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 373;
+br.numLeafs = 372;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "The first voyage round the world, by Magellan. Translated from the accounts of Pigafetta, and other contemporary writers. Accompanied by original documents, with notes and an introduction, by Lord Stanley of Alderley";

@@ -8,12 +8,148 @@ br = new BookReader();
 
 // Return the width of a given page.  Here we assume all images are 800 pixels wide
 br.getPageWidth = function(index) {
-   return 3000;
+if (index == 0) {
+     return 450;
+    }
+if (index == 1) {
+     return 763;
+    }
+if (index == 2) {
+     return 769;
+    }
+if (index == 3) {
+     return 763;
+    }
+if (index == 4) {
+     return 763;
+    }
+if (index == 5) {
+     return 763;
+    }
+if (index == 6) {
+     return 763;
+    }
+if (index == 7) {
+     return 763;
+    }
+if (index == 8) {
+     return 763;
+    }
+if (index == 9) {
+     return 763;
+    }
+if (index == 10) {
+     return 762;
+    }
+if (index == 11) {
+     return 558;
+    }
+if (index == 12) {
+     return 544;
+    }
+if (index == 13) {
+     return 762;
+    }
+if (index == 14) {
+     return 544;
+    }
+if (index == 15) {
+     return 762;
+    }
+if (index == 16) {
+     return 537;
+    }
+if (index == 17) {
+     return 762;
+    }
+if (index == 18) {
+     return 762;
+    }
+if (index == 19) {
+     return 548;
+    }
+if (index == 20) {
+     return 548;
+    }
+if (index == 21) {
+     return 452;
+    }
+if (index > 21) {
+    return 800;
+    }
 }
 
 // Return the height of a given page.  Here we assume all images are 1200 pixels high
 br.getPageHeight = function(index) {
-    return 2000;
+if (index == 0) {
+     return 595;
+    }
+if (index == 1) {
+     return 554;
+    }
+if (index == 2) {
+     return 565;
+    }
+if (index == 3) {
+     return 558;
+    }
+if (index == 4) {
+     return 548;
+    }
+if (index == 5) {
+     return 548;
+    }
+if (index == 6) {
+     return 548;
+    }
+if (index == 7) {
+     return 551;
+    }
+if (index == 8) {
+     return 551;
+    }
+if (index == 9) {
+     return 551;
+    }
+if (index == 10) {
+     return 551;
+    }
+if (index == 11) {
+     return 762;
+    }
+if (index == 12) {
+     return 762;
+    }
+if (index == 13) {
+     return 544;
+    }
+if (index == 14) {
+     return 762;
+    }
+if (index == 15) {
+     return 548;
+    }
+if (index == 16) {
+     return 761;
+    }
+if (index == 17) {
+     return 548;
+    }
+if (index == 18) {
+     return 548;
+    }
+if (index == 19) {
+     return 762;
+    }
+if (index == 20) {
+     return 762;
+    }
+if (index == 21) {
+     return 612;
+    }
+if (index > 21) {
+    return 1200;
+    }
 }
 
 // We load the images from archive.org -- you can modify this function to retrieve images

@@ -9,7 +9,7 @@ br = new BookReader();
 // Return the width of a given page.  Here we assume all images are 800 pixels wide
 br.getPageWidth = function(index) {
 if (index == 0) {
-     return 921;
+     return 461;
     }
 if (index == 1) {
      return 530;
@@ -81,7 +81,7 @@ if (index == 23) {
      return 469;
     }
 if (index == 24) {
-     return 1200;
+     return 600;
     }
 if (index == 25) {
      return 513;
@@ -201,7 +201,7 @@ if (index == 63) {
      return 520;
     }
 if (index == 64) {
-     return 1242;
+     return 621;
     }
 if (index == 65) {
      return 526;
@@ -255,7 +255,7 @@ if (index == 81) {
      return 521;
     }
 if (index == 82) {
-     return 1256;
+     return 628;
     }
 if (index == 83) {
      return 505;
@@ -279,7 +279,7 @@ if (index == 89) {
      return 501;
     }
 if (index == 90) {
-     return 1251;
+     return 626;
     }
 if (index == 91) {
      return 536;
@@ -309,7 +309,7 @@ if (index == 99) {
      return 516;
     }
 if (index == 100) {
-     return 1245;
+     return 623;
     }
 if (index == 101) {
      return 507;
@@ -321,7 +321,7 @@ if (index == 103) {
      return 515;
     }
 if (index == 104) {
-     return 1231;
+     return 616;
     }
 if (index == 105) {
      return 529;
@@ -357,7 +357,7 @@ if (index == 115) {
      return 535;
     }
 if (index == 116) {
-     return 1242;
+     return 621;
     }
 if (index == 117) {
      return 498;
@@ -405,7 +405,7 @@ if (index == 131) {
      return 514;
     }
 if (index == 132) {
-     return 1251;
+     return 626;
     }
 if (index == 133) {
      return 528;
@@ -726,7 +726,7 @@ if (index == 238) {
      return 514;
     }
 if (index == 239) {
-     return 880;
+     return 440;
     }
 if (index > 239) {
     return 800;
@@ -736,7 +736,7 @@ if (index > 239) {
 // Return the height of a given page.  Here we assume all images are 1200 pixels high
 br.getPageHeight = function(index) {
 if (index == 0) {
-     return 1339;
+     return 670;
     }
 if (index == 1) {
      return 819;
@@ -811,7 +811,7 @@ if (index == 24) {
      return 769;
     }
 if (index == 25) {
-     return 814;
+     return 407;
     }
 if (index == 26) {
      return 838;
@@ -928,7 +928,7 @@ if (index == 63) {
      return 829;
     }
 if (index == 64) {
-     return 816;
+     return 408;
     }
 if (index == 65) {
      return 819;
@@ -982,7 +982,7 @@ if (index == 81) {
      return 827;
     }
 if (index == 82) {
-     return 791;
+     return 396;
     }
 if (index == 83) {
      return 834;
@@ -1006,7 +1006,7 @@ if (index == 89) {
      return 825;
     }
 if (index == 90) {
-     return 764;
+     return 382;
     }
 if (index == 91) {
      return 830;
@@ -1036,7 +1036,7 @@ if (index == 99) {
      return 832;
     }
 if (index == 100) {
-     return 801;
+     return 401;
     }
 if (index == 101) {
      return 821;
@@ -1048,7 +1048,7 @@ if (index == 103) {
      return 825;
     }
 if (index == 104) {
-     return 792;
+     return 396;
     }
 if (index == 105) {
      return 822;
@@ -1084,7 +1084,7 @@ if (index == 115) {
      return 821;
     }
 if (index == 116) {
-     return 818;
+     return 409;
     }
 if (index == 117) {
      return 828;
@@ -1132,7 +1132,7 @@ if (index == 131) {
      return 832;
     }
 if (index == 132) {
-     return 780;
+     return 390;
     }
 if (index == 133) {
      return 828;
@@ -1453,7 +1453,7 @@ if (index == 238) {
      return 815;
     }
 if (index == 239) {
-     return 1320;
+     return 660;
     }
 if (index > 239) {
     return 1200;

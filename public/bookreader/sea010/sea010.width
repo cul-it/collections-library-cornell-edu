@@ -1,11 +1,11 @@
 if (index == 0) {
-     return 1292;
+     return 646;
     }
 if (index == 1) {
-     return 1259;
+     return 630;
     }
 if (index == 2) {
-     return 1202;
+     return 601;
     }
 if (index == 3) {
      return 743;

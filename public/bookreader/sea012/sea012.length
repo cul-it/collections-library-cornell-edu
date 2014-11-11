@@ -1,5 +1,5 @@
 if (index == 0) {
-     return 636;
+     return 600;
     }
 if (index == 1) {
      return 620;

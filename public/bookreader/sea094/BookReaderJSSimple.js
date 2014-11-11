@@ -2743,7 +2743,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 445;
+br.numLeafs = 444;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Scented isles and coral gardens : Torres Straits, German New Guinea, and the Dutch East Indies";

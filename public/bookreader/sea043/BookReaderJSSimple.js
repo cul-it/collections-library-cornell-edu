@@ -47,6 +47,9 @@ if (index == 11) {
 if (index == 12) {
      return 606;
     }
+if (index == 13) {
+     return 606;
+    }
 if (index == 14) {
      return 597;
     }
@@ -55,6 +58,12 @@ if (index == 15) {
     }
 if (index == 16) {
      return 597;
+    }
+if (index == 17) {
+     return 600;
+    }
+if (index == 18) {
+     return 600;
     }
 if (index == 19) {
      return 637;
@@ -1023,6 +1032,9 @@ if (index == 11) {
 if (index == 12) {
      return 1074;
     }
+if (index == 13) {
+     return 1074;
+    }
 if (index == 14) {
      return 1069;
     }
@@ -1030,6 +1042,12 @@ if (index == 15) {
      return 1060;
     }
 if (index == 16) {
+     return 1069;
+    }
+if (index == 17) {
+     return 1069;
+    }
+if (index == 18) {
      return 1069;
     }
 if (index == 19) {
@@ -2017,7 +2035,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 332;
+br.numLeafs = 326;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "A seaman's narrative of his adventures during a captivity among Chinese pirates on the coast of Cochin China, and afterwards during a journey on foot across that country in the years 1857-8";
