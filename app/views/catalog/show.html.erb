@@ -10,7 +10,7 @@
     <% page = 1 %>
     <% sea_id=page_turner[3..7] %>
         <div class="cover" data-no-turbolink>
-          <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/get/seapage:<%= sea_id %>_1/thumbnailImage" class="img-responsive img-thumbnail"></a>
+          <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/get/seapage:<%= sea_id %>_1/thumbnailImage" class="img-responsive img-thumbnail" alt="Book or page image"></a>
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
           <div class="reader-link" data-no-turbolink>
             <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read book</a>
@@ -33,7 +33,7 @@
       <% page_turner_array =  page_turner.split('_') %>
       <% sea_id = page_turner_array[0][8..11] %>
         <div class="cover" data-no-turbolink>
-          <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/<%= page_turner %>/datastreams/thumbnailImage/content" class="img-responsive img-thumbnail"></a>
+          <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydradev-store.library.cornell.edu/fedora/objects/<%= page_turner %>/datastreams/thumbnailImage/content" class="img-responsive img-thumbnail" alt="Book or page image"></a>
           <div class="reader-link" data-no-turbolink>
             <a class="label label-online" href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= real_page %></a>
           </div>
