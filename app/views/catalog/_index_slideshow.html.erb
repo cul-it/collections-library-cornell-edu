@@ -1,0 +1,37 @@
+<% real_page = render_index_field_value :document => document, :field => 'image_n_tesim' %>
+<% docmodel = render_index_field_value :document => document, :field => 'active_fedora_model_ssi'%>
+<% seaid = render_index_field_value :document => document, :field => 'id'%>
+
+<div class="item<%= ' active' if document_counter == 0 %>">
+  <div class="frame">
+  <% if docmodel == 'Book' %>
+  <% @id = document[:id].split(':') %>
+  	  <img src="http://hydrastg.library.cornell.edu/fedora/get/seapage:<%= @id[1] %>_1/digitalImage" class="img-responsive img-thumbnail slideshow-image">
+      
+
+  <% else %>
+        <img src="http://hydradev-store.library.cornell.edu/fedora/objects/<%= seaid %>/datastreams/digitalImage/content" class="img-responsive img-thumbnail slideshow-image">
+        <% end %>
+
+
+      <div class="caption">
+      <% if docmodel == 'Book' %>
+
+      <%= render_document_partials document, blacklight_config.view_config(:slideshow).partials, :document_counter => document_counter %>
+              <% else %>
+      <% page_book_title = render_index_field_value :document => document, :field => 'book_title_tesim' %>
+<% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
+<% display_book_title = page_book_title + ', pg. ' + real_page %>
+
+  <%= t('blacklight.search.documents.counter', :counter => (document_counter + 1 + @response.params[:start].to_i)) %>
+  <% if page_book_title.present? %>
+  <%= link_to_document document, :label=>display_book_title, :counter => (document_counter + 1 + @response.params[:start].to_i) %>
+  <% else %>
+    <%= link_to_document document, :label=>document_show_link_field(document), :counter => (document_counter + 1 + @response.params[:start].to_i) %>
+    <% end %>      <% end %>
+      </div>
+      <span class="counter">
+        <%= t :'blacklight_gallery.catalog.modal_slideshow.counter', counter: document_counter + 1, count: count %>
+      </span>
+  </div>
+</div>

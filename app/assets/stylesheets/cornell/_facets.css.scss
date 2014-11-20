@@ -11,6 +11,11 @@
 #facets {
 	li {
 		font-size: 14px;
+		padding-bottom:0.3em;
+
+		.more_facets_link {
+			float:right;
+		}
 	}
 	span.selected { color: $brown; }
 	.btn-navbar { 
@@ -21,6 +26,30 @@
 	h5 {
 		a:hover { background: inherit; }
 	}
+
+	.panel-heading {
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+	.panel-body {
+		border-top:none;
+	}
+	.panel-title {
+		font-size: 14px;
+		line-height: 1.4em;
+	}
+	.panel-heading.collapse-toggle .panel-title:after {
+		line-height: inherit;
+	}
+	.facets-toggle {
+		margin: 0;
+		padding: 5px 10px;
+		border-radius: 0;
+	}
+	h4 {
+		line-height: 1.6em;
+	}
 }
 
 
@@ -28,6 +57,31 @@
 .twiddle-open .fa-chevron-right {
   @extend .fa-chevron-down;
   	opacity: 1;
+}
+
+.facet-values {
+
+	.remove {
+		color: #666;
+		margin-left: 0px;
+		padding: 3px 5px;
+	}
+}
+
+#sortAndPerPage {
+	.pull-right {
+		float: none !important;
+	}
+}
+.view-type {
+	margin-top: .5em;
+}
+
+
+.range_limit a {
+		color: #999;
+margin-left: 0px;
+padding: 3px 15px;
 }
 
 
@@ -45,3 +99,33 @@
 		text-transform: uppercase;
 	}
 }
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+	#sortAndPerPage {
+		.pull-right {
+			float: right !important;
+		}
+	}
+}
+

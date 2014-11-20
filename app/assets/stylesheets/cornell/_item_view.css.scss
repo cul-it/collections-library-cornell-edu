@@ -6,62 +6,93 @@
 			line-height: 1.25em;
 			font-size: 24px;
 			font-family: $baseFontFamily;
-			color: $gray;
+			.label {
+				font-weight: normal;
+				font-size: 70%;
+			}
 		}
-	}
-	#sidebar {
-		.well {
-			text-align: center;
-		}
-		.label {
-			font-weight: normal;
-			padding: .75em 1em;
-			font-size: 16px;
-		}
-		.label:hover { background: $blue; }
 	}
 }
 
 .label-online {
 	background: $medium-blue;
+	display:inline-block;
 }
 .label-book {
 	background: $light-blue;
+	display:inline-block;
 }
 
+// Don't need this because moving access links under cover image
+// #sidebar-nav {
+// 	.nav{
+// 		li a{
+// 			font-size: 14px;
+// 			line-height: 1.5em;
+// 			padding:5px 15px;
+// 		}
+// 	}
+// 	.bookmark_toggle {
+// 		margin-bottom: 5px; 
+// 		padding:5px 15px 5px 35px;
+// 		font-size:14px;
+// 		line-height:normal;
 
-#sidebar {
-	.nav-list {
-		a {
-			font-size: 14px;
-		}
-	}
-	.bookmark_toggle {
-		margin-bottom: 5px; 
-	}
-	.well {
-		padding: 19px;
-	}
+
+// 	}
+
+// 	.panel-heading {
+// 		background:white;
+// 		border:none;
+// 		font-weight: bold;
+// 		color: #999999;
+// 		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+// 		text-transform: uppercase;
+// 		font-size:14px;
+// 		margin-bottom: 0;
+// 		padding:0px 15px
+// 	}
+
+// 	.panel-body {
+// 		padding:0px
+// 	}
+
+// 	.panel-default, {
+// 		border:none;
+// 	}
+// 	.well {
+// 		padding: 19px;
+// 	}
+// }
+
+.metadata {
+	@include make-sm-column(9);
 }
-
 .cover {
+	@include make-sm-column(3);
 	text-align: center;
 	color:$pale-gray;
-	a {font-size:75%;
-		}
+	margin-bottom: 1em;
 	img {
-		margin-bottom:1em;
+		margin-bottom: 1em;
+		height: 150px; // for mobile devices
 	}
+	.label {
+		font-weight: normal;
+		padding: .75em 1em;
+		font-size: 16px;
+	}
+	.label:hover { background: $blue; }
 }
 .reader-link {
 	margin-bottom: 10px;
 }
-.item-links {
+ul.item-links {
+	padding:0;
 	margin: 15px 0 0 0;
 	list-style: none;
 	li { 
 		font-size: 14px;
-		line-height: 2em;
 	}
 }
 
@@ -77,3 +108,77 @@
 	margin-bottom: 20px;
 }
 #previousNextDocument { margin-top: 10px; }
+
+// TOC
+// ------------------
+.toc-section {
+	margin: 0 0 .5em;
+}
+.toc-chapter {
+	margin: 0 0 .5em 1em;
+	line-height: 1.4em;
+}
+
+// Item tools
+// ------------------
+.show-tools {
+	.nav {
+		li {
+			float: left;
+		}
+	}
+	.btn-sm {
+		padding: 5px 10px !important;
+	}
+	.bookmark_toggle { padding: 0; }
+	.toggle_bookmark {
+		padding-top: 4px;
+		font-size: 12px;
+		span {
+			margin-left: .25em;
+		}
+	}
+	.panel-body {
+		padding: 0 0 1.5em;
+	}
+	.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+		margin-left: 0;
+	}
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) { 
+	.cover {
+		img {
+			height: auto;
+		}
+	}
+	.show-tools {
+		.nav {
+			float: right;
+		}
+		// .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+		// 	margin-left: -20px;
+		// }
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+
+}

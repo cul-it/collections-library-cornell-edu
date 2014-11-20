@@ -1,0 +1,45 @@
+if (index == 0) {
+     return 1973;
+    }
+if (index == 1) {
+     return 1002;
+    }
+if (index == 2) {
+     return 1965;
+    }
+if (index == 3) {
+     return 1955;
+    }
+if (index == 4) {
+     return 1956;
+    }
+if (index == 5) {
+     return 1821;
+    }
+if (index == 6) {
+     return 1812;
+    }
+if (index == 7) {
+     return 1821;
+    }
+if (index == 8) {
+     return 1819;
+    }
+if (index == 9) {
+     return 1827;
+    }
+if (index == 10) {
+     return 1812;
+    }
+if (index == 11) {
+     return 1833;
+    }
+if (index == 12) {
+     return 1812;
+    }
+if (index == 13) {
+     return 1210;
+    }
+if (index > 13) {
+    return 1200;
+    }

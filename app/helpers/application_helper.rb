@@ -39,15 +39,15 @@ module ApplicationHelper
 #    render(options)
 #  end
   def render_table_of_contents(pid)
-    Rails.logger.info("TICTOC0 = #{params}")
     tocHash = {}
     output = []
     presortArray = []
     seapage = pid.split(':')[1]
-    page_reader_url = "http://hydradev.library.cornell.edu/bookreader/"
+    page_reader_url = "/bookreader/"
 #    @toc = JSON.parse(HTTPClient.get_content("http://rossini.cul.columbia.edu/voyager_backend/holdings/retrieve/#{params[:id]}"))[params[:id]]
      clnt = HTTPClient.new
-     toc = clnt.get_content("http://hydradev-store.library.cornell.edu/solr/development/select?q=id%3Aseapage*"+seapage+"*+AND+head_tesim%3A*&rows=1000&sort=id+asc&fl=head_tesim%2C+id%2C+node_tesim%2C+image_seq_tesim&wt=ruby") # do |chunk|
+     solr = Blacklight.solr_config[:url]
+     toc = clnt.get_content("http://hydrastg.library.cornell.edu/solr/development_core/select?q=id%3Aseapage*"+seapage+"_*+AND+head_tesim%3A*&rows=1000&sort=id+asc&fl=head_tesim%2C+id%2C+node_tesim%2C+image_seq_tesim&wt=ruby") # do |chunk|
        tocArray = eval(toc)
        i = 0
        tocArray['response']['docs'].each do |doctary|
@@ -55,17 +55,18 @@ module ApplicationHelper
          i = i + 1
        end
        presortArray.sort_by! {|e| e[2]}
-       Rails.logger.info("SORTAKINDA = #{tocArray['response']['docs']}")
        printArray = ""
 #        tocArray['response']['docs'].each do |doc|
         presortArray.each do |doc|
 #         pageNum = doc['id'].split('_')[1]
          pageNum = doc[0].split('_')[1]
          if doc[3].include? "."
-            printArray << "&nbsp;&nbsp;&nbsp;<a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc[1] + "</a><br>"      
+            data = "<p>Hello!</p>"
+            data.html_safe
+            printArray << "<div class=\"toc-chapter\"><a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc[1] + "</a></div>"      
 #         printArray << "<a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc['head_tesim'][0] + "</a><br>"
          else      
-            printArray << "<a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc[1] + "</a><br>"
+            printArray << "<div class=\"toc-section\"><a href='" + page_reader_url + pid + "/#page/" + pageNum + "/mode/1up'>" + doc[1] + "</a></div>"
          end      
        end
 #       tocArray['response']['docs'].each do |doc|

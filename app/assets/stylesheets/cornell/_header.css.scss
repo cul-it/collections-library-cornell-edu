@@ -21,10 +21,26 @@
 	}
 }
 
-.navbar {
+.logos {
+	@include make-sm-column(6)
+}
+.site-title {
+	@include make-sm-column(3)
+}
+.navigation-bar {
+	@include make-sm-column(9)
+}
+.searchbar{
+	@include make-sm-column(8)
+}
+.utility-links {
+	@include make-sm-column(4)
+}
+.navbar-collapse {
 	.nav {
-		float: right;
-		margin-top: 35px;
+		position: relative;
+		z-index: 5000;
+		background: $blue;
 		li {
 			a {
 				text-shadow: none;
@@ -34,37 +50,75 @@
 			a:hover {
 				color: white;
 				text-decoration: underline;
+				background:none;
 			}
 		}
 	}
 }
-
-// Mobile nav
-// -----------------------//
-
-.navbar {
-	.btn-navbar,
-	.btn-navbar:hover,
-	.btn-navbar:active {
+.navbar-header {
+	.navbar-toggle {
 		background: $blue;
 		border-radius: 0;
 		margin-right: 0;
 		text-transform: uppercase;
 		padding: 4px 10px;
+		color: white;
+		margin-top: -60px;
 	}
 }
-.nav-collapse.in {
-	z-index: 1000;
-	.nav {
-		margin-top: 0;
-		width: auto;
-		background: #011b32;
-		a {
-			font-weight: normal;
-			font-size: 18px;
+.navigation-bar {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	.sea-identity {
+		h1 {
+			font-size: 38px;
+			span {
+				font-size: 17px;
+			}
 		}
-		a:hover {
-			background: $blue;
+	}
+	.navbar-collapse {
+		.nav {
+			float: right;
+			width: auto;
+			margin-top: 30px;
+			background: inherit;
+		}
+	}
+	.navigation-bar {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+	.sea-identity {
+		h1 {
+			font-size: 43px;
+			span {
+				font-size: 19px;
+			}
 		}
 	}
 }

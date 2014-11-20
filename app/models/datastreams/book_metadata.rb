@@ -38,7 +38,7 @@ class BookMetadata < ActiveFedora::OmDatastream
     t.pubstmt_idno(index_as: :stored_searchable)
     t.bibl_titletype(index_as: :stored_searchable)
     t.title(index_as: :stored_searchable)
-    t.author(index_as: :stored_searchable)
+    t.author(index_as: :stored_searchable, type: :string)
     t.publisher(index_as: :stored_searchable)
     t.pubplace(index_as: :stored_searchable)
     t.pubdate(index_as: :stored_searchable)
@@ -47,7 +47,6 @@ class BookMetadata < ActiveFedora::OmDatastream
     t.editorialdecl(index_as: :stored_searchable)
     t.keywords(index_as: :stored_searchable) 
     t.image(indes_as: :stored_searchable)
-    t.subject(index_as: :stored_searchable)
     t.bibid(index_as: :stored_searchable)
   #  (index_as: :stored_searchable)
   #  t.author(index_as: :stored_searchable)
@@ -55,6 +54,10 @@ class BookMetadata < ActiveFedora::OmDatastream
 
   def self.xml_template
     Nokogiri::XML.parse("<DLPSTEXTCLASS/>")
+  end
+  
+  def prefix
+    return ""
   end
   
 

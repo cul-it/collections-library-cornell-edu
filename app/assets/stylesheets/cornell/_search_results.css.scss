@@ -16,25 +16,36 @@ h2.blacklight-title_display {
 	margin-left: 30px;
 }
 
+h2 {
+	.label {
+		font-weight:normal;
+		font-size: .6em;
+	}
+}
+
 .book-cover {
 	float: left;
 	margin-right: 1em;
-	height: 120px;
+	// height: 120px;
 	width:70px
 }
 
 .document-data {
 	float: left;
-	width: 89%;
+	width: 70%;
 }
 
 .blacklight-catalog-index, 
 .blacklight-bookmarks-index {
 	.document {
-		clear: both;
 		border-bottom: 1px solid #edebe7;
 		padding: 20px 0;
 	}
+}
+
+.gallery .document {
+	@include make-xs-column(6);
+	@include make-sm-column(3);
 }
 
 .blacklight-ocr_display {
@@ -47,4 +58,38 @@ h2.blacklight-title_display {
 }
 .blacklight-page_turner_link {
 	margin-top: 5px;
+}
+
+.slideshow-image {
+	width:30%
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	.document-data {
+		width: 84%;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+	.document-data {
+		width: 87%;
+	}
 }

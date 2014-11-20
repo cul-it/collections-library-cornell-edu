@@ -3,17 +3,69 @@
 }
 //override app
 #searchbar {
-	padding: 5px 0;
+	margin: 10px 0;
+	.form-group {
+		margin-bottom: 0;
+	}
+	.search_q {
+		border-radius: 4px 0 0 4px;
+	}
 }
 
+.search-query-form {
+	.input-group-addon {
+		border:0px;
+		padding:0px
+	}
+}
+
+.search-input {
+	@include make-xs-column(12);
+	@include make-sm-column(6);
+}
 // Utility links
 // ----------------------//
 .util-links-other {
-	float: right;
-	margin-right: 25px;
-	margin-top: 10px;
+	margin-top: 1em;
+	margin-bottom: .5em;
 	a { color: $light-blue; }
 	a:hover {
 		color: white;
 	}
+}
+
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	#searchbar {
+		.form-group {
+			margin-left: 0;
+		}
+	}
+	.util-links-other {
+		float: right;
+		margin-right: 25px;
+		margin-bottom: 0;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+
 }

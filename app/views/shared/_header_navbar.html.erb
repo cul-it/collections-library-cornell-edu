@@ -1,15 +1,15 @@
 <!-- <div id="skiptocontent"><a href="#maincontent">skip to main content</a></div> -->
 
-<section class="cornell-identity hidden-phone">
+<section class="cornell-identity hidden-xs">
   <div class="container">
     <div class="row">
-      <div class="span6">
+      <div class="logos">
         <div class="cu-logo">
           <img src="/assets/cornell/layout/cul-logo-white.gif" alt="Cornell University Library">
           <a id="insignia-link" href="http://www.cornell.edu/">Cornell Insignia</a>
           <div class="unit-signature-links">
             <a id="cornell-link" href="http://www.cornell.edu/">Cornell University</a>
-            <a id="unit-link" href="http://beta.library.cornell.edu/">Cornell University Library</a>
+            <a id="unit-link" href="http://www.library.cornell.edu/">Cornell University Library</a>
           </div>
         </div>
       </div>
@@ -20,23 +20,31 @@
 <section class="sea-identity">
   <div class="container">
     <div class="row">
-      <div class="span3">
+      <div class="site-title">
         <h1><a href="<%=root_path%>"><span>Southeast Asia</span>Visions</a></h1>
       </div>
-      <div class="span9 navbar">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".visions-nav-collapse">
-          <i class="fa fa-bars"></i>
-        </a>
-        <div class="nav-collapse visions-nav-collapse">
-          <ul class="nav">
-            <li><a href="<%=root_path%>">Home</a></li>
-            <li><a href="/about/collection">Collection</a></li>
-            <li><a href="/about/project">Project</a></li>
-            <!-- <li><a href="/about/help">Help</a></li> -->
-          </ul>
-        </div>
+
+      <div class="navigation-bar">
+        
+        <div class="navbar">
+          
+          <div class="navbar-header">
+            <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-bars"></i>
+            </button> -->
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="<%=root_path%>">Home</a></li>
+              <li><a href="/about/collection">Collection</a></li>
+              <li><a href="/about/project">Project</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
 
       </div>
+
+    </div>
     </div>
   </div>
 </section>
@@ -45,10 +53,10 @@
 <section class="search-bar">
   <div class="container">
     <div class="row">
-      <div class="span9 clearfix" id="searchbar">         
+      <div class="clearfix searchbar" id="searchbar">         
         <%= render_search_bar  %>
       </div>
-      <div class="span3">
+      <div class="utility-links">
         <%= render :partial=>'/user_util_links' %>
       </div>
 

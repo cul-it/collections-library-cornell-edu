@@ -3,11 +3,16 @@ source 'https://rubygems.org'
 gem 'blacklight', '~> 5.4.0'
 gem 'hydra'
 gem 'active-fedora'
+gem 'httpclient'
+gem 'dotenv'
+gem 'dotenv-deployment'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
+gem 'mysql'
+gem 'sprockets-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -30,6 +35,13 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Font awesome
+gem "font-awesome-rails"
+
+gem 'comfortable_mexican_sofa', '~> 1.12.0'
+
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -48,6 +60,11 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem "bootstrap-sass"
+
+
+gem 'blacklight-gallery',"~> 0.1.0"
+gem "blacklight_range_limit"
+
 
 group :development, :test do
   gem "rspec-rails"
