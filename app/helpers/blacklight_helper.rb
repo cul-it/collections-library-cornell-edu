@@ -2,6 +2,6 @@ module BlacklightHelper
   include Blacklight::BlacklightHelperBehavior
 
   def application_name
-    "Southeast Asia Visions"
+    "Nuremberg Trial Collection"
   end
 end
