@@ -13,7 +13,7 @@
     <div class="blacklight-ocr_display"><%= render_index_field_value :document => document, :field => 'image_ocr_tesim', :highlight => true %>
     </div>
     <div class="blacklight-page_turner_link" data-no-turbolink>
-      <a href="/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= real_page %></a>
+      <a href="/bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= real_page %></a>
     </div>
   </div>
 <% else %>
@@ -25,7 +25,7 @@
       <span class="blacklight-publisher_uniform_display"><%= render_index_field_value :document => document, :field => 'pubdate_tesim' %></span>
     </div>
     <div class="blacklight-page_turner_link" data-no-turbolink>
-      <a href="/bookreader/sea:<%= sea_id %>/#page/1/mode/1up">Read book</a>
+      <a href="/bookreader/nur:<%= sea_id %>/#page/1/mode/1up">Read book</a>
     </div>
   </div>
 <% end %>
