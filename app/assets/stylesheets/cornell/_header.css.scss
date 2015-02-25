@@ -1,14 +1,12 @@
-.sea-identity {
-	background: url("cornell/layout/oceanbar.gif") repeat-x;
+.nuremberg-identity {
 	height: 80px;
 	h1 {
 		font-family: $visionsFontFamily;
 		color: white;
-		text-transform: uppercase;
 		line-height: .75em;
 		margin: 12px 0 0;
 		padding: 0;
-		font-size: 43px;
+		font-size: 36px;
 		span {
 			display: block;
 			font-size: 19px;
@@ -25,10 +23,10 @@
 	@include make-sm-column(6)
 }
 .site-title {
-	@include make-sm-column(3)
+	@include make-sm-column(6)
 }
 .navigation-bar {
-	@include make-sm-column(9)
+	@include make-sm-column(6)
 }
 .searchbar{
 	@include make-sm-column(8)
