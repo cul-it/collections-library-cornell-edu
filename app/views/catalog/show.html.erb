@@ -74,6 +74,36 @@
             <dd class="blacklight-publication-info"><%= render_document_show_field_value :document => @document, :field => 'pubplace_tesim'%>: <%= render_document_show_field_value :document => @document, :field => 'publisher_tesim'%>, <%= render_document_show_field_value :document => @document, :field => 'pubdate_tesim'%> </dd>
             <dt class="blacklight-publication-info-label">Publication Info:</dt>
             <dd class="blacklight-publication-info"><%= render_document_show_field_value :document => @document, :field => 'pubstmt_pubplace_tesim'%>: <%= render_document_show_field_value :document => @document, :field => 'pubstmt_publisher_tesim'%> </dd>
+
+            <dt class="blacklight-volume-label">Volume:</dt>
+              <dd class="blacklight-volume"><%= render_document_show_field_value :document => @document, :field => 'vol_tesim'%></dd>
+
+              <dt class="blacklight-subdivision-label">Subdivision:</dt>
+              <dd class="blacklight-subdivision"><%= render_document_show_field_value :document => @document, :field => 'subdiv_tesim'%></dd>
+
+             
+
+            <dt class="blacklight-description-label">Description:</dt>
+              <dd class="blacklight-description"><%= render_document_show_field_value :document => @document, :field => 'lang_tesim'%>, <%= render_document_show_field_value :document => @document, :field => 'note_tesim'%></dd>
+
+              <dt class="blacklight-supages-label">Pages supplemental:</dt>
+              <dd class="blacklight-supages"><%= render_document_show_field_value :document => @document, :field => 'supages_tesim'%></dd>
+
+              <dt class="blacklight-witness-label">Witness:</dt>
+              <dd class="blacklight-witness"><%= render_document_show_field_value :document => @document, :field => 'witness_tesim'%></dd>
+
+              <dt class="blacklight-other-names-label">Other names:</dt>
+              <dd class="blacklight-other-names"><%= render_document_show_field_value :document => @document, :field => 'onames_tesim'%></dd>
+
+              <dt class="blacklight-other-dates-label">Other dates:</dt>
+              <dd class="blacklight-other-dates"><%= render_document_show_field_value :document => @document, :field => 'odates_tesim'%></dd>
+
+
+              <dt class="blacklight-keywords-label">Keywords:</dt>
+              <dd class="blacklight-keywords"><%= render_document_show_field_value :document => @document, :field => 'keywords_tesim'%></dd>
+
+
+
             <dt class="blacklight-abstract-label">Abstract:</dt>
               <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'abstract_tesim'%></dd>
             <dt class="blacklight-publication-info-label">Table of Contents:</dt>
