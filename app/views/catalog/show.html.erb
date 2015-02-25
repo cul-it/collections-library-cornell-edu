@@ -99,13 +99,14 @@
               <dd class="blacklight-other-dates"><%= render_document_show_field_value :document => @document, :field => 'odates_tesim'%></dd>
 
 
-              <dt class="blacklight-keywords-label">Keywords:</dt>
-              <dd class="blacklight-keywords"><%= render_document_show_field_value :document => @document, :field => 'keywords_tesim'%></dd>
+              
 
 
 
             <dt class="blacklight-abstract-label">Abstract:</dt>
               <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'abstract_tesim'%></dd>
+              <dt class="blacklight-keywords-label">Keywords:</dt>
+              <dd class="blacklight-keywords"><%= render_document_show_field_value :document => @document, :field => 'keywords_tesim'%></dd>
             <dt class="blacklight-publication-info-label">Table of Contents:</dt>
             <dd class="blacklight-publication-info" data-no-turbolink><%= render_table_of_contents(params[:id]).html_safe %></dd>
           </dl>
