@@ -74,6 +74,8 @@
             <dd class="blacklight-publication-info"><%= render_document_show_field_value :document => @document, :field => 'pubplace_tesim'%>: <%= render_document_show_field_value :document => @document, :field => 'publisher_tesim'%>, <%= render_document_show_field_value :document => @document, :field => 'pubdate_tesim'%> </dd>
             <dt class="blacklight-publication-info-label">Publication Info:</dt>
             <dd class="blacklight-publication-info"><%= render_document_show_field_value :document => @document, :field => 'pubstmt_pubplace_tesim'%>: <%= render_document_show_field_value :document => @document, :field => 'pubstmt_publisher_tesim'%> </dd>
+            <dt class="blacklight-abstract-label">Abstract:</dt>
+              <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'abstract_tesim'%></dd>
             <dt class="blacklight-publication-info-label">Table of Contents:</dt>
             <dd class="blacklight-publication-info" data-no-turbolink><%= render_table_of_contents(params[:id]).html_safe %></dd>
           </dl>
