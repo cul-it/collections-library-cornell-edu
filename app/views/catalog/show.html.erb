@@ -63,6 +63,7 @@
         <div id="doc_<%= @document.id.to_s.parameterize %>">
           <% # bookmark/folder functions -%>
           <%if @document[:active_fedora_model_ssi] == 'Book'%>
+
           <% @page_title = render_document_show_field_value :document => @document, :field => 'titlestmt_title_tesim' %>
           <%#= render_document_heading(:h2).html_safe %>
           <div class="document"> <%= render_document_partial @document, :show %> </div>
@@ -101,6 +102,7 @@
               <%= book_pubdate + ',' %>
               <% end %>
               <span class="blacklight-publisher_uniform_display">pg <%= render_document_show_field_value :document => @document, :field => 'image_n_tesim' %></span></dd>
+              
           </dl>
           <% display_ocr = render_document_show_field_value :document => @document, :field => 'image_ocr_tesim' %>
           <% if display_ocr.present? %>
