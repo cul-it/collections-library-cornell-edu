@@ -60,12 +60,16 @@ class CatalogController < ApplicationController
 
     config.add_facet_field 'active_fedora_model_ssi', :label => 'Format', :limit => 3 , :show => true
     config.add_facet_field 'author_tesim', :label => 'Author', :limit => 5
-    config.add_facet_field 'pubdate_tesim', :label => 'Book Date'
+    config.add_facet_field 'pubdate_tesim', :label => 'Date'
     config.add_facet_field 'image_date_tesim', :label => 'Image Date', :limit => 5    
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
-    config.add_facet_field 'keywords_tesim', :label => 'Book Keyword', :limit => 5
+    config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
     config.add_facet_field 'subject_tesim', :label => 'Subject', :limit => 5
+        config.add_facet_field 'language_tesim', :label => 'Language', :limit => 5
+                config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
+
+
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
