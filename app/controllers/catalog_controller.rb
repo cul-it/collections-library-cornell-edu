@@ -14,10 +14,11 @@ class CatalogController < ApplicationController
   configure_blacklight do |config|
     config.default_solr_params = {
      :defType => 'edismax', 
-     :qf => 'author_timv title_tesim pubdate_timv subject_timv publisher_timv image_ocr_timv active_fedora_model_ssi', 
+     :qf => 'author_timv title_tesim pubdate_timv subject_timv witness_timv publisher_timv image_ocr_timv active_fedora_model_ssi:Book', 
      :qt => 'search',
      :fl => '*,score',
-      :rows => 10
+     :fq => 'active_fedora_model_ssi:Book',
+     :rows => 10
     }
 
     # solr field configuration for search results/index views
@@ -68,6 +69,8 @@ class CatalogController < ApplicationController
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
     config.add_facet_field 'keywords_tesim', :label => 'Book Keyword', :limit => 5
     config.add_facet_field 'subject_tesim', :label => 'Subject', :limit => 5
+    config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
+    config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
