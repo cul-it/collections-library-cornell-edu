@@ -65,7 +65,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'image_date_tesim', :label => 'Image Date', :limit => 5    
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
-    config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
+    config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5, :show => false
     config.add_facet_field 'subject_tesim', :label => 'Subject', :limit => 5
         config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
                 config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
