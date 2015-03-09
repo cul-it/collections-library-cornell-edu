@@ -17,6 +17,7 @@ class CatalogController < ApplicationController
      :qf => 'author_timv title_tesim pubdate_timv subject_timv publisher_timv image_ocr_timv active_fedora_model_ssi', 
      :qt => 'search',
      :fl => '*,score',
+     :fq => 'active_fedora_model_ssi:Book',
       :rows => 10
     }
 
@@ -58,7 +59,7 @@ class CatalogController < ApplicationController
 ##    config.add_facet_field solr_name('subject_geo', :facetable), :label => 'Region'
 ##    config.add_facet_field solr_name('subject_era', :facetable), :label => 'Era'
 
-    config.add_facet_field 'active_fedora_model_ssi', :label => 'Format', :limit => 3 , :show => true
+    config.add_facet_field 'active_fedora_model_ssi', :label => 'Format', :limit => 3 , :show => false
     config.add_facet_field 'author_tesim', :label => 'Author', :limit => 5
     config.add_facet_field 'pubdate_tesim', :label => 'Date'
     config.add_facet_field 'image_date_tesim', :label => 'Image Date', :limit => 5    
