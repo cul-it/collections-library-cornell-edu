@@ -9,10 +9,10 @@
 
                   <% page_turner_array =  page_turner.split('_') %>
                    <% sea_id = page_turner_array[0][4..11] %>
-                  <a href="/bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/nur:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail" alt="Book or page image"></a>
+                  <a href="/bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/sat:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail" alt="Book or page image"></a>
             <% else %>
                   <% sea_id=page_turner[3..7] %>
-                  <a href="/bookreader/nur:<%= sea_id %>/#page/1/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/nur:<%= sea_id %>_1/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail"></a>
+                  <a href="/bookreader/sat:<%= sea_id %>/#page/1/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/sat:<%= sea_id %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail"></a>
             <% end %>
        <div class="document-data" data-no-turbolink >
          <%= render :partial => 'document_header', :locals => { :document => document, :document_counter => document_counter } %>
