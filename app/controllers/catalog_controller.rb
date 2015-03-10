@@ -14,7 +14,7 @@ class CatalogController < ApplicationController
   configure_blacklight do |config|
     config.default_solr_params = {
      :defType => 'edismax', 
-     :qf => 'author_timv title_tesim pubdate_timv subject_timv publisher_timv image_ocr_timv active_fedora_model_ssi', 
+     :qf => 'author_timv title_timv pubdate_timv subject_timv publisher_timv image_ocr_timv active_fedora_model_ssi', 
      :qt => 'search',
      :fl => '*,score',
       :rows => 10
