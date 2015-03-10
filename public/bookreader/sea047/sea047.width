@@ -1,0 +1,147 @@
+if (index == 0) {
+     return 981;
+    }
+if (index == 1) {
+     return 1136;
+    }
+if (index == 2) {
+     return 1152;
+    }
+if (index == 3) {
+     return 980;
+    }
+if (index == 4) {
+     return 1016;
+    }
+if (index == 5) {
+     return 828;
+    }
+if (index == 6) {
+     return 936;
+    }
+if (index == 7) {
+     return 856;
+    }
+if (index == 8) {
+     return 848;
+    }
+if (index == 9) {
+     return 848;
+    }
+if (index == 10) {
+     return 848;
+    }
+if (index == 11) {
+     return 852;
+    }
+if (index == 12) {
+     return 852;
+    }
+if (index == 13) {
+     return 848;
+    }
+if (index == 14) {
+     return 844;
+    }
+if (index == 15) {
+     return 876;
+    }
+if (index == 16) {
+     return 876;
+    }
+if (index == 17) {
+     return 1085;
+    }
+if (index == 18) {
+     return 1084;
+    }
+if (index == 19) {
+     return 836;
+    }
+if (index == 20) {
+     return 836;
+    }
+if (index == 21) {
+     return 836;
+    }
+if (index == 22) {
+     return 836;
+    }
+if (index == 23) {
+     return 836;
+    }
+if (index == 24) {
+     return 836;
+    }
+if (index == 25) {
+     return 836;
+    }
+if (index == 26) {
+     return 836;
+    }
+if (index == 27) {
+     return 1060;
+    }
+if (index == 28) {
+     return 1067;
+    }
+if (index == 29) {
+     return 1067;
+    }
+if (index == 30) {
+     return 1066;
+    }
+if (index == 31) {
+     return 1376;
+    }
+if (index == 32) {
+     return 1320;
+    }
+if (index == 33) {
+     return 1296;
+    }
+if (index == 34) {
+     return 824;
+    }
+if (index == 35) {
+     return 824;
+    }
+if (index == 36) {
+     return 816;
+    }
+if (index == 37) {
+     return 816;
+    }
+if (index == 38) {
+     return 816;
+    }
+if (index == 39) {
+     return 824;
+    }
+if (index == 40) {
+     return 796;
+    }
+if (index == 41) {
+     return 796;
+    }
+if (index == 42) {
+     return 796;
+    }
+if (index == 43) {
+     return 816;
+    }
+if (index == 44) {
+     return 1177;
+    }
+if (index == 45) {
+     return 872;
+    }
+if (index == 46) {
+     return 872;
+    }
+if (index == 47) {
+     return 872;
+    }
+if (index > 47) {
+    return 800;
+    }

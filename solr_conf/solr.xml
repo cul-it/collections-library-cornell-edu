@@ -28,8 +28,8 @@
   adminPath: RequestHandler path to manage cores.  
     If 'null' (or absent), cores will not be manageable via REST
   -->
-  <cores adminPath="/admin/cores" defaultCoreName="development">
-    <core name="development" instanceDir="development-core" />
+  <cores adminPath="/admin/cores" defaultCoreName="development_core">
+    <core name="development_core" instanceDir="development_core" />
     <core name="test" instanceDir="test-core" />
   </cores>
 </solr>

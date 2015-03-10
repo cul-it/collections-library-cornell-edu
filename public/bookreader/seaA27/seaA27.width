@@ -1,0 +1,195 @@
+if (index == 0) {
+     return 1099;
+    }
+if (index == 1) {
+     return 1107;
+    }
+if (index == 2) {
+     return 1152;
+    }
+if (index == 3) {
+     return 1053;
+    }
+if (index == 4) {
+     return 1657;
+    }
+if (index == 5) {
+     return 1053;
+    }
+if (index == 6) {
+     return 1153;
+    }
+if (index == 7) {
+     return 1081;
+    }
+if (index == 8) {
+     return 1182;
+    }
+if (index == 9) {
+     return 1182;
+    }
+if (index == 10) {
+     return 1200;
+    }
+if (index == 11) {
+     return 1154;
+    }
+if (index == 12) {
+     return 1200;
+    }
+if (index == 13) {
+     return 1078;
+    }
+if (index == 14) {
+     return 1200;
+    }
+if (index == 15) {
+     return 1080;
+    }
+if (index == 16) {
+     return 1182;
+    }
+if (index == 17) {
+     return 1091;
+    }
+if (index == 18) {
+     return 1176;
+    }
+if (index == 19) {
+     return 1093;
+    }
+if (index == 20) {
+     return 1182;
+    }
+if (index == 21) {
+     return 1077;
+    }
+if (index == 22) {
+     return 1200;
+    }
+if (index == 23) {
+     return 1047;
+    }
+if (index == 24) {
+     return 1125;
+    }
+if (index == 25) {
+     return 1116;
+    }
+if (index == 26) {
+     return 1132;
+    }
+if (index == 27) {
+     return 1019;
+    }
+if (index == 28) {
+     return 1597;
+    }
+if (index == 29) {
+     return 1025;
+    }
+if (index == 30) {
+     return 1172;
+    }
+if (index == 31) {
+     return 1015;
+    }
+if (index == 32) {
+     return 1152;
+    }
+if (index == 33) {
+     return 1097;
+    }
+if (index == 34) {
+     return 1137;
+    }
+if (index == 35) {
+     return 1211;
+    }
+if (index == 36) {
+     return 1632;
+    }
+if (index == 37) {
+     return 1039;
+    }
+if (index == 38) {
+     return 1150;
+    }
+if (index == 39) {
+     return 1036;
+    }
+if (index == 40) {
+     return 1129;
+    }
+if (index == 41) {
+     return 1170;
+    }
+if (index == 42) {
+     return 1141;
+    }
+if (index == 43) {
+     return 1020;
+    }
+if (index == 44) {
+     return 1169;
+    }
+if (index == 45) {
+     return 1073;
+    }
+if (index == 46) {
+     return 1170;
+    }
+if (index == 47) {
+     return 1023;
+    }
+if (index == 48) {
+     return 1118;
+    }
+if (index == 49) {
+     return 1129;
+    }
+if (index == 50) {
+     return 1128;
+    }
+if (index == 51) {
+     return 1112;
+    }
+if (index == 52) {
+     return 1200;
+    }
+if (index == 53) {
+     return 1112;
+    }
+if (index == 54) {
+     return 1152;
+    }
+if (index == 55) {
+     return 1108;
+    }
+if (index == 56) {
+     return 1632;
+    }
+if (index == 57) {
+     return 1044;
+    }
+if (index == 58) {
+     return 1128;
+    }
+if (index == 59) {
+     return 1010;
+    }
+if (index == 60) {
+     return 1671;
+    }
+if (index == 61) {
+     return 1171;
+    }
+if (index == 62) {
+     return 1128;
+    }
+if (index == 63) {
+     return 1025;
+    }
+if (index > 63) {
+    return 800;
+    }

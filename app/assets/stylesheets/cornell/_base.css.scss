@@ -4,20 +4,41 @@
 body {
   padding-top: 0;
   background: url("cornell/layout/bottombar.gif"); // footer background
+ 	font-family: $font-family-sans-serif;
+
 }
 .main-content {
 	// background: url("cornell/layout/mapsepia740_light.jpg");
 	background: white;
 	min-height: 400px;
 	.container { 
-		padding: 30px 0 50px;
+		padding-top: 40px;
+		padding-bottom: 50px;
 	}
 }
-footer {
-	margin: 30px 0 15px;
-	color: #ccc;
-	a, a:hover { color: white; }
+.page-content {
+	@include make-sm-column(12)
 }
+.sidebar {
+	@include make-sm-column(3);
+}
+.facet-sidebar {
+	@include make-sm-column(3);
+}
+
+.search-results {
+	@include make-sm-column(9);
+}
+
+.main-text {
+	@include make-sm-column(9);
+}
+
+.more-info-links, .more-info-sponsors {
+	@include make-sm-column(6);
+}
+
+
 
 // Links
 // ---------------------------------//
@@ -56,9 +77,29 @@ p, li {
 	line-height: 1.5em;
 }
 
+// Images
+// ---------------------------------//
+
+.img-right {
+	margin: 0 0 1.5em 1.5em;
+}
+.img-left {
+	margin: 0 1.5em 1.5em 0;
+}
+
 // Miscellaneous
 // ---------------------------------//
 
-.pull-right {
-	margin: 0 0 20px 20px; 
+.btn-visions {
+	background: $medium-blue;
+	border: $blue;
+	color: white;
+	i {
+		margin-left: .25em;
+		color: $peach;
+	}
+}
+.btn-visions:hover {
+	background: $blue;
+	color: white;
 }

@@ -1,9 +1,9 @@
 <div class="row">
-  <div id="sidebar" class="span3" data-no-turbolink>
+  <div id="sidebar" class="facet-sidebar" data-no-turbolink>
     <%= render :partial=>'facets' %>
   </div><!--/well -->
 
-  <div id="content" class="span9">
+  <div id="content" class="search-results">
 
       <% unless has_search_parameters? %>
   	    <%# if there are no input/search related params, display the "home" partial -%>

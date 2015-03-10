@@ -1,7 +1,7 @@
 // Home page
 // ----------------------//
 .home-text {
-	margin: 20px 0 10px;
+	margin: 0 0 10px;
 	p {
 		font-size: 18px;
 	}
@@ -29,16 +29,28 @@
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid $pale-gray;
-	h3 { font-size: 14px; }
+	h4 { 
+		font-size: 14px;
+		line-height: 1.5em;
+		margin-bottom: .5em;
+		font-weight: 700;
+	}
+	ul {
+		padding-left: 20px;
+	}
 	li { font-size: 14px; }
 }
 
 .disclaimer {
+	@include make-sm-column(12);
 	p {
 		font-size: 12px;
 		color: $gray;
 	}
 	img { margin-right: 10px; }
+}
+.more-info-sponsors {
+	text-align: center;
 }
 
 // About subnavigation
@@ -83,19 +95,30 @@
 	.nav-list {
 		a { 
 			text-shadow: none;
-			padding: 5px 15px;
+			padding: 5px 15px 5px 0;
 		}
 		a:hover { background: $nude; }
 	}
+}
+.nav-header {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: .5em;
 }
 
 // Map
 // ----------------------//
 .map {
-	margin-bottom: 20px;
-	ol {
-		li { font-size: 14px; }
+	margin-bottom: 2em;
+	li {
+		font-size: 14px;
 	}
+}
+.map-image {
+	@include make-md-column(4);
+}
+.map-list {
+	@include make-md-column(8);
 }
 
 // Image credits
@@ -105,4 +128,81 @@
 		margin: 0 0 20px;
 		img { margin-bottom: 5px; }
 	}
+}
+
+// Footer
+// ----------------------//
+
+footer {
+	margin: 30px 0 15px;
+	color: #ccc;
+	a, a:hover { color: white; }
+	p {
+		font-size: 14px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	li {
+		font-size: 14px;
+	}
+	.nav {
+		margin-bottom: 1em;
+		li {
+			a:hover {
+				color: white;
+				background: $dark-gray;
+			}
+		}
+	}
+}
+
+
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	footer {
+		.nav {
+			li {
+				float: left;
+				a {
+					padding: 0 10px;
+					border-left: 1px solid #666;
+				}
+				a:hover {
+					background: inherit;
+					text-decoration: underline;
+				}
+			}
+			li:first-child {
+				a {
+					padding-left: 0;
+					border: none;
+				}
+			}
+		}
+		p {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
 }
