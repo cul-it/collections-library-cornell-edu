@@ -1,56 +1,30 @@
-.cornell-identity {
-	width: 100%;
-	background: $cornell-gray;
-	height: 75px;
-	// font-family: $cornell-font;
-	}
-
-.search-links {
-  text-align: right;
-  margin-top: 20px;
-
-  ul {
-  	padding-top: 10px;
-  	list-style: none;
-  }
-  li { display: inline; }
-  a {
-  	color: white;
-  	text-decoration: none;
-  	font-size: 0.6875em;
-  	padding: 5px 15px;
-  }
-  a:hover {
-  	background: $cornell-primary-hover;
-  }
-}
-
-.cu-logo {
-	display: block;
-	background: url("cornell/layout/cul-logo-gray.gif") no-repeat 0 0;
-	width: 263px;
-	height: 75px;
+.cu-logo {	
+	background: $cornell-primary;
+	height: 45px;
 	a {
 		display: block;
 		border: none;
 		text-indent: -1000em;
 		text-decoration: none;
+		background: url("cornell/cul-branding/cul-logo.png") no-repeat 0 0;
+		width: 419px;
+		height: 45px;
+		margin-left: 1em;
 	}
 	a#insignia-link {
 		float: left;
-		width: 68px;
-		height: 75px;
+		width: 40px;
+		height: 45px;
 	}
 	#unit-signature-links { float: left; }
-	a#cornell-link {
-		left: 68px;
-		height: 35px;
-	}
 	a#unit-link {
-		top: 38px;
-		height: 37px;
+		height: 45px;
+		width: 285px;
 	}
-	img { display: none; }
+	img { display: none; } // this is the logo used for print
+}
+.law-logo {
+	padding: 3em 0 2em 0;
 }
 
 // Skip to content link

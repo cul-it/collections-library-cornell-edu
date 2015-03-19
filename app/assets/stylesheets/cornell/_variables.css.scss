@@ -1,17 +1,14 @@
 $cornell-primary: #b31b1b;
 $cornell-primary-hover: #990f26;
-// $cornell-font: verdana, sans-serif;
-// $cornell-blue: #6eb4cd;
-// $cornell-blue-border: #4892ac;
 $cornell-gray: #4D4E53;
 
 // $link-primary: #006;
 
-$dark-gray: #222;
+$dark-gray: #343232;
 $gray: #666;
 $medium-gray: #999;
 $light-gray: #ccc;
-$pale-gray: #dedede;
+$pale-gray: #bebdbd;
 
 $blue: #02315a;
 $medium-blue: #207ea2;
@@ -40,18 +37,16 @@ $nude: #f6f0eb;
 // -------------------------
 // Protocol is intentionally absent from URL to allow browser to automatically
 // use either http or https as needed -- this is primarily to address Chrome bug
-$visionsFontFamily:        'Sorts Mill Goudy';        @import
-url(//fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
 
-$baseFontFamily: 'Open Sans'; 		@import
-url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+// $baseFontFamily: 'Open Sans'; 		@import
+// url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
 
-$font-family-base: 'Open Sans'; 		@import
-url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+$font-family-base: 'Montserrat'; 		@import
+url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
-$font-family-sans-serif:  'Open Sans'; 		@import
-url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+// $font-family-sans-serif:  'Open Sans'; 		@import
+// url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
 
 
 // // Buttons

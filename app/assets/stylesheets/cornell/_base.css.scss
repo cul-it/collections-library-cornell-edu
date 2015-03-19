@@ -3,8 +3,8 @@
 
 body {
   padding-top: 0;
-  background: url("cornell/layout/bottombar.gif"); // footer background
- 	font-family: $font-family-sans-serif;
+  // background: url("cornell/layout/bottombar.gif"); // footer background
+ 	font-family: $font-family-base;
 
 }
 .main-content {
@@ -55,12 +55,11 @@ body {
 // ---------------------------------//
 
 h2 { 
-	color: $brown;
 	font-size: 30px;
-	// font-family: $visionsFontFamily;
 	margin-top: 0;
 	margin-bottom: .5em;
 	font-weight: normal;
+	color: white;
 }
 h3 {
 	font-size: 20px;
