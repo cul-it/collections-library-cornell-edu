@@ -11,10 +11,11 @@
 
 .site-identity {
 	background: $dark-gray;
+	padding: 2em 0;
 	h1 {
 		color: white;
 		line-height: .75em;
-		margin: 12px 0 0;
+		margin: 0 0 .5em;
 		padding: 0;
 		font-size: 36px;
 		span {
@@ -30,6 +31,8 @@
 	h2 {
 		font-size: 20px;
 		color: $pale-gray;
+		margin-bottom: 2em;
+		line-height: 1.4em;
 	}
 }
 
@@ -54,7 +57,7 @@
 			a {
 				text-shadow: none;
 				color: white;
-				font-size: 20px;
+				font-size: 18px;
 			}
 			a:hover {
 				color: white;
@@ -78,6 +81,7 @@
 .navigation-bar {
 	padding-left: 0;
 	padding-right: 0;
+	border-left: 1px solid $gray;
 }
 
 // MEDIA QUERIES
@@ -108,16 +112,15 @@
 	}
 	.navbar-collapse {
 		.nav {
-			float: right;
+			// float: right;
 			width: auto;
-			margin-top: 30px;
 			background: inherit;
 		}
 	}
-	.navigation-bar {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+	// .navigation-bar {
+	// 	padding-left: 15px;
+	// 	padding-right: 15px;
+	// }
 }
 
 /* Medium devices (desktops, 992px and up) */
