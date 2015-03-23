@@ -59,7 +59,6 @@ h2 {
 	margin-top: 0;
 	margin-bottom: .5em;
 	font-weight: normal;
-	color: white;
 }
 h3 {
 	font-size: 20px;
@@ -89,16 +88,10 @@ p, li {
 // Miscellaneous
 // ---------------------------------//
 
-.btn-visions {
-	background: $medium-blue;
-	border: $blue;
-	color: white;
-	i {
-		margin-left: .25em;
-		color: $peach;
-	}
-}
-.btn-visions:hover {
-	background: $blue;
-	color: white;
+.well {
+	background: $well-bg;
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+	padding: 3em;
 }
