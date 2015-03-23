@@ -12,10 +12,16 @@
           <a id="unit-link" href="http://www.library.cornell.edu/">Cornell University Library</a>
         </div>
       </div>
+
+      <!-- Anything in this conditional will be hidden if a search is done or if you are not on the home page. If this gets large we'll move it to a partial or handle it some other way. -->
+      <% unless has_search_parameters? || !current_page?('/') %>
       <!-- TODO: this logo only displays on the home page -->
       <div class="law-logo">
         <a href="http://law.library.cornell.edu"><img src="/assets/cornell/law-logo.png" alt="Cornell University Law Library"></a>
       </div>
+      <% end %>
+      <!-- end home page conditional display -->
+
     </div>
 
   </div>
