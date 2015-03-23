@@ -3,7 +3,7 @@
 <div class="hero">
   <div class="container">
     <div class="cornell-identity">
-      
+
       <%# display small CUL and law logos on all pages except home page %>
       <% if has_search_parameters? || !current_page?('/') %>
         <div class="cu-logo cul-law-logo">
@@ -62,17 +62,18 @@
   </div>
 </section>
 
-
-<section class="search-bar">
-  <div class="container">
-    <div class="row">
-      <div class="clearfix searchbar" id="searchbar">         
-        <%= render_search_bar  %>
+<%# display search bar everywhere but home page, which gets it's own search box in home_text.html.erb %>
+<% if has_search_parameters? || !current_page?('/') %>
+  <section class="search-bar">
+    <div class="container">
+      <div class="row">
+        <div class="clearfix searchbar" id="searchbar">         
+          <%= render_search_bar  %>
+        </div>
+        <div class="utility-links">
+          <%= render :partial=>'/user_util_links' %>
+        </div>
       </div>
-      <div class="utility-links">
-        <%= render :partial=>'/user_util_links' %>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
+<% end %>
