@@ -31,7 +31,7 @@
 	h2 {
 		font-size: 20px;
 		color: $pale-gray;
-		margin-bottom: 2em;
+		margin-bottom: 0;
 		line-height: 1.4em;
 	}
 }
@@ -54,10 +54,13 @@
 		z-index: 5000;
 		background: $blue;
 		li {
+			display: inline;
+			float: none;
 			a {
 				text-shadow: none;
 				color: white;
 				font-size: 18px;
+				display: inline;
 			}
 			a:hover {
 				color: white;

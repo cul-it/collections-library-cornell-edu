@@ -6,10 +6,8 @@
 		border: none;
 		text-indent: -1000em;
 		text-decoration: none;
-		background: url("cornell/cul-branding/cul-logo.png") no-repeat 0 0;
-		width: 419px;
-		height: 45px;
 		margin-left: 1em;
+		height: 45px;
 	}
 	a#insignia-link {
 		float: left;
@@ -22,6 +20,19 @@
 		width: 285px;
 	}
 	img { display: none; } // this is the logo used for print
+}
+.cul-law-logo {
+	margin-bottom: 3em;
+	a {
+		background: url("cornell/cul-branding/cul-law-logo.png") no-repeat 0 0;
+		width: 419px !important;
+	}
+}
+.cul-logo {
+	a {
+		background: url("cornell/cul-branding/cul-logo.png") no-repeat 0 0;
+		width: 288px !important;
+	}
 }
 .law-logo {
 	padding: 3em 0 2em 0;

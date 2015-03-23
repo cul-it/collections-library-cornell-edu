@@ -1,26 +1,31 @@
 <div id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
 
-<!-- TODO: different logo swapped in for search pages -->
 <div class="hero">
   <div class="container">
     <div class="cornell-identity">
-      <div class="cu-logo">
-        <!-- TODO: print logo -->
-        <!-- <img src="/assets/cornell/layout/cul-logo-white.gif" alt="Cornell University Library"> -->
-        <a id="insignia-link" href="http://www.cornell.edu/">Cornell Insignia</a>
-        <div class="unit-signature-links">
-          <a id="unit-link" href="http://www.library.cornell.edu/">Cornell University Library</a>
-        </div>
-      </div>
-
-      <!-- Anything in this conditional will be hidden if a search is done or if you are not on the home page. If this gets large we'll move it to a partial or handle it some other way. -->
-      <% unless has_search_parameters? || !current_page?('/') %>
-      <!-- TODO: this logo only displays on the home page -->
-      <div class="law-logo">
-        <a href="http://law.library.cornell.edu"><img src="/assets/cornell/law-logo.png" alt="Cornell University Law Library"></a>
-      </div>
+      
+      <%# display small CUL and law logos on all pages except home page %>
+      <% if has_search_parameters? || !current_page?('/') %>
+        <div class="cu-logo cul-law-logo">
+      <%# display small cul logo on home page %>
+      <% else %>
+        <div class="cu-logo cul-logo">
       <% end %>
-      <!-- end home page conditional display -->
+          <%# TODO: print logo %>
+          <img src="/assets/cornell/layout/cul-logo-white.gif" alt="Cornell University Library">
+          <a id="insignia-link" href="http://www.cornell.edu/">Cornell Insignia</a>
+          <div class="unit-signature-links">
+            <a id="unit-link" href="http://www.library.cornell.edu/">Cornell University Library</a>
+          </div>
+        </div>
+
+      <%# Anything in this conditional will be hidden if a search is done or if you are not on the home page. If this gets large we'll move it to a partial or handle it some other way. %>
+      <% unless has_search_parameters? || !current_page?('/') %>
+        <div class="law-logo">
+          <a href="http://law.library.cornell.edu"><img src="/assets/cornell/law-logo.png" alt="Cornell University Law Library"></a>
+        </div>
+      <% end %>
+      <%# end home page conditional display %>
 
     </div>
 
