@@ -20,9 +20,36 @@
 }
 
 .search-input {
-	@include make-xs-column(12);
-	@include make-sm-column(6);
+	width: 100%;
+	.form-control {
+		width: 100%;
+	}
 }
+
+.btn-search {
+	background: inherit;
+	i {
+		color: $turquoise;
+		font-size: 36px;
+	}
+}
+
+//  border radius for search form items
+.form-control {
+	border-radius: 3px;
+}
+.form-control.search_q {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.search-group {
+	margin-right: -7px;
+	width: 50%;
+	position: relative;
+	z-index: 1000;
+}
+
 // Utility links
 // ----------------------//
 .util-links-other {
