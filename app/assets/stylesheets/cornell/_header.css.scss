@@ -37,16 +37,18 @@
 }
 
 .site-title {
-	@include make-sm-column(8)
+	@include make-sm-column(7);
+	
 }
 .navigation-bar {
-	@include make-sm-column(4)
+	@include make-sm-column(4);
+	@include make-sm-column-offset(1);
 }
 .searchbar{
-	@include make-sm-column(8)
+	@include make-sm-column(8);
 }
 .utility-links {
-	@include make-sm-column(4)
+	@include make-sm-column(4);
 }
 .navbar-collapse {
 	.nav {
