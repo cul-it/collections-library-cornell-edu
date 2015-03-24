@@ -36,11 +36,12 @@
 		border-top:none;
 	}
 	.panel-title {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.4em;
 	}
 	.panel-heading.collapse-toggle .panel-title:after {
 		line-height: inherit;
+		color: $turquoise;
 	}
 	.facets-toggle {
 		margin: 0;
@@ -50,14 +51,23 @@
 	h4 {
 		line-height: 1.6em;
 	}
+	.top-panel-heading {
+		padding-top: 0;
+		font-size: 16px;
+	}
+	// change color of the panel-title depending on open or closed
+	.collapse-toggle {
+		.panel-title {
+			color: $dark-gray; //open
+		}
+	}
+	.collapse-toggle.collapsed {
+		.panel-title {
+			color: $turquoise; //closed
+		}
+	}
 }
 
-
-// swap out chevron-down when facet is open
-.twiddle-open .fa-chevron-right {
-  @extend .fa-chevron-down;
-  	opacity: 1;
-}
 
 .facet-values {
 
