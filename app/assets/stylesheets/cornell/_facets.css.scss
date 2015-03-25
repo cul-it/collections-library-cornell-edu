@@ -17,7 +17,7 @@
 			float:right;
 		}
 	}
-	span.selected { color: $brown; }
+	span.selected { color: $dark-gray; }
 	.btn-navbar { 
 		padding: 4px 10px;
 		margin-top: -4px;
@@ -70,11 +70,14 @@
 
 
 .facet-values {
-
 	.remove {
 		color: #666;
 		margin-left: 0px;
 		padding: 3px 5px;
+	}
+	i {
+		margin-right: .5em;
+		color: $turquoise;
 	}
 }
 
@@ -94,7 +97,19 @@ margin-left: 0px;
 padding: 3px 15px;
 }
 
+.panel-success,
+.facet_limit-active {
+	border-color: $other-light-gray;
+}
 
+// Constraints
+// -----------------------//
+.constraints-container {
+	padding: 1em;
+}
+.constraints-label {
+	margin-right: .5em;
+}
 
 // Mobile nav
 // -----------------------//

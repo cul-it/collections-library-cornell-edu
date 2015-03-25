@@ -94,3 +94,22 @@ p, li {
 	box-shadow: none;
 	padding: 3em;
 }
+
+.btn:focus {
+	box-shadow: none;
+}
+
+//panel overrides (used in facets)
+.panel-group {
+	.panel + .panel {
+		border-color: $other-light-gray;
+		margin-top: 0;
+	}
+	.panel {
+		border-radius: 0;
+		border-bottom: 0;
+	}
+	.panel:last-child {
+		border-bottom: 1px solid $other-light-gray;
+	}
+}

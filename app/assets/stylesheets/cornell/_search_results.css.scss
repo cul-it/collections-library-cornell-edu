@@ -64,6 +64,18 @@ h2 {
 	width:30%
 }
 
+// Pagination
+// -------------------//
+
+// bootstrap overrides
+.pagination > li > a, .pagination > li > span {
+	color: $turquoise;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+	background: $turquoise;
+	border-color: $turquoise;
+}
+
 // MEDIA QUERIES
 // -------------------------
 

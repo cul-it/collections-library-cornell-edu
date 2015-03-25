@@ -145,6 +145,18 @@ footer {
 }
 
 
+// Buttons
+// ----------------------//
+
+.btn-nuremberg {
+	background: $turquoise;
+	color: white;
+	border-radius: 0;
+}
+.btn-nuremberg:hover,
+.btn-nuremberg:active {
+	color: white;
+}
 
 // MEDIA QUERIES
 // -------------------------
