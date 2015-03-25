@@ -2,37 +2,19 @@ $cornell-primary: #b31b1b;
 $cornell-primary-hover: #990f26;
 $cornell-gray: #4D4E53;
 
-// $link-primary: #006;
-
 $dark-gray: #343232;
 $gray: #656363;
 $medium-gray: #999;
 $light-gray: #ccc;
 $pale-gray: #f3f3f3;
-$other-light-gray: #dbdcdd;
 
 // nuremberg/law colors
 $turquoise: #00bce1;
-
-// nuremberg/law colors
-
-
-// TODO: visions colors to delete
-$blue: #02315a;
-$medium-blue: #207ea2;
-$light-blue: #649cb3;
-$brown: #9d551f;
-$peach: #f8d6ba;
-$nude: #f6f0eb;
-
+$other-light-gray: #dbdcdd;
 
 // -------------------
 // Boostrap overrides
 // -------------------
-
-// Scaffolding
-// -------------------------
-// $bodyBackground: $dark-gray;
 
 // Wells
 // -------------------------
@@ -43,23 +25,5 @@ $well-bg: $pale-gray;
 // Protocol is intentionally absent from URL to allow browser to automatically
 // use either http or https as needed -- this is primarily to address Chrome bug
 
-// $baseFontFamily: 'Open Sans'; 		@import
-// url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
-
 $font-family-base: 'Montserrat'; 		@import
 url(//fonts.googleapis.com/css?family=Montserrat:400,700);
-
-
-// $font-family-sans-serif:  'Open Sans'; 		@import
-// url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
-
-
-// // Buttons
-// // -------------------------
-// $btnInfoBackground:                 $teal;
-// $btnInfoBackgroundHighlight:        $dark-teal;
-
-// // Navbar
-// // -------------------------
-// $navbarCollapseWidth:             767px !default;
-// $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
