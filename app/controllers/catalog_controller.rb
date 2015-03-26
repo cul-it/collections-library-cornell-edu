@@ -11,31 +11,26 @@ class CatalogController < ApplicationController
 #  CatalogController.solr_search_params_logic += [:add_access_controls_to_solr_params]
 
 
-
-def subject
-  subjectcollection = params[:subject]
-  if subjectcollection == "nuremberg"
-    :fq => 'active_fedora_model_ssi:Book AND subject_tesim:Nuremberg'
-  end
+before_action  do
+if params[:subject] == "nuremberg"
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:Nuremberg'}
+elsif params[:subject] == "trials"
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:trials'}
+else 
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND (subject_tesim:Nuremberg OR subject_tesim:trials)'}
 end
- 
+end
+
+
+
   configure_blacklight do |config|
-   
-    config.default_solr_params  = {
-     :defType => 'edismax', 
-     :qf => 'author_timv title_timv pubdate_timv subject_tesim publisher_timv image_ocr_timv active_fedora_model_ssi', 
-     :qt => 'search',
-     :fl => '*,score',
-      :rows => 10
-    }, if :subject?
-  end
+  
 
     config.default_solr_params = {
      :defType => 'edismax', 
      :qf => 'author_timv title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi', 
      :qt => 'search',
      :fl => '*,score',
-     :fq => 'active_fedora_model_ssi:Book',
       :rows => 10
     }
 

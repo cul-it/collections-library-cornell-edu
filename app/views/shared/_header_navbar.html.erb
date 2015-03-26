@@ -36,8 +36,19 @@
   <div class="container">
     <div class="row">
       <div class="site-title">
+      <% if params[:subject] =="nuremberg" %>
         <h1><a href="<%=root_path%>">Donovan Nuremberg Trials Collection</a></h1>
         <h2>Nuremberg trial transcripts and documents from the collection of General William J. Donovan</h2>
+        <% elsif params[:subject]=="trials" %>
+        <h1><a href="<%=root_path%>">Trials Pamphlet Collection</a></h1>
+        <h2>Contemporary accounts of trials from the 1600s to 1800s</h2>
+
+        <% else %>
+        <h1><a href="<%=root_path%>">Law Collections</a></h1>
+        <h2>Digital collections from Cornell University Library's law library</h2>
+
+        <% end %>
+
       </div>
 
       <div class="navigation-bar">
