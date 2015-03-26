@@ -1,11 +1,14 @@
 Bl5::Application.routes.draw do
   comfy_route :cms_admin, :path => '/admin'
 
+  get '/:subject' => 'catalog#index', :as => 'subject'
 
-  root :to => "catalog#index"
+  root "catalog#index"
   blacklight_for :catalog
   devise_for :users
   devise_for :sessions
+
+
 
   # Make sure this routeset is defined last
   comfy_route :cms, :path => '/', :sitemap => false
@@ -18,7 +21,6 @@ Bl5::Application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

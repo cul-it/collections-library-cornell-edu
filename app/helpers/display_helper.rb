@@ -10,4 +10,6 @@ module DisplayHelper
       link_to(content_tag(:i, '', :class => "fa fa-times") + content_tag(:span, '[remove]', :class => 'hide-text'), remove_facet_params(facet_solr_field, item, params), :class=>"remove")
   end
 
+
+
 end

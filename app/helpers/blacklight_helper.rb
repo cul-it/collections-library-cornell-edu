@@ -4,4 +4,6 @@ module BlacklightHelper
   def application_name
     "Donovan Nuremberg Trials Collection"
   end
+
+ 
 end

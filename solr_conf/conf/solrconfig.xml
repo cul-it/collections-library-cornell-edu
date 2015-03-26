@@ -54,6 +54,8 @@
           author_tesim
           title_tesim
           object_type_si
+          pubstmt_idno_tesim
+          vol_tesim
         </str>
         <str name="pf">
           all_text_timv^10
@@ -103,6 +105,7 @@
        <str name="facet.field">image_date_tesim</str>
        <str name="facet.field">image_geo_tesim</str>
        <str name="facet.field">object_type_si</str>
+       <str name="facet.field">vol_tesim</str>
        
        <str name="spellcheck">true</str>
        <str name="spellcheck.dictionary">default</str>
