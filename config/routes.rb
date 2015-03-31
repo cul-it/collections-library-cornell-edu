@@ -1,7 +1,8 @@
 Bl5::Application.routes.draw do
   comfy_route :cms_admin, :path => '/admin'
 
-  get '/:subject' => 'catalog#index', :as => 'subject'
+  get '/:subject' => 'catalog#index'
+  get '/:subject/catalog/:id' => 'catalog#show'
 
   root "catalog#index"
   blacklight_for :catalog

@@ -12,20 +12,22 @@ class CatalogController < ApplicationController
 
 
 before_action  do
+
 if params[:subject] == "nuremberg"
   blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:Nuremberg'}
+
 elsif params[:subject] == "trials"
   blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:trials'}
 else 
   blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND (subject_tesim:Nuremberg OR subject_tesim:trials)'}
 end
+
+
 end
 
 
 
   configure_blacklight do |config|
-  
-
     config.default_solr_params = {
      :defType => 'edismax', 
      :qf => 'author_timv title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi', 
@@ -80,9 +82,9 @@ end
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
     config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
     config.add_facet_field 'subject_tesim', :label => 'Subject', :limit => 5
-        config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
-                config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
-                config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => 5
+    config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
+    config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
+    config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => 5, :show => true
 
 
     # Have BL send all facet field names to Solr, which has been the default
