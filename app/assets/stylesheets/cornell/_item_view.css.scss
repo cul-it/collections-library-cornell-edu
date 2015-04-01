@@ -15,55 +15,13 @@
 }
 
 .label-online {
-	background: $medium-blue;
+	background: $turquoise;
 	display:inline-block;
 }
 .label-book {
-	background: $light-blue;
+	background: $turquoise;
 	display:inline-block;
 }
-
-// Don't need this because moving access links under cover image
-// #sidebar-nav {
-// 	.nav{
-// 		li a{
-// 			font-size: 14px;
-// 			line-height: 1.5em;
-// 			padding:5px 15px;
-// 		}
-// 	}
-// 	.bookmark_toggle {
-// 		margin-bottom: 5px; 
-// 		padding:5px 15px 5px 35px;
-// 		font-size:14px;
-// 		line-height:normal;
-
-
-// 	}
-
-// 	.panel-heading {
-// 		background:white;
-// 		border:none;
-// 		font-weight: bold;
-// 		color: #999999;
-// 		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-// 		text-transform: uppercase;
-// 		font-size:14px;
-// 		margin-bottom: 0;
-// 		padding:0px 15px
-// 	}
-
-// 	.panel-body {
-// 		padding:0px
-// 	}
-
-// 	.panel-default, {
-// 		border:none;
-// 	}
-// 	.well {
-// 		padding: 19px;
-// 	}
-// }
 
 .metadata {
 	@include make-sm-column(9);
@@ -82,7 +40,7 @@
 		padding: .75em 1em;
 		font-size: 16px;
 	}
-	.label:hover { background: $blue; }
+	.label:hover { background: $turquoise; }
 }
 .reader-link {
 	margin-bottom: 10px;

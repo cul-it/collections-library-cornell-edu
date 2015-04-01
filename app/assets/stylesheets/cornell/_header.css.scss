@@ -11,13 +11,12 @@
 
 .site-identity {
 	background: $dark-gray;
-	padding: 2em 0;
 	h1 {
 		color: white;
 		line-height: .75em;
-		margin: 0 0 .5em;
+		margin: .5em 0;
 		padding: 0;
-		font-size: 36px;
+		font-size: 34px;
 		span {
 			display: block;
 			font-size: 19px;
@@ -30,32 +29,38 @@
 	}
 	h2 {
 		font-size: 20px;
-		color: $pale-gray;
-		margin-bottom: 0;
+		color: #bebdbd;
+		margin-bottom: 0.5em;
 		line-height: 1.4em;
 	}
 }
 
 .site-title {
-	@include make-sm-column(8)
+	@include make-sm-column(7);
+	margin: 1em 0;
+	
 }
 .navigation-bar {
-	@include make-sm-column(4)
+	@include make-sm-column(4);
+	@include make-sm-column-offset(1);
+	margin-top: 1em;
 }
 .searchbar{
-	@include make-sm-column(8)
+	@include make-sm-column(8);
 }
 .utility-links {
-	@include make-sm-column(4)
+	@include make-sm-column(4);
 }
 .navbar-collapse {
 	.nav {
 		position: relative;
 		z-index: 5000;
-		background: $blue;
+		background: $turquoise;
+		margin-top: 1em;
 		li {
 			display: inline;
 			float: none;
+			line-height: 1.75em;
 			a {
 				text-shadow: none;
 				color: white;
@@ -68,11 +73,18 @@
 				background:none;
 			}
 		}
+		li::after {
+    		content: "/";
+    		color: white;
+		}
+		li:last-child::after {
+			content: "";
+		}
 	}
 }
 .navbar-header {
 	.navbar-toggle {
-		background: $blue;
+		background: $turquoise;
 		border-radius: 0;
 		margin-right: 0;
 		text-transform: uppercase;
@@ -86,6 +98,16 @@
 	padding-right: 0;
 	border-left: 1px solid $gray;
 }
+.navbar > li > a {
+	padding: 0;
+}
+.navbar-nav > li > a {
+	padding: 0 .5em;
+}
+.navbar-nav > li > a:first-child {
+	padding-left: 0;
+}
+
 
 // MEDIA QUERIES
 // -------------------------

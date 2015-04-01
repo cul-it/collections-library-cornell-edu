@@ -88,7 +88,6 @@
 .blacklight-about-sponsor .nav-list .about-sponsor:hover,
 .blacklight-about-survey .nav-list .about-survey,
 .blacklight-about-survey .nav-list .about-survey:hover {
-	background: $peach;
 	color: $dark-gray;
 }
 .sidebar {
@@ -97,7 +96,6 @@
 			text-shadow: none;
 			padding: 5px 15px 5px 0;
 		}
-		a:hover { background: $nude; }
 	}
 }
 .nav-header {
@@ -135,28 +133,28 @@
 
 footer {
 	margin: 30px 0 15px;
-	color: #ccc;
-	a, a:hover { color: white; }
+	color: $dark-gray;
+	a, a:hover { color: $dark-gray; }
 	p {
 		font-size: 14px;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	li {
-		font-size: 14px;
-	}
-	.nav {
-		margin-bottom: 1em;
-		li {
-			a:hover {
-				color: white;
-				background: $dark-gray;
-			}
-		}
-	}
 }
 
 
+// Buttons
+// ----------------------//
+
+.btn-nuremberg {
+	background: $turquoise;
+	color: white;
+	border-radius: 0;
+}
+.btn-nuremberg:hover,
+.btn-nuremberg:active {
+	color: white;
+}
 
 // MEDIA QUERIES
 // -------------------------
