@@ -19,6 +19,7 @@ class CatalogController < ApplicationController
      :fl => '*,score',
      :fq => 'active_fedora_model_ssi:Book',
       :rows => 10
+
     }
 
     # solr field configuration for search results/index views
@@ -67,8 +68,9 @@ class CatalogController < ApplicationController
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
     config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
     config.add_facet_field 'subject_tesim', :label => 'Subject', :limit => 5
-        config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
-                config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
+    config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
+    config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
+
 
 
     # Have BL send all facet field names to Solr, which has been the default
