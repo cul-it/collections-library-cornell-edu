@@ -3,6 +3,7 @@
 	height: 40px;
 	@include make-xs-column(10);
 	@include make-sm-column(12);
+	padding-left: 10px;
 }
 
 // styles shared by both cul-law-logo and cul-logo
@@ -48,6 +49,7 @@
 .mobile-logo {
 	max-width: 100%;
 	height: auto;
+	margin-top: 2px;
 }
 .mobile-nav {
 	background: $cornell-primary;
@@ -110,6 +112,7 @@
 	}
 	.cu-brand {
 		height: 45px;
+		padding-left: 15px;
 	}
 }
 

@@ -55,6 +55,12 @@
 	font-size: 16px;
 	color: $dark-gray;
 }
+.search-query-form {
+	.form-group {
+		float: left;
+		width: 41%;
+	}
+}
 
 // Utility links
 // ----------------------//
@@ -92,6 +98,12 @@
 		float: right;
 		margin-bottom: 0;
 		margin-top: 6em;
+	}
+	.search-query-form {
+		.form-group {
+			float: none;
+			width: auto;
+		}
 	}
 }
 

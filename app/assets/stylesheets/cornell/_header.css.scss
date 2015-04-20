@@ -8,10 +8,10 @@
 	background: $dark-gray;
 	h1 {
 		color: white;
-		line-height: .75em;
+		line-height: 1.1em;
 		margin: .5em 0;
 		padding: 0;
-		font-size: 34px;
+		font-size: 28px;
 		span {
 			display: block;
 			font-size: 19px;
@@ -23,23 +23,22 @@
 		}
 	}
 	h2 {
-		font-size: 20px;
+		font-size: 18px;
 		color: #bebdbd;
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
 		line-height: 1.4em;
 	}
 }
 .navigation-bar {
 	@include make-sm-column(4);
-	// @include make-sm-column-offset(1);
+	
 	@include make-sm-column-push(8);
-	margin-top: 1em;
 }
 .site-title {
-	@include make-sm-column(7);
+	@include make-sm-column(8);
 	@include make-sm-column-pull(4);
 	margin: 1em 0;
-	
+	border-right: 1px solid $gray;
 }
 
 .searchbar{
@@ -53,16 +52,15 @@
 		position: relative;
 		z-index: 5000;
 		background: $turquoise;
-		margin-top: 1em;
+		margin-top: 0;
 		li {
-			display: inline;
-			float: none;
 			line-height: 1.75em;
 			a {
 				text-shadow: none;
-				color: white;
 				font-size: 18px;
-				display: inline;
+				background: white;
+				color: $dark-gray;
+				border-bottom: 1px solid $medium-gray;
 			}
 			a:hover {
 				color: white;
@@ -70,31 +68,15 @@
 				background:none;
 			}
 		}
-		li::after {
-    		content: "/";
-    		color: white;
-		}
-		li:last-child::after {
-			content: "";
-		}
 	}
 }
 .navigation-bar {
 	padding-left: 0;
 	padding-right: 0;
-	border-left: 1px solid $gray;
-}
-.navbar > li > a {
-	padding: 0;
-}
-.navbar-nav > li > a {
-	padding: 0 .5em;
-}
-.navbar-nav > li > a:first-child {
-	padding-left: 0;
 }
 .navbar {
 	min-height: 0;
+	border: 0;
 }
 
 
@@ -126,13 +108,52 @@
 	}
 	.navbar-collapse {
 		.nav {
-			// float: right;
 			width: auto;
 			background: inherit;
+			margin-top: 1.25em;
+			li {
+				display: inline;
+				float: none;
+				a {
+					display: inline;
+					background: inherit;
+					color: white;
+					border-bottom: 0;
+				}
+			}
+			li::after {
+    		content: "/";
+    		color: white;
+			}
+			li:last-child::after {
+				content: "";
+			}
 		}
 	}
 	.navbar {
 		min-height: 0;
+		margin-bottom: 20px;
+	}
+	.navigation-bar {
+		margin-top: 1em;
+	}
+	.site-identity {
+		h1 {
+			font-size: 34px;
+		}
+		h2 {
+			font-size: 20px;
+			margin-bottom: .5em;
+		}
+	}
+	.navbar > li > a {
+		padding: 0;
+	}
+	.navbar-nav > li > a {
+		padding: 0 .5em;
+	}
+	.navbar-nav > li > a:first-child {
+		padding-left: 0;
 	}
 }
 
