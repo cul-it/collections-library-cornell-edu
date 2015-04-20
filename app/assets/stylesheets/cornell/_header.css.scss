@@ -1,11 +1,17 @@
 .hero {
 	margin-bottom: 0;
 	border-radius: 0;
+	background: url("cornell/hero.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 
 .site-identity {
 	background: $dark-gray;
+	opacity: .85;
 	h1 {
 		color: white;
 		line-height: 1.1em;
@@ -98,14 +104,6 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm) {
-	.hero {
-		background: url("cornell/hero.jpg") no-repeat center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		padding-bottom: 3em;
-	}
 	.navbar-collapse {
 		.nav {
 			width: auto;

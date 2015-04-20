@@ -1,19 +1,19 @@
 .cu-brand {
 	background: $cornell-primary;
 	height: 40px;
-	@include make-xs-column(10);
-	@include make-sm-column(12);
-	padding-left: 10px;
 }
 
 // styles shared by both cul-law-logo and cul-logo
 .cu-logo {
+	@include make-xs-column(10);
+	@include make-sm-column(12);
+	padding-left: 10px;
 	a {
 		display: block;
 		border: none;
 		text-indent: -1000em;
 		text-decoration: none;
-		height: 45px;
+		// height: 45px;
 	}
 	a#insignia-link {
 		float: left;
