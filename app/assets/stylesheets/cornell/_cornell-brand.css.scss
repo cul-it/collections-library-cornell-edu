@@ -1,11 +1,12 @@
 .cu-brand {
 	background: $cornell-primary;
-	height: 45px;
+	height: 40px;
+	@include make-xs-column(10);
+	@include make-sm-column(12);
 }
 
 // styles shared by both cul-law-logo and cul-logo
 .cu-logo {
-	// margin-left: 1em;
 	a {
 		display: block;
 		border: none;
@@ -38,28 +39,26 @@
 	}
 }
 
-// display on all pages except home
-.cul-law-logo {
-	margin-bottom: 3em;
-	background: url("cornell/cul-branding/cul-law-logo.png") no-repeat 0 0;
-		width: 419px !important;
-	
-}
-
-// display on home page only
-.cul-logo {
-	background: url("cornell/cul-branding/cul-logo.png") no-repeat 0 0;
-	width: 288px !important;
-}
-
-// secondary graphic
-.law-logo {
-	padding: 3em 0 0 0;
-}
-
 // print logo
 .print-logo {
 	display: none;
+}
+
+// mobile logo
+.mobile-logo {
+	max-width: 100%;
+	height: auto;
+}
+.mobile-nav {
+	background: $cornell-primary;
+	@include make-xs-column(2);
+	padding-right: 0;
+}
+.navbar-toggle {
+	margin: 0;
+	background: $turquoise;
+	border-radius: 0;
+	color: white;
 }
 
 // Skip to content link
@@ -102,6 +101,15 @@
 @media (min-width: $screen-sm) {
 	.cu-logo {
 		margin-left: 1em;
+	}
+	// display on all pages except home
+	.cul-law-logo {
+		margin-bottom: 3em;
+		background: url("cornell/cul-branding/cul-law-logo.png") no-repeat 0 0;
+			width: 419px !important;
+	}
+	.cu-brand {
+		height: 45px;
 	}
 }
 

@@ -1,12 +1,6 @@
 .hero {
-	background: url("cornell/hero.jpg") no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	margin-bottom: 0;
 	border-radius: 0;
-	padding-bottom: 3em;
 }
 
 
@@ -35,17 +29,19 @@
 		line-height: 1.4em;
 	}
 }
-
+.navigation-bar {
+	@include make-sm-column(4);
+	// @include make-sm-column-offset(1);
+	@include make-sm-column-push(8);
+	margin-top: 1em;
+}
 .site-title {
 	@include make-sm-column(7);
+	@include make-sm-column-pull(4);
 	margin: 1em 0;
 	
 }
-.navigation-bar {
-	@include make-sm-column(4);
-	@include make-sm-column-offset(1);
-	margin-top: 1em;
-}
+
 .searchbar{
 	@include make-sm-column(8);
 }
@@ -83,17 +79,6 @@
 		}
 	}
 }
-.navbar-header {
-	.navbar-toggle {
-		background: $turquoise;
-		border-radius: 0;
-		margin-right: 0;
-		text-transform: uppercase;
-		padding: 4px 10px;
-		color: white;
-		margin-top: -60px;
-	}
-}
 .navigation-bar {
 	padding-left: 0;
 	padding-right: 0;
@@ -107,6 +92,9 @@
 }
 .navbar-nav > li > a:first-child {
 	padding-left: 0;
+}
+.navbar {
+	min-height: 0;
 }
 
 
@@ -128,13 +116,13 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm) {
-	.sea-identity {
-		h1 {
-			font-size: 38px;
-			span {
-				font-size: 17px;
-			}
-		}
+	.hero {
+		background: url("cornell/hero.jpg") no-repeat center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding-bottom: 3em;
 	}
 	.navbar-collapse {
 		.nav {
@@ -143,10 +131,9 @@
 			background: inherit;
 		}
 	}
-	// .navigation-bar {
-	// 	padding-left: 15px;
-	// 	padding-right: 15px;
-	// }
+	.navbar {
+		min-height: 0;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */

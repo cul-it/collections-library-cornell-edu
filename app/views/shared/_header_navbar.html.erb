@@ -4,25 +4,27 @@
   <div class="container">
     <div class="cornell-identity">
       <div class="row">
-        <div class="cu-brand col-xs-10 col-sm-12">
+        <div class="cu-brand">
             <div class="cu-logo cul-law-logo">
               <%# TODO: print logo %>
               <img src="/assets/cornell/layout/cul-logo-white.gif" alt="Cornell University Library" class="print-logo">
+              <%# Mobile logo %>
+              <img src="/assets/cornell/cul-branding/cul-law-logo-mobile.png" alt="Cornell University Law Library" class="visible-xs mobile-logo">
               <a id="insignia-link" href="http://www.cornell.edu/">Cornell Insignia</a>
               <div class="unit-signature-links">
                 <a id="unit-link" href="http://www.library.cornell.edu/">Cornell University Library</a>
                 <a id="sub-unit-link" href="http://law.library.cornell.edu/">Law Library</a>
               </div>
             </div>
-        </div>
-        <div class="col-xs-2">
-          <div class="navbar-header">
+          </div>
+          <div class="mobile-nav visible-xs">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
+              <span class="sr-only">Menu</span>
               <i class="fa fa-bars"></i>
             </button>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -31,11 +33,6 @@
 <section class="site-identity">
   <div class="container">
     <div class="row">
-      <div class="site-title">
-        <h1><a href="<%=root_path%>">Donovan Nuremberg Trials Collection</a></h1>
-        <h2>Nuremberg trial transcripts and documents from the collection of General William J. Donovan</h2>
-      </div>
-
       <div class="navigation-bar">
         <div class="navbar">
           <div class="collapse navbar-collapse">
@@ -48,22 +45,23 @@
           </div><!--/.navbar-collapse-->
         </div>
       </div>
+      <div class="site-title">
+        <h1><a href="<%=root_path%>">Donovan Nuremberg Trials Collection</a></h1>
+        <h2>Nuremberg trial transcripts and documents from the collection of General William J. Donovan</h2>
+      </div>
     </div>
   </div>
 </section>
 
-<%# display search bar everywhere but home page, which gets it's own search box in home_text.html.erb %>
-<% if has_search_parameters? || !current_page?('/') %>
-  <section class="search-bar">
-    <div class="container">
-      <div class="row">
-        <div class="clearfix searchbar" id="searchbar">         
-          <%= render_search_bar  %>
-        </div>
-        <div class="utility-links">
-          <%= render :partial=>'/user_util_links' %>
-        </div>
+<section class="search-bar">
+  <div class="container">
+    <div class="row">
+      <div class="clearfix searchbar" id="searchbar">         
+        <%= render_search_bar  %>
+      </div>
+      <div class="utility-links">
+        <%= render :partial=>'/user_util_links' %>
       </div>
     </div>
-  </section>
-<% end %>
+  </div>
+</section>
