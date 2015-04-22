@@ -1,3 +1,20 @@
 <div class="home-text">
-	<p>The Donovan Nuremberg Trials collection consists of nearly 150 bound volumes of Nuremberg trial transcripts and documents from the personal archives of General William J. Donovan (1883-1959). The Donovan papers contain both original statements from the defendants in German and typed translations in English prepared by the Allies.</p>
+
+	<% if current_page?('/nuremberg') %>
+		<p>The Donovan Nuremberg Trials collection consists of nearly 150 bound volumes of Nuremberg trial transcripts and documents from the personal archives of General William J. Donovan (1883-1959). The Donovan papers contain both original statements from the defendants in German and typed translations in English prepared by the Allies.</p>
+	<% elsif current_page?('/trial') %>
+		<p>The Trials Pamphlet collection at the Cornell University Law Library consists of pamphlets ranging in date from the late 1600s to the late 1800s. Trial pamphlets are contemporary accounts of trials that involved prominent citizens or that dealt with especially controversial or lurid topics. These pamphlets were produced quickly and inexpensively, and then sold on the street soon after the trial to a mass audience. The paper used to print the pamphlets was of a lower quality (ephemera) and the pamphlets were not bound. Thus, the pamphlets were not meant to survive much past their initial use. The content of the individual pamphlets varies widely. They were sold to an eager public as both a form of entertainment and as cautionary tales. Some include the details and illustrations of scandalous crimes and others include “execution sermons,” which were meant to serve as moral examples to the readers. Most include valuable information not available elsewhere, such as verbatim transcripts of testimony and arguments of counsel, depositions of parties, and illustrations or copies of evidence used in the trial.</p>
+	<% elsif current_page?('/scottsboro') %>
+		<p>In the 1930s, nine young African-American men were tried for raping two white women in a train freight car in a groundbreaking case that tested the limits of race relations in the United States. Cornell Law alumnus Samuel S. Leibowitz (J.D. '15) represented these teenagers, who came to be known as the "Scottsboro Boys," in several proceedings. He kindly gave several important original documents and artifacts to the Cornell Law Library.</p>
+	<% elsif current_page?('/liberian') %>
+		<p>Liberian Law contains documents dealing with the creation of the nation of Liberia and the laws enacted at its foundation. These materials include the Constitution and the Laws of the Commonwealth going back to the Colonization Society.</p>
+	<% else %>
+		<ul>
+			<li><a href="/nuremberg">Donovan Nuremberg Trials</a></li>
+			<li><a href="/scottsboro">Scottsboro Trials</a></li>
+			<li><a href="/trial">Trial Pamphlet Collection</a></li>
+			<li><a href="/liberian">Liberian Law</a></li>
+		</ul>
+	<% end %>
+
 </div>
