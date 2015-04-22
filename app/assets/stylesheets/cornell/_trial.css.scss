@@ -1,0 +1,17 @@
+.blacklight-trial {
+	.site-identity {
+		background: $header-bg-trial;
+		opacity: .8;
+	}
+	a,
+	.btn-search i { 
+		color: $link-color-trial;
+	}
+	.hero {
+		background: url("cornell/hero-trial.jpg") no-repeat 50% 25%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
