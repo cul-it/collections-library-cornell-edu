@@ -11,11 +11,7 @@
       <% else %>
 
         <h2 class="hide-text top-content-title"><%= t('blacklight.search.search_results_header') %></h2>
-
         <% @page_title = t('blacklight.search.title', :application_name => application_name) %>
-
-
-
 
   	    <%= render :partial => 'did_you_mean' %>
 
@@ -24,6 +20,9 @@
   	    <%= render 'sort_and_per_page' %>
 
         <h2 class="hide-text"><%= t('blacklight.search.search_results') %></h2>
+      
+        <%= params[:subject] %>
+
   	    <%= render_document_index %>
 
 

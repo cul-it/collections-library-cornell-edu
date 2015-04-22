@@ -11,13 +11,28 @@ class CatalogController < ApplicationController
 #  CatalogController.solr_search_params_logic += [:add_access_controls_to_solr_params]
 
 
+before_action  do
+
+if params[:subject] == "nuremberg"
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:Nuremberg'}
+
+elsif params[:subject] == "trials"
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:trials'}
+else 
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND (subject_tesim:Nuremberg OR subject_tesim:trials)'}
+end
+
+
+end
+
+
+
   configure_blacklight do |config|
     config.default_solr_params = {
      :defType => 'edismax', 
-     :qf => 'author_timv title_timv pubdate_timv subject_timv publisher_timv image_ocr_timv active_fedora_model_ssi', 
+     :qf => 'author_timv title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi', 
      :qt => 'search',
      :fl => '*,score',
-     :fq => 'active_fedora_model_ssi:Book',
       :rows => 10
 
     }
@@ -70,7 +85,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'subject_tesim', :label => 'Subject', :limit => 5
     config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
-
+    config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => 5, :show => true
 
 
     # Have BL send all facet field names to Solr, which has been the default
@@ -210,8 +225,8 @@ class CatalogController < ApplicationController
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
     config.spell_max = 5
-  end
 
+  end
 
 
 end
