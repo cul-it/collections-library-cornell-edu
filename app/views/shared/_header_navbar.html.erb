@@ -34,10 +34,19 @@
           <div class="navbar">
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
+              <% if params[:subject] =="nuremberg" %>
                 <li><a href="<%=root_path%>">Home</a></li>
                 <li><a href="/about/collection">Collection Description</a></li>
                 <li><a href="/about/project">Project</a></li>
                 <li><a href="/about/analysis">Analysis of Hitler's Personality</a></li>
+
+
+              <% elsif params[:subject]=="trials" %>
+
+              <% else %>
+
+              <% end %>
+
               </ul>
             </div><!--/.navbar-collapse-->
           </div>

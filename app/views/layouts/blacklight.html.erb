@@ -32,7 +32,7 @@
 
   </head>
   <% onload_text = "$('input#q').focus();" if params[:q].to_s.empty? and params[:f].to_s.empty? and params[:id].nil? %>
-  <body onload="<%= onload_text %>" class="<%= render_body_class %>">
+  <body onload="<%= onload_text %>" class="<%= render_body_class %> <%= params[:subject] %> ">
     <%= render :partial => 'shared/header_navbar' %>
 
     <div id="ajax-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal menu" aria-hidden="true">
@@ -63,7 +63,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-8097093-25', 'auto');
+  ga('create', 'UA-8097093-32', 'auto');
   ga('send', 'pageview');
 
 </script>
