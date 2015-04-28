@@ -34,6 +34,7 @@ end
      :qt => 'search',
      :fl => '*,score',
       :rows => 10
+
     }
 
     # solr field configuration for search results/index views
@@ -85,6 +86,7 @@ end
     config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
     config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => 5, :show => true
+
 
 
     # Have BL send all facet field names to Solr, which has been the default

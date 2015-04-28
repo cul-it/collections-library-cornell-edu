@@ -1,13 +1,19 @@
-.cu-logo {	
+.cu-brand {
 	background: $cornell-primary;
-	height: 45px;
+	height: 40px;
+}
+
+// styles shared by both cul-law-logo and cul-logo
+.cu-logo {
+	@include make-xs-column(10);
+	@include make-sm-column(12);
+	padding-left: 10px;
 	a {
 		display: block;
 		border: none;
 		text-indent: -1000em;
 		text-decoration: none;
-		margin-left: 1em;
-		height: 45px;
+		// height: 45px;
 	}
 	a#insignia-link {
 		float: left;
@@ -17,25 +23,44 @@
 	#unit-signature-links { float: left; }
 	a#unit-link {
 		height: 45px;
-		width: 285px;
+		width: 240px;
+		float: left;
 	}
-	img { display: none; } // this is the logo used for print
-}
-.cul-law-logo {
-	margin-bottom: 3em;
-	a {
-		background: url("cornell/cul-branding/cul-law-logo.png") no-repeat 0 0;
-		width: 419px !important;
+	a#sub-unit-link {
+		height: 45px;
+		width: 110px;
+		margin-left: 305px;
 	}
 }
-.cul-logo {
-	a {
-		background: url("cornell/cul-branding/cul-logo.png") no-repeat 0 0;
-		width: 288px !important;
+
+// do not have an active red bar law link on the home page
+.cu-logo.cul-logo {
+	a#sub-unit-link {
+		cursor: default;
 	}
 }
-.law-logo {
-	padding: 3em 0 2em 0;
+
+// print logo
+.print-logo {
+	display: none;
+}
+
+// mobile logo
+.mobile-logo {
+	max-width: 100%;
+	height: auto;
+	margin-top: 2px;
+}
+.mobile-nav {
+	background: $cornell-primary;
+	@include make-xs-column(2);
+	padding-right: 0;
+}
+.navbar-toggle {
+	margin: 0;
+	background: $turquoise;
+	border-radius: 0;
+	color: white;
 }
 
 // Skip to content link
@@ -56,4 +81,42 @@
 	    transition: top 1s ease-out, background 1s linear;
 	    z-index: 100;
  	}
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	.cu-logo {
+		margin-left: 1em;
+	}
+	// display on all pages except home
+	.cul-law-logo {
+		margin-bottom: 3em;
+		background: url("cornell/cul-branding/cul-law-logo.png") no-repeat 0 0;
+			width: 419px !important;
+	}
+	.cu-brand {
+		height: 45px;
+		padding-left: 15px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+
 }
