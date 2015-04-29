@@ -44,7 +44,6 @@
 	@include make-sm-column(8);
 	@include make-sm-column-pull(4);
 	margin: 1em 0;
-	border-right: 1px solid $gray;
 }
 
 .searchbar{
@@ -79,6 +78,7 @@
 .navigation-bar {
 	padding-left: 0;
 	padding-right: 0;
+	border-left: 1px solid $gray;
 }
 .navbar {
 	min-height: 0;

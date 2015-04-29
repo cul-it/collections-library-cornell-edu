@@ -28,27 +28,29 @@
   </div>
   <section class="site-identity">
     <div class="container">
-      <div class="row">
+      <div class="row">  
         <div class="navigation-bar">
-          <div class="navbar">
-            <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav">
-              <% if params[:subject] =="nuremberg" %>
-                <li><a href="<%=root_path%>">Home</a></li>
-                <li><a href="/about/collection">Collection Description</a></li>
-                <li><a href="/about/project">Project</a></li>
-                <li><a href="/about/analysis">Analysis of Hitler's Personality</a></li>
+          <% if !current_page?('/') %>
+            <div class="navbar">
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                <% if params[:subject] =="nuremberg" %>
+                  <li><a href="<%=root_path%>">Home</a></li>
+                  <li><a href="/about/collection">Collection Description</a></li>
+                  <li><a href="/about/project">Project</a></li>
+                  <li><a href="/about/analysis">Analysis of Hitler's Personality</a></li>
 
 
-              <% elsif params[:subject]=="trials" %>
+                <% elsif params[:subject]=="trials" %>
 
-              <% else %>
+                <% else %>
 
-              <% end %>
+                <% end %>
 
-              </ul>
-            </div><!--/.navbar-collapse-->
-          </div>
+                </ul>
+              </div><!--/.navbar-collapse-->
+            </div>
+          <% end %>
         </div>
         <div class="site-title">
          <% if params[:subject] =="nuremberg" %>
@@ -60,7 +62,7 @@
 
         <% else %>
         <h1><a href="<%=root_path%>">Law Collections</a></h1>
-        <h2>Digital collections from Cornell University Library's law library</h2>
+        <h2>Digital collections from Cornell University Library's Law Library</h2>
 
         <% end %>
         </div>
@@ -68,17 +70,15 @@
     </div>
   </section>
 </div>
-<% if !current_page?('/') %>
-  <section class="search-bar">
-    <div class="container">
-      <div class="row">
-        <div class="clearfix searchbar" id="searchbar">         
-          <%= render_search_bar  %>
-        </div>
-        <div class="utility-links">
-          <%= render :partial=>'/user_util_links' %>
-        </div>
+<section class="search-bar">
+  <div class="container">
+    <div class="row">
+      <div class="clearfix searchbar" id="searchbar">         
+        <%= render_search_bar  %>
+      </div>
+      <div class="utility-links">
+        <%= render :partial=>'/user_util_links' %>
       </div>
     </div>
-  </section>
-<% end %>
+  </div>
+</section>
