@@ -17,8 +17,12 @@ end
     opts[:label] ||= document_show_link_field(doc)
     label = render_document_index_label doc, opts
     id=doc
+    if params[:subject]
     subject=params[:subject]
     link_to label, '/'+subject +'/' +'catalog' + '/' + doc[:id], document_link_params(doc, opts)
+	else
+		link_to label, url_for_document(doc), document_link_params(doc, opts)
+	end
   end
-  
+
 end
