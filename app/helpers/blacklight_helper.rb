@@ -13,5 +13,12 @@ else
   end
 end
 
-
+  def link_to_document(doc, opts={:label=>nil, :counter => nil, :subject=>params[:subject]})
+    opts[:label] ||= document_show_link_field(doc)
+    label = render_document_index_label doc, opts
+    id=doc
+    subject=params[:subject]
+    link_to label, '/'+subject +'/' +'catalog' + '/' + doc[:id], document_link_params(doc, opts)
+  end
+  
 end
