@@ -134,7 +134,7 @@
 footer {
 	margin: 30px 0 15px;
 	color: $dark-gray;
-	a, a:hover { color: $dark-gray; }
+	a, a:hover { color: $dark-gray !important; }
 	p {
 		font-size: 14px;
 		padding-left: 15px;
