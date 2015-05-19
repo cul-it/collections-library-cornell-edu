@@ -14,14 +14,15 @@
 	}
 }
 
-.label-online {
-	background: $turquoise;
-	display:inline-block;
-}
-.label-book {
-	background: $turquoise;
-	display:inline-block;
-}
+// TODO: Remove? not needed; using btn class on item view instead
+// .label-online {
+// 	background: $turquoise;
+// 	display:inline-block;
+// }
+// .label-book {
+// 	background: $turquoise;
+// 	display:inline-block;
+// }
 
 .metadata {
 	@include make-sm-column(9);
@@ -42,8 +43,12 @@
 	}
 	.label:hover { background: $turquoise; }
 }
-.reader-link {
+.reader-link,
+.pdf-link {
 	margin-bottom: 10px;
+	i {
+		margin-right: 4px;
+	}
 }
 ul.item-links {
 	padding:0;

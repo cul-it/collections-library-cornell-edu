@@ -13,7 +13,10 @@
           <a href="/bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/get/nur:<%= sea_id %>/thumbnailImage" class="img-responsive img-thumbnail" alt="Book or page image"></a>
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
           <div class="reader-link" data-no-turbolink>
-            <a class="label label-online" href="/bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up">Read document</a>
+            <a class="btn btn-info" href="/bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up"><i class="fa fa-book-open"></i>Read document</a>
+          </div>
+          <div class="pdf-link" data-no-turbolink>
+            <a class="btn btn-info" href="#"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
           </div>
 
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
