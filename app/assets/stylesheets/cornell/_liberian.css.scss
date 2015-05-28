@@ -1,0 +1,17 @@
+.liberian {
+	.site-identity {
+		background: $header-bg-liberian;
+		opacity: .59;
+	}
+	a,
+	.btn-search i { 
+		color: $link-color-liberian;
+	}
+	.hero {
+		background: url("cornell/hero-liberian.jpg") no-repeat 50% 25%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}

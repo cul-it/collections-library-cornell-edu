@@ -1,0 +1,17 @@
+.scottsboro {
+	.site-identity {
+		background: $header-bg-scottsboro;
+		opacity: .8;
+	}
+	a,
+	.btn-search i { 
+		color: $link-color-scottsboro;
+	}
+	.hero {
+		background: url("cornell/hero-scottsboro.jpg") no-repeat 50% 25%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
