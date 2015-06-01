@@ -1,7 +1,7 @@
 .hero {
 	margin-bottom: 0;
 	border-radius: 0;
-	background: url("cornell/hero.jpg") no-repeat center; // TODO: this is the nuremberg image, currently. not sure if we want a root image for all law collections
+	background: url("https://law.library.cornell.edu/files/generic%20law_0.jpg") no-repeat center; // TODO: this is the nuremberg image, currently. not sure if we want a root image for all law collections
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -15,7 +15,7 @@
 	h1 {
 		color: white;
 		line-height: 1.1em;
-		margin: .5em 0;
+		margin: .25em 0;
 		padding: 0;
 		font-size: 28px;
 		span {
@@ -28,11 +28,20 @@
 			text-decoration: none;
 		}
 	}
-	h2 {
+	.tagline {
 		font-size: 18px;
 		color: #bebdbd;
 		margin-bottom: 1em;
 		line-height: 1.4em;
+	}
+	.collections-link {
+		a {
+			font-size: 22px;
+			color: white;
+		}
+		a:hover {
+			text-decoration: none;
+		}
 	}
 }
 .navigation-bar {
@@ -44,6 +53,7 @@
 	@include make-sm-column(8);
 	@include make-sm-column-pull(4);
 	margin: 1em 0;
+	border-right: 1px solid $gray;
 }
 
 .searchbar{
@@ -78,7 +88,7 @@
 .navigation-bar {
 	padding-left: 0;
 	padding-right: 0;
-	border-left: 1px solid $gray;
+	// border-left: 1px solid $gray;
 }
 .navbar {
 	min-height: 0;
