@@ -14,4 +14,7 @@
 		-o-background-size: cover;
 		background-size: cover;
 	}
+	#facets .panel-heading.collapse-toggle .panel-title:after {
+		color: $link-color-scottsboro;
+	}
 }

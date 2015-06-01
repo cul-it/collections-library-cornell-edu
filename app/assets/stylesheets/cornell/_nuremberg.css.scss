@@ -1,9 +1,20 @@
 .nuremberg {
+	.site-identity {
+		background: $header-bg-nuremberg;
+		opacity: .8;
+	}
+	a,
+	.btn-search i { 
+		color: $link-color-nuremberg;
+	}
 	.hero {
 		background: url("cornell/hero-nuremberg.jpg") no-repeat 50% 25%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+	}
+	#facets .panel-heading.collapse-toggle .panel-title:after {
+		color: $link-color-nuremberg;
 	}
 }
