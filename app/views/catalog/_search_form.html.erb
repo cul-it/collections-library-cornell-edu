@@ -3,7 +3,17 @@
   <div class="form-group search-group">
     <div class="search-input">
       <label for="q" class="sr-only"><%= t('blacklight.search.form.q') %></label>
-      <%= text_field_tag :q, params[:q], :placeholder => t('blacklight.search.form.q'), :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
+     
+      <% if params[:subject]=="trials" %>
+       <%= text_field_tag :q, params[:q], :placeholder => 'Search trial pamphlets', :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
+       <% elsif params[:subject]== "nuremberg" %>
+        <%= text_field_tag :q, params[:q], :placeholder => 'Search Nuremberg collection', :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
+
+        <%else %>
+         <%= text_field_tag :q, params[:q], :placeholder => t('blacklight.search.form.q'), :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
+         <%end%>
+
+
     </div>
   </div>
   <% unless search_fields.empty? %>
