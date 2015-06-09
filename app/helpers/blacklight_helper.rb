@@ -6,10 +6,10 @@ module BlacklightHelper
     "Donovan Nuremberg Trials Collection"
 
 elsif params[:subject] == "trial"
-	"Trial Pamplet Collection"
+	"Trial Pamphlets Collection"
 
 elsif params[:subject] == "scottsboro"
-  "Trial Pamplet Collection"
+  "Scottsboro Trials"
 
 else
 	"Law Collections"
