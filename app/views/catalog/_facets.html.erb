@@ -1,4 +1,6 @@
 <% # main container for facets/limits menu -%>
+      <% unless !has_search_parameters? && !params[:subject].present? %>
+
 <% if has_facet_values?  %>
   <div id="facets" class="facets sidenav">
 
@@ -23,3 +25,4 @@
   </div>
   </div>
 <% end %>
+<%end%>

@@ -14,12 +14,10 @@ class CatalogController < ApplicationController
 before_action  do
 
 if params[:subject] == "nuremberg"
-  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:Nuremberg'}
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Collection"'}
 
 elsif params[:subject] == "trials"
-  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:trials'}
-else 
-  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND (subject_tesim:Nuremberg OR subject_tesim:trials)'}
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Trial Pamphlets Collection"'}
 end
 
 
@@ -30,7 +28,7 @@ end
   configure_blacklight do |config|
     config.default_solr_params = {
      :defType => 'edismax', 
-     :qf => 'author_timv title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi', 
+     :qf => 'author_timv titlestmt_title_tesim title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi', 
      :qt => 'search',
      :fl => '*,score',
       :rows => 10
@@ -44,7 +42,7 @@ end
 #    config.index.show_link = 'title_tesim'
 #    config.index.record_display_type = 'has_model_ssi'
 
-    config.show.title_field = 'book_title_tesim'
+    config.show.title_field = 'title_tesim'
 #    config.show.display_type = 'has_model_ssi'
 
 
@@ -82,7 +80,7 @@ end
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
     config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
-    config.add_facet_field 'subject_tesim', :label => 'Subject', :limit => 5
+    config.add_facet_field 'subject_tesim', :label => 'Collection', :limit => 5
     config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
     config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => 5, :show => true
@@ -127,7 +125,7 @@ end
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
-##    config.add_show_field solr_name('title', :stored_searchable, type: :string), :label => 'Title:'
+    config.add_show_field 'title_tesim',  :label => 'Title'
 ##    config.add_show_field solr_name('title_vern', :stored_searchable, type: :string), :label => 'Title:'
 ##    config.add_show_field solr_name('subtitle', :stored_searchable, type: :string), :label => 'Subtitle:'
 ##    config.add_show_field solr_name('subtitle_vern', :stored_searchable, type: :string), :label => 'Subtitle:'

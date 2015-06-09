@@ -70,15 +70,21 @@
     </div>
   </section>
 </div>
+<% unless !has_search_parameters? && !params[:subject].present? %>
 <section class="search-bar">
   <div class="container">
     <div class="row">
-      <div class="clearfix searchbar" id="searchbar">         
+     
+      <div class="clearfix searchbar" id="searchbar">       
+     
         <%= render_search_bar  %>
       </div>
+
       <div class="utility-links">
         <%= render :partial=>'/user_util_links' %>
       </div>
     </div>
   </div>
 </section>
+              <%end%>
+

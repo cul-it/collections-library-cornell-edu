@@ -6,13 +6,18 @@
             <%if document[:active_fedora_model_ssi] == 'Page'%>
                   <% page_turner = render_index_field_value :document => document, :field => 'id' %>
                   <% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
-
+                  <%subject = params[:subject]%>
                   <% page_turner_array =  page_turner.split('_') %>
                    <% sea_id = page_turner_array[0][4..11] %>
-                  <a href="/bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/nur:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail" alt="Book or page image"></a>
+                  <a href="http://lawcollections-stg.library.cornell.edu/bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up">
+                  <% if subject =='nuremberg' %><img src="http://hydrastg.library.cornell.edu/fedora/objects/nur:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail" alt="Book or page image">
+                  <%elsif subject =='trials' %>
+                  <img src="http://hydrastg.library.cornell.edu/fedora/objects/sat:<%= sea_id %>_<%= page %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail" alt="Book or page image">
+                  <%end%></a>
             <% else %>
+            <%subject = params[:subject] %>
                   <% sea_id=page_turner[3..7] %>
-                  <a href="/bookreader/nur:<%= sea_id %>/#page/1/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/nur:<%= sea_id %>_1/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail"></a>
+                  <a href="http://lawcollections-stg.library.cornell.edu//bookreader/nur:<%= sea_id %>/#page/1/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/nur:<%= sea_id %>_1/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail"></a>
             <% end %>
        <div class="document-data" data-no-turbolink >
          <%= render :partial => 'document_header', :locals => { :document => document, :document_counter => document_counter } %>
