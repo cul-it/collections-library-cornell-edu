@@ -5,7 +5,7 @@ module BlacklightHelper
   	if params[:subject] == "nuremberg"
     "Donovan Nuremberg Trials Collection"
 
-elsif params[:subject] == "trials"
+elsif params[:subject] == "trial"
 	"Trial Pamplet Collection"
 
 elsif params[:subject] == "scottsboro"

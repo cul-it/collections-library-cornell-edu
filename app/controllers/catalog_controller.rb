@@ -16,7 +16,7 @@ before_action  do
 if params[:subject] == "nuremberg"
   blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Collection"'}
 
-elsif params[:subject] == "trials"
+elsif params[:subject] == "trial"
   blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Trial Pamphlets Collection"'}
 end
 
