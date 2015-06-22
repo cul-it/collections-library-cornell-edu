@@ -8,14 +8,13 @@
 
     <%# display if it's a book -%>
     <%if @document[:active_fedora_model_ssi] == 'Book'%>
-    <% page_turner = render_document_show_field_value :document => @document, :field => 'pubstmt_idno_tesim' %>
+    <% page_turner = pubstmt_to_id(render_document_show_field_value :document => @document, :field => 'pubstmt_idno_tesim') %>
     <% page = 1 %>
-    <% sea_id=page_turner[3..7] %>
         <div class="cover" data-no-turbolink>
-          <a href="http://lawcollections-stg.library.cornell.edu//bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/get/nur:<%= sea_id %>/thumbnailImage" class="img-responsive img-thumbnail" alt="Book or page image"></a>
+          <a href="http://lawcollections-stg.library.cornell.edu//bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/get/<%= page_turner %>/thumbnailImage" class="img-responsive img-thumbnail" alt="Book or page image"></a>
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
           <div class="reader-link" data-no-turbolink>
-            <a class="btn btn-info" href="http://lawcollections-stg.library.cornell.edu//bookreader/nur:<%= sea_id %>/#page/<%= page %>/mode/1up"><i class="fa fa-book-open"></i>Read document</a>
+            <a class="btn btn-info" href="http://lawcollections-stg.library.cornell.edu//bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><i class="fa fa-book-open"></i>Read document</a>
           </div>
           <div class="pdf-link" data-no-turbolink>
             <a class="btn btn-info" href="#"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
@@ -86,8 +85,10 @@
             <dt class="blacklight-publication-info-label">Table of Contents:</dt>
             <dd class="blacklight-publication-info" data-no-turbolink><%= render_table_of_contents(params[:id]).html_safe %></dd>
           </dl>
-         <% else %>
-         <h2><a href="/catalog/nur:<%= sea_id %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a> <span class="label label-default">Page <%= real_page %></span></h2>
+
+
+          <%elsif @document[:active_fedora_model_ssi] == 'Page'%>
+         <h2><a href="/catalog/<%= page_turner %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a> <span class="label label-default">Page <%= real_page %></span></h2>
           <div class="document"> <%= render_document_partial @document, :show %> </div>
 
           <dl class="dl-horizontal">
