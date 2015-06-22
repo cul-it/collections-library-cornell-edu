@@ -10,7 +10,8 @@
 		color: $link-color-nuremberg;
 	}
 	.pagination > .active > a,
-	.cover .btn-info {
+	.cover .btn-info,
+	.navbar-toggle {
 		background: $link-color-nuremberg;
 		border-color: $link-color-nuremberg;
 		color: white;
