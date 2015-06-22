@@ -9,7 +9,8 @@
 	.pagination > li > a  { 
 		color: $link-color-trial;
 	}
-	.pagination > .active > a {
+	.pagination > .active > a,
+	.cover .btn-info {
 		background: $link-color-trial;
 		border-color: $link-color-trial;
 		color: white;
@@ -28,4 +29,5 @@
 		background: $link-color-trial;
 		color: white !important;
 	}
+
 }

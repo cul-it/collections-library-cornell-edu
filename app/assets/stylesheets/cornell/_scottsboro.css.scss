@@ -9,7 +9,8 @@
 	.pagination > li > a  { 
 		color: $link-color-scottsboro;
 	}
-	.pagination > .active > a {
+	.pagination > .active > a,
+	.cover .btn-info {
 		background: $link-color-scottsboro;
 		border-color: $link-color-scottsboro;
 		color: white;
