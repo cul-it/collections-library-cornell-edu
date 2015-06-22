@@ -10,7 +10,8 @@
 		color: $link-color-scottsboro;
 	}
 	.pagination > .active > a,
-	.cover .btn-info {
+	.cover .btn-info,
+	.navbar-toggle {
 		background: $link-color-scottsboro;
 		border-color: $link-color-scottsboro;
 		color: white;

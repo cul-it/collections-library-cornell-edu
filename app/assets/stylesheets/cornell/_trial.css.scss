@@ -10,7 +10,8 @@
 		color: $link-color-trial;
 	}
 	.pagination > .active > a,
-	.cover .btn-info {
+	.cover .btn-info,
+	.navbar-toggle {
 		background: $link-color-trial;
 		border-color: $link-color-trial;
 		color: white;
@@ -29,5 +30,4 @@
 		background: $link-color-trial;
 		color: white !important;
 	}
-
 }
