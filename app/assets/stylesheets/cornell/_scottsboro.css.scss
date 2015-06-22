@@ -4,8 +4,15 @@
 		opacity: .8;
 	}
 	a,
-	.btn-search i { 
+	.btn-search i,
+	.facets .fa-times,
+	.pagination > li > a  { 
 		color: $link-color-scottsboro;
+	}
+	.pagination > .active > a {
+		background: $link-color-scottsboro;
+		border-color: $link-color-scottsboro;
+		color: white;
 	}
 	.hero {
 		background: url("cornell/hero-scottsboro.jpg") no-repeat 50% 25%;

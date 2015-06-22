@@ -4,8 +4,15 @@
 		opacity: .8;
 	}
 	a,
-	.btn-search i { 
+	.btn-search i,
+	.facets .fa-times,
+	.pagination > li > a { 
 		color: $link-color-nuremberg;
+	}
+	.pagination > .active > a {
+		background: $link-color-nuremberg;
+		border-color: $link-color-nuremberg;
+		color: white;
 	}
 	.hero {
 		background: url("cornell/hero-nuremberg.jpg") no-repeat 50% 25%;

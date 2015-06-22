@@ -4,8 +4,15 @@
 		opacity: .59;
 	}
 	a,
-	.btn-search i { 
+	.btn-search i,
+	.facets .fa-times,
+	.pagination > li > a  { 
 		color: $link-color-liberian;
+	}
+	.pagination > .active > a {
+		background: $link-color-liberian;
+		border-color: $link-color-liberian;
+		color: white;
 	}
 	.hero {
 		background: url("cornell/hero-liberian.jpg") no-repeat 50% 25%;

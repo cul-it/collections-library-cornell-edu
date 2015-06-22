@@ -4,8 +4,15 @@
 		opacity: .8;
 	}
 	a,
-	.btn-search i { 
+	.btn-search i,
+	.facets .fa-times,
+	.pagination > li > a  { 
 		color: $link-color-trial;
+	}
+	.pagination > .active > a {
+		background: $link-color-trial;
+		border-color: $link-color-trial;
+		color: white;
 	}
 	.hero {
 		background: url("cornell/hero-trial.jpg") no-repeat 50% 25%;
