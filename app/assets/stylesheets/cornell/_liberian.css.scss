@@ -1,7 +1,7 @@
 .liberian {
 	.site-identity {
-		background: $header-bg-liberian;
-		opacity: .59;
+		// use rgba because the contrast is lower for this color and the header text is hard to read with straight opacity
+		background: rgba(190, 173, 110, .59)
 	}
 	a,
 	.btn-search i,
