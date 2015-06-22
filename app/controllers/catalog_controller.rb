@@ -16,6 +16,12 @@ before_action  do
 if params[:subject] == "nuremberg"
   blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Collection"'}
 
+elsif params[:subject] == "scottsboro"
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Scottsboro Trials Collection"'}
+
+elsif params[:subject] == "liberian"
+  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Liberian Law Collection"'}
+
 elsif params[:subject] == "trial"
   blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Trial Pamphlets Collection"'}
 end
@@ -80,7 +86,7 @@ end
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
     config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
-    config.add_facet_field 'subject_tesim', :label => 'Collection', :limit => 5
+    config.add_facet_field 'subject_tesim', :label => 'Collection', :limit => 5, :show => false
     config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
     config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => 5, :show => true

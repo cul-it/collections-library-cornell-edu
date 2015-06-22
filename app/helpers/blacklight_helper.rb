@@ -11,6 +11,9 @@ elsif params[:subject] == "trial"
 elsif params[:subject] == "scottsboro"
   "Scottsboro Trials"
 
+elsif params[:subject] == "liberian"
+  "Liberian Law Collection"
+
 else
 	"Law Collections"
   end
