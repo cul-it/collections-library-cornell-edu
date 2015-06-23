@@ -1,31 +1,32 @@
 <div class="row">
-  <div id="sidebar" class="facet-sidebar" data-no-turbolink>
-    <%= render :partial=>'facets' %>
-  </div><!--/well -->
+  <%= render :partial=>'facets' %>
 
-  <div id="content" class="search-results">
+  <div id="content">
 
       <% unless has_search_parameters? %>
   	    <%# if there are no input/search related params, display the "home" partial -%>
   	    <%= render 'home' %>
       <% else %>
 
-        <h2 class="hide-text top-content-title"><%= t('blacklight.search.search_results_header') %></h2>
-        <% @page_title = t('blacklight.search.title', :application_name => application_name) %>
+        <div class="search-results">
 
-  	    <%= render :partial => 'did_you_mean' %>
+          <h2 class="hide-text top-content-title"><%= t('blacklight.search.search_results_header') %></h2>
+          <% @page_title = t('blacklight.search.title', :application_name => application_name) %>
 
-        <%= render :partial => 'constraints' %>
+    	    <%= render :partial => 'did_you_mean' %>
 
-  	    <%= render 'sort_and_per_page' %>
+          <%= render :partial => 'constraints' %>
 
-        <h2 class="hide-text"><%= t('blacklight.search.search_results') %></h2>
-      
+    	    <%= render 'sort_and_per_page' %>
 
-  	    <%= render_document_index %>
+          <h2 class="hide-text"><%= t('blacklight.search.search_results') %></h2>
+        
+
+    	    <%= render_document_index %>
 
 
-  	    <%= render 'results_pagination' %>
+    	    <%= render 'results_pagination' %>
+        </div>
 
 
       <% end %>
