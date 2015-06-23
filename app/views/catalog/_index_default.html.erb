@@ -2,7 +2,6 @@
 <% page_turner = pubstmt_to_id(render_index_field_value :document => document, :field => 'pubstmt_idno_tesim') %>
 
   <div class="data-block">
-    <h2 class="blacklight-title_display"><%= render_index_field_value :document => document, :field => 'title' %></h2>
     <div class="blacklight-author_display"><%= render_index_field_value :document => document, :field => 'author_tesim' %></div>
     <div class="blacklight-publisher_display"><%= render_index_field_value :document => document, :field => 'pubplace_tesim' %>, <%= render_index_field_value :document => document, :field => 'publisher_tesim' %>
       <span class="blacklight-publisher_uniform_display"><%= render_index_field_value :document => document, :field => 'pubdate_tesim' %></span>
