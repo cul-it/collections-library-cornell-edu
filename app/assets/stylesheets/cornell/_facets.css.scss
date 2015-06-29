@@ -92,8 +92,10 @@
 		float: none !important;
 	}
 }
+// TODO: for Law, we don't need to display the view type because the content onlu needs to be displayed as a list. Gallery and slideshow aren't needed. Hiding this for now, but maybe we should remove the gems?
 .view-type {
 	margin-top: .5em;
+	display: none;
 }
 
 
