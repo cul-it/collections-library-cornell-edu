@@ -26,7 +26,8 @@ body {
 	@include make-sm-column(3);
 }
 
-.search-results {
+.search-results,
+.collection-text {
 	@include make-sm-column(9);
 }
 
