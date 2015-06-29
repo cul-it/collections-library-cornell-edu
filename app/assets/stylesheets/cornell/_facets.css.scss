@@ -116,6 +116,10 @@ padding: 3px 15px;
 .constraints-label {
 	margin-right: .5em;
 }
+.btn-constraint {
+	white-space: normal; // allows button to wrap for long facets - HYDRADEV-236
+	text-align: left;
+}
 
 // Mobile nav
 // -----------------------//
