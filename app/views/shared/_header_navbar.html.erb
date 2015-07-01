@@ -79,14 +79,15 @@
     </div>
   </section>
 </div>
-<% unless !has_search_parameters? || !params[:subject].present? %>
+<% unless params[:controller] == 'catalog' && params[:subject].nil? && params[:action] == 'index'%>
 <section class="search-bar">
   <div class="container">
     <div class="row">
-     
-      <div class="clearfix searchbar" id="searchbar">       
-     
+
+      <div class="clearfix searchbar" id="searchbar">   
+        <% unless params[:controller] == 'bookmarks' || params[:controller] == 'search_history' %>
         <%= render_search_bar  %>
+        <% end %>
       </div>
 
       <div class="utility-links">
@@ -95,5 +96,5 @@
     </div>
   </div>
 </section>
-              <%end%>
+<%end%>
 
