@@ -1,5 +1,6 @@
 Bl5::Application.routes.draw do
   get '/bookmarks' => 'bookmarks#index'
+  get '/history' => "search_history#index"
   get '/:subject' => 'catalog#index'
   get '/:subject/catalog/:id' => 'catalog#show'
 
