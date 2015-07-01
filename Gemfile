@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'blacklight', '~> 5.4.0'
-gem 'hydra'
+gem 'hydra', '7.0.0'
 gem 'active-fedora'
 gem 'httpclient'
 gem 'dotenv'
@@ -15,7 +15,7 @@ gem 'mysql'
 gem 'sprockets-rails'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '5.0.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -24,7 +24,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', '0.12.1', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -36,9 +36,6 @@ gem 'jbuilder', '~> 1.2'
 
 # Font awesome
 gem "font-awesome-rails"
-
-gem 'comfortable_mexican_sofa', '~> 1.12.0'
-
 
 
 group :doc do
@@ -60,9 +57,6 @@ end
 
 gem "bootstrap-sass"
 
-
-gem 'blacklight-gallery',"~> 0.1.0"
-gem "blacklight_range_limit"
 
 
 group :development, :test do
