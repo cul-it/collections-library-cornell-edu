@@ -79,7 +79,7 @@
     </div>
   </section>
 </div>
-<% if !has_search_parameters? || !params[:subject].present? %>
+<% unless !has_search_parameters? || !params[:subject].present? %>
 <section class="search-bar">
   <div class="container">
     <div class="row">
