@@ -54,20 +54,20 @@
         <div class="site-title">
           <% if request.original_url.include?("nuremberg")%>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
-            <h1><a href="<%=root_path%>">Donovan Nuremberg Trials Collection</a></h1>
+            <h1><a href="<%=root_path%>nuremberg">Donovan Nuremberg Trials Collection</a></h1>
             <div class="tagline">Nuremberg trial transcripts and documents from the collection of General William J. Donovan</div>
           <% elsif params[:subject]=="trial" %>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
-            <h1><a href="<%=root_path%>">Trial Pamphlets Collection</a></h1>
+            <h1><a href="<%=root_path%>trial">Trial Pamphlets Collection</a></h1>
             <div class="tagline">Contemporary accounts of trials from the 1600s to 1800s</div>
             <% elsif params[:subject]=="scottsboro" %>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
-            <h1><a href="<%=root_path%>">Scottsboro Trials Collection</a></h1>
+            <h1><a href="<%=root_path%>scottsboro">Scottsboro Trials Collection</a></h1>
             <div class="tagline">Digitized copies of briefs, motions and other trial documents concerning the Scottsboro Trials
             </div>
             <% elsif params[:subject]=="liberian" %>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
-            <h1><a href="<%=root_path%>">Liberian Law Collection</a></h1>
+            <h1><a href="<%=root_path%>liberian">Liberian Law Collection</a></h1>
             <div class="tagline">The creation and foundation of Liberia
             </div>
           <% else %>
