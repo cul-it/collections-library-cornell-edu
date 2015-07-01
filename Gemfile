@@ -37,6 +37,9 @@ gem 'jbuilder', '~> 1.2'
 # Font awesome
 gem "font-awesome-rails"
 
+#static pages gem
+gem 'high_voltage', '~> 2.3.0'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

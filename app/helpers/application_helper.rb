@@ -133,5 +133,9 @@ module ApplicationHelper
     end
 #  end
 #  deprecation_deprecate :render_extra_head_content  
+
+ def has_search_parameters?
+    !params[:q].blank? or !params[:f].blank? or !params[:search_field].blank?
+  end
   
 end

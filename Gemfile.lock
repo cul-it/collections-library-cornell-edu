@@ -97,6 +97,7 @@ GEM
       railties (>= 3.2, < 5.0)
     haml (4.0.6)
       tilt
+    high_voltage (2.3.0)
     hike (1.2.3)
     hooks (0.3.6)
       uber (~> 0.0.4)
@@ -380,6 +381,7 @@ DEPENDENCIES
   dotenv
   dotenv-deployment
   font-awesome-rails
+  high_voltage (~> 2.3.0)
   httpclient
   hydra (= 7.0.0)
   jbuilder (~> 1.2)

@@ -34,7 +34,7 @@
             <div class="navbar">
               <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                <% if params[:subject] =="nuremberg" %>
+                <% if request.original_url.include?("nuremberg") %>
                   <li><a href="/nuremberg/collection">Collection Description</a></li>
                   <li><a href="/nuremberg/project">Project</a></li>
                   <li><a href="/nuremberg/analysis">Analysis of Hitler's Personality</a></li>
@@ -52,7 +52,7 @@
           <% end %>
         </div>
         <div class="site-title">
-          <% if params[:subject] =="nuremberg" %>
+          <% if request.original_url.include?("nuremberg")%>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
             <h1><a href="<%=root_path%>">Donovan Nuremberg Trials Collection</a></h1>
             <div class="tagline">Nuremberg trial transcripts and documents from the collection of General William J. Donovan</div>
@@ -79,7 +79,7 @@
     </div>
   </section>
 </div>
-<% unless !has_search_parameters? && !params[:subject].present? %>
+<% if !has_search_parameters? || !params[:subject].present? %>
 <section class="search-bar">
   <div class="container">
     <div class="row">
