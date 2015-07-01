@@ -85,6 +85,9 @@ PREFIXES = {
   end
 
     ##
-
+ def extra_body_classes
+    subject_class = request.fullpath.split('/')[1]
+    @extra_body_classes ||= [subject_class, 'blacklight-' + controller.controller_name, 'blacklight-' + [controller.controller_name, controller.action_name].join('-')]
+  end
 
 end
