@@ -44,20 +44,23 @@ end
 
 # Link to the previous document in the current search context
   def link_to_previous_document(previous_document)
+    unless previous_document.nil?
     link_opts = session_tracking_params(previous_document, search_session['counter'].to_i - 1).merge(:class => "previous", :rel => 'prev')
     link_to_unless previous_document.nil?, raw(t('views.pagination.previous')), '/' + params[:subject] +'/' +'catalog' + '/' + previous_document[:id], link_opts do
       content_tag :span, raw(t('views.pagination.previous')), :class => 'previous'
-    
+    end
     end
   end
 
   ##
   # Link to the next document in the current search context
   def link_to_next_document(next_document)
+    unless next_document.nil?
     link_opts = session_tracking_params(next_document, search_session['counter'].to_i + 1).merge(:class => "next", :rel => 'next')
     link_to_unless next_document.nil?, raw(t('views.pagination.next')), '/'+ params[:subject] +'/' +'catalog' + '/' + next_document[:id], link_opts do
       content_tag :span, raw(t('views.pagination.next')), :class => 'next'
     end
+  end
   end
 
 
