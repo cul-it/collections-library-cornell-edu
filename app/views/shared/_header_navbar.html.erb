@@ -40,8 +40,12 @@
                   <li><a href="/nuremberg/copyright">Copyright and Permissions</a></li>
                   <li><a href="/nuremberg/project">Project Staff</a></li>
                   <li><a href="/nuremberg/contact">Contact</a></li>
-                <% elsif params[:subject]=="trial" %>
-
+                <% elsif request.original_url.include?("trial")%>
+                  <li><a href="/trial/collection">Collection Description</a></li>
+                  <li><a href="/trial/grant">Grant Project Description</a></li>
+                  <li><a href="/trial/copyright">Copyright and Permissions</a></li>
+                  <li><a href="/trial/project">Project Staff</a></li>
+                  <li><a href="/trial/contact">Contact</a></li>
                 <% elsif request.original_url.include?("scottsboro") %>
                   <li><a href="/scottsboro/collection">Collection Description</a></li>
                   <li><a href="/scottsboro/copyright">Copyright and Permissions</a></li>
@@ -61,7 +65,7 @@
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
             <h1><a href="<%=root_path%>nuremberg">Donovan Nuremberg Trials Collection</a></h1>
             <div class="tagline">Nuremberg trial transcripts and documents from the collection of General William J. Donovan</div>
-          <% elsif params[:subject]=="trial" %>
+          <% elsif request.original_url.include?("trial")%>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
             <h1><a href="<%=root_path%>trial">Trial Pamphlets Collection</a></h1>
             <div class="tagline">Contemporary accounts of trials from the 1600s to 1800s</div>
