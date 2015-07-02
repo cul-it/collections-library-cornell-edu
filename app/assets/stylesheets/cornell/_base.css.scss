@@ -39,6 +39,10 @@ body {
 	@include make-sm-column(6);
 }
 
+.sidebar {
+	@include make-sm-column(4);
+}
+
 
 
 // Links
