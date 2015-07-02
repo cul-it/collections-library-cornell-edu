@@ -99,6 +99,20 @@ img.pull-right {
 img.pull-left {
 	margin: 0 1.5em 1.5em 0;
 }
+.img-right {
+	text-align: center;
+	img {
+		margin-bottom: .5em;
+	}
+}
+.img-center {
+	text-align: center;
+	margin-bottom: 1em;
+}
+.caption {
+	font-size: 14px;
+	color: $medium-gray;
+}
 
 // Miscellaneous
 // ---------------------------------//
