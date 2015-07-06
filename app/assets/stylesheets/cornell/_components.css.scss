@@ -161,6 +161,13 @@ footer {
 	color: white;
 }
 
+// Bookmarks
+// ----------------------//
+.clear-bookmarks {
+	float: none !important;
+}
+
+
 // MEDIA QUERIES
 // -------------------------
 
@@ -208,4 +215,7 @@ footer {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md) {
+	.clear-bookmarks {
+		float: right !important;
+	}
 }
