@@ -1,0 +1,48 @@
+if (index == 0) {
+     return 602;
+    }
+if (index == 1) {
+     return 615;
+    }
+if (index == 2) {
+     return 583;
+    }
+if (index == 3) {
+     return 606;
+    }
+if (index == 4) {
+     return 598;
+    }
+if (index == 5) {
+     return 601;
+    }
+if (index == 6) {
+     return 598;
+    }
+if (index == 7) {
+     return 603;
+    }
+if (index == 8) {
+     return 580;
+    }
+if (index == 9) {
+     return 586;
+    }
+if (index == 10) {
+     return 592;
+    }
+if (index == 11) {
+     return 580;
+    }
+if (index == 12) {
+     return 578;
+    }
+if (index == 13) {
+     return 589;
+    }
+if (index == 14) {
+     return 571;
+    }
+if (index > 14) {
+    return 800;
+    }

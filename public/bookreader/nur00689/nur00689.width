@@ -1,0 +1,306 @@
+if (index == 0) {
+     return 627;
+    }
+if (index == 1) {
+     return 627;
+    }
+if (index == 2) {
+     return 627;
+    }
+if (index == 3) {
+     return 627;
+    }
+if (index == 4) {
+     return 640;
+    }
+if (index == 5) {
+     return 629;
+    }
+if (index == 6) {
+     return 627;
+    }
+if (index == 7) {
+     return 642;
+    }
+if (index == 8) {
+     return 635;
+    }
+if (index == 9) {
+     return 627;
+    }
+if (index == 10) {
+     return 627;
+    }
+if (index == 11) {
+     return 640;
+    }
+if (index == 12) {
+     return 644;
+    }
+if (index == 13) {
+     return 650;
+    }
+if (index == 14) {
+     return 640;
+    }
+if (index == 15) {
+     return 641;
+    }
+if (index == 16) {
+     return 627;
+    }
+if (index == 17) {
+     return 638;
+    }
+if (index == 18) {
+     return 637;
+    }
+if (index == 19) {
+     return 646;
+    }
+if (index == 20) {
+     return 638;
+    }
+if (index == 21) {
+     return 640;
+    }
+if (index == 22) {
+     return 638;
+    }
+if (index == 23) {
+     return 638;
+    }
+if (index == 24) {
+     return 633;
+    }
+if (index == 25) {
+     return 651;
+    }
+if (index == 26) {
+     return 641;
+    }
+if (index == 27) {
+     return 648;
+    }
+if (index == 28) {
+     return 637;
+    }
+if (index == 29) {
+     return 641;
+    }
+if (index == 30) {
+     return 636;
+    }
+if (index == 31) {
+     return 645;
+    }
+if (index == 32) {
+     return 636;
+    }
+if (index == 33) {
+     return 631;
+    }
+if (index == 34) {
+     return 638;
+    }
+if (index == 35) {
+     return 648;
+    }
+if (index == 36) {
+     return 642;
+    }
+if (index == 37) {
+     return 631;
+    }
+if (index == 38) {
+     return 637;
+    }
+if (index == 39) {
+     return 631;
+    }
+if (index == 40) {
+     return 629;
+    }
+if (index == 41) {
+     return 632;
+    }
+if (index == 42) {
+     return 637;
+    }
+if (index == 43) {
+     return 627;
+    }
+if (index == 44) {
+     return 631;
+    }
+if (index == 45) {
+     return 634;
+    }
+if (index == 46) {
+     return 627;
+    }
+if (index == 47) {
+     return 632;
+    }
+if (index == 48) {
+     return 627;
+    }
+if (index == 49) {
+     return 633;
+    }
+if (index == 50) {
+     return 633;
+    }
+if (index == 51) {
+     return 634;
+    }
+if (index == 52) {
+     return 639;
+    }
+if (index == 53) {
+     return 635;
+    }
+if (index == 54) {
+     return 637;
+    }
+if (index == 55) {
+     return 630;
+    }
+if (index == 56) {
+     return 638;
+    }
+if (index == 57) {
+     return 627;
+    }
+if (index == 58) {
+     return 639;
+    }
+if (index == 59) {
+     return 634;
+    }
+if (index == 60) {
+     return 627;
+    }
+if (index == 61) {
+     return 634;
+    }
+if (index == 62) {
+     return 634;
+    }
+if (index == 63) {
+     return 629;
+    }
+if (index == 64) {
+     return 633;
+    }
+if (index == 65) {
+     return 647;
+    }
+if (index == 66) {
+     return 639;
+    }
+if (index == 67) {
+     return 627;
+    }
+if (index == 68) {
+     return 627;
+    }
+if (index == 69) {
+     return 627;
+    }
+if (index == 70) {
+     return 627;
+    }
+if (index == 71) {
+     return 630;
+    }
+if (index == 72) {
+     return 634;
+    }
+if (index == 73) {
+     return 627;
+    }
+if (index == 74) {
+     return 641;
+    }
+if (index == 75) {
+     return 637;
+    }
+if (index == 76) {
+     return 637;
+    }
+if (index == 77) {
+     return 643;
+    }
+if (index == 78) {
+     return 634;
+    }
+if (index == 79) {
+     return 640;
+    }
+if (index == 80) {
+     return 634;
+    }
+if (index == 81) {
+     return 639;
+    }
+if (index == 82) {
+     return 627;
+    }
+if (index == 83) {
+     return 634;
+    }
+if (index == 84) {
+     return 627;
+    }
+if (index == 85) {
+     return 632;
+    }
+if (index == 86) {
+     return 636;
+    }
+if (index == 87) {
+     return 639;
+    }
+if (index == 88) {
+     return 629;
+    }
+if (index == 89) {
+     return 636;
+    }
+if (index == 90) {
+     return 632;
+    }
+if (index == 91) {
+     return 642;
+    }
+if (index == 92) {
+     return 641;
+    }
+if (index == 93) {
+     return 640;
+    }
+if (index == 94) {
+     return 632;
+    }
+if (index == 95) {
+     return 637;
+    }
+if (index == 96) {
+     return 627;
+    }
+if (index == 97) {
+     return 638;
+    }
+if (index == 98) {
+     return 627;
+    }
+if (index == 99) {
+     return 626;
+    }
+if (index == 100) {
+     return 627;
+    }
+if (index > 100) {
+    return 800;
+    }

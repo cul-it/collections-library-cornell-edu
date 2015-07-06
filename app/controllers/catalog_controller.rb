@@ -6,37 +6,37 @@ class CatalogController < ApplicationController
   include Blacklight::Catalog
   include Hydra::Controller::ControllerBehavior
   # These before_filters apply the hydra access controls
-#  before_filter :enforce_show_permissions, :only=>:show
+  #  before_filter :enforce_show_permissions, :only=>:show
   # This applies appropriate access controls to all solr queries
-#  CatalogController.solr_search_params_logic += [:add_access_controls_to_solr_params]
+  #  CatalogController.solr_search_params_logic += [:add_access_controls_to_solr_params]
 
 
-before_action  do
+  before_action  do
 
-if params[:subject] == "nuremberg"
-  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Collection"'}
+    if params[:subject] == "nuremberg"
+      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Collection"'}
 
-elsif params[:subject] == "scottsboro"
-  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Scottsboro Trials Collection"'}
+    elsif params[:subject] == "scottsboro"
+      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Scottsboro Trials Collection"'}
 
-elsif params[:subject] == "liberian"
-  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Liberian Law Collection"'}
+    elsif params[:subject] == "liberian"
+      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Liberian Law Collection"'}
 
-elsif params[:subject] == "trial"
-  blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Trial Pamphlets Collection"'}
-end
+    elsif params[:subject] == "trial"
+      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Trial Pamphlets Collection"'}
+    end
 
 
-end
+  end
 
 
 
   configure_blacklight do |config|
     config.default_solr_params = {
-     :defType => 'edismax', 
-     :qf => 'author_timv titlestmt_title_tesim title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi', 
-     :qt => 'search',
-     :fl => '*,score',
+      :defType => 'edismax',
+      :qf => 'author_timv titlestmt_title_tesim title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi',
+      :qt => 'search',
+      :fl => '*,score',
       :rows => 10
 
     }
@@ -45,11 +45,11 @@ end
     config.index.title_field = 'title_tesim'
     config.index.display_type_field = 'has_model_ssim'
     config.index.thumbnail_field = 'image_tesim'
-#    config.index.show_link = 'title_tesim'
-#    config.index.record_display_type = 'has_model_ssi'
+    #    config.index.show_link = 'title_tesim'
+    #    config.index.record_display_type = 'has_model_ssi'
 
     config.show.title_field = 'title_tesim'
-#    config.show.display_type = 'has_model_ssi'
+    #    config.show.display_type = 'has_model_ssi'
 
 
     # solr fields that will be treated as facets by the blacklight application
@@ -71,18 +71,18 @@ end
     #
     # :show may be set to false if you don't want the facet to be drawn in the
     # facet bar
-##    config.add_facet_field solr_name('object_type', :facetable), :label => 'Format'
-##    config.add_facet_field solr_name('pub_date', :facetable), :label => 'Publication Year'
-##    config.add_facet_field solr_name('subject_topic', :facetable), :label => 'Topic', :limit => 20
-##    config.add_facet_field solr_name('language', :facetable), :label => 'Language', :limit => true
-##    config.add_facet_field solr_name('lc1_letter', :facetable), :label => 'Call Number'
-##    config.add_facet_field solr_name('subject_geo', :facetable), :label => 'Region'
-##    config.add_facet_field solr_name('subject_era', :facetable), :label => 'Era'
+    ##    config.add_facet_field solr_name('object_type', :facetable), :label => 'Format'
+    ##    config.add_facet_field solr_name('pub_date', :facetable), :label => 'Publication Year'
+    ##    config.add_facet_field solr_name('subject_topic', :facetable), :label => 'Topic', :limit => 20
+    ##    config.add_facet_field solr_name('language', :facetable), :label => 'Language', :limit => true
+    ##    config.add_facet_field solr_name('lc1_letter', :facetable), :label => 'Call Number'
+    ##    config.add_facet_field solr_name('subject_geo', :facetable), :label => 'Region'
+    ##    config.add_facet_field solr_name('subject_era', :facetable), :label => 'Era'
 
     config.add_facet_field 'active_fedora_model_ssi', :label => 'Format', :limit => 3 , :show => false
     config.add_facet_field 'author_tesim', :label => 'Author', :limit => 5
     config.add_facet_field 'pubdate_tesim', :label => 'Date'
-    config.add_facet_field 'image_date_tesim', :label => 'Image Date', :limit => 5    
+    config.add_facet_field 'image_date_tesim', :label => 'Image Date', :limit => 5
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
     config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
@@ -96,55 +96,55 @@ end
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
-   # config.default_solr_params[:'facet.field'] = config.facet_fields.keys
+    # config.default_solr_params[:'facet.field'] = config.facet_fields.keys
     #use this instead if you don't want to query facets marked :show=>false
     #config.default_solr_params[:'facet.field'] = config.facet_fields.select{ |k, v| v[:show] != false}.keys
 
 
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display
-  #  config.add_index_field solr_name('title', :stored_searchable, type: :string), :label => 'Title:'
+    #  config.add_index_field solr_name('title', :stored_searchable, type: :string), :label => 'Title:'
     config.add_index_field 'title_tesim', :label => 'Title:'
-#    config.add_index_field solr_name('title_vern', :stored_searchable, type: :string), :label => 'Title:'
-#    config.add_index_field solr_name('author', :stored_searchable, type: :string), :label => 'Author:'
+    #    config.add_index_field solr_name('title_vern', :stored_searchable, type: :string), :label => 'Title:'
+    #    config.add_index_field solr_name('author', :stored_searchable, type: :string), :label => 'Author:'
     config.add_index_field 'author_tesim', :label => 'Author:'
-#    config.add_index_field solr_name('author_vern', :stored_searchable, type: :string), :label => 'Author:'
-#    config.add_index_field solr_name('format', :symbol), :label => 'Format:'
-#    config.add_index_field solr_name('language', :stored_searchable, type: :string), :label => 'Language:'
-#    config.add_index_field solr_name('published', :stored_searchable, type: :string), :label => 'Published:'
-#    config.add_index_field solr_name('published_vern', :stored_searchable, type: :string), :label => 'Published:'
-#    config.add_index_field solr_name('lc_callnum', :stored_searchable, type: :string), :label => 'Call number:'
+    #    config.add_index_field solr_name('author_vern', :stored_searchable, type: :string), :label => 'Author:'
+    #    config.add_index_field solr_name('format', :symbol), :label => 'Format:'
+    #    config.add_index_field solr_name('language', :stored_searchable, type: :string), :label => 'Language:'
+    #    config.add_index_field solr_name('published', :stored_searchable, type: :string), :label => 'Published:'
+    #    config.add_index_field solr_name('published_vern', :stored_searchable, type: :string), :label => 'Published:'
+    #    config.add_index_field solr_name('lc_callnum', :stored_searchable, type: :string), :label => 'Call number:'
 
-#    config.add_index_field solr_name('publisher', :stored_searchable, type: :string), :label => 'Publisher:'
+    #    config.add_index_field solr_name('publisher', :stored_searchable, type: :string), :label => 'Publisher:'
     config.add_index_field 'publisher', :label => 'Publisher:'
-#    config.add_index_field solr_name('book_publisher', :stored_searchable, type: :string), :label => 'Book Publisher:'
+    #    config.add_index_field solr_name('book_publisher', :stored_searchable, type: :string), :label => 'Book Publisher:'
     config.add_index_field 'book_publisher', :label => 'Book Publisher:'
-#    config.add_index_field solr_name('pubdate', :stored_searchable, type: :string), :label => 'Published:'
+    #    config.add_index_field solr_name('pubdate', :stored_searchable, type: :string), :label => 'Published:'
     config.add_index_field 'pubdate', :label => 'Published:'
-#    config.add_index_field solr_name('image_ocr', :stored_searchable, type: :string), :label => ' ', :highlight => true
+    #    config.add_index_field solr_name('image_ocr', :stored_searchable, type: :string), :label => ' ', :highlight => true
     config.add_index_field 'image_ocr', :label => ' ', :highlight => true
-#    config.add_index_field solr_name('book_title', :stored_searchable, type: :string), :label => 'Book Title:'
+    #    config.add_index_field solr_name('book_title', :stored_searchable, type: :string), :label => 'Book Title:'
     config.add_index_field 'book_title', :label => 'Book Title:'
-#    config.add_index_field solr_name('book_author', :stored_searchable, type: :string), :label => 'Book Author:'
+    #    config.add_index_field solr_name('book_author', :stored_searchable, type: :string), :label => 'Book Author:'
     config.add_index_field 'book_author', :label => 'Book Author:'
 
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
     config.add_show_field 'title_tesim',  :label => 'Title'
-##    config.add_show_field solr_name('title_vern', :stored_searchable, type: :string), :label => 'Title:'
-##    config.add_show_field solr_name('subtitle', :stored_searchable, type: :string), :label => 'Subtitle:'
-##    config.add_show_field solr_name('subtitle_vern', :stored_searchable, type: :string), :label => 'Subtitle:'
-##    config.add_show_field solr_name('author', :stored_searchable, type: :string), :label => 'Author:'
-##    config.add_show_field solr_name('author_vern', :stored_searchable, type: :string), :label => 'Author:'
-##    config.add_show_field solr_name('format', :symbol), :label => 'Format:'
-##    config.add_show_field solr_name('url_fulltext_tsim', :stored_searchable, type: :string), :label => 'URL:'
-##    config.add_show_field solr_name('url_suppl_tsim', :stored_searchable, type: :string), :label => 'More Information:'
-##    config.add_show_field solr_name('language', :stored_searchable, type: :string), :label => 'Language:'
-##    config.add_show_field solr_name('published', :stored_searchable, type: :string), :label => 'Published:'
-##    config.add_show_field solr_name('published_vern', :stored_searchable, type: :string), :label => 'Published:'
-##    config.add_show_field solr_name('lc_callnum', :stored_searchable, type: :string), :label => 'Call number:'
-##    config.add_show_field solr_name('isbn', :stored_searchable, type: :string), :label => 'ISBN:'
+    ##    config.add_show_field solr_name('title_vern', :stored_searchable, type: :string), :label => 'Title:'
+    ##    config.add_show_field solr_name('subtitle', :stored_searchable, type: :string), :label => 'Subtitle:'
+    ##    config.add_show_field solr_name('subtitle_vern', :stored_searchable, type: :string), :label => 'Subtitle:'
+    ##    config.add_show_field solr_name('author', :stored_searchable, type: :string), :label => 'Author:'
+    ##    config.add_show_field solr_name('author_vern', :stored_searchable, type: :string), :label => 'Author:'
+    ##    config.add_show_field solr_name('format', :symbol), :label => 'Format:'
+    ##    config.add_show_field solr_name('url_fulltext_tsim', :stored_searchable, type: :string), :label => 'URL:'
+    ##    config.add_show_field solr_name('url_suppl_tsim', :stored_searchable, type: :string), :label => 'More Information:'
+    ##    config.add_show_field solr_name('language', :stored_searchable, type: :string), :label => 'Language:'
+    ##    config.add_show_field solr_name('published', :stored_searchable, type: :string), :label => 'Published:'
+    ##    config.add_show_field solr_name('published_vern', :stored_searchable, type: :string), :label => 'Published:'
+    ##    config.add_show_field solr_name('lc_callnum', :stored_searchable, type: :string), :label => 'Call number:'
+    ##    config.add_show_field solr_name('isbn', :stored_searchable, type: :string), :label => 'ISBN:'
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
@@ -165,13 +165,13 @@ end
     # since we aren't specifying it otherwise.
 
     config.add_search_field 'all_fields', :label => 'All Fields'
-#    config.add_search_field 'pubdate', :label => 'Pub Date'
+    #    config.add_search_field 'pubdate', :label => 'Pub Date'
 
 
     # Now we see how to over-ride Solr request handler defaults, in this
     # case for a BL "search field", which is really a dismax aggregate
     # of Solr search fields.
-    
+
 
     config.add_search_field('title') do |field|
       # :solr_local_parameters will be sent using Solr LocalParams
@@ -225,7 +225,7 @@ end
     config.add_sort_field 'pub_date_dtsi desc, title_tesi asc', :label => 'year'
     config.add_sort_field 'book_author_tesi asc, title_tesi asc', :label => 'author'
     config.add_sort_field 'title_tesi asc, pub_date_dtsi desc', :label => 'title'
-#    config.add_field_configuration_to_solr_request!
+    #    config.add_field_configuration_to_solr_request!
 
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.

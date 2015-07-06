@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require 'blacklight_range_limit'
 //= require jquery_ujs
 //
 // Required by Blacklight

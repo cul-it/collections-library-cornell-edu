@@ -1,0 +1,36 @@
+if (index == 0) {
+     return 1006;
+    }
+if (index == 1) {
+     return 1021;
+    }
+if (index == 2) {
+     return 1010;
+    }
+if (index == 3) {
+     return 1008;
+    }
+if (index == 4) {
+     return 1009;
+    }
+if (index == 5) {
+     return 1010;
+    }
+if (index == 6) {
+     return 1009;
+    }
+if (index == 7) {
+     return 1016;
+    }
+if (index == 8) {
+     return 1023;
+    }
+if (index == 9) {
+     return 1003;
+    }
+if (index == 10) {
+     return 1019;
+    }
+if (index > 10) {
+    return 1200;
+    }

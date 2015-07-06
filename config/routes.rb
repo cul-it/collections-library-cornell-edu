@@ -1,8 +1,10 @@
 Bl5::Application.routes.draw do
-  comfy_route :cms_admin, :path => '/admin'
-
+  get '/contact' => 'high_voltage/pages#show', id: 'contact'
+  get '/bookmarks' => 'bookmarks#index'
+  get '/history' => "search_history#index"
   get '/:subject' => 'catalog#index'
   get '/:subject/catalog/:id' => 'catalog#show'
+
 
   root "catalog#index"
   blacklight_for :catalog
@@ -11,8 +13,6 @@ Bl5::Application.routes.draw do
 
 
 
-  # Make sure this routeset is defined last
-  comfy_route :cms, :path => '/', :sitemap => false
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -53,7 +53,7 @@ Bl5::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
