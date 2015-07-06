@@ -53,7 +53,6 @@
 	@include make-sm-column(8);
 	@include make-sm-column-pull(4);
 	margin: 1em 0;
-	border-right: 1px solid $gray;
 }
 
 .searchbar{
@@ -72,7 +71,7 @@
 			line-height: 1.75em;
 			a {
 				text-shadow: none;
-				font-size: 18px;
+				// font-size: 1;
 				background: white;
 				color: $dark-gray;
 				border-bottom: 1px solid $medium-gray;
@@ -167,12 +166,4 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md) {
-	.sea-identity {
-		h1 {
-			font-size: 43px;
-			span {
-				font-size: 19px;
-			}
-		}
-	}
 }
