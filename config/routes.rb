@@ -1,4 +1,5 @@
 Bl5::Application.routes.draw do
+  get '/contact' => 'high_voltage/pages#show', id: 'contact'
   get '/bookmarks' => 'bookmarks#index'
   get '/history' => "search_history#index"
   get '/:subject' => 'catalog#index'
