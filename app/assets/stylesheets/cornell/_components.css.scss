@@ -107,11 +107,13 @@
 	}
 
 }
-.nav-header {
-	font-size: 14px;
-	text-transform: uppercase;
-	a {
-		color: $dark-gray;
+.nuremberg {
+	.nav-header {
+		font-size: 14px;
+		text-transform: uppercase;
+		a {
+			color: $dark-gray;
+		}
 	}
 }
 

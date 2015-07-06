@@ -93,12 +93,11 @@ ul.item-links {
 	.btn-sm {
 		padding: 5px 10px !important;
 	}
-	.bookmark_toggle { padding: 0; }
+	.bookmark_toggle { padding: 0 1em 0 0; }
 	.toggle_bookmark {
-		padding-top: 4px;
 		font-size: 12px;
 		span {
-			margin-left: .25em;
+			margin-left: 1.5em;
 		}
 	}
 	.panel-body {
@@ -106,6 +105,9 @@ ul.item-links {
 	}
 	.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
 		margin-left: 0;
+	}
+	input[type="radio"], input[type="checkbox"] {
+		margin-top: 8px;
 	}
 }
 
