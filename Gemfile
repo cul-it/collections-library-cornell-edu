@@ -73,10 +73,3 @@ gem "devise"
 gem "devise-guests", "~> 0.3"
 group :development, :test do
 end
-
-group :development do
-  gem 'rspec'
-  gem 'cucumber-rails', :require => false # Set require = false to get rid of a warning message
-  gem 'database_cleaner'
-  gem 'webrat'
-end
