@@ -9,6 +9,7 @@
 /public/assets
 /config/solr.yml
 /config/fedora.yml
+/config/database.yml
 /.env
 # Ignore the default SQLite database.
 /db/*.sqlite3

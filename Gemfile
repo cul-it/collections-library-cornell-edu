@@ -15,7 +15,7 @@ gem 'mysql'
 gem 'sprockets-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.1'
-
+gem 'multi_json', '1.11.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 gem 'rufus-scheduler', '3.0.9'
@@ -53,6 +53,10 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'rvm-capistrano'
+
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
