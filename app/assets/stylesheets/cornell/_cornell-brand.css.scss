@@ -1,56 +1,66 @@
-.cornell-identity {
-	width: 100%;
-	background: $cornell-gray;
-	height: 75px;
-	// font-family: $cornell-font;
-	}
-
-.search-links {
-  text-align: right;
-  margin-top: 20px;
-
-  ul {
-  	padding-top: 10px;
-  	list-style: none;
-  }
-  li { display: inline; }
-  a {
-  	color: white;
-  	text-decoration: none;
-  	font-size: 0.6875em;
-  	padding: 5px 15px;
-  }
-  a:hover {
-  	background: $cornell-primary-hover;
-  }
+.cu-brand {
+	background: $cornell-primary;
+	height: 40px;
 }
 
+// styles shared by both cul-law-logo and cul-logo
 .cu-logo {
-	display: block;
-	background: url("cornell/layout/cul-logo-gray.gif") no-repeat 0 0;
-	width: 263px;
-	height: 75px;
+	@include make-xs-column(10);
+	@include make-sm-column(12);
+	padding-left: 10px;
 	a {
 		display: block;
 		border: none;
 		text-indent: -1000em;
 		text-decoration: none;
+		// height: 45px;
 	}
 	a#insignia-link {
 		float: left;
-		width: 68px;
-		height: 75px;
+		width: 40px;
+		height: 45px;
 	}
 	#unit-signature-links { float: left; }
-	a#cornell-link {
-		left: 68px;
-		height: 35px;
-	}
 	a#unit-link {
-		top: 38px;
-		height: 37px;
+		height: 45px;
+		width: 240px;
+		float: left;
 	}
-	img { display: none; }
+	a#sub-unit-link {
+		height: 45px;
+		width: 110px;
+		margin-left: 305px;
+	}
+}
+
+// do not have an active red bar law link on the home page
+.cu-logo.cul-logo {
+	a#sub-unit-link {
+		cursor: default;
+	}
+}
+
+// print logo
+.print-logo {
+	display: none;
+}
+
+// mobile logo
+.mobile-logo {
+	max-width: 100%;
+	height: auto;
+	margin-top: 2px;
+}
+.mobile-nav {
+	background: $cornell-primary;
+	@include make-xs-column(2);
+	padding-right: 0;
+}
+.navbar-toggle {
+	margin: 0;
+	background: $turquoise;
+	border-radius: 0;
+	color: white;
 }
 
 // Skip to content link
@@ -71,4 +81,42 @@
 	    transition: top 1s ease-out, background 1s linear;
 	    z-index: 100;
  	}
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	.cu-logo {
+		margin-left: 1em;
+	}
+	// display on all pages except home
+	.cul-law-logo {
+		margin-bottom: 3em;
+		background: url("cornell/cul-branding/cul-law-logo.png") no-repeat 0 0;
+			width: 419px !important;
+	}
+	.cu-brand {
+		height: 45px;
+		padding-left: 15px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+
 }

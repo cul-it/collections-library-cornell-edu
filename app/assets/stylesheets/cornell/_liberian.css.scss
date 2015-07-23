@@ -1,0 +1,33 @@
+.liberian {
+	.site-identity {
+		// use rgba because the contrast is lower for this color and the header text is hard to read with straight opacity
+		background: rgba(190, 173, 110, .59)
+	}
+	a,
+	.btn-search i,
+	.facets .fa-times,
+	.pagination > li > a  { 
+		color: $link-color-liberian;
+	}
+	.pagination > .active > a,
+	.cover .btn-info,
+	.navbar-toggle {
+		background: $link-color-liberian;
+		border-color: $link-color-liberian;
+		color: white;
+	}
+	.hero {
+		background: url("cornell/hero-liberian.jpg") no-repeat 50% 25%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	#facets .panel-heading.collapse-toggle .panel-title:after {
+		color: $link-color-liberian;
+	}
+	.btn-constraint {
+		background: $link-color-liberian;
+		color: white !important;
+	}
+}

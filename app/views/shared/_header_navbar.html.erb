@@ -1,57 +1,106 @@
-<!-- <div id="skiptocontent"><a href="#maincontent">skip to main content</a></div> -->
+<div id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
 
-<section class="cornell-identity hidden-phone">
+<div class="hero">
   <div class="container">
-    <div class="row">
-      <div class="span6">
-        <div class="cu-logo">
-          <img src="/assets/cornell/layout/cul-logo-white.gif" alt="Cornell University Library">
-          <a id="insignia-link" href="http://www.cornell.edu/">Cornell Insignia</a>
-          <div class="unit-signature-links">
-            <a id="cornell-link" href="http://www.cornell.edu/">Cornell University</a>
-            <a id="unit-link" href="http://beta.library.cornell.edu/">Cornell University Library</a>
+    <div class="cornell-identity">
+      <div class="row">
+        <div class="cu-brand">
+          <div class="cu-logo cul-law-logo">
+            <%# TODO: print logo %>
+            <img src="/assets/cornell/layout/cul-logo-white.gif" alt="Cornell University Library" class="print-logo">
+            <%# Mobile logo %>
+            <a href="http://law.library.cornell.edu"><img src="/assets/cornell/cul-branding/cul-law-logo-mobile.png" alt="Cornell University Law Library" class="visible-xs mobile-logo"></a>
+            <a id="insignia-link" href="http://www.cornell.edu/" class="hidden-xs">Cornell Insignia</a>
+            <div class="unit-signature-links hidden-xs">
+              <a id="unit-link" href="http://www.library.cornell.edu/">Cornell University Library</a>
+              <a id="sub-unit-link" href="http://law.library.cornell.edu/">Law Library</a>
+            </div>
+          </div>
+          <div class="mobile-nav visible-xs">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Menu</span>
+              <i class="fa fa-bars"></i>
+            </button>
           </div>
         </div>
       </div>
-    </div> <!-- /row -->
-  </div> <!-- /container -->
-</section>
-
-<section class="sea-identity">
-  <div class="container">
-    <div class="row">
-      <div class="span3">
-        <h1><a href="<%=root_path%>"><span>Southeast Asia</span>Visions</a></h1>
-      </div>
-      <div class="span9 navbar">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".visions-nav-collapse">
-          <i class="fa fa-bars"></i>
-        </a>
-        <div class="nav-collapse visions-nav-collapse">
-          <ul class="nav">
-            <li><a href="<%=root_path%>">Home</a></li>
-            <li><a href="/about/collection">Collection</a></li>
-            <li><a href="/about/project">Project</a></li>
-            <!-- <li><a href="/about/help">Help</a></li> -->
-          </ul>
-        </div>
-
-      </div>
     </div>
   </div>
-</section>
+  <section class="site-identity">
+    <div class="container">
+      <div class="row">  
+        <div class="navigation-bar">
+          <% if !current_page?('/') %>
+            <div class="navbar">
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                <% if request.original_url.include?("nuremberg") %>
+                  <li><a href="/nuremberg/collection">Collection Description</a></li>
+                  <li><a href="/nuremberg/analysis">Analysis of Hitler's Personality</a></li>
+                  <li><a href="/nuremberg/copyright">Copyright and Permissions</a></li>
+                  <li><a href="/nuremberg/project">Project Staff</a></li>
+                <% elsif request.original_url.include?("trial")%>
+                  <li><a href="/trial/collection">Collection Description</a></li>
+                  <li><a href="/trial/grant">Grant Project Description</a></li>
+                  <li><a href="/trial/copyright">Copyright and Permissions</a></li>
+                  <li><a href="/trial/project">Project Staff</a></li>
+                <% elsif request.original_url.include?("scottsboro") %>
+                  <li><a href="/scottsboro/collection">Collection Description</a></li>
+                  <li><a href="/scottsboro/copyright">Copyright and Permissions</a></li>
+                  <li><a href="/scottsboro/project">Project Staff</a></li>
+                <% else %>
 
+                <% end %>
 
+                </ul>
+              </div><!--/.navbar-collapse-->
+            </div>
+          <% end %>
+        </div>
+        <div class="site-title">
+          <% if request.original_url.include?("nuremberg")%>
+            <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
+            <h1><a href="<%=root_path%>nuremberg">Donovan Nuremberg Trials Collection</a></h1>
+            <div class="tagline">Nuremberg trial transcripts and documents from the collection of General William J. Donovan</div>
+          <% elsif request.original_url.include?("trial")%>
+            <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
+            <h1><a href="<%=root_path%>trial">Trial Pamphlets Collection</a></h1>
+            <div class="tagline">Contemporary accounts of trials from the 1600s to 1800s</div>
+          <% elsif request.original_url.include?("scottsboro")%>
+            <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
+            <h1><a href="<%=root_path%>scottsboro">Scottsboro Trials Collection</a></h1>
+            <div class="tagline">Digitized copies of briefs, motions and other trial documents concerning the Scottsboro Trials
+            </div>
+            <% elsif params[:subject]=="liberian" %>
+            <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
+            <h1><a href="<%=root_path%>liberian">Liberian Law Collection</a></h1>
+            <div class="tagline">The creation and foundation of Liberia
+            </div>
+          <% else %>
+            <h1><a href="<%=root_path%>">Law Collections</a></h1>
+            <div class="tagline">Special collections from Cornell University Library's Law Library</div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<% unless params[:controller] == 'catalog' && params[:subject].nil? && params[:action] == 'index'%>
 <section class="search-bar">
   <div class="container">
     <div class="row">
-      <div class="span9 clearfix" id="searchbar">         
+
+      <div class="clearfix searchbar" id="searchbar">   
+        <% unless params[:controller] == 'bookmarks' || params[:controller] == 'search_history' %>
         <%= render_search_bar  %>
-      </div>
-      <div class="span3">
-        <%= render :partial=>'/user_util_links' %>
+        <% end %>
       </div>
 
+      <div class="utility-links">
+        <%= render :partial=>'/user_util_links' %>
+      </div>
     </div>
   </div>
 </section>
+<%end%>
+

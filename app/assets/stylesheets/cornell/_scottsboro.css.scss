@@ -1,0 +1,33 @@
+.scottsboro {
+	.site-identity {
+		background: $header-bg-scottsboro;
+		opacity: .8;
+	}
+	a,
+	.btn-search i,
+	.facets .fa-times,
+	.pagination > li > a  { 
+		color: $link-color-scottsboro;
+	}
+	.pagination > .active > a,
+	.cover .btn-info,
+	.navbar-toggle {
+		background: $link-color-scottsboro;
+		border-color: $link-color-scottsboro;
+		color: white;
+	}
+	.hero {
+		background: url("cornell/hero-scottsboro.jpg") no-repeat 50% 25%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	#facets .panel-heading.collapse-toggle .panel-title:after {
+		color: $link-color-scottsboro;
+	}
+	.btn-constraint {
+		background: $link-color-scottsboro;
+		color: white !important;
+	}
+}

@@ -1,54 +1,96 @@
+
 <div class="home-text">
-	<h2>Welcome to Southeast Asia Visions</h2>
-	<div class="well">
-		<p>Southeast Asia Visions is a collection of European travel accounts of pre-modern Southeast Asia from Cornell University Library's John M. Echols Collection<!-- <a href="http://asia.library.cornell.edu/ac/Echols/">John M. Echols Collection</a> -->. The site provides online access to more than 350 books and journal articles written in English and French. <small><a href="/about/collection/">Learn more <i class="fa fa-angle-double-right"></i></a></small></p> 
-		<!-- <p>The works in the collection were selected for the quality of their first-hand observations and, together, provide a comprehensive representation of Southeast Asia. Along with their narratives, these accounts include some 10,000 images, drawings, photographs, prints and maps, many of them in color. The objectives of this project are both to meet the curricular needs of courses taught at Cornell University and to make these texts and images accessible via the Internet to students and scholars worldwide. It presents scholars an excellent opportunity to look anew at pre-modern Southeast Asia.</p> -->
-	</div>
+
+	<% if current_page?('/nuremberg') %>
+		<div class="collection-text">
+			<p>The Donovan Nuremberg Trials collection consists of nearly 150 bound volumes of Nuremberg trial transcripts and documents from the personal archives of General William J. Donovan (1883-1959). The Donovan papers contain both original statements from the defendants in German and typed translations in English prepared by the Allies.</p>
+		</div>
+	<% elsif current_page?('/trial') %>
+		<div class="collection-text">
+			<p>The Trial Pamphlets collection at the Cornell University Law Library consists of pamphlets ranging in date from the late 1600s to the late 1800s. Trial pamphlets are contemporary accounts of trials that involved prominent citizens or that dealt with especially controversial or lurid topics. These pamphlets were produced quickly and inexpensively, and then sold on the street soon after the trial to a mass audience. The paper used to print the pamphlets was of a lower quality (ephemera) and the pamphlets were not bound. Thus, the pamphlets were not meant to survive much past their initial use. The content of the individual pamphlets varies widely. They were sold to an eager public as both a form of entertainment and as cautionary tales. Some include the details and illustrations of scandalous crimes and others include “execution sermons,” which were meant to serve as moral examples to the readers. Most include valuable information not available elsewhere, such as verbatim transcripts of testimony and arguments of counsel, depositions of parties, and illustrations or copies of evidence used in the trial.</p>
+		</div>
+	<% elsif current_page?('/scottsboro') %>
+		<div class="collection-text">
+			<p>In the 1930s, nine young African-American men were tried for raping two white women in a train freight car in a groundbreaking case that tested the limits of race relations in the United States. Cornell Law alumnus Samuel S. Leibowitz (J.D. '15) represented these teenagers, who came to be known as the "Scottsboro Boys," in several proceedings. He kindly gave several important original documents and artifacts to the Cornell Law Library.</p>
+		</div>
+	<% elsif current_page?('/liberian') %>
+		<div class="collection-text">
+			<p>Liberian Law contains documents dealing with the creation of the nation of Liberia and the laws enacted at its foundation. These materials include the Constitution and the Laws of the Commonwealth going back to the Colonization Society.</p>
+		</div>
+	<%# law collections home page %>
+	<% else %>
+		<div class="row">
+		  	<div class="collection">
+		    	<a href="/nuremberg"><img class="img-responsive" src="/assets/cornell/thumb-nuremberg.jpg" alt=""></a>
+		    	<div class="collection-name collection-digital">
+			    	<div class="label label-type">Digitized</div>
+			    	<a href="/nuremberg">Donovan Nuremberg Trials</a>
+			    </div>
+		  	</div>
+		  	<div class="collection">
+		    	<a href="/liberian"><img class="img-responsive" src="/assets/cornell/thumb-liberian.jpg" alt=""></a>
+		    	<div class="collection-name collection-digital">
+			    	<div class="label label-type">Digitized</div>
+			    	<a href="/liberian">Liberian Law</a>
+			    </div>
+		    </div>
+		    <div class="collection">
+		    	<a href="/scottsboro"><img class="img-responsive" src="/assets/cornell/thumb-scottsboro.jpg" alt=""></a>
+		    	<div class="collection-name collection-digital">
+			    	<div class="label label-type">Digitized</div>
+			    	<a href="/scottsboro">Scottsboro Trials Collection</a>
+			    </div>
+		    </div>
+		    <div class="collection">
+			    <a href="/trial"><img class="img-responsive" src="/assets/cornell/thumb-trial.jpg" alt=""></a>
+			    <div class="collection-name collection-digital">
+				    <div class="label label-type">Digitized</div>
+				    <a href="/trial">Trial Pamphlets Collection</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="collection">
+		    	<a href="https://law.library.cornell.edu/SpecialCollections/Bennett"><img class="img-responsive" src="/assets/cornell/thumb-placeholder.jpg" alt=""></a>
+		    	<div class="collection-name">
+			    	<div class="label label-type">Print</div>
+			    	<a href="https://law.library.cornell.edu/SpecialCollections/Bennett">Bennett Statutory Collection</a>
+			    </div>
+		  	</div>
+		  	<div class="collection">
+		    	<a href="https://law.library.cornell.edu/SpecialCollections/ChileHoldings"><img class="img-responsive" src="/assets/cornell/thumb-placeholder.jpg" alt=""></a>
+		    	<div class="collection-name">
+			    	<div class="label label-type">Print</div>
+			    	<a href="https://law.library.cornell.edu/SpecialCollections/ChileHoldings">Chile Collection</a>
+			    </div>
+		    </div>
+		    <div class="collection">
+		    	<a href="https://law.library.cornell.edu/SpecialCollections/Rogers"><img class="img-responsive" src="/assets/cornell/thumb-placeholder.jpg" alt=""></a>
+		    	<div class="collection-name">
+			    	<div class="label label-type">Print</div>
+			    	<a href="https://law.library.cornell.edu/SpecialCollections/Rogers">Rogers Collection</a>
+			    </div>
+		    </div>
+		    <div class="collection">
+			    <a href="https://law.library.cornell.edu/specialcollections/supct"><img class="img-responsive" src="/assets/cornell/thumb-placeholder.jpg" alt=""></a>
+			    <div class="collection-name">
+				    <div class="label label-type">Print</div>
+				    <a href="https://law.library.cornell.edu/specialcollections/supct">Supreme Court Collection</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="collection">
+		    	<a href="https://law.library.cornell.edu/specialcollections/rarebooks"><img class="img-responsive" src="/assets/cornell/thumb-placeholder.jpg" alt=""></a>
+		    	<div class="collection-name">
+			    	<div class="label label-type">Print</div>
+			    	<a href="https://law.library.cornell.edu/specialcollections/rarebooks">Rare Books</a>
+			    </div>
+		  	</div>
+		</div>
+	<% end %>
+
 </div>
 
 
 
-<div class="bridge">
-	<div class="row bridge-section">
-		<img src="/assets/cornell/40_00284.jpg" alt="" class="pull-left img-polaroid">
-		<h3><a href="/about/collection">About the Collection</a></h3>
-		<p>Historical Context, Geographical Context (including map of Southeast Asia), Significance of These Accounts, and bibliographies.</p>
-	</div>
-	<div class="row bridge-section">
-		<img src="/assets/cornell/53_00206.jpg" alt="" class="pull-left img-polaroid">
-		<h3><a href="/about/project">About the Project</a></h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget auctor urna. Sed consectetur nisi eget blandit pulvinar.</p>
-	</div>
-</div>	
-
-<div class="more-info">
-	<div class="row">
-		<div class="span2">
-			<h4>More information</h4>
-		</div>
-		<div class="span3">
-			<ul>    
-				<li><a href="http://asia.library.cornell.edu/ac/Echols/" title="Echols Collection web site">The John M. Echols Collection on Southeast Asia</a></li>
-				<li><a href="http://asia.library.cornell.edu/ac/" title="Asia Collections web site">Kroch Library, Asia Collections</a></li>
-				<li><a href="http://rmc.library.cornell.edu/" title="Rare and Manuscripts Collection web site">Rare and Manuscripts Collection</a></li>
-			</ul>
-		</div>
-		<div class="span3">
-			<ul>
-				<li><a href="http://www.einaudi.cornell.edu/southeastasia/" title="Southeast Asia Program web site">Southeast Asia Studies Program</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-<div class="disclaimer">
-	<div class="row">
-		<div class="span6">
-			<p>Note: This site includes some historical materials that may imply negative representations or stereotypes of the peoples discussed in the documents. These documents have been included as part of the historical record and should not be interpreted to mean that project staff endorse or approve of the representations or stereotypes implied.</p>
-		</div>
-		<div class="span3">
-			<a href="http://asia.library.cornell.edu/ac/"><img src="/assets/cornell/lotus.gif" alt="Cornell Asia Collections"></a>
-			<a href="http://www.imls.gov/"><img src="/assets/cornell/imls.jpg" alt="Institute of Museum and Library Services"></a>
-		</div>
-	</div>
-</div>

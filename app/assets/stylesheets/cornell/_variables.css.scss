@@ -1,57 +1,47 @@
 $cornell-primary: #b31b1b;
 $cornell-primary-hover: #990f26;
-// $cornell-font: verdana, sans-serif;
-// $cornell-blue: #6eb4cd;
-// $cornell-blue-border: #4892ac;
 $cornell-gray: #4D4E53;
 
-// $link-primary: #006;
-
-$dark-gray: #222;
-$gray: #666;
+$dark-gray: #343232;
+$gray: #656363;
 $medium-gray: #999;
 $light-gray: #ccc;
-$pale-gray: #dedede;
+$pale-gray: #f3f3f3;
 
-$blue: #02315a;
-$medium-blue: #207ea2;
-$light-blue: #649cb3;
-$brown: #9d551f;
+$turquoise: #00bce1;
 
+// law site
+$law-link-color: #129792;
 
+// nuremberg/law root colors
+$link-color-nuremberg: $turquoise;
+$header-bg-nuremberg: $dark-gray;
+$other-light-gray: #dbdcdd;
 
-$peach: #f8d6ba;
-$nude: #f6f0eb;
+// trial
+$header-bg-trial: #774908;
+$link-color-trial: #d6912d;
 
+// scottsboro
+$header-bg-scottsboro: #142e01;
+$link-color-scottsboro: #618f40; // green
+
+// liberian
+$header-bg-liberian: #bead6e;
+$link-color-liberian: #817752; // dark khaki
 
 // -------------------
 // Boostrap overrides
 // -------------------
 
-// Scaffolding
-// -------------------------
-// $bodyBackground: $dark-gray;
-
 // Wells
 // -------------------------
-// $wellBackground: $nude;
+$well-bg: $pale-gray;
 
 // Fonts
 // -------------------------
 // Protocol is intentionally absent from URL to allow browser to automatically
 // use either http or https as needed -- this is primarily to address Chrome bug
-$visionsFontFamily:        'Sorts Mill Goudy';        @import
-url(//fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
-$baseFontFamily: 'Open Sans'; 		@import
-url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
 
-
-// // Buttons
-// // -------------------------
-// $btnInfoBackground:                 $teal;
-// $btnInfoBackgroundHighlight:        $dark-teal;
-
-// // Navbar
-// // -------------------------
-// $navbarCollapseWidth:             767px !default;
-// $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
+$font-family-base: 'Montserrat'; 		@import
+url(//fonts.googleapis.com/css?family=Montserrat:400,700);

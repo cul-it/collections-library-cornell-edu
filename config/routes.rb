@@ -1,25 +1,19 @@
 Bl5::Application.routes.draw do
-  root :to => "catalog#index"
+  get '/contact' => 'high_voltage/pages#show', id: 'contact'
+  get '/bookmarks' => 'bookmarks#index'
+  get '/history' => "search_history#index"
+  get '/:subject' => 'catalog#index'
+  get '/:subject/catalog/:id' => 'catalog#show'
+
+
+  root "catalog#index"
   blacklight_for :catalog
   devise_for :users
-  get "about/collection"
-  get "about/geographic"
-  get "about/significance"
-  get "about/bibliography"
-  get "about/project"
-  get "about/help"
-  get "about/map"
-  get "about/contact"
-  get "about/copyright"
-  get "about/credits"
-  get "about/delivery"
-  get "about/digitization"
-  get "about/images"
-  get "about/pod"
-  get "about/press"
-  get "about/sponsor"
-  get "about/survey"
   devise_for :sessions
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -28,7 +22,6 @@ Bl5::Application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
@@ -60,7 +53,7 @@ Bl5::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

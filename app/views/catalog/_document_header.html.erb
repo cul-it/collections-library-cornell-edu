@@ -1,20 +1,8 @@
 <%# bookmark functions for items/docs -%>
 <%= render_index_doc_actions document, :wrapping_class => "select-item" %>
+ <h2 class="blacklight-title_display">
 
+	 <%= t('blacklight.search.documents.counter', :counter => (document_counter + 1 + @response.params[:start].to_i)) %>
 
-<h2 class="blacklight-title_display">
-
-<%# main title container for doc partial view -%>
-
-	
-<% page_book_title = render_index_field_value :document => document, :field => 'book_title_tesim' %>
-<% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
-<% display_book_title = page_book_title + ', pg. ' + page %>
-
-  <%= t('blacklight.search.documents.counter', :counter => (document_counter + 1 + @response.params[:start].to_i)) %>
-  <% if page_book_title.present? %>
-  <%= link_to_document document, :label=>display_book_title, :counter => (document_counter + 1 + @response.params[:start].to_i) %>
-  <% else %>
-    <%= link_to_document document, :label=>document_show_link_field(document), :counter => (document_counter + 1 + @response.params[:start].to_i) %>
-    <% end %>
+	<%= link_to_document document, :label=>document_show_link_field(document), :counter => (document_counter + 1 + @response.params[:start].to_i) %> 
 </h2>

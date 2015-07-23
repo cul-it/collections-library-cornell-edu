@@ -1,0 +1,15 @@
+if (index == 0) {
+     return 1006;
+    }
+if (index == 1) {
+     return 1006;
+    }
+if (index == 2) {
+     return 1006;
+    }
+if (index == 3) {
+     return 1009;
+    }
+if (index > 3) {
+    return 1200;
+    }

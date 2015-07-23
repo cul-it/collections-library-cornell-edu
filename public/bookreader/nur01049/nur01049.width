@@ -1,0 +1,24 @@
+if (index == 0) {
+     return 693;
+    }
+if (index == 1) {
+     return 710;
+    }
+if (index == 2) {
+     return 683;
+    }
+if (index == 3) {
+     return 667;
+    }
+if (index == 4) {
+     return 661;
+    }
+if (index == 5) {
+     return 682;
+    }
+if (index == 6) {
+     return 661;
+    }
+if (index > 6) {
+    return 800;
+    }

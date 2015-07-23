@@ -1,0 +1,39 @@
+@media print {
+	body {
+		font-family: Helvetica, sans-serif;
+	}
+	// BS override - don't need to print URLs
+	a[href]:after {
+	   content: "";
+	}
+	// Don't display some stuff
+	.search-bar,
+	#facets,
+	.search-results h2,
+	.search-widgets,
+	.select-item,
+	.catalog_startOverLink,
+	.pagination,
+	.btn-constraint i,
+	.show-nav,
+	.show-tools,
+	.reader-link,
+	.pdf-link {
+		display: none;
+	}
+	h4 .visible-xs,
+	.mobile-nav {
+		display: none !important;
+	}
+	// Tighten up spacing for other stuff
+	.cul-law-logo,
+	.site-identity .tagline {
+		margin-bottom: 0;
+	}
+	.constraints-container {
+		padding: 0;
+	}
+	.main-content .container {
+		padding-top: 0;
+	}
+}

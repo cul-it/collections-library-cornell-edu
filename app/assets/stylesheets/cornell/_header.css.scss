@@ -1,14 +1,23 @@
-.sea-identity {
-	background: url("cornell/layout/oceanbar.gif") repeat-x;
-	height: 80px;
+.hero {
+	margin-bottom: 0;
+	border-radius: 0;
+	background: url("https://law.library.cornell.edu/files/generic%20law_0.jpg") no-repeat center; // TODO: this is the nuremberg image, currently. not sure if we want a root image for all law collections
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.site-identity {
+	background: $dark-gray;
+	opacity: .85;
 	h1 {
-		font-family: $visionsFontFamily;
 		color: white;
-		text-transform: uppercase;
-		line-height: .75em;
-		margin: 12px 0 0;
+		line-height: 1.1em;
+		margin: .25em 0;
 		padding: 0;
-		font-size: 43px;
+		font-size: 28px;
 		span {
 			display: block;
 			font-size: 19px;
@@ -19,52 +28,142 @@
 			text-decoration: none;
 		}
 	}
+	.tagline {
+		font-size: 18px;
+		color: #bebdbd;
+		margin-bottom: 1em;
+		line-height: 1.4em;
+	}
+	.collections-link {
+		a {
+			font-size: 22px;
+			color: white;
+		}
+		a:hover, a:active, a:focus {
+			text-decoration: none;
+		}
+	}
+}
+.navigation-bar {
+	@include make-sm-column(4);
+	
+	@include make-sm-column-push(8);
+}
+.site-title {
+	@include make-sm-column(8);
+	@include make-sm-column-pull(4);
+	margin: 1em 0;
 }
 
-.navbar {
+.searchbar{
+	@include make-sm-column(8);
+}
+.utility-links {
+	@include make-sm-column(4);
+}
+.navbar-collapse {
 	.nav {
-		float: right;
-		margin-top: 35px;
+		position: relative;
+		z-index: 5000;
+		background: $turquoise;
+		margin-top: 0;
 		li {
+			line-height: 1.75em;
 			a {
 				text-shadow: none;
-				color: white;
-				font-size: 20px;
+				// font-size: 1;
+				background: white;
+				color: $dark-gray;
+				border-bottom: 1px solid $medium-gray;
 			}
 			a:hover {
 				color: white;
 				text-decoration: underline;
+				background:none;
 			}
 		}
 	}
 }
-
-// Mobile nav
-// -----------------------//
-
+.navigation-bar {
+	padding-left: 0;
+	padding-right: 0;
+	// border-left: 1px solid $gray;
+}
 .navbar {
-	.btn-navbar,
-	.btn-navbar:hover,
-	.btn-navbar:active {
-		background: $blue;
-		border-radius: 0;
-		margin-right: 0;
-		text-transform: uppercase;
-		padding: 4px 10px;
+	min-height: 0;
+	border: 0;
+}
+
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	.navbar-collapse {
+		.nav {
+			width: auto;
+			background: inherit;
+			margin-top: 1.25em;
+			li {
+				display: inline;
+				float: none;
+				a {
+					display: inline;
+					background: inherit;
+					color: white;
+					border-bottom: 0;
+				}
+			}
+			li::after {
+    		content: "/";
+    		color: white;
+			}
+			li:last-child::after {
+				content: "";
+			}
+		}
+	}
+	.navbar {
+		min-height: 0;
+		margin-bottom: 20px;
+	}
+	.navigation-bar {
+		margin-top: 1em;
+	}
+	.site-identity {
+		h1 {
+			font-size: 34px;
+		}
+		h2 {
+			font-size: 20px;
+			margin-bottom: .5em;
+		}
+	}
+	.navbar > li > a {
+		padding: 0;
+	}
+	.navbar-nav > li > a {
+		padding: 0 .5em;
+	}
+	.navbar-nav > li > a:first-child {
+		padding-left: 0;
 	}
 }
-.nav-collapse.in {
-	z-index: 1000;
-	.nav {
-		margin-top: 0;
-		width: auto;
-		background: #011b32;
-		a {
-			font-weight: normal;
-			font-size: 18px;
-		}
-		a:hover {
-			background: $blue;
-		}
-	}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
 }

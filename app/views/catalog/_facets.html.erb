@@ -1,19 +1,29 @@
 <% # main container for facets/limits menu -%>
-<%#= debug has_facet_values? %>
-<% if has_facet_values?  %>
-<div id="facets" class="facets sidenav">
-	
- 
-  <h4 data-toggle="collapse" data-target=".facets-collapse">
+<% unless !has_search_parameters? && !params[:subject].present? %>
+  <% if has_facet_values?  %>
+    <div id="sidebar" class="facet-sidebar" data-no-turbolink>
+      <div id="facets" class="facets sidenav">
 
-      <a class="btn btn-navbar">
-        <i class="fa fa-bars"></i>
-      </a>
-  	<%= t('blacklight.search.facets.title') %>
+        <div class="top-panel-heading panel-heading">
+          <button type="button" class="facets-toggle" data-toggle="collapse" data-target="#facet-panel-collapse">
+            <span class="sr-only">Toggle facets</span>
+            <i class="fa fa-chevron-down"></i>
+          </button>
 
-  </h4>
-  <div class="facets-collapse">
-  <%= render_facet_partials %>
-</div>
-</div>
-<% end %>&nbsp;
+          <h4>
+            <span class="hidden-xs">
+              <%= t('blacklight.search.facets.title') %>
+            </span>
+            <span class="visible-xs">
+              Browse the Collection by
+            </span>
+          </h4>
+        </div>
+
+        <div id="facet-panel-collapse" class="collapse panel-group">
+          <%= render_facet_partials %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<%end%>

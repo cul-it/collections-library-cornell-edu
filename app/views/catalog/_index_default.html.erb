@@ -1,33 +1,15 @@
-	
-<% page_turner = render_index_field_value :document => document, :field => 'pubstmt_idno_tesim'%>
-<% if page_turner.blank? %>
-  <% page_turner = render_index_field_value :document => document, :field => 'book_id_tesim'%>
-	<% page = render_index_field_value :document => document, :field => 'image_seq_tesim' %>
-  <% sea_id = page_turner[4..7] %>
+<% real_page = render_index_field_value :document => document, :field => 'image_n_tesim' %>	
+<% page_turner = pubstmt_to_id(render_index_field_value :document => document, :field => 'pubstmt_idno_tesim') %>
+
   <div class="data-block">
-    <div class="blacklight-author_display"><%= render_index_field_value :document => document, :field => 'book_author_tesim' %></div>
-    <div class="blacklight-publisher_display"><%= render_index_field_value :document => document, :field => 'book_pubplace_tesim' %>, <%= render_index_field_value :document => document, :field => 'book_publisher_tesim' %>, 
-      <span class="blacklight-publisher_uniform_display"><%= render_index_field_value :document => document, :field => 'book_pubdate_tesim' %>, pg. <%= page %></span>
-    </div>
-    <div class="blacklight-ocr_display"><%= render_index_field_value :document => document, :field => 'image_ocr_tesim', :highlight => true %>
-    </div>
-    <div class="blacklight-page_turner_link" data-no-turbolink>
-      <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/<%= page %>/mode/1up">Read page <%= page %></a>
-    </div>
-  </div>
-<% else %>
-  <% sea_id=page_turner[3..7] %>
-  <div class="data-block">
-    <h2 class="blacklight-title_display"><%= render_index_field_value :document => document, :field => 'title' %></h2>
     <div class="blacklight-author_display"><%= render_index_field_value :document => document, :field => 'author_tesim' %></div>
     <div class="blacklight-publisher_display"><%= render_index_field_value :document => document, :field => 'pubplace_tesim' %>, <%= render_index_field_value :document => document, :field => 'publisher_tesim' %>
       <span class="blacklight-publisher_uniform_display"><%= render_index_field_value :document => document, :field => 'pubdate_tesim' %></span>
     </div>
     <div class="blacklight-page_turner_link" data-no-turbolink>
-      <a href="http://hydradev.library.cornell.edu/bookreader/sea:<%= sea_id %>/#page/1/mode/1up">Read book</a>
+      <a href="/bookreader/<%= page_turner %>/#page/1/mode/1up">Read book</a>
     </div>
   </div>
-<% end %>
 
    <%# default partial to display solr document fields in catalog index view -%>
  <%# This file is needed to display icon images in results display -%>

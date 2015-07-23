@@ -1,20 +1,31 @@
-  <%= form_tag search_action_url, :method => :get, :class => 'search-query-form form-inline clearfix' do %>
+<h2>Search Collection</h2>
+<%= form_tag search_action_url, :method => :get, :class => 'search-query-form form-inline clearfix' do %>
+  <div class="form-group search-group">
+    <div class="search-input">
+      <label for="q" class="sr-only"><%= t('blacklight.search.form.q') %></label>
+     
+      <% if params[:subject]=="trials" %>
+       <%= text_field_tag :q, params[:q], :placeholder => 'Search trial pamphlets', :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
+       <% elsif params[:subject]== "nuremberg" %>
+        <%= text_field_tag :q, params[:q], :placeholder => 'Search Nuremberg collection', :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
 
-    <% unless search_fields.empty? %>
-      <div class="pull-left">
-        <label for="search_field" class="hide-text"><%= t('blacklight.search.form.search_field.label') %></label>
-        <%= select_tag(:search_field, options_for_select(search_fields, h(params[:search_field])), :title => t('blacklight.search.form.search_field.title'), :class=>"search_field input-small") %>
-        <span class="hide-text"><%= t('blacklight.search.form.search_field.post_label') %></span>
-      </div>
-      <% end %>
-       <div class="input-append pull-left">
-        <label for="q" class="hide-text"><%= t('blacklight.search.form.q') %></label>
-         <%= text_field_tag :q, params[:q], :placeholder => t('blacklight.search.form.q'), :class => "search_q q", :id => "q"%>
-        <button type="submit" class="btn btn-primary search-btn" id="search">
-          <span class="submit-search-text"><%=t('blacklight.search.form.submit')%></span>
-          <i class="fa fa-search"></i>
-        </button>
+        <%else %>
+         <%= text_field_tag :q, params[:q], :placeholder => t('blacklight.search.form.q'), :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
+         <%end%>
 
-       </div>
 
+    </div>
+  </div>
+  <% unless search_fields.empty? %>
+    <div class="form-group">
+      <label for="search_field" class="sr-only"><%= t('blacklight.search.form.search_field.label') %></label>
+      <%= select_tag(:search_field, options_for_select(search_fields, h(params[:search_field])), :title => t('blacklight.search.form.search_field.title'), :class=>"search_field form-control input-lg") %>
+      <span class="sr-only"><%= t('blacklight.search.form.search_field.post_label') %></span>
+    </div>
   <% end %>
+  <button type="submit" class="btn btn-search" id="search">
+    <span class="submit-search-text sr-only"><%=t('blacklight.search.form.submit')%></span>
+    <i class="fa fa-search"></i>
+  </button>
+<% end %>
+

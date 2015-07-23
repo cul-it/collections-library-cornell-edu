@@ -1,15 +1,17 @@
 // Home page
 // ----------------------//
 .home-text {
-	margin: 20px 0 10px;
+	margin: 3em 0 10px;
 	p {
 		font-size: 18px;
 	}
 	// search box header
 	h3 {
 		margin-top: 20px;
-		font-size: 16px;
-		font-weight: 700;
+		font-size: 24px;
+	}
+	.row { 
+		margin-bottom: 1.5em;
 	}
 }
 
@@ -29,16 +31,28 @@
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid $pale-gray;
-	h3 { font-size: 14px; }
+	h4 { 
+		font-size: 14px;
+		line-height: 1.5em;
+		margin-bottom: .5em;
+		font-weight: 700;
+	}
+	ul {
+		padding-left: 20px;
+	}
 	li { font-size: 14px; }
 }
 
 .disclaimer {
+	@include make-sm-column(12);
 	p {
 		font-size: 12px;
 		color: $gray;
 	}
 	img { margin-right: 10px; }
+}
+.more-info-sponsors {
+	text-align: center;
 }
 
 // About subnavigation
@@ -76,26 +90,46 @@
 .blacklight-about-sponsor .nav-list .about-sponsor:hover,
 .blacklight-about-survey .nav-list .about-survey,
 .blacklight-about-survey .nav-list .about-survey:hover {
-	background: $peach;
 	color: $dark-gray;
 }
 .sidebar {
-	.nav-list {
-		a { 
-			text-shadow: none;
-			padding: 5px 15px;
+	.nav > li > a {
+		padding: 5px 15px 5px 0;
+		display: inline-block;
+	}
+	.nav > li > a:hover {
+		color: $dark-gray;
+	}
+	.nav > li > a:hover,
+	.nav > li > a:active,
+	.nav > li > a:visited {
+		background: white;
+	}
+
+}
+.nuremberg {
+	.nav-header {
+		font-size: 14px;
+		text-transform: uppercase;
+		a {
+			color: $dark-gray;
 		}
-		a:hover { background: $nude; }
 	}
 }
 
 // Map
 // ----------------------//
 .map {
-	margin-bottom: 20px;
-	ol {
-		li { font-size: 14px; }
+	margin-bottom: 2em;
+	li {
+		font-size: 14px;
 	}
+}
+.map-image {
+	@include make-md-column(4);
+}
+.map-list {
+	@include make-md-column(8);
 }
 
 // Image credits
@@ -104,5 +138,92 @@
 	figure {
 		margin: 0 0 20px;
 		img { margin-bottom: 5px; }
+	}
+}
+
+// Footer
+// ----------------------//
+
+footer {
+	margin: 30px 0 15px;
+	color: $dark-gray;
+	a, a:hover { color: $dark-gray !important; }
+	p {
+		font-size: 14px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+
+// Buttons
+// ----------------------//
+
+.btn-nuremberg {
+	background: $turquoise;
+	color: white;
+	border-radius: 0;
+}
+.btn-nuremberg:hover,
+.btn-nuremberg:active {
+	color: white;
+}
+
+// Bookmarks
+// ----------------------//
+.clear-bookmarks {
+	float: none !important;
+}
+
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	footer {
+		.nav {
+			li {
+				float: left;
+				a {
+					padding: 0 10px;
+					border-left: 1px solid #666;
+				}
+				a:hover {
+					background: inherit;
+					text-decoration: underline;
+				}
+			}
+			li:first-child {
+				a {
+					padding-left: 0;
+					border: none;
+				}
+			}
+		}
+		p {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+	.clear-bookmarks {
+		float: right !important;
 	}
 }

@@ -1,0 +1,67 @@
+.collection {
+	@include make-sm-column(3);
+	margin-bottom: 2em;
+	img {
+		background: #efefef;
+		padding: 4px;
+	}
+}
+.label-type {
+	background: #5d4f1d;
+	border-radius: 0;
+	display: inline-block;
+	padding: 5px 10px;
+}
+.collection-name {
+	padding: 0 4px;
+	a {
+		width: auto;
+		background: #707c63;
+		opacity: .8;
+		color: white;
+		display: inline-block;
+		padding: 5px;
+		font-size: 14px;
+	}
+}
+.collection-digital {
+	a {
+		background: #9d9265;
+	}
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	.collection {
+		margin-bottom: 0;
+	}
+	.collection-name {
+		position: absolute;
+		bottom: 4px;	
+		width: 100%;
+		a {
+			display: block;
+			width: 86%;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+}

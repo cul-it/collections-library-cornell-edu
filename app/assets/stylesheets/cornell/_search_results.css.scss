@@ -3,7 +3,7 @@ h2.blacklight-title_display {
 	font-weight: normal;
 	line-height: 1.25em;
 	font-size: 1.4em;
-	font-family: $baseFontFamily;
+	font-family: $font-family-base;
 	color: $medium-gray;
 }
 
@@ -16,35 +16,97 @@ h2.blacklight-title_display {
 	margin-left: 30px;
 }
 
+h2 {
+	.label {
+		font-weight:normal;
+		font-size: .6em;
+	}
+}
+
 .book-cover {
 	float: left;
 	margin-right: 1em;
-	height: 120px;
 	width:70px
 }
 
 .document-data {
 	float: left;
-	width: 89%;
+	width: 70%;
 }
 
 .blacklight-catalog-index, 
 .blacklight-bookmarks-index {
 	.document {
-		clear: both;
 		border-bottom: 1px solid #edebe7;
 		padding: 20px 0;
 	}
+}
+
+.gallery .document {
+	@include make-xs-column(6);
+	@include make-sm-column(3);
 }
 
 .blacklight-ocr_display {
 	color: #777;
 	font-size: 13px;
 	margin-top: 5px;
-	// em {
-	// 	background-color: $nude
-	// }
 }
+
 .blacklight-page_turner_link {
 	margin-top: 5px;
+}
+
+.slideshow-image {
+	width:30%
+}
+
+// Pagination
+// -------------------//
+
+// bootstrap overrides
+.pagination > li > a, .pagination > li > span {
+	color: $turquoise;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+	background: $turquoise;
+	border-color: $turquoise;
+}
+
+// Bookmark toggle
+// -------------------//
+.bookmark_toggle {
+	label {
+		padding-top: 0 !important;
+	}
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+	// /* Extra small devices (phones, up to 480px) */
+	// /* No media query since this is the default in Bootstrap */
+
+	// /* Small devices (tablets, 768px and up) */
+	// @media (min-width: @screen-sm) { ... }
+
+	// /* Medium devices (desktops, 992px and up) */
+	// @media (min-width: @screen-md) { ... }
+
+	// /* Large devices (large desktops, 1200px and up) */
+	// @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {
+	.document-data {
+		width: 84%;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+	.document-data {
+		width: 87%;
+	}
 }
