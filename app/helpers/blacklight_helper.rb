@@ -127,10 +127,9 @@ def not_digitized?(id)
 
 def digital_collection?(subject)
   PREFIXES.each do |key,value|
-    if subject == key
+    if subject.include? key
       return true
-    else 
-      return false
+      break
     end 
   end
 end

@@ -87,16 +87,22 @@
     </section>
   </div>
   <% unless params[:controller] == 'catalog' && params[:subject].nil? && params[:action] == 'index'%>
+  <% if params[:controller] == "high_voltage/pages" %>
+<% params[:subject] = params[:id].split('/')[0] %>
+<% search_action_url = '/' + params[:subject] %>
+<% end %>
   <section class="search-bar">
     <div class="container">
       <div class="row">
         <div class="clearfix searchbar" id="searchbar">
-          <% if digital_collection?(params[:subject]) %>
           <% unless params[:controller] == 'bookmarks' || params[:controller] == 'search_history'%>
+          <% unless digital_collection?(params[:subject]) != true %>
           <%= render_search_bar  %>
+          <% end %> 
           <% end %>
-          <% end %>
+
         </div>
+
         <div class="utility-links">
           <%= render :partial=>'/user_util_links' %>
         </div>
