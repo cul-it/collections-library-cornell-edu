@@ -18,7 +18,6 @@ gem 'sass-rails', '5.0.1'
 gem 'multi_json', '1.11.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-gem 'rufus-scheduler', '3.0.9'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
