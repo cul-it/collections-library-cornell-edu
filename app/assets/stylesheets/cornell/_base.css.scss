@@ -126,6 +126,11 @@ img.pull-left {
 	font-size: 14px;
 	color: $medium-gray;
 }
+.pull-right {
+	img {
+		margin: 0 0 1.5em 1.5em;
+	}
+}
 
 // Miscellaneous
 // ---------------------------------//
