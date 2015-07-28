@@ -1,23 +1,25 @@
-<h2>Search Collection</h2>
+<% if params[:subject]=="nuremberg"%>
+  <h2>Search Donovan Nuremberg Trials Collection</h2>
+<% elsif params[:subject]=="trial"%>
+  <h2>Search Trial Pamphlets Collection</h2>
+<% elsif params[:subject]=="scottsboro"%>
+  <h2>Search Scottsboro Trials Collection</h2>
+<% elsif params[:subject]=="liberian" %>
+  <h2>Search Liberian Law Collection</h2>
+<% else %>
+  <h2>Search Collection</h2>
+<% end %>
 
- <% if params[:controller] == "high_voltage/pages" %>
-<% params[:subject] = params[:id].split('/')[0] %>
-<% search_action_url = '/' + params[:subject] %>
+<% if params[:controller] == "high_voltage/pages" %>
+  <% params[:subject] = params[:id].split('/')[0] %>
+  <% search_action_url = '/' + params[:subject] %>
 <% end %>
 
 <%= form_tag search_action_url, :method => :get, :class => 'search-query-form form-inline clearfix' do %>
   <div class="form-group search-group">
     <div class="search-input">
       <label for="q" class="sr-only"><%= t('blacklight.search.form.q') %></label>
-     
-      <% if params[:subject]=="trials" %>
-       <%= text_field_tag :q, params[:q], :placeholder => 'Search trial pamphlets', :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
-       <% elsif params[:subject]== "nuremberg" %>
-        <%= text_field_tag :q, params[:q], :placeholder => 'Search Nuremberg collection', :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
-
-        <%else %>
-         <%= text_field_tag :q, params[:q], :placeholder => t('blacklight.search.form.q'), :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
-         <%end%>
+      <%= text_field_tag :q, params[:q], :placeholder => t('blacklight.search.form.q'), :class => "form-control search_q q input-lg", :id => "q", :type => 'text'%>
 
 
     </div>

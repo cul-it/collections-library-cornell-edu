@@ -1,6 +1,9 @@
 .search-bar {
 	background: $pale-gray;
 	padding: 1em 0;
+	h2 {
+		font-size: 20px;
+	}
 }
 //override app
 #searchbar {
