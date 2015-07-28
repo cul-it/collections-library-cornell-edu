@@ -1,5 +1,11 @@
 Bl5::Application.routes.draw do
   get '/contact' => 'high_voltage/pages#show', id: 'contact'
+  get '/bennett' => 'high_voltage/pages#show', id: 'bennett'
+  get '/chile' => 'high_voltage/pages#show', id: 'chile'
+   get '/chile_list' => 'high_voltage/pages#show', id: 'chile_list'
+  get '/rogers' => 'high_voltage/pages#show', id: 'rogers'
+  get '/supremecourt' => 'high_voltage/pages#show', id: 'supremecourt'
+  get '/rarebooks' => 'high_voltage/pages#show', id: 'rarebooks'
   get '/bookmarks' => 'bookmarks#index'
   get '/history' => "search_history#index"
   get '/:subject' => 'catalog#index'
