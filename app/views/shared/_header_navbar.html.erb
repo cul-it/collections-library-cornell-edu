@@ -48,6 +48,11 @@
                   <li><a href="/scottsboro/collection">Collection Description</a></li>
                   <li><a href="/scottsboro/copyright">Copyright and Permissions</a></li>
                   <li><a href="/scottsboro/project">Project Staff</a></li>
+                <% elsif request.original_url.include?("liberian") %>
+                    <li><a href="/liberian/law">Liberian Law at Cornell</a></li>
+                    <li><a href="/liberian/library">National Law Library for Liberia</a></li>
+                    <li><a href="/liberian/recodification">Recodification Files</a></li>
+                    <li><a href="/liberian/reports">Subject Index</a></li>
                 <% else %>
 
                 <% end %>
