@@ -13,6 +13,7 @@ class CatalogController < ApplicationController
 
   before_action  do
 
+
     if params[:subject] == "nuremberg"
       blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Collection"'}
 
@@ -37,6 +38,7 @@ class CatalogController < ApplicationController
       :qf => 'author_timv titlestmt_title_tesim title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi',
       :qt => 'search',
       :fl => '*,score',
+      :fq => 'active_fedora_model_ssi:Book',
       :rows => 10
 
     }
