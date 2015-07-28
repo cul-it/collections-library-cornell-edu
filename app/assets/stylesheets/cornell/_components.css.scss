@@ -186,6 +186,28 @@ footer {
 	font-size: 14px;
 }
 
+// Pill nav
+// ----------------------//
+.blacklight-pages-show {
+	.nav-pills {
+		margin-bottom: 2em;
+		li {
+			margin-bottom: 2px;
+			a {
+				background: #eaeaea;
+				padding: 5px 10px;
+			}
+			a:hover {
+				background: $light-gray;
+			}
+		}
+		.no-link {
+			padding: 5px 10px;
+			color: $medium-gray;
+		}
+	}
+}
+
 // MEDIA QUERIES
 // -------------------------
 
