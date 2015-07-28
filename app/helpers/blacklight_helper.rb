@@ -125,6 +125,15 @@ def not_digitized?(id)
     end
   end
 
+def digital_collection?(subject)
+  PREFIXES.each do |key,value|
+    if subject == key
+      return true
+    else 
+      return false
+    end 
+  end
+end
 
   def link_to_document(doc, opts={:label=>nil, :counter => nil, :subject=>params[:subject]})
     opts[:label] ||= document_show_link_field(doc)
