@@ -6,7 +6,10 @@
 	      |
 	      <%=link_to "#{t('blacklight.search.start_over')}", start_over_path(current_search_session.try(:query_params) || {}), :id=>"startOverLink" %>
 		<div id="previousNextDocument">
-		    <%= link_to_previous_document @previous_document %> |
+		    <%= link_to_previous_document @previous_document %> 
+		    <% if (link_to_previous_document @previous_document).present? %>
+		    |
+		    <% end %>
 		    <%= item_page_entry_info %> |
 		    <%= link_to_next_document @next_document %>
 
