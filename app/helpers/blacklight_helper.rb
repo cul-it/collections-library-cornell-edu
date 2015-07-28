@@ -71,6 +71,59 @@ module BlacklightHelper
     'nuremberg' => 'nur'
   }
 
+  NOT_DIGITIZED = [
+    "nur:00455",
+    "nur:00469",
+    "nur:00472",
+    "nur:00473",
+    "nur:00484",
+    "nur:00486",
+    "nur:00499",
+    "nur:00500",
+    "nur:00501",
+    "nur:00502",
+    "nur:00511",
+    "nur:00634",
+    "nur:00809",
+    "nur:00862",
+    "nur:00928",
+    "nur:01012",
+    "nur:01176",
+    "nur:01200",
+    "nur:01252",
+    "nur:01355",
+    "nur:01528",
+    "nur:01541",
+    "nur:01545",
+    "nur:01548",
+    "nur:01590",
+    "nur:01592",
+    "nur:01594",
+    "nur:01598",
+    "nur:01601",
+    "nur:01605",
+    "nur:01607",
+    "nur:01609",
+    "nur:01611",
+    "nur:01653",
+    "nur:01770",
+    "nur:01801",
+    "nur:01827",
+    "nur:01828",
+    "nur:01829",
+    "nur:01830",
+    "nur:01836",
+    "nur:01847",
+    "nur:01848",
+    "nur:01852",
+    "nur:27870"
+  ]
+
+def not_digitized?(id)
+    if NOT_DIGITIZED.include? id
+      return true
+    end
+  end
 
 
   def link_to_document(doc, opts={:label=>nil, :counter => nil, :subject=>params[:subject]})

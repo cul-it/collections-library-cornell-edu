@@ -7,19 +7,21 @@
   <div id="content" class="show-document">
 
     <%# display if it's a book -%>
-    <%if @document[:active_fedora_model_ssi] == 'Book'%>
     <% page_turner = pubstmt_to_id(render_document_show_field_value :document => @document, :field => 'pubstmt_idno_tesim') %>
     <% page = 1 %>
         <div class="cover" data-no-turbolink>
           <a href="http://lawcollections-stg.library.cornell.edu//bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/get/<%= page_turner %>/thumbnailImage" class="img-responsive img-thumbnail" alt="Book or page image"></a>
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
+          <% unless not_digitized?(params[:id]) %>
+
           <div class="reader-link" data-no-turbolink>
             <a class="btn btn-info" href="http://lawcollections-stg.library.cornell.edu/bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><i class="fa fa-book-open"></i>Read document</a>
           </div>
           <div class="pdf-link" data-no-turbolink>
             <a class="btn btn-info" href="#"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
           </div>
-
+          <% end %>
+          
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
           <% if bibid_display.present? && bibid_display != "000000" %>       
             <ul class="item-links">   
@@ -27,7 +29,6 @@
             </ul>
           <% end %>
         </div>
-    <% end %>
 
 
 
@@ -37,7 +38,6 @@
       <%# this should be in a partial -%>
       <div id="document" class="<%= render_document_class %>">
       
-          <%if @document[:active_fedora_model_ssi] == 'Book'%>
 
           <% @page_title = render_document_show_field_value :document => @document, :field => 'titlestmt_title_tesim' %>
           <%#= render_document_heading(:h2).html_safe %>
@@ -123,42 +123,6 @@
 
              
 
-
-          <%elsif @document[:active_fedora_model_ssi] == 'Page'%>
-         <h2><a href="/catalog/<%= page_turner %>/"><%= render_document_show_field_value :document => @document, :field => 'book_title_tesim'%></a> <span class="label label-default">Page <%= real_page %></span></h2>
-          <div class="document"> <%= render_document_partial @document, :show %> </div>
-
-          <dl class="dl-horizontal">
-           <dl class="dl-horizontal">
-            <dt class="blacklight-publication-info-label">Author:</dt>
-            <dd class="blacklight-author_display"><%= render_document_show_field_value :document => @document, :field => 'book_author_tesim'%> </dd>
-           
-            <dt class="blacklight-publication-info-label">Publication Info:</dt>
-            <dd class="blacklight-publication-info">
-
-              <% book_pubplace = render_document_show_field_value :document => @document, :field => 'book_pubplace_tesim' %>
-              <% book_publisher = render_document_show_field_value :document => @document, :field => 'book_publisher_tesim' %>
-              <% book_pubdate = render_document_show_field_value :document => @document, :field => 'book_pubdate_tesim' %>
-              <% if book_pubplace.present? %>
-              <%= book_pubplace + ':'%> 
-              <% end %>
-              <% if book_publisher.present? %>
-              <%= book_publisher + ','  %>
-              <% end %>
-              <% if book_pubdate.present? %>
-              <%= book_pubdate + ',' %>
-              <% end %>
-              <span class="blacklight-publisher_uniform_display">pg <%= render_document_show_field_value :document => @document, :field => 'image_n_tesim' %></span></dd>
-              
-          </dl>
-          <% display_ocr = render_document_show_field_value :document => @document, :field => 'image_ocr_tesim' %>
-          <% if display_ocr.present? %>
-          <div class="ocr">
-            <h4>Text on page <%= render_document_show_field_value :document => @document, :field => 'image_n_tesim' %></h4>
-            <%= display_ocr %>
-          </div>
-         <% end %>
-         <% end %>
         </div>
       </div>
     </div>
