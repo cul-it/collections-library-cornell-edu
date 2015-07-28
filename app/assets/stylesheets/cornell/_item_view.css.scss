@@ -88,14 +88,16 @@ ul.item-links {
 	.nav {
 		li {
 			float: left;
+			font-size: 14px;
 		}
 	}
 	.btn-sm {
 		padding: 5px 10px !important;
 	}
-	.bookmark_toggle { padding: 0 1em 0 0; }
+	.bookmark_toggle { padding: 0 .5em 0 0; }
 	.toggle_bookmark {
-		font-size: 12px;
+		font-size: 14px;
+		padding-top: 10px;
 		span {
 			margin-left: 1.5em;
 		}
@@ -109,6 +111,12 @@ ul.item-links {
 	input[type="radio"], input[type="checkbox"] {
 		margin-top: 8px;
 	}
+}
+.panel-default.show-tools {
+	border: 0;
+}
+.panel.show-tools {
+	box-shadow: none;
 }
 
 // MEDIA QUERIES
@@ -137,9 +145,9 @@ ul.item-links {
 		.nav {
 			float: right;
 		}
-		// .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
-		// 	margin-left: -20px;
-		// }
+		.bookmark_toggle {
+			padding-right: 1em;
+		}
 	}
 }
 

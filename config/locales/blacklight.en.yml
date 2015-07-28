@@ -1,7 +1,10 @@
 en:
   blacklight:
     application_name: 'Blacklight'
-    
+
+    tools:
+      sms: 'Text'
+
     email:
       form:
         title: 'Email this'
@@ -21,7 +24,13 @@ en:
           other: 'Item records'
         url: '%{url}'
         message: '%{message}'
+      success: "Email sent"
       errors:
         to:
           invalid: 'You must enter a valid email address.'
           blank: 'You must enter a recipient in order to send this message.'
+
+    sms:
+      form:
+        title: 'Text'
+      success: "Text sent"
