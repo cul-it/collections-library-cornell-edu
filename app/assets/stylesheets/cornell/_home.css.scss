@@ -112,11 +112,25 @@
 		width: 100%;
 		a {
 			display: block;
-			width: 85.5%;
+			width: 84%;
 		}
 	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md) {
+	.collection-name {
+		a {
+			width: 88%;
+		}
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg) {
+	.collection-name {
+		a {
+			width: 85.5%;
+		}
+	}
 }
