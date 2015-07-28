@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'blacklight', '~> 5.4.0'
-gem 'hydra', '7.0.0'
+gem 'blacklight'
+gem 'hydra', '7.2'
 gem 'active-fedora'
 gem 'httpclient'
 gem 'dotenv'
