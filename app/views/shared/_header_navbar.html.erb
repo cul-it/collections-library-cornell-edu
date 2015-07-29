@@ -1,4 +1,10 @@
-<div id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
+
+  <% if params[:controller] == "high_voltage/pages" %>
+    <% params[:subject] = params[:id].split('/')[0] %>
+    <% search_action_url = '/' + params[:subject] %>
+  <% end %>
+
+  <div id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
 <div class="hero">
   <div class="container">
     <div class="cornell-identity">
@@ -59,20 +65,20 @@
             <% end %>
           </div>
           <div class="site-title">
-            <% if params[:subject]=="nuremberg"%>
+            <% if request.original_url.include?("/nuremberg")%>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
             <h1><a href="<%=root_path%>nuremberg">Donovan Nuremberg Trials Collection</a></h1>
             <div class="tagline">Nuremberg trial transcripts and documents from the collection of General William J. Donovan</div>
-            <% elsif params[:subject]=="trial"%>
+            <% elsif request.original_url.include?("/trial")%>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
             <h1><a href="<%=root_path%>trial">Trial Pamphlets Collection</a></h1>
             <div class="tagline">Contemporary accounts of trials from the 1600s to 1800s</div>
-            <% elsif params[:subject]=="scottsboro"%>
+            <% elsif request.original_url.include?("/scottsboro")%>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
             <h1><a href="<%=root_path%>scottsboro">Scottsboro Trials Collection</a></h1>
             <div class="tagline">Digitized copies of briefs, motions and other trial documents concerning the Scottsboro Trials
             </div>
-            <% elsif params[:subject]=="liberian" %>
+            <% elsif request.original_url.include?("/liberian") %>
             <div class="collections-link"><a href="<%=root_path%>">Law Collections</a></div>
             <h1><a href="<%=root_path%>liberian">Liberian Law Collection</a></h1>
             <div class="tagline">The creation and foundation of Liberia
@@ -87,10 +93,6 @@
     </section>
   </div>
   <% unless params[:controller] == 'catalog' && params[:subject].nil? && params[:action] == 'index'%>
-  <% if params[:controller] == "high_voltage/pages" %>
-    <% params[:subject] = params[:id].split('/')[0] %>
-    <% search_action_url = '/' + params[:subject] %>
-  <% end %>
   <section class="search-bar">
     <div class="container">
       <div class="row">

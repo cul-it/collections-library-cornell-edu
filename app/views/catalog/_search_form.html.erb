@@ -1,3 +1,5 @@
+
+
 <% if params[:subject]=="nuremberg"%>
   <h2>Search Donovan Nuremberg Trials Collection</h2>
 <% elsif params[:subject]=="trial"%>
@@ -10,10 +12,8 @@
   <h2>Search Collection</h2>
 <% end %>
 
-<% if params[:controller] == "high_voltage/pages" %>
-  <% params[:subject] = params[:id].split('/')[0] %>
-<% end %>
-  <% search_action_url = '/' + params[:subject] %>
+
+<% search_action_url = '/' + params[:subject] %>
 
 
 <%= form_tag search_action_url, :method => :get, :class => 'search-query-form form-inline clearfix' do %>

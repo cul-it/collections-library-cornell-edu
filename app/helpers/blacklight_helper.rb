@@ -129,7 +129,6 @@ def digital_collection?(subject)
   PREFIXES.each do |key,value|
     if subject.include? key
       return true
-      break
     end 
   end
 end
