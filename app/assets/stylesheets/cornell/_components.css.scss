@@ -36,6 +36,9 @@
 	color: $dark-gray;
 }
 .sidebar {
+	.nav {
+		margin-bottom: 2em;
+	}
 	.nav > li > a {
 		padding: 5px 15px 5px 0;
 		display: inline-block;
