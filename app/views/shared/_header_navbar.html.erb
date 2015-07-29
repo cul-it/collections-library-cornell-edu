@@ -17,8 +17,8 @@
           </div>
           <div class="mobile-nav visible-xs">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Menu</span>
-            <i class="fa fa-bars"></i>
+              <span class="sr-only">Menu</span>
+              <i class="fa fa-bars"></i>
             </button>
           </div>
         </div>
@@ -88,17 +88,31 @@
   </div>
   <% unless params[:controller] == 'catalog' && params[:subject].nil? && params[:action] == 'index'%>
   <% if params[:controller] == "high_voltage/pages" %>
-<% params[:subject] = params[:id].split('/')[0] %>
-<% search_action_url = '/' + params[:subject] %>
-<% end %>
+    <% params[:subject] = params[:id].split('/')[0] %>
+    <% search_action_url = '/' + params[:subject] %>
+  <% end %>
   <section class="search-bar">
     <div class="container">
       <div class="row">
         <div class="clearfix searchbar" id="searchbar">
           <% unless params[:controller] == 'bookmarks' || params[:controller] == 'search_history'%>
           <% unless digital_collection?(params[:subject]) != true %>
-          <%= render_search_bar  %>
+            <%= render_search_bar  %>
           <% end %> 
+          <% end %>
+          <% if params[:controller] == 'bookmarks' || params[:controller] == 'search_history' %>
+            <div class="dropdown">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Search collection
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="/nuremberg">Donovan Nuremberg Trials</a></li>
+                <li><a href="/liberian">Liberian Law</a></li>
+                <li><a href="/scottsboro">Scottsboro Trials</a></li>
+                <li><a href="/trials">Trial Pamphlets</a></li>
+              </ul>
+            </div>
           <% end %>
 
         </div>
