@@ -11,7 +11,7 @@
 		    |
 		    <% end %>
 		    <%= item_page_entry_info %> 
-		    <% if (link_to_previous_document @previous_document).present? %>|
+		    <% if (link_to_next_document @next_document).present? %>|
 		    <%= link_to_next_document @next_document %>
 		    <% end %>
 
