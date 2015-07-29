@@ -325,8 +325,6 @@ GEM
       mime-types
       nokogiri
       rest-client
-    rufus-scheduler (3.0.9)
-      tzinfo
     rvm-capistrano (1.5.6)
       capistrano (~> 2.15.4)
     sass (3.4.16)
@@ -414,7 +412,6 @@ DEPENDENCIES
   mysql
   rails (= 4.0.0)
   rspec-rails
-  rufus-scheduler (= 3.0.9)
   rvm-capistrano
   sass-rails (= 5.0.1)
   sdoc
