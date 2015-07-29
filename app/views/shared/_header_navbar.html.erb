@@ -96,9 +96,11 @@
       <div class="row">
         <div class="clearfix searchbar" id="searchbar">
           <% unless params[:controller] == 'bookmarks' || params[:controller] == 'search_history'%>
+          <% if params[:subject].present? %>
           <% unless digital_collection?(params[:subject]) != true %>
             <%= render_search_bar  %>
           <% end %> 
+          <% end %>
           <% end %>
           <% if params[:controller] == 'bookmarks' || params[:controller] == 'search_history' %>
             <div class="dropdown">
