@@ -33,4 +33,7 @@ en:
     sms:
       form:
         title: 'Text'
+      text:
+        title: 'Title:'
+        location: 'Here we go'
       success: "Text sent"
