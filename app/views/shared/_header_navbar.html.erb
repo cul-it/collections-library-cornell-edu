@@ -106,10 +106,10 @@
           <% end %>
           <% if params[:controller] == 'bookmarks' || params[:controller] == 'search_history' %>
             <div class="dropdown">
-              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Search collection
+              <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="collection-dropdown">
+                <i class="fa fa-search"></i>Search a collection
                 <span class="caret"></span>
-              </button>
+              </a>
               <ul class="dropdown-menu" aria-labelledby="dLabel">
                 <li><a href="/nuremberg">Donovan Nuremberg Trials</a></li>
                 <li><a href="/liberian">Liberian Law</a></li>
