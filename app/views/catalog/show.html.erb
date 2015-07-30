@@ -6,6 +6,7 @@
 <div class="row">
   <div id="content" class="show-document">
 
+
     <%# display if it's a book -%>
     <% page_turner = pubstmt_to_id(render_document_show_field_value :document => @document, :field => 'pubstmt_idno_tesim') %>
     <% page = 1 %>
@@ -18,7 +19,7 @@
             <a class="btn btn-info" href="http://lawcollections-stg.library.cornell.edu/bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><i class="fa fa-book-open"></i>Read document</a>
           </div>
           <div class="pdf-link" data-no-turbolink>
-            <a class="btn btn-info" href="#"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
+            <a class="btn btn-info" href="<%= ENV['STORAGE_URL'] %><%= page_turner %>/datastreams/pdf/content"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
           </div>
           <% end %>
           

@@ -7,7 +7,9 @@
       <span class="blacklight-publisher_uniform_display"><%= render_index_field_value :document => document, :field => 'pubdate_tesim' %></span>
     </div>
     <div class="blacklight-page_turner_link" data-no-turbolink>
-      <a href="/bookreader/<%= page_turner %>/#page/1/mode/1up">Read book</a>
+    <% unless not_digitized?(page_turner) %>
+      <a href="/bookreader/<%= page_turner %>/#page/1/mode/1up">Read document</a> | <a href="<%= ENV['STORAGE_URL'] %><%= page_turner %>/datastreams/pdf/content">Download PDF</a>
+      <% end %>
     </div>
   </div>
 

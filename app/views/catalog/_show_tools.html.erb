@@ -11,9 +11,11 @@
   <div class="panel-body">
     <ul class="nav">
       <%= render_show_doc_actions @document do |config, inner| %>
+      <% if inner.include? "bookmark" %>
         <li class="<%= config.key %>">
           <%= inner %>
         </li>
+       <% end %>
       <% end %>
     </ul>
   </div>
