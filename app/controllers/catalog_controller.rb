@@ -15,35 +15,46 @@ class CatalogController < ApplicationController
 
 
     if params[:subject] == "nuremberg"
-      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Collection"'}
+    blacklight_config.default_solr_params = 
+    { 
+     :fq => 'subject_tesim:"Donovan Nuremberg Trials Collection"',
+
+    :'group.main'=>'true',
+      :group=>'true',
+      :'group.field'=>'book_id_ts',
+      :'group.format'=>'simple',
+      :'group.limit' => 1
+  }
+
 
     elsif params[:subject] == "scottsboro"
-      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Scottsboro Trials Collection"'}
+      blacklight_config.default_solr_params = {:fq => 'subject_tesim:"Scottsboro Trials Collection"'}
 
     elsif params[:subject] == "liberian"
-      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Liberian Law Collection"'}
+      blacklight_config.default_solr_params = {:fq => 'subject_tesim:"Liberian Law Collection"'}
 
     elsif params[:subject] == "trial"
-      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Trial Pamphlets Collection"'}
+      blacklight_config.default_solr_params = {:fq => 'subject_tesim:"Trial Pamphlets Collection"'}
     end
 
 
   end
 
+    config.add_facet_fields_to_solr_request!
 
 
   configure_blacklight do |config|
     config.default_solr_params = {
       :defType => 'edismax',
-      :qf => 'author_timv titlestmt_title_tesim title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi',
       :qt => 'search',
       :fl => '*,score',
-      :fq => 'active_fedora_model_ssi:Book',
-      :rows => 10
-
+      :rows => 10,
+      :qf => 'author_tesim title_ssi book_id_ts id all_text_timv active_fedora_model_ssi book_title_tesim image_ocr_tesim',
     }
 
     # solr field configuration for search results/index views
+    config.index.group = true
+    config.index.group_field = 'book_id_ts'
     config.index.title_field = 'title_tesim'
     config.index.display_type_field = 'has_model_ssim'
     config.index.thumbnail_field = 'image_tesim'
@@ -91,7 +102,8 @@ class CatalogController < ApplicationController
     config.add_facet_field 'subject_tesim', :label => 'Collection', :limit => 5, :show => false
     config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
-    config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => 5, :show => true
+    config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => true, sort: 'index'
+    config.add_facet_fields_to_solr_request!
 
 
 
@@ -118,13 +130,16 @@ class CatalogController < ApplicationController
     #    config.add_index_field solr_name('lc_callnum', :stored_searchable, type: :string), :label => 'Call number:'
 
     #    config.add_index_field solr_name('publisher', :stored_searchable, type: :string), :label => 'Publisher:'
+
+        config.add_index_field 'book_id_ts', :label => 'book id:'
+
     config.add_index_field 'publisher', :label => 'Publisher:'
     #    config.add_index_field solr_name('book_publisher', :stored_searchable, type: :string), :label => 'Book Publisher:'
     config.add_index_field 'book_publisher', :label => 'Book Publisher:'
     #    config.add_index_field solr_name('pubdate', :stored_searchable, type: :string), :label => 'Published:'
     config.add_index_field 'pubdate', :label => 'Published:'
     #    config.add_index_field solr_name('image_ocr', :stored_searchable, type: :string), :label => ' ', :highlight => true
-    config.add_index_field 'image_ocr', :label => ' ', :highlight => true
+    config.add_index_field 'image_ocr_tesim',:label => 'text'
     #    config.add_index_field solr_name('book_title', :stored_searchable, type: :string), :label => 'Book Title:'
     config.add_index_field 'book_title', :label => 'Book Title:'
     #    config.add_index_field solr_name('book_author', :stored_searchable, type: :string), :label => 'Book Author:'
@@ -168,13 +183,16 @@ class CatalogController < ApplicationController
     # solr request handler? The one set in config[:default_solr_parameters][:qt],
     # since we aren't specifying it otherwise.
 
-    config.add_search_field 'all_fields', :label => 'All Fields'
+    #config.add_search_field 'all_text_timv', :label => 'Full Text'
     #    config.add_search_field 'pubdate', :label => 'Pub Date'
 
 
     # Now we see how to over-ride Solr request handler defaults, in this
     # case for a BL "search field", which is really a dismax aggregate
     # of Solr search fields.
+
+ config.add_search_field('all_text_timv', label: 'Full Text', include_in_advanced_search: false) 
+
 
 
     config.add_search_field('title') do |field|

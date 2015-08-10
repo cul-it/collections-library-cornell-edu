@@ -15,6 +15,7 @@
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
           <% unless not_digitized?(params[:id]) %>
 
+
           <div class="reader-link" data-no-turbolink>
             <a class="btn btn-info" href="http://lawcollections-stg.library.cornell.edu/bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><i class="fa fa-book-open"></i>Read document</a>
           </div>
@@ -114,6 +115,16 @@
               <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'abstract_tesim'%></dd>
 
               <% end %>
+
+              <% if (render_document_show_field_value :document => @document, :field => 'image_ocr_tesim').present? %>
+
+            <dt class="blacklight-abstract-label">Page text:</dt>
+              <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'image_ocr_tesim', :highlight => 'true'%></dd>
+
+              <% end %>
+
+
+
 
               <% if (render_document_show_field_value :document => @document, :field => 'keywords_tesim').present? %>
               <dt class="blacklight-keywords-label">Keywords:</dt>
