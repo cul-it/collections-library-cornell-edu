@@ -15,7 +15,7 @@ class CatalogController < ApplicationController
 
 
     if params[:subject] == "nuremberg"
-      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Collection"'}
+      blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Trials Collection"'}
 
     elsif params[:subject] == "scottsboro"
       blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Scottsboro Trials Collection"'}
@@ -83,11 +83,11 @@ class CatalogController < ApplicationController
 
     config.add_facet_field 'active_fedora_model_ssi', :label => 'Format', :limit => 3 , :show => false
     config.add_facet_field 'author_tesim', :label => 'Author', :limit => 5
-    config.add_facet_field 'pubdate_tesim', :label => 'Date'
+    config.add_facet_field 'pubdate_tesim', :label => 'Publication Date', :limit => 5
     config.add_facet_field 'image_date_tesim', :label => 'Image Date', :limit => 5
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
-    config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
+    config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5, :show => false
     config.add_facet_field 'subject_tesim', :label => 'Collection', :limit => 5, :show => false
     config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
@@ -149,6 +149,7 @@ class CatalogController < ApplicationController
     ##    config.add_show_field solr_name('published_vern', :stored_searchable, type: :string), :label => 'Published:'
     ##    config.add_show_field solr_name('lc_callnum', :stored_searchable, type: :string), :label => 'Call number:'
     ##    config.add_show_field solr_name('isbn', :stored_searchable, type: :string), :label => 'ISBN:'
+    config.add_show_field 'keywords_tesim', :label => 'Keywords', :link_to_search => true
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields

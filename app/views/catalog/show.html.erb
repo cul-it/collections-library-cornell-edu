@@ -16,7 +16,7 @@
           <% unless not_digitized?(params[:id]) %>
 
           <div class="reader-link" data-no-turbolink>
-            <a class="btn btn-info" href="http://lawcollections-stg.library.cornell.edu/bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><i class="fa fa-book-open"></i>Read document</a>
+            <a class="btn btn-info" href="http://lawcollections-stg.library.cornell.edu/bookreader/<%= page_turner %>/#page/<%= page %>/mode/2up"><i class="fa fa-book-open"></i>Read document online</a>
           </div>
           <div class="pdf-link" data-no-turbolink>
             <a class="btn btn-info" href="<%= ENV['STORAGE_URL'] %><%= page_turner %>/datastreams/pdf/content"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
@@ -42,7 +42,6 @@
 
           <% @page_title = render_document_show_field_value :document => @document, :field => 'titlestmt_title_tesim' %>
           <%#= render_document_heading(:h2).html_safe %>
-          <div class="document"> <%= render_document_partial @document, :show %> </div>
           <dl class="dl-horizontal">
             <dt class="blacklight-publication-info-label">Author:</dt>
             <dd class="blacklight-author_display"><%= render_document_show_field_value :document => @document, :field => 'author_tesim'%> </dd>
