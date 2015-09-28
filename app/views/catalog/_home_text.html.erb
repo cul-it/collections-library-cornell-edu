@@ -4,10 +4,21 @@
 	<% if current_page?('/nuremberg') %>
 		<div class="collection-text">
 			<p>The Donovan Nuremberg Trials collection consists of nearly 150 bound volumes of Nuremberg trial transcripts and documents from the personal archives of General William J. Donovan (1883-1959). The Donovan papers contain both original statements from the defendants in German and typed translations in English prepared by the Allies.</p>
-			<div class="featured-item">
-				<h2>Featured document</h2> 
-				<img src="http://hydrastg.library.cornell.edu/fedora/get/nur:01134/thumbnailImage" class="img-thumbnail img-responsive" alt="Cover Page to the Analysis of Hitler's Personality" />
-				<p><a href="/nuremberg/analysis">Analysis of the Personality of Adolph Hitler</a></p>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="featured-item">
+						<h2>Featured document</h2> 
+						<a href="/nuremberg/analysis"><img src="http://hydrastg.library.cornell.edu/fedora/get/nur:01134/thumbnailImage" class="img-thumbnail img-responsive" alt="Cover Page to the Analysis of Hitler's Personality"></a>
+						<p><a href="/nuremberg/analysis">Analysis of the Personality of Adolph Hitler</a></p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="featured-item">
+						<h2>Video</h2> 
+						<a href="https://www.cornell.edu/video/wild-bill-donovans-nuremberg-legacy"><img src="/assets/cornell/nur-video.jpg" class="img-thumbnail img-responsive" alt="Still image from Wild Bill Donovan's Nuremberg Legacy video"></a>
+						<p><a href="https://www.cornell.edu/video/wild-bill-donovans-nuremberg-legacy">Wild Bill Donovan's Nuremberg Legacy</a><br><small>(via CornellCast)</small></p>
+					</div>
+				</div>
 			</div>
 		</div>
 	<% elsif current_page?('/trial') %>
