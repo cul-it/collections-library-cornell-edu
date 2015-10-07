@@ -34,11 +34,9 @@ class CatalogController < ApplicationController
 
   configure_blacklight do |config|
     config.default_solr_params = {
-      :defType => 'edismax',
-      :qf => 'author_timv titlestmt_title_tesim title_timv pubdate_timv subject_tesim publisher_timv vol_tesim image_ocr_timv active_fedora_model_ssi',
-      :qt => 'search',
+      :defType => 'dismax',
       :fl => '*,score',
-      :fq => 'active_fedora_model_ssi:Book',
+      :qf => 'all_text_timv^10',
       :rows => 10
 
     }
@@ -169,14 +167,23 @@ class CatalogController < ApplicationController
     # solr request handler? The one set in config[:default_solr_parameters][:qt],
     # since we aren't specifying it otherwise.
 
-    config.add_search_field 'all_fields', :label => 'All Fields'
+    #config.add_search_field 'all_fields', :label => 'All Fields'
+        config.add_search_field('Full Text') do |field|
+      # :solr_local_parameters will be sent using Solr LocalParams
+      # syntax, as eg {! qf=$title_qf }. This is neccesary to use
+      # Solr parameter de-referencing like $title_qf.
+      # See: http://wiki.apache.org/solr/LocalParams
+      field.solr_local_parameters = {
+        :qf => 'all_text_timv',
+        :pf => 'all_text_timv'
+      }
+    end
     #    config.add_search_field 'pubdate', :label => 'Pub Date'
 
 
     # Now we see how to over-ride Solr request handler defaults, in this
     # case for a BL "search field", which is really a dismax aggregate
     # of Solr search fields.
-
 
     config.add_search_field('title') do |field|
       # :solr_local_parameters will be sent using Solr LocalParams
@@ -227,9 +234,9 @@ class CatalogController < ApplicationController
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
     config.add_sort_field 'score desc, pub_date_dtsi desc, title_tesi asc', :label => 'relevance'
-    config.add_sort_field 'pub_date_dtsi desc, title_tesi asc', :label => 'year'
-    config.add_sort_field 'book_author_tesi asc, title_tesi asc', :label => 'author'
-    config.add_sort_field 'title_tesi asc, pub_date_dtsi desc', :label => 'title'
+    config.add_sort_field 'pub_date_dtsi desc', :label => 'year'
+    config.add_sort_field 'book_author_ssi asc', :label => 'author'
+    config.add_sort_field 'title_ssi asc', :label => 'title'
     #    config.add_field_configuration_to_solr_request!
 
     # If there are more than this many search results, no spelling ("did you
