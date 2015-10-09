@@ -11,12 +11,12 @@
     <% page_turner = pubstmt_to_id(render_document_show_field_value :document => @document, :field => 'pubstmt_idno_tesim') %>
     <% page = 1 %>
         <div class="cover" data-no-turbolink>
-          <a href="http://lawcollections-stg.library.cornell.edu//bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/get/<%= page_turner %>/thumbnailImage" class="img-responsive img-thumbnail" alt="Book or page image"></a>
+          <a href="/bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><img src="http://hydrastg.library.cornell.edu/fedora/get/<%= page_turner %>/thumbnailImage" class="img-responsive img-thumbnail" alt="Book or page image"></a>
           <% bibid_display = render_document_show_field_value :document => @document, :field => 'bibid_tesim' %>
           <% unless not_digitized?(params[:id]) %>
 
           <div class="reader-link" data-no-turbolink>
-            <a class="btn btn-info" href="http://lawcollections-stg.library.cornell.edu/bookreader/<%= page_turner %>/#page/<%= page %>/mode/2up"><i class="fa fa-book-open"></i>Read document online</a>
+            <a class="btn btn-info" href="/bookreader/<%= page_turner %>/#page/<%= page %>/mode/2up"><i class="fa fa-book-open"></i>Read document online</a>
           </div>
           <div class="pdf-link" data-no-turbolink>
             <a class="btn btn-info" href="<%= ENV['STORAGE_URL'] %><%= page_turner %>/datastreams/pdf/content"><i class="fa fa-file-pdf-o"></i>Download PDF</a>

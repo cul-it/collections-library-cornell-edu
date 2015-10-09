@@ -4,7 +4,7 @@
     		<% page_turner = pubstmt_to_id(render_index_field_value :document => document, :field => 'pubstmt_idno_tesim')%> 
 
             <%subject = params[:subject] %>
-                  <a href="http://lawcollections-stg.library.cornell.edu//bookreader/<%= page_turner %>/#page/1/mode/2up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/<%= page_turner %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail" alt="Image thumbnail"></a>
+                  <a href="/bookreader/<%= page_turner %>/#page/1/mode/2up"><img src="http://hydrastg.library.cornell.edu/fedora/objects/<%= page_turner %>/datastreams/thumbnailImage/content" class="img-responsive book-cover img-thumbnail" alt="Image thumbnail"></a>
        <div class="document-data" data-no-turbolink >
          <%= render :partial => 'document_header', :locals => { :document => document, :document_counter => document_counter } %>
 
