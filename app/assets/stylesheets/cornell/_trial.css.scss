@@ -30,4 +30,29 @@
 		background: $link-color-trial;
 		color: white !important;
 	}
+	// Award styling
+	.navbar-collapse .nav, #facet-panel-collapse .nav {
+		margin-top: 0;
+		margin-bottom: .5em;
+	}
+	.navbar {
+		margin-bottom: 0;
+	}
+	
+}
+// Trials award
+.award {
+	background: #432905;
+	opacity: 1;
+	color: white;
+	padding: .25em .5em .5em;
+	clear: both;
+	display: inline-block;
+	.label {
+		margin-right: .5em;
+	}
+	a, a:hover {
+		color: white;
+		font-size: 13px;
+	}
 }

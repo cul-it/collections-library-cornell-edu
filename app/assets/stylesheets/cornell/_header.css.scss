@@ -94,24 +94,10 @@
 	border: 0;
 }
 
-
 // MEDIA QUERIES
 // -------------------------
 
-	// /* Extra small devices (phones, up to 480px) */
-	// /* No media query since this is the default in Bootstrap */
-
-	// /* Small devices (tablets, 768px and up) */
-	// @media (min-width: @screen-sm) { ... }
-
-	// /* Medium devices (desktops, 992px and up) */
-	// @media (min-width: @screen-md) { ... }
-
-	// /* Large devices (large desktops, 1200px and up) */
-	// @media (min-width: @screen-lg) { ... }
-
-
-/* Small devices (tablets, 768px and up) */
+// Small devices (tablets, 768px and up)
 @media (min-width: $screen-sm) {
 	.navbar-collapse {
 		.nav {
@@ -121,6 +107,7 @@
 			li {
 				display: inline;
 				float: none;
+				font-size: 14px;
 				a {
 					display: inline;
 					background: inherit;
@@ -164,6 +151,13 @@
 	}
 }
 
-/* Medium devices (desktops, 992px and up) */
+// Medium devices (desktops, 992px and up)
 @media (min-width: $screen-md) {
+	.navbar-collapse {
+		.nav {
+			li {
+				font-size: 16px;
+			}
+		}
+	}
 }

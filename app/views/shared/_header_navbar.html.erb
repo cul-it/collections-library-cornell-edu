@@ -60,6 +60,11 @@
                 <li><a href="/liberian/reports">Subject Index</a></li>
                 <% end %>
               </ul>
+              <% if request.original_url.include?("/trial") %>
+                <div class="award">
+                  <span class="label label-success">Winner</span> <a href="http://www.aallnet.org/mm/Member-Resources/AALLawards/award-llp.html">2013 AALL publication award</a></span>
+                </div>
+              <% end %>
               </div><!--/.navbar-collapse-->
             </div>
             <% end %>
