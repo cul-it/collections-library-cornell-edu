@@ -17,6 +17,7 @@ class CatalogController < ApplicationController
     if params[:subject] == "nuremberg"
       blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Trials Collection"'}
       blacklight_config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
+      blacklight_config.add_show_field 'keywords_tesim', :label => 'Keywords', :link_to_search => true
 
 
     elsif params[:subject] == "scottsboro"
@@ -149,7 +150,7 @@ class CatalogController < ApplicationController
     ##    config.add_show_field solr_name('published_vern', :stored_searchable, type: :string), :label => 'Published:'
     ##    config.add_show_field solr_name('lc_callnum', :stored_searchable, type: :string), :label => 'Call number:'
     ##    config.add_show_field solr_name('isbn', :stored_searchable, type: :string), :label => 'ISBN:'
-    config.add_show_field 'keywords_tesim', :label => 'Keywords', :link_to_search => true
+
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
