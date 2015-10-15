@@ -16,6 +16,8 @@ class CatalogController < ApplicationController
 
     if params[:subject] == "nuremberg"
       blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Donovan Nuremberg Trials Collection"'}
+      blacklight_config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
+
 
     elsif params[:subject] == "scottsboro"
       blacklight_config.default_solr_params = {:fq => 'active_fedora_model_ssi:Book AND subject_tesim:"Scottsboro Trials Collection"'}
@@ -85,7 +87,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'image_date_tesim', :label => 'Image Date', :limit => 5
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
-    config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
+    #config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
     config.add_facet_field 'subject_tesim', :label => 'Collection', :limit => 5, :show => false
     config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
@@ -132,7 +134,7 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
     #config.add_show_field 'title_tesim',  :label => 'Title'
-    
+
 
     ##    config.add_show_field solr_name('title_vern', :stored_searchable, type: :string), :label => 'Title:'
     ##    config.add_show_field solr_name('subtitle', :stored_searchable, type: :string), :label => 'Subtitle:'
