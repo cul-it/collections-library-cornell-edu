@@ -107,6 +107,37 @@
 <% end %>
 
 
+<% if (render_document_show_field_value :document => @document, :field => 'crime_tesim').present? %>
+ <dt class="blacklight-abstract-label">Crime:</dt>
+              <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'crime_tesim'%></dd>
+
+              <% end %>
+
+
+<% if (render_document_show_field_value :document => @document, :field => 'trial_type_tesim').present? %>
+ <dt class="blacklight-abstract-label">Trial type:</dt>
+              <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'trial_type_tesim'%></dd>
+
+              <% end %>
+
+
+<% if (render_document_show_field_value :document => @document, :field => 'document_type_tesim').present? %>
+ <dt class="blacklight-abstract-label">Document type:</dt>
+              <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'document_type_tesim'%></dd>
+
+              <% end %>
+
+<% if (render_document_show_field_value :document => @document, :field => 'geo_location_tesim').present? %>
+ <dt class="blacklight-abstract-label">Location:</dt>
+              <dd class="blacklight-abstract"><%= render_document_show_field_value :document => @document, :field => 'geo_location_tesim'%></dd>
+
+              <% end %>
+
+
+
+
+
+
 <% if (render_document_show_field_value :document => @document, :field => 'abstract_tesim').present? %>
 
             <dt class="blacklight-abstract-label">Abstract:</dt>
