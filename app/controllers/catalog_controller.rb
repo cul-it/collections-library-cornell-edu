@@ -37,10 +37,7 @@ class CatalogController < ApplicationController
 
   configure_blacklight do |config|
     config.default_solr_params = {
-      :defType => 'dismax',
       :fl => '*,score',
-      :qf => 'all_text_timv^10',
-      :rows => 10
 
     }
 
@@ -89,11 +86,16 @@ class CatalogController < ApplicationController
     config.add_facet_field 'image_format_tesim', :label => 'Image Format', :limit => 5 , :show => true
     config.add_facet_field 'image_keyword_tesim', :label => 'Image Keyword', :limit => 5
     #config.add_facet_field 'keywords_tesim', :label => 'Keyword', :limit => 5
+    config.add_facet_field 'trial_type_tesim', :label => 'Trial type', :limit => 5
+    config.add_facet_field 'document_type_tesim', :label => 'Document type', :limit => 5
+    config.add_facet_field 'crime_tesim', :label => 'Crime', :limit => 5
     config.add_facet_field 'subject_tesim', :label => 'Collection', :limit => 5, :show => false
     config.add_facet_field 'lang_tesim', :label => 'Language', :limit => 5
     config.add_facet_field 'witness_tesim', :label => 'Witness', :limit => 5
     config.add_facet_field 'vol_tesim', :label => 'Volume', :limit => 5, :show => true
+    config.add_facet_field 'geo_location_tesim', :label => 'Location', :limit => 5
 
+    config.add_facet_fields_to_solr_request!
 
 
     # Have BL send all facet field names to Solr, which has been the default
@@ -135,8 +137,11 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
     #config.add_show_field 'title_tesim',  :label => 'Title'
+    config.add_show_field 'author_tesim', :label => 'Trial type', :link_to_search => true
 
-
+    config.add_show_field 'trial_type_tesim', :label => 'Trial type', :link_to_search => true
+    config.add_show_field 'document_type_tesim', :label => 'Document type', :link_to_search => true
+    config.add_show_field 'crime_tesim', :label => 'Crime', :link_to_search => true
     ##    config.add_show_field solr_name('title_vern', :stored_searchable, type: :string), :label => 'Title:'
     ##    config.add_show_field solr_name('subtitle', :stored_searchable, type: :string), :label => 'Subtitle:'
     ##    config.add_show_field solr_name('subtitle_vern', :stored_searchable, type: :string), :label => 'Subtitle:'
