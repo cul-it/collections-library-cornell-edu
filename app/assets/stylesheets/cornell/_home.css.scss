@@ -11,6 +11,13 @@
 	.row { 
 		margin-bottom: 1.5em;
 	}
+	h2 {
+		font-size: 24px;
+		margin-top: 1.5em;
+	}
+	h2:first-child {
+		margin-top: 0;
+	}
 }
 
 .bridge {
@@ -66,6 +73,7 @@
 	border-radius: 0;
 	display: inline-block;
 	padding: 5px 10px;
+	font-size: 14px;
 }
 .collection-name {
 	padding: 0 4px;
@@ -88,20 +96,7 @@
 // MEDIA QUERIES
 // -------------------------
 
-	// /* Extra small devices (phones, up to 480px) */
-	// /* No media query since this is the default in Bootstrap */
-
-	// /* Small devices (tablets, 768px and up) */
-	// @media (min-width: @screen-sm) { ... }
-
-	// /* Medium devices (desktops, 992px and up) */
-	// @media (min-width: @screen-md) { ... }
-
-	// /* Large devices (large desktops, 1200px and up) */
-	// @media (min-width: @screen-lg) { ... }
-
-
-/* Small devices (tablets, 768px and up) */
+// Small devices (tablets, 768px and up)
 @media (min-width: $screen-sm) {
 	.collection {
 		margin-bottom: 0;
@@ -117,7 +112,7 @@
 	}
 }
 
-/* Medium devices (desktops, 992px and up) */
+// Medium devices (desktops, 992px and up)
 @media (min-width: $screen-md) {
 	.collection-name {
 		a {
@@ -126,7 +121,7 @@
 	}
 }
 
-/* Large devices (large desktops, 1200px and up) */
+// Large devices (large desktops, 1200px and up)
 @media (min-width: $screen-lg) {
 	.collection-name {
 		a {
