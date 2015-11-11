@@ -16,7 +16,7 @@
           <% unless not_digitized?(params[:id]) %>
 
           <div class="reader-link" data-no-turbolink>
-            <a class="btn btn-info" href="/bookreader/<%= page_turner %>/#page/<%= page %>/mode/2up"><i class="fa fa-book-open"></i>Read document online</a>
+            <a class="btn btn-info" href="/bookreader/<%= page_turner %>/#page/<%= page %>/mode/1up"><i class="fa fa-book-open"></i>Read document online</a>
           </div>
           <div class="pdf-link" data-no-turbolink>
             <a class="btn btn-info" href="<%= ENV['STORAGE_URL'] %><%= page_turner %>/datastreams/pdf/content"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
