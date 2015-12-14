@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02040_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02040_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: U.S. Navy Uniform Regulations / Commander U.S. Naval Forces Germany";
 br.bookAuthor= "John P. Bracken, Lieutenant Commander, U.S.N.R.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Navy uniforms; Navy regulations";
 br.bookUrl  = '/nuremberg/catalog/nur:02040';
 
 // Override the path used to find UI images

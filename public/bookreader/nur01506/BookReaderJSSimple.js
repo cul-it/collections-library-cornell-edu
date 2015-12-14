@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01506_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01506_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Forced Labor / Jews, Persecution of / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Document Room Interrogation Analysis";
 br.bookAuthor= "Lt. Col. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-06";
-br.bookKeyword= "";
+br.bookKeyword= "Reichsrat; Reichstag; Concordat; Poland; Forced labor; Persecution of Jews; Collective responsibility; Nuremberg Laws; Anti-Semitism; Civil rights; Polish Jews";
 br.bookUrl  = '/nuremberg/catalog/nur:01506';
 
 // Override the path used to find UI images

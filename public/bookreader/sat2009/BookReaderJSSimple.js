@@ -255,7 +255,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2009_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2009_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -313,7 +313,7 @@ br.numLeafs = 38;
 br.bookTitle= "Extraordinary trial! Norton v. Viscount Melbourne, for crim. con. damagee; laid at 10,000!!! A full and accurate report of this remarkable trial taken in shorthand by an eminent reporter expressly for this edition. / Caroline Elizabeth Sarah Norton.";
 br.bookAuthor= "Norton, Mrs. Caroline Elizabeth (Sheridan) Sarah.";
 br.bookPub= "London: William Marshall, 1 Holborn Bars., 1836";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2009';
 
 // Override the path used to find UI images

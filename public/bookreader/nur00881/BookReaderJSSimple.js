@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00881_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00881_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Quisling Given a Fair Trial, Says Swedish Press / Russians Prod Finns on War Criminals Question / European Analvsis and News Digest, OWL 24 August 1945";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-24";
-br.bookKeyword= "";
+br.bookKeyword= "Dagens Nvheter; Morgontidningen' Goeteborgs Handelstidning' Norway Denmark; Finland; Traitors; War crimes trials";
 br.bookUrl  = '/nuremberg/catalog/nur:00881';
 
 // Override the path used to find UI images

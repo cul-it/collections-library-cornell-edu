@@ -675,7 +675,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3504_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3504_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -733,7 +733,7 @@ br.numLeafs = 108;
 br.bookTitle= "Trial of Thomas Rector, for the murder of Robert Shepherd. / [Reported by W.J. Hadley]";
 br.bookAuthor= "Rector, Thomas.";
 br.bookPub= "Albany, N.Y.: [s.n.], [1838?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3504';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01474_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01474_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Memorandum of a conversation between Hitler, Ribbentrop and Ciano at Obersalzberg August 13, 1939.";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1939-08-13";
-br.bookKeyword= "";
+br.bookKeyword= "Military strategy; Danzig; Poland; Italy; Abyssinia; Spain; Albania; Axis Powers; Western democracies; European political situation; German-Italian relations; Power politics";
 br.bookUrl  = '/nuremberg/catalog/nur:01474';
 
 // Override the path used to find UI images

@@ -189,7 +189,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1001_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1001_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -247,7 +247,7 @@ br.numLeafs = 27;
 br.bookTitle= "Speech of Thomas A. Jenckes, of Providence, upon the resolution to annul the decree of the Supreme Court, in the case, Ives vs. Hazard et al. : delivered in the House of Representatives of Rhode Island, on the 23d and 24th day of February, 1859.";
 br.bookAuthor= "Jenckes, Thomas A. (Thomas Allen), 1818-1875.";
 br.bookPub= "Providence, R.I.: Knowles, Anthony &amp; Co., 1859";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1001';
 
 // Override the path used to find UI images

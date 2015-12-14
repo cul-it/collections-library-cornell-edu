@@ -1035,7 +1035,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3901_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3901_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1093,7 +1093,7 @@ br.numLeafs = 168;
 br.bookTitle= "The correct, full and impartial report of the trial of Rev. Ephraim K. Avery, before the Supreme Judicial Court of the State of Rhode Island, at Newport, May 6, 1833, for the murder of Sarah M. Cornell.";
 br.bookAuthor= "Avery, Ephraim K., d. 1869.";
 br.bookPub= "Providence: Marshall and Brown, [c1833]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3901';
 
 // Override the path used to find UI images

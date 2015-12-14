@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00658_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00658_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "01 Intermediate Interrogation Report No. 4 / OKW Amtsgruppe Ausland and Personalities Connected with Aussendienststelle Wien  / Headquarters / United States Forces European Theater / Military Intelligence Service Center / APO 757 / CONFIDENTIAL";
 br.bookAuthor= "Arthur D.McKibbin";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-15";
-br.bookKeyword= "";
+br.bookKeyword= "OKW; Amtsgruppe Ausland; Aussendienststelle Wien; Foreign Office";
 br.bookUrl  = '/nuremberg/catalog/nur:00658';
 
 // Override the path used to find UI images

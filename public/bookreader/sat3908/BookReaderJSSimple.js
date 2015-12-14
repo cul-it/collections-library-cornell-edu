@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3908_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3908_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "Account of the short life and ignominious death of Stephen Merrill Clark : who was executed at Salem on Thursday the tenth day of May, 1821, at the early age of 16 years and 9 months, for the crime of arson.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Salem [Mass.]: T.C. Cushing, 1821";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3908';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01194_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01194_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Office Memorandum / To: Lt. Commander O'Malley / From: Robert Eisenberg / Subject: Interrogation of Hermann Rochling / SECRET";
 br.bookAuthor= "Robert Eisenberg";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-17";
-br.bookKeyword= "";
+br.bookKeyword= "Roechling Combine; Saarland; Saar Basin; Steel; Saar Steel industry; Armaments; Westwall fortifications; Ring Iron Industry; Economic Group Iron Industry; Reichsvereinigung Iron Industry; Slave labor; Spoliation of foreign property; LG. Farben; German industrialists; Hermann Goering Works";
 br.bookUrl  = '/nuremberg/catalog/nur:01194';
 
 // Override the path used to find UI images

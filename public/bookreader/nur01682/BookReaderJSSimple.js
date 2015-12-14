@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01682_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01682_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "Memorandum on scientists suspected as war criminals / CONFIDENTIAL";
 br.bookAuthor= "Franz Weidenreich, M. D.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-09";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi ideology; Nazi racial theory; German anthropologists; War criminals; Concentration camps; Exterminations; Inferior persons; Unfit persons; Human Selection and Racial Hygiene; Sterilization; Racial hygiene; German master-race; Heredity of Man; \"The Conception of the Nationalistic State in its Biological Aspect\"; German racial laws";
 br.bookUrl  = '/nuremberg/catalog/nur:01682';
 
 // Override the path used to find UI images

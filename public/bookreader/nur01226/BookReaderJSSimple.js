@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01226_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01226_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum: / Observations and impressions of the Prison Population concerning the incident of Dr. Robert Ley's death, report by Lt. Colonel Rene H. Juchli / Headquarters / 6850th Internal Security Detachment / International Military Tribunal / APO 403 U.S. Araiy";
 br.bookAuthor= "Rene H. Juchli / Lt. Colonel / Medical Corps";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-02";
-br.bookKeyword= "";
+br.bookKeyword= "Ley's suicide; Ley's death; Reactions to Ley's suicide";
 br.bookUrl  = '/nuremberg/catalog/nur:01226';
 
 // Override the path used to find UI images

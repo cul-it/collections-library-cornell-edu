@@ -759,7 +759,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2604_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2604_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -817,7 +817,7 @@ br.numLeafs = 122;
 br.bookTitle= "An authentic and irrefutable statement of Mrs. Sinclair Sutherland's unfortunate intimacy with Mr. Whichcote Turner, involving a narrative both interesting and distressing.";
 br.bookAuthor= "Sutherland, Lucy Sinclair.";
 br.bookPub= "London: B. Clarke, Printer, [1810?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2604';
 
 // Override the path used to find UI images

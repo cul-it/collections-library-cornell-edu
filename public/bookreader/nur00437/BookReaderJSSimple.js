@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00437_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00437_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Office of Theater Judge Advocate / My dear Mr. Justice  Jackson / The United States Chief of Counsel for Prosecution of Axis  Criminality / APO 403 / U.S. Army";
 br.bookAuthor= "Ed C. Betts, Brigadier General, U.S.A., Theater Judge  Advocate";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-19";
-br.bookKeyword= "";
+br.bookKeyword= "JCS 1023/10; Executive Order No. 9547; Criminal  organizations; Nazi organizations; Theater Commander; International Military  Tribunal; War Crimes Branch; U.S. Chief of Counsel; Special Prosecutor for  Nazi Crimes; Military Government Courts; United States Occupational Zone; Prosecution strategy; Trial preparation";
 br.bookUrl  = '/nuremberg/catalog/nur:00437';
 
 // Override the path used to find UI images

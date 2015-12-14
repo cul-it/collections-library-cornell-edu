@@ -891,7 +891,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1501_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1501_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -949,7 +949,7 @@ br.numLeafs = 144;
 br.bookTitle= "A full report of all the proceedings on the trial of the Rev. William Jackson, at the bar of His Majesty's Court of King's Bench, Ireland, on an indictment for high treason : collected from the notes of William Ridgeway, William Lapp, and John Schoales, Esqrs. barristers at law.";
 br.bookAuthor= "Jackson, William, 1737?-1795.";
 br.bookPub= "Dublin: Printed by J. Exshaw, 1795";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1501';
 
 // Override the path used to find UI images

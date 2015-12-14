@@ -579,7 +579,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0602_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0602_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -637,7 +637,7 @@ br.numLeafs = 92;
 br.bookTitle= "The claims of her majesty Caroline Amerlia Elizabeth, Queen of England, to be crowned with her royal husband King George IV.";
 br.bookAuthor= "Caroline, Queen, consort of George IV, King of Great Britain";
 br.bookPub= "London: Printed and published by T. Dolby, 1821";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0602';
 
 // Override the path used to find UI images

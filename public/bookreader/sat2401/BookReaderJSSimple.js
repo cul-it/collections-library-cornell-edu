@@ -195,7 +195,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2401_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2401_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -253,7 +253,7 @@ br.numLeafs = 28;
 br.bookTitle= "The trials of the twelve traitors W. Cundell, C. Parker, J. Tweedle, Charles Bird, John Quigley, John Smith, G. Armstrong, S. M'Farlane, J. Teaster, James Fibbs, Philip Lethay, Noah Francis for high treason : charged with being found in arms, in French uniform, fighting against their king and country, in the Isle of France, and other traiterous acts, before a Special Commission, at the Sessions House, Newington, Monday, Feb. 10, and following days : including the interesting charge to the grand jury, the speeches of the counsellors, and the affecting address of the Lord Chief Baron in passing the awful sentences";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "[Southwark (London, England)]: Kemmish and Sgn [sic], 17, King Street, Borough : Stevens and Co., Borough Road, 1812";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2401';
 
 // Override the path used to find UI images

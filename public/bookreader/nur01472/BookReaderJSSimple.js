@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01472_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01472_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Letter from Hitler to Mussolini, Dated October 28,1941 / General Headquarters of Der Fuhrer";
 br.bookAuthor= "Adolf Hitler";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-10-28";
-br.bookKeyword= "";
+br.bookKeyword= "Attack on Russia; Military strategy; Bolshevism; Raw materials; Norway; Turkey; German Tenth Air Corps; Italian Air Force; Greece; Malta; Crete; German Air Force; Sicily; Sardinia";
 br.bookUrl  = '/nuremberg/catalog/nur:01472';
 
 // Override the path used to find UI images

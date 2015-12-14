@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1913_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1913_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -421,7 +421,7 @@ br.numLeafs = 56;
 br.bookTitle= "The trial of Richard Vining Perry, esq. for the forcible abduction, or stealing of an heiress, from the boarding-school of Miss Mills, in the city of Bristol; with all the arguments of the Counsel, before Vicary Gibbs, esq. the recorder thereof. On Monday the 14th of April, 1794.";
 br.bookAuthor= "Perry, Richard Vining, defendant.";
 br.bookPub= "Bristol: Printed for and sold by all booksellers in town and country, 1794";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1913';
 
 // Override the path used to find UI images

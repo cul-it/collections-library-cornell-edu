@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00816_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00816_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Information supplied by Franz Peter Weixler / GOERING CASE";
 br.bookAuthor= "Franz Peter Weixler";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-11";
-br.bookKeyword= "";
+br.bookKeyword= "People's Court; Crete; War crimes; Crimes against humanity; Reprisals; Crimes against civilians; German parachutists; Photographic evidence";
 br.bookUrl  = '/nuremberg/catalog/nur:00816';
 
 // Override the path used to find UI images

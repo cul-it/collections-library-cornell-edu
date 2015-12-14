@@ -1071,7 +1071,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2413_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2413_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1129,7 +1129,7 @@ br.numLeafs = 174;
 br.bookTitle= "Neutral rights, or, An impartial examination of the right of search of neutral vessels under convoy: and of a judgment pronounced by the English court of admiralty, the 11th June, 1799, in the case of the Swedish convoy : with some additions and corrections / by Mr. J.F.W. Schlegel ; translated from the French.";
 br.bookAuthor= "Schlegel, J. F. W. (Johan Friderich Wilhelm), 1765-1836.";
 br.bookPub= "Philadelphia: Printed at the Aurora office, 1801";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2413';
 
 // Override the path used to find UI images

@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1710_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1710_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -469,7 +469,7 @@ br.numLeafs = 64;
 br.bookTitle= "Complete report of the trial of Edward O. Coburn, and Benjamin F. Dalton : for the manslaughter of William Sumner / by the reporter of the Times.";
 br.bookAuthor= "Coburn, Edward Otis, b. 1830, defendant.";
 br.bookPub= "Boston: Burnham, Federhen &amp; Co., [1856]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1710';
 
 // Override the path used to find UI images

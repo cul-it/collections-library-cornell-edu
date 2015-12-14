@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1916_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1916_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "Josiah Burnham : his trial and execution for murder : with sermon preached at Haverhill, N.H. / by the Rev. David Sutherland at time and place of execution August 12, 1806.";
 br.bookAuthor= "Whitcher, William F. (William Frederick), 1845-1918.";
 br.bookPub= "Woodsville, N.H.:  News Book and Job Print, 1909";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1916';
 
 // Override the path used to find UI images

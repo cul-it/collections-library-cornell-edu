@@ -141,7 +141,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00423_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00423_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -199,7 +199,7 @@ br.numLeafs = 19;
 br.bookTitle= "Nazi Concentration Camps / A  Documentary Motion Picture / Document No. 2430-PS / Submitted on behalf of  U.S. Chief of Counsel";
 br.bookAuthor= "James B. Donovan, Commander,  USNR, et al.; the author of the film's narration is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-01-01";
-br.bookKeyword= "";
+br.bookKeyword= "Concentration camps; Leipsig; Penig; Ohrdruf; Hadamar;  Breendonck; Hannover; Arnstadt; Nordhausen; Mauthausen; Buchenwald; Dachau;  Bergen-Belsen; Gas chambers; Atrocities; Mass murder; Torture; Medical  experiments; War crimes; Crimes against humanity; Photographic evidence;  Documentary films; Atrocity films; U.S. Army Signal Corps; Infectious  disease; Political prisoners; Morphine injections; Extermination camps";
 br.bookUrl  = '/nuremberg/catalog/nur:00423';
 
 // Override the path used to find UI images

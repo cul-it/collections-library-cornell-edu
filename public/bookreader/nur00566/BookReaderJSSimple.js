@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00566_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00566_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Interrogation by Capt. 0. N. Nordon ";
 br.bookAuthor= "Anni Winter";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-06";
-br.bookKeyword= "";
+br.bookKeyword= "Responsibility; Hess's flight to England; Relation to Hitler; Nazi Party; Nazi High Command";
 br.bookUrl  = '/nuremberg/catalog/nur:00566';
 
 // Override the path used to find UI images

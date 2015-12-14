@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2114_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2114_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Trial of Benjamin Shaw, John Alley Junior, Jonathan Buffum, and Preserved Sprague, for riots and disturbance of public worship, in the society of Quakers, at Lynn, Massachusetts, before the Court of Common Pleas, held at Ipswich, Massachusetts, March 16th";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Salem: Cushing &amp; Appleton, 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2114';
 
 // Override the path used to find UI images

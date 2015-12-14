@@ -477,7 +477,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3306_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3306_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -535,7 +535,7 @@ br.numLeafs = 75;
 br.bookTitle= "Testimony relating to expenditures in the Department of Justice: The Ottoman Case. (Mis. Doc. 38, Part 3.)";
 br.bookAuthor= "48th Congress, House of Representatives";
 br.bookPub= "Washingtom, D.C.: United States Congress, House of Representatives, 1884";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3306';
 
 // Override the path used to find UI images

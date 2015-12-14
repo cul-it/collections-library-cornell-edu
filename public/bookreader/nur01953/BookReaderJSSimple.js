@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01953_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01953_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "O.C.C. Information Bulletin / Number 46 / Office of U.S. Chief of Counsel / APO 403 / U.S. Army / Administration Division";
 br.bookAuthor= "Arthur A. Kimball, Lt. Col., GSC, Chief, Adm. Div";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-24";
-br.bookKeyword= "";
+br.bookKeyword= "RCA Communication Service; Documentation Division lectures; Special Services trips: Munich and Dachau, Bayreuth, Pottenstein";
 br.bookUrl  = '/nuremberg/catalog/nur:01953';
 
 // Override the path used to find UI images

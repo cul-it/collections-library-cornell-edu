@@ -483,7 +483,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3315_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3315_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -541,7 +541,7 @@ br.numLeafs = 76;
 br.bookTitle= "Life, trial, and execution of James Blomfield Rush of Potash farm, near Wymondham for the murder of Isaac Jermy, Esq., and Jermy Jermy, Esq., his son, at their residence, Stanfield Hall, Norfolk : with portrait, correct views, and plans of Stanfield Hall";
 br.bookAuthor= "Rush, James Blomfield, d. 1849";
 br.bookPub= "Norwich and London: Sold at the Office of the Norfolk News, Exchange Street; also by J. Fletcher, and Jarrold and Sons; James Gilbert, 49, Paternoster Row; and Jarrold and Sons, St. Paul's Church yard., 1849";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3315';
 
 // Override the path used to find UI images

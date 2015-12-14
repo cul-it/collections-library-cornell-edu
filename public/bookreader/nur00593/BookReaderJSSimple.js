@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00593_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00593_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Oath of Reich Officials and of German Soldiers.  / Translation of Document 2061-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "Hitler; Flick; Blomberg; the translator is Fred Niebergall, 2nd Lt., Inf., 0-133";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-15";
-br.bookKeyword= "";
+br.bookKeyword= "Oath; Law of attestation; Public officials; German Reich";
 br.bookUrl  = '/nuremberg/catalog/nur:00593';
 
 // Override the path used to find UI images

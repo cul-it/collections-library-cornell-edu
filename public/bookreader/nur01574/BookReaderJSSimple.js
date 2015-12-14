@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01574_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01574_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Witness: Seyss-Inquart / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Document Room Interrogation Analysis";
 br.bookAuthor= "Mr. Dodd.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-06";
-br.bookKeyword= "";
+br.bookKeyword= "Anschluss; Aggressive war; Austrian Nazis; Austrian Cabinet; Conference with Dolfuss (1934)";
 br.bookUrl  = '/nuremberg/catalog/nur:01574';
 
 // Override the path used to find UI images

@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00571_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00571_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "Minutes of a Conference on 23 May 39 ";
 br.bookAuthor= "(Sgd) Schmundt, Lt Col. (Hitler's Adjutant)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1939-05-23";
-br.bookKeyword= "";
+br.bookKeyword= "Germany; Poland; England; France; Italy; Japan; Belgium; Holland; Russia; Plan of attack; Ruhr Basin; Food supply; Living space; Economic problems";
 br.bookUrl  = '/nuremberg/catalog/nur:00571';
 
 // Override the path used to find UI images

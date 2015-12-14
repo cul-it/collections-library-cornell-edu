@@ -345,7 +345,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2404_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2404_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -403,7 +403,7 @@ br.numLeafs = 53;
 br.bookTitle= "Speech of David Paul Brown : before the court of sessions in New York, upon the trial of Dr. Frost for manslaughter, December 13, 1837.";
 br.bookAuthor= "Brown, David Paul, 1795-1872.";
 br.bookPub= "Philadelphia: Robb, Pile &amp; M'Elroy, printers, 1859";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2404';
 
 // Override the path used to find UI images

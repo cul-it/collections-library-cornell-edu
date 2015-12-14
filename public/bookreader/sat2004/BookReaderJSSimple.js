@@ -1095,7 +1095,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2004_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2004_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1153,7 +1153,7 @@ br.numLeafs = 178;
 br.bookTitle= "Forty burglaries of the years 1863-4-5 : the hearing before the magistrates of some of the burglars, and their subsequent trial and conviction : the trial Walker v. Milner, in the court of the Queen's Bench, February 14th and 15th, 1866 ... / by George Price";
 br.bookAuthor= "Price, George.";
 br.bookPub= "London: E. &amp; F.N. Spon, 1866";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2004';
 
 // Override the path used to find UI images

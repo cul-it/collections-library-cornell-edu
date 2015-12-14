@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02019_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02019_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -139,7 +139,7 @@ br.numLeafs = 9;
 br.bookTitle= "Certified OCC Translations of Decrees from the Reichsgesetzblatt / Office of U. S. Chief of Counsel for the Prosecution of Axis Criminality";
 br.bookAuthor= "Robert G. Storey";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-18";
-br.bookKeyword= "";
+br.bookKeyword= "OCC translations; Document Room; PS series documents; Civil Service; Jews; Oaths; Economics; Citizenship; Amnesty; Compulsory service";
 br.bookUrl  = '/nuremberg/catalog/nur:02019';
 
 // Override the path used to find UI images

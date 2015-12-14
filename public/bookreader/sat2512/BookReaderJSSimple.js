@@ -741,7 +741,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2512_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2512_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -799,7 +799,7 @@ br.numLeafs = 119;
 br.bookTitle= "Statement of facts / by J. Benjafield, esq. Together with the trial of the printer and proprietor of the County Chronicle, for a libel; before Lord Ellenborough, and A special jury; at Guildhall, London, on the 22d Dec. 1812. Taken, in short hand, by Mr. Gurney.";
 br.bookAuthor= "Benjafield, J. (John)";
 br.bookPub= "London: Published and sold by J. Rackhami, Bury St. Edmund's., 1813";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2512';
 
 // Override the path used to find UI images

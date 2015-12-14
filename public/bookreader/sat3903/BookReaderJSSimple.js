@@ -339,7 +339,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3903_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3903_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -397,7 +397,7 @@ br.numLeafs = 52;
 br.bookTitle= "The trial of Reuben Crandall, M. D., charged with publishing and circulating seditious and incendiary papers, etc.,";
 br.bookAuthor= "Crandall, Reuben, 1805?-1838, defendant.";
 br.bookPub= "Washington city: Printed for the proprietors, 1836";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3903';
 
 // Override the path used to find UI images

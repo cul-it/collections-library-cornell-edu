@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4202_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4202_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "Correspondence between Rev. Nehemiah Adams and Rev. J.H. Fairchild : with notes and comments by a committee of the Payson church.";
 br.bookAuthor= "Fairchild, J.H. (Joy Hamlet), 1790-1859.";
 br.bookPub= "Boston: Dutton and Wentworth, printers, 1846";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4202';
 
 // Override the path used to find UI images

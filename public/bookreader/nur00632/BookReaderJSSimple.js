@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00632_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00632_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Walter Warlimont / General der Artillerie / Nuremberg, November 19, 1945 ";
 br.bookAuthor= "Walter Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-19";
-br.bookKeyword= "";
+br.bookKeyword= "OKW; German Army; German High Command; German generals";
 br.bookUrl  = '/nuremberg/catalog/nur:00632';
 
 // Override the path used to find UI images

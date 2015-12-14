@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01568_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01568_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Interrogation of Schirach / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Lt. Col. Hinkel.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-06";
-br.bookKeyword= "";
+br.bookKeyword= "Catholic youth movement; Protestant youth movement; Hitler Jugend; HJ; Roehm Purge; SA; SS; Buendische Jugend; Union of German Youth Hostels; Marxist youth movement; \"Streifendienst\"; Southeast European Society; Lebensraum; Persecution of Jews; Vienna; Slave labor";
 br.bookUrl  = '/nuremberg/catalog/nur:01568';
 
 // Override the path used to find UI images

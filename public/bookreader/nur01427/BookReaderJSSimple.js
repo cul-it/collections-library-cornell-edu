@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01427_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01427_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "H. H. G. Schacht: Positions and Salaries, 1923-1944";
-br.bookAuthor= ""Presentation No. 61 / SPD-OCC"";
+br.bookAuthor= "Presentation No. 61 / SPD-OCC";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-09";
-br.bookKeyword= "";
+br.bookKeyword= "Reichsbank; President of Reichsbank; Minister of Economics; Plenipotentiary of War Economics; Minister without Portfolio; Dawes Plan; Commissioner of Currency";
 br.bookUrl  = '/nuremberg/catalog/nur:01427';
 
 // Override the path used to find UI images

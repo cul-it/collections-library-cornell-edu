@@ -207,7 +207,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3612_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3612_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -265,7 +265,7 @@ br.numLeafs = 30;
 br.bookTitle= "Arguments of Hiram P. Hastings in the case of Oakley vs. Aspinwall, in the Superior court, upon the effect of the reversal of the judgment by the court of appeals / Hiram P. Hastings.";
 br.bookAuthor= "Hasting, Hiram P.";
 br.bookPub= "New York: Wm. L.S. Harrison, 1852";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3612';
 
 // Override the path used to find UI images

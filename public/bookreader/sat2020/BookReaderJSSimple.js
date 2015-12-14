@@ -483,7 +483,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2020_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2020_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -541,7 +541,7 @@ br.numLeafs = 76;
 br.bookTitle= "Report of the proceedings, upon an inquisition of damages, in acause between the Rev. George Markham, plaintiff, and John Fawcett, Esq, defendant; for criminal conversation with the plaintiff's wife... / George Markham.";
 br.bookAuthor= "Marckham, George.";
 br.bookPub= "London: Printed for and Sold by J. Risgway, York Street, St. James's Square, 1802";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2020';
 
 // Override the path used to find UI images

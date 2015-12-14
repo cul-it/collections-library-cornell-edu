@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2811_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2811_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "Trial of Elder Eleazer Sherman : before an ecclesiastical council, held at the meeting-house of the Christian Society in Providence, July 20 and 21, 1835.";
 br.bookAuthor= "Sherman, Eleazer, b. 1795, defendant.";
 br.bookPub= "Providence: H.H.  Brown, 1835";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2811';
 
 // Override the path used to find UI images

@@ -699,7 +699,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00560_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00560_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -757,7 +757,7 @@ br.numLeafs = 103;
 br.bookTitle= "Blueprint of the Nazi Underground - Past and Future Subversive Activities. ";
 br.bookAuthor= "Robert M. W. Kempner";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-00";
-br.bookKeyword= "";
+br.bookKeyword= "NSDAP; Hitler Putsch; Legal analysis; S A; SS; Reichswehr; Historical Development (of the NSDAP); Mein Kampf; Fuehrerprinzip; Der Angriff; Illegal methods (of the NSDAP); Propaganda; Political objective; Weimer Constitution; Weimer Republic; Third Reich; \"racio-nationalist\" State; Jew; Jewish; Marxist; Social Democrat; Dictatorship; Parliament; \"catastrophic policy\"; \"spiritual revolution\"; High treason; Der Nazi-Sozi; Nationalsozialistische Briefe; Nationalsozialistische Bibliothek; Nationalsozialistische Monatshefte; Nationalsozialistisches Jahrbuch; Voelkischer Beobachter; Die Kommenden";
 br.bookUrl  = '/nuremberg/catalog/nur:00560';
 
 // Override the path used to find UI images

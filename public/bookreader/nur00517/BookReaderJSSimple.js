@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00517_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00517_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Interrogation of General Georg R. Thomas by Captain Nordon at Reservelazarett Falkenhaus i. Taunus ";
 br.bookAuthor= "Georg R. Thomas";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-09";
-br.bookKeyword= "";
+br.bookKeyword= "Gestapo; Flossenburg; Dachau; Fritzsch affair; Nuremberg laws; War Economy; Preparations for war; Aggressive war; Opposition to Hitler; German resistance; German Army; Persecution of Jews";
 br.bookUrl  = '/nuremberg/catalog/nur:00517';
 
 // Override the path used to find UI images

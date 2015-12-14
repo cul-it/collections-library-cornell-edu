@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01025_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01025_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Interrogation of: Goering, Hermann / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Colonel Amen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-28";
-br.bookKeyword= "";
+br.bookKeyword= "Preparations to wage aggressive war; Sudetenland; Reserve supplies; Four-Year Plan; Food supply; Raw materials; Living space; Lebensraum; Austria; Czechoslovakia; German rearmament; England; Russia; India; Japan; Poland; Spain; Italy; German territorial expansion";
 br.bookUrl  = '/nuremberg/catalog/nur:01025';
 
 // Override the path used to find UI images

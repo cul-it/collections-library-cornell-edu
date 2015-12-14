@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01724_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01724_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Summary of Interrogation of General Franz Haider";
 br.bookAuthor= "Colonel Amen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-30";
-br.bookKeyword= "";
+br.bookKeyword= "Documentary evidence; OSS sources; German rearmament; Rearmament program; Aggressive war; Hossbach Minutes; Poland; Czechoslovakia; Holland; Russia; Concentration camps; Russian POWs; Border incidents; War crimes; OKW; International treaties; OKH; Pearl Harbor; Fall Weiss; Fall Gelb; Conduct of war";
 br.bookUrl  = '/nuremberg/catalog/nur:01724';
 
 // Override the path used to find UI images

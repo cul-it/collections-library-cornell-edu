@@ -135,7 +135,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01562_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01562_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -193,7 +193,7 @@ br.numLeafs = 18;
 br.bookTitle= "Trial Brief of Baldur von Schirach / Office of U. S. Chief of Counsel / APO403/U. S. Army";
 br.bookAuthor= "Major William H. Baldwin";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Hitler Youth; Catholic Youth Organizations (Bavaria); Deportation of Jews (Vienna); Persecution of Catholic Priests (Vienna); Mauthausen concentration camp; International Prisoners Committee; Volkischer Beobachter; Psychological preparation for war; Educational preparation for war; Gauleiter of Vienna; Gestapo";
 br.bookUrl  = '/nuremberg/catalog/nur:01562';
 
 // Override the path used to find UI images

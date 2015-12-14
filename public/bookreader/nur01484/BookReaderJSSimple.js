@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01484_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01484_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -139,7 +139,7 @@ br.numLeafs = 7;
 br.bookTitle= "R &amp; A No. 3172.4 / Miscellaneous Memoranda on War Criminals / Office of Strategic Services / Research and Analysis Branch";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-30";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; War criminals; Austria; People's Tribunal; Laws of war; International law; War mongers; Nazi Party; Czechoslovakia; People's Courts; National Court; Treason; Propaganda; Collaborationists; Forced labor; Vlajka; Sudeten German Party; Finland; Purges; Czech purge; Finnish purge; Hungary; Soviet Union";
 br.bookUrl  = '/nuremberg/catalog/nur:01484';
 
 // Override the path used to find UI images

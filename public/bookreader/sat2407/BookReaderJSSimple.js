@@ -387,7 +387,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2407_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2407_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -445,7 +445,7 @@ br.numLeafs = 60;
 br.bookTitle= "Bribery and piracy : wilful and malicious loss of the steamship Shooting Star : fraud unparalelled ... .";
 br.bookAuthor= "Hall, William M.";
 br.bookPub= "New York: [s.n.], 1870";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2407';
 
 // Override the path used to find UI images

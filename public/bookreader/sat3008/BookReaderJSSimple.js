@@ -231,7 +231,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3008_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3008_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -289,7 +289,7 @@ br.numLeafs = 34;
 br.bookTitle= "Statement of the relations of Rufus W. Griswold with Charlotte Myers (called Charlotte Griswold,) Elizabeth F. Ellet, Ann S. Stephens, Samuel J. Waring, Hamilton R. Searles, and Charles D. Lewis : with particular reference to their late unsuccessful attempt to have set aside the decree granted in 1852 by the Court of Common Please of Philadelphia County in the Case of Griswold vs. Griswold.";
 br.bookAuthor= "Griswold, Rufus W. (Rufus Wilmot), 1815-1857";
 br.bookPub= "Philadelphia:  H.B. Ashmead, 1856";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3008';
 
 // Override the path used to find UI images

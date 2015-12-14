@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01741_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01741_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "Report of Interrogation No. 5237 / P/W: Kessler, Ulrich / Rank: General der Flieger (Maj. Gen.) / SECRET";
 br.bookAuthor= "Capt. Halle";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-28";
-br.bookKeyword= "";
+br.bookKeyword= "Kessler's alibi; War with England; July 20 Putsch; German anti-Nazism; Goerdeler group; Assassination conspiracy; SS; SD; Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:01741';
 
 // Override the path used to find UI images

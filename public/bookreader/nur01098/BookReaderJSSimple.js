@@ -711,7 +711,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01098_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01098_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -769,7 +769,7 @@ br.numLeafs = 114;
 br.bookTitle= "Staff Evidence Analysis / Office of the United States Chief of Counsel / HQ. British War Crimes Executive (European Section)";
 br.bookAuthor= "The names of the respective analysts are not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-24";
-br.bookKeyword= "";
+br.bookKeyword= "D-series documents; Staff Evidence Analysis; Family enterprises; Property Law; Fuehrer principle; Family Inheritance Law; Preparation for aggressive war; Nazi ideology; Propaganda; Krupp Works; Persecution of Jews; Forced labor; Atrocities against Civilians; Atrocities against military personnel; Foreign penetration; Prisoners of War; Nazi Racial Supremacy; War Economic Measures; Trade Unions; NSDAP; AGK; Church affairs; Geneva Convention; Gestapo; Deportation; Concentration camps; Auschwitz";
 br.bookUrl  = '/nuremberg/catalog/nur:01098';
 
 // Override the path used to find UI images

@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01331_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01331_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -139,7 +139,7 @@ br.numLeafs = 9;
 br.bookTitle= "Lines of defense which the high Nazi Leadership might pursue against the charge of seeking to dominate the European Continent by launching aggressive war";
 br.bookAuthor= "Paul Scheffer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-01";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01331';
 
 // Override the path used to find UI images

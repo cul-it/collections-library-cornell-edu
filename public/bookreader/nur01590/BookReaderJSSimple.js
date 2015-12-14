@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01590_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01590_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Urgent. Submit at once. / Release of Jewish arrestees who were combat soldiers. Secret State Police / Branch Office Wurzburg / Teletype Section / Nr. 15032 Dr. BERLIN NUE 255 031";
 br.bookAuthor= "Heydrich";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-28";
-br.bookKeyword= "";
+br.bookKeyword= "Persecution of Jews";
 br.bookUrl  = '/nuremberg/catalog/nur:01590';
 
 // Override the path used to find UI images

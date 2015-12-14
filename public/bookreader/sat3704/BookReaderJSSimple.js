@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3704_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3704_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "The confession of Mina, the Spaniard : who was executed at Doylestown, Penn. on the 21st June, 1832, for the murder of William Chapman / written by himself in Spanish and translated into English.";
 br.bookAuthor= "Estradas de Mina, Carolino, 1809-1832.";
 br.bookPub= "Doylestown, Pa.: Printed for the publisher, 1832";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3704';
 
 // Override the path used to find UI images

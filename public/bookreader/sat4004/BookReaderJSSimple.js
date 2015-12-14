@@ -903,7 +903,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4004_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4004_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -961,7 +961,7 @@ br.numLeafs = 146;
 br.bookTitle= "The trial of Thomas Hunter, Peter Hacket, Richard M'Niel [sic], James Gibb, and William M'Lean, the Glasgow cotton-spinners : before the High Court of Justiciary, at Edinburgh, on charges of murder, hiring to commit assassinations, and committing, and hiring to commit, violence to persons and property / reported by James Marshall ... ; to which is annexed statistics connected with the spinning trade, &amp;c. of Glasgow, by Peter M'Kenzie.";
 br.bookAuthor= "Hunter, Thomas, b. 1796?";
 br.bookPub= "Edinburgh; Glasgow; London: Published by William Tait; Peter M'Kenzie; W.R. Mphun; Effingham Wilson; N.H. Cotes, 1838";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4004';
 
 // Override the path used to find UI images

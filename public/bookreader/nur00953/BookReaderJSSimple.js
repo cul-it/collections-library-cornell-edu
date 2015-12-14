@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00953_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00953_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "Interrogations of Doenitz, Karl / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Lt. Colonel Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-11";
-br.bookKeyword= "";
+br.bookKeyword= "German Navy; Naval program; U-boat program; Submarines; the Robin Moor; Unrestricted submarine warfare; Wolf pack tactics; War crimes; Successor to Hitler; SS; SHO; Concentration camps; Naval warfare; Norway; OKM";
 br.bookUrl  = '/nuremberg/catalog/nur:00953';
 
 // Override the path used to find UI images

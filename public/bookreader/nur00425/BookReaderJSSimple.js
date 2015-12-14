@@ -141,7 +141,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00425_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00425_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -199,7 +199,7 @@ br.numLeafs = 19;
 br.bookTitle= " R &amp; A No. 3114.3 / Nazi Plans for Dominating Germany  and Europe / The Criminal Conspiracy Against the Jews / Office of Strategic  Services / Research and Analysis Branch / Draft for the War Crimes Staff /  Copy No. 56 / SECRET  ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-13";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against humanity; Persecution of Jews;  Anti-Semitism; Mass murder; Nazi criminal conspiracy; Disenfranchisement;  Economic persecution; Religious persecution; Starvation; Forced labor;  Enslavement; Spoliation; Torture; Deportation; Executions; Concentrations  camps; Jewish Question; Lebensraum; Nazi racial ideology; Volksgenosse; 'Mein  Kampf'; 'Voelkischer Beobachter'; 'Das Schwarze Korps'; 'Der  Stuermer'; 'Der Angriff'";
 br.bookUrl  = '/nuremberg/catalog/nur:00425';
 
 // Override the path used to find UI images

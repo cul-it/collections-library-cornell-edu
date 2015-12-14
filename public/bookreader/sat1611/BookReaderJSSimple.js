@@ -507,7 +507,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1611_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1611_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -565,7 +565,7 @@ br.numLeafs = 80;
 br.bookTitle= "Trial of Charles Wakely, for a rape on Mrs. Rebecca Fay, wife to Dr. Cyrus Fay, physician : before the Court of General Sessions of the Peace for the city and county of New York, for the February term, 1810 / taken by a stenographer, by permission of the court";
 br.bookAuthor= "Wakely, Charles.";
 br.bookPub= "New York: Printed and published by M'Carty &amp; White, No. 46 Fair-Street, 1810";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1611';
 
 // Override the path used to find UI images

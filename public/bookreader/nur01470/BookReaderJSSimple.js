@@ -429,7 +429,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01470_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01470_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -487,7 +487,7 @@ br.numLeafs = 67;
 br.bookTitle= "Preliminary Report on Germany's Crimes Against Norway / Prepared by The Royal Norwegian Government for use at The International Military Tribunal in Trials Against the Major War Criminals of the European Axis";
 br.bookAuthor= "Major Finn Palmstrom and Rolf Normann Torgersen. Forward by Johan Cappelen, Norwegian Minister of Justice and Police.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-00-00";
-br.bookKeyword= "";
+br.bookKeyword= "Norway; War crimes trials; International Military Tribunal; War criminals; St. James Declaration; Moscow Declaration; War crimes; Nazification; Crimes against peace; Preparations to wage aggressive war; Locarno agreement; Rhineland; Anschluss; German propaganda; Hague Convention; Luftwaffe; Unrestricted air warfare; Atrocities; Crimes against civilians; Nasjonal S&#228;mling; Civil liberties; Concentration camps; Deportations; Collective punishment; Martial law; Police courts; Persecution of Jews; German terrorism; Occupation of Norway; Executions; Grini; Falstad; Ulven; Espeland; Sydspissen; Torture; Donau; Forced labor; Gestapo; German war economy; Plundering; Economic spoliation";
 br.bookUrl  = '/nuremberg/catalog/nur:01470';
 
 // Override the path used to find UI images

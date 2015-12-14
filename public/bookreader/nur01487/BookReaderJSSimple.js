@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01487_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01487_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Dissention in German Intelligence Services / Office of Strategic Services / Mission for Germany / United States Forces / European Theater / SECRET";
 br.bookAuthor= "Lt. Williams";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-07";
-br.bookKeyword= "";
+br.bookKeyword= "German intelligence service; GIS; SD; Gestapo; FAK; SS Jagdverbaende; RSHA; Werewolf; V-Men; Abwehr; Amt IV; Amt III";
 br.bookUrl  = '/nuremberg/catalog/nur:01487';
 
 // Override the path used to find UI images

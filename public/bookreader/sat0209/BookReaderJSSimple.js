@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0209_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0209_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "The narrative of Whiting Sweeting : who was executed at Albany, the 26th of August, 1791. : Containing, an account of his trial before the Supreme Court of Judicature of the state of New-York, at the July term, 1791, for the murder of Darius Quimby";
 br.bookAuthor= "Sweeting, Whiting, d. 1791.";
 br.bookPub= "Hartford, CT.: Re-printed by Hudson and Goodwin, 1797";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0209';
 
 // Override the path used to find UI images

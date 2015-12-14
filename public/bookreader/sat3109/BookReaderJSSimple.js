@@ -255,7 +255,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3109_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3109_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -313,7 +313,7 @@ br.numLeafs = 38;
 br.bookTitle= "A full report of the arguments of Thomas F. Carpenter, Samuel Y.    Atwell, and Joseph M. Blake, attorney general : in the case of the state vs. John and William Gordon : for the murder of Amasa Sprague ... / reported by  Edwin C. Larned.";
 br.bookAuthor= "Carpenter, Thomas F.";
 br.bookPub= "Providence: Printed at the office of the Daily Transcript, 1844";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3109';
 
 // Override the path used to find UI images

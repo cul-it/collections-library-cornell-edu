@@ -1299,7 +1299,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2214_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2214_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1357,7 +1357,7 @@ br.numLeafs = 212;
 br.bookTitle= "Trial of James Nutt for the killing of N.L. Dukes, at Uniontown, Fayette Co., Pa., June 13th, 1883. Containing a complete history of the dual tragedy, letters and expert testimony. Stenographically reported by Edward J. Donnelly.";
 br.bookAuthor= "Nutt, James.";
 br.bookPub= "Pittsburgh, Pa.: Stevenson &amp; Foster, [c1884]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2214';
 
 // Override the path used to find UI images

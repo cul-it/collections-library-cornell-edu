@@ -555,7 +555,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3401_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3401_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -613,7 +613,7 @@ br.numLeafs = 88;
 br.bookTitle= "The trials at large of Robert Watt, and David Downie, for high treason, : at the session of Oyer and Terminer, at Edinburgh, August 27, September 3d, and September 5th, 1794. At which they were both found guilty, and sentenced to be hanged, drawn, and quartered, on the 15th of October. Taken in short hand by an English barrister.";
 br.bookAuthor= "Watt, Robert, d. 1794?";
 br.bookPub= "New York: Printed by Tiebout &amp; O'Brien, 358 Pearl-Street., 1794";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3401';
 
 // Override the path used to find UI images

@@ -147,7 +147,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2709_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2709_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -205,7 +205,7 @@ br.numLeafs = 20;
 br.bookTitle= "Piracy of registered designs. M'Crea v. Holdsworth. Important trial in the court of Queen's bench / Henry Charles M'Crea.";
 br.bookAuthor= "M'Crea, Henry Charles.";
 br.bookPub= "[London?]: [s.n.], 1864";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2709';
 
 // Override the path used to find UI images

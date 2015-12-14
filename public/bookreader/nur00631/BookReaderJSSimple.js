@@ -99,7 +99,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00631_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00631_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -157,7 +157,7 @@ br.numLeafs = 12;
 br.bookTitle= "Trial Brief re General Staff and High Command of the German Armed Forces / Part B/ Affidavits Nos. 1-4, inclusive / German Version ";
 br.bookAuthor= "Franz Haider (Affidavit No. 1); Walter von Brauchitsch (Affidavit No.2); Werner von Blomberg (Affidavit No.3); Walter von Brauchitsch (Affidavit No.4)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-07";
-br.bookKeyword= "";
+br.bookKeyword= "German equivalents for the following: High Command; German Armed Forces; Responsibility; Territorial questions; Polish Corridor; Rearmament; OKW; OKH; Operational and deployment plans; Territorial jurisdiction";
 br.bookUrl  = '/nuremberg/catalog/nur:00631';
 
 // Override the path used to find UI images

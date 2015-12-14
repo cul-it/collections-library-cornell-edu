@@ -405,7 +405,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1909_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1909_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -463,7 +463,7 @@ br.numLeafs = 63;
 br.bookTitle= "Argument for plaintiff, in case of Thomas Hicks, ex'r. of Capt. Isaac Hicks, versus The United States, for half-pay, under the resolve of October 21, 1780. Also, in behalf of the half pay debts due to the officers of the revolution generally, embracing the laws and descisions in support of same.";
 br.bookAuthor= "Hicks, Isaac, d. 1817.";
 br.bookPub= "Washington, D.C.: Nathaniel Hatch, No. 514 Twelfth Street, 1859";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1909';
 
 // Override the path used to find UI images

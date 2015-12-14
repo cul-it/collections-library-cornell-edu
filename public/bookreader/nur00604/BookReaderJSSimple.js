@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00604_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00604_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "Charts of top organization of Armed Forces. ";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 5.11.45";
-br.bookKeyword= "";
+br.bookKeyword= "Wehrmacht; Reichswehr; OKW; Fuehrer; German Armed Forces";
 br.bookUrl  = '/nuremberg/catalog/nur:00604';
 
 // Override the path used to find UI images

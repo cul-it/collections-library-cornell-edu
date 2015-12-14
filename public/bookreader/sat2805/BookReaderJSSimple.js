@@ -117,7 +117,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2805_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2805_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -175,7 +175,7 @@ br.numLeafs = 15;
 br.bookTitle= "The trial and biography of Return J. M. Ward, the most extraordinary murder named in the calendar of crime ... / Return J. M. Ward";
 br.bookAuthor= "Ward, Return J. M.";
 br.bookPub= "Cleveland, Ohio: E. Cowles &amp; co, [18--]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2805';
 
 // Override the path used to find UI images

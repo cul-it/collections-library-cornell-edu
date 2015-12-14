@@ -345,7 +345,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2414_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2414_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -403,7 +403,7 @@ br.numLeafs = 53;
 br.bookTitle= "The speech of Mr. John Checkley : upon his trial at Boston in 1724 / with an introduction by Rev. E.H. Gillett.";
 br.bookAuthor= "Checkley, John, 1680-1754.";
 br.bookPub= "Morrisania, N.Y.: [s.n.], 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2414';
 
 // Override the path used to find UI images

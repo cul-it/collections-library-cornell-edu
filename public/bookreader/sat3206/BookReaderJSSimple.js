@@ -399,7 +399,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3206_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3206_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -457,7 +457,7 @@ br.numLeafs = 62;
 br.bookTitle= "Trial of John Francis Knapp as principal in the second degree for the murder of Capt. Joseph White : before the Supreme Judicial Court of the Commonwealth of Massachusetts : at a special session, commenced at Salem, July 20, 1830 / reported for the publishers.";
 br.bookAuthor= "Knapp, John Francis, 1810-1830.";
 br.bookPub= "Boston: Published by Dutton and Wentworth, 1830";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3206';
 
 // Override the path used to find UI images

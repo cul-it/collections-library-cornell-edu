@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01054_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01054_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum for Commander Kaplan";
 br.bookAuthor= "Sidney S. Alderman";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-16";
-br.bookKeyword= "";
+br.bookKeyword= "Documentary evidence; Affidavits; Prussian Ministry of the Interior; Gestapo; SA; Concentration camps; SS; Roehm Purge; German police";
 br.bookUrl  = '/nuremberg/catalog/nur:01054';
 
 // Override the path used to find UI images

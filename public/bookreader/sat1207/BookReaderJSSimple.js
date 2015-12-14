@@ -597,7 +597,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1207_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1207_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -655,7 +655,7 @@ br.numLeafs = 95;
 br.bookTitle= "General division of the argument. A-Statement of the charges and imputations against Warren. B-Certain general considerations as to the case and testimony. C-The facts as to the engagement of the 31st March. D-The facts as to the movements to reenforce General Sheridan. E-The facts as to the Battle of Five Forks. F-General examination of Warren's conduct through the two days covered by the investigation of the court / Gouverneur Kemble Warren.";
 br.bookAuthor= "Warren, G. K. (Gouverneur Kemble), 1830-1882.";
 br.bookPub= "[S.I.]: [s.n.], 1865";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1207';
 
 // Override the path used to find UI images

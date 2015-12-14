@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00460_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00460_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "[Extracts from Hitler's speech]  / Translation of Document L-3 / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "The translator is Charles E. Bidwell, S/Sgt., 13146954.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-18";
-br.bookKeyword= "";
+br.bookKeyword= "Japan; Poland; Hitler speeches; Preparations to wage aggressive war";
 br.bookUrl  = '/nuremberg/catalog/nur:00460';
 
 // Override the path used to find UI images

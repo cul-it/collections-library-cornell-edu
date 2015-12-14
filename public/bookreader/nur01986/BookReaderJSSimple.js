@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01986_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01986_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum For: Mr. Justice Jackson / Subject: Integration of Documentation Division and London Evidence and Analysis Section / APO403 / U.S. Army";
 br.bookAuthor= "Robert G. Storey, Chief, Documentation Division";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-14";
-br.bookKeyword= "";
+br.bookKeyword= "Documentation Division; London Evidence Collection and Analysis; Organizational charts; Memoranda; Personnel";
 br.bookUrl  = '/nuremberg/catalog/nur:01986';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01550_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01550_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -101,9 +101,9 @@ br.numLeafs = 3;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Action against Jews holding Reich citizenship / Secret State Police, Branch Office Wurzburg / SECRET";
-br.bookAuthor= ""Signature illegible."";
+br.bookAuthor= "Signature illegible.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "Persecution of Jews; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:01550';
 
 // Override the path used to find UI images

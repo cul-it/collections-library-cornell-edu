@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00805_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00805_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Two Frontal War with the Southeast as Center of Gravity / Item 11 ";
 br.bookAuthor= "Hitler";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-05-30";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war plans; Crimes against peace; Case Green; Czechoslovakia; Propaganda war; Wehrmacht; OKW; War economy; OKW; Sabotage";
 br.bookUrl  = '/nuremberg/catalog/nur:00805';
 
 // Override the path used to find UI images

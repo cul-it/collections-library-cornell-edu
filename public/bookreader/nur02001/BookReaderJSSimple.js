@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02001_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02001_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: Count One IV (H), Second Sentence, and Appendix B: Reich Cabinet, Leadership Corps of the Nazi Party, The SS, the SD, The Gestapo, The SA and Count One IV (D) 3 (f)";
 br.bookAuthor= "George W. Seay, Lt. Col., A.C., Chief, Section 6";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-12";
-br.bookKeyword= "";
+br.bookKeyword= "Board of Review; Trial briefs; Document books; Presentation Branch; Special Projects Division; Enlarged charts; Coffin Chart";
 br.bookUrl  = '/nuremberg/catalog/nur:02001';
 
 // Override the path used to find UI images

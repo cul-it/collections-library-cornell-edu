@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2903_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2903_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "Trial and execution of Thomas Barrett, who first committed a rape on the person of Mrs. Houghton, of Lunenburg, an aged lady of 70 years, and then foully murdered her to conceal his crime, ... Together with the particulars of the execution, and some confessions of the murderer.";
 br.bookAuthor= "Barrett, Thomas.";
 br.bookPub= "Boston: Skinner and Blanchard, 1845";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2903';
 
 // Override the path used to find UI images

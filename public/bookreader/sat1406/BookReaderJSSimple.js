@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1406_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1406_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "Circuit court of the United State, Massachusetts. Union Sugar Refinery, in Equity, vs. Francis O. Matthiessen / Union Sugar Refinery.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston: Press of Arthur W. Locke, 1866";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1406';
 
 // Override the path used to find UI images

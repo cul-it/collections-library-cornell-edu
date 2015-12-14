@@ -285,7 +285,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2706_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2706_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -343,7 +343,7 @@ br.numLeafs = 43;
 br.bookTitle= "Trial of James Stuart, Esq. Younger of Dunearn, before the High Court of Justiciary, on Monday the 10th day of June 1822 : for the murder of Sir Alexander Boswell, of Auchinleck, Bart. in a duel, on the 26th day of March last.";
 br.bookAuthor= "Stuart, James, 1775-1849.";
 br.bookPub= "Edinburgh: Published by J. Dick &amp; Co. ... and sold by all the booksellers : T. Turnbull, printer, 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2706';
 
 // Override the path used to find UI images

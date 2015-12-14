@@ -237,7 +237,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3512_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3512_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -295,7 +295,7 @@ br.numLeafs = 35;
 br.bookTitle= "The argument of William Curtis Noyes, Esq., before the Street committee of the board of Aldermen of the city of New York  ... in the matter of extending Albany Street to Broadway / Reported by James Thomas Roberts, (Reporter to the New York Daily Times).";
 br.bookAuthor= "Noyes, William Curtis, 1805-1864.";
 br.bookPub= "New York: Hall, Clayton, &amp; co., 1854";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3512';
 
 // Override the path used to find UI images

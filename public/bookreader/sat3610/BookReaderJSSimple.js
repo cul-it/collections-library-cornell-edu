@@ -519,7 +519,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3610_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3610_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -577,7 +577,7 @@ br.numLeafs = 82;
 br.bookTitle= "The life, trial, confession and execution of Albert W. Hicks, the pirate and murderer : executed on Bedloe's Island, New York bay, on the 13th of July, 1860, for the murder of Capt. Burr, Smith and Oliver Watts, on board the oyster sloop E.A. Johnson : containing the history of his life (written by himself) from childhood up to the time of his arrest : with a full account of his piracies, murders, mutinies, high-way robberies, etc., comprising the particulars of one hundred murders! : to which is added the account of his arrest, imprisonment, trial and execution ; also, his phrenological character, as described by L.N. Fowler.";
 br.bookAuthor= "Hicks, Albert W., 1820?-1860.";
 br.bookPub= "New York: Robert M. De Witt, publisher, 13 Frankfort Street, 1860";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3610';
 
 // Override the path used to find UI images

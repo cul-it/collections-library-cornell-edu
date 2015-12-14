@@ -951,7 +951,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01130_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01130_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1009,7 +1009,7 @@ br.numLeafs = 154;
 br.bookTitle= " R &amp; A No. 3113.7 / Principal Nazi Organizations Involved in the Commission of War Crimes: The Nazi Party (Part III) / Office of Strategic Services / Research and Analysis Branch / Draft for the Use of the War Crimes Staff/ SECRET 2 copies";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-06";
-br.bookKeyword= "";
+br.bookKeyword= "Hierarchical system; Hoheitstraeger; Reichsleiter; Gauleiter; Kreisleiter; Ortsgruppenleiter; Zellenleiter; Blockleiter; Departmentalization; Fuehrerbefehl (Fuehrer's order); The Fuehrer; Nationalsozialistisches Jahrbuch; Organizationsbuch der NSDAP; The Chancery of the Fuehrer; Party Chancellery; Party Archives; Reich Directorate; Nazi Schools; Reich Treasurer of the NSDAP; Intellectual and Ideological Training and Education; Einsatzstab Rosenberg; Reich Leader for Propaganda; Reich Press Chief; Reich Press Leader; Reich Office for the Rural Population; Main Office for: Organization; Personnel; Training; Public Health; Technology; War Victims; Educators; Communal Policy; Civil Servants; \"Folkdom\"; Foreign Political Office of the NSDAP; Lebensraum; \"White Alliance\"; Office for Colonial Policies; Occupied territories; Gau Administration; Auslands-Organisation of the NSDAP; Fifth Column Activities; The Arbeitsbereiche of the NSDAP";
 br.bookUrl  = '/nuremberg/catalog/nur:01130';
 
 // Override the path used to find UI images

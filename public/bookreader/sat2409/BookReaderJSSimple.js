@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2409_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2409_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Trial, sentence, and execution of Israel Thayer, Jr. Isaac Thayer, and Nelson Thayer, three brothers, : for the murder of John Love, at the town of Boston, in the county of Erie, and state of New-York, on the 17th June. : With all the particulars, arguments of counsel, charge of the judge, the sentence, their execution, and their conduct on the awful occasion. / Collected from authentic documents.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New York: Printed and published by J. M'Cleland, 285 Water-Street, 1825";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2409';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00897_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00897_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Directives for Special Areas To Order #21 (Case Barbarossa) / Translation of Document 447-PS / Office of U.S. Chief of Counsel / TOP SECRET / Subject: Armed Forces Operational Staff/Section L(I) #33408 /40. Top Secret. / 18 December 1940 ";
 br.bookAuthor= "Keitel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-03-13";
-br.bookKeyword= "";
+br.bookKeyword= "Russia; Barbarossa; OKH; Area of operations; Reichsfuehrer SS; Command structure; OKW; German police";
 br.bookUrl  = '/nuremberg/catalog/nur:00897';
 
 // Override the path used to find UI images

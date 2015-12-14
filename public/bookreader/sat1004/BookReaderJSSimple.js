@@ -387,7 +387,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1004_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1004_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -445,7 +445,7 @@ br.numLeafs = 60;
 br.bookTitle= "A refutation, by his friends, of the calumnies against David Henshaw, in relation to the failure of the Commonwealth bank, and the transfer of South Boston lands to the United States.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston: Beals &amp; Greene, 1844";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1004';
 
 // Override the path used to find UI images

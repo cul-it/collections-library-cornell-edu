@@ -741,7 +741,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3601_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3601_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -799,7 +799,7 @@ br.numLeafs = 119;
 br.bookTitle= "Review of a report to the House of Representatives of the Commonwealth of Massachusetts, on the case of William Vans : with observations upon the dispensing power of the legislature, and upon a decision of the Supreme judicial court, nullifying the saidpower / by David L. Child...";
 br.bookAuthor= "Child, David Lee, 1794-1874.";
 br.bookPub= "Boston: The Publisher, 1833";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3601';
 
 // Override the path used to find UI images

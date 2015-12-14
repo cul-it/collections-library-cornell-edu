@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00557_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00557_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of Schwarz, Franz Xaver ";
 br.bookAuthor= "Mr. Sackett";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-06";
-br.bookKeyword= "";
+br.bookKeyword= "Income; Dues; National Party Treasury; Salaries; Concentration camps; Waffen SS";
 br.bookUrl  = '/nuremberg/catalog/nur:00557';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01708_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01708_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "To my knowledge I.G. Farben ...";
 br.bookAuthor= "K&#252;pper [signature virtually invisible on original document; see cover letter]";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-12";
-br.bookKeyword= "";
+br.bookKeyword= "I.G. Farben; Nazi aggression; Aggressive war; Poland; Czechoslovakia; France; Russia; United States; German responsibility; German industrialists";
 br.bookUrl  = '/nuremberg/catalog/nur:01708';
 
 // Override the path used to find UI images

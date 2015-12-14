@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01844_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01844_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Introduction of Exception to the Prohibition against Use of Force at Examinations of Apprehended Persons / Translation from German";
 br.bookAuthor= "Siegfried Fehmer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-07";
-br.bookKeyword= "";
+br.bookKeyword= "Gestapo; War crimes; Norway; Waffen SS; SD; Torture; Coercion; Interrogation tactics";
 br.bookUrl  = '/nuremberg/catalog/nur:01844';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01528_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01528_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Report of Investigations of Alleged War Crimes / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Staff Evidence Analysis";
 br.bookAuthor= "Sch&#228;fer is the analyst.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-20";
-br.bookKeyword= "";
+br.bookKeyword= "Atrocities; Concentration camps; Geneva Convention; SS; SD; RSHA; Sipo; Gestapo; War crimes; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:01528';
 
 // Override the path used to find UI images

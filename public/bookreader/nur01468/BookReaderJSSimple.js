@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01468_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01468_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -469,7 +469,7 @@ br.numLeafs = 59;
 br.bookTitle= "Germany's Crimes Against Norway.";
 br.bookAuthor= "The author's name is not given. Forward by Johan Cappelen, Norwegian Minister of Justice and Police.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Norway; War crimes trials; International Military Tribunal; War criminals; St. James Declaration; Moscow Declaration; War crimes; Nazification; Crimes against peace; Preparations to wage aggressive war; Locarno agreement; Rhineland; Anschluss; German propaganda; Hague Convention; Luftwaffe; Unrestricted air warfare; Atrocities; Crimes against civilians; Nasjonal S&#228;mling; Civil liberties; Concentration camps; Deportations; Collective punishment; Martial law; Police courts; Persecution of Jews; German terrorism; Occupation of Norway; Executions; Grini; Falstad; Ulven; Espeland; Sydspissen; Torture; Donau; Forced labor; Gestapo; German war economy; Plundering; Economic spoliation";
 br.bookUrl  = '/nuremberg/catalog/nur:01468';
 
 // Override the path used to find UI images

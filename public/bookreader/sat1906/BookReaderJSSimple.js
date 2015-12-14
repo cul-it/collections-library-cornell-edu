@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1906_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1906_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "The Case of Miss Gunning impartially stated and discussed: in a letter from a barrister addressed to the Marquis of Blandford.";
 br.bookAuthor= "Gunning, Miss (Elizabeth), 1769-1823.";
 br.bookPub= "London: J. Adams, 1791";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1906';
 
 // Override the path used to find UI images

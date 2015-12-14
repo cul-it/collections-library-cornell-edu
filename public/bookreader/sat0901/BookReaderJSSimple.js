@@ -1293,7 +1293,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0901_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0901_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1351,7 +1351,7 @@ br.numLeafs = 211;
 br.bookTitle= "Trial of Henry W. Merritt, a special justice for preserving the peace in the City of New York : containing the several opinions delivered by the judges, the speech of the district attorney, and the opinion delivered by the late Judge Irving in the case of Abraham M. Valentine.";
 br.bookAuthor= "Merritt, Henry W., 1804-1854.";
 br.bookPub= "New York; Albany: Gould, Banks &amp; Co.; Wm. &amp; A. Gould &amp; Co., 1840";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0901';
 
 // Override the path used to find UI images

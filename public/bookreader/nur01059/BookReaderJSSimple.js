@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01059_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01059_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Translation / Excerpt from the Book: 'Aufbau Einer Nation' by Hermann Goering. Written in 1933";
 br.bookAuthor= "Hermann Goering";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "German police; Political opposition; Communists; Social Democrats; Secret State Police; SS; SA; Concentration camps; Gestapo; Political persecution";
 br.bookUrl  = '/nuremberg/catalog/nur:01059';
 
 // Override the path used to find UI images

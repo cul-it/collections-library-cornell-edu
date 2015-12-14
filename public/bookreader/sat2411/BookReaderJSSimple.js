@@ -735,7 +735,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2411_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2411_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -793,7 +793,7 @@ br.numLeafs = 118;
 br.bookTitle= "An authentic account of the proceedings under a writ of enquiry of damages in an action in the court of King's Bench, in which the Right Hon. the Earl of Elgin was plaintiff, and William [i.e. Robert] Ferguson, Esq. defendant, for criminal conversation with the plaintiff's wife : executed before the sheriff of Middlesex and a special jury on the 22d of December, 1807 ...";
 br.bookAuthor= "Elgin, Thomas Bruce, Earl of, 1766-1841.";
 br.bookPub= "London: J. Hatchard, 1808";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2411';
 
 // Override the path used to find UI images

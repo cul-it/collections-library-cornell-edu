@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00801_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00801_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "No. 388-PS / Staff Evidence Analysis / Office of U.S. Chief of Counsel for Prosecution of Axis Criminality";
 br.bookAuthor= "Lt. Weldon";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-02";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Invasion of Czechoslovakia; \"Fall Gruen\"; OKW; German High Command; Crimes against peace";
 br.bookUrl  = '/nuremberg/catalog/nur:00801';
 
 // Override the path used to find UI images

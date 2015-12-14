@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01801_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01801_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 4;
 br.bookTitle= "Par 3 SHAEF Directive for Military Government of Germany Prior to Defeat or Surrenden 9 Nov. 1944, as amended 15 Dec. 1944. / Par 17, SHAEF Directive to Army Groups and Communications Zone, Subject: War Criminals and Security Suspects. Dec. 1944. / Memorandum to General Betts / SECRET";
 br.bookAuthor= "Donald S. Graham, Capt, JAGD";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-01-12";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01801';
 
 // Override the path used to find UI images

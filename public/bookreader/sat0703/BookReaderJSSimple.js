@@ -981,7 +981,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0703_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0703_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1039,7 +1039,7 @@ br.numLeafs = 159;
 br.bookTitle= "The trial of Alexander M'Laren, and Thomas Baird, before the High Court of Justiciary, at Edinburgh, on the 5th and 7th March 1817, for sedition. Taken in shorthand by John Dow.";
 br.bookAuthor= "M'Laren, Alexander, defendant.";
 br.bookPub= "Edinburgh: J. Robertson, 1817";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0703';
 
 // Override the path used to find UI images

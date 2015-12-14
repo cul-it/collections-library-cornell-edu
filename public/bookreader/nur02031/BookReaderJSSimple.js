@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02031_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02031_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum for: Mr. Justice Jackson / Subject: Evidence of British, French and Soviets / Office of U.S. Chief of Counsel / APO 403 U.S. Army";
 br.bookAuthor= "Robert G. Storey";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-04";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes evidence; U.S. Army Documentation Division";
 br.bookUrl  = '/nuremberg/catalog/nur:02031';
 
 // Override the path used to find UI images

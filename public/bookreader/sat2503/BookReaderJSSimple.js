@@ -699,7 +699,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2503_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2503_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -757,7 +757,7 @@ br.numLeafs = 112;
 br.bookTitle= "The case of Thomas Lord Cochrane, K.B. : containing the history of the hoax, the trial, the proceedings in the House of Commons, and the meetings of the electors of Westminster : to which is prefixed, a biographical sketch of his Lordship; with an appendix...";
 br.bookAuthor= "Cochrane, Thomas, Lord, K.B.";
 br.bookPub= "New York: Published by W.B. Gilley, Van Winkle and Wiley, printers, 1814";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2503';
 
 // Override the path used to find UI images

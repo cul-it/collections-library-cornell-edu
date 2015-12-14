@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00459_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00459_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Second Speech by The Fuhrer on 22 Aug. '39.  / Translation of Document 1014-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "Hitler; the translator is Fred Niebergall, 2nd  Lt. Inf., 0-133 55 67.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-12";
-br.bookKeyword= "";
+br.bookKeyword= "Poland; Western powers; Blockade; New German frontier; Hitler speeches; Preparations to wage aggressive war";
 br.bookUrl  = '/nuremberg/catalog/nur:00459';
 
 // Override the path used to find UI images

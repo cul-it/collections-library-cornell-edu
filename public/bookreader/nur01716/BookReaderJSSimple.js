@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01716_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01716_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "NSDAP / Chief of the Foreign Organization / Exhibit D";
-br.bookAuthor= "S. G. Christians / "Copy to Dr. Frank-Fahle"";
+br.bookAuthor= "S. G. Christians / 'Copy to Dr. Frank-Fahle'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1943-08-10";
-br.bookKeyword= "";
+br.bookKeyword= "I.G. Farben; Nazi Party; German Foreign Organization; German firms; German business interests";
 br.bookUrl  = '/nuremberg/catalog/nur:01716';
 
 // Override the path used to find UI images

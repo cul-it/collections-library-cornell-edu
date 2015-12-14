@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01683_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01683_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "List of anthropologists suspected as war criminals / CONFIDENTIAL";
 br.bookAuthor= "Franz Weidenreich, M. D.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-09";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi ideology; Nazi racial theory; German anthropologists; War criminals";
 br.bookUrl  = '/nuremberg/catalog/nur:01683';
 
 // Override the path used to find UI images

@@ -987,7 +987,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01823_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01823_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1045,7 +1045,7 @@ br.numLeafs = 160;
 br.bookTitle= "German Military Government Over Europe: Economic Controls in Occupied Europe / Office of Strategic Services / Research and Analysis Branch /  R &amp; A No. 2500.15 / RESTRICTED";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-28";
-br.bookKeyword= "";
+br.bookKeyword= "Economic controls; Occupied Europe; Occupied territories; SS; Nazi Party; Military tribunals; Police tribunals; German police; Financial controls; Propaganda; Military administration; Belgium; France; Greece; Civil Administration; Holland; Norway; Ostland; Ukraine; Netherlands; Bohemia-Moravia; Albania; Denmark; Italy; Slovakia; Yugoslavia; Incorporated territories; Currency; Banking; Industrial controls; Agricultural controls; Sequestration; Confiscation; Estates; Exploitation; Foreign trade; Balkans; Serbia; Raw materials; Gernjan firms; Cartels; German trustees; Economic penetration; Price controls; Exchange rates; Gold; International clearing; Securities transfers; Credit institutions; Public finances; Enemy property; Private property; Public property; Natural resources; German war effort; Russia; German settlements; Foreign labor; Forced labor; Slave labor; Looting; Nazi ideology; New Order; Hague Convention; International law; Armistice Agreement; German colonies; Austria; Danzig; Memel; Luxembourg; Czechoslovakia; Poland; Four Year Plan; Ministry of Economics; Ministry of Food and Agriculture; Ministry of Armaments and War Production; OKW; Reich territories; Reich agencies; OSS sources; Ministry of Transportation; RKK; Reich Credit Institutions; Total war; Reichsstellen; Persecution of Jews; Organization Todt; OT; Monopolies; Patron firms; IG Farben; Krupp; German war economy; Foodstuffs; Food supply; Food rationing; Reich Food Ministry; Aryanization; Jewish property; Vichy government; French labor; Quotas; Black market; Collaborationists; Inflation; Taxes; Customs duties; Occupation costs";
 br.bookUrl  = '/nuremberg/catalog/nur:01823';
 
 // Override the path used to find UI images

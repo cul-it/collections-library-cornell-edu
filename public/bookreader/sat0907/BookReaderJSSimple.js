@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0907_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0907_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "Opinion of the Hon. Alfred Conkling, district judge of the United States for the northern district of New York : on a motion in behalf of the tenant for a new trial, in the case of Martha Bradstreet vs. Henry Huntington, delivered at the May term of the court in 1834.";
 br.bookAuthor= "Conkling, Alfred, 1789-1874.";
 br.bookPub= "Utica [N.Y.]: W. Williams, 1834";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0907';
 
 // Override the path used to find UI images

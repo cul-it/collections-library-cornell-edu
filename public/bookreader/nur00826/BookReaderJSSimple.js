@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00826_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00826_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Interrogation of the Former Plenipotentiary of the German Reich in Denmark, Dr. Werner Best, in the Kastell. ";
 br.bookAuthor= "The interrogation officer is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-06";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Danish government; Confiscation; Persecution of Jews; SS; Sabotage; Hostages; Reprisals; Railroads; Fortifications; Jutland; Danish labor; Occupied countries; Food rations; German Foreign Ministry; Reich Ministry for Finance; Reich Ministry for Food; Reich Ministry for Propaganda; Danish press; Danish radio; German refugees; Billeting";
 br.bookUrl  = '/nuremberg/catalog/nur:00826';
 
 // Override the path used to find UI images

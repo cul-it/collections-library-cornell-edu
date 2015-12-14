@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1613_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1613_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "The Tryals of such persons as under the notion of London - apprentices were tumultuously assembled in Moore-Fields, and other places, on Easter holidays last, under the colour of pulling down Bawdy-houses.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "London: Printed for Robert Pawlet., 1668";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1613';
 
 // Override the path used to find UI images

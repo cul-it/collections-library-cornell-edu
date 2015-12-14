@@ -327,7 +327,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3106_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3106_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -385,7 +385,7 @@ br.numLeafs = 50;
 br.bookTitle= "A statement of the case of the people against Elisha B. Fero / by Charles H. Porter, M.D.";
 br.bookAuthor= "Porter, Charles H.";
 br.bookPub= "New York: D. Appleton &amp; Co., 1870";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3106';
 
 // Override the path used to find UI images

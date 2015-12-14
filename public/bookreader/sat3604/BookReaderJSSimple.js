@@ -231,7 +231,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3604_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3604_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -289,7 +289,7 @@ br.numLeafs = 34;
 br.bookTitle= "Opinion of Judge N.K. Hall, of the United States District Court for the Northern District of New York, on habeas corpus in the case of Rev. Judson D. Benedict; : and documents and statement of facts relating thereto.";
 br.bookAuthor= "Hall, Nathan Kelsey, 1810-1874.";
 br.bookPub= "Buffalo: Joseph Warren &amp; Co., printers, 1862";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3604';
 
 // Override the path used to find UI images

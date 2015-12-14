@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0203_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0203_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "The trial of Stephen Arnold, for the murder of Betsey Van Amburgh : a child six years of age : before the court of Oyer and Terminer and General Goal Delivery, for the county of Otsego, at the courthouse in Cooperstown, June 4th, 1805.";
 br.bookAuthor= "Arnold, Stephen H.";
 br.bookPub= "Hartford: Printed by Lincoln &amp; Gleason, 1806";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0203';
 
 // Override the path used to find UI images

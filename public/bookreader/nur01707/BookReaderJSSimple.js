@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01707_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01707_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "To: Colonel Bernstein / From: Mr. 0. A. Schmidt";
 br.bookAuthor= "Orvis A. Schmidt";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-27";
-br.bookKeyword= "";
+br.bookKeyword= "LG. Farbenindustrie; LG. Farben; Finance Division; War Crimes Commission; Foreign exchange; Blocking control; Documentary evidence";
 br.bookUrl  = '/nuremberg/catalog/nur:01707';
 
 // Override the path used to find UI images

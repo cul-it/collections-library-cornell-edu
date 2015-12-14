@@ -339,7 +339,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1707_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1707_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -397,7 +397,7 @@ br.numLeafs = 52;
 br.bookTitle= "The trial of Mary Ann Tocker : for an alleged libel, on Mr. R. Gurney, vice-warden of the Stannary-court, Devon, with the defence verbatim as delivered by the defendant; to which is added, an address to the jury, and also, an address to the public by Miss Tocker.";
 br.bookAuthor= "Tocker, Mary Ann, defendant.";
 br.bookPub= "London: Published at the request, and for the benefit of Miss Tocker, by Henry White, Sen., [1818]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1707';
 
 // Override the path used to find UI images

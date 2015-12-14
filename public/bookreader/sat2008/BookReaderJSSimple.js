@@ -351,7 +351,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2008_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2008_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -409,7 +409,7 @@ br.numLeafs = 54;
 br.bookTitle= "The trial of John Motherhill, for committing a rape on the body of Miss Catharine Wade. Tried at the assize holden at East Grinstead for the county of Sussex, on Tuesday the 21st of March, 1786, before the Hon. Sir. William Henry Ashhurst / John Motherhill";
 br.bookAuthor= "Motherhill, John.";
 br.bookPub= "Dublin: Printed by Sitler, 1786";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2008';
 
 // Override the path used to find UI images

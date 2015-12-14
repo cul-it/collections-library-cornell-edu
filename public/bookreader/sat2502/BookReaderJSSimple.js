@@ -699,7 +699,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2502_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2502_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -757,7 +757,7 @@ br.numLeafs = 112;
 br.bookTitle= "An accurate account of the trial of William Corder, for the murder of Maria Marten of Polstead, in Suffolk ...";
 br.bookAuthor= "Corder, William, 1803-1828.";
 br.bookPub= "London: Published by George Foster, 68, Leadenhall Street, and sold by J. Deck, Bury St. Edmund's; R. Deck, Ipswich; T.F. Butler, High Wycomb..., 1828";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2502';
 
 // Override the path used to find UI images

@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0909_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0909_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "The false prophet! : the very interesting and remarkable trial of Matthias, the false prophet, at White Plains, Westchester County, New-York, for the alleged murder of Mr. Elijah Pierson / reported ... by W.E. Drake, shorthand-writer.";
 br.bookAuthor= "Matthews, Robert, b. 1788.";
 br.bookPub= "New-York: Printed and published by W. Mitchell, 1835";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0909';
 
 // Override the path used to find UI images

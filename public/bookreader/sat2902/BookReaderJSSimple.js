@@ -927,7 +927,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2902_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2902_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -985,7 +985,7 @@ br.numLeafs = 150;
 br.bookTitle= "The veil removed : or H.W. Beecher's trial and acquittal investigated, love demonstrated in plain dealings ...";
 br.bookAuthor= "Beecher, Henry Ward, 1813-1887.";
 br.bookPub= "New York: Published by a classmate of H.W. Beacher, 1874";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2902';
 
 // Override the path used to find UI images

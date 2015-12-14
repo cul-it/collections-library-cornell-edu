@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00993_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00993_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Witness: Frick / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Document Room Interrogation Analysis";
 br.bookAuthor= "Mr. Sackett";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-09";
-br.bookKeyword= "";
+br.bookKeyword= "Preparation for war; Concentration camps; Persecution of Jews; Poland; Czechoslovakia; Austria; Rearmament; Economic laws; Due process; Aggressive war; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:00993';
 
 // Override the path used to find UI images

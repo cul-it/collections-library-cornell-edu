@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00612_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00612_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Decree on the Command of the Armed Forces  / Translation of Decree of 4 February 1938.";
 br.bookAuthor= "Adolf Hitler; the translator's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-02-04";
-br.bookKeyword= "";
+br.bookKeyword= "High Command of the Armed Forces; Keitel; Command authority";
 br.bookUrl  = '/nuremberg/catalog/nur:00612';
 
 // Override the path used to find UI images

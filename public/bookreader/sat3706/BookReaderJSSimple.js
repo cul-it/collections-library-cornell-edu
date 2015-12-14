@@ -201,7 +201,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3706_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3706_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -256,10 +256,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 29;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "Argument of Henry A. Cram : against the so-called "Freedom of worship bill" before the Committee of cities of the Assembly, on the 14th &amp; 21st of April, 1885.";
+br.bookTitle= "Argument of Henry A. Cram : against the so-called 'Freedom of worship bill' before the Committee of cities of the Assembly, on the 14th &amp; 21st of April, 1885.";
 br.bookAuthor= "Cram, Henry A.";
 br.bookPub= "New York City: [s.n.], 1885";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3706';
 
 // Override the path used to find UI images

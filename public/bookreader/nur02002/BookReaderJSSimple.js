@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02002_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02002_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Board of Review / Memorandum No. 1 / General Action Taken / Office of U.S. Chief of Counsel / APO 403 / U.S. Army";
 br.bookAuthor= "Robert G. Storey, Chairman, Board of Review";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-26";
-br.bookKeyword= "";
+br.bookKeyword= "Indictment; Territorial aggrandizement; Common Plan; Concentration camps; Slave labor; Spoliation; Defendants; Criminal organizations; Trial briefs; Liaisons with Foreign Nations; Documentary evidence; Captured documents; Authentication of captured documents; Interrogations; Witnesses; Field trips";
 br.bookUrl  = '/nuremberg/catalog/nur:02002';
 
 // Override the path used to find UI images

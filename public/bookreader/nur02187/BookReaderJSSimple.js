@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02187_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02187_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum for Mr. Justice Jackson. / Subject: Order of Presentation at Trial";
 br.bookAuthor= "Sidney J. Kaplan / Comdr., USCGR, / Chief, Section 3";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-02";
-br.bookKeyword= "";
+br.bookKeyword= "Trial; Prosecution strategy; U.S. Chief of Counsel; Defendants; Aggressive war; Atrocities; Concentration camp film; Warsaw Ghetto";
 br.bookUrl  = '/nuremberg/catalog/nur:02187';
 
 // Override the path used to find UI images

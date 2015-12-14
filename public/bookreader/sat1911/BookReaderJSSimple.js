@@ -213,7 +213,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1911_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1911_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -271,7 +271,7 @@ br.numLeafs = 38;
 br.bookTitle= "Report of the case of Rev. Moses Thatcher, vs. Gen. Preston Pond, for slander, in charging him with committing the crime of adultery. Reported for the Dedham patriot.";
 br.bookAuthor= "Pond, Preston, 1792-1868.";
 br.bookPub= "Dedham, Mass.: Dedham patriot press and Boston Times, 1838";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1911';
 
 // Override the path used to find UI images

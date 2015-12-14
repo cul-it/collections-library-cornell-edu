@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01509_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01509_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Atrocities: Against Military Personnel, Russian / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Document Room Interrogation Analysis";
 br.bookAuthor= "Mr. Dodd";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-27";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Russian POWs; Russian Commissars; Atrocities; Polish campaign; Forced labor; Crimes against military personnel";
 br.bookUrl  = '/nuremberg/catalog/nur:01509';
 
 // Override the path used to find UI images

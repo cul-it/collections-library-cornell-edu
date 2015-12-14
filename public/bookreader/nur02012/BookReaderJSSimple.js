@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02012_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02012_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Notes on Meeting of Representatives of Four Powers on Information Center for Defendants' Counsel, held on 8 October 1945 / Office of U.S. Chief of Counsel / APO 403, U.S. Army";
 br.bookAuthor= "Leonard Wheeler, Jr., Colonel GSC, Deputy Chief, Documentation Division";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-08";
-br.bookKeyword= "";
+br.bookKeyword= "Defendants' Information Center; Room 54; Documentary evidence; Document translation; Access to information";
 br.bookUrl  = '/nuremberg/catalog/nur:02012';
 
 // Override the path used to find UI images

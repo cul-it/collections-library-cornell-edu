@@ -543,7 +543,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00563_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00563_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -601,7 +601,7 @@ br.numLeafs = 86;
 br.bookTitle= "Nazi Plans for Dominating Germany and Europe: Domestic Crimes.  Office of Strategic Services / Research and Analysis Branch /  R &amp; A 3114.2 / Draft for The War Crimes Staff.";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-13";
-br.bookKeyword= "";
+br.bookKeyword= "SA; SS: Stalhelm; Trade unions; Political parties; Political terror; Gestapo; Concentration camps; Death sentences; Jews; Weimar Constitution; \"selective retroactivity\"; Rohm murders; Nazi Amnesties; Nazi propaganda; Communists; Social Democratic Party; Center Party; German State Party; Barvanan People's Party; German Hanoverian Party; Christian Social People's Service; German People's Party; German Nationalist Party; Confiscation; Death penalty";
 br.bookUrl  = '/nuremberg/catalog/nur:00563';
 
 // Override the path used to find UI images

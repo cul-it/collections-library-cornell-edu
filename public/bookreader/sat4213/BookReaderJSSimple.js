@@ -117,7 +117,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4213_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4213_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -175,7 +175,7 @@ br.numLeafs = 15;
 br.bookTitle= "Rev. W.R. Gordon vs. Rev. J.S. Ebaugh: To the Classis of New York. New York, November 6th, 1852.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New York: [s.n.], 1852";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4213';
 
 // Override the path used to find UI images

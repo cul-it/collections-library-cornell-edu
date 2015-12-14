@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01262_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01262_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -107,9 +107,9 @@ br.numLeafs = 4;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "High-Ranking German Army Personalities / SECRET / Seventh Army Interrogation Center / APO 758 / U.S. Army";
-br.bookAuthor= "The interrogator is listed as "W. M. B." Paul Kubala, Major, MI, Commanding";
+br.bookAuthor= "The interrogator is listed as 'W. M. B.' Paul Kubala, Major, MI, Commanding";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-04-11";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01262';
 
 // Override the path used to find UI images

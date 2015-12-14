@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3713_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3713_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "Lives and confessions of John Williams, Francis Frederick, John P. Rog, and Peter Peterson, who were tried at the United States Circuit Court at Boston, for murder &amp; piracy; sentenced to be executed Jan. 21, 1819; and afterwards reprieved till Feb. 18, 1819";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston: Printed by J.T. Buckingham, 1819";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3713';
 
 // Override the path used to find UI images

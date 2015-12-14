@@ -207,7 +207,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3319_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3319_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -265,7 +265,7 @@ br.numLeafs = 30;
 br.bookTitle= "Life and execution of Geo. Shaftesbury, who killed his father and mother! and Marie Lavine, his paramour, the noted murderess. Also the execution of Madam Tiquet, and the trial and execution of Prof. Webster, for the murder of Dr. Geo. Parkman!";
 br.bookAuthor= "Shaftesbury, George Lampanas, 1850.";
 br.bookPub= "Boston: Published and for sale by Dr. H.B. Skinner, M.D., No. 15 Friend Street., 1856";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3319';
 
 // Override the path used to find UI images

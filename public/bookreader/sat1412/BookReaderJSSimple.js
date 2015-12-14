@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1412_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1412_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -130,10 +130,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 8;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "Opinion of the attorney general in the case of the "Soscol Rancho."";
+br.bookTitle= "Opinion of the attorney general in the case of the 'Soscol Rancho.'";
 br.bookAuthor= "United States. Attorney-General";
 br.bookPub= "Washington City: U.S. G.P.O., 1866";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1412';
 
 // Override the path used to find UI images

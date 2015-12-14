@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2112_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2112_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "Report of the trial of Cairns, Turnbull, Smith and Lamb : before the High court of justiciary at Edinburgh, on Monday the 18th of December, 1837, for the crimes of mobbing and rioting, and assault, committed at Hawick, on the occasion of the late election";
 br.bookAuthor= "Cairns, James, defendant.";
 br.bookPub= "Edinburgh: Thomas Clark, 1838";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2112';
 
 // Override the path used to find UI images

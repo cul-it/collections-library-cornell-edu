@@ -405,7 +405,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0103_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0103_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -463,7 +463,7 @@ br.numLeafs = 63;
 br.bookTitle= "The trial of Maturin Livingston, Esq. against James Cheetham for a libel : held at the sittings, on the twenty eightn [sic] of Nov. 1807, before the Hon. Judge Spencer / taken in short hand by William Sampson, esq...";
 br.bookAuthor= "Livingston, Maturin, plaintiff.";
 br.bookPub= "New York: Printed and published by S. Gould, law bookseller and law stationer, opposite the City-Hall, 1807";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0103';
 
 // Override the path used to find UI images

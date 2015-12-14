@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2601_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2601_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -211,7 +211,7 @@ br.numLeafs = 21;
 br.bookTitle= "Trial of Madame Restell, alias Ann Lohman for abortion and causing the death of Mrs. Purdy : Being a full account of all the proceedings on the trial, together with the suppressed evidence and editorial remarks.";
 br.bookAuthor= "Restell, Madame, 1812-1878, defendant.";
 br.bookPub= "New York: For sale at the Book Stand in Wall St., adjoining the Custom House; at the Cottage No. 312 Broadway, next to Masonic Hall; at the News Office, corner of Duane and Greenwich St.; corner of Nassau and Beekman Sts., and Bowery News Office, 1841";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2601';
 
 // Override the path used to find UI images

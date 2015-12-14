@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02069_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02069_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Subject: Indictment";
 br.bookAuthor= "Robert G. Storey";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-19";
-br.bookKeyword= "";
+br.bookKeyword= "Indictment; Criminal organizations; Aggressive war; Luftwaffe; NSDAP";
 br.bookUrl  = '/nuremberg/catalog/nur:02069';
 
 // Override the path used to find UI images

@@ -507,7 +507,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0701_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0701_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -565,7 +565,7 @@ br.numLeafs = 80;
 br.bookTitle= "The speech of the Right Hon. William Windham : delivered in the House of Commons, Wednesday, Nov. 4, 1801, on the report of an address to the Throne, approving of the preliminaries of peace with the Republick of France.";
 br.bookAuthor= "Windham, William, 1750-1810.";
 br.bookPub= "London: Published by Cobbett and Morgan, 1801";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0701';
 
 // Override the path used to find UI images

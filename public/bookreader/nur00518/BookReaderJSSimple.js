@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00518_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00518_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Interrogation of Gen Thomas by Capt Nordan at Falkenstein Lujarett [?]  : title is handwritten.";
 br.bookAuthor= "Georg R. Thomas";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945";
-br.bookKeyword= "";
+br.bookKeyword= "Gestapo; Flossenburg; Dachau; Fritzschaffare; N&#252;rnberger Gesetze";
 br.bookUrl  = '/nuremberg/catalog/nur:00518';
 
 // Override the path used to find UI images

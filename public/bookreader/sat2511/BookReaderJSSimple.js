@@ -519,7 +519,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2511_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2511_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -577,7 +577,7 @@ br.numLeafs = 82;
 br.bookTitle= "Trials and confessions of Madison Henderson, alias Blanchard, Alfred Amos Warrick, James W. Seward, and Charles Brown, murderers of Jesse Baker and Jacob Weaver : as given by themselves and likeness of each, taken in jail shortly after their arrest.";
 br.bookAuthor= "Henderson, Madison; Warrick, Alfred Amos; Seward, James w.; Brown, Charles";
 br.bookPub= "St. Louis: Printed by Chambers &amp; Knapp, Republican Office, 1841";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2511';
 
 // Override the path used to find UI images

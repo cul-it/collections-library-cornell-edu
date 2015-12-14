@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00440_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00440_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -139,7 +139,7 @@ br.numLeafs = 9;
 br.bookTitle= "Memorandum  for the Theater Judge Advocate / Subject: Organization for proceeding  Against Axis War Criminals and Certain Other Offenders / Headquarters / United States Forces / European Theater / Office of Theater Judge Advocate";
 br.bookAuthor= "Charles Fairman, Colonel, JAGD, Chief, International Law  Section";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-16";
-br.bookKeyword= "";
+br.bookKeyword= "Theater Judge Advocate; Moscow Declaration; London  Agreement; Directive JCS 1023/10; War crimes; Atrocities; Aggressive war;  Racial persecution; Religious persecution; Political persecution;  International law; War Crimes Branch; Criminal organizations; Nazi  organizations; Nazi Party; Membership problem; Coordinating Officer for war  crimes; Psychological aspects of war crimes trials; German courts; German  people";
 br.bookUrl  = '/nuremberg/catalog/nur:00440';
 
 // Override the path used to find UI images

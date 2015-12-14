@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01244_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01244_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Interrogation of: Franz von Papen / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Mr. T. J. Dodd";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-12";
-br.bookKeyword= "";
+br.bookKeyword= "Austrian Anschluss; Berchtesgaden meeting; Blood purge of June 30, 1934; June 30 Purge; Hindenburg's Will; Reichstag fire";
 br.bookUrl  = '/nuremberg/catalog/nur:01244';
 
 // Override the path used to find UI images

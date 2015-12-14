@@ -417,7 +417,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00633_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00633_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -475,7 +475,7 @@ br.numLeafs = 65;
 br.bookTitle= "Introduction  [The German Army]";
 br.bookAuthor= "Walther von Brauchitsch; Erich von Manstein; Franz Haider; Walter Warlimont; Siegfried Westphal";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-19";
-br.bookKeyword= "";
+br.bookKeyword= "Versailles Treaty; Weimar Constitution; Munich Putsch; NSDAP; Hinhaltender Widerstand (drawn-out resistance); Black Reichswehr; League of Nations; SA; SS; OKW; Sudeten question; Polish Campaign; Sea-lion; Reconstruction East; Occupied Territories; Partisan warfare; Hostages; Russian Campaign; Balkan Campaign; French Campaign; Norwegian Campaign; Frontier defense; Hague Convention";
 br.bookUrl  = '/nuremberg/catalog/nur:00633';
 
 // Override the path used to find UI images

@@ -585,7 +585,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00800_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00800_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -643,7 +643,7 @@ br.numLeafs = 92;
 br.bookTitle= "Appertaining to War History / (pencil note) / S.O. Only / Tall Grun / Czechoslovakia / Translation of Document 388-PS / Office of U.S. Chief of Counsel";
 br.bookAuthor= "Schmundt; Zeitzler; Keitel; Jodl; Hitler";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against peace; German aggression; Aggressive war; Czechoslovakia; Military strategy; Blitzkrieg; Logistics; Fortifications; Wehrmacht; OKW; OKH; German High Command; Propaganda; German war economy; Armaments; Political strategy; X-Order; Sudeten German Free Corps; SS-Totenkopf; Greater Germany";
 br.bookUrl  = '/nuremberg/catalog/nur:00800';
 
 // Override the path used to find UI images

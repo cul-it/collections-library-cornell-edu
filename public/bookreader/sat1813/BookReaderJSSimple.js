@@ -393,7 +393,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1813_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1813_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -451,7 +451,7 @@ br.numLeafs = 61;
 br.bookTitle= "Lord Chedworth : Two actions brought by John Howe, esq. (afterwards Baron Chedworth) against George Lewis Dive, esq. / Published by Mr. Howe, at the request of his Friends.";
 br.bookAuthor= "Howe, John.";
 br.bookPub= "London: Barker and son., 1781";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1813';
 
 // Override the path used to find UI images

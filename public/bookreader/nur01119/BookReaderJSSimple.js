@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01119_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01119_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Interrogation of: Ernst Kaltenbrunner and Gabor Vajna / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Lt. Col. Brookhart";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-15";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi chain of command; Hungarian Jews; Evacuations; Persecution of Jews; Hungarian Police; Hungarian refugees; Exploitation of Hungary";
 br.bookUrl  = '/nuremberg/catalog/nur:01119';
 
 // Override the path used to find UI images

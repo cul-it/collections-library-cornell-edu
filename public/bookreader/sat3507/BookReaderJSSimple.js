@@ -783,7 +783,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3507_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3507_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -841,7 +841,7 @@ br.numLeafs = 126;
 br.bookTitle= "The trials of Arthur Thistlewood, : J. Ings, J.T. Brunt, W. Davidson, and R. Tidd, on a charge of high treason in attempting to depose the King and assassinate his ministers. Including the whole of the evidence, speeches of counsel, prisoners' defence, &amp;c. Tried at the Sessions House, Old Bailey, before Lord Chief Justice Abbott, Lord Chief Justice Dallas, the chief Baron Richards, and Mr. Justice Richardson, April 17, 1820, and following days. Taken in short hand. To which is added, a copious account of the execution.";
 br.bookAuthor= "Thistlewood, Arthur, 1770-1820.";
 br.bookPub= "London: published by John Fairburn, 2, Broadway, Ludgate Hill; T.Dolby, 299, Strand, (near the New Church) and 34, Wardour Street; sold also by Batchelor Long Alley, Moorfields, and all other Booksellers and Newsmen in town and country. Price two shillings. Printed by W. Molineux, Bream Buildings, Chancery Lane, 1820";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3507';
 
 // Override the path used to find UI images

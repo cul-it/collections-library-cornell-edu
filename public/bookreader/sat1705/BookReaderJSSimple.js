@@ -105,7 +105,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1705_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1705_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -163,7 +163,7 @@ br.numLeafs = 13;
 br.bookTitle= "The confession of Henry M'Curry, embodying particulars of his life : convicted on the 12th of March, 1845 ... of the murder of Paul Roux, of Macon, Geo. : with a sketch of his trial, and sentence of death, as pronounced by the Hon. Judge Brice, March 18, 1845";
 br.bookAuthor= "McCurry, Henry, 1819?-1845?";
 br.bookPub= "Baltimore: Shurtz &amp; Wilde, 1845";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1705';
 
 // Override the path used to find UI images

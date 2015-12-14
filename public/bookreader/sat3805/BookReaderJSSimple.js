@@ -405,7 +405,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3805_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3805_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -463,7 +463,7 @@ br.numLeafs = 63;
 br.bookTitle= "An examination of the law of burial, in a report to the supreme court of New York. In the matter of taking a portion of the cemetery of the Brick Presbyterian church, in widening Beekman Street, in the city of New York.";
 br.bookAuthor= "Ruggles, Samuel B. (Samuel Bulkley), 1800-1881.";
 br.bookPub= "New York: D. Fanshaw, 1856";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3805';
 
 // Override the path used to find UI images

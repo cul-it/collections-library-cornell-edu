@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01544_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01544_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Staff Evidence Analysis / Doc. No. R-118 / Office of the U. S. Chief of Counsel for the Prosecution of Axis Criminality";
 br.bookAuthor= "The name of the analyst is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-06";
-br.bookKeyword= "";
+br.bookKeyword= "Atrocities; War crimes; Crimes against military personnel; Allied airmen";
 br.bookUrl  = '/nuremberg/catalog/nur:01544';
 
 // Override the path used to find UI images

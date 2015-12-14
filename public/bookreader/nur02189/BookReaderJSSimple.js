@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02189_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02189_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: Briefs Prepared by Economic Section (Frankfurt)";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-11";
-br.bookKeyword= "";
+br.bookKeyword= "Trial briefs; Economic case; Spoliation of: France; Belgium; Russia; Poland; Economic Preparation for War";
 br.bookUrl  = '/nuremberg/catalog/nur:02189';
 
 // Override the path used to find UI images

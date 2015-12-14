@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01784_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01784_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Report of Interrogation #5509 of PAV von Rintelen, Emil / Ambassador at large";
 br.bookAuthor= "Lt. Best";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-16";
-br.bookKeyword= "";
+br.bookKeyword= "von Rintelen's career";
 br.bookUrl  = '/nuremberg/catalog/nur:01784';
 
 // Override the path used to find UI images

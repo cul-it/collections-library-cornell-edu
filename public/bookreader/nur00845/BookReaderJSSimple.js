@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00845_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00845_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "Interrogation of Dr. Barandon, Former German Envoy of the Reich-Deputy in Copenhagen, in the Police Headquarters, Regarding Dr. Werner Best, Copenhagen, 1 October 1945. ";
 br.bookAuthor= "The name of the interrogation officer is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-01";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Danish sovereignty; Danish Nazis; German Foreign Office; SS; Schalburg Corps; Martial law; Danish Army; Danish government; Gestapo; Danish communists; Deportations; Persecution of Jews; Sabotage; Counter-terrorism; Hostages; Shellhouse; General strike; Danish police affair; Danish Resistance; Monsun; Schalberg Corps; Corps Schalberg; Schalburtage; HIPO; Auxiliary Police";
 br.bookUrl  = '/nuremberg/catalog/nur:00845';
 
 // Override the path used to find UI images

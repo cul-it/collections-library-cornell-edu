@@ -459,7 +459,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4203_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4203_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -517,7 +517,7 @@ br.numLeafs = 72;
 br.bookTitle= "A letter to Mr. William Parkinson, pastor of the Baptist Church meeting in Gold-Strut, New York : to which is added a dialogue between two brothers ... / by John Inglesby.";
 br.bookAuthor= "Inglesby, John.";
 br.bookPub= "New York: Printed for the author by Smith &amp; Forman, 1808";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4203';
 
 // Override the path used to find UI images

@@ -609,7 +609,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2510_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2510_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -667,7 +667,7 @@ br.numLeafs = 97;
 br.bookTitle= "Remarks upon a recent opinion of the Honorable Oswald Thompson, Esq.... in a part of the divorce case of Griswold vs. Griswold,... / by Theodore Cuyler, counsel of the libellant, the Rev. R.W. Griswold.";
 br.bookAuthor= "Cuyler, Theodore, 1819-1876.";
 br.bookPub= "Philadelphia:  King &amp; Baird, Printers., 1857";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2510';
 
 // Override the path used to find UI images

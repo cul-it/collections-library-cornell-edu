@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00794_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00794_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "Trial Brief / Aggression Against Belgium, The Netherlands and Luxembourg";
 br.bookAuthor= "Lacy W. Hinely, Major";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Case Green; Fall Gelb; Hague Convention; Treaty of Locarno; Kellogg-Briand Pact; Low Countries; Aggressive war; Crimes against peace";
 br.bookUrl  = '/nuremberg/catalog/nur:00794';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01842_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01842_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Argument on Organization by Justice Robert H. Jackson / War Department / Bureau of Public Relations / Press Branch / IMMEDIATE RELEASE";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1946-02-28";
-br.bookKeyword= "";
+br.bookKeyword= "Legal theory; Prosecution strategy; War crimes; Nazi criminal organizations; Gestapo";
 br.bookUrl  = '/nuremberg/catalog/nur:01842';
 
 // Override the path used to find UI images

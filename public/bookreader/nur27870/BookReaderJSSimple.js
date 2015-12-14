@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:27870_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:27870_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 2;
 br.bookTitle= "Secret document with six annexes dealing with the battle-plan against Poland 'Case White'  / Office of U.S. Chief of COunsel for the Prosecution of Axis Criminality / Staff Evidence Analysis";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-27";
-br.bookKeyword= "";
+br.bookKeyword= "Poland; Case White; aggressive war;";
 br.bookUrl  = '/nuremberg/catalog/nur:27870';
 
 // Override the path used to find UI images

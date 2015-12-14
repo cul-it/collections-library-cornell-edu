@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1108_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1108_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -421,7 +421,7 @@ br.numLeafs = 56;
 br.bookTitle= "Speech of John Sergeant on the judicial tenure : delivered in the convention of Pennsylvania, on the 7th and 8th November 1837.";
 br.bookAuthor= "Sergeant, John, 1779-1852.";
 br.bookPub= "Philadelphia: J. Kay, Jun. &amp; Bro., 1838";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1108';
 
 // Override the path used to find UI images

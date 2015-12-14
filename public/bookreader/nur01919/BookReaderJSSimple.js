@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01919_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01919_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Military Government of Germany / Personnel Questionnaire";
 br.bookAuthor= "Unknown";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-03";
-br.bookKeyword= "";
+br.bookKeyword= "POW processing; Personnel questionnaire; Writings and Speeches; Employment; Foreign travel; Income; Political Affiliations";
 br.bookUrl  = '/nuremberg/catalog/nur:01919';
 
 // Override the path used to find UI images

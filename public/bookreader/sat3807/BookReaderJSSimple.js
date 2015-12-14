@@ -357,7 +357,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3807_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3807_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -415,7 +415,7 @@ br.numLeafs = 55;
 br.bookTitle= "The tryals and condemnation of Lionel Anderson, alias Munson, William Russel, alias Napper, Charles Parris, alias Parry, Henry Starkey, James Corker, and William Marshal, for high treason, as Romish priests, upon the statute of 27. Eliz. cap. 2 : together with the tryal of Alexander Lumsden, a Scotchman, and the arraignment of David Joseph Kemish for the same offence : at the sessions of Oyer and Terminer in the Old-Baily, on Saturday, January 17th, 1679.";
 br.bookAuthor= "Anderson, Lionel, d. 1710, defendant; Russel, William, defendant; Parris, Charles, defendant; Strakey, Henry, defendant; Lumsden, Alexander, defendant; Kemish, David Joseph, defendant; Marshall, William, defendant; Corker, James Maurus, 1636-1715, defendant.";
 br.bookPub= "London: Printed for Thomas Collins and John Starkey Book-Sellers in Fleet-Street near Temple-Bar., 1680";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3807';
 
 // Override the path used to find UI images

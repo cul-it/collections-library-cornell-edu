@@ -699,7 +699,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00688_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00688_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -757,7 +757,7 @@ br.numLeafs = 110;
 br.bookTitle= "The Reich Ministry of Armament and War Production (Speer Ministry)  / Foreign Economic Administration / German-Austrian Branch / Copy No. 310/SECRET";
 br.bookAuthor= "The author's name is not given. The translator of the respective appendices (German-language originals) is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-02-00";
-br.bookKeyword= "";
+br.bookKeyword= "Speer Ministry; Ministry of Armament and War Production; Office of War Economy and Armament; Four Year Plan Administration; Ministry of Economics; Main Committees; Rings; Production Main Committees; Reichsstellen; Steered economy; Bewirtschaftungsstellen; Self-administrative agencies; Unified economic control; Reichsvereinigungen; Reich Association; Concentration decree; Warenverkehrsordnung; Commodity Control decree; Simplification decrees; Planning Office; Central Office; Armament Bureau; Generalreferat; Technical Bureau; Production Bureau; Raw Materials Bureau; Building Bureau; Power Supply Bureau; Armament Inspections; Labor Allocation Engineer; Production Spheres; Volkische Beobachter; Deutsche Volkswirtschaft";
 br.bookUrl  = '/nuremberg/catalog/nur:00688';
 
 // Override the path used to find UI images

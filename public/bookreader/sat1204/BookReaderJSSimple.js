@@ -1053,7 +1053,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1204_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1204_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1111,7 +1111,7 @@ br.numLeafs = 171;
 br.bookTitle= "Shiloh; or, the Tennessee campaign of 1862: written especially for the Army of the Tennessee in 1862 ... By a comrade on that battle-field and a West-Point graduate of 1827.";
 br.bookAuthor= "Worthington, Thomas, 1807-1884.";
 br.bookPub= "Washington: M'Gill &amp; Witherow, printers, 1872";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1204';
 
 // Override the path used to find UI images

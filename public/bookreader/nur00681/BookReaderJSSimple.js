@@ -225,7 +225,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00681_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00681_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -283,7 +283,7 @@ br.numLeafs = 33;
 br.bookTitle= "The Acquiring of Totalitarian Control in Germany: Economic; and the Economic Planning and Mobilization for Aggressive War ";
 br.bookAuthor= "Edgar Bodenhiemer (sp?)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Military economy (\"Wehrwirtschaft\"); Rearmament; Reich Defense Council; Reichsbank; Foreign exchange; Four-Year Plan";
 br.bookUrl  = '/nuremberg/catalog/nur:00681';
 
 // Override the path used to find UI images

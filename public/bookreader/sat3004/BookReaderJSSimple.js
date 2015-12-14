@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3004_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3004_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "Speech of David Paul Brown, before the Mayor's Court of Philadelphia, September 17, 1825 : on the subject of a riot and assault and battery / taken in shorthand by M.T.C. Gould, stenographer.";
 br.bookAuthor= "Brown, David Paul, 1795-1872.";
 br.bookPub= "Philadelphia: Robb, Pile &amp; M'Elroy, printers., 1858";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3004';
 
 // Override the path used to find UI images

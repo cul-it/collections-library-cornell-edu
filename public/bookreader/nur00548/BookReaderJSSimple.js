@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00548_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00548_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -211,7 +211,7 @@ br.numLeafs = 21;
 br.bookTitle= "Excerpts from Various Pages of Organization Book of the NSDAP 1943 edition.  Translation of Document 1893-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "The translator of this document is Gerard Schaefer, 2nd Lt., Inf., 01332102. The editor of the Oreanization Book of the NSDAP is Dr Robert Lev.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-03";
-br.bookKeyword= "";
+br.bookKeyword= "NSDAP; Ideology; Political Director; SA; SS; NSKK; HJ: RAD; Hoheitstraeger (Bearers of Sovereignty); Gauleiter (District Director); Kreisleiter (County Director); Ortsgruppenleiter (Local Chapter Director); Zellenleiter (Cell Block Director); Blockleiter (Block Director); Propaganda; Reich President; Reich Chancellery; Reich Directorate";
 br.bookUrl  = '/nuremberg/catalog/nur:00548';
 
 // Override the path used to find UI images

@@ -687,7 +687,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3102_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3102_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -745,7 +745,7 @@ br.numLeafs = 110;
 br.bookTitle= "The whole proceedings on the trials of two informations ... against George Gordon, esq., commonly called Lord George Gordon: one for a libel on the Queen of France and the French Ambassador, the other for a libel on the judges, and the administration of the laws in England. Also of Thomas Wilkins, for printing the last-mentioned libel. Tried in the Court of King's Bench ... the 6th of June, 1787, before the Hon. Francis Buller, esq. ... Taken in short-hand by Joseph Gurney.";
 br.bookAuthor= "Gordon, George, Lord, 1751-1793, defendant.";
 br.bookPub= "London: Sold by M. Gurney, 1787";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3102';
 
 // Override the path used to find UI images

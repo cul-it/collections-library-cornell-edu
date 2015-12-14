@@ -207,7 +207,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2710_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2710_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -265,7 +265,7 @@ br.numLeafs = 30;
 br.bookTitle= "A genuine account of the behavior, confession, and dying-words of William Hawke and William Jones, who were executed at Tyburn on the 1st of July, 1774 / by John Villette.";
 br.bookAuthor= "Villette, John, d. 1799.";
 br.bookPub= "London: Printed for H. Turpin: J. Bew: E. Cooke: S. Chandler: J. Villette, 1774";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2710';
 
 // Override the path used to find UI images

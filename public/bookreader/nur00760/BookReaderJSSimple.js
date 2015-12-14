@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00760_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00760_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of Heinz von Gyldenfeldt";
 br.bookAuthor= "Lt. Col T. S. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-07";
-br.bookKeyword= "";
+br.bookKeyword= "Prisoners of war; Russian POWs; Executions; Geneva Convention; Commandos; War Crimes; OKH; OKW";
 br.bookUrl  = '/nuremberg/catalog/nur:00760';
 
 // Override the path used to find UI images

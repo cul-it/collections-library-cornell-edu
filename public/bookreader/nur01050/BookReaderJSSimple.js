@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01050_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01050_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Condemnation of Goering by Hanna Reitsch / Air Division / Headquarters United States Forces in Austria / Air Interrogation Unit (USDIC) / APO 777 U.S. Army / Interrogation Summary / CONFIDENTIAL";
 br.bookAuthor= "Robert E. Work, EAB / Captain, Air Corps / Chief Interrogator";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-16";
-br.bookKeyword= "";
+br.bookKeyword= "Hitler's bunker; Luftwaffe; Goering's Caesar complex; Morphine; Berlin; Aeronautical program; Volksjaeger blunder; GAF; German air force; Propaganda; Germao-guilt; Goering's treason; Goering's delusions; Goering's responsibility; Big Four; Nazi ideology; Hitler's inner circle; Confiscation; Plundering; Art; Artworks; Art objects; Private property";
 br.bookUrl  = '/nuremberg/catalog/nur:01050';
 
 // Override the path used to find UI images

@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0212_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0212_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "Trial of David D. How for the murder of Othello Church at Angelica / as taken at the time by Daniel Cruger and Henry Wells, Esq.'s ; with a sketch of his life and confession, as taken from him in the dungeon by Elder Joseph Badger, who was with him the last eighteen days of his life";
 br.bookAuthor= "How, David D., 1776-1824.";
 br.bookPub= "Auburn [N.Y.]: Printed by T.M. Skinner, 1824";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0212';
 
 // Override the path used to find UI images

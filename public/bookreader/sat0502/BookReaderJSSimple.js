@@ -237,7 +237,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0502_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0502_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -295,7 +295,7 @@ br.numLeafs = 35;
 br.bookTitle= "The trial of Michael Powars for the murder of Timothy Kennedy, before the Supreme judicial court of Massachusetts, Boston, April 11, 1820.";
 br.bookAuthor= "Power, Michael, 1769-1820, defendant.";
 br.bookPub= "Boston: Bangs, 1820";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0502';
 
 // Override the path used to find UI images

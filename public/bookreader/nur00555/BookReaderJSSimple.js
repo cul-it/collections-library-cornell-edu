@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00555_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00555_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "Wesen, Grundsaetze und Ziele der NSDAP.  Translation of Document 2433-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "Alfred Rosenberg. The translator of this document is Goetz Mayer, T/S, 33812169.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-16";
-br.bookKeyword= "";
+br.bookKeyword= "Versailles; St. Germain; National Socialism; Aryan culture; NSDAP; Land and soil; Colonies; Jew; German blood; Parliamentary system; German press; German Army";
 br.bookUrl  = '/nuremberg/catalog/nur:00555';
 
 // Override the path used to find UI images

@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3806_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3806_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -211,7 +211,7 @@ br.numLeafs = 21;
 br.bookTitle= "The resolutions of the House of Commons,  for the impeachment of Sir William Scroggs, Knt., chief justice of the Court of King's Bench; Sir Thomas Jones, Knight, one of the justices of the same court; Sir Richard Weston, Knight, one of the Barons of the Court of Exchequer.";
 br.bookAuthor= "Scroggs, William, Sir; Jones, Thomas, Sir; Weston, Richard, Sir";
 br.bookPub= "London: Printed for John Wright, at the Crown on Ludgate-Hill, and Richard Chiswell, at the Rose and Crown in St. Paul's Church-yard., 1680";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3806';
 
 // Override the path used to find UI images

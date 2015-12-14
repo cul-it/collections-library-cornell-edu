@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01710_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01710_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "TO: General Hilldring / FROM: Orvis A. Schmidt";
 br.bookAuthor= "Orvis A. Schmidt";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-02";
-br.bookKeyword= "";
+br.bookKeyword= "German industrialists; LG. Farben; Occupied territories; France; German cartels; International Steel Cartel; Economic case; Bosch; Bausch &amp; Lomb; Nazi Party; Aggressive war; Rearmament";
 br.bookUrl  = '/nuremberg/catalog/nur:01710';
 
 // Override the path used to find UI images

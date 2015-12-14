@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00793_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00793_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Letter to the Austrian Minister Guido Zernatto Concerning the Proposed Plebiscite / TRANSLATION";
 br.bookAuthor= "Seyss-Inquart";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-03-09";
-br.bookKeyword= "";
+br.bookKeyword= "Plebiscite; Anschluss; Crimes against peace; German aggression; Austrian Nazis";
 br.bookUrl  = '/nuremberg/catalog/nur:00793';
 
 // Override the path used to find UI images

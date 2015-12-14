@@ -1041,7 +1041,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1706_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1706_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1099,7 +1099,7 @@ br.numLeafs = 169;
 br.bookTitle= "High-treason : The whole proceedings on the trial of James Watson, the elder, surgeon, Arthur Thistlewood, gent., Thomas Preston, cordwainer, and John Hooper, labourer, for high-treason ... Together with the whole proceedings in this highly interesting and important trial, given at full length / Taken in short-hand by a gentleman of the bar, expressly for this edition.";
 br.bookAuthor= "Watson, James, 1766?-1838. defendant.";
 br.bookPub= "London: J.  Bailey, [1817]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1706';
 
 // Override the path used to find UI images

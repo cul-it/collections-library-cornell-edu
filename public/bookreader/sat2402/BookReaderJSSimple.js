@@ -213,7 +213,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2402_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2402_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -271,7 +271,7 @@ br.numLeafs = 31;
 br.bookTitle= "Trial of William M'Donnough on an indictment for the murder of his wife, Elizabeth M'Donnough : before the Hon. Supreme Judicial Court of the Commonwealth of Massachusetts, at November term, holden at Boston, in the county of Suffolk, on the fourth Tuesday of November, 1817 / from minutes taken at the trial by a gentleman of the bar.";
 br.bookAuthor= "M'Donnough, William, d. 1818?";
 br.bookPub= "Boston: Printed by Thomas G. Bangs, [1818?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2402';
 
 // Override the path used to find UI images

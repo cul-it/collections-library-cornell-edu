@@ -765,7 +765,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1814_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1814_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -823,7 +823,7 @@ br.numLeafs = 151;
 br.bookTitle= "The whole proceedings on the trial of indictment against Thomas Walker of Manchester : merchant, Samuel Jackson, James Cheetham, Oliver Pearsal [sic] Benjamin Booth, and Joseph Collier : for a conspiracy to overthrow the constitution and government, and to aid and assist the French, (being the King's Enemies) in case they should invade this Kingdom.";
 br.bookAuthor= "Walker, Thomas, 1749-1817, defendant.";
 br.bookPub= "Philadelphia: Printed for Samuel Harrison Smith, by W. Woodward., 1794";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1814';
 
 // Override the path used to find UI images

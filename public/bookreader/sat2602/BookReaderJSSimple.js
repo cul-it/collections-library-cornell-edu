@@ -195,7 +195,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2602_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2602_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -253,7 +253,7 @@ br.numLeafs = 28;
 br.bookTitle= "Report of the trial by jury, of the action of damages for assault : Margaret Finlayson, spouse of Archibald Finlayson shoemaker, Glasgow, against Michael Gilfillan, writer in Glasgow.";
 br.bookAuthor= "Finlayson, Margaret Graham Davidson.";
 br.bookPub= "Edinburgh: Published by Edward West &amp; co., 1825";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2602';
 
 // Override the path used to find UI images

@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00860_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00860_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Interrogation of the Ex-Commander of the German Security Police in Denmark. Otto Bovensiepen, in the Castle Kopenhagen, 3 September 1945.";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-03";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Counter-terror; Peter Group; Terror-actions; Retaliatory murder; Reprisals; Asa; Nordisk Filmkompagni; Kinopalaest; Palladium; Danish Resistance; Lampe &amp; Lysekronefabrikken Lyfa; Oliemollen; Korsor Glasvaerk; Borsholt; Scandia; Magasin du Nord; Daells Varehus; Stjemeradio; Fyns Stiftstidende; Langelinie Pavillon; Domus Medica; C. B. Grundschule; Borgernes Hus; Tivoli; Danish police affair; Nyhavn 51; Siroco; Goschs Taendstikfabrikker; L^ndsoldaten; Hellerup Taendstikfabrik; A/S Premier Is; Odinturm; Tuborg; Bang &amp; Olufsen; Apollo Theater; City Hall; Aarhus";
 br.bookUrl  = '/nuremberg/catalog/nur:00860';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01659_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01659_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "EXTRACT / [Ohletz Execution Order] / General Orders / Number 16 / Headquarters / Seine Section, Com Z / European Theater of Operations / United States Army";
-br.bookAuthor= "E. J. Blakely, Jr., "By command of Brigadier General Rogers"";
+br.bookAuthor= "E. J. Blakely, Jr., 'By command of Brigadier General Rogers'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-10-06";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01659';
 
 // Override the path used to find UI images

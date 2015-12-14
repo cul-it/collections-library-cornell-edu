@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2019_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2019_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Commonwealth of Massachusetts v. Levi Kenniston, Laban Kenniston, and Reuben Taber, for robbery / Levi Kenniston.";
 br.bookAuthor= "Kenniston, Levi.";
 br.bookPub= "[s.l.]: [s.n.], 1817";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2019';
 
 // Override the path used to find UI images

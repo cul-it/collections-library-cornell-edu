@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00906_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00906_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Demand death penalty for traitors / Netherlands Information Bureau First death verdict for guilty collaborator / Netherlands Information Bureau Blokzijl trial / Netherlands Information Bureau";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-04";
-br.bookKeyword= "";
+br.bookKeyword= "Traitors; Collaborationists; Death sentence; Dutch Nazis; The Hague; Dutch Jews";
 br.bookUrl  = '/nuremberg/catalog/nur:00906';
 
 // Override the path used to find UI images

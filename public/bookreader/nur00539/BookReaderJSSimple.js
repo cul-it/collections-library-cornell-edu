@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00539_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00539_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "OCC Brief, Section 1. II.C.3.b. The Nazi conspirators destroyed free trade unions and obtained control over the productive labor capacity of the German nation ";
 br.bookAuthor= "Captain D. A. Sprecher";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Trade unions; \"Free Trade Unions\"; Christian Trade Unions; General German Trade Union Federation; General Independent Employees Federation; Weimer Constitution; Mein Kampf; Jew; NSDAP; SA; SS; \"protective custody\"; \"List of Outlaws\"; Confiscated property; \"Factory Troops\"; \"Strength Through Joy\"";
 br.bookUrl  = '/nuremberg/catalog/nur:00539';
 
 // Override the path used to find UI images

@@ -285,7 +285,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0410_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0410_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -343,7 +343,7 @@ br.numLeafs = 43;
 br.bookTitle= "The People vs. Edward H. Ruloff : argument of Marshall B. Champlain, Attorney-General, State of New York, upon the trial of the prisoner for murder, January, 1871, at the court house, in Binghamton, Broome Co., N.Y. / reported by William O. Wyckoff.";
 br.bookAuthor= "Champlain, Marshall B.";
 br.bookPub= "Albany, N.Y.: Argus Co. Printers, 1871";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0410';
 
 // Override the path used to find UI images

@@ -207,7 +207,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00704_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00704_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -265,7 +265,7 @@ br.numLeafs = 30;
 br.bookTitle= "Warlimont [handwritten] / Summary of the German campaigns and the most important other strategic and tactical measures from 1939 to Sept. 1944.";
 br.bookAuthor= "Walter Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Military strategy; OKH tactics; Maginot Line; Poland; Norway; Denmark; Great Britain; Operation Seeloewe; Sea Lion; Africa; Balkans; Crete; Russia; Italy; Japan; France; Axis Powers; Attack on Russia";
 br.bookUrl  = '/nuremberg/catalog/nur:00704';
 
 // Override the path used to find UI images

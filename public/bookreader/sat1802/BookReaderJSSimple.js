@@ -483,7 +483,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1802_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1802_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -541,7 +541,7 @@ br.numLeafs = 76;
 br.bookTitle= "Trial of William Dandridge Epes, for the murder of Francis Adolphus Muir, Dinwiddie County, Virginia: including the testimony submitted in the case, the speeches of counsel, &amp;c.  To which are added the confessions of the prisoner, an account of his execution, &amp;c. &amp;c.";
 br.bookAuthor= "Epes, William Dandridge, 1806 (ca.)-1848, defendant.";
 br.bookPub= "Petersburg, Va.: J.M.H. Brunet, reporter., 1849";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1802';
 
 // Override the path used to find UI images

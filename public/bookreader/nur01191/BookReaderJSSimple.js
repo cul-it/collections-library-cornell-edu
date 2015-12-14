@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01191_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01191_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "Memorandum / To: Lt Comdr. O'Malley / From: John W. Jackson / Subject: Interrogation of Hermann Rochling / SECRET";
 br.bookAuthor= "John W. Jackson";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-30";
-br.bookKeyword= "";
+br.bookKeyword= "German steel production; Iron and steel; Armaments; Autobahns; German employment; German industrialists";
 br.bookUrl  = '/nuremberg/catalog/nur:01191';
 
 // Override the path used to find UI images

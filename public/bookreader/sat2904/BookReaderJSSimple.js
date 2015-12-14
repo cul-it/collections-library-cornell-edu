@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2904_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2904_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "The trial, conviction, &amp; sentence of Jesse Strang, for the murder of John Whipple at Albany on the 7th of May 1827 : containing all the evidence as given on the very interesting trial, with the trial &amp; acquittal of Mrs. Whipple, as an accomplice to the murder of her husband : together with a brief sketch of the history of Jesse Strang, and also, the history of Mrs. Whipple.";
 br.bookAuthor= "Strang, Jesse, 1797-1827.";
 br.bookPub= "New York: Published by E.M. Murden, 1827";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2904';
 
 // Override the path used to find UI images

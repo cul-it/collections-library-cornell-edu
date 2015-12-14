@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00663_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00663_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "List of some of the officers who fall within the definition of the German Staff in Appendix B of the Indictment ";
 br.bookAuthor= "Peter Calvocoressi, Wing Commander";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "German General Staff; German High Command; Indictment";
 br.bookUrl  = '/nuremberg/catalog/nur:00663';
 
 // Override the path used to find UI images

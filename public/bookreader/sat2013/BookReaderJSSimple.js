@@ -117,7 +117,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2013_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2013_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -175,7 +175,7 @@ br.numLeafs = 15;
 br.bookTitle= "The trial at large, of Capt. J. Caulfield, Esq. for criminal conversation with the wife of Captain George Chambers, Esq., daughter of the late Lord Rodney ... / by Richard Johnson, Esq.";
 br.bookAuthor= "Johnson, Richard.";
 br.bookPub= "London: Sold by R. Butters, No. 22, Fetter-Lane, Fleet-Street, 1804";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2013';
 
 // Override the path used to find UI images

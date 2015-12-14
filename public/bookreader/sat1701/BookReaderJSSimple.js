@@ -375,7 +375,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1701_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1701_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -433,7 +433,7 @@ br.numLeafs = 58;
 br.bookTitle= "The trial of Daniel Dawson, for poisoning Mr. Adams's mare at Newmarket in 1809, which took place before Mr. Justice Heath at Cambridge July 22, 1812 / taken in court by Geo. Kent.";
 br.bookAuthor= "Dawson, Daniel, d. 1812, defendant.";
 br.bookPub= "London: Printed by W. Glindon, 1812";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1701';
 
 // Override the path used to find UI images

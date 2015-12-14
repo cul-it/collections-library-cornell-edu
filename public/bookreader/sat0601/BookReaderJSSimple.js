@@ -525,7 +525,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0601_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0601_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -583,7 +583,7 @@ br.numLeafs = 83;
 br.bookTitle= "Report of the trial of William Kilfoyle, upon the charge of killing Mary Mulrooney at Newtownberry on the 18 of June 1831 : tried before the Hon. Baron Foster at the Spring Assizes of Wexford, 1832 / taken in shorthand by James Mongan.";
 br.bookAuthor= "Kilfoyle, William";
 br.bookPub= "Dublin: R. Milliken, 1832";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0601';
 
 // Override the path used to find UI images

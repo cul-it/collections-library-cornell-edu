@@ -483,7 +483,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0104_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0104_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -541,7 +541,7 @@ br.numLeafs = 76;
 br.bookTitle= "Report of a trial in the Supreme judicial court, holden at Boston, Dec. 16th and 17th, 1828, of Theodore Lyman, jr., for an alleged libel on Daniel Webster, a senator of the United States, published in the Jackson Republican, comprising all the documents";
 br.bookAuthor= "Lyman, Theodore, 1792-1849, defendant.";
 br.bookPub= "Boston: Putnam and Hunt, 1828";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0104';
 
 // Override the path used to find UI images

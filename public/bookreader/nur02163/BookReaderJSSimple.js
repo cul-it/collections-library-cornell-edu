@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02163_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02163_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum / To: Wing Commander Calvocoressi, Room 248";
 br.bookAuthor= "Otto N. Nordon";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-03";
-br.bookKeyword= "";
+br.bookKeyword= "Visual evidence; Organizational charts; OKW; German Armed Forces; \"Sperrkreis\"; Warlimont statements";
 br.bookUrl  = '/nuremberg/catalog/nur:02163';
 
 // Override the path used to find UI images

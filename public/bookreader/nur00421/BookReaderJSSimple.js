@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00421_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00421_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "R &amp; A No. 3093 / Nazi Changes  in the Law of Real Property  / Office of Strategic Services / Research and  Analysis Branch / RESTRICTED";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-17";
-br.bookKeyword= "";
+br.bookKeyword= "Real Property law; Real Property rights; Possession;  Abstract nature of real transactions; Transfer; Agricultural property; Nazi  theory; Peasant's estate; Jews; Confiscation; Peasant's Estate Act; Eminent  Domain; Small Garden Plots";
 br.bookUrl  = '/nuremberg/catalog/nur:00421';
 
 // Override the path used to find UI images

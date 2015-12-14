@@ -333,7 +333,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4305_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4305_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -391,7 +391,7 @@ br.numLeafs = 51;
 br.bookTitle= "Report of the trial of John Quay, vs. the Eagle Fire Company of New-York : before the Honourable William W. Van Ness, one of the justices of the Supreme Court of Judicature of the State of New-York, commencing on Friday the sixth, and ending on Tuesday the tenth days of December, 1816 / by Daniel Rogers.";
 br.bookAuthor= "Quay, John, 19th cent.";
 br.bookPub= "New-York: Printed by J. Seymour, 1817";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4305';
 
 // Override the path used to find UI images

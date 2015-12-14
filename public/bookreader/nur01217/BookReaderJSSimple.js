@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01217_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01217_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Interrogation of Ley Robert / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Major Monigan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-04";
-br.bookKeyword= "";
+br.bookKeyword= "Evidence charts; Organization charts; NSDAP; Fuehrer's Chancellery; Party Chancellery; Reichsleiters; Party Formations; OT; Inside Germany Dept.; Outside Germany Dept.; Party Control Organizations; German Labor Front";
 br.bookUrl  = '/nuremberg/catalog/nur:01217';
 
 // Override the path used to find UI images

@@ -915,7 +915,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3810_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3810_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -973,7 +973,7 @@ br.numLeafs = 148;
 br.bookTitle= "The proceedings and tryal in the case of the Most Reverend Father in God William Lord Archbishop of Canterbury, and the Right Reverend Fathers in God, William Lord Bishop of St. Asaph, Francis Lord Bishop of Ely, John Lord Bishop of Chichester, Thomas Lord Bishop of Bath and Wells, Thomas Lord Bishop of Peterborough, and Jonathan Lord Bishop of Bristol.";
 br.bookAuthor= "Sancroft, William, 1617-1693.";
 br.bookPub= "London: Printed for Thomas Basset at the George in Fleet Street, and Thomas Fox, at the Angel in Westminster-Hall., 1689";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3810';
 
 // Override the path used to find UI images

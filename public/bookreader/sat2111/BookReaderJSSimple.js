@@ -279,7 +279,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2111_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2111_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -337,7 +337,7 @@ br.numLeafs = 42;
 br.bookTitle= "The case of the Virginius: considered with reference to the law of self-defence.";
 br.bookAuthor= "Curtis, George Ticknor, 1812-1894.";
 br.bookPub= "New York: Baker, Voorhis &amp; co., [etc., etc.], 1874";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2111';
 
 // Override the path used to find UI images

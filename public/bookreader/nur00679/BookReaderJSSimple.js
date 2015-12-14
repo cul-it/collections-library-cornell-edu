@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00679_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00679_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "1933-1936 Preparation for Aggression ";
 br.bookAuthor= "Major Joseph Dainow";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Secret rearmament; Treaty of Versailles; Rhine Treaty of Locarno; Rhineland; German Navy; Military conscription; Operation \"Schulung\"";
 br.bookUrl  = '/nuremberg/catalog/nur:00679';
 
 // Override the path used to find UI images

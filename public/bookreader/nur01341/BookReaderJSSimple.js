@@ -159,7 +159,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01341_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01341_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -217,7 +217,7 @@ br.numLeafs = 21;
 br.bookTitle= "Organization of the Reichssicherheitshauptamt / (Translation of a captured document available through X-2 Branch, OSS)";
 br.bookAuthor= "Neither the author nor the translator is named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-01-01";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; Sipo; Stapo; Kripo; SD; SS; Ideological education; Physical training; Volkstum; Freemasonry; Jews; Political Catholicism; Political Protestantism Sects; Marxism";
 br.bookUrl  = '/nuremberg/catalog/nur:01341';
 
 // Override the path used to find UI images

@@ -639,7 +639,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3503_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3503_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -697,7 +697,7 @@ br.numLeafs = 102;
 br.bookTitle= "Trial of C.B. Reynolds for blasphemy, at Morristown, N.J., May 19th and 20th, 1887 / defence by Robert G. Ingersoll ; stenographically reported by I.N. Baker, and revised by the author.";
 br.bookAuthor= "Ingersoll, Robert Green, 1833-1899.";
 br.bookPub= "New York City: C.P. Farrell, 1888";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3503';
 
 // Override the path used to find UI images

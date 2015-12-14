@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1908_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1908_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "The trial of Captain Moir, at Chelmsford, on Friday July 30, 1830, before Lord Chief-Justice Tenterden, for the wilful murder of William Malcolm, a fisherman.";
 br.bookAuthor= "Moir, William, Captain.";
 br.bookPub= "[s.l.]: [s.n.], 1830";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1908';
 
 // Override the path used to find UI images

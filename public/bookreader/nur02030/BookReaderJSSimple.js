@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02030_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02030_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Memorandum for Major General Donovan / Subject: Documents Examined by Dr. Stahmar, Goering's Lawyer";
 br.bookAuthor= "Roger W. Barrett, 1st Lt., JAGD";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-13";
-br.bookKeyword= "";
+br.bookKeyword= "PS-series documents; C-series documents; R-series documents; UK documents; Goering's lawyer; Fuehrer order (\"Note from Secret Files\"); Defendants; Prosecution strategy; Defense strategy; Due process";
 br.bookUrl  = '/nuremberg/catalog/nur:02030';
 
 // Override the path used to find UI images

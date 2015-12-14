@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02165_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02165_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "In view of the assertion made by Hess that he has amnesia...";
 br.bookAuthor= "William J. Donovan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-25";
-br.bookKeyword= "";
+br.bookKeyword= "Defendants; Due process";
 br.bookUrl  = '/nuremberg/catalog/nur:02165';
 
 // Override the path used to find UI images

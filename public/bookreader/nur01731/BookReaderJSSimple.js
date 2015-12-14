@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01731_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01731_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Memorandum to Major J. Monigan, Jr. / From Dr. A. Pathy / Subject: Admiral Horthy";
 br.bookAuthor= "Dr. A. Pathy";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-17";
-br.bookKeyword= "";
+br.bookKeyword= "OSS sources; War criminals; War crimes investigation; Nazi Master Plan; German police; Gestapo; Persecution of Jews; German hegemony; Hungary; Austria; Czechoslovakia; Poland; Yugoslavia; Bulgaria; Romania; USSR; Anschluss; Sudetenland";
 br.bookUrl  = '/nuremberg/catalog/nur:01731';
 
 // Override the path used to find UI images

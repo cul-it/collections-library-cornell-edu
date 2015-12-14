@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01996_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01996_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "The Planning Committee met at 20:55 hours... / RESTRICTED";
 br.bookAuthor= "Major William H. Baldwin (?)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-21";
-br.bookKeyword= "";
+br.bookKeyword= "Affidavits; Witnesses; Testimony";
 br.bookUrl  = '/nuremberg/catalog/nur:01996';
 
 // Override the path used to find UI images

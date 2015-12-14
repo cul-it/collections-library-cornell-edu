@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00652_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00652_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Additional Notes to My Position in the O.K. W. with Regard to the Indictment ";
 br.bookAuthor= "Walter Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-28";
-br.bookKeyword= "";
+br.bookKeyword= "OKW; CIC; Warlimont's career; OKH; Division for National Defense; Chief of National Defense; German General Staff";
 br.bookUrl  = '/nuremberg/catalog/nur:00652';
 
 // Override the path used to find UI images

@@ -2025,7 +2025,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1302_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1302_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2083,7 +2083,7 @@ br.numLeafs = 333;
 br.bookTitle= "The proceedings of the court convened under the third canon of 1844, in the city of New York ... December 10, 1844 : for the trial of the Right Rev. Benjamin T. Onderdonk, D. D., bishop of New York; on a presentment made by the bishops of Virginia, Tennessee, and Georgia ....";
 br.bookAuthor= "Onderdonk, Benjamin T. (Benjamin Tredwell), 1791-1861, respondent.";
 br.bookPub= "New York;Philadelphia: D. Appleton &amp; Co.; G.S.  Appleton, 1845";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1302';
 
 // Override the path used to find UI images

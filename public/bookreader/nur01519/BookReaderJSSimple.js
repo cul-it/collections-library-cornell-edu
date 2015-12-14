@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01519_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01519_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Report on the activities of the Einsatzgruppen of Sipo and SD in the USSR / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Staff Evidence Analysis";
 br.bookAuthor= "Sch&#228;fer is the analyst.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-16";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Einsatzgruppen; Sipo; SD; Russia; Atrocities; Persecution of Jews; Forced labor; Spoliation of foreign property; Kiev; Shitomir; Cherson; Djnepr; Mass killings; Shootings; Confiscation; Executions; Liquidations; Reprisals; Documentary evidence";
 br.bookUrl  = '/nuremberg/catalog/nur:01519';
 
 // Override the path used to find UI images

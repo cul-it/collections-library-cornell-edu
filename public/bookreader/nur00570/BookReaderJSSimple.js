@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00570_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00570_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Notes on the Conference in the Reichskanzlei on 5 Nov 37 from 16:15-20:30 hours  / Translation of Document 386-PS / Office of U. S. Chief of Counsel";
 br.bookAuthor= "Hoszbach; the translator is Eve Glazier, P/O, W.R.N.S., 37371.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1937-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Living space; Autarchy; World Economy; Czechoslovakia; Poland; France; Britain; England; Russia; Germany; Italy; Austria";
 br.bookUrl  = '/nuremberg/catalog/nur:00570';
 
 // Override the path used to find UI images

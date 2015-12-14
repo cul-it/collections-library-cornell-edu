@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01204_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01204_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: J 18, Anilinas Alemanas, Buenos Aires / Monopol SRL, Buenos Aires / Exhibit D-l / I.G. Farbenindustrie A.G., Frankfurt";
 br.bookAuthor= "S. Waibel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1943-08-13";
-br.bookKeyword= "";
+br.bookKeyword= "South America; Auslandsorganisation (A.O.); LG. Farben; Argentina; Nazi ideology; Graf Spee; German Navy; Brazil";
 br.bookUrl  = '/nuremberg/catalog/nur:01204';
 
 // Override the path used to find UI images

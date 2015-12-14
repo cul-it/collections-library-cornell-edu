@@ -357,7 +357,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00686_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00686_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -415,7 +415,7 @@ br.numLeafs = 55;
 br.bookTitle= "U.S.A. ";
 br.bookAuthor= "Dr. Goerdeler";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-01-02";
-br.bookKeyword= "";
+br.bookKeyword= "Mass immigration; Culture; Arable land; Small farmers; Industrial raw materials; Industrial workers; Assembly line; Automobile; Birth rate; Installment plan; Treaty of Versailles; Democratic constitution; Isolationist policy; Boycott movement; Jews; American anti-Semitism; Internationalist policy; Trade treaty with England; Japanese occupation of China; European coalition; Global politics, circa 1938";
 br.bookUrl  = '/nuremberg/catalog/nur:00686';
 
 // Override the path used to find UI images

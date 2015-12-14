@@ -333,7 +333,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3207_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3207_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -391,7 +391,7 @@ br.numLeafs = 51;
 br.bookTitle= "The truly remarkable life of the beautiful Helen Jewett, who was so mysteriously murdered. The strangest and most exciting case known in the police annals of crimes and mysteries in the great city of New York.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Philadelphia: Barclay &amp; Co., [1878?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3207';
 
 // Override the path used to find UI images

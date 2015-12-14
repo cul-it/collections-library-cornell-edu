@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01734_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01734_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Answer to Questionnaire";
 br.bookAuthor= "Admiral Horthy [not named; conjecture based on internal evidence]";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Hungary; Germany; Romania; Bulgaria; Yugoslavia; Greece; Little Entente; Trianon; Persecution of Jews; Gestapo; SS; Mauthausen; Dachau; Hitler's geopolitics";
 br.bookUrl  = '/nuremberg/catalog/nur:01734';
 
 // Override the path used to find UI images

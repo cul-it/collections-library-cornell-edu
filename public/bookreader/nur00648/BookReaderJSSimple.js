@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00648_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00648_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -211,7 +211,7 @@ br.numLeafs = 21;
 br.bookTitle= "The German General Staff and National Socialism ";
 br.bookAuthor= "Walter Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-04";
-br.bookKeyword= "";
+br.bookKeyword= "National Socialism; German Army; German General Staff; 100,000-man Army; SA; SS; Sudeten crisis; Nuemberger Gesetz; Reichskristallwoche; Bonzen; Wehrfreiheit; Spain; Anschluss; Westwall; Czechoslovakia; Poland; France; England; Russia; Concentration camps";
 br.bookUrl  = '/nuremberg/catalog/nur:00648';
 
 // Override the path used to find UI images

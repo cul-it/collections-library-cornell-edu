@@ -741,7 +741,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0108_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0108_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -799,7 +799,7 @@ br.numLeafs = 119;
 br.bookTitle= "Trial of the case of the Commonwealth versus David Lee Child, for publishing in The Massachusetts journal a libel on the Honorable John Keyes, before the Supreme Judicial Court, holden at Cambridge, in the County of Middlesex, October Term, 1828. / Report";
 br.bookAuthor= "Child, David Lee, 1794-1874.";
 br.bookPub= "Boston: Dutton and Wentworth, printers, 1829";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0108';
 
 // Override the path used to find UI images

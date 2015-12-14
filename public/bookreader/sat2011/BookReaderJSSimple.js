@@ -225,7 +225,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2011_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2011_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -283,7 +283,7 @@ br.numLeafs = 33;
 br.bookTitle= "5,000 damages. : Authentic report of the crim. con. trial of Joynt v. Jackson, in the Exchequer Court, Dublin, commencing May 10th, 1880. / From shorthand notes by a gentleman in court..";
 br.bookAuthor= "Jackson, James.";
 br.bookPub= "Dublin:  Published by Edward Smith, bookseller, 33, Temple Bar, Dublin, 1880";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2011';
 
 // Override the path used to find UI images

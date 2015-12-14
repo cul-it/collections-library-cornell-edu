@@ -603,7 +603,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1811_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1811_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -661,7 +661,7 @@ br.numLeafs = 96;
 br.bookTitle= "Review of the case of Moses Thacher versus Preston Pond, : in charging the plaintiff with the crime of adultery: including letters of Mrs. Jerusha M. Pond, the main witness in the defence.";
 br.bookAuthor= "Pond, Preston, 1792-1868.";
 br.bookPub= "Boston: Printed for the plaintiff., 1838";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1811';
 
 // Override the path used to find UI images

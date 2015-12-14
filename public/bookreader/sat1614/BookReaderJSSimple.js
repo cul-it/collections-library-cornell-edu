@@ -1215,7 +1215,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1614_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1614_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1273,7 +1273,7 @@ br.numLeafs = 198;
 br.bookTitle= "The trials of George Robert Fitzgerald, Esq., Timothy Brecknock, James Fulton, and others, for the murder of Patrick Randal McDonnell, and Charles Hinson, Esquires : also, the trial of John Gallagher and others : for the assault on George Robert Fitzgerald, in the Goal of Castlebar.";
 br.bookAuthor= "Fitzgerald, George Robert, 1746-1786, defendant.";
 br.bookPub= "Dublin and London: printed for G. Kearsley, 1786";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1614';
 
 // Override the path used to find UI images

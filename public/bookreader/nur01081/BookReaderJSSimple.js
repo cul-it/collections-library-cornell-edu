@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01081_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01081_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Incoming Telegram / #9068, Fifth / London / Leading editorial in Manchester Guardian today ... / Division of Central Services Telegraph Section";
 br.bookAuthor= "Winant";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-05";
-br.bookKeyword= "";
+br.bookKeyword= "War Crimes trials; Manchester Guardian; International Military Tribunal; Crimes against Humanity; Crimes against Peace; Briand-Kellogg Pact; Atomic bomb";
 br.bookUrl  = '/nuremberg/catalog/nur:01081';
 
 // Override the path used to find UI images

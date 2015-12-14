@@ -603,7 +603,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0804_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0804_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -661,7 +661,7 @@ br.numLeafs = 96;
 br.bookTitle= "The trial and conviction of George S. Twitchell, Jr., for the murder of Mrs. Mary E. Hill, his mother-in-law : with the eloquent speeches of counsel on both sides and Hon. Judge Brewster's charge to the jury in full : to which are added many interesting facts in regard to the Hills and Twitchells never before published.";
 br.bookAuthor= "Twitchell, George S., d. 1869.";
 br.bookPub= "Philadelphia: Barclay &amp; Co., 1869";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0804';
 
 // Override the path used to find UI images

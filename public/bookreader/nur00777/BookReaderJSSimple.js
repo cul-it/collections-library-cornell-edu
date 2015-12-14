@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00777_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00777_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -107,9 +107,9 @@ br.numLeafs = 4;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Summary of Statement Made by Herbert M. Ritter, Munich / Information Supplied by Herbert M. Ritter";
-br.bookAuthor= "The author of the "Summary" is not named; the author of "Information" is Herbert M. Ritter; the translator of "Information" is not named.";
+br.bookAuthor= "The author of the 'Summary' is not named; the author of 'Information' is Herbert M. Ritter; the translator of 'Information' is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-16";
-br.bookKeyword= "";
+br.bookKeyword= "Confiscation of art; War crimes; Fuschel Castle; Artwork; Art auctions; Karinhall";
 br.bookUrl  = '/nuremberg/catalog/nur:00777';
 
 // Override the path used to find UI images

@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00461_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00461_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -113,9 +113,9 @@ br.numLeafs = 6;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Volksgerichtshof / Verhandlung der Verrater vom 20. Juli 1944 ";
-br.bookAuthor= ""Bildberichter: Helmut  Laux"";
+br.bookAuthor= "Bildberichter: Helmut  Laux";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-08-07";
-br.bookKeyword= "";
+br.bookKeyword= "Volksgerichtshof; People's Court; Assassination attempt;  German resistance; Opposition to Hitler; Opposition group";
 br.bookUrl  = '/nuremberg/catalog/nur:00461';
 
 // Override the path used to find UI images

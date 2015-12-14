@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3906_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3906_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Achilli vs. Newman : a full report of the most extraordinary trial for seduction and adultery charged against Dr. Achilli, the apostate Catholic priest, by the celebrated Dr. Newman, the Oxford Puseyite, both of whom are seceders from their former creeds.";
 br.bookAuthor= "Newman, John Henry, 1801-1890.";
 br.bookPub= "New York: Dewitt &amp; Davenport, [1852?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3906';
 
 // Override the path used to find UI images

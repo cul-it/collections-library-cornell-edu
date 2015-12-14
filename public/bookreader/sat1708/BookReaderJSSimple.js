@@ -459,7 +459,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1708_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1708_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -517,7 +517,7 @@ br.numLeafs = 72;
 br.bookTitle= "Observations on a libel : for which an indictment was instituted by Richard Gurney ... Vice-warden of the stannaries of Devon, against Miss Mary Ann Tocker; of which the defendant was found not guilty.  Tried before Mr. Justice Burrough, at Bodmin, the 5th of August, 1818 ..";
 br.bookAuthor= "Gurney, Richard, 1790-1843.";
 br.bookPub= "London: G. Auld, [1818]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1708';
 
 // Override the path used to find UI images

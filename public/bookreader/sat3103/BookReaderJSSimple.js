@@ -951,7 +951,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3103_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3103_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1009,7 +1009,7 @@ br.numLeafs = 154;
 br.bookTitle= "Report of the trial of Thomas Hunter, Peter Hacket, Richard M'Neil, James Gibb, and William M'Lean, operative cotton-spinners in Glasgow, before the high court of justiciary, at Edinburgh, on Wednesday, January 3, 1838, and seven following days, for the crimes of illegal conspiracy and murder; with an appendix of documents and relative proceedings. By Archibald Swinton";
 br.bookAuthor= "Hunter, Thomas, b. 1796? defendant.";
 br.bookPub= "Edinburgh: T. Clark, 1838";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3103';
 
 // Override the path used to find UI images

@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00481_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00481_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 8;
 br.bookTitle= "Murder Hospitals ";
 br.bookAuthor= "The interrogator is Captain Robert Larson, Inf., Acting  Asst. Army Inspector General, First U.S. Army";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-04-14";
-br.bookKeyword= "";
+br.bookKeyword= "Inferior races; Persecution of Jews; Gypsies; Political  undesirables; Liquidation; Kiev; Pathological Institute; Transports; Morphine  injections; SD; German Health Department; Voelkischezedanka; War crimes;  Crimes against humanity; Atrocities; Medical experiments";
 br.bookUrl  = '/nuremberg/catalog/nur:00481';
 
 // Override the path used to find UI images

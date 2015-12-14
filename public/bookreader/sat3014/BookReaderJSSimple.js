@@ -975,7 +975,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3014_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3014_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1033,7 +1033,7 @@ br.numLeafs = 158;
 br.bookTitle= "Ecclesiastical courts : a report of the judgment delivered by Dr. Radcliffe, in the case of Talbot v. Talbot, in the Consistorial Court of Dublin, on the 2nd of May 1854 : with observations on the practice of the ecclesiastical courts / by John Paget ..";
 br.bookAuthor= "Paget, John, 1811-1898.";
 br.bookPub= "London: Thomas Blenkarn, Law Bookseller, 29, Bell Yard, Lincoln's Inn., 1854";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3014';
 
 // Override the path used to find UI images

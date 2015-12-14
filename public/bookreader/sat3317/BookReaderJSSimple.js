@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3317_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3317_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "A letter from Richard P. Robinson, as connected with the murder of Ellen Jewett : sent in a letter to his friend, Thomas Armstrong, with a defence of the jury.";
 br.bookAuthor= "Robinson, Richard P.";
 br.bookPub= "New York: Sold wholesale at 29 Ann-Street, 1837";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3317';
 
 // Override the path used to find UI images

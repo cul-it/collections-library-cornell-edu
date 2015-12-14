@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01225_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01225_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum: / The following are the announcements made on Dr. Robert Ley's death / Headquarters / 6850th Internal Security Detachment / International Military Tribunal / APO 403 U.S. Army";
 br.bookAuthor= "B. C. Andrus / Colonel, Cav / Colonel.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-02";
-br.bookKeyword= "";
+br.bookKeyword= "Ley's suicide; Ley's death; Announcement of Ley's suicide";
 br.bookUrl  = '/nuremberg/catalog/nur:01225';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02123_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02123_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "SUBJECT: Interrogation of Genl. Lt. Warlimont / Supreme Headquarters / Allied Expeditionary Force / Office of Assistant Chief of Staff, G-2 / Forward Headquarters / SECRET";
 br.bookAuthor= "J. D. McCaskey";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-30";
-br.bookKeyword= "";
+br.bookKeyword= "ASHCAN; Interrogations; Preparations for war";
 br.bookUrl  = '/nuremberg/catalog/nur:02123';
 
 // Override the path used to find UI images

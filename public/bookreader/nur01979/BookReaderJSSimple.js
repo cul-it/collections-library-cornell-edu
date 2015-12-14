@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01979_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01979_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "SUB J: Report, Presentation Branch";
 br.bookAuthor= "David Zablodowsky";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-06";
-br.bookKeyword= "";
+br.bookKeyword= "Presentation Unit; Courthouse redesign and reconstruction; Design duties; Organization charts: Reich Government; Nazi Party; OKW; SS; SA; Occupied Territories; Trial exhibit charts; Personnel shortage";
 br.bookUrl  = '/nuremberg/catalog/nur:01979';
 
 // Override the path used to find UI images

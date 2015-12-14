@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00702_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00702_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "I / Wanton Destruction of Property ";
 br.bookAuthor= "Walter W. Brundo";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "St. Petersburg; Private property; War crimes; Destruction of property; Greece; Partisans; Poland; Czechoslovakia; Norway; Reprisals; Lidice; Margolif; Lezaky; Forced labor; Eastern occupied territories; Occupied Russian territories; Scorched earth";
 br.bookUrl  = '/nuremberg/catalog/nur:00702';
 
 // Override the path used to find UI images

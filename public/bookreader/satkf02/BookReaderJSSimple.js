@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:kf02_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:kf02_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "Narrative of the apprehension in Rindge, N. H., of the Rev. E. K. Avery : charged with the murder of Sarah M. Cornell, together with the proceedings of the inhabitants of Fall River / by Harvey Harnden.";
 br.bookAuthor= "Harnden, Harvey.";
 br.bookPub= "Providence: W. Marshall &amp; co., printers., 1833";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:kf02';
 
 // Override the path used to find UI images

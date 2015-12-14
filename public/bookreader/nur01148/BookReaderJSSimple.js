@@ -297,7 +297,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01148_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01148_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -353,9 +353,9 @@ br.numLeafs = 39 + 6;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Women in Nazi Germany - V Morale";
-br.bookAuthor= ""M" Project Staff";
+br.bookAuthor= "'M' Project Staff";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-08-01";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01148';
 
 // Override the path used to find UI images

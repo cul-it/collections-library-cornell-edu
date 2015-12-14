@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01305_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01305_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Executive Order 9547";
 br.bookAuthor= "Harry S. Truman";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-02";
-br.bookKeyword= "";
+br.bookKeyword= "Executive Order 9547; United States Chief of Counsel";
 br.bookUrl  = '/nuremberg/catalog/nur:01305';
 
 // Override the path used to find UI images

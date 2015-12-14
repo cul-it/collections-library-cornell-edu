@@ -231,7 +231,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2609_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2609_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -289,7 +289,7 @@ br.numLeafs = 34;
 br.bookTitle= "Life and confession of Ann Walters, the female murderess! : also the execution of Enos G. Dudley, at Haverhill, N.H., May 23rd, 1849 : to which is added the confession of Mary Runkle, who was executed for murder.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston, Mass.: Printed for the proprietor, 1850";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2609';
 
 // Override the path used to find UI images

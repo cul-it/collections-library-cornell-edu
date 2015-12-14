@@ -213,7 +213,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01639_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01639_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -269,9 +269,9 @@ br.numLeafs = 31;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Military Commissions and Provost Courts with Particular Regard to Procedure Including Rules of Evidence";
-br.bookAuthor= ""Compiled By Adwin W. Green / Lieutenant Colonel, JAGD, USA."";
+br.bookAuthor= "Compiled By Adwin W. Green / Lieutenant Colonel, JAGD, USA.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1943-09-25";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01639';
 
 // Override the path used to find UI images

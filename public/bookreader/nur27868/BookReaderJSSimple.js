@@ -831,7 +831,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:27868_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:27868_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -889,7 +889,7 @@ br.numLeafs = 134;
 br.bookTitle= " R &amp; A #3152 / Hermann Goering As A War Criminal / Preliminary Memorandum for use in the Preparation of a Trial Brief on Hermann Goering as a War Criminal / 3rd Draft / Approved by the Prosecution Review Board / Office of Strategic Services / Research and Analysis Branch / SECRET";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-25";
-br.bookKeyword= "";
+br.bookKeyword= "Herman Goering";
 br.bookUrl  = '/nuremberg/catalog/nur:27868';
 
 // Override the path used to find UI images

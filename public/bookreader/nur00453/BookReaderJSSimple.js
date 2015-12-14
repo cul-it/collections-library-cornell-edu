@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00453_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00453_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Thoughts and Events ";
 br.bookAuthor= "Georg R. Thomas";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-20";
-br.bookKeyword= "";
+br.bookKeyword= "Bolshevism; Treaty of Versailles; Roehm purge; Blitzkrieg;  Fritzsch Affair; Poland; England; Russia; Gestapo; Pope; Prinz-Albrecht  Strasse; Flossenburg; Dachau; German resistance; Opposition to Hitler";
 br.bookUrl  = '/nuremberg/catalog/nur:00453';
 
 // Override the path used to find UI images

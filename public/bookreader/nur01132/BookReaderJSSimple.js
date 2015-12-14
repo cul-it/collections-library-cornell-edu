@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01132_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01132_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -469,7 +469,7 @@ br.numLeafs = 64;
 br.bookTitle= " R &amp; A No. 3113.7 / Principal Nazi Organizations Involved in the Commission of War Crimes: The Nazi Party (Part V) / Office of Strategic Services / Research and Analysis Branch / Draft for Use of the War Crimes Staff / SECRET";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-10";
-br.bookKeyword= "";
+br.bookKeyword= "Organisationsbuch der NSDAP; German Labor Front; Indoctrination; Nazi ideology; Auslandsorganisation (AO); Werkscharen (plant troops); Territorial organization; Honor and Disciplinary Courts; \"Strength through Joy\"; Democratic labor unions; Political persecution; National Socialist Teachers' League; Reich Food Estate; Entailed Farm Legislation; Enslavement of foreign labor; Occupied territories: exploitation of agricultural resources; Reich Ministry for Popular Entertainment and Propaganda; Reich Chamber of Culture; Ministry for Food and Agriculture; Food rationing; Confiscation of private landed property; German settlement of conquered territories";
 br.bookUrl  = '/nuremberg/catalog/nur:01132';
 
 // Override the path used to find UI images

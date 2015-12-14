@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00629_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00629_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Trial Brief re General Staff and High Command Group - Indictment, Appendix B, page 37. ";
 br.bookAuthor= "Loftus Becker, Major, Inf.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Board of Review; General Staff and High Command; Trial Brief; OCC";
 br.bookUrl  = '/nuremberg/catalog/nur:00629';
 
 // Override the path used to find UI images

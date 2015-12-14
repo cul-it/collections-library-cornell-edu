@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01486_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01486_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 8;
 br.bookTitle= "Sections of the R.S.H.A. Possibly Involved in War Crimes/ SECRET";
 br.bookAuthor= "Winston M. Scott, Lt. (j.g.) USNR, X-2 German Section";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-23";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; RSHA; SA; German intelligence; SD; Amt III; Amt IV; Gestapo; Amt V; Kirpo; Amt VI; Sabotage; SS; Nazi Party; Concentration camps; X-2; SS Jagdverbaende; Counter-espionage";
 br.bookUrl  = '/nuremberg/catalog/nur:01486';
 
 // Override the path used to find UI images

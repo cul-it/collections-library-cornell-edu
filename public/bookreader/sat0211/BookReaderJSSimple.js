@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0211_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0211_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "Trial of James Graham, before the Hon. Ambrose Spencer, Esq. for the murder of Hugh Cameron, and Alexander M'Gillavrae, in Delhi, Delaware Co. July 14th, 1813 / taken during the trial, by Aaron Clark, esq. June 17, 1814.";
 br.bookAuthor= "Graham, James, d. 1814.";
 br.bookPub= "Albany, N.Y.: Printed by J. Buel, 1814";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0211';
 
 // Override the path used to find UI images

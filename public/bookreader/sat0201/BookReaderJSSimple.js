@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0201_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0201_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "The trial of John Young for the murder of Robert Barwick : one of the Deputy Sheriffs, New York, taken by means of short-hand for the benefit of the citizens of New York / by William Green.";
 br.bookAuthor= "Young, John.";
 br.bookPub= "[s.l.]: [s.n.], 1797";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0201';
 
 // Override the path used to find UI images

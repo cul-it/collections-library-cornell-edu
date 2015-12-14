@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00479_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00479_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "Concentration Camps: Statement  of Kaltenbrunner regarding Concentration Camps ";
 br.bookAuthor= "Ernst Kaltenbrunner (the translator's name is not given.)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Concentration camps; KZ; Dachau; Internment; Gestapo;  Kripo; SS; Schutzhaft; Gestapo arrest; Emergency Decree; Persecution of Jews;  Preventative custody; Vorbeugungshaft; Security internment; Die  Sicherungsverwahrung; Camp guards; Deaths in KZs; Crimes against humanity; War crimes; Lagers;  Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:00479';
 
 // Override the path used to find UI images

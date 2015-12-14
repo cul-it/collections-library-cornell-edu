@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00552_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00552_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Excerpts from German Publications.  Translation of Document 2405-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "Hitler; Rosenberg; Schmidtke; Mehnert; the translator is Fred Niebergall, 2nd Lt. Inf., 0-1335567";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-03";
-br.bookKeyword= "";
+br.bookKeyword= "Treaty of Versailles; Jews; Lebensraum; NSDAP";
 br.bookUrl  = '/nuremberg/catalog/nur:00552';
 
 // Override the path used to find UI images

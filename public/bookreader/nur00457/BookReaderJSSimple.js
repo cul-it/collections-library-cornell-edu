@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00457_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00457_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Excerpts from Hess, Reden, Zentraverlag der NSDAP,  Franz Eher Verlag, Munchen 1938.  Translation of Document 2426-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "Rudolf Hess. The  translator of this document is Wolfgang E. Thormann, M/Sgt., 33779426.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "NSDAP; Fuehrer; Nazi ideology; Nazi Party";
 br.bookUrl  = '/nuremberg/catalog/nur:00457';
 
 // Override the path used to find UI images

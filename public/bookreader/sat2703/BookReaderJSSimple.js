@@ -117,7 +117,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2703_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2703_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -175,7 +175,7 @@ br.numLeafs = 15;
 br.bookTitle= "Christianity vindicated, in the admirable speech of the Hon. Tho. Erskine, in the trial of J. Williams, for publishing Paine's Age of reason, 24th June, 1797.";
 br.bookAuthor= "Erskine, Thomas Erskine, Baron, 1750-1823.";
 br.bookPub= "Philadelphia: Printed by J. Carey ... for G. Douglas, 1797";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2703';
 
 // Override the path used to find UI images

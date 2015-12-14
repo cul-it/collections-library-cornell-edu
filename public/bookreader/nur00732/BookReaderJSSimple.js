@@ -321,7 +321,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00732_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00732_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -379,7 +379,7 @@ br.numLeafs = 49;
 br.bookTitle= "War Crimes and Crimes Against Humanity / Part IV / Crimes Committed in Concentration Camps ";
 br.bookAuthor= "Edgar G. Boedeker, Captain; Nicholas R. Doman, 1st Lt";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Hague Convention; Geneva Convention; Concentrations camps; Buchenwald; Flossenburg; Mauthausen; Dachau; Sachsenhausen; Dora; Breendonk; Ellrich; Osterhagen; Boelke Kaserne; Nordhausen; Auschwitz; Bergen-Belsen; Ravensbruck; Lublin; Gusen; Neuengamma; Gross Rosen; Natzweiler; Transports; Cannibalism; Deportations; Mass murder; Torture; Food rations; Starvation; Slave labor; Extermination; Gas chambers; Poison gas; Hangings; Medical experiments; High-altitude experiments; Chilling experiments; Freezing experiments; Castrations; Cancer; Typhus; Malaria; Plastic surgery; Amputations; Injections; Poles; Russians; Czechs; Jews; Persecution of Jews; Prisoners of war; POWs; SS; Death books";
 br.bookUrl  = '/nuremberg/catalog/nur:00732';
 
 // Override the path used to find UI images

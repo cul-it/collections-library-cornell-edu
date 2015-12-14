@@ -255,7 +255,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02018_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02018_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -313,7 +313,7 @@ br.numLeafs = 38;
 br.bookTitle= "Partial List of German Publications in Library, Documentation Division / RESTRICTED / Office of U. S Chief of Counsel / APO 403, U. S. Army";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-28";
-br.bookKeyword= "";
+br.bookKeyword= "Blut und Boden; Der Nationalsozialimus als Weltanschauung und Staatsgedanke; Kampf gegen die Hochfinanz; Der Angriff; Reden. 1938; Mein Kampf; Aufbau einer Nation; Wir alle helfen dem Fuehrer; Die Protokolle der Weisen von Zion und die Juedische Weltpolitik; Der Mythus des 20 Jahrhunderts; Der Kampf um die Weltanschauung; Kampf dem Weltfeind; et. al.";
 br.bookUrl  = '/nuremberg/catalog/nur:02018';
 
 // Override the path used to find UI images

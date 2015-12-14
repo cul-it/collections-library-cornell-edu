@@ -1113,7 +1113,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1205_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1205_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1171,7 +1171,7 @@ br.numLeafs = 181;
 br.bookTitle= "An analytical statement of the case of Alexander, Earl of Stirling and Dovan ... : containing an explanation of his official dignities and peculiar territorial rights and privileges in the British colonies of Nova Scotia and Canada, &amp;c. &amp;c. and also shewing the descent of the Stirling peerage honours, supported by legal evidence, and the law and usage of Scotland, appertaining thereto ... / By Thomas C. Banks ...";
 br.bookAuthor= "Banks, T. C. (Thomas Christopher), 1765-1854.";
 br.bookPub= "London: J. Cochrane and co., 1832";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1205';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00913_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00913_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Interrogation of Jodl, Alfred / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Colonel J. H. Amen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-17";
-br.bookKeyword= "";
+br.bookKeyword= "OKW; Invasion of Norway; Intelligence organization; Oil; Munitions production; France; England; Russia; Preparations to wage aggressive war; Tripoli; Greece; Malta; Cyprus; Iraq; Tunisia; Italy; Balkans; Budapest; Courland; Submarine warfare; Rhine defense";
 br.bookUrl  = '/nuremberg/catalog/nur:00913';
 
 // Override the path used to find UI images

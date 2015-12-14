@@ -147,7 +147,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3007_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3007_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -205,7 +205,7 @@ br.numLeafs = 20;
 br.bookTitle= "The Police news edition of the Todmordon murder : Life, trial and examination of Miles Wetherhill, with seven illustrations.  With many interesting particulars never before published / Miles Wetherhill.";
 br.bookAuthor= "Wetherhill, Miles, 1844-1868.";
 br.bookPub= "[s.l.]: [s.n.], [18--?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3007';
 
 // Override the path used to find UI images

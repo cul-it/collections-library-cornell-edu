@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01752_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01752_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Interrogation of: Lammers, Heinrich / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division Summary";
 br.bookAuthor= "Lt. Colonel Gurfein";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-17";
-br.bookKeyword= "";
+br.bookKeyword= "Mefo bills; Anschluss; Aggressive war; Czechoslovakia; Sudetenland; Confiscation of Jewish property; Persecution of Jews; Inflation; Reichsbank";
 br.bookUrl  = '/nuremberg/catalog/nur:01752';
 
 // Override the path used to find UI images

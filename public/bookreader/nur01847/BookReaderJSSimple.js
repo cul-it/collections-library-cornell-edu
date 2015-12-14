@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01847_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01847_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 10;
 br.bookTitle= "The following are the relevant details of the PW mentioned in this report. / TOP SECRET / CSDIC/CMF/X 170";
 br.bookAuthor= "Not applicable";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-29";
-br.bookKeyword= "";
+br.bookKeyword= "German POWs; SS; Concentration camps; Himmler's suicide; G.I.S. agents; Nazi leadership corps; Hitler's inner circle; Wolff's negotiations; Post-war Germany; Mechanical war; Arms race; Fosse Ardeatini executions; German literature; Lake Garda; Mussolini's mistress";
 br.bookUrl  = '/nuremberg/catalog/nur:01847';
 
 // Override the path used to find UI images

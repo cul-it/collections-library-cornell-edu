@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00775_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00775_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "The Prince Archbishop of Salzburg / Dr. Josef Mueller ...  ";
 br.bookAuthor= "Dr. Andreas Rohracher, Prince Archbishop";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Reconstruction of the Church; Austria; Clerical questions";
 br.bookUrl  = '/nuremberg/catalog/nur:00775';
 
 // Override the path used to find UI images

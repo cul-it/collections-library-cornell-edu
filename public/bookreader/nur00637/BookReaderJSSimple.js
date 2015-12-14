@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00637_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00637_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum for General Donovan ";
 br.bookAuthor= "Telford Taylor, Colonel, G.S.C";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-24";
-br.bookKeyword= "";
+br.bookKeyword= "OCC; German generals; Prosecution strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:00637';
 
 // Override the path used to find UI images

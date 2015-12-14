@@ -699,7 +699,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0606_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0606_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -757,7 +757,7 @@ br.numLeafs = 112;
 br.bookTitle= "The Forrest divorce case. Catharine N. Forrest against Edwin Forrest. Fully and correctly reported by the reporter of the National police gazette; with opening and concluding arguments of counsel, charge of the court, letters from Mr. and Mrs. Forrest, and other persons of standing and influence, together with the Consuelo letter, and other interesting details, leading to this controversy ...";
 br.bookAuthor= "Forrest, Catharine Norton Sinclair, 1818-1891, plaintiff.";
 br.bookPub= "New York: Stringer &amp; Townsend, 1852";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0606';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01711_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01711_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Connection between the Nazi Party and the Latin American Firms of I.G. / Memorandum for the Files";
 br.bookAuthor= "S. J. Hollander";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-27";
-br.bookKeyword= "";
+br.bookKeyword= "I.G. Farben; Argentina; Economic case; German industrialists; German Foreign Organization; A.O. Camouflage; Anilinas Alemanas; Graf Spee; Chile; Nazi Party";
 br.bookUrl  = '/nuremberg/catalog/nur:01711';
 
 // Override the path used to find UI images

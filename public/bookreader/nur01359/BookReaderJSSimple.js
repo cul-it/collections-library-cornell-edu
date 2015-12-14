@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01359_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01359_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 10;
 br.bookTitle= "The Final Address of the [sic] The Naval Supreme Commander Grossadmiral Dr. H. C. Raeder / CONFIDENTIAL";
 br.bookAuthor= "Erich Raeder";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1943-01-12";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01359';
 
 // Override the path used to find UI images

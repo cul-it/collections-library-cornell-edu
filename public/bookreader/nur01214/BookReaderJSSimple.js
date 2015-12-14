@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01214_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01214_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "A 'Proclamation to Workers' addressed to employees and employers by Dr. Robert Ley on 5 September 1939 / Translation of Document No. 1939-PS / Office of U.S. Chief of Counsel";
 br.bookAuthor= "Robert Ley";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-12";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01214';
 
 // Override the path used to find UI images

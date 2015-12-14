@@ -447,7 +447,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3314_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3314_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -505,7 +505,7 @@ br.numLeafs = 70;
 br.bookTitle= "The people against Edward H. Ruloff : for the murder of Frederick A. Mirrick / Edward Howard Rulloffson.";
 br.bookAuthor= "Rulloff, Edward H. (Edward Howard), 1819-1871.";
 br.bookPub= "New York: Diossy &amp; Company., 1872";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3314';
 
 // Override the path used to find UI images

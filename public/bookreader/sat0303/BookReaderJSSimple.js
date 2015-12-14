@@ -1947,7 +1947,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0303_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0303_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2005,7 +2005,7 @@ br.numLeafs = 320;
 br.bookTitle= "Report of the trial of Prof. John W. Webster, indicted for the murder of Dr. George Parkman, before the Supreme judicial court of Massachusetts, holden at Boston, on Tuesday, March 19, 1850. Phonographic report, by Dr. James W. Stone.";
 br.bookAuthor= "Webster, John White, 1793-1850.";
 br.bookPub= "Boston: Phillips, Sampson &amp; company, 1850";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0303';
 
 // Override the path used to find UI images

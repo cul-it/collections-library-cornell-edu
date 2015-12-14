@@ -213,7 +213,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00784_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00784_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -271,7 +271,7 @@ br.numLeafs = 31;
 br.bookTitle= "War Crimes and Crimes Against Humanity / Part VI / Germanisation of Occupied Territories";
 br.bookAuthor= "1st Lt. Edward H. Kenyon";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Lebensraum; Nazi foreign policy; Germanization; Occupied territories; German Nationhood; Eastern territories; Evacuation; Resettlement; Western territories; War crimes; Hague Regulations; Mein Kampf; Czechoslovakia; Czech Problem; Racial Register; Sequestration of property; Confiscation of property; Academy of German Law; Poland; Spoliation of Poland; Polish workers; Polish intelligentsia; German blood; Forced labor; Concentration camps; Family names; Luxembourg; Nazi ideology; Alsace; Lorraine";
 br.bookUrl  = '/nuremberg/catalog/nur:00784';
 
 // Override the path used to find UI images

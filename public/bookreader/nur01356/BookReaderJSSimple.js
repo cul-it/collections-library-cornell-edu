@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01356_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01356_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Statement of Kaltenbrunner of Imprisonment of Relatives for Kindred Responsibility";
 br.bookAuthor= "Ernst Kaltenbrunner";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Sippenhaftung; Internment; Imprisonment; Seydlitz units; Deserters; POWs; Frontpropagandatrapp; Family responsibility; Germanic law";
 br.bookUrl  = '/nuremberg/catalog/nur:01356';
 
 // Override the path used to find UI images

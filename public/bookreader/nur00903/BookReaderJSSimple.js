@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00903_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00903_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1/3 of a page;
 br.bookTitle= "Norse Appoint Prosecutor for German War Criminals / O.W.I., European Analysis and News Digest, 2 September 1945 Finnish cabinet may resign if War Guilt Bill not Passed / O.W.I., European Analysis and News Digest, 2 September 1945";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-02";
-br.bookKeyword= "";
+br.bookKeyword= "German war criminals; Norway; Prosecutor; War Guilty Bill";
 br.bookUrl  = '/nuremberg/catalog/nur:00903';
 
 // Override the path used to find UI images

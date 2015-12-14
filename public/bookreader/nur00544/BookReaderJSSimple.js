@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00544_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00544_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "The Organization of the NSDAP and Its Affiliated Associations.  Pages 86-88 of the Organization Book of the NSDAP, Editions of 1936,1938, and 1940. Translation of Document 1814-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "The translator of this document is Willard Evans Skidmore, Lt (jg) USNR, 391590. The editor of the Organization Book of the NSDAP was Dr.; Robert Ley.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-12";
-br.bookKeyword= "";
+br.bookKeyword= "Gauleiter; Kreisleiter; Ortsgruppenleiter; Zellenleiter; Blockleiter";
 br.bookUrl  = '/nuremberg/catalog/nur:00544';
 
 // Override the path used to find UI images

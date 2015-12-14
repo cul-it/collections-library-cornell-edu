@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00905_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00905_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Incoming Telegram / #3152, Third / Moscow via Army / Soviet press 30 August announces that London talks among representatives... / Division of Central Services Telegraph Section";
 br.bookAuthor= "The message is unsigned.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-03";
-br.bookKeyword= "";
+br.bookKeyword= "Pravda; Izvestiya; Plutocracy; Hitlerite; German financiers";
 br.bookUrl  = '/nuremberg/catalog/nur:00905';
 
 // Override the path used to find UI images

@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0908_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0908_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "The prophet! : a full and accurate report of the judicial proceedings in the extraordinary and highly interesting case of Matthews, alias Matthias, charged with having swindled Mr. B.H. Folger ... / by W.E. Drake, congressional and law reporter.";
 br.bookAuthor= "Matthews, Robert, b. 1788.";
 br.bookPub= "New-York: Printed and published by W. Mitchell, 1834";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0908';
 
 // Override the path used to find UI images

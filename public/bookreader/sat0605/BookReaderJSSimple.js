@@ -1107,7 +1107,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0605_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0605_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1165,7 +1165,7 @@ br.numLeafs = 180;
 br.bookTitle= "Argument of Philip R. Fendall, U.S. Attorney for the District of Columbia, on the trial of George A. Gardiner in the Criminal Court, D. C., March term, 1853, for false swearing / taken in shorthand by John J. McElhone ; to which is added an appendix, containing letters, &amp;c., of George A. Gardiner to Don A. Quiros and others, letters of John Charles Gardiner to Don Manuel Verastegui and others, and other documents.";
 br.bookAuthor= "Fendall, Philip Ricard, 1794-1868.";
 br.bookPub= "Washington: Robert Armstrong, printer, 1853";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0605';
 
 // Override the path used to find UI images

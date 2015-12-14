@@ -117,7 +117,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1014_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1014_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -175,7 +175,7 @@ br.numLeafs = 15;
 br.bookTitle= "Letter from the Secretary of War, transmitting information respecting the original amount of a judgement lately obtained by the United States, in the District Court of the Eastern District of Pennsylvania, against Colonel William Duane / William Duane.";
 br.bookAuthor= "Duane, William, 1807-1882.";
 br.bookPub= "Washington, D.C.: Printed by Gales &amp; Seaton, 1823";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1014';
 
 // Override the path used to find UI images

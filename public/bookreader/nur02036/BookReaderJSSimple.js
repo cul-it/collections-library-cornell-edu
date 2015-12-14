@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02036_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02036_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 6;
 br.bookTitle= "Subject: Statistical Report on the Court House Motor Pool / International Military Tribunal / APO #403";
 br.bookAuthor= "Captain Wesley J. Simmons, 0-384639";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-03";
-br.bookKeyword= "";
+br.bookKeyword= "Motor pool; Logistics; Statistical report; Military personnel; Civilian labor; Vehicles; Operational details; Gasoline consumption; Assigned vehicles";
 br.bookUrl  = '/nuremberg/catalog/nur:02036';
 
 // Override the path used to find UI images

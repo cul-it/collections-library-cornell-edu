@@ -249,7 +249,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0906_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0906_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -307,7 +307,7 @@ br.numLeafs = 37;
 br.bookTitle= "A statement / by James C. Biddle and William M. Meredith, of the Philadelphia Bar.";
 br.bookAuthor= "Biddle, James C. (James Cornell), 1795-1838.";
 br.bookPub= "Philadelphia, Pa.: [s.n.], 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0906';
 
 // Override the path used to find UI images

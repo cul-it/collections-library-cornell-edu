@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00522_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00522_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "Extracts from the Thomas diary,  with titles as follows: Extract 1: The Influence of Central Organization on Development and Activities of the War Economy Organization; Extract 2: War and Armament Economic Measures from Entry into Austria (1938 till Mobilization 1939); Extract 3: untitled, identified as Page 136; Extract 4: untitled, identified as Page 142-143; Extract 5: untitled, identified as Page 146; Extract 6: Execution of the Economic Mobilization";
 br.bookAuthor= "Georg R. Thomas";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Action Otto; Sudetenland; War economy; Economic Mobilization; Total war; Preparations for war; Aggressive war; Armaments";
 br.bookUrl  = '/nuremberg/catalog/nur:00522';
 
 // Override the path used to find UI images

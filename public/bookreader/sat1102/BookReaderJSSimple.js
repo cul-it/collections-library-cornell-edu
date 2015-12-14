@@ -831,7 +831,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1102_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1102_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -889,7 +889,7 @@ br.numLeafs = 134;
 br.bookTitle= "The trial of Thomas Muir, Esq., younger of Huntershill, before the High Court of Justiciary, upon Friday and Saturday the 30th and 31st days of August 1793, on a charge of sedition / the whole accurately taken down in shorthand ; with an elegant portrait of Mr. Muir ; to which is annexed an appendix, containing all the papers referred to in the course of the trial";
 br.bookAuthor= "Muir, Thomas, 1765-1798.";
 br.bookPub= "Edinburgh: Printed for and sold by Alexander Scott, 1793";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1102';
 
 // Override the path used to find UI images

@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01482_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01482_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 19;
 br.bookTitle= "R &amp; A No. 3172.2 / Miscellaneous Memoranda on War Criminals / Office of Strategic Services / Research and Analysis Branch";
 br.bookAuthor= "No authors' names are given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-17";
-br.bookKeyword= "";
+br.bookKeyword= "Belgium; Concentration camps; Traitors; Quislings; Communists; Catholic Church; Belgian purge; Collaborationists; Industrial collaborators; Gestapo; Economic collaborators; Czechoslovakia; Agrarian Party; Nazi Party; Land confiscation; German landlords; War crimes trials; War criminals; Finland; Interpellation; Hungary; Arrowcross; Switzerland; Extradition; People's Courts; Svabs; Deportations; Undesirable aliens; Italian Fascists; Jackson report; Crimes against peace; Aggressive war; German industrialists";
 br.bookUrl  = '/nuremberg/catalog/nur:01482';
 
 // Override the path used to find UI images

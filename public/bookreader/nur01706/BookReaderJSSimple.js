@@ -129,7 +129,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01706_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01706_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -187,7 +187,7 @@ br.numLeafs = 17;
 br.bookTitle= "Georg Eidenschink";
 br.bookAuthor= "Georg Eidenschink";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-06";
-br.bookKeyword= "";
+br.bookKeyword= "Tobacco; Austrian tobacco industry; German-French relations; German diplomacy; German foreign policy; La Presse; DAF; German Labor Front; Saar plebiscite; Art; Paintings; Werewolf; Hitler's inner circle; Profiteering; Corruption; Dutch art; Bribes; SS";
 br.bookUrl  = '/nuremberg/catalog/nur:01706';
 
 // Override the path used to find UI images

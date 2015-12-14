@@ -357,7 +357,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1901_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1901_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -415,7 +415,7 @@ br.numLeafs = 55;
 br.bookTitle= "The solemn declaration of the late unfortunate Jason Fairbanks : from the original manuscript / composed and signed by himself, a very short time before his death ; to which is added some account of his life and character, the whole collected and published by Ebenezer Fairbanks, Jun.";
 br.bookAuthor= "Fairbanks, Jason, 1780-1801.";
 br.bookPub= "Dedham [Mass.]: Minerva Press of H. Mann : E. Fairbanks, Jun., 1801";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1901';
 
 // Override the path used to find UI images

@@ -261,7 +261,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1208_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1208_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -319,7 +319,7 @@ br.numLeafs = 39;
 br.bookTitle= "The argument of Peter Y. Cutler, Esq., before the Street Committee of the Board of Aldermen of the city of New-York : delivered March 1st, 1854, in the matter of extending Albany Street to Broadway, through Trinity Church Yard";
 br.bookAuthor= "Cutler, Peter Y.";
 br.bookPub= "New York:  Banks, Gould &amp; Co., 1854";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1208';
 
 // Override the path used to find UI images

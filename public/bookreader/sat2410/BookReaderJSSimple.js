@@ -303,7 +303,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2410_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2410_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -361,7 +361,7 @@ br.numLeafs = 46;
 br.bookTitle= "Trial of Munroe Colcord ... [et al.] for the murder of Dolly Seaver.";
 br.bookAuthor= "Colcord, Munroe, defendant.";
 br.bookPub= "Exeter, N.H.: Charles C. Dearborn, 1845";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2410';
 
 // Override the path used to find UI images

@@ -303,7 +303,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1013_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1013_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -361,7 +361,7 @@ br.numLeafs = 46;
 br.bookTitle= "Exposition of the J. D. &amp; M. Williams fraud, and of its settlement; the Chenery &amp; Co. fraud, and removal of Timothy B. Dix, and Hon. Samuel Hooper's extraordinary report thereon; and other matters at the Boston custom house. By J. Z. Goodrich, who submits the whole as an answer to all specific charges against him, and a vindication of his general conduct and policy as collector";
 br.bookAuthor= "Goodrich, John Z. (John Zacheus), 1804-1885.";
 br.bookPub= "Boston: Rockwell and Rollins, printers, 1866";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1013';
 
 // Override the path used to find UI images

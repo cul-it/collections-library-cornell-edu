@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00890_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00890_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum for Lt. Colonel Parker / Evaluation Section / Post Office Box 1142 / Alexandria, Virginia ";
 br.bookAuthor= "Owen C. Campbell, Captain, M.A.C.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-22";
-br.bookKeyword= "";
+br.bookKeyword= "PAV 3WG-1293; Ambassador at large; Poland";
 br.bookUrl  = '/nuremberg/catalog/nur:00890';
 
 // Override the path used to find UI images

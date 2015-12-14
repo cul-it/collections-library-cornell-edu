@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01199_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01199_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Discussion with Mr. Von Thermann / Exhibit A / Strictly Confidential / Translation / Smith/Herm / For Director Dr. Ilgner";
 br.bookAuthor= "Frank-Fahle";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-01-10";
-br.bookKeyword= "";
+br.bookKeyword= "Argentina; Brazil; Uruguay; U.S.A.; Latin America; South America; Anilinas Alemanas; Auslandsorganisation (A.O.); Camouflage; Tarnung";
 br.bookUrl  = '/nuremberg/catalog/nur:01199';
 
 // Override the path used to find UI images

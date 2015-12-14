@@ -633,7 +633,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00689_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00689_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -691,7 +691,7 @@ br.numLeafs = 99;
 br.bookTitle= "Germany's Economic Base for Aggression  / Statement Submitted by Leo T. Crowley / Foreign Economic Administrator / before the Sub-Committee on / War Mobilization of the / Senate Military Affairs Committee";
 br.bookAuthor= "Leo T. Crowley";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-26";
-br.bookKeyword= "";
+br.bookKeyword= "For \"Oral Statement\": Foreign Economic Administration (FEA), Enemy Branch; German economic and industrial disarmament; World War II. For \"Summary of Written Statement\": Economic base for aggression; Versailles Treaty; German disarmament after WWI; German rearmament for WWII; German General Staff; German industrialists; FEA; Enemy Branch. For \"Written Statement\": Dyes and Chemicals; Iron and Steel; Nitrogen; Coal Tar; Synthetic Textile Fibres; Rubber; Petroleum Products; Aluminum; Coal; Machine Tools; New Weapons; German economic assets outside Germany; Provisions of Versailles Treaty; German violations and evasions; German General Staff; War economics; Industrial reorganization; Managed inflation; Foreign loans; Dawes Plan; Cartel arrangements; Foreign trade; Raw materials; Bilateral agreements; German industrialists; German economic and industrial disarmament; FEA Enemy Branch";
 br.bookUrl  = '/nuremberg/catalog/nur:00689';
 
 // Override the path used to find UI images

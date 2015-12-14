@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2207_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2207_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "The late Lady Flora Hastings. Statements of The Marquis of Hastings, Marchioness of Tavistock, Lady Portman, Lord Portman, and Sir James Clark.";
 br.bookAuthor= "Hastings, Flora, Lady, 1806-1839";
 br.bookPub= "London: William Edward Painter, [18--]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2207';
 
 // Override the path used to find UI images

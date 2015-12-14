@@ -375,7 +375,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4215_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4215_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -433,7 +433,7 @@ br.numLeafs = 58;
 br.bookTitle= "A true report of the last trial of Rev. J.S. Ebaugh in the classis of New York, Dec. 1852 : Together with an account of matters leading thereto / By a member of classis.";
 br.bookAuthor= "Ebaugh, John S.";
 br.bookPub= "New York: [s.n.], 1853";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4215';
 
 // Override the path used to find UI images

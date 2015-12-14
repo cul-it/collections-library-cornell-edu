@@ -165,7 +165,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02041_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02041_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -223,7 +223,7 @@ br.numLeafs = 23;
 br.bookTitle= "Subject: Instructions Prepared by Colonel Amen for Use of Interrogators of War Criminals / Suggestions for Use of Interrogators of War Criminals / Short Form / Suggestions for Use of Interrogators of War Criminals / Long Form / Office of U.S. Chief of Counsel for Prosecution of Axis Criminality / 7 Rue de Presbourg, Paris / APO 887";
 br.bookAuthor= "Colonel Amen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-07";
-br.bookKeyword= "";
+br.bookKeyword= "Interrogation forms; Prosecution strategy; War crimes; SS; SD; SA; Gestapo, RSHA; Peoples' Court; Four-Year Plan; Concentration camps; Foreign workers; Foreign countries; Trade negotiations; German industry; Werewolves Organization; Gauleiter Organization; Spoliation of property";
 br.bookUrl  = '/nuremberg/catalog/nur:02041';
 
 // Override the path used to find UI images

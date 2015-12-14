@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00499_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00499_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 71;
 br.bookTitle= "The United States of America, the French Republic, The United Kingdom of Great Britain and Northern Ireland, and the Union of Soviet Socialist Republics against Herman Wilhelm Goering, et al, Defendants, sitting at Nurnberg, Germany, on 22 November 1945,1000-1230 [and 1400-1700], Lord Justice Lawrence, presiding.";
 br.bookAuthor= "Not applicable";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-22";
-br.bookKeyword= "";
+br.bookKeyword= "Document centers; Document Room; Nurnberg; International Military Tribunal; Nazi Party; NSDAP; SS; SA; Hoheitstrager; Gauleiter; Kreisleiter; Zellenleiter; Blockleiter; Fuehrer; HJ (Hitler Youth); NSKK (Motor Corp of the Party); Reich Defense Council; Reich Cabinet; Reichsreigierung; 'Fuehrerprinzip'; Treaty of Versailles; Mein Kampf; Common Plan of Conspiracy; Master race doctrine; Glorification of war; Hitler Putsch; Concentration camps; Labor unions; Christian churches; Persecution of Jews; Nurnberg laws";
 br.bookUrl  = '/nuremberg/catalog/nur:00499';
 
 // Override the path used to find UI images

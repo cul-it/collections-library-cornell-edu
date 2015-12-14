@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3709_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3709_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -178,10 +178,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 16;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "Synopsis of facts and argument of Linus Child : presented to the Joint Standing Committee on Education : in behalf of the remonstrants against the petition of I. J. Wetherbee and others for an act to incorporate "The Boston Dental College", May 5, 1868.";
+br.bookTitle= "Synopsis of facts and argument of Linus Child : presented to the Joint Standing Committee on Education : in behalf of the remonstrants against the petition of I. J. Wetherbee and others for an act to incorporate 'The Boston Dental College', May 5, 1868.";
 br.bookAuthor= "Child, Linus.";
 br.bookPub= "Boston: Wright and Potter, Printers, 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3709';
 
 // Override the path used to find UI images

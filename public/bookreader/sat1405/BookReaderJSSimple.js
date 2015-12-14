@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1405_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1405_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "Libel suit of Chief Justice Ames against Thomas R. Hazard : Hon. Joseph M. Blake's argument for defendant upon plaintiff's demurrer.";
 br.bookAuthor= "Hazard, Thomas R. (Thomas Robinson), 1797-1886, defendant.";
 br.bookPub= "Providence: A. C. Greene, 1862";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1405';
 
 // Override the path used to find UI images

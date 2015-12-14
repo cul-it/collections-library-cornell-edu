@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01980_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01980_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Memorandum to Mr. Gordon Dean / From Commander Donovan / Subject Presentation Work";
 br.bookAuthor= "James B. Donovan, Commander, USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-20";
-br.bookKeyword= "";
+br.bookKeyword= "Presentation Branch; Courtroom charts; Aggressive war; Film reports; Pamphlets and brochures; Prosecution strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:01980';
 
 // Override the path used to find UI images

@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1910_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1910_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Life and confession of Mary Jane Gordon : who was tried, condemned, and hung on the 24th day of June, 1847 for the murder of Jane Anderson, a native of Vassalboro, Maine ... / carefully collected by the author, J.S. Calhoun.";
 br.bookAuthor= "Calhoun, J. S. (John S.)";
 br.bookPub= "Augusta [Me.]: Published for the author., 1847";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1910';
 
 // Override the path used to find UI images

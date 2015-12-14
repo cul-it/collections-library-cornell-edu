@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00700_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00700_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "War Crimes and Crimes Against Humanity / Part I / Waging of Ruthless Warfare ";
 br.bookAuthor= "Captain Seymour Krieger; Walter W. Brudno; 1st Lt. Edward H. Kenyon / Presented by Section IV / Hardy W. Hollers, Colonel, J.A.G.D., Chief of Section / William F. Walsh, Major, A.C., Deputy";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes Against Military Personnel; Wanton Destruction of Property; Crimes Against Civilians; Occupied Territories; Commandos; Saboteurs; Paratroopers; Allied airmen; Lynchings; Russian POWs; Malmedy massacre; Partisans; Reprisals";
 br.bookUrl  = '/nuremberg/catalog/nur:00700';
 
 // Override the path used to find UI images

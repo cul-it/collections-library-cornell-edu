@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01192_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01192_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: Interrogation of Hermann Rochling - 15 June 1945 / Interoffice Memorandum / Office of Strategic Services / SECRET";
 br.bookAuthor= "Gardiner S. Piatt";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-10";
-br.bookKeyword= "";
+br.bookKeyword= "Roechling Combine; OSS";
 br.bookUrl  = '/nuremberg/catalog/nur:01192';
 
 // Override the path used to find UI images

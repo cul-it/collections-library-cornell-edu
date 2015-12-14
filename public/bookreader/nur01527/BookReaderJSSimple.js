@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01527_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01527_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Meeting between Ribbentrop and Mussolini of 13 May 1941. / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Staff Evidence Analysis";
 br.bookAuthor= "Buchsbaum is the analyst.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-22";
-br.bookKeyword= "";
+br.bookKeyword= "Preparations to wage aggressive war; Foreign penetration; Propaganda; Fifth Column activities; Psychological warfare; Arms shipments; Iraq; Turkey; Egypt; England; Italy; Vichy; Algeria; Tripoli; France; Morocco; Spain; Russia; Japan; Axis Powers; German diplomacy; Geopolitical strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:01527';
 
 // Override the path used to find UI images

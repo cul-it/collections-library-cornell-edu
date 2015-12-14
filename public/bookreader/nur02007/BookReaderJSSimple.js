@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02007_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02007_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Plan for Public Relations Organization for the Trial of the Major War Criminals";
 br.bookAuthor= "Gordon Dean";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "International Military Tribunal; Nuremberg Trials; Public Relations; General policy; Censorship; Accreditation of media correspondents; Psychological Warfare; Control of information (to German-language newspapers); Press Camp; Communications; Trial photography; Film pools; Newsreels; OSS Field Photographic Section; Voice recording of testimony; Reproduction; Daily transcripts; Copies; Charts; Exhibits; Documents; Press releases; Press briefings";
 br.bookUrl  = '/nuremberg/catalog/nur:02007';
 
 // Override the path used to find UI images

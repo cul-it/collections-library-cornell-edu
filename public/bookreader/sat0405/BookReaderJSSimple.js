@@ -579,7 +579,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0405_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0405_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -637,7 +637,7 @@ br.numLeafs = 92;
 br.bookTitle= "Speeches of E. W. Evans and John Lyle King, counsel for the Plaintiff in the Wilkinson-Tribune Libel Suit. Circuit court of Cook County, December term, 1868. George Buckley, reporter.";
 br.bookAuthor= "Evans, Eric Wyn.";
 br.bookPub= "Chicago: Rounds &amp; James., 1869";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0405';
 
 // Override the path used to find UI images

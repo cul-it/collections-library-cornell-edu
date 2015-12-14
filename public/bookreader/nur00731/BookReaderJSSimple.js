@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00731_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00731_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -421,7 +421,7 @@ br.numLeafs = 56;
 br.bookTitle= "War Crimes and Crimes Against Humanity / Part III / Common Plan and Conspiracy in / The Establishment of Concentration Camps ";
 br.bookAuthor= "Nicholas R. Doman, 1st Lt.; Edgar G. Boedeker, Captain";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Crimes against peace; Hague Convention; Protective custody; Consolidation of power; Communists; Social Democrats; Poles; Russians; Czechs; Jews; Persecution of Jews; Concentration camps; Dachau; Sachsenhausen; Buchenwald; Flossenburg; Mauthausen; Ravensbruck; Gusen; Neuengamma; Gross Rosen; Auschwitz; Niederhagen; Hinzert; Stutthof; Hertogenbosh; Riga; Lublin; Warsaw; Kauen; Vaivara; Plaszow; RSHA; SS; SIPO; SD; Gestapo; NSDAP; OKW; Nacht und Nebel Erlass; Night and Fog; Prisoners of war; POWs; Operation Kugel; Slave labor; Extermination; Deportation; Das Archiv; Death Books; Bibelforschers; Bible research workers; Polish priests; Catholic priests";
 br.bookUrl  = '/nuremberg/catalog/nur:00731';
 
 // Override the path used to find UI images

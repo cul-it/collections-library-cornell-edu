@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00772_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00772_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject:  R &amp; A 3114.4, The Persecution of the Christian Churches / CONFIDENTIAL";
 br.bookAuthor= "Major William Coogan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-10";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against humanity; War crimes; Persecution of Christian Churches; Evidence";
 br.bookUrl  = '/nuremberg/catalog/nur:00772';
 
 // Override the path used to find UI images

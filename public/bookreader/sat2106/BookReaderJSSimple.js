@@ -135,7 +135,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2106_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2106_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -193,7 +193,7 @@ br.numLeafs = 18;
 br.bookTitle= "Genuine memoirs of the life, family and behaviour of Lawrence Shirley, Earl of Ferrers : who was executed ... for the murder of his steward, Mr. Johnston.";
 br.bookAuthor= "Shirley, Lawrence, d.1760.";
 br.bookPub= "London: Printed for T. Bailey, 1760";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2106';
 
 // Override the path used to find UI images

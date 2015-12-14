@@ -141,7 +141,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00650_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00650_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -199,7 +199,7 @@ br.numLeafs = 19;
 br.bookTitle= "The Relations of the OKW to the Party, the OKH, and the SS ";
 br.bookAuthor= "The author's name is not given; internal evidence strongly suggests the author is Walter Warlimont.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-28";
-br.bookKeyword= "";
+br.bookKeyword= "OKW; OKH; SS; SA; Waffen-SS; Rearmament; German Army; German High Command; Roehm putsch; Fritsch Affair; Political murders; Rhineland occupation; Anschluss; Czechoslovakia; Invasion of Poland; Aggressive war; Occupied territories";
 br.bookUrl  = '/nuremberg/catalog/nur:00650';
 
 // Override the path used to find UI images

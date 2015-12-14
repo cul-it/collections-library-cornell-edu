@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3809a_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3809a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "The speech and carriage of Stephen Colledge at Oxford, before the Castle, on Wednesday August 31, 1681. : Taken exactly fron his own mouth at the place of execution.";
 br.bookAuthor= "Colledge, Stephen, 1635?-1681.";
 br.bookPub= "London: Printed for Thomas Basset at the George in Fleet Street, and John Fish near the Golden Tun in the Strand., 1681";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3809a';
 
 // Override the path used to find UI images

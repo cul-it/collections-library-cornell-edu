@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01978_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01978_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "O.C.C. Information Bulletin / Number 73 / Office of U.S. Chief of Counsel / APO 403 / U.S. Army / Administration Division";
 br.bookAuthor= "Arthur A. Kimball, Lt. Col., GSC, Chief, Adm. Div.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-24";
-br.bookKeyword= "";
+br.bookKeyword= "Electricity; Immunization; AGO cards";
 br.bookUrl  = '/nuremberg/catalog/nur:01978';
 
 // Override the path used to find UI images

@@ -453,7 +453,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0910_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0910_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -511,7 +511,7 @@ br.numLeafs = 71;
 br.bookTitle= "Report of the trial of Patrick Sellar, Esq., factor for the most noble the Marquis and Marchioness of Stafford, for the crimes of culpable homicide, real injury, and oppression, before the Circuit Court of Justiciary, held at Inverness on Tuesday, 23d April, 1816 / by the Hon. David Monypenny of Pitmilly, one of the Lords Commissioners of Justiciary.";
 br.bookAuthor= "Sellar, Patrick, 1780-1851.";
 br.bookPub= "Edinburgh, Scotland: M. Anderson, 1816";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0910';
 
 // Override the path used to find UI images

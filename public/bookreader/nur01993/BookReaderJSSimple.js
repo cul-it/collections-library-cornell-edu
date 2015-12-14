@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01993_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01993_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "The Planning Committee met at 11:15 hours... / Office of U.S. Chief of Counsel / APO 403 / U.S. Army / RESTRICTED";
 br.bookAuthor= "Major William H. Baldwin (?)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "Bormann in absentia; Einsatzstab Rosenberg; Plunder of Art Objects; Persecution of the Jews; Crimes committed in concentration camps; Germanization of occupied territories; Common Plan; Aggressive war; Economic aspects of conspiracy; Criminal organizations";
 br.bookUrl  = '/nuremberg/catalog/nur:01993';
 
 // Override the path used to find UI images

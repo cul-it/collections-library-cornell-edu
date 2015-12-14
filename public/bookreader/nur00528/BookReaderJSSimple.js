@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00528_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00528_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Combined Table of Contents of Briefs on Count One Pars. IV (A)-(D) of Indictment ";
 br.bookAuthor= "Robert H. Jackson, U.S. Chief of Counsel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi; Conspiracy; Totalitarian control; Education; Propaganda; Persecution of Jews; Suppression of Christian Churches; Censorship";
 br.bookUrl  = '/nuremberg/catalog/nur:00528';
 
 // Override the path used to find UI images

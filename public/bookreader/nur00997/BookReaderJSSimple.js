@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00997_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00997_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of Funk, Walther";
 br.bookAuthor= "Mr. H. R. Sackett";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-08";
-br.bookKeyword= "";
+br.bookKeyword= "Discriminatory laws; Persecution of Jews; Economic disenfranchisement; Propaganda; Reich Defense Law; Ministerial Council for the Defense of the Reich; Reich Chamber of Culture; Reich Ministry of Propaganda; Preparations to wage aggressive war; Three Man College; Concentration camps; Jewish Question";
 br.bookUrl  = '/nuremberg/catalog/nur:00997';
 
 // Override the path used to find UI images

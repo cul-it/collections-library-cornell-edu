@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01326_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01326_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Office Memorandum / To: Lt E. J. Putzell, Jr. / From: William L. Langer / Subject: [unstated] / United States Government / CONFIDENTIAL";
 br.bookAuthor= "William L. Langer, Chief, Research and Analysis Branch";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-10";
-br.bookKeyword= "";
+br.bookKeyword= "Research and Analysis Branch; Scheffer's reports";
 br.bookUrl  = '/nuremberg/catalog/nur:01326';
 
 // Override the path used to find UI images

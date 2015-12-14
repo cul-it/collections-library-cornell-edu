@@ -423,7 +423,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2209_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2209_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -481,7 +481,7 @@ br.numLeafs = 66;
 br.bookTitle= "Statement of the case of the late Lady Flora Hastings : including documents and the whole correspondence with Viscount Melbourne, the Marquis of Tavistock, and Lord Portman / By the Marquis of Hasting.";
 br.bookAuthor= "Hastings, Flora Elizabeth Rawdon-, Lady, 1806-1839.";
 br.bookPub= "London: Henry Wright, 1839";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2209';
 
 // Override the path used to find UI images

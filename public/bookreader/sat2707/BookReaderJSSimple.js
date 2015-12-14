@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2707_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2707_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -469,7 +469,7 @@ br.numLeafs = 64;
 br.bookTitle= "Evidence before the Grand Jury in the case of A. Oakey Hall.";
 br.bookAuthor= "Hall, A. Oakey (Abraham Oakey), 1826-1898.";
 br.bookPub= "New York: [s.n.], [1871?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2707';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01252_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01252_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: Sandberger, Martin SS, Standf / CONFIDENTIAL / Headquarters / U.S. Forces European Theater / Interrogation Center / APO 655";
 br.bookAuthor= "Harry K. Lennon, Capt, Inf / B &amp; E Section";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-12";
-br.bookKeyword= "";
+br.bookKeyword= "Sandberger interrogation; Amt VI";
 br.bookUrl  = '/nuremberg/catalog/nur:01252';
 
 // Override the path used to find UI images

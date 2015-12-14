@@ -441,7 +441,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01728_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01728_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -499,7 +499,7 @@ br.numLeafs = 69;
 br.bookTitle= "Career History of Heinrich Himmler";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Waffen SS; Beer Hall Putsch; Munich Putsch; NSDAP; Nazi Party; Nazi ideology; Persecution of Jews; Anti-Semitism; SA; SS; Roehm Purge; OSS sources; Hitler Assault Troop; Death's Head-SS; Totenkopf-SS; Free Corps; Freikorps; Nazi seizure of power; Nazi racial theory; German police; German industrialists; Gestapo; Reichstag fire; Concentration camps; Protective custody; SD; Orpo; Sipo; Kripo; Ordinary police; Secret State Police; Criminal police; Blomberg Affair; Fritsche Affair; RSHA; Karl Wolff; OKW; Luftwaffe; People's Court; Executions; Crimes against humanity; Voelkischer Beobachter; Occupied territories; Nazi criminal organizations; German Foreign Office";
 br.bookUrl  = '/nuremberg/catalog/nur:01728';
 
 // Override the path used to find UI images

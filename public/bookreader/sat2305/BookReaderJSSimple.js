@@ -861,7 +861,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2305_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2305_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -919,7 +919,7 @@ br.numLeafs = 139;
 br.bookTitle= "Report of the trial by jury, David Armstrong, against George Buchan  Vair, and Gideon Alston, for sending a challenge to fight duel ... taken in short-hand. With an appendix of letters and other documents.";
 br.bookAuthor= "Vair, George Buchan.";
 br.bookPub= "Edinburgh: W. and C. Tait, 1823";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2305';
 
 // Override the path used to find UI images

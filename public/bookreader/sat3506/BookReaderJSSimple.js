@@ -339,7 +339,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3506_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3506_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -397,7 +397,7 @@ br.numLeafs = 52;
 br.bookTitle= "Argument of John K. Porter on the trial at Albany of William Landon, acquitted July 21, 1855, on a charge of violating the prohibitory law.";
 br.bookAuthor= "Porter, John K. (John Kilham), 1819-1892.";
 br.bookPub= "Albany: H. H. Van Dyck, printer, 1855";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3506';
 
 // Override the path used to find UI images

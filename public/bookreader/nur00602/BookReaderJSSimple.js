@@ -309,7 +309,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00602_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00602_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -367,7 +367,7 @@ br.numLeafs = 48;
 br.bookTitle= "Brief on Die Reichsregierung (Reich Cabinet) ";
 br.bookAuthor= "Lt. W. S. Kaplan, USNR / Miss Katherine Fite";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Reich Cabinet; Reichsregierung; Nazi Party; NSDAP; Reichstag; Secret Cabinet Council; Council of Ministers for the Defense of the Reich; Reich Defense Council";
 br.bookUrl  = '/nuremberg/catalog/nur:00602';
 
 // Override the path used to find UI images

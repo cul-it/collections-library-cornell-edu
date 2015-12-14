@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00471_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00471_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "British/OSS  Slovakia Mission ";
 br.bookAuthor= "Werner Muller";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Prisoners of war; POWs; Mauthausen; Concentration camps; Executions; RSHA; War crimes; Crimes against  military personnel; Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:00471';
 
 // Override the path used to find UI images

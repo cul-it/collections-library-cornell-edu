@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01458_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01458_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -139,7 +139,7 @@ br.numLeafs = 9;
 br.bookTitle= "SPEER DOCUMENTS (FLENSBURG) 11 Nov. 1944 / Volume 21:-- / LAGE IM RUHRGEBIET / (Situation in the RUHR Area). / Photostat copy of copy (i) of letter to Hitler / Foreign Documents Unit / SECRET";
 br.bookAuthor= "The author of the analysis report is not named. The translator is not named. Speer is the author of the analyzed document.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-05";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01458';
 
 // Override the path used to find UI images

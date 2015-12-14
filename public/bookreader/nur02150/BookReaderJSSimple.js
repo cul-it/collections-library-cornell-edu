@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02150_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02150_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: Memorandum Supplementing Memorandum dated 9 November Regarding Witnesses Competent to Testify at Trial";
 br.bookAuthor= "John H. Amen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-09";
-br.bookKeyword= "";
+br.bookKeyword= "Witnesses; Prosecution strategy; War crimes; Prisoners of war; Russian POWs; British POWs; International law; Geneva Convention";
 br.bookUrl  = '/nuremberg/catalog/nur:02150';
 
 // Override the path used to find UI images

@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01666_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01666_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Review of Proceedings of Military Commission in case of United States v. Rottenf&#252;hrer G&#252;nther Ohletz... / CONFIDENTIAL / Headquarters / First United States Army / APO 230 / Office of the Staff Judge Advocate / To: Commanding General, First United States Army / APO 230, U. S. Army";
 br.bookAuthor= "E. M. Brannon, Colonel, JAGD";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-09-13";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01666';
 
 // Override the path used to find UI images

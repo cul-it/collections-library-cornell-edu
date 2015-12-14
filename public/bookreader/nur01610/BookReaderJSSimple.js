@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01610_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01610_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 1;
 br.bookTitle= "Jewish War Veterans over the age of 50, at present at Concentration Camp Buchenwald / GESTAPO / 11 D, Nr. 39022 /";
 br.bookAuthor= "Dr. Berndorff";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1939-01-20";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01610';
 
 // Override the path used to find UI images

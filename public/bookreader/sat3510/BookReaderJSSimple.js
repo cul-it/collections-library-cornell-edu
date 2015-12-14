@@ -459,7 +459,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3510_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3510_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -517,7 +517,7 @@ br.numLeafs = 72;
 br.bookTitle= "The sequestration cases : before the Hon. A.G. Magrath : report of cases under the Sequestration Act of the Confederate States, heard in the District Court for the state of South Carolina, in the city of Charleston--October term, 1861 : arguments of Wm. Whaley, Nelson Mitchell, C. Richardson Miles, J.L. Petigru, I.W. Hayne, J.W. Wilkinson, and Ed. McCrady, esqrs. ; to which is added the opinion of Judge Magrath, in the several cases ; and the Sequestration Act of the Confederate States ; also, the Confiscation Act of the United States ; reported by J. Woodruff.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "[Charleston?]: Published by Request, 1861";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3510';
 
 // Override the path used to find UI images

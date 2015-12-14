@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01374_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01374_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of: Joachim von Ribbentrop / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Colonel Brundage";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-10";
-br.bookKeyword= "";
+br.bookKeyword= "German-American relations; Pearl Harbor; Japan; Russia; Plan Barbarossa; Pacific war; Polish Corridor; Danzig; Aggressive war; Lebensraum";
 br.bookUrl  = '/nuremberg/catalog/nur:01374';
 
 // Override the path used to find UI images

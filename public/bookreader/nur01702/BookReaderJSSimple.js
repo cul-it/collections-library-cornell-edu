@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01702_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01702_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -101,9 +101,9 @@ br.numLeafs = 3;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "SUBJECT: Internee Eidenschink, Georg, No.6-6411 / CONFIDENTIAL / Headquarters / Third United States Army / Screening Center (Provisional) / Internment Camp No.6 / APO 403";
-br.bookAuthor= ""For the Commanding Officer: Herman G. Kleikamp, 1st Lt., Inf."";
+br.bookAuthor= "For the Commanding Officer: Herman G. Kleikamp, 1st Lt., Inf.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-21";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi Party; NSDAP; German bankers";
 br.bookUrl  = '/nuremberg/catalog/nur:01702';
 
 // Override the path used to find UI images

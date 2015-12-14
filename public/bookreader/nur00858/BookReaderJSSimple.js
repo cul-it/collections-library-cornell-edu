@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00858_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00858_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Interrogation of Otto Bovensiepen, former Chief of the German Security Police in Denmark (Born July 8, 1905 in Duisburg) in Kastell Copenhagen, 20 August 1945.";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-20";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Counter-terror; Counter-sabotage; RSHA; German Foreign Office; Reich Plenipotentiary; General of the Police; German police; Gestapo; Danish police affair; General strike; Danish Resistance; Peter Group; Retaliatory murder; Rules of warfare; War crimes; Torture; German prisons; Fr&#246;slev camp; ORPO; Constabularies; Vestre Faengsel; HIPO; Auxiliary police";
 br.bookUrl  = '/nuremberg/catalog/nur:00858';
 
 // Override the path used to find UI images

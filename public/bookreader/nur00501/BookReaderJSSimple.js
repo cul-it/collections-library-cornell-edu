@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00501_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00501_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 72;
 br.bookTitle= "The United States of America, the French Republic, The United Kingdom of Great Britain and Northern Ireland, and the Union of Soviet Socialist Republics against Herman Wilhelm Goering, et al, Defendants, sitting at Nurnberg, Germany, on 26 November 1945, 1000-1230 [and 1400-1630], Lord Justice Lawrence, presiding.";
 br.bookAuthor= "Not applicable";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1936-11-26";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Living space (Lebensraum); Autarchy; British Empire; Colonies; Roman Empire; Attack on Poland; 'Case Green'; 'Case Barbarossa'; Pearl Harbor";
 br.bookUrl  = '/nuremberg/catalog/nur:00501';
 
 // Override the path used to find UI images

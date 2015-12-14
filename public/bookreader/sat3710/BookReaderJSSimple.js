@@ -531,7 +531,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3710_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3710_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -589,7 +589,7 @@ br.numLeafs = 84;
 br.bookTitle= "Report of the case of Ezra A. Bourne versus the city of Boston : tried in the Supreme judicial court of Massachusetts, at Dedham, March, 1853 / reported by William Rogers.";
 br.bookAuthor= "Bourne, Ezra A.";
 br.bookPub= "Boston: Eastburn's Press, 1853";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3710';
 
 // Override the path used to find UI images

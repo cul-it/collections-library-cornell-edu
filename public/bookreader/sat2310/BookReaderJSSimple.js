@@ -327,7 +327,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2310_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2310_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -385,7 +385,7 @@ br.numLeafs = 50;
 br.bookTitle= "A full report of the trial of John Gordon and William Gordon : charged with the murder of Amasa Sprague, before the Supreme Court of Rhode-Island, March term 1844 ... / reported by Edward C. Larned and William Knowles.";
 br.bookAuthor= "Gordon, John, d. 1845.";
 br.bookPub= "Providence: Printed at the office of the Daily Transcript, 1844";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2310';
 
 // Override the path used to find UI images

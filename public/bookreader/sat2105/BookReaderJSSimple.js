@@ -183,7 +183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2105_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2105_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -241,7 +241,7 @@ br.numLeafs = 26;
 br.bookTitle= "A genuine account of the behaviour, confession, and dying words, of the three Scots Rebels, viz. Donald MacDonald, James Nicholson; and Walter Ogilvie. (all officers in the Young Pretender's service) who were executed the 22d day of August 1746 for high treason";
 br.bookAuthor= "MacDonald, Donald, d.1746";
 br.bookPub= "London: Printed for J. Nicholson, 1746";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2105';
 
 // Override the path used to find UI images

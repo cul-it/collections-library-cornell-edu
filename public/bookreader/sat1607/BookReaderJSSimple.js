@@ -405,7 +405,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1607_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1607_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -463,7 +463,7 @@ br.numLeafs = 63;
 br.bookTitle= "Argument of John W. Edmonds before the Surrogate of New York, November 1857: In the matter of the probate of Henry Parish's will on the subject of implied revocation of a will. Reported by Roberts &amp; Warburton, Law reporters ...";
 br.bookAuthor= "Edmonds, John W. (John Worth), 1799-1874.";
 br.bookPub= "[s.l.]: Roberts &amp; Warburton, Law reporters, 1857";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1607';
 
 // Override the path used to find UI images

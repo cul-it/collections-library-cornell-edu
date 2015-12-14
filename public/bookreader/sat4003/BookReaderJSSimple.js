@@ -675,7 +675,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4003_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4003_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -733,7 +733,7 @@ br.numLeafs = 108;
 br.bookTitle= "The life of Thomas Muir Esq., advocate, younger of Huntershill near Glasgow : one of the celebrated reformers of 1792-93 : who was tried for sedition before the High Court of Justiciary in Scotland, and sentenced to transportation for fourteen years : with a full report of his trial. By Peter Mackenzie.";
 br.bookAuthor= "Mackenzie, Peter, 1799-1875.";
 br.bookPub= "Glasgow; Edinburgh: Muir, Gowans, &amp; Co.; Wm. Tait, 1837";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4003';
 
 // Override the path used to find UI images

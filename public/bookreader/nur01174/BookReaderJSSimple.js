@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01174_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01174_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of Wilhelm Keitel / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Mr. T. J. Dodd";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-20";
-br.bookKeyword= "";
+br.bookKeyword= "Indictment; Interrogations";
 br.bookUrl  = '/nuremberg/catalog/nur:01174';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01717_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01717_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Subject: J 18, Anilinas Alemanas, Buenos Aires / Monopol SRL, Buenos Aires / Exhibit D-1";
-br.bookAuthor= "S. Waibel / "Copy to Dr. Frank-Fahle"";
+br.bookAuthor= "S. Waibel / 'Copy to Dr. Frank-Fahle'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1943-08-13";
-br.bookKeyword= "";
+br.bookKeyword= "Argentina; German Embassy; LG. Farben; German Navy; Graf Spee; German Naval Attache";
 br.bookUrl  = '/nuremberg/catalog/nur:01717';
 
 // Override the path used to find UI images

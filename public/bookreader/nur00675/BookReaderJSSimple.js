@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00675_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00675_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Constitution and Administration in the Third Reich  / Partial Translation of Document 2780-PS / Office of U.S. Chief of Counsel";
 br.bookAuthor= "Dr. Rudolph Kluge and Dr. Heinrich Kruger";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1937";
-br.bookKeyword= "";
+br.bookKeyword= "Fuehrer principle; Third Reich; Nazi government; National Socialist political theory";
 br.bookUrl  = '/nuremberg/catalog/nur:00675';
 
 // Override the path used to find UI images

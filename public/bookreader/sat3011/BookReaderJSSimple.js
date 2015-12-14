@@ -195,7 +195,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3011_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3011_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -253,7 +253,7 @@ br.numLeafs = 28;
 br.bookTitle= "Statement of facts showing the debt due to Vans by John and Richard Codman, who were condemned in France while both were living, to deliver William Vans 45,513 francs rentes per year, that amounted in 1829 to upwards of 534,054 dollars : Stephan Codman, as executor, administrator, and heirs, have refused to pay by pretending ignorance of the debt to defraud Vans, as appears by the please of Stephen Codman...";
 br.bookAuthor= "Vans, William, 1763-1840.";
 br.bookPub= "Boston: Printed for William Vans., 1829";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3011';
 
 // Override the path used to find UI images

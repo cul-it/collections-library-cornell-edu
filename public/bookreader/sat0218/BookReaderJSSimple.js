@@ -399,7 +399,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0218_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0218_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -457,7 +457,7 @@ br.numLeafs = 62;
 br.bookTitle= "Report of the several trials of Robert M. Goodwin, for manslaughter, before the honourable Cadwallader D. Colden, mayor of the city of New-York, George B. Thorp, and Stephen Allen, aldermen, on the 14th, 15th, 16th, 17th, and 18th days of March, 1820, and before the Honorourable Jonas Platt, One of the Justices of the Supreme Court, on the 17th, 18th, and 19th days of April, 1821";
 br.bookAuthor= "Rogers, Daniel, 1780-1839, reporter.";
 br.bookPub= "New-York: N. Smith., 1821";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0218';
 
 // Override the path used to find UI images

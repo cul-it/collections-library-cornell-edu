@@ -441,7 +441,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2701_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2701_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -499,7 +499,7 @@ br.numLeafs = 69;
 br.bookTitle= "Three letters, written, and originally published, under the signature of A South Carolina planter. The first, on the case of Jonathan Robbins ... The second, on the recent captures of American vessels by British cruisers ... The third, on the right of expatriation. By Charles Pinckney, esquire, senator in Congress, for South-Carolina. To which is added, an appendix, containing sundry documents concerning Jonathan Robbins.";
 br.bookAuthor= "Pinckney, Charles, 1758-1824.";
 br.bookPub= "Philadelphia: Aurora-office, 1799";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2701';
 
 // Override the path used to find UI images

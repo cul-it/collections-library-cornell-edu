@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01654_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01654_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Report of Proceedings in the Death Chamber / Headquarters / Seine Section Disciplinary Training Center / APO 887 / U.S. Army";
 br.bookAuthor= "Albert M. Summerfield";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-10-09";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01654';
 
 // Override the path used to find UI images

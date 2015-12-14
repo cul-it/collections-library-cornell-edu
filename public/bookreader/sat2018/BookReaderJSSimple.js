@@ -687,7 +687,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2018_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2018_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -745,7 +745,7 @@ br.numLeafs = 110;
 br.bookTitle= "Case of J. V. N. Yates : decided in the Supreme Court of New-York, in August term, 1809.";
 br.bookAuthor= "Yates, John V. N. (John Van Ness), 1779-1839.";
 br.bookPub= "Albany, NY: [s.n.], 1809";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2018';
 
 // Override the path used to find UI images

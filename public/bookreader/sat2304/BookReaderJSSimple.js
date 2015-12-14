@@ -783,7 +783,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2304_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2304_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -841,7 +841,7 @@ br.numLeafs = 126;
 br.bookTitle= "Report of the case of Timothy Upham against Hill &amp; Barton : for an alleged libel, at the Court of Common Pleas, Rockingham county, October term, 1830 ...";
 br.bookAuthor= "Upham, Timothy, 1783-1855.";
 br.bookPub= "Concord [N.H.]: Published by Hill and Barton, 1831";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2304';
 
 // Override the path used to find UI images

@@ -237,7 +237,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0214_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0214_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -295,7 +295,7 @@ br.numLeafs = 36;
 br.bookTitle= "The confession of Jesse Strang, who was convicted of the murder of John Whipple : at a special court of Oyer and Terminer, held in and for the county of Albany, on the fourth day of August, 1827. Being a minute relation of all the circumstances connected";
 br.bookAuthor= "Strang, Jesse, d.1827.";
 br.bookPub= "Albany [N.Y.]: John B. Van Steenbergh, 1827";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0214';
 
 // Override the path used to find UI images

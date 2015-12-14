@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02051_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02051_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "TO: Major General William J. Donovan / FROM: Dr. Henry J. Kellermann / SUBJECT: Article 47 of the Military Penal Code/ Office of United States Chief of Counsel for the Prosecution of Axis Criminality";
 br.bookAuthor= "Henry J. Kellermann";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-23";
-br.bookKeyword= "";
+br.bookKeyword= "Superior orders; Right to disobey; Article 47; Military Penal Code; Fuehrer principle; R &amp; A No. 3113.7";
 br.bookUrl  = '/nuremberg/catalog/nur:02051';
 
 // Override the path used to find UI images

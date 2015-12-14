@@ -345,7 +345,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:kf01_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:kf01_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -403,7 +403,7 @@ br.numLeafs = 53;
 br.bookTitle= "The trial at large of the Rev. Ephraim K. Avery for the wilful murder of Sarah Maria Cornell : at Tiverton, in the county of Newport, R. I. on the evening of 20th Decem. 1832.";
 br.bookAuthor= "Avery, Ephraim K., d. 1869. defendant.";
 br.bookPub= "New York: [s.n.], 1833";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:kf01';
 
 // Override the path used to find UI images

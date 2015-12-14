@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01481_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01481_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Microfilm, Serial No. 34, 7th Army Group";
 br.bookAuthor= "Adolph Hitler";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Military strategy; England; France; British rearmament; Italy; German rearmament; German-Italian military cooperation";
 br.bookUrl  = '/nuremberg/catalog/nur:01481';
 
 // Override the path used to find UI images

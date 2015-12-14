@@ -261,7 +261,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0801_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0801_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -319,7 +319,7 @@ br.numLeafs = 39;
 br.bookTitle= "Microscopic examination of samples of commercial arsenic, and the practical results to which it leads. By Edward S. Dana, PH. D.";
 br.bookAuthor= "Dana, Edward Salisbury, 1849-1935.";
 br.bookPub= "Jersey City, N. J.: F. D. Linn &amp; Co., 1880";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0801';
 
 // Override the path used to find UI images

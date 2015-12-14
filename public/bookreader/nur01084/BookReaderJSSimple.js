@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01084_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01084_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Finnish Social Democrats Accused of Intrigue to Stop Trial of War Criminals / O.W.I., European Analysis and News Digest, 7 September 1945 Finland / O.W.I., European Analysis and News Digest, 7 September 1945  Diet Reported to Support Government on War Guilt Issue / O.W.I., European Analysis and News Digest, 11 September 1945";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-07";
-br.bookKeyword= "";
+br.bookKeyword= "War guilt; Finnish war criminals; War guilty; Finnish Social Democratic Party";
 br.bookUrl  = '/nuremberg/catalog/nur:01084';
 
 // Override the path used to find UI images

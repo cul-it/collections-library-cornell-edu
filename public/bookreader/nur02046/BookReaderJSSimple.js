@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02046_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02046_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "General Memorandum No. 8 / Subjects: 1. Necessity of Security Precautions. / 2. Restriction of Leave Privileges. / 3. Amendment to General Memorandum No.5. / 4. Assignment of Personnel / Office of U.S. Chief of Counsel / APO 403 / U.S. Army";
 br.bookAuthor= "Robert J. Gill, Colonel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-03";
-br.bookKeyword= "";
+br.bookKeyword= "Security measures; Press; German civilians; Defense counsel; Leave policy; Executive Officer";
 br.bookUrl  = '/nuremberg/catalog/nur:02046';
 
 // Override the path used to find UI images

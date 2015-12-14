@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01254_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01254_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Table of Contents";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Prisoner interviews; Gestapo; 20 July Putsch; Gold; Art treasures; Russian Campaign; Foreign Office; V-Weapons; French artworks; Finance Ministry; Department of Culture; Ministry of Transport; German monetary system and national economy; SA; Weapons development; Russian Army";
 br.bookUrl  = '/nuremberg/catalog/nur:01254';
 
 // Override the path used to find UI images

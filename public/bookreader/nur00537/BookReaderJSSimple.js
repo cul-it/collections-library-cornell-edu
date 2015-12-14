@@ -111,7 +111,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00537_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00537_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -169,7 +169,7 @@ br.numLeafs = 14;
 br.bookTitle= "II.C.2.c. The Nazi conspirators set up and operated a vast propaganda and censorship machine and supervised cultural activities ";
 br.bookAuthor= "Lt. Paul Johnston";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Reichspropagandaleitung (RPL; Party); Nazi propaganda; Nazi ideology; Press; Exhibits and fairs; Mass or \"Aktive\" propaganda; Film; Radio; Culture; NSDAP; Reich Press Chief; Reich Press Leader; Party Training; Reich Ministry for Popular Entertainment and Propaganda (Propaganda Ministry); Reich Chamber of Culture; Reich Press Chamber; Reich Chamber of Fine Arts; Reich Music Chamber; Reich Theater Chamber; Reich Film Chamber; Reich Chamber of Literature; Reich Radio Chamber";
 br.bookUrl  = '/nuremberg/catalog/nur:00537';
 
 // Override the path used to find UI images

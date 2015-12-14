@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01047_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01047_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Statement of Goering";
 br.bookAuthor= "Not applicable";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "SA; Nazi Party; Reichstag; Weimar government; Nuernberg; Persecution of Jews; Anti-Semitism; Four Year Plan; Private property; Final Solution; Fuehrer Principle; Concentration camps; National Socialists; Communists; Civil liberties; Freedom of the press; Protective custody; Reich Cabinet; Reichstag fire; Social Democrats; Nazi seizure of power; Totalitarian government";
 br.bookUrl  = '/nuremberg/catalog/nur:01047';
 
 // Override the path used to find UI images

@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01006_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01006_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "From Goering -ans to I [handwritten title] / Translation";
 br.bookAuthor= "Hermann Goering";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi Party; NSDAP; SA; Munich Putsch; Beer Hall Putsch; Street fighting; \"Boxheimer Dokumente\"; Versailles treaty; German territorial expansion; Lebensraum; Austrian Nazi Party; Roehm Purge; Danzig; Polish Corridor; Sudetenland; Austria; Anschluss; Mein Kampf; Poland; Italy; France; Russia; Bolshevism; Bolshevists; Fuerher principle; Nazi Party platform; Nazi ideology; Master Race; Nazi racial theories; SS; German blood; Jews";
 br.bookUrl  = '/nuremberg/catalog/nur:01006';
 
 // Override the path used to find UI images

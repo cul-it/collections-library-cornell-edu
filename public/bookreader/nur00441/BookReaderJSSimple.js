@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00441_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00441_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "The Right Hon. The Lord Wright / APO 413 / U.S. Army";
 br.bookAuthor= "Robert H. Jackson, U.S. Chief of Counsel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-05";
-br.bookKeyword= "";
+br.bookKeyword= "Common criminal plan; Atrocities; Aggression war; War  crimes; Sovereign immunity; Superior orders; Individual defendants; Criminal  organizations; Documentation; Nazi organizations; Prosecution strategy; Trial preparation";
 br.bookUrl  = '/nuremberg/catalog/nur:00441';
 
 // Override the path used to find UI images

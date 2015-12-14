@@ -435,7 +435,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0507_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0507_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -493,7 +493,7 @@ br.numLeafs = 68;
 br.bookTitle= "The trial of George E. Crozier for the murder of his wife, Fanny H. Crozier, Penn Yan, N.Y., March 6th to 16th, 1876. Reported by George G. Judd.";
 br.bookAuthor= "Crozier, George E., defendant.";
 br.bookPub= "Penn Yan, N.Y.: [s.n.], 1876";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0507';
 
 // Override the path used to find UI images

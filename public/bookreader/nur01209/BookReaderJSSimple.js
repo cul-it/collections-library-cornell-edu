@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01209_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01209_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Preliminary Interrogation Report (PIR) / Prisoner: Sandberger, Martin, Ober Reg Rat, SS Standf / SECRET / Headquarters 12th Army Group / Interrogation Center / APO 655";
 br.bookAuthor= "Harry K. Lennon, Capt., Inf / B &amp; E Section";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-23";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; SD; Amt VI; Estonia";
 br.bookUrl  = '/nuremberg/catalog/nur:01209';
 
 // Override the path used to find UI images

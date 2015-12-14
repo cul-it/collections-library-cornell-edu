@@ -237,7 +237,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4209_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4209_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -295,7 +295,7 @@ br.numLeafs = 35;
 br.bookTitle= "A statement of the trials of Rev. Isaac D. Cole : before the Classis of Paramus, in 1838 and 1840.";
 br.bookAuthor= "Blauvelt, Jacob.";
 br.bookPub= "New York: Tribune printing, 1844";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4209';
 
 // Override the path used to find UI images

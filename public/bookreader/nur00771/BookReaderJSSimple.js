@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00771_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00771_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -211,7 +211,7 @@ br.numLeafs = 21;
 br.bookTitle= "The Nazi conspirators sought to subvert the influence of the churches over the people of Germany.";
 br.bookAuthor= "Lt. (jg) A. R. Martin";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Persecution of Christian Churches; Persecution of clergy; Evangelical Churches; Catholic Church; RSHA; Sipo; SD; SA; Organisationsbuch der NSDAP: The Mvth of the 20th Century: Reich Labor Service; Nazi ideology; Hindenburg Funeral Knell cases; Confiscation; Arrest; Protective custody; Monasteries; Monastic orders; Censorship; Gestapo";
 br.bookUrl  = '/nuremberg/catalog/nur:00771';
 
 // Override the path used to find UI images

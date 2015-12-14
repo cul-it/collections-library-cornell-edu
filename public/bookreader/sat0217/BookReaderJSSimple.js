@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0217_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0217_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Report of the trial of Richard Johnson, for the murder of Mrs. Ursula Newman : held in the Court of oyer and terminer, on the 10th of March, 1829, before Judges Edwards and Irving, and Aldermen Stevens, Coe, and Brown, (of the 8th ward) / Reported by E.V.";
 br.bookAuthor= "Johnson, Richard, fl. 1829.";
 br.bookPub= "New York: Pub. and sold at no. 20 William-street., 1829";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0217';
 
 // Override the path used to find UI images

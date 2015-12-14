@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00755_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00755_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Translation of report received from Philip Bastedo, Strategic Services Unit, Berlin, 16 October 1945. Prepared for Maj. Gen. W. J. Donovan by Capt. Nordon. / Draft - translation / Subject: Treatment of Prisoners of War";
 br.bookAuthor= "Tiessler [?]";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1942-03-27";
-br.bookKeyword= "";
+br.bookKeyword= "Prisoners of war; Russian POWs; Propaganda; Red Cross; DAF; Armament industry; Ministry of Economics; Ministry of Food Supply; War crimes; French POWs; Eastern front";
 br.bookUrl  = '/nuremberg/catalog/nur:00755';
 
 // Override the path used to find UI images

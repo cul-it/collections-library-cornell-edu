@@ -1191,7 +1191,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3407_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3407_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1249,7 +1249,7 @@ br.numLeafs = 194;
 br.bookTitle= "The alleged malpractice suit of Walsh vs. Sayre.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New York: Geo. H. Shaw &amp; Co., 1870";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3407';
 
 // Override the path used to find UI images

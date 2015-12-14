@@ -447,7 +447,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0102_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0102_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -505,7 +505,7 @@ br.numLeafs = 70;
 br.bookTitle= "A report of an action for a libel brought by Dr. Benjamin Rush, against William Cobbett, : in the Supreme court of Pennsylvania, December term, 1799, for certain defamatory publications in a news-paper, entitled Porcupine's gazette, of which the said Will";
 br.bookAuthor= "Rush, Benjamin, 1746-1813, plaintiff.";
 br.bookPub= "Philadelphia: Printed by W.W. Woodward, no. 17, Chesnut Street, 1800";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0102';
 
 // Override the path used to find UI images

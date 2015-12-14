@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00916_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00916_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of Alfred Jodl / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Colonel T. S. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-27";
-br.bookKeyword= "";
+br.bookKeyword= "German foreign policy; Territorial expansion; German Army; Versailles treaty; German colonies; Living space; Lebensraum; Natural resources; Raw materials; Reichsministry Conference; German national defense";
 br.bookUrl  = '/nuremberg/catalog/nur:00916';
 
 // Override the path used to find UI images

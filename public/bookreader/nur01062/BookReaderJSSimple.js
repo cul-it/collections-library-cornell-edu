@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01062_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01062_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Dr. Kellerman [handwritten title]";
 br.bookAuthor= "Dr. Kellerman [?]";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Reich Cabinet; Nazi seizure of power; Weimar Constitution; Political opposition; Reichstag fire; Gestapo; Concentration camps; SA; SS; Jewish Problem; Persecution of Jews; Final Solution; Anti-Semitism; POWs; Nazi ideology; Preparations to wage aggressive war; Four Year Plan; German rearmament; Total war; War crimes; Crimes against humanity; Crimes against peace; Crimes against military personnel; Crimes against civilians";
 br.bookUrl  = '/nuremberg/catalog/nur:01062';
 
 // Override the path used to find UI images

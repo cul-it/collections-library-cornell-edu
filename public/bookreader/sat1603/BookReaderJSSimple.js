@@ -387,7 +387,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1603_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1603_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -445,7 +445,7 @@ br.numLeafs = 60;
 br.bookTitle= "The case of Dr. Frederick Beer, with a comment and notes / by J. Sheridan Moore, Principal of Randwich college.";
 br.bookAuthor= "Moore, J. Sheridan.";
 br.bookPub= "Sydney: Printed at the "Guttenberg" print. off., 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1603';
 
 // Override the path used to find UI images

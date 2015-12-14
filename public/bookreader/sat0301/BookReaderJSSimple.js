@@ -993,7 +993,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0301_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0301_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1051,7 +1051,7 @@ br.numLeafs = 161;
 br.bookTitle= "Official report of the trial of Fanny Hyde, for the murder of Geo. W. Watson, including testimony, the arguments of counsel, and the charge of the court, reported verbatim. With portraits of the defendant and the deceased. From the short-hand notes of William Hemstreet, official reporter of the court";
 br.bookAuthor= "Hyde, Fanny (Windley), Mrs., 1853-";
 br.bookPub= "New York: J. R. McDivitt, 1872";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0301';
 
 // Override the path used to find UI images

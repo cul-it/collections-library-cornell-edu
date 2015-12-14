@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01010_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01010_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Questionnaire on Goering / Questions";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi Party; NSDAP; SA; Munich Putsch; Beer Hall Putsch; Street fighting; \"Boxheimer Dokumente\"; Austria; Reichstag; Persecution of Jews; Propaganda; Emergency Decree; Anti-Semitism";
 br.bookUrl  = '/nuremberg/catalog/nur:01010';
 
 // Override the path used to find UI images

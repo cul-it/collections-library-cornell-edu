@@ -447,7 +447,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3104_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3104_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -505,7 +505,7 @@ br.numLeafs = 70;
 br.bookTitle= "Argument of William H. Seward, in defence of Abel F. Fitch and others : under an indictment for arson, delivered at Detroit, on the 12th, 13th and 15th days of September, 1851 / phonographically reported by T.C. Leland.";
 br.bookAuthor= "Seward, William Henry, 1801-1872.";
 br.bookPub= "Auburn [N.Y.]: Derby &amp; Miller, 1851";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3104';
 
 // Override the path used to find UI images

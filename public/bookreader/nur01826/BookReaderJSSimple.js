@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01826_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01826_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Brief of Interrogation of Ernst Wilhelm Bohle / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Lt. (jg) John B. Martin is the interrogator.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-26";
-br.bookKeyword= "";
+br.bookKeyword= "Auslands Organisation; A.O.; German Foreign Office; Diplomatic Corps; Consular Service; Nazi Party; Jewish problem; Jewish question; Persecution of Christian Churches; Territorial expansion; SD; Intelligence gathering; Espionage; Reichsdeutsche";
 br.bookUrl  = '/nuremberg/catalog/nur:01826';
 
 // Override the path used to find UI images

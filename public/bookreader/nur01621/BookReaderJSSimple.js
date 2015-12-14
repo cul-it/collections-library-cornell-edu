@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01621_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01621_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -137,9 +137,9 @@ br.numLeafs = 9;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Enclosure No. 1 to Despatch [sic] No. 436, dated May 29, 1945, from Ambassador Murphy. / TOP SECRET";
-br.bookAuthor= "The interrogator is indicated as "RAFO" (Royal Air Force Officer).";
+br.bookAuthor= "The interrogator is indicated as 'RAFO' (Royal Air Force Officer).";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-29";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01621';
 
 // Override the path used to find UI images

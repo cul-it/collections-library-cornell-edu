@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00683_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00683_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -211,7 +211,7 @@ br.numLeafs = 20;
 br.bookTitle= "Autobiographical Notes on the Military Career and Political Views of Gen. D. Art. Warlimont  / Special Detention Center Ashcan / CCPWE #32, APO 513/ Detailed Interrogation Report / German Preparations for War / Method of Planning - Method of Training to Carry out these Plans";
 br.bookAuthor= "The interrogation officer is Ivo V. Glannini";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-29";
-br.bookKeyword= "";
+br.bookKeyword= "Mobilization plans; Invasion of Czechoslovakia; Invasion of Poland; OKH; OKW; Civilian defense; Strategic preparations; War Games; \"Practice Tours\"; Franco; Catholicism; Belgian intervention; Campaign against France; Invasion of Russia";
 br.bookUrl  = '/nuremberg/catalog/nur:00683';
 
 // Override the path used to find UI images

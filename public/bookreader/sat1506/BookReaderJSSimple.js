@@ -303,7 +303,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1506_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1506_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -361,7 +361,7 @@ br.numLeafs = 46;
 br.bookTitle= "Report of the trial of Richard Maher of the city of Waterford, M.D. : for high treason and disaffection to the king and constitution, before a general court-martial, held at Waterford, in June 1798.";
 br.bookAuthor= "Cooke, Thomas, fl. 1798.";
 br.bookPub= "Dublin: Printed by W. Porter, 1798";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1506';
 
 // Override the path used to find UI images

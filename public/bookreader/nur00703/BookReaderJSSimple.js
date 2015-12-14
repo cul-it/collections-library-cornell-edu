@@ -207,7 +207,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00703_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00703_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -265,7 +265,7 @@ br.numLeafs = 30;
 br.bookTitle= "III / Crimes Against Civilians of or in Occupied Territories";
 br.bookAuthor= "1st Lt. Edward H. Kenyon";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Deportation; Slave labor; Occupied territories; Hostages; Collective reprisal; Partisans; Norway; Holland; Belgium; France; Partisans; Resistance; Night and Fog Decree; Total war; Hague Convention; Due process";
 br.bookUrl  = '/nuremberg/catalog/nur:00703';
 
 // Override the path used to find UI images

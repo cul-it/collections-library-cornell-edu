@@ -579,7 +579,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1704_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1704_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -637,7 +637,7 @@ br.numLeafs = 92;
 br.bookTitle= "A history of the trial of Castner Hanway and others, for treason : at Philadelphia in November, 1851 : with an introduction upon the history of the slave question / by a Member of the Philadelphia bar.";
 br.bookAuthor= "Member of the Philadelphia bar.";
 br.bookPub= "Philadelphia: Uriah Hunt &amp; Sons, 1852";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1704';
 
 // Override the path used to find UI images

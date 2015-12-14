@@ -1107,7 +1107,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3404_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3404_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1165,7 +1165,7 @@ br.numLeafs = 180;
 br.bookTitle= "Trial of Matt. F. Ward, : for the murder of Prof. W.H.G. Butler, before the Hardin criminal court, April term 1854. / Reported for the Louisville courier and Louisville democrat, by Geo. Cole.";
 br.bookAuthor= "Ward, Matthew Flournoy, 1826-1862, defendant.";
 br.bookPub= "Louisville: Morton &amp; Griswold, Printers, 1854";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3404';
 
 // Override the path used to find UI images

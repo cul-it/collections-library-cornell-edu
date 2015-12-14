@@ -939,7 +939,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0704_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0704_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -997,7 +997,7 @@ br.numLeafs = 152;
 br.bookTitle= "Report of the trial in an action between William Vooght, plaintiff, and John Wynch, defendant, tried at Chelmsford Summer Assizes, on the 24th and 25th of July 1818, before Mr. Serjeant Lens, and a special jury / Taken in short-hand, by Joseph A. Dowling.";
 br.bookAuthor= "Dowling, Joseph A.";
 br.bookPub= "London: Printed and sold by J. Bailey, 1818";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0704';
 
 // Override the path used to find UI images

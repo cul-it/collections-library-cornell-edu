@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00597_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00597_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "I beg to add the following data to my 'Lebenslauf' ";
 br.bookAuthor= "W. Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-01";
-br.bookKeyword= "";
+br.bookKeyword= "Plot against Hitler; Assassination attempt of July 20, 1944; Hitler's suspicions; Reprisals";
 br.bookUrl  = '/nuremberg/catalog/nur:00597';
 
 // Override the path used to find UI images

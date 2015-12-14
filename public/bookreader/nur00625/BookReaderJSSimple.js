@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00625_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00625_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "C-126 / Supreme Command of the Armed Forces / Re: Preparations for 'Fall Weiss' ";
 br.bookAuthor= "Wilhelm Keitel; the translator's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1939-06-22";
-br.bookKeyword= "";
+br.bookKeyword= "Fall Weiss; Invasion of Poland; Plan of attack; Aggressive war; Military strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:00625';
 
 // Override the path used to find UI images

@@ -195,7 +195,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3308_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3308_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -253,7 +253,7 @@ br.numLeafs = 28;
 br.bookTitle= "The Life and confessions of Mrs. Henrietta Robinson, the veiled murderess : who was sentenced to be hung August 3d, 1855, at Troy, New York, for the murder of Timothy Lanagan, and who is still under indictment for the murder of Miss Jane Lubin [sic] ...";
 br.bookAuthor= "Robinson, Henrietta";
 br.bookPub= "Boston: Publised and for sale by Dr. H.B. Skinner, No. 15 Friend Street., 1855";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3308';
 
 // Override the path used to find UI images

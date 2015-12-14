@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01079_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01079_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1/2;
 br.bookTitle= "Finnish Government Risks Position on War Guilt Issue / O.W.I., European Analysis and News Digest, 6 September 1945 Finland Must Follow Allies in War Guilt Question, Says Fagerholm /  O.W.I., European Analysis and News Digest 6 September 1945";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-06";
-br.bookKeyword= "";
+br.bookKeyword= "War Guilt Act; Finnish Diet; War Guilty; War Criminals";
 br.bookUrl  = '/nuremberg/catalog/nur:01079';
 
 // Override the path used to find UI images

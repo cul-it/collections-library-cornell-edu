@@ -357,7 +357,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3607_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3607_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -415,7 +415,7 @@ br.numLeafs = 55;
 br.bookTitle= "Report of the evidence in the case of John Stephen Bartlett, M.D., versus the Mass. Medical Society, as given before a committee of the Legislature at the session of 1839.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston: Dutton and Wentworth, 1839";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3607';
 
 // Override the path used to find UI images

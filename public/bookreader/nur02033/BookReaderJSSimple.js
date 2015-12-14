@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02033_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02033_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum concerning strength of some Nazi groups indicated as criminal conspirators";
 br.bookAuthor= "Dr. Henry J. Kellerman";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-06";
-br.bookKeyword= "";
+br.bookKeyword= "Statistical profile; Reich Cabinet; Waffen SS; SA; Leadership Corps of the NSDAP";
 br.bookUrl  = '/nuremberg/catalog/nur:02033';
 
 // Override the path used to find UI images

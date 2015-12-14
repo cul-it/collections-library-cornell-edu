@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02124_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02124_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Memorandum for Justice Jackson / SUBJECT: German Nationals as Potential Witnesses / COPY / OCC letterhead / SECRET";
 br.bookAuthor= "John W. Griggs, Lt. Col. A.C. / Officer in Charge";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-05";
-br.bookKeyword= "";
+br.bookKeyword= "Nurnberg Trials; Witnesses; German nationals; Prosecution strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:02124';
 
 // Override the path used to find UI images

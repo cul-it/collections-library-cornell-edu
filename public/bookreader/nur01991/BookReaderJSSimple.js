@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01991_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01991_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "List of Lectures and Proposed Lectures / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Documentation Division";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-11";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi law; War criminals; International Tribunal; Criminal conspiracies; Hitler Jugend; Aggressive war; Gestapo; Elimination of political opposition; German labor; Fifth Column; Quisling trial; Due process; History of the NSDAP; SS; SA; NSKK; NSFK; Fuehrerprinzip; SD; OP; Kripo; German war economy; Hague Convention; Nazi propaganda; OKW; OKH; OKM; OKL; Legal problems; Concentration camps; Forced labor";
 br.bookUrl  = '/nuremberg/catalog/nur:01991';
 
 // Override the path used to find UI images

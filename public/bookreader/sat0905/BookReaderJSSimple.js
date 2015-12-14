@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0905_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0905_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -469,7 +469,7 @@ br.numLeafs = 64;
 br.bookTitle= "Defence of Rev. Charles W. Denison, from the slanders of the Boston Baptist Bethel Society, and First Baptist Church : showing the interest taken in the affair by Elder Nathaniel Culver.";
 br.bookAuthor= "Denison, Charles Wheeler, 1809-1881.";
 br.bookPub= "Boston: Published under the sanction of the Independent Bethel Union of the Port of Boston, 1846";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0905';
 
 // Override the path used to find UI images

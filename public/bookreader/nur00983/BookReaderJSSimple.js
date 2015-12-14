@@ -129,7 +129,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00983_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00983_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -187,7 +187,7 @@ br.numLeafs = 17;
 br.bookTitle= "Legal References [Trial Brief of Wilhelm Frick]";
 br.bookAuthor= "Mr. K. E. Lachmann";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Occupied territories; Preparations for aggressive warfare; Nazi Party; Beer Hall Putsch; Accession to power; Seizure of power; Reichstag; Parliamentary system; Civil service; Gestapo; RSHA; SD; SS; Persecution of Jews; Persecution of Christian Churches; Persecution of free trade unions; German trade unions; Disenfranchisement; Czechoslovakia: Mein Kampf: Civil Service Act: Reichs Governor Act: German Labor Front; Confiscation of labor union property; Confiscation of Church property; Racism; Racial persecution; Reichs Citizen Law; Pogroms; Final solution; Jewish question; Reich Defense Act; Decrees; Documentary evidence";
 br.bookUrl  = '/nuremberg/catalog/nur:00983';
 
 // Override the path used to find UI images

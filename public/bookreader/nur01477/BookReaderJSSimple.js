@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01477_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01477_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum of Conversation between Ribbentrop and Mussolini on May 15,1941, with Ciano Present.";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-05-15";
-br.bookKeyword= "";
+br.bookKeyword= "Hess's flight to England; Iraq; Crete; Cyprus";
 br.bookUrl  = '/nuremberg/catalog/nur:01477';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00486_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00486_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 5;
 br.bookTitle= "Third-degree Interrogations";
 br.bookAuthor= "Illmer (typewritten signature)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-02-24";
-br.bookKeyword= "";
+br.bookKeyword= "Sipo; SD; Abteilungen Leiters; Adsts. Leiters;  Third-degree methods; Interrogations; War crimes; Treatment of prisoners;  POWs";
 br.bookUrl  = '/nuremberg/catalog/nur:00486';
 
 // Override the path used to find UI images

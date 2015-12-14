@@ -453,7 +453,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3905_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3905_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -511,7 +511,7 @@ br.numLeafs = 71;
 br.bookTitle= "The life of Dick En-l--d, alias Captain En-l--d; or turf memory.  With notes and illustrations.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "London: T. Boosey, 1792";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3905';
 
 // Override the path used to find UI images

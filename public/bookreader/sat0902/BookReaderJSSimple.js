@@ -423,7 +423,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0902_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0902_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -481,7 +481,7 @@ br.numLeafs = 66;
 br.bookTitle= "Defence of Major Gen. Pillow before the Court of inquiry at Frederick, Maryland : against the charges preferred against him by Maj. Gen. Winfield Scott.";
 br.bookAuthor= "Pillow, Gideon Johnson, 1806-1878.";
 br.bookPub= "[s.l.]: [s.n.], 1848";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0902';
 
 // Override the path used to find UI images

@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01989_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01989_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "To: Cmdr. James B. Donovan / From: Lt. Walter Rothschild / Subject: Contribution of the Documentary Research Unit to the Work of the U.S. Chief of Counsel / Office of Strategic Services / Mission to Great Britain / APO413 / U.S. Army";
 br.bookAuthor= "Lt. Walter Rothschild, Chief, Documentary Research Unit";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-03";
-br.bookKeyword= "";
+br.bookKeyword= "Documentary Research Unit; DRU; War Crimes documents; Naval documents; Captured German documents; MIRS; ADRC; ADI (K); AI 12; CIOS; BIOS; FIAT; U.S. Strategic Bombing Survey; EDS; Document screening; Translation; Analysis; Commendation";
 br.bookUrl  = '/nuremberg/catalog/nur:01989';
 
 // Override the path used to find UI images

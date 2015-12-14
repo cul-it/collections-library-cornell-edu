@@ -477,7 +477,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3409_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3409_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -535,7 +535,7 @@ br.numLeafs = 75;
 br.bookTitle= "Record of the proceedings of a general court martial, holden at the court-house in Salem, in the county of Essex, Monday, Sept. 28, 1812, by order of His Excellency Caleb Strong ... on the complaint of Lieut. Col. Samuel Brimblecom and others against Ebenezer Goodale, Major General of the second division of the militia.";
 br.bookAuthor= "Goodale, Ebenezer, defendant.";
 br.bookPub= "Cambridge; Boston; Salem: Printed by Hilliard and Metcalf and by Cushing and Appleton, 1812";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3409';
 
 // Override the path used to find UI images

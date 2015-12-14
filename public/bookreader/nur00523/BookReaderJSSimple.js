@@ -213,7 +213,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00523_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00523_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -269,9 +269,9 @@ br.numLeafs = 32;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Staff Evidence Analysis / Two drafts of General Thomas entitled 'Fundaments for a History of the German War and Armament Economy'  / Office of U. S. Chief of Counsel for the Prosecution of Axis Criminality";
-br.bookAuthor= ""Analyst: Landmann" (page 32, bottom left)";
+br.bookAuthor= "Analyst: Landmann (page 32, bottom left)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-29";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Preparation for war: War economy; German militarism; German industrialists; Reich Government Agencies; Forced Labor; Spoliation of Foreign Property; Foreign Penetration; Controlled Governments; Nazi publications; Wehrmacht; OKW; OKH; OKL; OKM; German General Staff; German Army; German Navy; German Air Force; German Military; German High Command.";
 br.bookUrl  = '/nuremberg/catalog/nur:00523';
 
 // Override the path used to find UI images

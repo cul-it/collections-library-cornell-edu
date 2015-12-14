@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00474_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00474_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Concentration  Camps / Spoliation of Foreign Property / Forced Labor   / Office of U.S.  Chief of Counsel for the Prosecution of Axis Criminality / Document Room  Interrogation Analysis";
 br.bookAuthor= "Lt. Col. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-13";
-br.bookKeyword= "";
+br.bookKeyword= "Concentration camps; Spoliation of foreign property;  Forced labor; Maidanek; Auschwitz; Art objects; Confiscation of art works;  Polish educational system; Poland; Polish universities; War crimes; Legal  rights";
 br.bookUrl  = '/nuremberg/catalog/nur:00474';
 
 // Override the path used to find UI images

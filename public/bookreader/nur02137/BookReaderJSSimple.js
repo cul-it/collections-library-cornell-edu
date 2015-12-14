@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02137_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02137_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "SUBJECT: Recommendation that Erich von dem Bach-Zelewski be called as a witness in connection with the case against the General Staff and High Command";
 br.bookAuthor= "Telford Taylor, Colonel, G.S.C";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-26";
-br.bookKeyword= "";
+br.bookKeyword= "Witnesses; trial witness; Prosecution strategy; German officers; SS; War crimes; Atrocities; Eastern Front; Partisans; German General Staff; Hague Regulations; Witness testimony; Witness preparation";
 br.bookUrl  = '/nuremberg/catalog/nur:02137';
 
 // Override the path used to find UI images

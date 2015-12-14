@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01193_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01193_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Roechling Combine in Germany / (Information as of 1940) / SECRET";
 br.bookAuthor= "The author's name is not given";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Roechling Combine; German business interests; German industrialists; Steel; Switzerland; Spain; Poland; Portugal; Brazil; Argentina";
 br.bookUrl  = '/nuremberg/catalog/nur:01193';
 
 // Override the path used to find UI images

@@ -1107,7 +1107,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4217_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4217_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1165,7 +1165,7 @@ br.numLeafs = 180;
 br.bookTitle= "The American Tract Society, at Boston, and The American Tract Society, at New York : on a decree to interplead ; The American Tract Society vs. Alexander Dewitt, adm'r, etc. : the testimony of the American Tract Society, at Boston, in said cases.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston: [s.n.], [1862?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4217';
 
 // Override the path used to find UI images

@@ -2937,7 +2937,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2906_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2906_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2992,10 +2992,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 485;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "Proc&#232;s de Fieschi et de ses complices : devant la Cour des pairs, pr&#233;c&#233;d&#233; des faits pr&#233;liminaires et de l'acte d'accusation.";
+br.bookTitle= "Proc\350s de Fieschi et de ses complices : devant la Cour des pairs, pr\351c\351d\351 des faits pr\351liminaires et de l'acte d'accusation.";
 br.bookAuthor= "Fieschi, Giuseppe Marco, 1790-1836, defendant.";
 br.bookPub= "Paris: A. E. Bourdin, 1836";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2906';
 
 // Override the path used to find UI images

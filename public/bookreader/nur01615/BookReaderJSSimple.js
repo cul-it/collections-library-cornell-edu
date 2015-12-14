@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01615_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01615_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -119,9 +119,9 @@ br.numLeafs = 6;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Report on Franz Von PAPEN / Von Papen Answers Some Political and Intelligence Questions / TOP SECRET / 6824 DIC (MIS)/SP 1";
-br.bookAuthor= ""Thomas C. Van Cleve / Lt. Col. / Commanding, 6824 DIC (MIS)"";
+br.bookAuthor= "Thomas C. Van Cleve / Lt. Col. / Commanding, 6824 DIC (MIS)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-15";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01615';
 
 // Override the path used to find UI images

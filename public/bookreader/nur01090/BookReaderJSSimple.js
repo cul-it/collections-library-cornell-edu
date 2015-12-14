@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01090_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01090_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Dr. Neumayr, Former Finance Minister, to be Tried / O.W.I., European Analysis and News Digest, 11 September 1945  Quisling Ministers to be Tried in October / O.W.I., European Analysis and News Digest, 9 September 1945  War Criminals Trials to Begin in Hradec Kralove / O.W.I., European Analysis and News Digest, 9 September 1945  Norsk Protest on Traitors' Treatment / F.C.C. Daily Report, 11 September 1945";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-09";
-br.bookKeyword= "";
+br.bookKeyword= "War Criminals; Traitors; Peoples Court; Quisling's ministers; Troendelag Joint Trade Union";
 br.bookUrl  = '/nuremberg/catalog/nur:01090';
 
 // Override the path used to find UI images

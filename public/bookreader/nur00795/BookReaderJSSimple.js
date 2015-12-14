@@ -291,7 +291,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00795_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00795_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -349,7 +349,7 @@ br.numLeafs = 44;
 br.bookTitle= "Trial Brief / The Spoliation of Belgium";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Spoliation; German war economy; Goods Offices; Total war; Hague Regulations; Levies; Occupation charges; Church bells; Black market; Roges company; Pimitex; Clearing agreement; German-Belgian clearing; Food supply; Forced loans; Foreign stocks; Belgian colonial stock; Emission Bank; Belgian National Bank; Belgian gold reserves; Ministry of Economics; Ministry of Armaments and Munitions; Speer Ministry; Ministry of Armaments and War Production";
 br.bookUrl  = '/nuremberg/catalog/nur:00795';
 
 // Override the path used to find UI images

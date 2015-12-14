@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01714_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01714_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Objections of the A.O. to leading members of our agencies / Department Latin America / Exhibit B";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1943-04-08";
-br.bookKeyword= "";
+br.bookKeyword= "Brazil; LG. Farben; Argentina; Columbia; German firms; German business interests; Anilinas Alemanas; Reich Ministry of Economy; German Foreign Organization; A.O.";
 br.bookUrl  = '/nuremberg/catalog/nur:01714';
 
 // Override the path used to find UI images

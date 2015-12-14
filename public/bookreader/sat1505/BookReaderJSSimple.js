@@ -609,7 +609,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1505_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1505_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -667,7 +667,7 @@ br.numLeafs = 97;
 br.bookTitle= "The trial at large of Arthur O'Connor, esq., John Binns, John Allen, Jeremiah Leary and James Coigley, for high treason, before Judge Buller, &amp;c. under a special commission, at Maidstone, in the county of Kent. Taken in short hand, by an English barrister";
 br.bookAuthor= "O'Connor, Arthur, 1763-1852, defendant.";
 br.bookPub= "Dublin: Printed by J. Stockdale, 1798";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1505';
 
 // Override the path used to find UI images

@@ -387,7 +387,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2016_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2016_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -445,7 +445,7 @@ br.numLeafs = 60;
 br.bookTitle= "The trial of Thomas Bennett for forging a bill of exchange, &amp;c.";
 br.bookAuthor= "Bennett, Thomas.";
 br.bookPub= "London: Published by J. Fairburn, 146, Minories; and sold by E. Hodgson, Elim Place, Fetter Lane., 1797";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2016';
 
 // Override the path used to find UI images

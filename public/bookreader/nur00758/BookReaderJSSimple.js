@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00758_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00758_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Treatment of Members of Foreign 'Military Missions' captured with (guerilla) bands. / Translation of Document 1279-PS / Office of U.S. Chief of Counsel";
 br.bookAuthor= "Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-07-22";
-br.bookKeyword= "";
+br.bookKeyword= "Allied military missions; Partisans; Commandos; Prisoners of war; SD";
 br.bookUrl  = '/nuremberg/catalog/nur:00758';
 
 // Override the path used to find UI images

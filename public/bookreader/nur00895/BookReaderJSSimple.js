@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00895_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00895_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 38;
 br.bookTitle= "Trial Brief / The Nazi Conspirators' War of Aggression Against the USSR. / Section Three ";
 br.bookAuthor= "James A. Gorrell, 1st Lt., CMP";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Common plan; Conspiracy; Aggressive war; Crimes against peace; German-Soviet Non-Aggression Treaty; Franco-German Armistice; Barbarossa; Preparations for aggressive warfare; OKM; Seelowe; OKW; OKH; Armaments; German war economy; Oldenburg plan; Occupied eastern tenitories; Mein Kampf: Lebensraum; Raw materials; SS; SA; General Staff and High Command";
 br.bookUrl  = '/nuremberg/catalog/nur:00895';
 
 // Override the path used to find UI images

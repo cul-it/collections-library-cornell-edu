@@ -339,7 +339,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1012_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1012_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -397,7 +397,7 @@ br.numLeafs = 52;
 br.bookTitle= "A correct statement of the whole preliminary controversy between Tho. O. Selfridge and Benj. Austin : also a brief account of the catastrophe in State Street, Boston, on the 4th August, 1806 : with some remarks / by Tho. O. Selfridge.";
 br.bookAuthor= "Selfridge, Thomas O. (Thomas Oliver), d. 1816.";
 br.bookPub= "Charlestown [Boston, Mass.]: Printed by Samuel Etheridge for the author, 1807";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1012';
 
 // Override the path used to find UI images

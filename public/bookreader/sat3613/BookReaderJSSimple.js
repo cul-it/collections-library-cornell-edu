@@ -723,7 +723,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3613_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3613_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -781,7 +781,7 @@ br.numLeafs = 116;
 br.bookTitle= "Argument of Franklin B. Gowen, Esq. : before the Joint Committee of the Legislature of Pennsylvania, appointed to inquire into the affairs of the Philadelphia and Reading Coal and Iron Company and the Philadelphia and Reading Railroad Company, at Atlantic City, New Jersey, July 29th and 30th, 1875, on behalf of said Company / specially reported by D.F. Murphy.";
 br.bookAuthor= "Gowen, Franklin B. (Franklin Benjamin), 1836-1889.";
 br.bookPub= "Philadelphia: Press of Helfenstein, Lewis &amp; Greene, 1875";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3613';
 
 // Override the path used to find UI images

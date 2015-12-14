@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00556_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00556_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Report of Interrogation No. 5742 of P/W 3WG-1293, Ambassador at Large ";
 br.bookAuthor= "Captain Halle, Interrogation Officer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-04";
-br.bookKeyword= "";
+br.bookKeyword= "Auslandsorganisation (Foreign Section); NSDAP; SD; Reichsfiiehrung SS; German embassies; Foreign Office; Foreign Minister";
 br.bookUrl  = '/nuremberg/catalog/nur:00556';
 
 // Override the path used to find UI images

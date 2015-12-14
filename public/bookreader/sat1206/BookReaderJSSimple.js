@@ -783,7 +783,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1206_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1206_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -841,7 +841,7 @@ br.numLeafs = 126;
 br.bookTitle= "Report of the trial of William G. Halpin, for treason-felony, at the county of Dublin Commission Court, November, 1867 / William Halpin.";
 br.bookAuthor= "Halpin, William G.";
 br.bookPub= "Dublin: Printed by Alexander Thom, 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1206';
 
 // Override the path used to find UI images

@@ -297,7 +297,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2308_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2308_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -355,7 +355,7 @@ br.numLeafs = 45;
 br.bookTitle= "The record of John K. Hackett, as recorder, founded upon official documents.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New York: [s.n.], 1875";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2308';
 
 // Override the path used to find UI images

@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02010_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02010_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Notes of Staff Meeting, 31 August 1945";
 br.bookAuthor= "Leonard Wheeler, Jr., Lt. Colonel, S.C.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-31";
-br.bookKeyword= "";
+br.bookKeyword= "Nurnberg trial; List of defendants; Translation problem; Staff Evidence Analysis sheets; Persecution of Churches; Vatican evidence; British consultants; Persecution of Jews; Polish atrocities; Local trials; Form of indictment; Document screening personnel; United Nations reports; Extradition of prisoners; Prosecution strategy; Documentary evidence; Witness testimony";
 br.bookUrl  = '/nuremberg/catalog/nur:02010';
 
 // Override the path used to find UI images

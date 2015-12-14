@@ -759,7 +759,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0302_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0302_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -814,10 +814,11 @@ br.getPageNum = function(index) {
 br.numLeafs = 122;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "The Life, trial, and execution of Captain John Brown, known as "Old Brown of Ossawatomie," with a full account of the attempted insurrection at Harper's Ferry. Compiled from official and authentic sources. Including Cooke's confession and all the incidents of the execution.";
+br.bookTitle= "The Life, trial, and execution of Captain John Brown, known as 'Old Brown of Ossawatomie,' with a full account of the attempted insurrection at Harper's Ferry. Compiled from official and authentic sources. Including Cooke's confession and all the incidents of the execution.";
+
 br.bookAuthor= "Brown, John, 1800-1859.";
 br.bookPub= "New York: R. M. De Witt, 1859";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0302';
 
 // Override the path used to find UI images

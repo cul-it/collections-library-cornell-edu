@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01692_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01692_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Brief of Interrogation of Major General Karl Bodenschatz / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Colonel Curtis L. Williams, IGD.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-07";
-br.bookKeyword= "";
+br.bookKeyword= "Czechoslovakia; Preparations to wage aggressive war; Henlein Sudetenland Germans' Party; Polish campaign; Little Schmundt memorandum; Polish border incidents; Danzig; Polish Corridor; Documentary evidence; Poland; Document identification";
 br.bookUrl  = '/nuremberg/catalog/nur:01692';
 
 // Override the path used to find UI images

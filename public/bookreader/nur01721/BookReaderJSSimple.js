@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01721_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01721_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of Von Falkenhausen by Capt. Nordon in the Presence of Dr. Von Schlabrendorff";
 br.bookAuthor= "Captain Nordon";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-01";
-br.bookKeyword= "";
+br.bookKeyword= "German opposition; Occupied Belgium; SD; China; Japanese military; Deportations; Gestapo; POWs; Preferred treatment; German High Command; Witness cultivation; Information gathering; OSS sources";
 br.bookUrl  = '/nuremberg/catalog/nur:01721';
 
 // Override the path used to find UI images

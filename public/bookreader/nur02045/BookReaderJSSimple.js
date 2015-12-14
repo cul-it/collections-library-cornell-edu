@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02045_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02045_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "General Memorandum No. 5 / Subject: Trial Organization / Office of U.S. Chief of Counsel / APO 403 / U.S. Army";
 br.bookAuthor= "Robert H. Jackson";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-22";
-br.bookKeyword= "";
+br.bookKeyword= "Legal Staff trial organization; Functional responsibility; Chief of Counsel; Board of Review; Interrogation Division; Documentation Division; Special Projects Division; International Committees; Liaisons; French Prosecutor; Soviet Prosecutor; British Prosecutor; Section Chiefs";
 br.bookUrl  = '/nuremberg/catalog/nur:02045';
 
 // Override the path used to find UI images

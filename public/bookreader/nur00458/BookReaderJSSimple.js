@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00458_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00458_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "The Fuhrer's speech to the Cammanders [sic] in Chief on  22 August 1939.  / Translation of Document No. 798-PS / Office of U.S. Chief of  Counsel.";
 br.bookAuthor= "Hitler; the translator is Virigina von Schon, 046318";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Unknown";
-br.bookKeyword= "";
+br.bookKeyword= "Poland; Duce; England; France; Italy; Spain; Russia;  Non-aggression pact; Rearmament; Neutrality; Hitler speeches; Preparations to wage aggressive war";
 br.bookUrl  = '/nuremberg/catalog/nur:00458';
 
 // Override the path used to find UI images

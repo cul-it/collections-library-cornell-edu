@@ -531,7 +531,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2202_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2202_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -589,7 +589,7 @@ br.numLeafs = 84;
 br.bookTitle= "Kentucky jurisprudence : a history of the trial of Miss Delia A. Webster, at Lexington, Kentucky, Dec'r 17-21, 1844, before the Hon. Richard Buckner; On a charge of aiding slaves to escape from that Commonwealth -with miscellaneous remarks including her views on American slavery / written by herself.";
 br.bookAuthor= "Webster, Delia Ann.";
 br.bookPub= "Vergennes, VT.: E. W. Blaidsdell, printer, 1845";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2202';
 
 // Override the path used to find UI images

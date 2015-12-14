@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2213_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2213_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Report of the evidence at the trial of Levi &amp; Laban Kenniston : before Hon. Samuel Putnam, on an indictment for the robbery of Major Elijah P. Goodridge, December 19, 1816.";
 br.bookAuthor= "Kenniston, Levi.";
 br.bookPub= "Salem [Mass.]: Printed by T.C. Cushing, 1817";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2213';
 
 // Override the path used to find UI images
