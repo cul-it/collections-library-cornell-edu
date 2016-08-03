@@ -1,9 +1,0 @@
-if (index == 0) {
-     return 613;
-    }
-if (index == 1) {
-     return 565;
-    }
-if (index > 1) {
-    return 800;
-    }
