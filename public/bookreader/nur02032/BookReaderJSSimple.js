@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02032_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02032_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum for: Major General William J. Donovan / Subject: Statistics on Nazi Groups indicted as Criminal Conspiracies before the International Military Tribunal at Nuremberg Headquarters / United States Forces / European Theater / Office of The Theater Judge Advocate";
 br.bookAuthor= "Ed C. Betts, Brigadier General, U.S.A., Theater Judge Advocate";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-30";
-br.bookKeyword= "";
+br.bookKeyword= "Reich Cabinet; Leadership Corps of the NSDAP; SS; SD; SA; Gestapo; German General Staff and High Command; Statistical estimates; Numerical strength; Captured Nazis; Prosecution strategy; OCC";
 br.bookUrl  = '/nuremberg/catalog/nur:02032';
 
 // Override the path used to find UI images

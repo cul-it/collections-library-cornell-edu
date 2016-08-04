@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01429_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01429_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "Answers to Questioning";
 br.bookAuthor= "The author of the questions is not named. Hjalmar Schacht is the author of the answers.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Treaty of Versailles; Treaty of Locarno; Lebensraum; Mein Kampf: Territorial acquisition; Austria; German rearmament; USSR; Colonial acquisition; Spanish Civil War; Nazi ideology; Treatment of the Jews; Purging of the Civil Service";
 br.bookUrl  = '/nuremberg/catalog/nur:01429';
 
 // Override the path used to find UI images

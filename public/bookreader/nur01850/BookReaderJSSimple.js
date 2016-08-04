@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01850_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01850_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 9;
 br.bookTitle= "The following are the relevant details of the PW mentioned in this report. / TOP SECRET / CSDIC/CMF/X 167";
 br.bookAuthor= "Not applicable";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-00";
-br.bookKeyword= "";
+br.bookKeyword= "Liberation of Trieste; SS; SD; German police; German surrender; Italy; Monfalcone; Isonzo; Catholic Church; Post-war Germany; Lake Garda; SS; Berlin; German surrender; Capitulation; Rome; German POWs; War crimes; Interrogations; German espionage; Allied espionage; Persecution of Jews; Unconditional surrender";
 br.bookUrl  = '/nuremberg/catalog/nur:01850';
 
 // Override the path used to find UI images

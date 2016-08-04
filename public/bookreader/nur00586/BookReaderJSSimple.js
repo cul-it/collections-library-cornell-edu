@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00586_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00586_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "The Last Days in Hitler's Air Raid Shelter ";
 br.bookAuthor= "Robert E. Work, Captain, Air Corps, Chief Investigator.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-08";
-br.bookKeyword= "";
+br.bookKeyword= "Fall of Berlin; Hitler's bunker; Suicide council; Luftwaffe; OSS sources";
 br.bookUrl  = '/nuremberg/catalog/nur:00586';
 
 // Override the path used to find UI images

@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3707_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3707_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "Opening argument of Mr. Butler, of Massachusetts, one of the managers on the impeachment of the President.";
 br.bookAuthor= "Butler, Benjamin F. (Benjamin Franklin), 1818-1893.";
 br.bookPub= "Washington: Government Printing Off., 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3707';
 
 // Override the path used to find UI images

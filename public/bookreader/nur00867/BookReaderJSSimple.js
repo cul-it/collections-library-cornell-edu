@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00867_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00867_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Vernehmung / des Obersten E. C V. Tiemroth in Polizeipr&#228;sidium / betreffend den fr&#252;heren Befehlshabers der deutschen Sicherheitspolizei in Danemark. Otto Bovensiepen. ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-21";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Torture; Danish Resistance; Gestapo";
 br.bookUrl  = '/nuremberg/catalog/nur:00867';
 
 // Override the path used to find UI images

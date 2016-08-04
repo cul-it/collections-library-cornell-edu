@@ -165,7 +165,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00957_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00957_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -223,7 +223,7 @@ br.numLeafs = 23;
 br.bookTitle= "Trial Brief of Hans Frank";
 br.bookAuthor= "Major William H. Baldwin";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against humanity; War crimes; Persecution of Jews; Exterminations; Poland; Galicia; Slave labor; Labor supply; Warsaw Ghetto; SS; Frank's diary; Photographic evidence; Trial exhibits; Occupied territories; Hague Regulations; Germanization; Malnutrition; Mass arrests; Mass shootings; Confiscation; Reprisals; Executions; Plunder of private property; Spoliation of Poland; Sequestration of property; Conscription of labor; Forced labor";
 br.bookUrl  = '/nuremberg/catalog/nur:00957';
 
 // Override the path used to find UI images

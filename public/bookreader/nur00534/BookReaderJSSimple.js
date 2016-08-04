@@ -141,7 +141,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00534_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00534_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -199,7 +199,7 @@ br.numLeafs = 19;
 br.bookTitle= "Statement of [illegible] / JJ.C. 1 / Between The Accession to Power (Early 1933) and the Outbreak of the War in Europe (Late 1939) the Nazi Conspirators Consolidated Their Control of Germany by Utilizing and Molding Its Political Machinery to Their Own Purposes ";
 br.bookAuthor= "Major S. M. Peyser";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Reichstag; Mein Kampf; Weimer Constitution; Reconstruction Law; Nuernberg Laws; Reich Election Law; Elections; Reich Governor; Land Government; Land officials; Land legislature; Reich Government; Reich Council; President; Chancellor; NSDAP; Civil servants; 'Purge Laws'; Communism; Marxism; Social Democracy; German Civil Service Law; Law for the Restoration of Professional Civil Service; Judiciary; judges; People's Court; Party Court; Hohnstein; Gestapo; State; Party; SA; SS";
 br.bookUrl  = '/nuremberg/catalog/nur:00534';
 
 // Override the path used to find UI images

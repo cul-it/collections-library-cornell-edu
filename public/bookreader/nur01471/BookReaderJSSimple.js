@@ -159,7 +159,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01471_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01471_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -217,7 +217,7 @@ br.numLeafs = 22;
 br.bookTitle= "This document is untitled. It begins, 'In reality I hoped it would not even come to war (with Norway). We did not want war with Norway.'";
 br.bookAuthor= "Not applicable; this document is a partial transcript of an unidentified trial.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Norway; Preparations to wage aggressive war; Altmarck affair; Norwegian harbors; Mines; War crimes trials; German ultimatum; King's Council; Storting; Hague Convention; Quisling trial; State of war";
 br.bookUrl  = '/nuremberg/catalog/nur:01471';
 
 // Override the path used to find UI images

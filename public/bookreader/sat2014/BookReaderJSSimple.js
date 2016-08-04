@@ -147,7 +147,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2014_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2014_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -205,7 +205,7 @@ br.numLeafs = 20;
 br.bookTitle= "Love &amp; arsenic : the great Piqua murder : full report of the examination of James D. Mowrey, acccesory to the murder of Arthur Ragan, of Piqua, before Hon. Joseph Pearson, Probate Judge / reported by C.W. Tolford.";
 br.bookAuthor= "Mowrey, James D., defendant.";
 br.bookPub= "Tippecanoe, O[hio]: Printed at the "Reflector" Office, 1855";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2014';
 
 // Override the path used to find UI images

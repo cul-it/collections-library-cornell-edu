@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00464_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00464_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Munich 47768: To State Police Hq Augsburg,  Nurnberg, et al. / Anti-Jewish Measures. ";
 br.bookAuthor= "Freiherr von Eberstein";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Anti-Jewish demonstrations; Synagogues; Looting; Archives;  Arrests; State Police; Criminal Police; Pogroms; Persecution of Jews; Crimes  against humanity; Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:00464';
 
 // Override the path used to find UI images

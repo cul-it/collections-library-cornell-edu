@@ -195,7 +195,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01571_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01571_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -253,7 +253,7 @@ br.numLeafs = 28;
 br.bookTitle= "Seyss-Inquart";
 br.bookAuthor= "Joseph D. Bryan, Major, AUS";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Austrian Anschluss; Austrian Nazi Party; SS; \"The Austrian Question\" (memorandum by Seyss-Inquart); Austrian plebiscite (1938); \"Case Otto\"; Poland; Jewish population; Mass arrests; Mass shootings; Plunder of public and private property (Poland; Netherlands); Murder and ill treatment of civilian population (Poland; Netherlands); Germanification (Poland; Netherlands); Killing of hostages (Netherlands); Conscription of civilian labor (Netherlands); Nazification (Netherlands); Imprisonment of persons without judicial process; Concentration camps; Persecution of Churches; Persecution of Jews; Austrian Nazis; Murder of Dolfuss";
 br.bookUrl  = '/nuremberg/catalog/nur:01571';
 
 // Override the path used to find UI images

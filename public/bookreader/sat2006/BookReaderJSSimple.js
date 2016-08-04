@@ -309,7 +309,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2006_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2006_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -367,7 +367,7 @@ br.numLeafs = 47;
 br.bookTitle= "The trial of Humphry Finnimore, Esq. (reputed to be worth forty thousand pounds), who was tried at the quarter session holden for the county of Surrey in the Town-Hall, Southwark, on Thursday the 14th day of January 1779 and convicted of felony in stealing of five turkies, the property of Thomas Humphries.";
 br.bookAuthor= "Finnimore, Humphry, 18th cent.";
 br.bookPub= "London:  Printed for B. White, in Fleet-Street; and J. Seweli, Cornhill, 1779";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2006';
 
 // Override the path used to find UI images

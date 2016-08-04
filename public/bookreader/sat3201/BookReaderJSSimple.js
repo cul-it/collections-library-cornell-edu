@@ -1827,7 +1827,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3201_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3201_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1885,7 +1885,7 @@ br.numLeafs = 300;
 br.bookTitle= "Proceedings of the general court martial in the trial of Major John Gordon of the late 8th West India Regiment.";
 br.bookAuthor= "Gordon, John, defendant.";
 br.bookPub= "London: Printed for E. Lloyd, 1804";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3201';
 
 // Override the path used to find UI images

@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2501_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2501_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "Particulars respecting the trial, condemnation and execution of Major Henry Alexander Campbell, at the Armagh assizes, August 10, 1808, for killing, in a duel, Captain Alexander Boyd : together with two letters by Major Campbell...";
 br.bookAuthor= "Campbell, Henry Alexander, d. 1808.>";
 br.bookPub= "Boston: Printed by Joshua Cushin, 1808";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2501';
 
 // Override the path used to find UI images

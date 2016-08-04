@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01939_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01939_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 35;
 br.bookTitle= "Memorandum for Justice Jackson / Subject: Captain Fritz Wiedemann, German Consul General";
 br.bookAuthor= "John W. Griggs (memo); the author of the FBI report is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-11";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01939';
 
 // Override the path used to find UI images

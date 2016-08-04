@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00803_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00803_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Basic Facts Underlying Problem Czechoslovakia / Item 2";
 br.bookAuthor= "Schmundt";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-04-22";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war plans; Military strategy; Czechoslovakia";
 br.bookUrl  = '/nuremberg/catalog/nur:00803';
 
 // Override the path used to find UI images

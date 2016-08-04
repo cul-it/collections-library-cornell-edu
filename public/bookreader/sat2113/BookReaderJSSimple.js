@@ -675,7 +675,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2113_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2113_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -733,7 +733,7 @@ br.numLeafs = 108;
 br.bookTitle= "Full and revised report of the eight days' trial in the Court of Queen's Bench on a criminal information against John Sarsfield Casey at the prosecution of Patten Smith Bridge, from November 27th to December 5, 1877.";
 br.bookAuthor= "Casey, John S. (John Sarsfield), 1846-1896.";
 br.bookPub= "Dublin: Central Tenants' Defence Committee, 1877";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2113';
 
 // Override the path used to find UI images

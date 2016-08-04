@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00439_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00439_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Memorandum  / To: Justice Jackson / Subject: Attached letter";
 br.bookAuthor= "William J. Donovan (memo); Mr. Justice Jackson (letter)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-25";
-br.bookKeyword= "";
+br.bookKeyword= "Nurnberg trials; Supplemental trials; Members of criminal  organizations; U.S. Chief of Counsel; OCC personnel problems; OCC support  staff; Betts's letter; Directive JCS 1023/10; Personnel recruitment; European  Theater";
 br.bookUrl  = '/nuremberg/catalog/nur:00439';
 
 // Override the path used to find UI images

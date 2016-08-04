@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01475_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01475_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum by Ribbentrop on the attitude of England, June 1938";
 br.bookAuthor= "Joachim von Ribbentrop";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-06-26";
-br.bookKeyword= "";
+br.bookKeyword= "British foreign policy; German foreign policy; British-German relations; Bolshevism; Luftwaffe; European political situation; Power politics; England; United States; Czechoslovakia; German colonies; Russia";
 br.bookUrl  = '/nuremberg/catalog/nur:01475';
 
 // Override the path used to find UI images

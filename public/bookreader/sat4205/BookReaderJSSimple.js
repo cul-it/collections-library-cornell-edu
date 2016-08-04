@@ -633,7 +633,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4205_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4205_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -691,7 +691,7 @@ br.numLeafs = 101;
 br.bookTitle= "The case of the Rev. E.B. Fairfield; being an examination of his 'Review of the case of Henry Ward Beecher,' together with his 'Reply' and a rejoiner, by Robert R. Raymond.";
 br.bookAuthor= "Raymond, Robert R. (Robert Raikes), 1817-1888.";
 br.bookPub= "New York: [s.n.], 1874";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4205';
 
 // Override the path used to find UI images

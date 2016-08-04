@@ -387,7 +387,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1202_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1202_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -445,7 +445,7 @@ br.numLeafs = 60;
 br.bookTitle= "Findings of the Court of Inquiry and Reviews of the Judge-Advocate-General and of the General of the Army in the Case of Major-General G. K. Warren";
 br.bookAuthor= "Warren, G. K. (Gouverneur Kemble), 1830-1882.";
 br.bookPub= "Washington:  Govt. print. off., 1883";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1202';
 
 // Override the path used to find UI images

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00554_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00554_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Excerpts from German Publications (Der Grossdeutsche Freiheitskampf, Reden Adolf Hitler; Nationalsozialistische Monatshefte, Hitler; Signale der Neuen Zeit, Goebbels).  Translation of Document 2541-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "Hitler; Goebbels; the translator is Fred Niebergall.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-08";
-br.bookKeyword= "";
+br.bookKeyword= "Treaty of Versailles; Living-space; German press";
 br.bookUrl  = '/nuremberg/catalog/nur:00554';
 
 // Override the path used to find UI images

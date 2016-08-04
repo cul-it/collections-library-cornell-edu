@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00717_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00717_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Statement / [by Colonel von Brauchitsch] ";
 br.bookAuthor= "Colonel Berndt von Brauschitsch";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-16";
-br.bookKeyword= "";
+br.bookKeyword= "Affidavit; Luftflotten; Luftwaffe; German Air Force";
 br.bookUrl  = '/nuremberg/catalog/nur:00717';
 
 // Override the path used to find UI images

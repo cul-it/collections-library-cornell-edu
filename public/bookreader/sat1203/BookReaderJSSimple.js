@@ -783,7 +783,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1203_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1203_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -838,10 +838,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 126;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "The battles of "Gravelly Run", "Dinwiddie Court-house", and "Five Forks", Va., 1865. Argument on behalf of Lieut Gen. Philip H. Sheridan, U.S.A., respondent , by Asa Bird Gardner L.L.D., judge - advocate, U.S.A., of council before the court of inquiry convened by the President of the United States, (S.O. 277, ex. 6, Army hd. qrs., A.G.O., 9 Dec. 1879,) in the case of Lieut. Col. and Bvt. Major-General Gouverneur K. Warren, Corps of Engineers, formerly Major-General commanding the 5th Army Corps, applicant. Delivered July 27th, 28th, and 30th, 1881.";
+br.bookTitle= "The battles of 'Gravelly Run', 'Dinwiddie Court-house', and 'Five Forks', Va., 1865. Argument on behalf of Lieut Gen. Philip H. Sheridan, U.S.A., respondent , by Asa Bird Gardner L.L.D., judge - advocate, U.S.A., of council before the court of inquiry convened by the President of the United States, (S.O. 277, ex. 6, Army hd. qrs., A.G.O., 9 Dec. 1879,) in the case of Lieut. Col. and Bvt. Major-General Gouverneur K. Warren, Corps of Engineers, formerly Major-General commanding the 5th Army Corps, applicant. Delivered July 27th, 28th, and 30th, 1881.";
 br.bookAuthor= "Gardiner, Asa Bird, 1839-1919.";
-br.bookPub= "iChicago, Illinois: [s.n.], 1881";
-br.bookKeyword= "";
+br.bookPub= "Chicago, Illinois: [s.n.], 1881";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1203';
 
 // Override the path used to find UI images

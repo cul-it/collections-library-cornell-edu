@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01327_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01327_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: Suggested Work for Mr. Paul Scheffer / Office Memorandum / United States Government / CONFIDENTIAL";
 br.bookAuthor= "Lt. (jg) C. E. Schorske, USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-07";
-br.bookKeyword= "";
+br.bookKeyword= "Scheffer's reports; German leadership; Political opposition; Trade Unions, Persecution of Jews; Re-armament; Austrian annexation; Seizure of power; Condor Legion; Attack on Poland; Scheffer's reports; War Crimes prosecution";
 br.bookUrl  = '/nuremberg/catalog/nur:01327';
 
 // Override the path used to find UI images

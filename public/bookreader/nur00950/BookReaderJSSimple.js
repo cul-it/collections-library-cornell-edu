@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00950_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00950_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Trial Brief of Karl Doenitz";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against peace; Preparations for aggressive warfare; Poland; Geneva Convention; General strike; Fall Weiss; German Navy; U-boats; War crimes; Hague Regulations; Versailles treaty; Locarno treaty; Kellogg-Briand Pact; Non-Aggression Pact; German-Polish relations; Norway; Denmark; Nazi ideology; Neutral ships; Submarine warfare; SD; Sabotage; Terrorism; POWs";
 br.bookUrl  = '/nuremberg/catalog/nur:00950';
 
 // Override the path used to find UI images

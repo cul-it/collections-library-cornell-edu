@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01480_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01480_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Basic Facts Underlying Problem Green (Summary of Talk between Fuehrer and Keitel - Berlin, 22 April 1938).";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-04-22";
-br.bookKeyword= "";
+br.bookKeyword= "Case Green; Plan Green; Problem Green; Czechoslovakia; Political strategy; Military strategy; Power politics; Propaganda; Luftwaffe";
 br.bookUrl  = '/nuremberg/catalog/nur:01480';
 
 // Override the path used to find UI images

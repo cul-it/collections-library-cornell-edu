@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00525_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00525_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Reconstruction of the last will of Reich president F. M. von Hindenburg ";
 br.bookAuthor= "Franz von Papen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-24";
-br.bookKeyword= "";
+br.bookKeyword= "Reich Chancellor; Hindenburg's will; Monarchial government; Republican government; German politics; Nazi seizure of power";
 br.bookUrl  = '/nuremberg/catalog/nur:00525';
 
 // Override the path used to find UI images

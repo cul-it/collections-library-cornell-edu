@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01347_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01347_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Polish Border Incidents of 1939 / (Document available through X-2 Branch, OSS)";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Frontier incidents; Polish border incidents; Poland; Concentration camps; Gleiwitz broadcasting station; Radio address";
 br.bookUrl  = '/nuremberg/catalog/nur:01347';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02068_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02068_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Subject: Project Briefs";
 br.bookAuthor= "Robert G. Storey";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-19";
-br.bookKeyword= "";
+br.bookKeyword= "Trial briefs; Preliminary briefs; Einsatzstab Rosenberg; Crimes Against Humanity; Concentration camps; Persecution of Jews; Economic Case; Trade Unions; Aggressive war; NSDAP; SS; SD; Gestapo";
 br.bookUrl  = '/nuremberg/catalog/nur:02068';
 
 // Override the path used to find UI images

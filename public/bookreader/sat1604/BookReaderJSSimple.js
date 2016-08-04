@@ -723,7 +723,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1604_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1604_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -781,7 +781,7 @@ br.numLeafs = 116;
 br.bookTitle= "Crimes of preachers in the United States and Canada, from May 1876 to May 1883. / By M.E. Billings.";
 br.bookAuthor= "Billings, M. E.";
 br.bookPub= "New York: The Truth Seeker Pub. Co., 1883., 1883";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1604';
 
 // Override the path used to find UI images

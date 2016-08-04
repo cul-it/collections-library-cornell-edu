@@ -261,7 +261,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3609_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3609_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -319,7 +319,7 @@ br.numLeafs = 39;
 br.bookTitle= "Opinion of the Supreme court of the United States, at January term, 1832, delivered by Mr. Chief Justice Marshall, together with the opinion of Mr. Justice McLean, in the case of Samuel A. Worcester, plaintiff in error, versus the state of Georgia: with a statement of the case, extracted from the records of the Supreme Court of the United States.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Washington: Printed by Gales and Seaton, 1832";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3609';
 
 // Override the path used to find UI images

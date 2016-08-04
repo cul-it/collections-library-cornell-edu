@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01007_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01007_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Report of High Command Interrogation No. 14";
 br.bookAuthor= "The interrogator is Flight Lieut. R. Benson.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-07";
-br.bookKeyword= "";
+br.bookKeyword= "Preparations to wage aggressive war; Four Year Plan; Strategic reserves; Raw materials; Hitler's inner circle; SS; Hitler's commando order; Allied airmen; Geneva Convention; War crimes";
 br.bookUrl  = '/nuremberg/catalog/nur:01007';
 
 // Override the path used to find UI images

@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00621_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00621_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "C-120 A. / Directives from Hitler and Keitel Preparing for War and the Invasion of Poland. ";
 br.bookAuthor= "Adolf Hitler; Wilhelm Keitel; the translator's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "\"Case White\" (\"Fall Weiss\"); Poland; Directives; Preparation for war; Economic warfare";
 br.bookUrl  = '/nuremberg/catalog/nur:00621';
 
 // Override the path used to find UI images

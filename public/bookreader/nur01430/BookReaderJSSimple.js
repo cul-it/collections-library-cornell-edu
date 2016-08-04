@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01430_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01430_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "Schacht";
 br.bookAuthor= "Hjalmar Schacht";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Versailles Treaty; Reparations; Anschluss; Mein Kampf: Territorial expansion; Colonial acquisition; Rearmament; Reichsbank; Foreign policy";
 br.bookUrl  = '/nuremberg/catalog/nur:01430';
 
 // Override the path used to find UI images

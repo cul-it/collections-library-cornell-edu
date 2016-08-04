@@ -231,7 +231,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1606_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1606_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -289,7 +289,7 @@ br.numLeafs = 34;
 br.bookTitle= "Case of Major General Wm. Stapleton, on the investigation, ordered by His Majesty's principal secretary of state for the home department, into the charges preferred by General Stapleton, against His Honor John Lace, Esq. His Majesty's first deemster in the Isle of Man";
 br.bookAuthor= "Stapleton, William, Major-General, fl. 1809.";
 br.bookPub= "[s.l.]: [s.n.], 1809";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1606';
 
 // Override the path used to find UI images

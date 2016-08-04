@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3005_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3005_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "First speech of David Paul Brown : delivered in 1818, in the case of the Commonwealth of Pennsylvania against John Binns, for assault and battery.";
 br.bookAuthor= "Brown, David Paul, 1795-1872.";
 br.bookPub= "Philadelphia: Robb, Pile &amp; M'Elroy, printers., 1858";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3005';
 
 // Override the path used to find UI images

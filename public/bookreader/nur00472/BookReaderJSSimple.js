@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00472_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00472_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 2;
 br.bookTitle= "Clearance of Prisons / (Document  available through x-2 Branch, OSS)";
 br.bookAuthor= "Illmer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-07-21";
-br.bookKeyword= "";
+br.bookKeyword= "Sipo; SD; Prisons; Inmates; Concentration camps;  Evacuation; Execution; Disposal; Persecution of Jews; Red Army; Radom;  Atrocities; Crimes against humanity; War crimes; OSS sources";
 br.bookUrl  = '/nuremberg/catalog/nur:00472';
 
 // Override the path used to find UI images

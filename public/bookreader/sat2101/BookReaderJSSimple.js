@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2101_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2101_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -469,7 +469,7 @@ br.numLeafs = 64;
 br.bookTitle= "The trial of Major Campbell, for the murder of Captain Boyd, in a duel, June 23, 1807 : with the evidence in full, the charge of the judge, and details of Major Campbell's last moments, execution, &amp;c., &amp;c.";
 br.bookAuthor= "Campbell, Henry Alexander, d. 1808.";
 br.bookPub= "London: Printed by McMillan, 1808";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2101';
 
 // Override the path used to find UI images

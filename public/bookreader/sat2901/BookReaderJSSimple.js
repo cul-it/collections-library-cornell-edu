@@ -681,7 +681,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2901_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2901_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -739,7 +739,7 @@ br.numLeafs = 109;
 br.bookTitle= "Report of the trial of Mrs. Gilmour, for the alleged murder of her husband ... / Mrs. Christina (Cochran) Gilmour.";
 br.bookAuthor= "Gilmour, Mrs. Christina (Cochran), b. 1818.";
 br.bookPub= "Edinburgh: Printed and pub. by W. Forrester, 1844";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2901';
 
 // Override the path used to find UI images

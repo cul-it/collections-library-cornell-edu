@@ -135,7 +135,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01529_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01529_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -193,7 +193,7 @@ br.numLeafs = 18;
 br.bookTitle= "Preliminary Trial Brief on The Development of the Case on Offenses Involved in the Breakdown of the Trade Unions and the Regimentation of Labor / The Prosecution of the Major Nazi War Criminals Before the International Military Tribunal / RESTRICTED";
 br.bookAuthor= "D. A. Sprecher, Captain, AUS, Documentation Division, Office of U.S. Chief of Counsel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-15";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01529';
 
 // Override the path used to find UI images

@@ -597,7 +597,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2802_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2802_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -655,7 +655,7 @@ br.numLeafs = 95;
 br.bookTitle= "A memorial, or Humble petition presented to the judge in the High Court of Tournelle in Paris by the Honourable Edward Wortley Montagu esq. ... and Theobald Taaffe, esq. ... against Abraham Payba, alias James Roberts, and Louis Pierre, jeweller : appealing from the sentence given in favour of the said Roberts and Pierre, the 14th of June, 1752 ... / translated from the original printed at Paris.";
 br.bookAuthor= "Montagu, Edward Wortley, 1713-1776.";
 br.bookPub= "London: Printed for J.  Robinson, [1752]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2802';
 
 // Override the path used to find UI images

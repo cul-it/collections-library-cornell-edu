@@ -207,7 +207,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4302_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4302_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -265,7 +265,7 @@ br.numLeafs = 30;
 br.bookTitle= "A review of the Webster case / by a member of the New York bar.";
 br.bookAuthor= "Hall, A. Oakey (Abraham Oakey), 1826-1898.";
 br.bookPub= "New York: J.S. Redfield, 1850";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4302';
 
 // Override the path used to find UI images

@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0903_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0903_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -421,7 +421,7 @@ br.numLeafs = 56;
 br.bookTitle= "Report of proceedings in the District Court of the United States for the Southern District of New-York, on a suit brought by the United States against Daniel D. Tomkins, June 3, 1822 : containing the testimony at large, the speeches of the defendent, and of the counsel on both sides, together with the judge's charge / by one of the jury.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New York: Printed by C.S. Van Winkle, 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0903';
 
 // Override the path used to find UI images

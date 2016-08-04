@@ -129,7 +129,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00896_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00896_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -187,7 +187,7 @@ br.numLeafs = 17;
 br.bookTitle= "The Spoliation of Russia";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Russia; War crimes; Spoliation; Raw materials; Oil resources; Food resources; Occupied eastern territories; German war economy; Autarchy; Germanization; Hague Convention; Russian POWs; Geneva Convention; Church bells; Confiscation; Machinery; Armaments; Armament program; Concentration camps; Executions; Ukraine; Total war; I. G. F&#228;rber; Donez";
 br.bookUrl  = '/nuremberg/catalog/nur:00896';
 
 // Override the path used to find UI images

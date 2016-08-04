@@ -957,7 +957,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3309_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3309_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1015,7 +1015,7 @@ br.numLeafs = 155;
 br.bookTitle= "Report of the trial of Abraham Prescott, on an indictment for the murder of Mrs. Sally Cochran, before the Court of common pleas, holden at Concord, in the county of Merrimack.  On the first Tuesday of Sept., 1834.";
 br.bookAuthor= "Prescott, Abraham.";
 br.bookPub= "Concord: Published by M.G. Atwood, and Currier &amp; Hall. John W. Moore, Printer., 1834";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3309';
 
 // Override the path used to find UI images

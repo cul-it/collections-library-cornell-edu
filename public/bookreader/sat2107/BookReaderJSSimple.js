@@ -555,7 +555,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2107_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2107_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -613,7 +613,7 @@ br.numLeafs = 88;
 br.bookTitle= "An account of the arguments of counsel, and the directions of the court, on a plea of auterfois acquit : pleaded by James Foy at the Summer Assizes 1786, holden for the county of Mayo at Ballinrobe, on the fifth day of June : to an indictment for procuring, stirring, and provoking Andrew Creagh, otherwise Craig and others, to slee and murder Patrick Randal M'Donnell, Esquire and Charles Hipson, with the pleadings in that case";
 br.bookAuthor= "Foy, James.";
 br.bookPub= "Dublin: Printed by P. Byrne, 1786";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2107';
 
 // Override the path used to find UI images

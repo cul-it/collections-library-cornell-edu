@@ -195,7 +195,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3701_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3701_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -253,7 +253,7 @@ br.numLeafs = 28;
 br.bookTitle= "Trial by jury and liberty of the press : the proceedings at the public meeting, December 29, 1817, at the City of London Tavern, for the purpose of enabling William Hone to surmount the difficulties in which he has been placed by being selected by the ministers of the Crown as the object of their persecution : Mr. Waithman in the chair, with the resolutions and speeches of Mr. Waithman, Sir Francis Burdett, Mr. Alderman Thorp, Mr. Perry, Mr. P. Walker, Lord Cochrane, Mr. Charles Pearson, Mr. Sturch, and Mr. Wooler : also, the subscriptions received from time to time, with all the names, mottoes, &amp;c.";
 br.bookAuthor= "Hone, William, 1780-1842.";
 br.bookPub= "London: Printed by and for William Hone, 1818";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3701';
 
 // Override the path used to find UI images

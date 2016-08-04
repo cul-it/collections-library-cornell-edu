@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2002_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2002_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "Trial of John C. Colt for the murder of Samuel Adams.";
 br.bookAuthor= "Colt, John Caldwell, 1810-1842, defendant.";
 br.bookPub= "New York: The Sun, Jan. 31, 1842";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2002';
 
 // Override the path used to find UI images

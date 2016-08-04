@@ -723,7 +723,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3403_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3403_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -781,7 +781,7 @@ br.numLeafs = 116;
 br.bookTitle= "A full report of the trial at bar in the Court of King's Bench, in which the Right Hon. Arthur Wolfe ... prosecuted, and A.H. Rowan was defendant, on an information filed ex officio against the defendant for having published a seditious libel, January 29, 1794";
 br.bookAuthor= "Rowan, Archibald Hamilton, 1751-1834, defendant.";
 br.bookPub= "Dublin: printed by W. M'Kenzie, 1794";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3403';
 
 // Override the path used to find UI images

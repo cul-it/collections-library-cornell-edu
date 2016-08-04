@@ -303,7 +303,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4207_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4207_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -361,7 +361,7 @@ br.numLeafs = 46;
 br.bookTitle= "A statement concerning the recent assault upon the character of the Rev. Sylvester Holmes ...";
 br.bookAuthor= "Holmes, Sylvester, d. 1866.";
 br.bookPub= "Boston: C.C.P. Moody, 1851";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4207';
 
 // Override the path used to find UI images

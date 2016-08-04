@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00770_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00770_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Organizations Responsible for the Persecution of the Christian Church / Examples based on R and A Number 3114.4";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Christian Churches; Illegal arrest; Religious persecution; Sproll Incidents; Persecution of clergy; Defamation; Censorship";
 br.bookUrl  = '/nuremberg/catalog/nur:00770';
 
 // Override the path used to find UI images

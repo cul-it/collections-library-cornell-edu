@@ -1443,7 +1443,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01131_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01131_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1501,7 +1501,7 @@ br.numLeafs = 236;
 br.bookTitle= " R &amp; A No. 3113.7 / Principal Nazi Organizations Involved in the Commission of War Crimes: The Nazi Party (Part IV) / Office of Strategic Services / Research and Analysis Branch / Draft for the Use of the War Crimes Staff / SECRET";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-10";
-br.bookKeyword= "";
+br.bookKeyword= "SS (Schutzstaffeln); NSKK (NS Kraftahr Korps); Allgemeine SS (General SS); SD (Sicherheitsdienst; Security Service); SiPo (Sicherheitspolizei, Security Police); Waffen-SS (Combat SS); SS-Totenkopfverbaende (SS Death Head Formations); Reichsfuehrung-SS; SA (Sturmabteilung); HJ (Hitler Jugend); NS Frauenschaft; NSD Studenten-Bund; NSD Dozentenbund; RSHA (Reich Security Main Office); RSD (Reich Security Service); Schutzdienst (Protective Service): Organisationsbuch der NSDAP; Nazi racial theory: Concentration camps; Occupied territories: Extermination of native populations; Germanization of; Economic exploitation of; Hierarchical organization; Taking of hostages; Collective reprisals; Jews; Forced labor; Deportations; Ghettos; Espionage; Sabotage; \"Night and Fog\" Edict; Partisans; Liquidation of Allied Commandos, parachutists, and flyers; Execution of POWs; Dachau; Sachsenhausen; Buchenwald; Medical experiments; Volksdeutsche Mittelstelle (VOMI); Mein Kampf; Political assassination; Pogroms; Organisationsbuch der NSDAP; Nazi ideology; \"Werwolf\"; Military training; Indoctrination of youth; Gebietsschule; Reichsfuehrerschulen";
 br.bookUrl  = '/nuremberg/catalog/nur:01131';
 
 // Override the path used to find UI images

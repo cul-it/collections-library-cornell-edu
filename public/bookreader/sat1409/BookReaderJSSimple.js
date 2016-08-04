@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1409_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1409_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "Soscol. Appeal from the Commisioner of the General Land Office to the Secretary of the Interior.  Arguments for Claimants under Vallejo.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Washington City: Josh L. Pearson, printer, 1866";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1409';
 
 // Override the path used to find UI images

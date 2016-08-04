@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01753_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01753_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Interrogation of: Lammers, Heinrich / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Lt. Colonel Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-23";
-br.bookKeyword= "";
+br.bookKeyword= "Reich laws; Fuehrer decrees; Weimar Constitution; Occupied Territories; Austria; Sudetenland; Polish Corridor; Russia; Ukrainians; Slave labor; Forced labor; Four-Year Plan; Extermination of Poles; Persecution of Jews";
 br.bookUrl  = '/nuremberg/catalog/nur:01753';
 
 // Override the path used to find UI images

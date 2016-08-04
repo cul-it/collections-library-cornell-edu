@@ -231,7 +231,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1504_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1504_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -289,7 +289,7 @@ br.numLeafs = 34;
 br.bookTitle= "Trial of Mr. Patrick Finney, on a charge of high treason : heard before the Hon. Judge Chamberlaine, and the Hon. Baron Smith, of the last Commission of Oyer and Terminer for this city ... / accurately reported by a Barrister.";
 br.bookAuthor= "Finney, Patrick.";
 br.bookPub= "Dublin: Printed by Campbell and Shea, [179-]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1504';
 
 // Override the path used to find UI images

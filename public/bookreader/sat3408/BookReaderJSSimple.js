@@ -339,7 +339,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3408_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3408_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -397,7 +397,7 @@ br.numLeafs = 52;
 br.bookTitle= "The Veiled lady, or, The mysterious witness in the McFarland trial : her confession, her history.  Also, the sad history of her lovely but unfortunate cousin; startling disclosures of certain persons in high life.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Philadelphia: C.W. Alexander, Publisher, [1870?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3408';
 
 // Override the path used to find UI images

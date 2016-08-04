@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01671_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01671_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Publicity for the Execution of Spies and Saboteurs / Supreme Headquarters / Allied Expeditionary Force / To: Commanding General, First U. S. Army Group, APO 655";
 br.bookAuthor= "E. C. Boehnke, Colonel, AGD";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-07-06";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01671';
 
 // Override the path used to find UI images

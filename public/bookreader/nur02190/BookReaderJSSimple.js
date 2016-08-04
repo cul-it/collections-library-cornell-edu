@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02190_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02190_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "My dear General Donovan: / Although I have had the honor of being introduced to you when I worked for the OSS in August 1943...";
 br.bookAuthor= "Gerhart H. Seger";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-29";
-br.bookKeyword= "";
+br.bookKeyword= "Neue Volkszeitung: Concentration camps: Oranienburg: Press credentials: Public relations; German-Americans";
 br.bookUrl  = '/nuremberg/catalog/nur:02190';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01756_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01756_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Brief of Interrogation of Willy Litzenberg / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Lt. Colonel S. W. Brookhart";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-31";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; Einsatz Groups; SIPO; SD; Atrocities; OCC interrogation protocol";
 br.bookUrl  = '/nuremberg/catalog/nur:01756';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02180_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02180_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "From: JES / To: General Donovan: / 'When Major Kelley dictated...'";
-br.bookAuthor= ""JES"";
+br.bookAuthor= "'JES'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Trial; Defendants; Defense strategy; Prosecution strategy; Trial by documents";
 br.bookUrl  = '/nuremberg/catalog/nur:02180';
 
 // Override the path used to find UI images

@@ -1257,7 +1257,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2303_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2303_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1315,7 +1315,7 @@ br.numLeafs = 205;
 br.bookTitle= "A report of the whole proceedings on the trials of Henry and John Sheares, Esqrs., John McCann, Gent, W.M. Byrne, Esq., and Oliver Bond, merchant, for high treason ...";
 br.bookAuthor= "Sheares, Henry, 1753-1798.";
 br.bookPub= "Dublin: Printed for John Milliken, 1798";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2303';
 
 // Override the path used to find UI images

@@ -159,7 +159,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01674_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01674_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -217,7 +217,7 @@ br.numLeafs = 22;
 br.bookTitle= "Supreme Court of the United States / Nos. - Original and Nos. 1, 2, 3,4, 5, 6, and 7-JULY SPECIAL TERM, 1942";
 br.bookAuthor= "Mr. Chief Justice Stone";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1942-10-29";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01674';
 
 // Override the path used to find UI images

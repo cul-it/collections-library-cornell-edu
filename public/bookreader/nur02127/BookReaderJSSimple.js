@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02127_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02127_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Sir, In trying to write a few outlines of what a witness in the forthcoming trial could say about the Church under the Nazi regime...";
 br.bookAuthor= "Dr. Hanns Lilje";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-23";
-br.bookKeyword= "";
+br.bookKeyword= "Christian Church; \"Kirchenkanzlei\"; Persecution of Churches; Prosecution strategy; Trial witnesses; Witnesses; Christian clergy";
 br.bookUrl  = '/nuremberg/catalog/nur:02127';
 
 // Override the path used to find UI images

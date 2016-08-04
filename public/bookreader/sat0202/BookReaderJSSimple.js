@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0202_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0202_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 35;
 br.bookTitle= "Trial of Israel Thayer Jr., Isaac Thayer, and Nelson Thayer for the murder of John Love : at the Court of Oyer and Terminer of Erie County, at the court-house in Buffalo, in April last : his honor, Reuben H. Walworth, circuit judge for the fourth circuit,";
 br.bookAuthor= "Thayer, Israel, 1801-1825.";
 br.bookPub= "Buffalo, N.Y.: Printed for the publishers, 1825";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0202';
 
 // Override the path used to find UI images

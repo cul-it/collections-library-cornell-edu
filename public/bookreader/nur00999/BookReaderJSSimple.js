@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00999_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00999_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Interrogation of Funk, Walther / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Lt. Colonel Murray Gurfein";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-19";
-br.bookKeyword= "";
+br.bookKeyword= "Preparations to wage aggressive war; Four Year Plan; War economy; Armaments; Bank of International Settlements; Danzig question; International currency; Reichsbank; Secret gold fond; Juliusturm; County Banks of Issue; OKW; War against Russia; Economic exploitation; Occupied territories; Persecution of Jews; Jewish economic question; Confiscation of Jewish property; Plenipotentiary for War Economy; Poland; Holland; Spoliation; Raw materials";
 br.bookUrl  = '/nuremberg/catalog/nur:00999';
 
 // Override the path used to find UI images

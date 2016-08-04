@@ -339,7 +339,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3502_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3502_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -397,7 +397,7 @@ br.numLeafs = 52;
 br.bookTitle= "Report of the cause of Martha Bradstreet, versus Apollos Cooper, on a writ of right : tried before Honorable Alfred Conkling, district judge of the United States, for the Northern district of New-York, on Wednesday, the 22nd day of January, 1834, and the seven following days ... / by William Lacy.";
 br.bookAuthor= "Bradstreet, Martha, Mrs., b. 1780, plaintiff.";
 br.bookPub= "Albany [N.Y.]: Printed by Martin and Marshall, 1834";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3502';
 
 // Override the path used to find UI images

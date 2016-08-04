@@ -555,7 +555,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1104_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1104_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -610,10 +610,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 88;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "The business man's assistant : being an improved edition of the "Business guide and legal companion," containing useful forms of legal instruments: enlarged by the addition of forms of acknowledgments, agreements, assignments, awards, bonds, leases, mortgages, and legal opinions, found in no other work : Adapted to the wants of business men throughout the United States / By an attorney ; To which is added tables: of interest--of U.S. Custom House value of foreign currencies--and of all the gold and silver coins in circulation";
+br.bookTitle= "The business man's assistant : being an improved edition of the 'Business guide and legal companion,' containing useful forms of legal instruments: enlarged by the addition of forms of acknowledgments, agreements, assignments, awards, bonds, leases, mortgages, and legal opinions, found in no other work : Adapted to the wants of business men throughout the United States / By an attorney ; To which is added tables: of interest--of U.S. Custom House value of foreign currencies--and of all the gold and silver coins in circulation";
 br.bookAuthor= "Butts, I. R. (Isaac Ridler), 1795-1882.";
 br.bookPub= "Boston: I.R. Butts, 1847";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1104';
 
 // Override the path used to find UI images

@@ -2307,7 +2307,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3907_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3907_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2365,7 +2365,7 @@ br.numLeafs = 380;
 br.bookTitle= "The great Brooklyn romance : all the documents in the famous Beecher-Tilton case, unabridged.";
 br.bookAuthor= "Beecher, Henry Ward, 1813-1887. defendant.";
 br.bookPub= "New York: J.H. Paxon, 1874";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3907';
 
 // Override the path used to find UI images

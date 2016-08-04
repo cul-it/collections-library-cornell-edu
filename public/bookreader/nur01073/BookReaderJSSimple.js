@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01073_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01073_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Interrogation of Ernst Kaltenbrunner / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Colonel Brundage";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-21";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; Mass deportations; Forced labor; Persecution of Jews; \"Jewish Question\" Concentration camps; Gestapo; NSDAP; SD; SS; Occupied territories";
 br.bookUrl  = '/nuremberg/catalog/nur:01073';
 
 // Override the path used to find UI images

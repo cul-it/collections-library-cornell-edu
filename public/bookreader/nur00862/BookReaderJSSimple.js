@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00862_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00862_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 7;
 br.bookTitle= "Vernehmung / des fr&#252;heren Befehlshabers der deutschen Sicherheitspolizei in Danemarie Otto Bovensiepen. / geboren am 8' Juli 1905 in Duisburg. / im Kastell";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-20";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Counter-terror; Counter-sabotage; RSHA; German Foreign Office; Reich Plenipotentiary; General of the Police; German police; Gestapo; Danish police affair; General strike; Danish Resistance; Peter Group; Retaliatory murder; Rules of warfare; War crimes; Torture; German prisons; Froslev camp; ORPO; Constabularies; Vestre Faengsel; MPO; Auxiliary police";
 br.bookUrl  = '/nuremberg/catalog/nur:00862';
 
 // Override the path used to find UI images

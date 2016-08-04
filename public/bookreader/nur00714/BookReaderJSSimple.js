@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00714_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00714_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Freiherr von Falkenstein / (Addressed to an unspecified General and marked 'Chefsache')/ Translation of Document No. 376-PS / Office of U.S. Chief of Counsel / SECRET";
 br.bookAuthor= "Falkenstein";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1940-10-29";
-br.bookKeyword= "";
+br.bookKeyword= "Gibraltar; Crete; Greece; Libya; Italy; Military strategy; Preparation for war; Case East; Fall Ost; Rumania; Russia; Spain; Portugal; France; Norway; American aircraft industry";
 br.bookUrl  = '/nuremberg/catalog/nur:00714';
 
 // Override the path used to find UI images

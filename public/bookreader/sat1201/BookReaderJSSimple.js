@@ -261,7 +261,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1201_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1201_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -319,7 +319,7 @@ br.numLeafs = 39;
 br.bookTitle= "Circuit court of the United States, District of Connecticut : In equity Le Baron B. Colt et al., vs. Mrs. E.H. Colt et al. Brief of Mess. Hyde and Perkins of counsel for defendant.";
 br.bookAuthor= "Colt, Le Baron B.";
 br.bookPub= "Hartford, Ct.: Press of the Case, Lockwood &amp; Brainard Co., 1881";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1201';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02172_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02172_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Niederschrift &#252;ber eine Unterredung zwischen Herrn General Donovan und dem Angeklagten Goring in Anwesenheit von Dr. Kempner und dem Verteidiger Dr. Stahmer am Montag, den 12. November 1945";
 br.bookAuthor= "Dr. O. Stahmer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-15";
-br.bookKeyword= "";
+br.bookKeyword= "Defendants; Interrogations; Defense counsel";
 br.bookUrl  = '/nuremberg/catalog/nur:02172';
 
 // Override the path used to find UI images

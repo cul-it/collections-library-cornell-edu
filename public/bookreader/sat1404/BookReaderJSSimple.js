@@ -471,7 +471,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1404_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1404_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -529,7 +529,7 @@ br.numLeafs = 74;
 br.bookTitle= "Commonwealth of Massachusetts, vs. Francis O.J. Smith, on an indictment procured by the conspiracy and perjuries of D. H. Craig and his witnesses, male and female.";
 br.bookAuthor= "Smith, Francis O. J. (Francis Ormond Jonathan), 1806-1876, defendant.";
 br.bookPub= "Portland: Monitor printing company, 1867";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1404';
 
 // Override the path used to find UI images

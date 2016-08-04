@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00715_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00715_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Synopsis / Extractions from a report on the preparatory work in eastern European questions. / Translation of Document 1039-PS / Office of U.S. Chief of Counsel ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War operations; Military strategy; OKW; Economics; War economy; Four-Year Plan; Propaganda; Propaganda Ministry; Foreign office; Foreign affairs; Occupied territories; Building; Construction; Communications; Infrastructure; SA; Aufklaerung und Presse; Medical supplies; Veterinary supplies; Russian trade unions; German newspapers; Ukraine; Ethological map";
 br.bookUrl  = '/nuremberg/catalog/nur:00715';
 
 // Override the path used to find UI images

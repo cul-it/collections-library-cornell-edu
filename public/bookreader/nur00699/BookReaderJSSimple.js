@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00699_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00699_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 5;
 br.bookTitle= "Index of Documents / Collaboration with Italy and Japan and Aggressive War Against the United States / First Draft / To be appended to Trial Brief ";
 br.bookAuthor= "Roy H Steyer, Lt. (j.g.) USNR, Section III";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Common Plan; Nazi conspiracy; Document list; Anti-Comintern Pact; Tripartite Pact; Three-Power Pact";
 br.bookUrl  = '/nuremberg/catalog/nur:00699';
 
 // Override the path used to find UI images

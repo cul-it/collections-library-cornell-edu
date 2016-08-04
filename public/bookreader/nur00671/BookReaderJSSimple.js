@@ -261,7 +261,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00671_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00671_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -319,7 +319,7 @@ br.numLeafs = 39;
 br.bookTitle= "Brief on Die Schutzstaffeln der Nationalsozialistischen Deutschen Arbeiterpartei (Commonly Known as the SS) Including Die Sicherheitsdienst (Commonly Known as the SD) ";
 br.bookAuthor= "Warren F. Farr, Major, J. A.G.D.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Common Plan; Conspiracy; SS (Schutzstaffel); \"Blood and Elite\"; Nazi ideology; Master Race; SD; NSDAP: SA (Storm Troops; Sturmabteilung); SS Totenkopf Veibaende; Death Head Units; Waffen SS; Armed SS; Allgemeine SS; SS Verfregungstruppe; Concentration camps; Gross Rosen; SS racial policies; Exterminations of Jews; Human experiments; Nationalsozialistches Jahrbuch";
 br.bookUrl  = '/nuremberg/catalog/nur:00671';
 
 // Override the path used to find UI images

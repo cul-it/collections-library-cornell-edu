@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01521_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01521_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Instructions issued to German Officials for the Securing of Jewish Property during the Liquidation of the Ghetto in Brest-Litowsk / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Staff Evidence Analysis";
 br.bookAuthor= "Siebenschein is the analyst";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-20";
-br.bookKeyword= "";
+br.bookKeyword= "Atrocities against civilians; Spoliation of foreign property; Persecution of Jews; SS; Ghettos; War crimes; Documentary evidence";
 br.bookUrl  = '/nuremberg/catalog/nur:01521';
 
 // Override the path used to find UI images

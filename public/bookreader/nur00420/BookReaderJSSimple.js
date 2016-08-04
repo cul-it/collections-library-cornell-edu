@@ -273,7 +273,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00420_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00420_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -331,7 +331,7 @@ br.numLeafs = 41;
 br.bookTitle= "R &amp; A No. 3092: Nazi Changes in the Field of Family  and Inheritance Law  / Office of Strategic Services / Research and Analysis  Branch / CONFIDENTIAL";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-16";
-br.bookKeyword= "";
+br.bookKeyword= "Family law; Betrothal; Marriage; Divorce; Adoption;  Inheritance; German blood; Dowry; Jews; Farm inheritance";
 br.bookUrl  = '/nuremberg/catalog/nur:00420';
 
 // Override the path used to find UI images

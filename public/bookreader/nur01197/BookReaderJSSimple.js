@@ -159,7 +159,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01197_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01197_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -217,7 +217,7 @@ br.numLeafs = 20;
 br.bookTitle= " R &amp; A No. 1113.101/ Situation Report: Central Europe / Comments on Current Intelligence for the Use of the OSS / Office of Strategic Services / Research and Analysis Branch / SECRET / CONTROL";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-03-10";
-br.bookKeyword= "";
+br.bookKeyword= "Germany; Guerilla warfare; Rochling; Austria; Austrian refugees; Turkey; Czechoslovakia; Poland; Switzerland";
 br.bookUrl  = '/nuremberg/catalog/nur:01197';
 
 // Override the path used to find UI images

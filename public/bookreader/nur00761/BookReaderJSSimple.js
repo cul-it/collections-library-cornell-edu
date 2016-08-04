@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00761_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00761_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Summary of Interrogation of Vice Admiral Leopold Buerkner";
 br.bookAuthor= "Colonel Amen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-09";
-br.bookKeyword= "";
+br.bookKeyword= "Russian POWs; International law; Geneva Convention; Weygand affair; Giraud affair; British POWs; War crimes";
 br.bookUrl  = '/nuremberg/catalog/nur:00761';
 
 // Override the path used to find UI images

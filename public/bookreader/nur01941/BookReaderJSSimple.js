@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01941_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01941_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Outgoing Cable Form / To 109 Washington / Secret / Urgent";
 br.bookAuthor= "Robert H. Jackson";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-24";
-br.bookKeyword= "";
+br.bookKeyword= "Sabotage; Subversive activities; South America; Pentagon; Interrogation";
 br.bookUrl  = '/nuremberg/catalog/nur:01941';
 
 // Override the path used to find UI images

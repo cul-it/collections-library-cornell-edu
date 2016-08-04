@@ -1047,7 +1047,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2506_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2506_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1105,7 +1105,7 @@ br.numLeafs = 170;
 br.bookTitle= "Celebrated case of Bagot v. Bagot which occupied the Irish probate court from the 25th April to the 20th May, 1878.";
 br.bookAuthor= "Bagot, Bernard.";
 br.bookPub= "London: Weldon &amp; Co., 1878";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2506';
 
 // Override the path used to find UI images

@@ -573,7 +573,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00541_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00541_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -631,7 +631,7 @@ br.numLeafs = 91;
 br.bookTitle= "In The International Military Tribunal Trial Brief/ Criminality of Das Korps Der Politischen Leiter Der Nationalsozialistischen Deutschen Arbeiterpartei (Leadership Corps of the Nazi Party) ";
 br.bookAuthor= "Thomas F. Lambert, Jr., Lt. (jg), USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi Party; Leadership Corps; NSDAP; SS; SA; Gestapo; Reichsleiter (Reich Leader); Gauleiter (District Leader); Kreisleiter (County Leader); Ortsgruppenleiter (Local Chapter Leader); Zellenleiter (Cell Leader); Blockleiter (Block Leader); \"Hoheitstrager\" (\"Bearers of Sovereignty\"); Politischer Leiter; Reich Directorate; Per Hoheitstrager; Hilter Youth (HJ); Conspiracy; Greater German Reich; \"Leadership Principle\"; Anti-Semitism; Homestead Law; Law for the Protection of German Blood and Honor; \"Jewish Star\"; Christian Churches; Nazi Catechism; Nazi Religion; Trade Unions; Plundering and Looting of Public and Private Property; \"Einsatzstab Rosenberg\"; Civil Service; Citizenship Law; Party and State; Jews; Foreign workers; \"Strength Through Joy\"; \"Plant Troops\"; \"Factory Troops\"; \"ideological shock squad\"; Confiscation; Seizure; Suppression; Regulation; Exclusion; Protection; Persecution; Deportation; Enslavement; Extermination; Execution; Murder; Crimes Against Peace; War Crimes; Crimes Against Humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:00541';
 
 // Override the path used to find UI images

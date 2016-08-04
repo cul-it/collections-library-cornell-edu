@@ -375,7 +375,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1407_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1407_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -433,7 +433,7 @@ br.numLeafs = 58;
 br.bookTitle= "Conflict of jurisdiction between state and federal courts. Opinion in Joseph Hollman, et. al., vs. Harry Fulton on habeas corpus, by Mr. Justice Beck, of the Iowa Supreme Court.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Keokuk, Iowa: William Rees, printer, 1869";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1407';
 
 // Override the path used to find UI images

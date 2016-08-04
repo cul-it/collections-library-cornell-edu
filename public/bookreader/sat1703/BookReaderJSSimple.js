@@ -1125,7 +1125,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1703_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1703_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1183,7 +1183,7 @@ br.numLeafs = 183;
 br.bookTitle= "Report of the case of Joshua Stow vs. Sherman Converse, for a libel : containing a history of two trials before the Superior Court, and some account of the proceedings before the Supreme Court of Errors.";
 br.bookAuthor= "Stow, Joshua, 1782-1842.";
 br.bookPub= "New Haven: Printed by S.  Converse, 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1703';
 
 // Override the path used to find UI images

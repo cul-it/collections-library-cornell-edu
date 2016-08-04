@@ -195,7 +195,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3505_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3505_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -253,7 +253,7 @@ br.numLeafs = 28;
 br.bookTitle= "The intent of capital punishment : a discourse delivered in the city of New-Haven, October 20, 1790 : being the day of the execution of Joseph Mountain, for a rape / by James Dana, D.D., pastor of the First Church in said city.";
 br.bookAuthor= "Dana, James, 1735-1812.";
 br.bookPub= "New-Haven: Printed by T. and S. Green, 1790";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3505';
 
 // Override the path used to find UI images

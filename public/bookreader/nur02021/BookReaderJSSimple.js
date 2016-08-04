@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02021_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02021_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "List of the Studies and Exposes Written During My Prisonership and Submitted to the U.S. Authorities";
 br.bookAuthor= "Walter Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-22";
-br.bookKeyword= "";
+br.bookKeyword= "Relations of the OKW to the Party, the OKH, and the SS; Main German campaigns; Relations to Japan; German preparations for war; German General Staff; Military cooperation between Germany and France; Fuehrer's Headquarters; German Military Economy; Spanish Civil War; Sudeten Crisis; Prague; Poland; German campaign in the West; German campaign against Russia";
 br.bookUrl  = '/nuremberg/catalog/nur:02021';
 
 // Override the path used to find UI images

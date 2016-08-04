@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00687_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00687_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 17;
 br.bookTitle= "Basic Facts for a History of German War and Armaments Economy  / Translation of Extracts of Document 2353-PS / Office of U.S. Chief of Counsel";
 br.bookAuthor= "General Georg R. Thomas (see Abstract); the translator is Evelyn Glazer, P/O, W.R.N.S., 37371.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-15";
-br.bookKeyword= "";
+br.bookKeyword= "War economy organization; WO; Reich Defense Law; War preparations; Action Otto; OKW; Military mobilization; Economic mobilization; Divided mobilization; Inspectorate of War Economy Prague; War with Poland; Camouflaged mobilization; Occupation of Denmark and Norway; Economic evacuation; War material; Russia; Hungary; Romania; Finland; Bulgaria; Turkey; Seelowe; Sea-lion; War Economy of the Soviet Union";
 br.bookUrl  = '/nuremberg/catalog/nur:00687';
 
 // Override the path used to find UI images

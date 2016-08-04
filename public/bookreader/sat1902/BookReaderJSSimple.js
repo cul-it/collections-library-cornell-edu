@@ -447,7 +447,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1902_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1902_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -505,7 +505,7 @@ br.numLeafs = 70;
 br.bookTitle= "An authentic life of John C. Colt : now imprisoned for killing Samuel Adams, in New York, on the seventeenth of September, 1841.";
 br.bookAuthor= "Colt, John Caldwell, 1810-1842.";
 br.bookPub= "Boston:  S.N. Dickinson, 1842";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1902';
 
 // Override the path used to find UI images

@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2208_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2208_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "The Lady Flora Hastings her life and death : with questions for the Queen, and criticisms of her court / Flora Hastings.";
 br.bookAuthor= "Hastings, Flora, Lady, 1806-1839.";
 br.bookPub= "London: Thomas &amp; White, [18--]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2208';
 
 // Override the path used to find UI images

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01837_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01837_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Brief of Interrogation of Therese Reinwald / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Lt. Col. Thomas S. Hinkel is the interrogator.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-30";
-br.bookKeyword= "";
+br.bookKeyword= "Party Supreme Court; Judicial independence; Wagner case; Roehm Purge";
 br.bookUrl  = '/nuremberg/catalog/nur:01837';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00476_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00476_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Deportation  of Jews from Galicia ";
 br.bookAuthor= "The author is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Deportations; Jewish camps; Confiscation; Special Staff  Rheinhard; Coins; Necklaces; Silver; Gold; Wedding rings; Pearls; Gold dental  fillings; Gold teeth; Jewelry; Wristwatches; Foreign currencies";
 br.bookUrl  = '/nuremberg/catalog/nur:00476';
 
 // Override the path used to find UI images

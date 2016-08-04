@@ -723,7 +723,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4304_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4304_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -781,7 +781,7 @@ br.numLeafs = 116;
 br.bookTitle= "A report of the case of the Jeune Eugenie : determined in the Circuit court of the United States, for the First circuit, at Boston, December, 1821 ; with an appendix / by William P. Mason, reporter.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston: Wells and Lilly, 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4304';
 
 // Override the path used to find UI images

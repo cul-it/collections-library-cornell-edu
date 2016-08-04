@@ -279,7 +279,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3307_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3307_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -337,7 +337,7 @@ br.numLeafs = 42;
 br.bookTitle= "A genuine narrative of the life and actions of John Rice, broker. Interspersed with some curious anecdotes. Particularly of the Lord Mayor, and Bishop of Cambray.";
 br.bookAuthor= "Rice, John";
 br.bookPub= "London: Printed for the author, and sold by A. Heigerson, 1763";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3307';
 
 // Override the path used to find UI images

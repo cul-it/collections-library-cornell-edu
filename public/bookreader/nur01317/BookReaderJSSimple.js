@@ -117,7 +117,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01317_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01317_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -173,9 +173,9 @@ br.numLeafs = 16;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Atrocities and Other Conditions in Concentration Camps in Germany / Report of the Committee Requested by Gen. Dwight D. Eisenhower Through the Chief of Staff, Gen. George C. Marshall to the Congress of the United States";
-br.bookAuthor= ""Presented by Mr. Barkley"";
+br.bookAuthor= "Presented by Mr. Barkley";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-15";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01317';
 
 // Override the path used to find UI images

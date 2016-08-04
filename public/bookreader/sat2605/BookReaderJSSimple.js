@@ -987,7 +987,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2605_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2605_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1045,7 +1045,7 @@ br.numLeafs = 160;
 br.bookTitle= "A full report of the trials of the Bristol rioters before the special commission appointed to deliver the gaol of this city in January 1832, with the sentences and executions consequent thereon; also, a report of the proceedings of the court martial appoited to investigate the conduct of Lieut.-Colonel Brereton, inspecting field officer of the Bristol district : with full particulars of the suicide of that unfortunate officer and the inquest held on his body.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Bristol: Printed by W.H. Somerton, 1832";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2605';
 
 // Override the path used to find UI images

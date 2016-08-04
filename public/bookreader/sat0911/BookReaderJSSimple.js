@@ -603,7 +603,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0911_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0911_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -661,7 +661,7 @@ br.numLeafs = 96;
 br.bookTitle= "Abby Smith and her cows : with a report of the law case decided contrary to law / by Julia E. Smith.";
 br.bookAuthor= "Smith, Julia E., 1792-1886.";
 br.bookPub= "Hartford, Conn.: American Pub. Co., 1877";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0911';
 
 // Override the path used to find UI images

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01688_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01688_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Brief of Interrogation of General Blaskowitz / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Major J. J. Monigan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-27";
-br.bookKeyword= "";
+br.bookKeyword= "Czechoslovakia; Occupied territories; Poland; Polish campaign; German police; Persecution of Jews; Deportations; Ghettos; Governor General of Poland";
 br.bookUrl  = '/nuremberg/catalog/nur:01688';
 
 // Override the path used to find UI images

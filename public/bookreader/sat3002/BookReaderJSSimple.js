@@ -597,7 +597,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3002_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3002_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -655,7 +655,7 @@ br.numLeafs = 95;
 br.bookTitle= "The case of George W. Niven, Esq., attorney and counsellor at law, charged with mal-practices and suspended by order of the court of common pleas of the city of New-York : containing much curious matter, ingenuous argument, and eloquent discourse, equally interesting to counsellors and clients, to the safety of the public, and the honor and dignity of a learned profession.";
 br.bookAuthor= "Sampson, William, 1764-1836.";
 br.bookPub= "New York: Van Pelt &amp; Spear, Printers, 95 Pearl-street., 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3002';
 
 // Override the path used to find UI images

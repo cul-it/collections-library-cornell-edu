@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0204_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0204_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "A full and particular account of the trial of Francisco dos Santo, alias, Francisco Son : for the murder of Archibald Graham, at a Court of Oyer and Terminer, held in the city of New-York Jan. 9, 1806 : with the sentence, pronounced against him by his honour the presiding judge";
 br.bookAuthor= "Santos, Francisco dos, 1776-1806.";
 br.bookPub= "New York: [s.n.], 1806";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0204';
 
 // Override the path used to find UI images

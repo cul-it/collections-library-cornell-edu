@@ -99,7 +99,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1414_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1414_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -157,7 +157,7 @@ br.numLeafs = 12;
 br.bookTitle= "The Public Lands in California. Review of the Bills before Congress for Enlarging the Grants for the Benefit of that State";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "[s.l.]: [s.n.], 1866";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1414';
 
 // Override the path used to find UI images

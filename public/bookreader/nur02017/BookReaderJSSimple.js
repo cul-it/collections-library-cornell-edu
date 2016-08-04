@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02017_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02017_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Books in the Library of Dr. Jay V. Glebb / Office of the U. S. Chief of Counsel, APO 403.";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Who's Who in Germany and Austria; Das Deutsche Fuehrerlexikon; The Birth of the German Republic; The Exploitation of German Documents; Hitler's Second Army; Organisationsbuch der NSDAP; Nationalsozialistisches Jahrbuch; Der Fuehrer; The Guilt of the German Army; Hitler's Generals; The Intelligence Exploitation of Germany";
 br.bookUrl  = '/nuremberg/catalog/nur:02017';
 
 // Override the path used to find UI images

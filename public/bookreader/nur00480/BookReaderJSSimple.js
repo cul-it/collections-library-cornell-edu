@@ -105,7 +105,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00480_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00480_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -163,7 +163,7 @@ br.numLeafs = 15;
 br.bookTitle= "Summary of the  general activities of Gestapo Agent KREMER ";
 br.bookAuthor= "The author is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "V-Mann Priests; RSHA; Catholic Church; Diocesan  Conference; Pastoral Letter; 'Una Sancta Movement'; Religious education;  Catholic Diaspora; Persecution of Catholic Church; Lay-Help; Russian POWs;  Orphans; Conscription of clergy; Guardian Angel Society; Papal Work for  Propagation of the Faith; Franziskus Xavier Mission; Persecution of Christian  Churches";
 br.bookUrl  = '/nuremberg/catalog/nur:00480';
 
 // Override the path used to find UI images

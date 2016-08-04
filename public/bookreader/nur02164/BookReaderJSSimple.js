@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02164_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02164_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum for Col. Storey, Chairman Bd of Review";
 br.bookAuthor= "Donovan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-21";
-br.bookKeyword= "";
+br.bookKeyword= "Interrogations; Defendants; Due process; Board of Review";
 br.bookUrl  = '/nuremberg/catalog/nur:02164';
 
 // Override the path used to find UI images

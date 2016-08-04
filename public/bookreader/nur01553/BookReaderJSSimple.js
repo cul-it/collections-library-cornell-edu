@@ -105,7 +105,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01553_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01553_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -163,7 +163,7 @@ br.numLeafs = 13;
 br.bookTitle= "To General Donovan. Nurnberg";
 br.bookAuthor= "Hjalmar Schacht";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "International Military Tribunal; Treaty of Versailles; German rearmament; Reichsbank president; Mission to Moscow: Naval Treatv with Britain; Four Year Plan; Almeria incident; Persecution of Christian Churches; Legal protection for the Jews; Persecution of Jews; Gestapo; Koenigsberg speech; Fritsch affair; Witzleben coup d'etat; Golden Party Badge";
 br.bookUrl  = '/nuremberg/catalog/nur:01553';
 
 // Override the path used to find UI images

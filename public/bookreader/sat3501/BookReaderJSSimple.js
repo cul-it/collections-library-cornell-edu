@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3501_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3501_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "The trial of Lord George Sackville.";
 br.bookAuthor= "Sackville, George Germain, Viscount, 1716-1785, defendant.";
 br.bookPub= "London: D. Henry, 1760";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3501';
 
 // Override the path used to find UI images

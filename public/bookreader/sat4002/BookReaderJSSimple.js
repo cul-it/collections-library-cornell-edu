@@ -603,7 +603,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4002_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4002_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -661,7 +661,7 @@ br.numLeafs = 96;
 br.bookTitle= "The trial of William Skirving : secretary to the British Convention, before the High Court of Justiciary, at Edinburgh, on the 6th and 7th January, 1794, for sedition : with an original memoir, and notes.";
 br.bookAuthor= "Skirving, William, d. 1796, defendant.";
 br.bookPub= "Glasgow; Edinburgh: Published by Muir, Gowans ... sold by A. Rutherglen ... and Wm. Tait, 1836";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4002';
 
 // Override the path used to find UI images

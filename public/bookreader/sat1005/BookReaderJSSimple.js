@@ -447,7 +447,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1005_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1005_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -505,7 +505,7 @@ br.numLeafs = 70;
 br.bookTitle= "In the Department of State. Claim of Captain John Graham, of New York City, against Spain / John Graham.";
 br.bookAuthor= "Graham, John, 1821-1894.";
 br.bookPub= "Washington, D.C.: [s.n.], 1860";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1005';
 
 // Override the path used to find UI images

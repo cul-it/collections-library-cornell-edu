@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00830_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00830_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Interrogation of the Former Plenipotentiary of Germany in Denmark, Dr. Werner Best, in the Kastell (in the Presence of Pancke and Bovensiepen)";
 br.bookAuthor= "The interrogation officer is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-31";
-br.bookKeyword= "";
+br.bookKeyword= "Tuborg; Counter-terror; Denmark; Social Democrats; Group Peter; Peter-Group; Ibsen Affair";
 br.bookUrl  = '/nuremberg/catalog/nur:00830';
 
 // Override the path used to find UI images

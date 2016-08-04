@@ -147,7 +147,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1809_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1809_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -205,7 +205,7 @@ br.numLeafs = 20;
 br.bookTitle= "The trial at large of Acou (a Chinese Tartar sailor) for murder. Tried at the admiralty sessions...1806../ By Job Sibly, shorthand writer to the sessions at the old Bailey.";
 br.bookAuthor= "Sibley, Job.";
 br.bookPub= "London: Printed for and sold by R. Butters, [1806]., 1806";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1809';
 
 // Override the path used to find UI images

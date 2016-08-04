@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4303_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4303_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "Trial of Andreas Hall: indicted for the murder of Mrs. Amy Smith, at Petersburgh, on the evening of Saturday, the first day of July, 1848.";
 br.bookAuthor= "Hall, Andreas, defendent.";
 br.bookPub= "Troy: [s.n.], 1849";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4303';
 
 // Override the path used to find UI images

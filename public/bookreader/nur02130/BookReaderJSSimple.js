@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02130_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02130_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Colonel R. G. Storey / Board of Review / Room 316 / 'I have learned that Schacht had two assistants in the Reichsbank...'";
 br.bookAuthor= "William J. Donovan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-25";
-br.bookKeyword= "";
+br.bookKeyword= "Witnesses; Trial witnesses; Prosecution strategy; OCC organization; Reichsbank";
 br.bookUrl  = '/nuremberg/catalog/nur:02130';
 
 // Override the path used to find UI images

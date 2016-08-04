@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0221_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0221_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "The life, condemnation, dying address, and trial of the three Thayers. Who were executed for the murder of John Love, at Buffalo, N.Y. June 17, 1825.";
 br.bookAuthor= "Thayer, Isaac, d. 1825, defendant.";
 br.bookPub= "Boston [N.Y.]: Printed by John G. Scobie, for the publisher, 1825";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0221';
 
 // Override the path used to find UI images

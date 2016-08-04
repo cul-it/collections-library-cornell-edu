@@ -771,7 +771,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0110_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0110_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -829,7 +829,7 @@ br.numLeafs = 124;
 br.bookTitle= "Report of the trial of Charles N. Baldwin for a libel, in publishing, in the Republican chronicle, certain charges of fraud and swindling in the management of lotteries in the state of New-York ... / The whole being taken down in short hand, at the trial,";
 br.bookAuthor= "Baldwin, Charles N., 1793?-1838.";
 br.bookPub= "New-York: Printed and published by C.N. Baldwin, 1818";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0110';
 
 // Override the path used to find UI images

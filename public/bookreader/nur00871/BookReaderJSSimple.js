@@ -165,7 +165,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00871_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00871_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -223,7 +223,7 @@ br.numLeafs = 23;
 br.bookTitle= "Trial Brief / The Nazi Conspirators' War of Aggression Against Poland / First Draft";
 br.bookAuthor= "Roy H. Steyer, Lt. (jg), USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Poland; Common plan; Conspiracy; Aggressive war; Crimes against peace; German-Polish relations; Danzig; Polish Corridor; Sudetenland; Fall Weiss; Case White; Military strategy; Preparations for aggressive war; SD; Lebensraum; Propaganda; Gleiwitz radio station; Polish border incidents";
 br.bookUrl  = '/nuremberg/catalog/nur:00871';
 
 // Override the path used to find UI images

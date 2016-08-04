@@ -309,7 +309,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4210_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4210_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -367,7 +367,7 @@ br.numLeafs = 47;
 br.bookTitle= "A true and faithful history of the trial of the Rev. Alexander Bullions, D.D. before the Associate Presbytery of Cambridge ... and before the Associate Synod of North America ... / by an observer ...";
 br.bookAuthor= "Bullions, Alexander.";
 br.bookPub= "New York: William Stodart, 1831";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4210';
 
 // Override the path used to find UI images

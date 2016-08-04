@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00949_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00949_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Brief of Interrogation of Walter Buch / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Lt. Colonel Thomas S. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-31";
-br.bookKeyword= "";
+br.bookKeyword= "Party Supreme Court; Judicial independence; Wagner case; Frank case; Amann case; Telschow case; Oldenburg case; Party Chancellery";
 br.bookUrl  = '/nuremberg/catalog/nur:00949';
 
 // Override the path used to find UI images

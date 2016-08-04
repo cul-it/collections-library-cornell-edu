@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01669_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01669_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Pursuant to authority delegated to the Commanding General... / RESTRICTED / Headquarters / First United States Army / APO 230 / Special Orders / No. 240 / EXTRACT";
-br.bookAuthor= "W. B. Kean, Major General, GSC / "By command of Lieutenant General Hodges"";
+br.bookAuthor= "W. B. Kean, Major General, GSC / 'By command of Lieutenant General Hodges'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-09-02";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01669';
 
 // Override the path used to find UI images

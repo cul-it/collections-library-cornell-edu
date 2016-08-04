@@ -609,7 +609,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00773_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00773_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -667,7 +667,7 @@ br.numLeafs = 92;
 br.bookTitle= "S R &amp; A 3114.4 / The Nazi Master Plan / Annex 4: The Persecution of the Christian Churches / Office of Strategic Services / Research and Analysis Branch / Draft for the War Crimes Staff/ Approved by the Prosecution Review Board / CONFIDENTIAL  ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-06";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Persecution of clergy; Persecution of Christian Churches; Catholic Church; Evangelical Church; Church government; German Evangelical Church; Norwegian National Church; Christian sects; Defamation; Arrest; Censorship; Theological seminaries; Religious schools; Religious orders; Concordat; Hague Regulations; Nazi ideology; Racism; Aggressive war; Mein Kampf; The Myth of the Twentieth Century; Center Party; Youth organizations; Catholic youth movement; German Christians; Anti-Semitism; German Confessional Church; Polish priests; Hitler Youth; SS; SA; Gestapo; Sproll incidents; Mit brennender Sorge; Landeskirchen; Jesuits; Witnesses";
 br.bookUrl  = '/nuremberg/catalog/nur:00773';
 
 // Override the path used to find UI images

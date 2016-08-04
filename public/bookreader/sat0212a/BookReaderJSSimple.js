@@ -435,7 +435,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0212a_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0212a_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -493,7 +493,7 @@ br.numLeafs = 68;
 br.bookTitle= "Trial of Henry B. Hagerman, Esq., on an indictment for an assault and battery, with intent to murder, committed on William Coleman, Esq., editor of the N.Y. evening post / taken in short hand by David Bacon.";
 br.bookAuthor= "Hagerman, Henry B. (Henry Brasher), 1786-1853.";
 br.bookPub= "New-York: Printed by Oram and Mott, 1818";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0212a';
 
 // Override the path used to find UI images

@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00788_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00788_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -139,7 +139,7 @@ br.numLeafs = 9;
 br.bookTitle= "List of Documents / Accompanying / Trial Brief/ The Nazi Conspirators' Aggression / Against Austria";
 br.bookAuthor= "Harold Leventhal, Lt. Commander, USCGR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Affidavits; Documents; Documentary evidence; Criminal organizations; SA; SS; Austrian Nazis; German General Staff and High Command";
 br.bookUrl  = '/nuremberg/catalog/nur:00788';
 
 // Override the path used to find UI images

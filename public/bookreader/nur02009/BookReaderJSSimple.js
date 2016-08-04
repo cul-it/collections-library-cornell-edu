@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02009_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02009_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Subject: Further Trial of War Criminals / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / APO 403, U.S. Army / Operations Section / Interrogation Division";
 br.bookAuthor= "Curtis L. Williams, Colonel, IGD / Chief, Operations Section";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes trials; Nurnberg trial; OCC; Criminal organizations; Personnel requirements; Document collection; Interrogation preparation; Extradition; Staff meetings; Public relations; Prosecution strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:02009';
 
 // Override the path used to find UI images

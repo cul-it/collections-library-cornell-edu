@@ -543,7 +543,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1002_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1002_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -601,7 +601,7 @@ br.numLeafs = 86;
 br.bookTitle= "Report of the trial of McLaurin F. Cooke, submaster of the Eliot School, of the City of Boston, for an assault and battery upon Thomas J. Wall, a pupil of that school : with the arguments of counsel, and the opinion of the court reported in full ; carefully revised and corrected.";
 br.bookAuthor= "Wall, William.";
 br.bookPub= "Boston: A.M. Lawrence &amp; Co., [1859?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1002';
 
 // Override the path used to find UI images

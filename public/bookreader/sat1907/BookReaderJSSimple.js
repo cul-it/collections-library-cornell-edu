@@ -255,7 +255,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1907_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1907_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -313,7 +313,7 @@ br.numLeafs = 38;
 br.bookTitle= "The early love letters and later literary remains of Maria Bickford : murdered in Boston, October 25th, 1845 / edited by a friend of her youth.";
 br.bookAuthor= "Bickford, Mary Ann, 1824-1845.";
 br.bookPub= "Boston: Published and for sale by all periodical dealers, 1846";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1907';
 
 // Override the path used to find UI images

@@ -1467,7 +1467,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01134_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01134_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1525,7 +1525,7 @@ br.numLeafs = 227 + 13;
 br.bookTitle= "Analysis of The Personality of Adolph Hitler / With Predictions of His Future Behavior and Suggestions for Dealing With Him Now and After Germany's Surrender / O.S.S. Confidential";
 br.bookAuthor= "Henry A. Murray, M. D.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1943-10-00";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01134';
 
 // Override the path used to find UI images

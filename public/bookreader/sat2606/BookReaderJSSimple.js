@@ -771,7 +771,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2606_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2606_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -829,7 +829,7 @@ br.numLeafs = 124;
 br.bookTitle= "Trial of the conspirators, for the assassination of President Lincoln, &amp;c. : Argument of John A. Bingham, special judge advocate, in reply to the arguments of the several counsel for Mary E. Surratt, David E. Herold, Lewis Payne, George A. Atzerodt, Michael O'Laughlin, Samuel A. Mudd, Edward Spangler, and Samuel Arnold, charged with conspiracy and the murder of Abraham Lincoln, late president of the United States. Delivered June 27 and 28, 1865, before the Military commission, Washington, D.C.";
 br.bookAuthor= "Bingham, John Armor, 1815-1900.";
 br.bookPub= "Washington: Govt. print. off., 1865";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2606';
 
 // Override the path used to find UI images

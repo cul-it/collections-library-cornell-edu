@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01905_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01905_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Frau Elisabeth Struenck / An den Allierten Militaergerichtshof / Nuernberg";
 br.bookAuthor= "Mrs. Elisabeth Struenck";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-22";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01905';
 
 // Override the path used to find UI images

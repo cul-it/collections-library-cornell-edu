@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1806_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1806_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "The death-bed confessions of the late Countess of Guernsey, to Lady Anne H *******; developing a series of mysterious transactions connected with the most illustrious personages in the kingdom.";
 br.bookAuthor= "Guernsey, Countess.";
 br.bookPub= "London: Dean and Munday., 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1806';
 
 // Override the path used to find UI images

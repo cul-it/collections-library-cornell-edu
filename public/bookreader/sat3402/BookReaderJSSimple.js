@@ -597,7 +597,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3402_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3402_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -655,7 +655,7 @@ br.numLeafs = 95;
 br.bookTitle= "The twelve days' trial of Dr. John W. Webster for the murder of Dr. Parkman : comprising the addresses of the counsel engaged, the examination of the 121 witnesses, the prisoner's singular defence, and the chief justice's charge to the jury, and his sentence on the prisoner.";
 br.bookAuthor= "Webster, John White, 1793-1850.";
 br.bookPub= "London: James Gilbert, 1850";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3402';
 
 // Override the path used to find UI images

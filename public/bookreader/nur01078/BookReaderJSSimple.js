@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01078_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01078_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Incoming Telegram / #3187, Sixth / Moscow via War / International review Izvestiya 6 Sept. states that coming of peace brings new hope to all peoples, / Division of Central Services Telegraph Section";
 br.bookAuthor= "The message is unsigned.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-06";
-br.bookKeyword= "";
+br.bookKeyword= "Izvestiya; Democracy; Asia; Japan; War criminals; China";
 br.bookUrl  = '/nuremberg/catalog/nur:01078';
 
 // Override the path used to find UI images

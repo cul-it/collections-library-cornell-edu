@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00869_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00869_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Summary of Interrogation of General Von Falkenhorst. ";
 br.bookAuthor= "Colonel Amen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-24";
-br.bookKeyword= "";
+br.bookKeyword= "War Crimes; Crimes against peace; Aggressive warfare; Crimes against military personnel; Crimes against civilians; Norway; SD; Executions; German Navy; Oslo shipyards";
 br.bookUrl  = '/nuremberg/catalog/nur:00869';
 
 // Override the path used to find UI images

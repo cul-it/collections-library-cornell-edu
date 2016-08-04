@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01572_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01572_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "Name: Seyss-Inquart, Arthur / Office of Strategic Services / Research and Analysis Branch / Biographical Report / Confidential";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-27";
-br.bookKeyword= "";
+br.bookKeyword= "Styrian Home Guard; Foerderer der NSDAP; Austrian plebiscite; Nurnberg Laws; Netherlands; Dutch labor; Dutch churches; Dutch patriots; SS";
 br.bookUrl  = '/nuremberg/catalog/nur:01572';
 
 // Override the path used to find UI images

@@ -885,7 +885,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2306_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2306_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -943,7 +943,7 @@ br.numLeafs = 143;
 br.bookTitle= "Marital power exemplified in Mrs. Packard's trial, and self-defence from the charge of insanity, or, Three years' imprisonment for religious belief, by the arbitrary will of a husband : with an appeal to the government to so change the laws as to protect the rights of married women / by Mrs. E.P.W. Packard.";
 br.bookAuthor= "Packard, E. P. W. (Elizabeth Parsons Ware), 1816-1897.";
 br.bookPub= "Hartford: Published by the authoress, 1866";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2306';
 
 // Override the path used to find UI images

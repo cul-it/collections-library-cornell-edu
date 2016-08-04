@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4102_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4102_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -421,7 +421,7 @@ br.numLeafs = 56;
 br.bookTitle= "The trial of the Rev. Niel Douglas : before the High Court of Justiciary, at Edinburgh, on the 26th May 1817, for sedition / taken in shorthand by John Dow.";
 br.bookAuthor= "Douglas, Niel, 1750-1823.";
 br.bookPub= "Edinburgh: J. Robertson, 1817";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4102';
 
 // Override the path used to find UI images

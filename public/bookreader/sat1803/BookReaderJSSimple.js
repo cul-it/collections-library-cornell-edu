@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1803_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1803_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "The life and authentick trial of Doctor Hensey, for high-treason in giving intelligence to the French.";
 br.bookAuthor= "Hensey, Florence.";
 br.bookPub= "London: Larkin Howe, 1758";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1803';
 
 // Override the path used to find UI images

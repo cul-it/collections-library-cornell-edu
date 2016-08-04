@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01762_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01762_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "Statement of: M&#252;ller Josef / Lawyer";
 br.bookAuthor= "Josef M&#252;ller";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-23";
-br.bookKeyword= "";
+br.bookKeyword= "Opposition to NSDAP; German Army Secret Service; July 20 Putsch; Peoples' Court; Gestapo; Concentration camps; Buchenwald; Flossenburg; Dachau; SS; Transports";
 br.bookUrl  = '/nuremberg/catalog/nur:01762';
 
 // Override the path used to find UI images

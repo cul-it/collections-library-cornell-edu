@@ -147,7 +147,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3602_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3602_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -205,7 +205,7 @@ br.numLeafs = 20;
 br.bookTitle= "Virginia vs. West Virginia. Argument of Hon. Reverdy Johnson, in the supreme court of the United States, delivered in behalf of the defendant, Wednesday, May 8, 1867 ...";
 br.bookAuthor= "Johnson, Reverdy, 1796-1876.";
 br.bookPub= "Washington: Printed at the Globe office, 1867., 1867";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3602';
 
 // Override the path used to find UI images

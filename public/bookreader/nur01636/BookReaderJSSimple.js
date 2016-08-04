@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01636_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01636_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -101,9 +101,9 @@ br.numLeafs = 3;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Rise of Nazism in Vienna / SECRET / Seventh Army Interrogation Center / APO 758 / US Army / Ref No SAIC/25";
-br.bookAuthor= ""Paul Kubaia, Maj, MI / Commanding"";
+br.bookAuthor= "Paul Kubaia, Maj, MI / Commanding";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-26";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01636';
 
 // Override the path used to find UI images

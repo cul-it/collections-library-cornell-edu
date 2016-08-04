@@ -255,7 +255,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00456_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00456_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -311,9 +311,9 @@ br.numLeafs = 38;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Newsreels from 1933 to 1944  Showing How the Nazis Prepared, Started and Prolonged the Second World War ";
-br.bookAuthor= "The author's name is not given.  The title page bears General Donovan's signature stamp and is  marked "SECRET."";
+br.bookAuthor= "The author's name is not given.  The title page bears General Donovan's signature stamp and is  marked 'SECRET.'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Unknown";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi leaders; Speeches; Nazi propaganda; Film evidence;  Nazi films";
 br.bookUrl  = '/nuremberg/catalog/nur:00456';
 
 // Override the path used to find UI images

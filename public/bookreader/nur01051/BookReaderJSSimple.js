@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01051_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01051_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Conversation with State Secretary von Bismarck";
 br.bookAuthor= "Dr. von Schlabrendorff";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-13";
-br.bookKeyword= "";
+br.bookKeyword= "Reichstag fire; SA; Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:01051';
 
 // Override the path used to find UI images

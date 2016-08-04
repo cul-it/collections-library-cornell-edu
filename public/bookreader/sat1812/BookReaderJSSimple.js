@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1812_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1812_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "The trial of Archibald Bolam for the murder of Joseph Millie in the Savings' Bank, Newcastle, on Thursday, Dec. 6, 1838.";
 br.bookAuthor= "Bolam, Archibald.";
 br.bookPub= "Newcastle: Gateshead, William Douglas., 1839";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1812';
 
 // Override the path used to find UI images

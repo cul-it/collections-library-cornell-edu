@@ -639,7 +639,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01190_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01190_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -697,7 +697,7 @@ br.numLeafs = 100;
 br.bookTitle= "Interrogation of Edmund von Thermann / SECRET / CONTROL";
 br.bookAuthor= "The interrogation officer is Francis A. Mahony";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-06";
-br.bookKeyword= "";
+br.bookKeyword= "Argentina; Nazi ideology; Auslandsorganisation; German Foreign Office; German business interests; German Embassy. LG. Farben; Merck; Bayer; Anilinas Alemanas; Winter Help Fund";
 br.bookUrl  = '/nuremberg/catalog/nur:01190';
 
 // Override the path used to find UI images

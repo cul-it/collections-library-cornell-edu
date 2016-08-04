@@ -255,7 +255,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2012_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2012_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -313,7 +313,7 @@ br.numLeafs = 38;
 br.bookTitle= "The trial at full length, of Thomas James Hawkins, alias Henry Hawkins, and Edward Underwood, on a charge of obtaining goods and money, the property of Mary Marner, under false pretences... / Thomas James Hawkins.";
 br.bookAuthor= "Hawkins, Thomas James.";
 br.bookPub= "London: Printed by J.W. Myers, No. 2. Paternoster-row; for West and Hughes, No. 40, Paternoster-Row, and C. Chapple, No. 66, Pall-Mall., 1800";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2012';
 
 // Override the path used to find UI images

@@ -189,7 +189,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00776_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00776_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -247,7 +247,7 @@ br.numLeafs = 27;
 br.bookTitle= "War Crimes and Crimes Against Humanity / Part II / Plunder of Art Treasures  ";
 br.bookAuthor= "Walter W. Brudno";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Einsatzstab Rosenberg; Hohe Schule; Confiscation of art; Spoliation of foreign property; War crimes; Criminal conspiracy; Hague Conventions; Persecution of Jews; Occupied territories; Public art treasures; Private art treasures; OKW; OKH: Gestapo; SD; SS; RSHA; Libraries; Archives; Churches; Russia; Louvre; French art; French cabinetry; Jewish art; Confiscation of books; Confiscation of manuscripts; Confiscation of incunabula; Masonic Lodges; Rabbinical schools; Confiscation of household furnishings; Russian icons; Russian paintings; Russian art; Polish art; Gobelins; Art Seizure Program";
 br.bookUrl  = '/nuremberg/catalog/nur:00776';
 
 // Override the path used to find UI images

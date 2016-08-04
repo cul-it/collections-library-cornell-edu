@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01208_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01208_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "Memorandum to the officer in charge / Subject: Sandberger, Martin: SS Standartenfuehrer / Re: Information volunteered by subject";
 br.bookAuthor= "Woodrow W. French; B. Egenberger";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-29";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; SD; Gestapo; Kripo; Amt I; Amt II; Amt III; Amt IV; Amt V; Amt VI; Amt VII; Military espionage; Frontaufklaerung; Kriegsorganisation; OKW";
 br.bookUrl  = '/nuremberg/catalog/nur:01208';
 
 // Override the path used to find UI images

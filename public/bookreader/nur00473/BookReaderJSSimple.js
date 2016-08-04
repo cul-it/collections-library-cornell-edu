@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00473_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00473_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 2;
 br.bookTitle= "Collective Arrest of Relatives of Assassins and Saboteurs";
 br.bookAuthor= "Illmer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-07-19";
-br.bookKeyword= "";
+br.bookKeyword= "Assassination; Sabotage; Reprisal; Verbal propaganda; War  crimes; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:00473';
 
 // Override the path used to find UI images

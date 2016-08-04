@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01525_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01525_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Photostat of Jodl's Diary in his own handwriting. / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Staff Evidence Analysis";
 br.bookAuthor= "Schonfeld is the analyst.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-24";
-br.bookKeyword= "";
+br.bookKeyword= "Preparation to wage aggressive war; Foreign penetration; Propaganda; Fifth Column activities; Nazi ideology; SD; SA; SS; OKW; OKL; OKH; OKM; German General Staff; Spanish Civil War; Austria; Czechoslovakia; Case Otto; Case Green; Freikorps; Poland; Jodl's diary";
 br.bookUrl  = '/nuremberg/catalog/nur:01525';
 
 // Override the path used to find UI images

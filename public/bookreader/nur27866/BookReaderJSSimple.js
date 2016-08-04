@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:27866_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:27866_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum for Mr. Justice Jackson / Subject: Commendation of Officers /OFFICE OF U.S. CHIEF OF COUNSEL";
 br.bookAuthor= "General Donovan (?)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-17";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:27866';
 
 // Override the path used to find UI images

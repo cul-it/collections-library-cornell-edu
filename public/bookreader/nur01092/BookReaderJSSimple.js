@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01092_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01092_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 2;
 br.bookTitle= "Allied Use of Chinese Traitors Scored / F.C.C., Daily Report, 12 September 1945  Other European Transmitters - Sweden  Danish Press Praises Quisling Verdict";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-12";
-br.bookKeyword= "";
+br.bookKeyword= "Chinese war criminals; Chinese traitors; Puppets; United Nations Charter; New China News Agency; Emancipation Daily; Quisling trial; Stockholms-Tidningen: Nationaltidende: Socialdemokraten: Berlingske Tidende; Capital punishment; Death sentence; Soviet Home Service; Yiddish";
 br.bookUrl  = '/nuremberg/catalog/nur:01092';
 
 // Override the path used to find UI images

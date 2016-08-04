@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01719_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01719_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "I.G. Frankfurt / Office of Central Committee / Exhibit E-1";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-28";
-br.bookKeyword= "";
+br.bookKeyword= "I.G. Farben; NSDAP; Nazi Party; Donations; Chile";
 br.bookUrl  = '/nuremberg/catalog/nur:01719';
 
 // Override the path used to find UI images

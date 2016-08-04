@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01559_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01559_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Subject: Trial Brief on Hjalmar Schacht";
 br.bookAuthor= "Dr. von Schlabrendorff";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-12";
-br.bookKeyword= "";
+br.bookKeyword= "Trial brief; Persecution of Jews; Conspiracy; Crimes against peace; German rearmament: Treaty of Versailles: German colonies: Mission to Moscow";
 br.bookUrl  = '/nuremberg/catalog/nur:01559';
 
 // Override the path used to find UI images

@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00485_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00485_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Persecution and Murder of Jews   / Witnesses available through X-2 Branch, OSS";
 br.bookAuthor= "Dr. Kastner; Herbert Katski";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Zionist Organization of Hungary; War Refugee Board; RSHA;  SS; Gestapo; Gheottos; 'Ghettoizing'; Deportations; Mass executions;  Extermination program; Pogroms; Gas chambers; Tremblinki; Majdanek;  Auschwitz; Belsen; Buchenwald; Death's Head Brigade; Waffen SS; Crimes against humanity; War crimes; Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:00485';
 
 // Override the path used to find UI images

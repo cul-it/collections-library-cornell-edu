@@ -297,7 +297,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1006_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1006_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -355,7 +355,7 @@ br.numLeafs = 45;
 br.bookTitle= "New Orleans Custom-house officials. Fraudulent and dishonest acts of W.P. Kellogg, collector. His attempted defense. Additional allegations and facts. Perjurers, smugglers and Kellogg associate. His accomplices and victims exposed.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Washington: McGill &amp; Witherow, printers and stereotypers, 1867";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1006';
 
 // Override the path used to find UI images

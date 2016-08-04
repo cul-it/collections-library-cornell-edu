@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00620_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00620_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "R-100 / Extracts from translation of memorandum entitled 'Information given to the Supreme Commander of the Army by the Fuehrer on 25 March 1939'. ";
 br.bookAuthor= "Lt. Col. Siewert, 1st General Staff Officer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1939-03-25";
-br.bookKeyword= "";
+br.bookKeyword= "Poland";
 br.bookUrl  = '/nuremberg/catalog/nur:00620';
 
 // Override the path used to find UI images

@@ -1083,7 +1083,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1914_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1914_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1141,7 +1141,7 @@ br.numLeafs = 176;
 br.bookTitle= "The trials of John Duncan White alias Charles Marchant, and Winslow Curtis alias Sylvester Colson, for the murder on the high seas of Edward Selfridge and Thomas P. Jenkins, captain and mate of the schooner Fairy, of Boston ...";
 br.bookAuthor= "White, John Duncan, d. 1827?";
 br.bookPub= "Boston: Dutton and Wentworth, 1827";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1914';
 
 // Override the path used to find UI images

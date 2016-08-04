@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1615_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1615_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "Speech of Mrs. Susanna Wright, before the Court of King's Bench, on the 14th of November 1822 : in the course of reading which she was continually interrupted by the court, and before she had finished it, committed to Newgate for persisting to read, to be brought up again for judgment, on the Fourth day of Hilary Term, 1823.";
 br.bookAuthor= "Wright, Susannah.";
 br.bookPub= "London: Printed and published by R. Carlile., 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1615';
 
 // Override the path used to find UI images

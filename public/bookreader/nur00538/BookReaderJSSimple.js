@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00538_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00538_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "OCC Brief, Section 1. JJ.C.3.a. The Nazi conspirators further consolidated their control within Germany by extermination of potential internal resistance ";
 br.bookAuthor= "Lt. W. E. Miller";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi ideology; prison; imprisonment; Concentration camp; extermination; SA; Roehm putsch; SS; NSDAP; SD; \"protective custody\"; punishment by analogy; \"killed in attempting to escape\"; \"resisting arrest\"";
 br.bookUrl  = '/nuremberg/catalog/nur:00538';
 
 // Override the path used to find UI images

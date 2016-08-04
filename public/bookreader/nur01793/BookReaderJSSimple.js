@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01793_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01793_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Prisoner: Brigf u Gen Maj d Pol Rode, Ernst August / CI Final Interrogation Report (CI-FIR) No.50 / CONFIDENTIAL / Headquarters / United States Forces European Theater / Military Intelligence Service Center/APO 757";
 br.bookAuthor= "George Wenzel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-31";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01793';
 
 // Override the path used to find UI images

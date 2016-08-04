@@ -531,7 +531,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00670_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00670_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -589,7 +589,7 @@ br.numLeafs = 84;
 br.bookTitle= "The Gestapo and the SD and Ernst Kaltenbrunner ";
 br.bookAuthor= "Whitney R. Harris, Lieutenant, USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Gestapo; SD; SS; NSDAP; RSHA; SIPO; KRIPO; Kaltenbrunner; Persecution of Jews; Persecution of the Churches; War crimes; Crimes against humanity; Crimes against peace; Einsatz Groups; Einsatzgruppen; Informants; Nazi loyalty; Das Archiv; Die Deutsche Polizei; Protective custody; Concentration camps; Annihilation camps; S A; Mass murder; Mass extermination; Bullet Decree; Slave labor; Auschwitz; Lublin; Mauthausen; Buchenwald; Dachau; Sachsenhausen; Ravensbrueck; Bergen-Belsen; Flossenburg; Theresienstadt; Night and Fog Decree; Confiscation; Seizure of property; Spoliation of property; Deportation; Gas vans; Murder wagons; Death vans; Operation Kugel";
 br.bookUrl  = '/nuremberg/catalog/nur:00670';
 
 // Override the path used to find UI images

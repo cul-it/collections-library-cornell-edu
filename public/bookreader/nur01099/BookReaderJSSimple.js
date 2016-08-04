@@ -477,7 +477,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01099_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01099_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -533,9 +533,9 @@ br.numLeafs = 74;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Staff Evidence Analysis / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality";
-br.bookAuthor= "The names of the respective analysts are generally not given. Almost all of the analyses bear the initials "ARM" on the lower left corner of the page. Atherton is listed as the analyst for documents nos. C-12, C-55, and C-57. Document C-17 bears the initials "J. P. B." Fite is listed as the analyst for document no. C-26. Landmann is listed as the analyst for document no. C-27.";
+br.bookAuthor= "The names of the respective analysts are generally not given. Almost all of the analyses bear the initials 'ARM' on the lower left corner of the page. Atherton is listed as the analyst for documents nos. C-12, C-55, and C-57. Document C-17 bears the initials 'J. P. B.' Fite is listed as the analyst for document no. C-26. Landmann is listed as the analyst for document no. C-27.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-27";
-br.bookKeyword= "";
+br.bookKeyword= "C-series documents; Staff Evidence Analysis; Aggressive war preparation; German colonies; Czechoslovakia; Foreign penetration; Wehrmacht; OKW; Propaganda; Atrocities against Civilians; Hostages; Sabotage; Atrocities against Military Personnel; U-Boat warfare; OKM; German Navy; Nazi ideology; Operation \"Barbarossa\"; Russia; Italy; Balkans; Turkey; Spain; England; War economy measures; Middle East; Fuehrer Orders; Extirpation of Jews from Europe";
 br.bookUrl  = '/nuremberg/catalog/nur:01099';
 
 // Override the path used to find UI images

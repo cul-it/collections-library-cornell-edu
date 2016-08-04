@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01987_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01987_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Memorandum For Mr. Justice Jackson. / Subject: Disposition of London Evidence Collection and Analysis Branch / APO 403 / U.S. Army";
 br.bookAuthor= "Leonard Wheeler, Jr., Lt. Colonel, Sig. Corps";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-13";
-br.bookKeyword= "";
+br.bookKeyword= "London Evidence Collection and Analysis Section; Evidence file; Staff Evidence Analyses; Screening; Translation; Document authentication; Projects Branch; Project Officers; Documentation Division; Interrogation Division; American Committee; International Committee";
 br.bookUrl  = '/nuremberg/catalog/nur:01987';
 
 // Override the path used to find UI images

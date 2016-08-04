@@ -99,7 +99,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01485_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01485_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -157,7 +157,7 @@ br.numLeafs = 10;
 br.bookTitle= "Judicial Notice in International, German and French Law / RESTRICTED";
 br.bookAuthor= "Phoebe Morris";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-25";
-br.bookKeyword= "";
+br.bookKeyword= "International law; Judicial notice; Legal theory; Versailles treaty; Municipal law; Notoriety; Continental law publishers; German law; French law";
 br.bookUrl  = '/nuremberg/catalog/nur:01485';
 
 // Override the path used to find UI images

@@ -807,7 +807,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2812_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2812_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -862,10 +862,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 130;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "The lives of the felons, or, American criminal calendar / compiled in part from the New-York "National police gazette", and corrected, enlarged and revised on careful comparison with the criminal records of the various states ...";
+br.bookTitle= "The lives of the felons, or, American criminal calendar / compiled in part from the New-York 'National police gazette', and corrected, enlarged and revised on careful comparison with the criminal records of the various states ...";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New-York: [s.n.], [1846?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2812';
 
 // Override the path used to find UI images

@@ -969,7 +969,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2307_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2307_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1024,10 +1024,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 157;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "House of Lords, Thursday, 9 December, 1852. Gibson v. Small. Argument on writ of error as to seaworthiness under "Time" policies / Gibson.";
+br.bookTitle= "House of Lords, Thursday, 9 December, 1852. Gibson v. Small. Argument on writ of error as to seaworthiness under 'Time' policies / Gibson.";
 br.bookAuthor= "Gibson.";
 br.bookPub= "[s.l.]: [s.n.], [18--]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2307';
 
 // Override the path used to find UI images

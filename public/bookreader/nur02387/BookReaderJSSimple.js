@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02387_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02387_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "German Monists Organization / To Col. M.C. Bernhays, G.S.C. From Lt. Walter Rothschild / 9th July 1945";
 br.bookAuthor= "Franz Hesse";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-09";
-br.bookKeyword= "";
+br.bookKeyword= "Persecution of Christian Churches; Crimes against  humanity; Free Masons; Free-Thinkers; Non-Confessionals; Christian sects;  German Monists; Persecution of unorthodox thought; \"Monistische Monatsheft\";  \"Die Stimme der Vernunft\"; \"Natur und Geist\"; Natural philosophy;  German Faith Movement; Deutsche Glaubensbewegung; Positivism; Vienna Circle";
 br.bookUrl  = '/nuremberg/catalog/nur:02387';
 
 // Override the path used to find UI images

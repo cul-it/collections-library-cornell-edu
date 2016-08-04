@@ -2043,7 +2043,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:borden_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:borden_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2101,7 +2101,7 @@ br.numLeafs = 336;
 br.bookTitle= "The Fall River tragedy. A history of the Borden murders. A plain statement of the material facts pertaining to the most famous crime of the century, including the story of the arrest and preliminary trial of Miss Lizzie A. Borden and a full report of the Superior court trial, with a hitherto unpublished account of the renowned Trickey-McHenry affair, compiled from official sources and profusely illustrated with original engravings. By Edwin H. Porter, police reporter of the Fall River Globe.";
 br.bookAuthor= "Porter, Edwin H.";
 br.bookPub= "Fall River: G. R. H. Buffinton, 1893";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:borden';
 
 // Override the path used to find UI images

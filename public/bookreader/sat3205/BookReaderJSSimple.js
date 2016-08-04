@@ -321,7 +321,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3205_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3205_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -379,7 +379,7 @@ br.numLeafs = 49;
 br.bookTitle= "Poor Mary Stannard! : a full and thrilling story of the circumstances connected with her murder : history of the monstrous Madison crime ...";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New Haven: Stafford Printing Co., 1879";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3205';
 
 // Override the path used to find UI images

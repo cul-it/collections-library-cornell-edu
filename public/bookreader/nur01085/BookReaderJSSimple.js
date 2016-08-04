@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01085_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01085_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "War Crimes Court Procedure Planned / F.C.C., Daily Report, 8 September 1945";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-08";
-br.bookKeyword= "";
+br.bookKeyword= "Soviet Home Service; International War-Criminal Tribunal; Continental trial procedure; Anglo-American trial procedure; Soviet legal procedure; Hitlerites; War criminals; War crimes trial; Defendant's rights";
 br.bookUrl  = '/nuremberg/catalog/nur:01085';
 
 // Override the path used to find UI images

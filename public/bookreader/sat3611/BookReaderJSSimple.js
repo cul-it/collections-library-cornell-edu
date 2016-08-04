@@ -339,7 +339,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3611_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3611_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -397,7 +397,7 @@ br.numLeafs = 52;
 br.bookTitle= "Mystery developed, or, Russell Colvin, (supposed to be murdered,) in full life : and, Stephen and Jesse Boorn, (his convicted murderers,) rescued from ignominious death by wonderful discoveries : containing, I. a narrative of the whole transaction  / by Rev. Lemuel Haynes, A.M. II. Rev. Mr. Haynes' sermon, upon the development of the mystery ; III. a succinct account of the indictment, trial, and conviction of Stephen and Jesse Boorn.";
 br.bookAuthor= "Haynes, Lemuel, 1753-1833.";
 br.bookPub= "Hartford: Published by William S. Marsh (Hartford : R. Storrs, printer), 1820";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3611';
 
 // Override the path used to find UI images

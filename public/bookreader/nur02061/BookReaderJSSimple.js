@@ -105,7 +105,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02061_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02061_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -163,7 +163,7 @@ br.numLeafs = 13;
 br.bookTitle= "Stellung n&#228;hme zu No. I of the indictment before the International Military Tribunal";
 br.bookAuthor= "Fabian von Schlabrendorff";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "German equivalents for the following: International Military Tribunal; Indictment; Crimes Against Peace; War Crimes; Crimes Against Humanity; Criminal organizations; National Socialism; Roehm Purge";
 br.bookUrl  = '/nuremberg/catalog/nur:02061';
 
 // Override the path used to find UI images

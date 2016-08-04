@@ -951,7 +951,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1610_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1610_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1009,7 +1009,7 @@ br.numLeafs = 154;
 br.bookTitle= "Report of the trial of Archibald Hamilton Rowan, Esq. on an information, filed, ex officio, by the attorney general, for the distribution of a libel : with the subsequent proceedings thereon : containing the arguments of counsel, the opinion of the court, and Mr. Rowan's Address to the Court, at Full.";
 br.bookAuthor= "Rowan, Archibald Hamilton, 1751-1834.";
 br.bookPub= "Dublin: Printed for Archibald Hamilton Rowan, Esquire, and sold by O. Byrne., 1794";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1610';
 
 // Override the path used to find UI images

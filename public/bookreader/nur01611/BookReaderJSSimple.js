@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01611_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01611_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Protective Custody (Schutzhaft) / Secret State Police / Branch Office Wuerzburg / Teletype Section / No. 1042 Berlin NUE 2i.288";
-br.bookAuthor= ""Secret State Police Headquarters, IId"";
+br.bookAuthor= "Secret State Police Headquarters, IId";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1939-02-02";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01611';
 
 // Override the path used to find UI images

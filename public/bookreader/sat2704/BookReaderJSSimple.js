@@ -1383,7 +1383,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2704_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2704_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1441,7 +1441,7 @@ br.numLeafs = 226;
 br.bookTitle= "Proceedings of the French National Convention on the trial of Louis XVI, late King of France and Navarre; to which are added several interesting occurrences and particulars attending the treatment, sentence, and execution of the ill-fated monarch; the whole carefully collected from authentic documents, and republished with additions, from the paper of the World. By Joseph Trapp.";
 br.bookAuthor= "Louis XVI, King of France, 1754-1793, defendant.";
 br.bookPub= "London: Printed for the author; sold by Messrs. Murray, Kearsley, and Wenman and [etc.], 1793";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2704';
 
 // Override the path used to find UI images

@@ -471,7 +471,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3204_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3204_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -529,7 +529,7 @@ br.numLeafs = 74;
 br.bookTitle= "View of the system of Anglo-Irish jurisprudence : and of the effects of trial by jury, when individuals consider themselves belonging to a faction, rather than to the community / by Roger O'Connor, who appeals to the people on whom he calls to return their verdict according to evidence.";
 br.bookAuthor= "O'Connor, Roger, 1762-1834.";
 br.bookPub= "London: [s.n.], 1811";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3204';
 
 // Override the path used to find UI images

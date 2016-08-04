@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00980_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00980_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Questions by Colonel Hinkel to the Witness through the Interpreter";
 br.bookAuthor= "Lt. Col. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-19";
-br.bookKeyword= "";
+br.bookKeyword= "Indictment; Due process; Defense counsel";
 br.bookUrl  = '/nuremberg/catalog/nur:00980';
 
 // Override the path used to find UI images

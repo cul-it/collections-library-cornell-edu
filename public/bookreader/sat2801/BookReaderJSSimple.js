@@ -483,7 +483,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2801_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2801_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -541,7 +541,7 @@ br.numLeafs = 76;
 br.bookTitle= "Report of the trial of Henderson : with his confession in jail ; a notice of his farmer life ; and a short memoir of Mr.  Millie.";
 br.bookAuthor= "Henderson, John, 1808?-1830.";
 br.bookPub= "Cupar: Printed and pub. at the Fife Herald Office, 1830";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2801';
 
 // Override the path used to find UI images

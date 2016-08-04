@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01083_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01083_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Analysis of Editorial Opinion on War Trials and Criminals";
 br.bookAuthor= "The author is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-07";
-br.bookKeyword= "";
+br.bookKeyword= "German war criminals; Editorial opinion; Petain trial; Quisling trial; Japanese war criminals; Washington, D.C. Star; Boston, MA Globe; Washington, D.C. Post; Reno, NE Gazette; Columbia, SC State; Little Rock, AR Arkansas Democrat";
 br.bookUrl  = '/nuremberg/catalog/nur:01083';
 
 // Override the path used to find UI images

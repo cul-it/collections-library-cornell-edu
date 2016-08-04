@@ -1431,7 +1431,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3112_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3112_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1489,7 +1489,7 @@ br.numLeafs = 234;
 br.bookTitle= "Superior Court of the city of New York. Catharine N. Forrest, respondent, against Edwin Forrest, appellant : before Justices Bosworth &amp; Woodruff : argument of John Van Buren, for the appellant; January 10th, 11th, 15th, 16th and 29th, 1856 / reported by Roberts and Warburton.";
 br.bookAuthor= "Van Buren, John, 1810-1866.";
 br.bookPub= "New York (No. 113 Fulton Street): Wynkoop, Hallenbeck &amp; Thomas, printers, 1858";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3112';
 
 // Override the path used to find UI images

@@ -249,7 +249,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3702_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3702_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -307,7 +307,7 @@ br.numLeafs = 37;
 br.bookTitle= "Expulsion of the President : opinion of Hon. Charles Sumner, of Massachusetts, in the case of the impeachment of Andrew Johnson, President of the United States.";
 br.bookAuthor= "Sumner, Charles, 1811-1874.";
 br.bookPub= "Washington: Government Printing Office, 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3702';
 
 // Override the path used to find UI images

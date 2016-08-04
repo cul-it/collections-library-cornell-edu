@@ -627,7 +627,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:kf03_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:kf03_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -685,7 +685,7 @@ br.numLeafs = 100;
 br.bookTitle= "Strictures on the case of Ephraim K. Avery : orginally published in the Republican herald, Providence, R. I. With corrections, revisions and additions / by Aristides.";
 br.bookAuthor= "Van Ness, William Peter, 1778-1826.";
 br.bookPub= "Providence: W. Simons, jr.-- Herals Office, 1833";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:kf03';
 
 // Override the path used to find UI images

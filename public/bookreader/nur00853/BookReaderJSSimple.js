@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00853_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00853_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Vernehmung / des fr&#252;heren deutschen Generals der Polizei in Danemark. Guenther Pancke im Kastell. ";
 br.bookAuthor= "The interrogator's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-14";
-br.bookKeyword= "";
+br.bookKeyword= "German police; Gestapo; RSHA; Reich Plenipotentiary; Denmark; Sabotage; Constabularies; ORPO; Danish police; Nazi hierarchy; Chain of command; Command structure; Security police";
 br.bookUrl  = '/nuremberg/catalog/nur:00853';
 
 // Override the path used to find UI images

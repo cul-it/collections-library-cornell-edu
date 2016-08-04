@@ -495,7 +495,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2603_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2603_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -553,7 +553,7 @@ br.numLeafs = 78;
 br.bookTitle= "A certified report of the investigation of the case of Rev. Garret J. Garretson ... before the Classis of Geneva, in extra session at Lodi, April 27, 1853, relative to a charge of immoral conduct; together with the proceedings of the civil courts in the same case ...";
 br.bookAuthor= "Garretson, Garret J., defendant.";
 br.bookPub= "New York: [n.p.], 1853";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2603';
 
 // Override the path used to find UI images

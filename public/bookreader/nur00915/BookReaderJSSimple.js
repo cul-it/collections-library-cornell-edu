@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00915_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00915_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Witness: Jodl / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Document Room Interrogation Analysis";
 br.bookAuthor= "Lt Colonel Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-27";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Preparations for war; Versailles treaty; German territorial expansion; German colonies; Lebensraum";
 br.bookUrl  = '/nuremberg/catalog/nur:00915';
 
 // Override the path used to find UI images

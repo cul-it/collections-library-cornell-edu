@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01715_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01715_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "NSDAP / The Management of the Foreign Organization (A.O.) / Department for Foreign Commerce / Exhibit C";
 br.bookAuthor= "G. Christians; Overhoff; Bayer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-01-10";
-br.bookKeyword= "";
+br.bookKeyword= "German Foreign Organization; A.O.; Argentina; German business interests; German firms; LG. Farben";
 br.bookUrl  = '/nuremberg/catalog/nur:01715';
 
 // Override the path used to find UI images

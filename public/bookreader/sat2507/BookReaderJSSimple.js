@@ -273,7 +273,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2507_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2507_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -331,7 +331,7 @@ br.numLeafs = 41;
 br.bookTitle= "Important and interesting trial of Mortimer J. Smith : on an indictment for libel on Miss Emma Williams : for having connected her name with the separation of David Groesbeck, (the New York Wall Street broker,) from his wife, in the Albany County Court of Sessions, Dec. 16, 1847.";
 br.bookAuthor= "Smith, Mortimer J., defendant.";
 br.bookPub= "New York: [s.n.], 1870";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2507';
 
 // Override the path used to find UI images

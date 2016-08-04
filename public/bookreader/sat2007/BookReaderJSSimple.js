@@ -471,7 +471,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2007_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2007_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -529,7 +529,7 @@ br.numLeafs = 74;
 br.bookTitle= "A vindication of the result of the trial of Rev. Ephraim K. Avery : to which is prefixed his statement of facts relative to the circumstances by which he became involved in the prosecution / [T. Merritt, J.A. Merrill, W. Fisk]";
 br.bookAuthor= "Merritt, Timothy, 1775-1845.";
 br.bookPub= "Boston:  Russell, Odiorne, 1834";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2007';
 
 // Override the path used to find UI images

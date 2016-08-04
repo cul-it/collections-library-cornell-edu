@@ -771,7 +771,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3715_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3715_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -829,7 +829,7 @@ br.numLeafs = 124;
 br.bookTitle= "Argument of Hon. Edwards Pierrepont to the jury, on the trial of John H. Surratt for the murder of President Lincoln.";
 br.bookAuthor= "Pierrepont, Edwards, 1817-1892.";
 br.bookPub= "Washington: Govt. print. off., 1867";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3715';
 
 // Override the path used to find UI images

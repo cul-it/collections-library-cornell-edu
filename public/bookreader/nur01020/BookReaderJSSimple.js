@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01020_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01020_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 10;
 br.bookTitle= "Hitler [indecipherable] receive Goering";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Hitler's inner circle; Goering's arrest; Hess's flight to England";
 br.bookUrl  = '/nuremberg/catalog/nur:01020';
 
 // Override the path used to find UI images

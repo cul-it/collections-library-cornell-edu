@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00643_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00643_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 1;
 br.bookTitle= "Erkl&#228;rung / Affidavit No.6 ";
 br.bookAuthor= "Franz Haider";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-13";
-br.bookKeyword= "";
+br.bookKeyword= "OKW; Wehrmachtfiihrungsstabes; Generalstab";
 br.bookUrl  = '/nuremberg/catalog/nur:00643';
 
 // Override the path used to find UI images

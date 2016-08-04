@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02188_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02188_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum For: Trial Counsel Section Chiefs / Subject: Outline of Trial Plan for Week Beginning 26 November 1945 / Office of U.S. Chief of Counsel / APO 403 - U.S. Army";
 br.bookAuthor= "Robert G. Storey / U.S. Executive Trial Counsel, / Chairman, Planning Committee";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-26";
-br.bookKeyword= "";
+br.bookKeyword= "Trial; Prosecution strategy; Presentation of the case; Documentary evidence; Aggressive war; Concentration camp film; Persecution of Jews; Nazi High Command; Criminal Organizations; Persecution of Churches; Looting of art treasures; Reich Cabinet; SA; SS; Gestapo; SD";
 br.bookUrl  = '/nuremberg/catalog/nur:02188';
 
 // Override the path used to find UI images

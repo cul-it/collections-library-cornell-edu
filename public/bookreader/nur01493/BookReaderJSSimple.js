@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01493_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01493_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Brief of Interrogation of Sperrle / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Lt. (jg) J.B. Martin";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-29";
-br.bookKeyword= "";
+br.bookKeyword= "Battle of Britain; Luftwaffe; Air war; Austria; Czechoslovakia; Poland; Anschluss; Berchtesgaden meeting; War crimes; Reprisals; Attacks on civilian populations";
 br.bookUrl  = '/nuremberg/catalog/nur:01493';
 
 // Override the path used to find UI images

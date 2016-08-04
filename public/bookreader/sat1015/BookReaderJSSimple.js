@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1015_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1015_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -466,10 +466,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 64;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "A refutation of certain calumnies published in a pamphlet entitled, ""Correspondence between Mr. Granville Sharp[e] Pattison and Dr. Nathaniel Chapman."" / By Granville Sharp Pattison, esq. ...";
+br.bookTitle= "A refutation of certain calumnies published in a pamphlet entitled, 'Correspondence between Mr. Granville Sharp[e] Pattison and Dr. Nathaniel Chapman.' / By Granville Sharp Pattison, esq. ...";
 br.bookAuthor= "Pattison, Granville Sharp, 1791-1851.";
 br.bookPub= "Baltimore: Printed by J. Robinson, 1820";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1015';
 
 // Override the path used to find UI images

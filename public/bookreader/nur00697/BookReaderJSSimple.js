@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00697_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00697_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Violations of Treaties, Agreements and Assurances";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, None";
-br.bookKeyword= "";
+br.bookKeyword= "Rhineland; Austria; Czechoslovakia; Memel; Danzig; Poland; Norway; Denmark; Belgium; Luxembourg; Yugoslavia; Greece; Netherlands; USSR; United States; Hague Conventions; Versailles Treaty; Treaty of Berlin; Locarno Pacts; Kellogg-Briand Treaty; Non-Aggression Pacts or Agreements; Munich Agreement; Assurances";
 br.bookUrl  = '/nuremberg/catalog/nur:00697';
 
 // Override the path used to find UI images

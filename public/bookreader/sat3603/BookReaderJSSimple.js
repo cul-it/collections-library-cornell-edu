@@ -531,7 +531,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3603_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3603_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -589,7 +589,7 @@ br.numLeafs = 84;
 br.bookTitle= "The Walworth parricide in New York : being a full, impartial, and thrilling account of that horrible tragedy : together with the true causes of the awful deed and statements of both sides.";
 br.bookAuthor= "Bradshaw, Wesley, 1837-1927.";
 br.bookPub= "Philadelphia, Pa.: Old Franklin Pub. House, 1873";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3603';
 
 // Override the path used to find UI images

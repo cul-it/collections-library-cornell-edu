@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01522_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01522_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Printed letter by the Journalist Franz Szell to Alfred Rosenberg / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Staff Evidence Analysis";
 br.bookAuthor= "Sch&#228;fer is the analyst.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-22";
-br.bookKeyword= "";
+br.bookKeyword= "Atrocities against civilians; Nazi ideology; Persecution of Jews; Preparations to wage aggressive war; Psychological warfare; Persecution of Christian Churches; Voelkischer Beobachter: Documentary evidence";
 br.bookUrl  = '/nuremberg/catalog/nur:01522';
 
 // Override the path used to find UI images

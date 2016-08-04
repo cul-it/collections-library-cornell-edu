@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00580_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00580_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Mein Kamfp' [sic: Kampf] by Adolf Hitler / 41* Edition 1933 Verlag Franz Eher Nachfolger G.m.b.H. / Muenchen.  Partial Translation of Document No. 2760-A-PS / Office of U. S. Chief [sic] of Counsel";
 br.bookAuthor= "Hitler; the translator is Willard E. Skidmore, Lt. (jg), USNR, 391590.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "Territorial policy; Fighting spirit; Mein Kampf";
 br.bookUrl  = '/nuremberg/catalog/nur:00580';
 
 // Override the path used to find UI images

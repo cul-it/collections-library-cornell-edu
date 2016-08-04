@@ -987,7 +987,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3203_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3203_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1045,7 +1045,7 @@ br.numLeafs = 160;
 br.bookTitle= "An account of the trial of Thomas Muir, esq. younger, of Huntershill, before the High Court of Justiciary, at Edinburgh.  On the 30th and 31st days of August, 1793, for sedition.";
 br.bookAuthor= "Muir, Thomas, 1765-1798, defendant.";
 br.bookPub= "Edinburgh; London: J. Robertson [etc.]; J. Ridgeway, 1793";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3203';
 
 // Override the path used to find UI images

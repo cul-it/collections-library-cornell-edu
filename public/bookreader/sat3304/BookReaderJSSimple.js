@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3304_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3304_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -469,7 +469,7 @@ br.numLeafs = 64;
 br.bookTitle= "Manchester meeting, sixteenth of August, 1819 : a report of the trial, Redford against Birley and others for an assault on the sixteenth of August, 1819, before Mr. Justice Holroyd and a special jury, at the Lancaster Spring assizes, 1822 ; taken in court";
 br.bookAuthor= "Birley, Hugh Hornby, d. 1845, defendant.";
 br.bookPub= "Manchester: Printed by J. Harrop at the Mercury and British Volunteer Office, 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3304';
 
 // Override the path used to find UI images

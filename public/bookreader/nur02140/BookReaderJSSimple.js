@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02140_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02140_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum: / To: Colonel H. J. Gill / Subject: Transfer of British prisoner of war Lt. Col. Dr. Freiherr von der Heydte to Nurnberg to act as counsel for certain prisoners";
 br.bookAuthor= "Captain Otto N. Nordon";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-30";
-br.bookKeyword= "";
+br.bookKeyword= "Witnesses; Prosecution strategy; Defense counsel; Defendants; OSS";
 br.bookUrl  = '/nuremberg/catalog/nur:02140';
 
 // Override the path used to find UI images

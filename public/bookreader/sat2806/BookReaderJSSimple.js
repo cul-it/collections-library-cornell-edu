@@ -831,7 +831,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2806_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2806_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -889,7 +889,7 @@ br.numLeafs = 134;
 br.bookTitle= "The trial for murder of James E. Eldredge : convicted of poisoning Sarah Jane Gould, embracing the speeches of counsel for the prosecution and defence, the evidence, the charge of the judge, and sentence of the prisoner, carefully compiled from original notes of the district attorney, and the presiding judge : special term of St. Lawrence county Oyer and terminer, held at Canton, N.Y., December, 1857.";
 br.bookAuthor= "Eldredge, James E., defendant.";
 br.bookPub= "Ogdensburgh, N.Y.: Hitchcock, Tillotson &amp; Stilwell's Steam Presses, 1857";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2806';
 
 // Override the path used to find UI images

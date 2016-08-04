@@ -309,7 +309,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1601_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1601_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -367,7 +367,7 @@ br.numLeafs = 47;
 br.bookTitle= "A Collection of plain authentic documents, in justification of the conduct of Governor Ainslie : in the reduction of a most formidable rebellion among the Negro slaves in the island of Dominica, at a crisis of the most imminent danger to the lives and properties of the inhabitants.";
 br.bookAuthor= "Ainslie, George Robert, 1776-1839.";
 br.bookPub= "London: London : Printed by C. Lowndes, Marquis Court, Drury Lane, 1815";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1601';
 
 // Override the path used to find UI images

@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00651_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00651_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "My Position in the OKW from Sept. 1938 until Sept. 1944 ";
 br.bookAuthor= "Walter Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-21";
-br.bookKeyword= "";
+br.bookKeyword= "OKW; German General Staff; German High Command; Czechoslovakia; Poland; Warlimont's career; Hitler's Inner Circle";
 br.bookUrl  = '/nuremberg/catalog/nur:00651';
 
 // Override the path used to find UI images

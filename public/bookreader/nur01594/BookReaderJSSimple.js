@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01594_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01594_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "In connection with the recent spontaneous defense measures ... / Secret State Police / Branch Office Wurzburg / Teletype Section / Nr. 14564 RKPA. Berlin FS Nr. 175";
 br.bookAuthor= "Nebe";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-14";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01594';
 
 // Override the path used to find UI images

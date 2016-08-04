@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02024_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02024_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 20;
 br.bookTitle= "War Crimes Photographic Project / Office of Strategic Services / Field Photographic Branch / APO 413";
 br.bookAuthor= "Lt. (jg) S. W. Schulberg, USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-11";
-br.bookKeyword= "";
+br.bookKeyword= "German newsreels; German documentary and propaganda films; Films of German atrocities; German entertainment films; German still pictures; German phonograph records; Fox Movietone News; Paramount News; OSS film library; Wochenschauen (German News Reel); Crown Film Unit (British); Gaufilmstelle of the NSDAP; Hauptampt-Schulungsamt, Reichsfuehrer-SS; AFIFA films: The Triumph of the Will; Leadership principle; SA; SS; Hitler Jugend; Museum of Modern Art; The Victory of Faith: The Day of Freedom: The Campaign in Poland: Alien Property Custodian; OKW; Baptism of Fire: Victory in the West: Echo of the Homeland: Argentina: The Eternal Jew: The German Army: Westwall: Organization Todt; Babelsberg film vault; Ruedersdorf film archive; Wehrmacht Motion Picture Library; Reich Film Archive; Bavaria Film Studio; Atrocity film (U.S. Army Signal Corps); Oradour-Sur-Glane; Maidenak; Kharkov Trial; Mauthausen extermination camp";
 br.bookUrl  = '/nuremberg/catalog/nur:02024';
 
 // Override the path used to find UI images

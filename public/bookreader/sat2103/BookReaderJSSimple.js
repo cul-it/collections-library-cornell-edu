@@ -201,7 +201,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2103_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2103_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -259,7 +259,7 @@ br.numLeafs = 29;
 br.bookTitle= "Trial of John Doeke Romney Rouvellet esq. of the Island of St. Christopher, for forgery ... also of Elizabeth Barnet for felony ... and of William Vernon Dorant...for perjury... / John Doeke Romney Rouvellet.";
 br.bookAuthor= "Rouvellet, John Doeke Romney.";
 br.bookPub= "London: J. Day, 1806";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2103';
 
 // Override the path used to find UI images

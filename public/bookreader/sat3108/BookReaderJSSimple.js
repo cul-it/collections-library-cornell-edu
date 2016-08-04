@@ -303,7 +303,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3108_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3108_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -361,7 +361,7 @@ br.numLeafs = 46;
 br.bookTitle= "Review, opinions, &amp;c., of Dr. Charles A. Lee, and others, of the testimony of Drs. Salisbury and Swinburne, on the trial of John Hendrickson, Jr., for the murder of his wife, by poisoning.";
 br.bookAuthor= "Hendrickson, John, 1832-1854.";
 br.bookPub= "New York: [s.n.], 1855";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3108';
 
 // Override the path used to find UI images

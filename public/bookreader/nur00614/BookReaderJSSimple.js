@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00614_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00614_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Transcript of interrogation of Alfred Jodl, 30 August 1945, page 2.) ";
 br.bookAuthor= "The translator is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-30";
-br.bookKeyword= "";
+br.bookKeyword= "Jodl; OKW";
 br.bookUrl  = '/nuremberg/catalog/nur:00614';
 
 // Override the path used to find UI images

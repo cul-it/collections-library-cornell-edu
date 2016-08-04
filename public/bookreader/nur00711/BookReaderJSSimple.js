@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00711_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00711_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Report of Interrogation: No. 5815 of/ P/W: von Raumer, Hermann / Rank: Lt. Col./ SECRET ";
 br.bookAuthor= "Captain Halle is the interrogation officer.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-11";
-br.bookKeyword= "";
+br.bookKeyword= "German foreign affairs; German Air Force attache group; German attaches; Japanese attaches; Anti-Comintern Pact; German air force; Japanese air force";
 br.bookUrl  = '/nuremberg/catalog/nur:00711';
 
 // Override the path used to find UI images

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01236_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01236_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum for the Board of Review / Thru: Colonel Howard A. Brundage / Subject: Trial Brief, Franz von Papen";
 br.bookAuthor= "Norman A. Stoll / Captain, JAGD / Section 5";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-12";
-br.bookKeyword= "";
+br.bookKeyword= "Aggressive war; Preparations for war; Plebiscite; Nazi seizure of power; Chancellorship; Austria; Nazi Party";
 br.bookUrl  = '/nuremberg/catalog/nur:01236';
 
 // Override the path used to find UI images

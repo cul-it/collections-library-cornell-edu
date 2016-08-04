@@ -459,7 +459,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00766_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00766_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -517,7 +517,7 @@ br.numLeafs = 70;
 br.bookTitle= "War Crimes and Crimes Against Humanity / Part V / Persecution of the Jews";
 br.bookAuthor= "Lt. (jg) Brady 0. Bryson; Lt. Frederick L. Felton; T/SGT Issac Stone; Hans A. Nathan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against humanity; War crimes; Crimes against peace; Persecution of Jews; Jewish Question; Jewish Problem; Civil rights; Propaganda; Religious persecution; Cultural persecution; Economic persecution; 1933 Boycott; Boycott Manifesto; Spontaneous violence; Pogroms; Ghettos; Ghettoization; Occupied Poland; Lublin; Warsaw; Lodz; Cracow; Theresionstadt; Galicia; Starvation; Transports; Deportations; Executions; Einsatzgruppen; Mass murder; Torture; Gassing; Special treatment; Sonderbehandlung; Concentration camps; Labor camps; Death camps; Extermination camps; Buchenwald; Dora; Mauthausen; Auschwitz; Majdanek; Treblinka; Birkenau; Dachau; Slave labor; Enforced labor; Reich Cabinet; Gestapo; NSDAP; SA; SD; SS; SIPO; RSHA; Nazi racial policy; Mein Kampf; Voelkischer Beobachter; Der Stuermer; Sondernummer; Das Schwarze Korps";
 br.bookUrl  = '/nuremberg/catalog/nur:00766';
 
 // Override the path used to find UI images

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3809_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3809_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "A true copy of the dying words of Mr. Stephen Colledge : left in writing under his own hand and confirmed by him at the time of execution, August 31, 1681, at Oxford. / Published by his own relations.";
 br.bookAuthor= "Colledge, Stephen, 1635?-1681.";
 br.bookPub= "London: Printed for Edith Colledge, 1681";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3809';
 
 // Override the path used to find UI images

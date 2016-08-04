@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00796_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00796_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Brief of Interrogation of von Falkenhausen / Office of The U.S. Chief of Counsel / APO 403, U.S., Army / Interrogation Division";
 br.bookAuthor= "Major J. J. Monigan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-29";
-br.bookKeyword= "";
+br.bookKeyword= "Foreign labor; Belgium workers; Conscription of labor; Labor quotas";
 br.bookUrl  = '/nuremberg/catalog/nur:00796';
 
 // Override the path used to find UI images

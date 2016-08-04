@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01505_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01505_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "NSDAP / Reich Government Agencies / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Document Room Interrogation Analysis";
 br.bookAuthor= "Lt. Col. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-18";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi Party; Frank's career; Bavarian Minister of Justice; Academy for German Law; Reich Ministry of Justice; Reich Commissar; Governor General of Poland; SA";
 br.bookUrl  = '/nuremberg/catalog/nur:01505';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01177_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01177_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Statement of Wilhelm Keitel, 19 October, 1945 / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division";
 br.bookAuthor= "Mr. Dodd";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-22";
-br.bookKeyword= "";
+br.bookKeyword= "Atrocities against civilians; Atrocities against military personnel; War crimes; Crimes against humanity; Geneva Convention; USSR; Partisans";
 br.bookUrl  = '/nuremberg/catalog/nur:01177';
 
 // Override the path used to find UI images

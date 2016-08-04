@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00429_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00429_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Interrogation  of Schacht by Capt. Nordon and Dr. von Schlabrendorff-31 October 1945 ";
 br.bookAuthor= "Based on internal evidence, Captain Nordon seems to be the  author of this summary account.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-31";
-br.bookKeyword= "";
+br.bookKeyword= "Versailles Treaty; German rearmament; German foreign  policy; Naval Treaty with Britain; 'Mission to Moscow'; Roosevelt  letter; Schacht's Kasette; Fritsch affair; Reichstag fire; Assistance to  Jews; Schacht's defense; Treatment in prison; Defense counsel";
 br.bookUrl  = '/nuremberg/catalog/nur:00429';
 
 // Override the path used to find UI images

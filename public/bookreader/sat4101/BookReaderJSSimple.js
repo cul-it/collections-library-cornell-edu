@@ -417,7 +417,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4101_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4101_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -475,7 +475,7 @@ br.numLeafs = 65;
 br.bookTitle= "An account of the life and transactions of William Gadesby : from the age of seventeen to twenty-eight, when he was brought to trial ... and received sentence of death ... / written by himself, when in prison ; to which is added, an appendix, concerning his confession of having robbed the Dundee bank, the whole containing a narrative of the most extraordinary and unexampled depravity ...";
 br.bookAuthor= "Gadesby, William, 1762 or 3-1791.";
 br.bookPub= "Edinburgh; Glasgow: Printed for William Creech, and sold by Dunlop and Wilson, R. Nicol, Dundee, Angus and Son, and A. Brown, Aberdeen, 1791";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4101';
 
 // Override the path used to find UI images

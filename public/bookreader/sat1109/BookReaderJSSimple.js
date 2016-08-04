@@ -819,7 +819,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1109_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1109_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -877,7 +877,7 @@ br.numLeafs = 132;
 br.bookTitle= "The confession of Jereboam Beauchamp (written by himself) who was executed at Frankfort, Ky., for the murder of Col. Solomon P. Sharp, a member of the legislature, and late attorney-general of Ky. To which is added some poetical pieces written by Mrs. Ann Beauchamp, who voluntarily put a period to her existence on the day of the execution of her husband, and was buried in the same grave with him";
 br.bookAuthor= "Beauchamp, Jereboam O., 1802-1826.";
 br.bookPub= "Kentucky: H.T. Goodsell, 1854";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1109';
 
 // Override the path used to find UI images

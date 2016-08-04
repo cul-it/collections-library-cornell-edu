@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00813_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00813_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Report of Interrogation: No. 5744 of PAV: 3WG-1293 / Rank: Ambassador at large / SECRET";
 br.bookAuthor= "The interrogation officer is Captain Halle.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-06";
-br.bookKeyword= "";
+br.bookKeyword= "Vichy; Alsace; Lorraine; Peace plan; Armistice; Great German State; German-French relations; Armistice";
 br.bookUrl  = '/nuremberg/catalog/nur:00813';
 
 // Override the path used to find UI images

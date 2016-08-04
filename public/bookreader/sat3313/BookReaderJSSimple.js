@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3313_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3313_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Life and confession of Mary Runkle : who was condemned and sentenced to be executed at Witesboro, Oneida Co., N.Y. on the 9th day of November 1847 for the murder of her husband, John Runkle.";
 br.bookAuthor= "Runkle, Mary, d1847.";
 br.bookPub= "Troy, N.Y.: Steam press of J.C. Kneeland and co., vi Cannon Place., 1847";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3313';
 
 // Override the path used to find UI images

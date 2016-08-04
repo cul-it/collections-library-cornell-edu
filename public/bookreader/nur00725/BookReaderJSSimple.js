@@ -423,7 +423,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00725_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00725_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -481,7 +481,7 @@ br.numLeafs = 66;
 br.bookTitle= "The Slave Labor Program, The Illegal Use of Prisoners of War, and The Special Responsibility of Defendants Sauckel and Speer Therefor. ";
 br.bookAuthor= "Harriet Zetterberg; Thomas L. Karsten; Lt., USNR; James H. Mathias, Captain, JAGD; Bernard D. Meltzer, Lt. (jg) USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-11";
-br.bookKeyword= "";
+br.bookKeyword= "Slave labor; Prisoners of war; Foreign civilians; Occupied countries; Deportation; Confiscation; Eastern workers; Concentration camps; Mauthausen; Armament industry; Extermination; Four Year Plan; Organization Todt; OT; Crimes against humanity; Master race; Nazi racial theory; Poland; SS; Russia; Soviet citizens; Russian civilians; Russian POWs; Food rations; Infectious disease; Polish workers; French workers; Belgian workers; Dutch workers; German war economy; Atlantic Wall; Concentration camp labor";
 br.bookUrl  = '/nuremberg/catalog/nur:00725';
 
 // Override the path used to find UI images

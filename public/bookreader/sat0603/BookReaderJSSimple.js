@@ -753,7 +753,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0603_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0603_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -811,7 +811,7 @@ br.numLeafs = 121;
 br.bookTitle= "Summing up of John Graham, Esq., to the jury, on the part of the defence, on the trial of William M. Tweed, in the court of oyer and terminer of the county of New York / John Graham.";
 br.bookAuthor= "Graham, John, 1821-1894.";
 br.bookPub= "New York: Poole &amp; Maclauchla, printers, 1873";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0603';
 
 // Override the path used to find UI images

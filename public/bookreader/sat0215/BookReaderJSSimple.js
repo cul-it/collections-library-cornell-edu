@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0215_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0215_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "The confession of Jesse Strang, : who was executed at Albany, August 24, 1827, for the murder of John Whipple.";
 br.bookAuthor= "Strang, Jesse, 1797-1827.";
 br.bookPub= "Albany: Printed for the publisher., 1827";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0215';
 
 // Override the path used to find UI images

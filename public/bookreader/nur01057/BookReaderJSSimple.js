@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01057_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01057_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 2;
 br.bookTitle= "Auf Befehl des CIC gebe ich Folgendes zu Protokoll";
 br.bookAuthor= "Signature is indecipherable";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-09";
-br.bookKeyword= "";
+br.bookKeyword= "Goering's biography; Goering's brother; German document";
 br.bookUrl  = '/nuremberg/catalog/nur:01057';
 
 // Override the path used to find UI images

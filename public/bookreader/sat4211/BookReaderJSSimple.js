@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4211_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4211_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "The protest and appeal of George Washington Doane, Bishop of New Jersey : as aggrieved, by William Meade, George Burgess, and Charles Pettit McIlvaine : and his reply to the false, calumnious, and malignant representations of William Halsted, Caleb Perkins, Peter V. Coppuck, and Bennington Gill : on which they ground their uncanonical, unchristian and inhuman procedure, in regard to him";
 br.bookAuthor= "Doane, George Washington, 1799-1859.";
 br.bookPub= "Philadelphia, Pa.: King &amp; Baird, 1852";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4211';
 
 // Override the path used to find UI images

@@ -297,7 +297,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00682_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00682_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -355,7 +355,7 @@ br.numLeafs = 45;
 br.bookTitle= "Preliminary Brief on 'The Economic Case' / Office of U.S. Chief of Counsel / APO 403 / U.S. Army / Documentation Division";
 br.bookAuthor= "Lt. 0. H. Korican";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-17";
-br.bookKeyword= "";
+br.bookKeyword= "Economic conspiracy; War economy; Reichsbank; MEFO bills; \"Devisen\" law; Foreign trade; Foreign exchange; Foreign debts; \"New Plan\"; Skilled labor; Four-Year Plan; Reich Defense Act; Price and Wage stabilization; Synthetic raw materials; Naval blockade; German economic hegemony; Monetary exchange; Commodity exchange";
 br.bookUrl  = '/nuremberg/catalog/nur:00682';
 
 // Override the path used to find UI images

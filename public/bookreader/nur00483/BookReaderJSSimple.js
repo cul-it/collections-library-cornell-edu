@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00483_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00483_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 5;
 br.bookTitle= "Treatment  to be inflicted to Commandos  ; Enclosure  No. 1 to note of the Panzer Armee Oberkommando   / Copy of a Copy / TOP  SECRET; Treatment  of members of the Commandos   / TOP SECRET / Copy";
 br.bookAuthor= "The signatures are noted as being illegible on the  original documents.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-10-10";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against military personnel; Commando  order; Document distribution; Geneva Conventions; Execution of prisoners;  Saboteurs; Terrorists; SD";
 br.bookUrl  = '/nuremberg/catalog/nur:00483';
 
 // Override the path used to find UI images

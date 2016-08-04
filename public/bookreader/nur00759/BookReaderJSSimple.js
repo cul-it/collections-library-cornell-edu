@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00759_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00759_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Brief of Interrogation of General Adolf Westhoff / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Operations Section / Interrogation Division  ";
 br.bookAuthor= "Colonel Curtis L. Williams, IGD.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-05";
-br.bookKeyword= "";
+br.bookKeyword= "POW camps; Luftwaffe camps; Navy camps; OKW; KGW; Prisoners of war; Executions; Geneva Convention; Gestapo; SD";
 br.bookUrl  = '/nuremberg/catalog/nur:00759';
 
 // Override the path used to find UI images

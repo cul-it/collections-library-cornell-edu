@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00778_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00778_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -139,7 +139,7 @@ br.numLeafs = 9;
 br.bookTitle= "Information. / Herbert M. Ritter, Kaufmann in M&#252;nchen  ";
 br.bookAuthor= "Herbert M. Ritter";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-16";
-br.bookKeyword= "";
+br.bookKeyword= "Confiscation of art; War crimes; Fuschel Castle; Artwork; Art auctions; Karinhall";
 br.bookUrl  = '/nuremberg/catalog/nur:00778';
 
 // Override the path used to find UI images

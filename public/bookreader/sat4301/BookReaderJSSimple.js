@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4301_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4301_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "A full and accurate report of the trial of William Cobbett, Esq. : before Lord Tenterden and a special jury, on Thursday, July 7, 1831, in the Court of King's Bench, Guildhall.";
 br.bookAuthor= "Cobbett, William, 1763-1835.";
 br.bookPub= "London: W. Strange, 1831";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4301';
 
 // Override the path used to find UI images

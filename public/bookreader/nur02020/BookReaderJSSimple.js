@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02020_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02020_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "Memorandum / To: All Staff Officers /From: Pfc LeVern W. Cutler, Librarian / Subject: Revision of Target List / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality 'Target List' of German Publications Needed in Preparation of Trial for Major Axis Criminals / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality Supplement to Target List of 21 September, 1945";
 br.bookAuthor= "Pfc. LeVern W. Cutler (memo); Robert G. Storey (Target List); the author of the supplement is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-21";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes trials; German-language publication; OCC library; Target List";
 br.bookUrl  = '/nuremberg/catalog/nur:02020';
 
 // Override the path used to find UI images

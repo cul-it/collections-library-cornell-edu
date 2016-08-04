@@ -189,7 +189,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01000_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01000_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -247,7 +247,7 @@ br.numLeafs = 25;
 br.bookTitle= "O.C.C. Trial Brief/ Section 5 / Hermann Goring, II, Economic";
 br.bookAuthor= "Lt. Otto K. Kerican";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Preparations to wage aggressive war; Four Year Plan; Economic spoliation; Raw materials; Foodstuffs; Poland; Russia; Unoccupied France; Black market; Occupied territories; Forced labor; Slave labor; Polish workers; Art; Artworks; Ministerial Council for Reich Defense; Armaments program; German economic hegemony; Armistice treaty; SS; Gestapo; Einsatzstab Rosenberg; Economic case";
 br.bookUrl  = '/nuremberg/catalog/nur:01000';
 
 // Override the path used to find UI images

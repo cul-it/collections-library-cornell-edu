@@ -183,7 +183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3107_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3107_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -241,7 +241,7 @@ br.numLeafs = 26;
 br.bookTitle= "Life and confession of Sophia Hamilton, who was tried, condemned and sentenced to be hung, at Montreal, L.C., on the 25th of November, 1844, for the perpetration of the most shocking murders and daring robberies perhaps recorded in the annals of crime / carefully selected by the author, William H. Jackson.";
 br.bookAuthor= "Jackson, Bill (William H.)";
 br.bookPub= "New York: Printed for the publisher, 1844";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3107';
 
 // Override the path used to find UI images

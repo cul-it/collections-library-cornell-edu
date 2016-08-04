@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01256_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01256_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "Gestapo Personalities / SECRET / Appendix";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Gestapo; SS title";
 br.bookUrl  = '/nuremberg/catalog/nur:01256';
 
 // Override the path used to find UI images

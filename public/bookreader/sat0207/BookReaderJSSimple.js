@@ -555,7 +555,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0207_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0207_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -613,7 +613,7 @@ br.numLeafs = 83;
 br.bookTitle= "The Dansville poisoning case.";
 br.bookAuthor= "Wood, Isaac L., 1820-1858, defendant.";
 br.bookPub= "Dansville [N.Y.]: George A. Sanders, Herald buildings, Main Street, 1858";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0207';
 
 // Override the path used to find UI images

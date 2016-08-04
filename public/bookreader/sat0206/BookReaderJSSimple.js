@@ -99,7 +99,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0206_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0206_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -157,7 +157,7 @@ br.numLeafs = 12;
 br.bookTitle= "The Confession of Mary Cole, who was executed ... for the murder of Agnes Teaurs, her mother.";
 br.bookAuthor= "Cole, Mary";
 br.bookPub= "New York: Printed for the purchasers, 1813";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0206';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01866_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01866_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -101,9 +101,9 @@ br.numLeafs = 3;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "List of Documents and Exhibits Received January 8, 1940 [sic: 1946] / International Military Tribunal";
-br.bookAuthor= ""Submitted by Colonel Wheeler / "Submitted by Mr. Albrecht" / "Submitted by Sir David Maxwell-Fyfe"";
+br.bookAuthor= "Submitted by Colonel Wheeler / Submitted by Mr. Albrecht / Submitted by Sir David Maxwell-Fyfe";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01866';
 
 // Override the path used to find UI images

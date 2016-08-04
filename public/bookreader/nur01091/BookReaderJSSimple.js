@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01091_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01091_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Incoming Telegram / #525, Eleventh / Helsinki / All papers eleventh Allied Control Commission in Finland declares statements ... that Finnish Government's War Responsibility Bill could not therefore rest on armistice agreement are formally and factually wrong, / Division of Central Services Telegraph Section";
 br.bookAuthor= "Hulley";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-11";
-br.bookKeyword= "";
+br.bookKeyword= "War criminals; Finland; Armistice agreement; Helsingin Sanomat; War Responsibility Bill; Finnish Supreme Court; Diet Constitutional Law Committee";
 br.bookUrl  = '/nuremberg/catalog/nur:01091';
 
 // Override the path used to find UI images

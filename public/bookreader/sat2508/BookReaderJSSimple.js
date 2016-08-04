@@ -381,7 +381,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2508_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2508_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -439,7 +439,7 @@ br.numLeafs = 59;
 br.bookTitle= "The whole of the proceedings : duly authenticated, in the case of divorce of Andrew Ure, M.D. v. Catharine Ure, for adultery with Granville Sharpe Pattison : tried in the Consistory Court at Edinburgh on the 30th of January, 1819.";
 br.bookAuthor= "Ure, Andrew, 1778-1857, plaintiff.";
 br.bookPub= "Philadelphia: W. Fry, Printer, 1821";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2508';
 
 // Override the path used to find UI images

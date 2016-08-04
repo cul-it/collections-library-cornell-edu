@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01657_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01657_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Ohletz Interment Notice / Seine Section Disciplinary Training Center / Communications Zone, European Theater of Operations / APO 887 / U.S. Army";
 br.bookAuthor= "Walter B. Bradley";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-10-07";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01657';
 
 // Override the path used to find UI images

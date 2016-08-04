@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01188_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01188_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Memorandum / To: Lt. Comdr. James O'Malley. Jr. / From: John W. Jackson / Subject: Interrogation of Edmund von Thermann / SECRET";
 br.bookAuthor= "John W. Jackson";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-01";
-br.bookKeyword= "";
+br.bookKeyword= "Argentina; Auslands Organization; Auslandsorganisation; German Foreign Office; German foreign policy; German industry; German business leaders; Preparations for aggressive war";
 br.bookUrl  = '/nuremberg/catalog/nur:01188';
 
 // Override the path used to find UI images

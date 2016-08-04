@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01551_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01551_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Arrest Action against Jews / Secret State Police / Branch Office Wuerzburg / Teletype Section / No. 15011 MUNICH No. 49 336";
 br.bookAuthor= "The author of the order is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-28";
-br.bookKeyword= "";
+br.bookKeyword= "Persecution of Jews; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:01551';
 
 // Override the path used to find UI images

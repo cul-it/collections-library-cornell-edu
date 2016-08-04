@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00467_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00467_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Flash Berlin NUE 243850: To all HQ of State Police and all HQ Security Services, Main or Subordinate Branches.";
 br.bookAuthor= "Muller";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Protest demonstrations; Arrests; Transfers; Concentration  camps; State Police; Pogroms, Persecution of Jews; Crimes against humanity;  Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:00467';
 
 // Override the path used to find UI images

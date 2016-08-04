@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01203_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01203_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "N.S.D.A.P. / Chief of the Foreign Organization / Exhibit D / (Translation)";
 br.bookAuthor= "S. G. Christians";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1943-08-10";
-br.bookKeyword= "";
+br.bookKeyword= "South America; Auslandsorganisation (A.O.); LG. Farben; Argentina; Nazi ideology";
 br.bookUrl  = '/nuremberg/catalog/nur:01203';
 
 // Override the path used to find UI images

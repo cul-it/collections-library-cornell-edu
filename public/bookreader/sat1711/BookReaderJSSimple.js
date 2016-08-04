@@ -387,7 +387,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1711_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1711_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -445,7 +445,7 @@ br.numLeafs = 60;
 br.bookTitle= "Pictorial life and adventures of Mrs. Whipple &amp; Jesse Strang, the murderer of Mr.  Whipple / by editor of the New York National police gazette ...";
 br.bookAuthor= "Wilkes, George, 1817-1885.";
 br.bookPub= "Philadelphia: T.B. Peterson &amp; Bros., [1848]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1711';
 
 // Override the path used to find UI images

@@ -615,7 +615,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0802_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0802_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -673,7 +673,7 @@ br.numLeafs = 98;
 br.bookTitle= "Boston slave riot, and trial of Anthony Burns containing the report of the Faneuil hall meeting ; the murder of Batchelder ; Theodore Parker's lesson for the day ; speeches of counsel on both sides, corrected by themselves ; a verbatim report of Judge Lorng's decision, and detailed account of the embarkation.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston: Fetridge and Company, 1854";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0802';
 
 // Override the path used to find UI images

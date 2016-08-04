@@ -267,7 +267,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1807_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1807_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -325,7 +325,7 @@ br.numLeafs = 40;
 br.bookTitle= "Wonderful trial of Caroline Lohman, alias Restell, with speeches of counsel, charge of court and verdict of jury : (reported in full for the National Police Gazette.)";
 br.bookAuthor= "Restell, Madame, 1812-1878, defendant.";
 br.bookPub= "New York: Burgess, Stringer &amp; Co. [and 33 others], 1847";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1807';
 
 // Override the path used to find UI images

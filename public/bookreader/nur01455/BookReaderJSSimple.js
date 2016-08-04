@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01455_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01455_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "Speer on Manpower / (Excerpts from Interrogation of Reichsminister Albert Speer by USSBS at Flensburg, 15-22 May";
 br.bookAuthor= "Albert Speer and an unnamed interrogator.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01455';
 
 // Override the path used to find UI images

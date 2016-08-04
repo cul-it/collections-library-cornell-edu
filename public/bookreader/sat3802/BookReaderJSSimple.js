@@ -327,7 +327,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3802_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3802_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -385,7 +385,7 @@ br.numLeafs = 50;
 br.bookTitle= "Argument of Benj. F. Butler, before the Rhode Island Supreme Court, (sitting in equity) Justices Potter, Stiness, and Tillinghast, Sept. 28, 1881. : In cases Quidnick co. vs. Chafee, et als., Same vs. Same, Chafee, trustee, et als., vs. A. and W. Sprague Manufacturing Co., et als.";
 br.bookAuthor= "Butler, Benjamin F. (Benjamin Franklin), 1818-1893.";
 br.bookPub= "[s.l.]: [s.n.], 1881";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3802';
 
 // Override the path used to find UI images

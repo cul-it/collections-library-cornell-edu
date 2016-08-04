@@ -327,7 +327,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01104_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01104_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -385,7 +385,7 @@ br.numLeafs = 50;
 br.bookTitle= " R &amp; A No. 3113.7 /  Principal Nazi Organizations Involved in the Commission of War Crimes: The Nazi Party (Parts I and II) / Office of Strategic Services / Research and Analysis Branch / Draft for the Use of the War Crimes Staff / SECRET";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-24";
-br.bookKeyword= "";
+br.bookKeyword= "NSDAP; War crimes; SA; SD; SS; HJ; NSKK; Nazi ideology; Nazi conspiracy; Party Program; Greater Germany; Treaties of Versailles and St. Germain; Colonies; Citizenship; Racial Laws; Exclusion; Discrimination; Immigration; Jews; Expulsion; Destruction of political resistance; Extermination; Wars of aggression; Organisationsbuch der NSDAP; Nationalsozialistisches Jahrbuch; Fuhrerprinzip; Totalitarian control; Mein Kampf; Volkischer Beobachter; Roehm purge; Hierarchical organization; German Civil Service; Coordination of Party and State; Regional control; Hoheitstraeger (\"Bearers of Sovereignty\"); Hoheitsgebiet (\"Regions of Sovereignty\"); Gauleiter; Kreisleiter; Ortsgruppenleiter; Zellenleiter; Blockleiter; Indoctrination (Nazi education); Propaganda; Infiltration and Intervention (Pan-Nazism); German folk-community; Lebensraum; Aggression and Terror";
 br.bookUrl  = '/nuremberg/catalog/nur:01104';
 
 // Override the path used to find UI images

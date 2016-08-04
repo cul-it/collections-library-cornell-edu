@@ -405,7 +405,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01788_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01788_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -463,7 +463,7 @@ br.numLeafs = 63;
 br.bookTitle= "Report of Interrogation: #5827 / PAV: von Rintelen, Emil / Ambassador at Large";
 br.bookAuthor= "Captain Halle";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-24";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01788';
 
 // Override the path used to find UI images

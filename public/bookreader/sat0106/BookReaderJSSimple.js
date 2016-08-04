@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0106_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0106_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "A report of the trial of the cause of John Taylor vs. Edward C. Delavan, prosecuted for an alleged libel : tried at the Albany Circuit, April, 1840. And Mr. Delavan's correspondence with the Ex. Committee of the Albany City Temperance Society, &amp;c.";
 br.bookAuthor= "Taylor, John, 1790-1863.";
 br.bookPub= "Albany : Printed by Hoffman, White &amp; Visscher, 1840";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0106';
 
 // Override the path used to find UI images

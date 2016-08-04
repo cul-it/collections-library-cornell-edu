@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00649_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00649_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Translation of Memorandum Received from Dr. von Schlabrendorff 27 October 1945 ";
 br.bookAuthor= "Dr. von Schlabrendorff; the translator is Captain Nordon.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-27";
-br.bookKeyword= "";
+br.bookKeyword= "Opposition to Hitler; Assassination attempt of 20 July 1944; German General Staff; German generals";
 br.bookUrl  = '/nuremberg/catalog/nur:00649';
 
 // Override the path used to find UI images

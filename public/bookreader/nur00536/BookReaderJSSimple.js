@@ -105,7 +105,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00536_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00536_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -163,7 +163,7 @@ br.numLeafs = 12;
 br.bookTitle= "OCC Brief, Section 1. II C.2.b. The Nazi conspirators supplemented the school system by training the youth through the Hitler Jugend ";
 br.bookAuthor= "Captain J. H. Murry (first 12 pp.) and Lt. (jg) A. R. Martin (1 p.)";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Hitler Jugend (Hitler Youth): Mein Kampf: Greater Germanv: NSDAP: SA: SS; Nationalsocialistischen Jugendbund (Nazi Youth League); Jugendfuhrer des Deutschen Reichs (Youth Leader of the German Reich); Hitler Youth Law; Nazi ideology; Membership statistics; Master race; anti-Semitism; pre-military training; 'Triumph of the Will'; 'Soldier of Tomorrow'";
 br.bookUrl  = '/nuremberg/catalog/nur:00536';
 
 // Override the path used to find UI images

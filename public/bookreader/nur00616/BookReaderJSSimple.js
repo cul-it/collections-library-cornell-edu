@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00616_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00616_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Directives for Special Areas To Order #21 (Case Barbarossa)  / Translation of Document 447-PS / Office of the U.S. Chief of Counsel.";
 br.bookAuthor= "Keitel; the translator is Willard Evans Skidmore, Lt (jg) USNR, 391590.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-03-13";
-br.bookKeyword= "";
+br.bookKeyword= "Area of Operations; Occupation; Russia; Political administration; Economic administration; Exploitation; OKW; Police Forces";
 br.bookUrl  = '/nuremberg/catalog/nur:00616';
 
 // Override the path used to find UI images

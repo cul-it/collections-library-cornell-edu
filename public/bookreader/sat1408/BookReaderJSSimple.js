@@ -183,7 +183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1408_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1408_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -241,7 +241,7 @@ br.numLeafs = 26;
 br.bookTitle= "Contest for the Suscol Rancho.  In the United States Land Office for the District of Lands Subject to Sale at San Francisco.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "[s.l.]: [s.n.], 1851";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1408';
 
 // Override the path used to find UI images

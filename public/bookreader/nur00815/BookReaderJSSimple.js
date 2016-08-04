@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00815_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00815_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "Aggression Against Greece and Yugoslavia";
 br.bookAuthor= "Lt. Col. Herbert F. Knicker";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against peace; Kellogg-Briand Pact; Hague Convention; Aggressive war; Tri-Power Pact; Balkans; Action 25; Action Marita; OKW; OKH; OKL; OKM; General Staff";
 br.bookUrl  = '/nuremberg/catalog/nur:00815';
 
 // Override the path used to find UI images

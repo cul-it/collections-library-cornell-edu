@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00449_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00449_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Report of Interrogation: No. 5749 of P/W: 3WG-1293 /  Rank: Ambassador at large  / SECRET";
 br.bookAuthor= "The interrogation officer is Captain Halle.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-06";
-br.bookKeyword= "";
+br.bookKeyword= "Three-Power Pact; Anti-Comintern Pact; Germany; Japan;  Italy; United States; Russo-Japanese Neutrality Treaty; Submarine warfare";
 br.bookUrl  = '/nuremberg/catalog/nur:00449';
 
 // Override the path used to find UI images

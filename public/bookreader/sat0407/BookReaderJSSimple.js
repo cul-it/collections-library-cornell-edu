@@ -213,7 +213,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0407_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0407_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -271,7 +271,7 @@ br.numLeafs = 31;
 br.bookTitle= "Legal reform : an address to the graduating class of the Law school of the University of Albany, delivered March 27, 1856 / by Alfred Conkling.";
 br.bookAuthor= "Conkling, Alfred, 1789-1874.";
 br.bookPub= "Albany, N.Y.: W. C. Little &amp; co., 1856";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0407';
 
 // Override the path used to find UI images

@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00575_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00575_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Directive No. 18  / Translation of Document 444-PS / Office of U. S. Chief of Counsel.";
 br.bookAuthor= "The translator of this document is Fred Niebergall, 2nd Lt Inf., 0-1335567.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1940-11-12";
-br.bookKeyword= "";
+br.bookKeyword= "Relations with France; Spain; Portugal; Italian offensive against Egypt; Balkans; Russia; England; \"Sea-lion\"; \"Felix\"; Gibraltar; Atlantic Islands";
 br.bookUrl  = '/nuremberg/catalog/nur:00575';
 
 // Override the path used to find UI images

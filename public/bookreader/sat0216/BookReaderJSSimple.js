@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0216_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0216_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "Dying confession of Lewis Wilber, who was executed October 3, 1839 ... for the murder of Robert Barber : including a sketch of his life and character ...";
 br.bookAuthor= "Wilber, Lewis, d. 1839.";
 br.bookPub= "Morrisville [N.Y.]: Printed at the office of the Madison Observer (Morrisville : J. &amp; E. Norton's print), 1839";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0216';
 
 // Override the path used to find UI images

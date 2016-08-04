@@ -105,7 +105,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00820_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00820_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -163,7 +163,7 @@ br.numLeafs = 13;
 br.bookTitle= "Aggression Against Norway and Denmark";
 br.bookAuthor= "Major Lacy W. Hinely";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Operation order Hartmut; Fall Weserubung; OKM; OKW; Aggressive war; Crimes against peace; Hague Convention; Kellogg-Briand Pact; Fifth Column activities; Collaborationists; APA; Military strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:00820';
 
 // Override the path used to find UI images

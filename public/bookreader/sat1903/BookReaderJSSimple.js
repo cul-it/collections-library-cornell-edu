@@ -345,7 +345,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1903_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1903_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -403,7 +403,7 @@ br.numLeafs = 53;
 br.bookTitle= "Report of the trial of Joseph Henry, Esq. in the sheriff's court, on Friday, Jan. 20, 1809, for criminal conversation with Lady Emily Best / Joseph Henry.";
 br.bookAuthor= "Henry, Joseph.";
 br.bookPub= "London: Printed by B. McMillan, 1809";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1903';
 
 // Override the path used to find UI images

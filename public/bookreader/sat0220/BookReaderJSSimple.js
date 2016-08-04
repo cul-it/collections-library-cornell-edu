@@ -141,7 +141,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0220_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0220_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -199,7 +199,7 @@ br.numLeafs = 19;
 br.bookTitle= "A correct copy of the trial and sentence : Of Richard Johnson, for the murder of Ursula Newman, on the 20th of Nov., 1828, by shooting her with a pistol loaded with buck shot or slugs, nine of which entered her body; together with the charge of the Court ";
 br.bookAuthor= "Johnson, Richard, Defendant.";
 br.bookPub= "New York: Printed and sold...by Christian Brown., 1829";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0220';
 
 // Override the path used to find UI images

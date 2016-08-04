@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00524_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00524_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -139,7 +139,7 @@ br.numLeafs = 9;
 br.bookTitle= "[Fuller's Conversation with Schacht, 23 Sept. 1935 ]: title not printed on document; see table of contents for Volume II.";
 br.bookAuthor= "S. R. Fuller";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-18";
-br.bookKeyword= "";
+br.bookKeyword= "Hitler's Germany; Nazi policies; German politics; Persecution of Jews; Nuremberg Laws; Economic conditions; Colonies; 'Most Favored Nation'; Currency; Stabilization of currency; Exchange rates; Nuremberg rally";
 br.bookUrl  = '/nuremberg/catalog/nur:00524';
 
 // Override the path used to find UI images

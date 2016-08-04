@@ -231,7 +231,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00668_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00668_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -289,7 +289,7 @@ br.numLeafs = 34;
 br.bookTitle= "Criminality of the Sturmabteilungen (The SA) of the National Socialist German Labor Party ";
 br.bookAuthor= "Robert G. Stephens, Jr., Major, Infantry, U.S. Army; Charles S. Burdell, Seaman First Class, USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "SA; NSDAP; Persecution of Jews; Concentration camps; Persecution of Christian Churches; Communists; Oranienburg; Papenburg; Nazi ideology; Anti-Semitic cartoons; Per SA-Mann; Nazi terrorist organizations; Nazi criminal organizations";
 br.bookUrl  = '/nuremberg/catalog/nur:00668';
 
 // Override the path used to find UI images

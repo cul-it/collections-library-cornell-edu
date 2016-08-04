@@ -387,7 +387,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2905_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2905_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -445,7 +445,7 @@ br.numLeafs = 60;
 br.bookTitle= "Trial of John Blaisdell : on an indictment for the murder of John Wadleigh, at the Superior Court of Judicature, holden at Exeter, September 1822 / reported by a member of the bar.";
 br.bookAuthor= "Blaisdell, John.";
 br.bookPub= "Printed at Exeter [N.H.]: [s.n.], 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2905';
 
 // Override the path used to find UI images

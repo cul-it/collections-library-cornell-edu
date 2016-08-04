@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01554_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01554_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 2;
 br.bookTitle= "Abschrift (2 copies)";
 br.bookAuthor= "Hjalmar Schacht";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "German equivalents for the following: Draft of 15-year-olds; Schacht's retirement; Unfulfilled war aims; Disappointment of German expectations; Duration of the war; Air attacks; Defeat of England; Russian resistance; Russian counterattacks; Invasion of Egypt; Allied landings in Africa; German submarine warfare; Civilian supplies";
 br.bookUrl  = '/nuremberg/catalog/nur:01554';
 
 // Override the path used to find UI images

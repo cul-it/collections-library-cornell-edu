@@ -231,7 +231,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1402_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1402_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -289,7 +289,7 @@ br.numLeafs = 34;
 br.bookTitle= "Common sense versus judicial legislation; being the review of a law recently enacted by the Supreme Court of Massachusetts. By a layman.";
 br.bookAuthor= "Sargent, John Osborne, 1811-1891.";
 br.bookPub= "New York: G.P. Putnam, 1871";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1402';
 
 // Override the path used to find UI images

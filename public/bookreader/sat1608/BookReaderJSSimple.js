@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1608_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1608_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "Report from the commissioners appointed to inquire into the state of Ilchester Gao1 / Ordered by the House of Commons, to be printed, Feb. 8, 1822.";
 br.bookAuthor= "Great Britain. Parliament. House of commons.";
 br.bookPub= "London: T. Dolby., 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1608';
 
 // Override the path used to find UI images

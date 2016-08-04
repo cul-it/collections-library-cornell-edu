@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00535_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00535_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "HC. Consolidation of Control ";
 br.bookAuthor= "Captain J. H. Murry";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Education: Educational system: Mein Kampf: Reich Ministry of Education: Kindergarten; Elementary schools; Kindergruppen (Children's Groups); Nazi ideology; High Schools (H&#246;heren Schule); Universities; National Socialist Teachers League; NSDAP; Civil Service Act; SA; Hitler Jugend; Jugendwalter; Hitler Youth leader; Dozentenschaft; Studentenschaft; National Socialist Dozentenbund; German race culture; Physical training; The Fuehrer principle; Heredity; Geopolitics; Biology; Modern German History; German war history";
 br.bookUrl  = '/nuremberg/catalog/nur:00535';
 
 // Override the path used to find UI images

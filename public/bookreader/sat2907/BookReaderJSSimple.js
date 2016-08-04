@@ -2577,7 +2577,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2907_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2907_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2635,7 +2635,7 @@ br.numLeafs = 425;
 br.bookTitle= "Death in the mail ; a narrative of a wealthy widow and the trial and conviction of the assassin, who was her physician, attorney and friendly advisor, by Martin C. Day.";
 br.bookAuthor= "Graves, Thomas Thatcher, 1841-1893, defendant.";
 br.bookPub= "Providence, RI.: The Providence journal print, 1892";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2907';
 
 // Override the path used to find UI images

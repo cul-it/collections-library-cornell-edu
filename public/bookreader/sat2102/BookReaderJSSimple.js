@@ -531,7 +531,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2102_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2102_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -586,10 +586,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 84;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "Trial of Henry Rogers, the captain, William Miles, first mate, and Charles E. Seymour, second mate, of the ship ""Martha and Jane,"" of Sunderland, for the wilful murder on the high seas, of Andrew Rose, a seaman, tried at the Liverpool summer assizes, before Mr. Baron Watson, on the 19th August, 1857, with the particulars of the execution of the captain, the fate of the two mates being yet undecided. The evidence given verbatim from the report made for Her Majesty's government. By Bond Hughes, esq.";
+br.bookTitle= "Trial of Henry Rogers, the captain, William Miles, first mate, and Charles E. Seymour, second mate, of the ship 'Martha and Jane,' of Sunderland, for the wilful murder on the high seas, of Andrew Rose, a seaman, tried at the Liverpool summer assizes, before Mr. Baron Watson, on the 19th August, 1857, with the particulars of the execution of the captain, the fate of the two mates being yet undecided. The evidence given verbatim from the report made for Her Majesty's government. By Bond Hughes, esq.";
 br.bookAuthor= "Rogers, Henry, d. 1857.";
 br.bookPub= "London: London, Lewis and son, 1857";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2102';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00741_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00741_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of Hoellriegl, Alois";
 br.bookAuthor= "Lt. Col. S. W. Brookhart is the interrogation officer.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-08";
-br.bookKeyword= "";
+br.bookKeyword= "Concentration camps; Mauthausen";
 br.bookUrl  = '/nuremberg/catalog/nur:00741';
 
 // Override the path used to find UI images

@@ -567,7 +567,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2807_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2807_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -625,7 +625,7 @@ br.numLeafs = 90;
 br.bookTitle= "Report of the trial of Bradbury Ferguson, on an indictment for the murder of Mrs.  Eliza Ann Ferguson and a report of the trial of George F. Willey, on an indictment for the murder of David Glass; at the term of the Court of common pleas, holden at Portsmouth, in the county of Rockingham, on the third Tuesday of February, A.D. 1841. By C.E.  Potter.";
 br.bookAuthor= "Ferguson, Bradbury, defendant.";
 br.bookPub= "Concord: Morrill, Silsby, &amp; co., 1841";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2807';
 
 // Override the path used to find UI images

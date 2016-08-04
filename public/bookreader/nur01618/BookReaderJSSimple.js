@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01618_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01618_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 7;
 br.bookTitle= "Interrogation of Herr Franz von Papen, held at Rheims, France, 1115-1245 hours, 16 April, 1945.";
 br.bookAuthor= "The interrogators are General K. W. D. Strong; Lt. General Susloparov; Brigadier General T. J. Betts";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-04-16";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01618';
 
 // Override the path used to find UI images

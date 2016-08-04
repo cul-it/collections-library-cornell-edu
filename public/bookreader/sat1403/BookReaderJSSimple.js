@@ -231,7 +231,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1403_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1403_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -289,7 +289,7 @@ br.numLeafs = 34;
 br.bookTitle= "The rule in Minot's case again : as restated with variations by the Supreme Judicial Court of Massachusetts. By a layman.";
 br.bookAuthor= "Sargent, John Osborne, 1811-1891.";
 br.bookPub= "New York: G. P. Putnam, 1871";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1403';
 
 // Override the path used to find UI images

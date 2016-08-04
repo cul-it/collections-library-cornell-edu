@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1808_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1808_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "The life and death of Mrs. Maria Bickford : a beautiful female who was inhumanly murdered in the moral and religious city of Boston on the night of the 27th of October, 1845, by Albert J. Tirrell, her Paramour, arrested on board the ship Sultana, off New Orleans, December 6th. ";
 br.bookAuthor= "A Clergyman of Brunswick, ME.";
 br.bookPub= "Boston: [s.n.], 1845";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1808';
 
 // Override the path used to find UI images

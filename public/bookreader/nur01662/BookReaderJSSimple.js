@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01662_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01662_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Military Commissions / Headquarters / Seine Section / Com Z, European Theater of Operations / United States Army";
 br.bookAuthor= "Pleas B. Rogers, Brigadier General, USA, Commanding";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-09-26";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01662';
 
 // Override the path used to find UI images

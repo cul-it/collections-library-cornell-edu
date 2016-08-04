@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02060_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02060_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "Literal Translation of Opinion on Indictment No. 1 Before the International Military Tribunal / SECRET";
 br.bookAuthor= "Fabian von Schlabrendorff";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "International Military Tribunal; Indictment; Crimes Against Peace; War Crimes; Crimes Against Humanity; Criminal organizations; National Socialism; Roehm Purge";
 br.bookUrl  = '/nuremberg/catalog/nur:02060';
 
 // Override the path used to find UI images

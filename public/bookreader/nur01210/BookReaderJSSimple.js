@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01210_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01210_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "Intermediate Interrogation Report (IIR) No. 3 / Prisoner: SS Standf Sandberger, Martin / CONFIDENTIAL / Headquarters / U.S. Forces European Theater / Interrogation Center / APO 655";
 br.bookAuthor= "Harry K. Lennon, Capt., Inf / B &amp; E Section";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-08";
-br.bookKeyword= "";
+br.bookKeyword= "German Secret Intelligence Service; Occupied Germany; Amt VI; Amt III";
 br.bookUrl  = '/nuremberg/catalog/nur:01210';
 
 // Override the path used to find UI images

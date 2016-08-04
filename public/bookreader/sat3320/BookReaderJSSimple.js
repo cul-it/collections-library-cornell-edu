@@ -627,7 +627,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3320_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3320_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -685,7 +685,7 @@ br.numLeafs = 100;
 br.bookTitle= "Full report of the extraordinary and interesting trial of Miss Madeleine Smith, of Glasgow, on the charge of poisoning by arsenic her late lover, Emile L'Angelier, including the whole correspondence.";
 br.bookAuthor= "Smith, Madeleine H., 1835-1893?";
 br.bookPub= "London: Published by Read &amp; Co., 10, Johnson's Court, Fleet St.; Clayton &amp; Son, Strand, and 223, Piccadilly; Ainsworth, Manchester; Gilling, Liverpool; Sutherland, Edinburgh; McGlashan &amp; Co., Dublin; Fletcher &amp; Alexander, Norwich., 1857";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3320';
 
 // Override the path used to find UI images

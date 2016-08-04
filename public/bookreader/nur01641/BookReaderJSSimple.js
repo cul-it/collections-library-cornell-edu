@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01641_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01641_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Trial by Military Commissions / SECRET / Headquarters / European Theater of Operations / United States Army / APO 887";
 br.bookAuthor= "R. B. Lovett, Brigadier General, USA";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-03-05";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01641';
 
 // Override the path used to find UI images

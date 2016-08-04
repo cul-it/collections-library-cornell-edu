@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2408_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2408_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -421,7 +421,7 @@ br.numLeafs = 56;
 br.bookTitle= "An exposition of the circumstances which gave rise to suits instituted by Joseph Pearson, esq., against the Patriotic bank, Dr. P. Bradley, and William Gunton; and of the conduct of Dr. Bradley and his son.";
 br.bookAuthor= "Gunton, William, of Washington.";
 br.bookPub= "Washington: Printed by P. Force, 1830";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2408';
 
 // Override the path used to find UI images

@@ -1401,7 +1401,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01141_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01141_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1459,7 +1459,7 @@ br.numLeafs = 228 + 2 (241 originallly paginated pages; 71-87 are missing);
 br.bookTitle= "The Testimony of Fritz Wiedemann / Headquarters / Office of Strategic Services / China Theater / TOP SECRET";
 br.bookAuthor= "The interrogation officers are Colonel Richard P. Heppner, Lt. Colonel William S. Crawford, Captain Franklin M. Stone, and Lt. Guy Martin.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-19";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01141';
 
 // Override the path used to find UI images

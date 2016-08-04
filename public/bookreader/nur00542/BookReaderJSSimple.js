@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00542_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00542_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Hitler's Testimony Before the Court for High Treason  from Frankfurter Zeitung. 1st Morning Edition, 26 September 1931. Translation of Extract of Document 2512-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "The translator of this document is Evelyn Glazier, P/O. W.R.N.S., 37371";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi Party; NSDAP; Sturmabteilungen; SA; Fascists; Propaganda; Reichswehr; Third Reich";
 br.bookUrl  = '/nuremberg/catalog/nur:00542';
 
 // Override the path used to find UI images

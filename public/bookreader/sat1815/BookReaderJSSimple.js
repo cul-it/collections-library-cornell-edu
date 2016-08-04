@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1815_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1815_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "The trial at large on an action for damages, brought in His Majesty's Court of Exchequer before the Right Hon. Lord Chief Baron Yelverton and a jury of citizens, on Saturday the 20th of February, 1796, by the Right Hon. George Fred. Earl of Westmeath, against the Honourable Augustus Cavendish Bradshaw, for adultery with the Right Hon. Mary Anne, Countess of Westmeath.";
 br.bookAuthor= "Westmeath, George Frederick Nugent, 7th earl of, 1760-1814.";
 br.bookPub= "Dublin: Re-Printed for Allen and West., 1796";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1815';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01881_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01881_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -101,9 +101,9 @@ br.numLeafs = 3;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "The following contained in Document Book 8. / 'Crimes Against Humanity.' / International Military Tribunal";
-br.bookAuthor= ""Submitted by Col. L. N. Smirnov"";
+br.bookAuthor= "Submitted by Col. L. N. Smirnov";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01881';
 
 // Override the path used to find UI images

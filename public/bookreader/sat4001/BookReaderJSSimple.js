@@ -795,7 +795,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4001_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4001_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -853,7 +853,7 @@ br.numLeafs = 128;
 br.bookTitle= "The trial of Joseph Gerrald, before the High court of justiciary, at Edinburgh, on the 13th and 14h of March, 1794, for sedition : with an original memoir, and notes ...";
 br.bookAuthor= "Gerrald, Joseph, 1763-1796. defendant.";
 br.bookPub= "Glasgow: Muir, Gowans, &amp; co., 1835";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4001';
 
 // Override the path used to find UI images

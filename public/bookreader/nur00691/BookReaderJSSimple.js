@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00691_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00691_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "War Crimes: The Conspiracy to go to War ";
 br.bookAuthor= "Wallace R. Deuel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-29";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi economic policy; Ministry of Economics; Four Year Plan; Cartels; Agriculture; Money and banking; Reichsbank; Labor";
 br.bookUrl  = '/nuremberg/catalog/nur:00691';
 
 // Override the path used to find UI images

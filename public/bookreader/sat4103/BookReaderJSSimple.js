@@ -1191,7 +1191,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4103_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4103_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1249,7 +1249,7 @@ br.numLeafs = 194;
 br.bookTitle= "The Yelverton marriage case, Thelwall v. Yelverton, comprising an authentic and unabridged account of the most extraordinary trial of modern times, with all its revelations, incidents, and details specially reported.";
 br.bookAuthor= "Avonmore, William Charles Yelverton, 4th viscount, 1824-1883.";
 br.bookPub= "London: G. Vickers, 1861";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4103';
 
 // Override the path used to find UI images

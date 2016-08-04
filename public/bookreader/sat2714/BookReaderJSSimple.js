@@ -579,7 +579,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2714_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2714_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -637,7 +637,7 @@ br.numLeafs = 92;
 br.bookTitle= "Trial of Hon. Frederick A. Tallmadge, general superintendent of metropolitan police, : before James W. Nye, Esq., president, and Hon. James S.T. Stranahan, Thomas B. Stillman, Esq., and James Bowen, Esq., commissioners of police, Hon. Daniel F. Tiemann, mayor of the city of New York, and Hon. Samuel S. Powell, mayor of the city of Brooklyn, ex-officio commissioners of police. : With the argument of his counsel. / Reported by Elbridge T. Gerry, student at law.";
 br.bookAuthor= "Tallmadge, Frederick A. (Frederick Augustus), 1792-1869.";
 br.bookPub= "New York: Baker &amp; Godwin, printers, Printing-House Square, opposite City Hall., 1858";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2714';
 
 // Override the path used to find UI images

@@ -1269,7 +1269,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00599_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00599_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1325,9 +1325,9 @@ br.numLeafs = 10 + 197;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Vorwort  and Verhandlung vor dem Volksgerichtshof des Grossdeutschen Reiches ";
-br.bookAuthor= "Peter Vossen ("Vorwort"); otherwise not applicable.";
+br.bookAuthor= "Peter Vossen ('Vorwort'); otherwise not applicable.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-08-07";
-br.bookKeyword= "";
+br.bookKeyword= "Assassination attempt; People's Court Trials; 20 July 1944";
 br.bookUrl  = '/nuremberg/catalog/nur:00599';
 
 // Override the path used to find UI images

@@ -351,7 +351,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3312_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3312_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -409,7 +409,7 @@ br.numLeafs = 54;
 br.bookTitle= "The Murdered Jewess : being the life, trial, and conviction of Rubenstein, the Polish Jew, for the murder of the beautiful Sara Alexander, his own cousin! ...";
 br.bookAuthor= "Rubenstein, Pesach";
 br.bookPub= "Philadelphia: Barclay &amp; Co., Publishers, No. 21 North Seventh Street., 1876";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3312';
 
 // Override the path used to find UI images

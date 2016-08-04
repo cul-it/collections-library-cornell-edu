@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00690_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00690_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "[... the responsibility of former Reichsbank Directors...] ; This document is untitled.";
 br.bookAuthor= "Dr. Wilhelm Vocke";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Versailles Treaty; Rearmament; Munich conference; Reichsbank";
 br.bookUrl  = '/nuremberg/catalog/nur:00690';
 
 // Override the path used to find UI images

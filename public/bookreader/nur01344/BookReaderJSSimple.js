@@ -99,7 +99,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01344_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01344_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -157,7 +157,7 @@ br.numLeafs = 10;
 br.bookTitle= "Organization of the RSHA";
 br.bookAuthor= "Prepared by X-2, German Section, OSS";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-01";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; SD; Gestapo: NSDAP";
 br.bookUrl  = '/nuremberg/catalog/nur:01344';
 
 // Override the path used to find UI images

@@ -369,7 +369,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01428_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01428_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -427,7 +427,7 @@ br.numLeafs = 57;
 br.bookTitle= "Trial Brief of Hjalmar Schacht";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Lebensraum; Mein Kampf; Versailles Treaty; Colonial cession; Aggressive war; Mefo bills; Reichsbank; Financing German rearmament; Four Year Plan; Annexation of Austria; Economic persecution of Jews; Invasion of Poland; Russia";
 br.bookUrl  = '/nuremberg/catalog/nur:01428';
 
 // Override the path used to find UI images

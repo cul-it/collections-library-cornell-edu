@@ -1809,7 +1809,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0508_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0508_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1867,7 +1867,7 @@ br.numLeafs = 297;
 br.bookTitle= "Report of the d'Hauteville case: the commonwealth of Pennsylvania, at the suggestion of Paul Daniel Gonsalve Grand d'Hauteville, versus David Sears, Miriam C. Sears, and Ellen Sears Grand d'Hauteville.  Habeas corpus for the custody of an infant child.";
 br.bookAuthor= "Grand d'Hauteville, Paul Daniel Gonsalve.";
 br.bookPub= "Philadelphia: Printed by W.S.  Martien, 1840";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0508';
 
 // Override the path used to find UI images

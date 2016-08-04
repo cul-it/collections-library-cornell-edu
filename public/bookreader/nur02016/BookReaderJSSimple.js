@@ -177,7 +177,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02016_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02016_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -235,7 +235,7 @@ br.numLeafs = 25;
 br.bookTitle= "Description of Documents in Doc. Room / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Persecution of Jews; Concentration camps: Dachau, Auschwitz, Lublin, Stutthof, Mauthausen, Buchenwald, Herzogenbosch, Warsaw, Kauen, Veivara, Riga; Human-subject experiments: Medical, High altitude, Low temperature, High temperature, Cooling, Freezing, Low pressure, Poisoned bullets; Persecution of Christian Churches and Clergy; Kugel Project; Russian POWs; Forced labor; Starvation; Operations Green; Case \"Marita\"; Case \"Barbarossa\"; Commandos; Saboteurs; Paratroopers; Allied flyers; Gas vans; Labor unions; SS; SD; Sipo; RSHA; \"Night and Fog\" decree; Warsaw ghetto; Civil Service; Persecution of Communists; Persecution of Christian Churches; Economic spoliation; Organisationsbuch der NSDAP; Volkischer Beobachter; German Economic Armistice Delegation; Secret State Police; German Labor Front; German Navy; German Industrialists";
 br.bookUrl  = '/nuremberg/catalog/nur:02016';
 
 // Override the path used to find UI images

@@ -273,7 +273,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1818_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1818_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -331,7 +331,7 @@ br.numLeafs = 41;
 br.bookTitle= "The trial and execution for petit treason, of Mark and Phillis, slaves of Capt. John Codman, who murdered their master at Charlestown, Mass., in 1755, for which the man was hanged and gibbeted, and the woman was burned to death, including, also, some account of other punishments by burning in Massachusetts / by Abner Cheney Goodell, Jr.";
 br.bookAuthor= "Goodell, Abner Cheney, 1831-1914.";
 br.bookPub= "Cambridge, (Mass.): J. Wilson, 1883";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1818';
 
 // Override the path used to find UI images

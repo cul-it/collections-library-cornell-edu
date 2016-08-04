@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00618_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00618_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Top Secret / Re: Conference 'Barbarossa' ";
 br.bookAuthor= "Schmundt; the translator of this document is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-06-09";
-br.bookKeyword= "";
+br.bookKeyword= "\"Silver Fox\"; Group \"South\"; Army Group \"North\"; Army Group \"Center\"; Barbarossa";
 br.bookUrl  = '/nuremberg/catalog/nur:00618';
 
 // Override the path used to find UI images

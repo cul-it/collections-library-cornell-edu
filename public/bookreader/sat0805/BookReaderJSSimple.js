@@ -699,7 +699,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0805_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0805_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -757,7 +757,7 @@ br.numLeafs = 112;
 br.bookTitle= "Trial of the Hon. Daniel E. Sickles : for shooting Philip Barton Key, Esq. ... / reported by Felix G. Fontaine.";
 br.bookAuthor= "Sickles, Daniel Edgar, 1819-1914, defendant.";
 br.bookPub= "New York: R.M. De Witt, 1859";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0805';
 
 // Override the path used to find UI images

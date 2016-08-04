@@ -285,7 +285,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0101_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0101_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -343,7 +343,7 @@ br.numLeafs = 43;
 br.bookTitle= "The trial of Thomas Paine, for a libel, contained in the second part of Rights of man. Before Lord Kenyon, and a special jury, at Guildhall, December 18, 1792. With the speeches of the attorney general and Mr. Erskine at large.";
 br.bookAuthor= "Paine, Thomas, 1737-1809, defendant.";
 br.bookPub= "Boston: Printed in Boston by I. Thomas and E. T. Andrews..., sold at their bookstore, by D. West..., and E. Larkin, 1793";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0101';
 
 // Override the path used to find UI images

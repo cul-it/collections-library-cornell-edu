@@ -159,7 +159,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00810_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00810_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -217,7 +217,7 @@ br.numLeafs = 22;
 br.bookTitle= "French 'War-Guilt' Trial at Riom / Coordinator of Information / Western European Section / Memorandum No. 12 / CONFIDENTIAL ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1942-04-22";
-br.bookKeyword= "";
+br.bookKeyword= "French war-guilt trial; Vichy; Supreme Court; Council of Political Justice; War crimes trials; Collaboration; Petain government; German-French relations";
 br.bookUrl  = '/nuremberg/catalog/nur:00810';
 
 // Override the path used to find UI images

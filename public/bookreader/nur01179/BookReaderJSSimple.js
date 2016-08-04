@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01179_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01179_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogation of Wilhelm Keitel";
 br.bookAuthor= "Lt. Col T. S. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-01-01";
-br.bookKeyword= "";
+br.bookKeyword= "Russian political prisoners; OKW; German police; Commandos";
 br.bookUrl  = '/nuremberg/catalog/nur:01179';
 
 // Override the path used to find UI images

@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3113_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3113_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "Wedded and murdered within an hour! The cruel murder of Mina Muller by Kenkowsky, alias Kettler. The Guttenberg-Hoboken tragedy. A thrilling and remarkable case, which recalls the murder of Mary Rodgers, The Segar Girl ... / Mrs. Philomena (Schmidt) Muller.";
 br.bookAuthor= "Muller, Mrs. Philomena (Schmidt), d.1881.";
 br.bookPub= "Philadelphia: Barclay, 1881";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3113';
 
 // Override the path used to find UI images

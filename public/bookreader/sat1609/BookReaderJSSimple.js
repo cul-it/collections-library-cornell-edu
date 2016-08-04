@@ -357,7 +357,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1609_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1609_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -412,10 +412,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 55;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "The proceedings, on the trial of Daniel Isaac Eaton : upon an indictment, for selling a supposed libel, "The second part of the Rights of man, combining principle and practice" by Thomas Paine, at Justice Hall, in the Old Bailey before the recorder of London";
+br.bookTitle= "The proceedings, on the trial of Daniel Isaac Eaton : upon an indictment, for selling a supposed libel, 'The second part of the Rights of man, combining principle and practice' by Thomas Paine, at Justice Hall, in the Old Bailey before the recorder of London";
 br.bookAuthor= "Eaton, Daniel Isaac, d. 1814.";
 br.bookPub= "London: Printed and published by the defendant, Daniel Isaac Eaton, 1793";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1609';
 
 // Override the path used to find UI images

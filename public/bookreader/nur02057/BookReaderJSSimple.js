@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02057_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02057_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "SUBJECT: Defense of the Accused";
 br.bookAuthor= "Dr. von Schlabrendorff";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-05";
-br.bookKeyword= "";
+br.bookKeyword= "International Military Tribunal; Penal law; International law; Proclamation No.3";
 br.bookUrl  = '/nuremberg/catalog/nur:02057';
 
 // Override the path used to find UI images

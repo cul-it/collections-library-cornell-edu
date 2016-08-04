@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00768_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00768_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Original German 8MM. Film of Atrocities Against Jews / Captured in SS Barracks by U.S. [illegible]";
 br.bookAuthor= "James B. Donovan, Commander, USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against humanity; Persecution of Jews; Photographic evidence; German films; SS film; Mob violence; Atrocities; Degradation";
 br.bookUrl  = '/nuremberg/catalog/nur:00768';
 
 // Override the path used to find UI images

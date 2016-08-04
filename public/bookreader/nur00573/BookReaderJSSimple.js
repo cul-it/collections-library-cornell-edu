@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00573_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00573_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "General Order No. 16 on the preparation of a landing operation against England.  / Translation of Document 442-PS / Office of U. S. Chief of Counsel.";
 br.bookAuthor= "Hitler; the translator is Willard Evans Skidmore, Lt (jg) USNR, 391590.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1940-07-16";
-br.bookKeyword= "";
+br.bookKeyword= "Landing operation; Operation Sea-lion; Invasion of England; Hitler Order; Fuehrer Order; Military strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:00573';
 
 // Override the path used to find UI images

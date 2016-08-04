@@ -1227,7 +1227,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2504_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2504_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1285,7 +1285,7 @@ br.numLeafs = 200;
 br.bookTitle= "The whole proceedings on the trial of an information exhibited ex officio by the king's attorney-general against Thomas Paine for a libel upon the revolution and settlement of the crown and regal government as by law established; and also upon the Bill of Rights, the Legislature, Government, Laws, and Parliament of this Kingdom, and upon the King.";
 br.bookAuthor= "Paine, Thomas, 1737-1809, defendant.";
 br.bookPub= "London: Sold by Martha Gurney, No. 128, Holborn-Hill., 1793";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2504';
 
 // Override the path used to find UI images

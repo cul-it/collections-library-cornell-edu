@@ -747,7 +747,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2412_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2412_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -805,7 +805,7 @@ br.numLeafs = 120;
 br.bookTitle= "Scenes from the lives of Robson and Redpath / by J. B.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "London: W. M. Clark, 1857";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2412';
 
 // Override the path used to find UI images

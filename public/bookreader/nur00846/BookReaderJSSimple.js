@@ -135,7 +135,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00846_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00846_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -193,7 +193,7 @@ br.numLeafs = 18;
 br.bookTitle= "Vernehmung des fr&#252;heren deutschen Gesandten beim Reichsbevollmachtigten in Kopenhagen, Dr. Barandon, im Polizeipr&#228;sidium, betreffend Dr. Werner Best ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-01";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Danish sovereignty; Danish Nazis; German Foreign Office; SS; Schalburg Corps; Martial law; Danish Army; Danish government; Gestapo; Danish communists; Deportations; Persecution of Jews; Sabotage; Counter-terrorism; Hostages; Shellhouse; General strike; Danish police affair; Danish Resistance; Monsun; Schalberg Corps; Corps Schalberg; Schalburtage; HIPO; Auxiliary Police";
 br.bookUrl  = '/nuremberg/catalog/nur:00846';
 
 // Override the path used to find UI images

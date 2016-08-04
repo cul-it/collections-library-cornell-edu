@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01827_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01827_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 2;
 br.bookTitle= "Brief of Interrogation of Otto Ohlendorf / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Lt. Col. S. W. Brookhart is the interrogator.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-26";
-br.bookKeyword= "";
+br.bookKeyword= "Einsatzgruppen; Einsatz Kommando Gruppe D; Einsatz Commandos; Russia; Executions; Liquidations; Persecution of Jews; Mass killings; Communists; OKW; OKH; RSHA; OT; Security Police; Gas vans; Murder wagons; Muslims; War crimes; Crimes against humanity; Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:01827';
 
 // Override the path used to find UI images

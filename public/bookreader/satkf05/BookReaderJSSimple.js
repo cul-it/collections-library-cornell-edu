@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:kf05_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:kf05_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "Remarkable instances of circumstantial evidence given on trials for criminal acts which has resulted in the conviction and execution of innocent persons, together with after disclosures.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New York: J. Post, 1833";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:kf05';
 
 // Override the path used to find UI images

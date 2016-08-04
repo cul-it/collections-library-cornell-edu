@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1810_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1810_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Life, trial, and particulars of the execution of Governor Wall : who was executed on Thursday morning last, fronting Newgate, for the murder of Benjamin Armstrong, nearly 20 years ago, at Goree, in Africa. By causing him to receive, without trial, 800 lashes, which we inflicted by Black Slaves, changed at every 25 lashes.";
 br.bookAuthor= "Wall, Joseph, 1737-1802.";
 br.bookPub= "London: Printed by J. Davenport 6, George's Court St. John's Lane, West Smithfield, London., 1802";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1810';
 
 // Override the path used to find UI images

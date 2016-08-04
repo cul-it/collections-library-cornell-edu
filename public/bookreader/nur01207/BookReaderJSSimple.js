@@ -321,7 +321,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01207_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01207_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -379,7 +379,7 @@ br.numLeafs = 49;
 br.bookTitle= "Intermediate Interrogation Report (IIR) / Prisoner: O/Gruf Kaltenbrunner, Ernst / SECRET / Headquarters 12th Army Group / Interrogation Center / APO 655";
 br.bookAuthor= "Harry K. Lennon";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-28";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; Amt I; Amt II; Amt III; Amt IV; Amt V; Amt VI; RSHA personnel; German foreign intelligence; Balkans; Gestapo; German resistance; German foreign policy; Rumania; Iron Guard; Hungary; Arrow Cross; Croatia; IMRO; Negotiated peace; Red Cross; Austrian Project; Austrian Nazis; Werwolf; SD; Luftwaffe; Kripo; Russia; Foreign agents; Japan; Japanese foreign intelligence";
 br.bookUrl  = '/nuremberg/catalog/nur:01207';
 
 // Override the path used to find UI images

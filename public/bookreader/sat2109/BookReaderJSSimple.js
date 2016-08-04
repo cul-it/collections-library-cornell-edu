@@ -549,7 +549,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2109_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2109_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -607,7 +607,7 @@ br.numLeafs = 87;
 br.bookTitle= "Report of a trial for alleged mal-practice, against Dixi Crosby, M.D. ... in the Windsor County Court, at Woodstock, May term, 1854.";
 br.bookAuthor= "Crosby, Dixi, 1800-1873, defendant.";
 br.bookPub= "Woodstock [Vt.]: Printed by L. Pratt, Jr., 1854";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2109';
 
 // Override the path used to find UI images

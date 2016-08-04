@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01478_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01478_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Letter from Hitler to Franco - September 1940";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1940-09-00";
-br.bookKeyword= "";
+br.bookKeyword= "Spain; England; Mediterranean; Gibraltar; Military strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:01478';
 
 // Override the path used to find UI images

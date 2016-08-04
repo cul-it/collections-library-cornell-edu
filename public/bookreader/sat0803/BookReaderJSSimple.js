@@ -603,7 +603,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0803_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0803_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -661,7 +661,7 @@ br.numLeafs = 96;
 br.bookTitle= "The Udderzook mystery! : containing a detailed and accurate account of the life of the murderer, his trial and sentence, the disappearance of W.S. Goss, and many strange mysteries closely bearing upon this great case ...";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Philadelphia: Barclay &amp; Co., 1873";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0803';
 
 // Override the path used to find UI images

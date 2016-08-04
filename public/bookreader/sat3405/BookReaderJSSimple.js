@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3405_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3405_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Celebrated trial of Rev. Joy Hamlet Fairchild, for the alleged seduction of Miss Rhoda Davidson, together with his own defence before the Council.";
 br.bookAuthor= "Fairchild, J. H. (Joy Hamlet), 1790-1859, defendant.";
 br.bookPub= "[n. p.]: [n. p.], [1844?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3405';
 
 // Override the path used to find UI images

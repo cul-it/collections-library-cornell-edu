@@ -237,7 +237,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00807_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00807_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -295,7 +295,7 @@ br.numLeafs = 35;
 br.bookTitle= "Trial Brief on Spoliation of France / Economic Division";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Hague Regulations; Spoliation; Plunder of public or private property; Raw materials; France; Food rations; Food supply; Machinery; Requisition of machinery; Confiscation; Business transfers; Foreign exchange; Gold; Occupation costs; Black market; Ostrow report; Belgian economy; Joint stock companies; Roges agency; Pimitex agency";
 br.bookUrl  = '/nuremberg/catalog/nur:00807';
 
 // Override the path used to find UI images

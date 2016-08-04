@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3705_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3705_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Hon. Chas. Mason's argument in the Morse extension case.";
 br.bookAuthor= "Mason, Charles, 1804-1882.";
 br.bookPub= "[S.I.]: [s.n.], 1860";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3705';
 
 // Override the path used to find UI images

@@ -711,7 +711,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3808_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3808_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -769,7 +769,7 @@ br.numLeafs = 114;
 br.bookTitle= "The arraignment, tryal and condemnation of Stephen Colledge for high-treason, in conspiring the death of the King, the levying of war, and the subversion of the government.  Before the Right Honourable Sr. Francis North, lord chief justice of the Court of Common-Pleas...";
 br.bookAuthor= "Colledge, Stephen, 1635?-1681, defendant.";
 br.bookPub= "London: Printed for Thomas Basset at the George in Fleet Street, and John Fish near the Golden Tun in the Strand., 1681";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3808';
 
 // Override the path used to find UI images

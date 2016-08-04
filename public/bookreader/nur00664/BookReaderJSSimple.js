@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00664_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00664_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "List of Commanders  (Schlabrendorff memo)";
 br.bookAuthor= "Dr. von Schlabrendorff; the translator is Cpl. Schneider";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-02";
-br.bookKeyword= "";
+br.bookKeyword= "List of Commanders; German High Command; German General Staff";
 br.bookUrl  = '/nuremberg/catalog/nur:00664';
 
 // Override the path used to find UI images

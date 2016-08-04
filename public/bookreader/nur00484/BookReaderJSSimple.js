@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00484_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00484_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 7;
 br.bookTitle= "Feldpostnummer S2704 / SECRET";
 br.bookAuthor= "Becker";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1942-05-16";
-br.bookKeyword= "";
+br.bookKeyword= "Death Vans; Gassing; Sipo; SD; S-Vehicles; Gas pipes;  Brake clutch; RSHA; Telegrams; Jews; Riga; Berlin; Belgrad; Kiev; Crimes  against humanity; Atrocities; War crimes; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:00484';
 
 // Override the path used to find UI images

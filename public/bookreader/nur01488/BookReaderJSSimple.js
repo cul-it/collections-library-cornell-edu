@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01488_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01488_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Task and Role of the SA";
 br.bookAuthor= "Wilhelm Schepmann";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-10-00";
-br.bookKeyword= "";
+br.bookKeyword= "SA; Nazi Party; National Socialism; Nazi ideology; Propaganda; German militarism";
 br.bookUrl  = '/nuremberg/catalog/nur:01488';
 
 // Override the path used to find UI images

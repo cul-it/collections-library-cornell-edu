@@ -261,7 +261,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0501_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0501_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -319,7 +319,7 @@ br.numLeafs = 39;
 br.bookTitle= "A report of the trial of Samuel Tulley and John Dalton, on an indictment for piracy, committed January 21st, 1812. Before the Circuit court of the United States, at Boston, 28th October, 1812. Containing the evidence at large, a sketch of the arguments of counsel, and the charge of the Hon. Judge Story, on pronouncing sentence of death. (From minutes taken at the trial)";
 br.bookAuthor= "Tully, Samuel, 1771-1812, defendant.";
 br.bookPub= "Boston: Printed by J. Belcher., 1812";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0501';
 
 // Override the path used to find UI images

@@ -471,7 +471,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2808_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2808_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -529,7 +529,7 @@ br.numLeafs = 74;
 br.bookTitle= "The trial at large of William Sparling ... and Samuel Martin Colquitt ... on an indictment for the murder of Mr. Edward Grayson ...";
 br.bookAuthor= "Sparling, William, defendant.";
 br.bookPub= "Liverpool: printed by and for W.  Jones, 1804";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2808';
 
 // Override the path used to find UI images

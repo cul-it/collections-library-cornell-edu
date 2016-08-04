@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00657_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00657_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "Special Interrogation Report (CSIR) No. 5 / History and Organization of the Feldwirtschaftsamt Im OKW  / Headquarters / United States Forces European Theater / Military Intelligence Service Center / APO 757 / CONFIDENTIAL";
 br.bookAuthor= "Arthur D.McKibbin";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-19";
-br.bookKeyword= "";
+br.bookKeyword= "War Economy Staff; War Economy Office; War Economy and Armaments Office; Field Economy Office; Armaments and Munitions; Foreign economies; Economies of war; Information procurement";
 br.bookUrl  = '/nuremberg/catalog/nur:00657';
 
 // Override the path used to find UI images

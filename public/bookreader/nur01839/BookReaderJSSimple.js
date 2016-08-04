@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01839_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01839_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -421,7 +421,7 @@ br.numLeafs = 56;
 br.bookTitle= " R &amp; A No. 3081: Nazi Changes in Criminal Procedure / Office of Strategic Services / Research and Analysis Branch / RESTRICTED";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-10";
-br.bookKeyword= "";
+br.bookKeyword= "German criminal procedure; Criminal Courts; Criminal proceedings; Due process; Arrest; Search and seizure; Defense counsel; German judiciary; Trial procedure; Double jeopardy; Verdicts; Juvenile Courts; Criminal appeals; Nazi criminal procedure; Nazi courts; People's Court; Witnesses; Warrants; Appeals; Blackmail; Trial in absentia; Schwurgericht; Assizes; Amtsgericht; Local courts; Landgericht; District courts; Oberlandesgericht; Appeals court; Reichsgericht; Supreme court; Ministry of Justice; State attorney; Nullification; Retrial; Amnesties; Persecution of Jews; Legal disenfranchisement; SS";
 br.bookUrl  = '/nuremberg/catalog/nur:01839';
 
 // Override the path used to find UI images

@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01125_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01125_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "Interrogation of Schellenberg, Walter";
 br.bookAuthor= "Lt. Col. S. W. Brookhart";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-12";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; Amt I; Amt II; Amt HI; Amt IV; Amt V; Amt VI; Amt VII; Anschluss; 20 July Assassination attempt; Einsatz Groups; Concentration camps; Protective custody; Hitler's Commando Order";
 br.bookUrl  = '/nuremberg/catalog/nur:01125';
 
 // Override the path used to find UI images

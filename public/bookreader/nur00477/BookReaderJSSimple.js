@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00477_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00477_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "Interrogation of Reich Marshal Hermann Goering / TOP SECRET";
 br.bookAuthor= "The interrogators are General Spaatz, CG, USSTAF; Lt.  General Patch CG, 7th Army; Lt. General Vandenberg, CG, Ninth Air  Force; Brigadier General E. P. Curtis, C/S, USSTAF; Major Alexander de  Seversky, Special Consultant to Secretary of War.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-10";
-br.bookKeyword= "";
+br.bookKeyword= "Luftwaffe; Battle of Britain; JU 88; HE 111; HE 177; ME  262; ME 264; Air war; American bombing campaigns; Strategic bombing; U-boats;  Panzers; Waffen SS; Jet airplanes; Spain; Bolsheviks; Gibraltar; Poltava;  Italy; Proximity fuse; Japan; V-1; V-2; Russia; Conduct of war; German war  economy; German industry";
 br.bookUrl  = '/nuremberg/catalog/nur:00477';
 
 // Override the path used to find UI images

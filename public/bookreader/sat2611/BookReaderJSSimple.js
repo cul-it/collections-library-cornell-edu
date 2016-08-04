@@ -1011,7 +1011,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2611_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2611_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1069,7 +1069,7 @@ br.numLeafs = 164;
 br.bookTitle= "A final reply to the libels of Evan Poultney, late President of the Bank of Maryland : and a further examination of the causes of the failure of that institution.";
 br.bookAuthor= "Johnson, Reverdy, 1796-1876.";
 br.bookPub= "Baltimore: Printed by Jas. Lucas &amp; E.K. Deaver, 1835";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2611';
 
 // Override the path used to find UI images

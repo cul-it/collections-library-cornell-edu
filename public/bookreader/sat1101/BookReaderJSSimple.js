@@ -675,7 +675,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1101_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1101_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -733,7 +733,7 @@ br.numLeafs = 108;
 br.bookTitle= "The mysterious stranger, or, Memoirs of Henry Moore Smith, alias Henry Frederick Moon, alias William Newman, who is now confined in Simsbury mines in Connecticut for the crime of burglary : containing an account of his extraordinary conduct during his confinement in Newgate / by Walter Bates";
 br.bookAuthor= "Bates, Walter.";
 br.bookPub= "New-Haven: Maltby, Goldsmith, 1817";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1101';
 
 // Override the path used to find UI images

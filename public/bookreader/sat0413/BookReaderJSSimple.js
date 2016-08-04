@@ -663,7 +663,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0413_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0413_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -721,7 +721,7 @@ br.numLeafs = 106;
 br.bookTitle= "Livingston's monthly law magazine (Vol. 3, No. 1)";
 br.bookAuthor= "Livingston, John (ed.)";
 br.bookPub= "New York: Office of the Monthly Law Magazine, Jan. 1855";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0413';
 
 // Override the path used to find UI images

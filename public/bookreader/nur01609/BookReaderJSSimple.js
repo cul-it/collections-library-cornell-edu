@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01609_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01609_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Juvenile Jewish [sic] arrestees, which [sic] were seized in connection with the demonstrations of November last year. / Secret State Police / Branch Office Wuerzburg / Teletype Section / No.638 Berlin NUE NR 12038";
-br.bookAuthor= ""Secret State Police Hq, IId"";
+br.bookAuthor= "Secret State Police Hq, IId";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1939-01-21";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01609';
 
 // Override the path used to find UI images

@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1612_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1612_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "The cause of the fundholders maintained and defended.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "London: Published by Effingham Wilson., 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1612';
 
 // Override the path used to find UI images

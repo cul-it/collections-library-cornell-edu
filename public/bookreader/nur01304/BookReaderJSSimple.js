@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01304_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01304_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 2;
 br.bookTitle= "My dear Mr. Justice Jackson [fiscal arrangements] / Office of Strategic Services (Main) / APO 413, U.S. Army";
 br.bookAuthor= "William J. Donovan, Major General, U.S.A.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-12";
-br.bookKeyword= "";
+br.bookKeyword= "OCC funding; OCC-OSS relations; OCC bookkeeping; OCC administration";
 br.bookUrl  = '/nuremberg/catalog/nur:01304';
 
 // Override the path used to find UI images

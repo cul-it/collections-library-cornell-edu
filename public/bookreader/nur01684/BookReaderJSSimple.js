@@ -99,7 +99,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01684_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01684_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -157,7 +157,7 @@ br.numLeafs = 12;
 br.bookTitle= "Name: Backe, Herbert / Office of Strategic Services / Research and Analysis Branch / Biographical Report / CONFIDENTIAL";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-24";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi Party; SS; German peasantry; German Christian Farmers; Reich Farm League; Reich Ministry for Food and Agriculture; Four Year Plan; Agricultural policy; Food supply; OSS sources";
 br.bookUrl  = '/nuremberg/catalog/nur:01684';
 
 // Override the path used to find UI images

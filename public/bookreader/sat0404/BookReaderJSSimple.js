@@ -165,7 +165,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0404_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0404_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -223,7 +223,7 @@ br.numLeafs = 23;
 br.bookTitle= "In the Supreme Court. Charles Bennett Pl'ff in Error, against the People, defendants in Error. Brief and Points for People.";
 br.bookAuthor= "Bennett, Charles.";
 br.bookPub= "[S.I.]: [s.n.], 1867";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0404';
 
 // Override the path used to find UI images

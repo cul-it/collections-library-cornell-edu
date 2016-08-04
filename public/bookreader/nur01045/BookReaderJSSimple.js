@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01045_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01045_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Questions for Goering";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Fuehrer Principle; Nazi oath; Obedience oath; Loyalty oath; Nazi racial theory; Nazi Party; Totalitarian government; SA; Weimar Constitution; Reich Cabinet; Reich Chancellor; Reichstag fire; Civil liberties; Communists; Social Democrats; Lebensraum; Living space; German territorial expansion; Mein Kampf";
 br.bookUrl  = '/nuremberg/catalog/nur:01045';
 
 // Override the path used to find UI images

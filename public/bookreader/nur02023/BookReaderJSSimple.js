@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02023_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02023_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "Memorandum for: Mr. Justice Jackson / Subject: Basic Decrees to be considered in Annex to Indictment / Office of U.S. Chief of Counsel / APO 403 / U.S. Army Some Decrees in Addition to Those in British List of 24 September 1945 Which Committee May Wish to Recommend For Inclusion in Indictment or For Use as Evidence / Office of U.S. Chief of Counsel / APO 403 / U.S. Army / Documentation Division British List of Documents Required to Prove Nazi Creation of Totalitarian State / Office of U.S. Chief of Counsel / APO 403 / U.S. Army / Documentation Division";
 br.bookAuthor= "Robert G. Storey";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-25";
-br.bookKeyword= "";
+br.bookKeyword= "German Blood and Honor; Reich Citizenship Law; Amnesty; Military conscription; Persecution of Jews; Expiation contribution; Elimination from economic life; Utilization of Jewish property; Polish nationals; Security Police; Secret State Police; RSHA; Civil liberties; Gestapo; Democratic institutions; Political parties; Sovereignty of Fuehrer; Civil Service; Courts; Public Opinion; Professions; Attorneys; Notaries; Physicians; Dentists; Education; Trade Unions; Works Councils; Totalitarian plan; Conspiracy";
 br.bookUrl  = '/nuremberg/catalog/nur:02023';
 
 // Override the path used to find UI images

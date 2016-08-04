@@ -855,7 +855,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2505_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2505_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -913,7 +913,7 @@ br.numLeafs = 138;
 br.bookTitle= "The extraordinary life and trial of Madame Rachel : at the Central Criminal Court ... on the 22, 23, 24 and 25 September, 1868 : before Mr. Commissioner Kerr ... : the report copied verbatim from the Times.";
 br.bookAuthor= "Levison, Sarah Rachel, b. ca. 1806.";
 br.bookPub= "London: Diprose and Bateman, Printers, 13 &amp; 17, Portual Street., 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2505';
 
 // Override the path used to find UI images

@@ -699,7 +699,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1816_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1816_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -754,10 +754,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 112;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "The "Ralph will" case : Arthur Charlton, lessee of Charlton Stuart Ralph, plaintiff : John Allen, Hugh Ferguson, and James Dalzell, defendants : tried at Downpatrick, March, 1834, before a special jury / By John Carfrae.";
+br.bookTitle= "The 'Ralph will' case : Arthur Charlton, lessee of Charlton Stuart Ralph, plaintiff : John Allen, Hugh Ferguson, and James Dalzell, defendants : tried at Downpatrick, March, 1834, before a special jury / By John Carfrae.";
 br.bookAuthor= "Carfrae, John.";
 br.bookPub= "Belfast: Printed by F.D. Finlay., 1834";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1816';
 
 // Override the path used to find UI images

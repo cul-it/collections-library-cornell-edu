@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00577_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00577_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Directive No. 21 / Case Barbarossa  / Translation of Document 446-PS / Office of U. S. Chief of Counsel";
 br.bookAuthor= "Hitler; the translator is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1940-12-18";
-br.bookKeyword= "";
+br.bookKeyword= "Russia; Case Barbarossa; Invasion of Russia; Military strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:00577';
 
 // Override the path used to find UI images

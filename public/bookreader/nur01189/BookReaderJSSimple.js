@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01189_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01189_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Office Memorandum / To: Lt. Commander O'Malley / From: Robert Eisenberg / Subject: Interrogation by Francis A. Mahoney of Edmund von Thermann / SECRET";
 br.bookAuthor= "Robert Eisenberg";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-17";
-br.bookKeyword= "";
+br.bookKeyword= "Argentina; German business interests; Nazi ideology; Nazi Party; LG. Farben; South American business interests; Corporate camouflage; Auslandsorganisation; German Foreign Office";
 br.bookUrl  = '/nuremberg/catalog/nur:01189';
 
 // Override the path used to find UI images

@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00960_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00960_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Interrogation of Hans Frank / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Lt. Col. Hinkel";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-06";
-br.bookKeyword= "";
+br.bookKeyword= "Poland; Deportations; Slave labor; Persecution of Jews; Ghettos; SS; Civil liberties; Judicial independence; German law; Forced labor; Slave labor; Warsaw ghetto; Nuremberg laws";
 br.bookUrl  = '/nuremberg/catalog/nur:00960';
 
 // Override the path used to find UI images

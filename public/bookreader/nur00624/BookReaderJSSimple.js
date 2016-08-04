@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00624_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00624_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "C-142 / Extract (Translation) / Intention of the OB.d.H. and orders. ";
 br.bookAuthor= "Walter von Brauchitsch; the translator's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1939-06-15";
-br.bookKeyword= "";
+br.bookKeyword= "Poland; Plan of attack; Military Strategy; Aggressive war";
 br.bookUrl  = '/nuremberg/catalog/nur:00624';
 
 // Override the path used to find UI images

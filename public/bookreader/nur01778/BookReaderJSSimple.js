@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01778_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01778_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Re Quisling: /1 hereby certify the following: / Translation / OSLO POLICE HEADQUARTERS / Criminal Division / (Treason) / Major Brogger, / American Embassy / Oslo";
 br.bookAuthor= "Lars L'Abee-Lund";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-19";
-br.bookKeyword= "";
+br.bookKeyword= "Quisling interrogation; German aggression; Concentration camps; Treason; Nazi leadership; Russia; \"Starvation period\"; \"Greater Germanic Commonwealth\"; European Commonwealth; Poland; Holland, Belgium; Austria; Czechoslovakia";
 br.bookUrl  = '/nuremberg/catalog/nur:01778';
 
 // Override the path used to find UI images

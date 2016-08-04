@@ -2655,7 +2655,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2108_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2108_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2713,7 +2713,7 @@ br.numLeafs = 438;
 br.bookTitle= "Trial of Daniel Giddings for shooting Benjamin Wiltshire, August 5, 1882, near Chillicothe, Ohio / the complete report by the official stenographer, N. F. Dean.";
 br.bookAuthor= "Giddings, Daniel, defendant.";
 br.bookPub= "Hillsboro, Ohio: [s.n.], 1885";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2108';
 
 // Override the path used to find UI images

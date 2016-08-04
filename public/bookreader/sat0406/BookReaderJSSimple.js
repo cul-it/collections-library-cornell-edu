@@ -513,7 +513,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0406_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0406_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -571,7 +571,7 @@ br.numLeafs = 81;
 br.bookTitle= "The people of the state of New York vs. George E. Gordon : closing argument to the jury, delivered by Henry Smith, at the Scoharie Circuit, May 3d and 4th, 1866 / reported by P. Deming, stenographer.";
 br.bookAuthor= "Smith, Henry, d. 1884.";
 br.bookPub= "Albany, N.Y.: Weed, Parsons and Co., printers, 1866";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0406';
 
 // Override the path used to find UI images

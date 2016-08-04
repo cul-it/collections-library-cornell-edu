@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01694_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01694_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Name: BUCH, Walter / Office of Strategic Services / Research and Analysis Branch / Biographical Report / CONFIDENTIAL";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-15";
-br.bookKeyword= "";
+br.bookKeyword= "SS; SA; NSDAP; Party Chancellery; Nazi Party; Beer Hall Putsch; Roehm Purge; Nazi courts; OSS sources; Discipline";
 br.bookUrl  = '/nuremberg/catalog/nur:01694';
 
 // Override the path used to find UI images

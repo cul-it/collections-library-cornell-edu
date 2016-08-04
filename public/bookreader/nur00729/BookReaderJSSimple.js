@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00729_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00729_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Witness: Sauckel / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Document Room Interrogation Analysis ";
 br.bookAuthor= "Major Monigan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-15";
-br.bookKeyword= "";
+br.bookKeyword= "Deportation; Forced Labor; Poland; Russia; Ukraine; Labor quotas";
 br.bookUrl  = '/nuremberg/catalog/nur:00729';
 
 // Override the path used to find UI images

@@ -531,7 +531,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2104_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2104_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -589,7 +589,7 @@ br.numLeafs = 84;
 br.bookTitle= "Poor Mary Pomeroy! the Jersey City music teacher.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Philadelphia, Pa.: Old Franklin Publishing House, 1874";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2104';
 
 // Override the path used to find UI images

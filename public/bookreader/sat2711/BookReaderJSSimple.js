@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2711_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2711_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "An account of the imprisonment and sufferings of Robert Fuller, of Cambridge : who while peaceably and quietly and rationally in possession of his own house, was seized and detained in the McLean Asylum for the Insane, at Charlestown, Mass., 65 days, from";
 br.bookAuthor= "Fuller, Robert, b. 1795?";
 br.bookPub= "Boston: The author, 1833";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2711';
 
 // Override the path used to find UI images

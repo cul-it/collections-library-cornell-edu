@@ -117,7 +117,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00515_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00515_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -175,7 +175,7 @@ br.numLeafs = 8;
 br.bookTitle= "Abschrift. Interview Arnold Rechberg mit amerikanischen Journalisten ";
 br.bookAuthor= "Arnold Rechberg. The name of the American journalist is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "German: Bolschewisten; Bolschewiken; Deutschland; Russland";
 br.bookUrl  = '/nuremberg/catalog/nur:00515';
 
 // Override the path used to find UI images

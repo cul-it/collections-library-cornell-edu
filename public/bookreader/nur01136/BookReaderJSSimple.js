@@ -273,7 +273,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01136_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01136_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -331,7 +331,7 @@ br.numLeafs = 39 + 2;
 br.bookTitle= " R &amp; A No. 3114.5 / The Nazi Master Plan / Annex 5: The Illegal Annexation of Territory by Nazi Germany / Office of Strategic Services / Research and Analysis Branch / Draft for the War Crimes Staff / SECRET";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-06";
-br.bookKeyword= "";
+br.bookKeyword= "Memel; Bialystok; Danzig; Eastern territories; Upper Carniola; Carinthia; Lower Styria; Northern Italy; Italian annexed areas; Alsace and Lorraine; Luxembourg; Eupen; Malmedy; Moresnet";
 br.bookUrl  = '/nuremberg/catalog/nur:01136';
 
 // Override the path used to find UI images

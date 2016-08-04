@@ -213,7 +213,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1804_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1804_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -271,7 +271,7 @@ br.numLeafs = 31;
 br.bookTitle= "The O'Shea-Parnell divorce case. Full and complete proceedings.";
 br.bookAuthor= "Parnell, Charles Stewart, 1846-1891.";
 br.bookPub= "Boston: National publishing co., [1890-1899]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1804';
 
 // Override the path used to find UI images

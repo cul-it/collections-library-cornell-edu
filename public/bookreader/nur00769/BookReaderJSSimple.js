@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00769_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00769_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Interrogation of Wisliceny, Dieter  ";
 br.bookAuthor= "Lt. Col. S. W. Brookhart";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-15";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against humanity; Persecution of Jews; Concentration camps; Annihilation camps; Auschwitz; Maidanek; Lublin; Mauthausen; Dachau; Buchenwald; Extermination of Jews; Transports; Slave labor; RSHA; Jewish Question; Jewish Problem; Confiscated property; Gas chambers; Carbon monoxide; Slovakia";
 br.bookUrl  = '/nuremberg/catalog/nur:00769';
 
 // Override the path used to find UI images

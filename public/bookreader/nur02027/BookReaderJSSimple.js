@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02027_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02027_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Subject: Roster of Internees / Headquarters / Internal Security Detachment Office, U.S. Chief of Counsel / APO 403, U. S. Army";
 br.bookAuthor= "B. C. Andrus, Colonel, Cav";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-14";
-br.bookKeyword= "";
+br.bookKeyword= "Nurnberg jail; Confinement; Internment; Detention; OCC internal security";
 br.bookUrl  = '/nuremberg/catalog/nur:02027';
 
 // Override the path used to find UI images

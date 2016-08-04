@@ -135,7 +135,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1801_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1801_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -193,7 +193,7 @@ br.numLeafs = 18;
 br.bookTitle= "A brief sketch of the life of Horace Carter, : who was executed in Worcester, Dec. 7, 1825: for the crime of rape. : Together with remarks on early education.";
 br.bookAuthor= "Carter, Horace, 1799-1825.";
 br.bookPub= "Worcester [Mass.]: [s.n.], 1825";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1801';
 
 // Override the path used to find UI images

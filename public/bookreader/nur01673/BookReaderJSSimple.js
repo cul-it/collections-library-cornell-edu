@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01673_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01673_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Denying Certain Enemies Access to the Courts of the United States / By The President of the United States of America / A Proclamation";
 br.bookAuthor= "Franklin D. Roosevelt";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1942-07-02";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01673';
 
 // Override the path used to find UI images

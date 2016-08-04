@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01665_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01665_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Designation of Official for Execution of Spy by Hanging / Headquarters Twelfth Army Group / APO 655 / To: The Commanding General, European Theater of Operations, APO 887, U. S. Army";
 br.bookAuthor= "H. B. Lewis, Brigadier General, USA";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-09-16";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01665';
 
 // Override the path used to find UI images

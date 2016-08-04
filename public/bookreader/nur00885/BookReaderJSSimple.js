@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00885_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00885_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 2;
 br.bookTitle= "ONA 5 Wiesbaden General / SS Lieut. Gen. J&#252;rgen Stroop, under whose direction the Warsaw Ghetto was liquidated ... / Copyright, 1945, Overseas News Agency";
 br.bookAuthor= "No author's name is given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-28";
-br.bookKeyword= "";
+br.bookKeyword= "Warsaw Ghetto; American fliers; Extradition procedures; Italy; War crimes";
 br.bookUrl  = '/nuremberg/catalog/nur:00885';
 
 // Override the path used to find UI images

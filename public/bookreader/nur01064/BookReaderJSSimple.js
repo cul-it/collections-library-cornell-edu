@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01064_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01064_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 29;
 br.bookTitle= "Trial Brief: Hess";
 br.bookAuthor= "Mr. K. E. Lachmann";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-14";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Crimes against humanity; Preparations to wage aggressive war; Totalitarian government; Nazi seizure of power; Persecution of Jews; SA; SS; Reich Cabinet; Nazi Party; Munich Putsch; Mein Kampf; Concentration camps; Reich Defense Council; Trade unions; Persecution of Jews; Persecution of Christian Churches; Hitler Youth; German Student League; Civil servants; Sudetenland; Austria; Insane persons; Common plan; Conspiracy; Poland; Nazi racial theory; German Blood and Honor";
 br.bookUrl  = '/nuremberg/catalog/nur:01064';
 
 // Override the path used to find UI images

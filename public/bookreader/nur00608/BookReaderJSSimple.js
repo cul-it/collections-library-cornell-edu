@@ -159,7 +159,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00608_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00608_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -217,7 +217,7 @@ br.numLeafs = 22;
 br.bookTitle= "Trial Brief re The General Staff and High Command of the German Armed Forces ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes Against Peace; War Crimes; Crimes Against Humanity; \"Case White\"; Poland; OKW (High Command of the Armed Forces); OKH (High Command of the Army); OKM (High Command of the Navy); OKL (High Command of the Air Force); Goering; Keitel; Jodl; Raeder; Doenitz";
 br.bookUrl  = '/nuremberg/catalog/nur:00608';
 
 // Override the path used to find UI images

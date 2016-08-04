@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01830_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01830_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Brief of Interrogation of H. Kraffezyk / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "The interrogator is not named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-29";
-br.bookKeyword= "";
+br.bookKeyword= "Frank's diary; Frank's secretary; Forced labor; Food rations; Poland; Civilian populations; German civil servants";
 br.bookUrl  = '/nuremberg/catalog/nur:01830';
 
 // Override the path used to find UI images

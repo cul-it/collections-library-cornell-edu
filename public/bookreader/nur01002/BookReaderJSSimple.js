@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01002_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01002_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -211,7 +211,7 @@ br.numLeafs = 21;
 br.bookTitle= "Testimony of Herman Goering, taken at Nuremberg, Germany, on 8 October 1945, from 11 AM to 12:30 PM, by Col. John H. Amen, IGD, OUSCC";
 br.bookAuthor= "The interrogation officer is Colonel Amen.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-08";
-br.bookKeyword= "";
+br.bookKeyword= "Art objects; Art dealers; Goering's art gallery; Hitler's gallery; Rosenberg's Hohe Schule; Einsatzstab Rosenberg; Poland; Confiscated artwork; Monte Cassino; Sterzing altarpiece; Kunstfond; Goering's finances; Reichstag fire; Gestapo; Concentration camps; SS; German police; Secret police; Security police; Criminal police; Reich police; Order police; Security service; General police; Secret state police";
 br.bookUrl  = '/nuremberg/catalog/nur:01002';
 
 // Override the path used to find UI images

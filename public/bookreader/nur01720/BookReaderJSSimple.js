@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01720_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01720_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Liste der in Argentinien kennengelernten Persoenlichkeiten";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1937-08-06";
-br.bookKeyword= "";
+br.bookKeyword= "Argentina; German business interests; Foreign firms; I. G. Mann; Anilinas Alemanas";
 br.bookUrl  = '/nuremberg/catalog/nur:01720';
 
 // Override the path used to find UI images

@@ -928,10 +928,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 141;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "Appel du jugement de la premi&#232;re chambre du Tribunal de premi&#232;re instance de la Seine, du 15 fevrier 1861 : M. J&#233;r&#244;me-Napol&#232;on Bonaparte et Mme &#201;lisabeth Patterson contre S. A. I. le Prince Napol&#232;on.";
-br.bookAuthor= "Bonaparte, J&#233;r&#244;me Napol&#232;on, 1805-1870.";
+br.bookTitle= "Appel du jugement de la premi\350re chambre du Tribunal de premi\350re instance de la Seine, du 15 fevrier 1861 : M. J\351r\364me-Napol\350on Bonaparte et Mme \311lisabeth Patterson contre S. A. I. le Prince Napol\350on.";
+br.bookAuthor= "Bonaparte, J\351r\364me Napol\350on, 1805-1870.";
 br.bookPub= "Baltimore: J. S. Waters, [1861?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2715';
 
 // Override the path used to find UI images

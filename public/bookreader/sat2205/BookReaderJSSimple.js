@@ -219,7 +219,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2205_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2205_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -277,7 +277,7 @@ br.numLeafs = 32;
 br.bookTitle= "Report of the trial of Humphrey Boyle, indicted at the instance of the Constitutional Association, as a man with name unknown : for pubtishing [sic] an alleged blasphemous and seditious libel, as one of the shopmen of Mr. Carlile; which took place before Mr. Common Sergeant Denman, and a common jury, at the Old Bailey Sessions House, on the 27th of May, 1822. With a narrative of the proceedings against the defendant before trial. To which is attached, the trial of Joseph Rhodes, under the name of Wm. Holmes, as forced upon him, for publishing a copy of the same pamphlet";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "London: Printed by R. Carlile and published at the Koran Society's Office, 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2205';
 
 // Override the path used to find UI images

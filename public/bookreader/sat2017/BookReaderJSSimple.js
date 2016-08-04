@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2017_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2017_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 16;
 br.bookTitle= "The trial of Governor Wall : executed at the Old Bailey, Jan. 28th, 1802, for the murder of Benjamin Armstrong, in the Garrison at Goree, upon the coast of Africa, July, 1782; with the extraordinary particulars of his escape at Reading, after being captured under a warrant from the Privy Council in 1784, and his subsequent surrented in 1802, having lived twenty years in exile.";
 br.bookAuthor= "Wall, Joseph, 1737-1802.";
 br.bookPub= "London: Published by Frederick Farrah, 282, Strand., 1802";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2017';
 
 // Override the path used to find UI images

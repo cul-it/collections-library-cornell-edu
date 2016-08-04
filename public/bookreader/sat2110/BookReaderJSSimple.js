@@ -471,7 +471,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2110_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2110_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -529,7 +529,7 @@ br.numLeafs = 74;
 br.bookTitle= "Circumstances attending the death and burial of Geo. Gilmer Poindexter : and the proof on the examination of Allen A. Hall, charged with murder / George Gilmer Poindexter.";
 br.bookAuthor= "Poindexter, George Gilmer.";
 br.bookPub= "Nashville, TN.: J.O. Griffith &amp; co., 1860";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2110';
 
 // Override the path used to find UI images

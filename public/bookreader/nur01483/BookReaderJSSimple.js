@@ -207,7 +207,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01483_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01483_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -265,7 +265,7 @@ br.numLeafs = 23;
 br.bookTitle= "R &amp; A No. 3172.3 / Miscellaneous Memoranda on War Criminals / Office of Strategic Services / Research and Analysis Branch";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-30";
-br.bookKeyword= "";
+br.bookKeyword= "Near East; Middle East; Collaborationists; War crimes; Local trials; Turkey; Egypt; Iraq; Iran; Palestine; Levant; Afghanistan; Turanist movement; OSS sources; R &amp; A Report No. 2212; Espionage; Mufti of Jerusalem; Palestine Arab Party; Arab Legion; R &amp; A Report No. 1090.26; R &amp; A Report No. 1090.83; R &amp; A Report No. 1090.93; Palestine Criminal Code; Baghdad Penal Code; Insurrection; Treason; Golden Square; Melliun Iran; Japan; Japanese nationals; German nationals; Italian nationals; Polish nationals; Czech nationals; R &amp; A Report No. 890.2; OSS CID reports; USSR; Soviet Union; Treaty of Neutrality; German Legation; Japanese Legation";
 br.bookUrl  = '/nuremberg/catalog/nur:01483';
 
 // Override the path used to find UI images

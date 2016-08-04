@@ -327,7 +327,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1702_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1702_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -385,7 +385,7 @@ br.numLeafs = 50;
 br.bookTitle= "The life and confession of Carolino Estradas de Mina : executed at Doylestown, June 21, 1832, for poisoning with arsenic, William Chapman / written by himself in the Spanish language, while under sentence of death in the jail at Doylestown, and delivered by him to the sheriff of Bucks County, with a request to have the same translated into English ; translated from the original ms. in Spanish, by C.G.";
 br.bookAuthor= "Estradas de Mina, Carolino, 1809-1832.";
 br.bookPub= "Philadelphia: Robert Desilver, 1832";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1702';
 
 // Override the path used to find UI images

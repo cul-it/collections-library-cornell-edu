@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00634_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00634_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 29;
 br.bookTitle= "Introduction [The German Army]";
 br.bookAuthor= "Walther von Brauchitsch; Erich von Manstein; Franz Haider; Walter Warlimont; Siegfried Westphal";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-19";
-br.bookKeyword= "";
+br.bookKeyword= "[see preceding section 10.04]";
 br.bookUrl  = '/nuremberg/catalog/nur:00634';
 
 // Override the path used to find UI images

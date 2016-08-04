@@ -327,7 +327,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00641_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00641_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -385,7 +385,7 @@ br.numLeafs = 1 + 49;
 br.bookTitle= "Index;  This Report is Secret ";
 br.bookAuthor= "Franz Halder";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-07";
-br.bookKeyword= "";
+br.bookKeyword= "OKH; OKW; German General Staff; German Army; Versailles Treaty; Czechoslovakia; Polish Campaign; SS; SA; SD; Seeloewe; Sea-lion; French campaign; Balkan campaign; Russian campaign";
 br.bookUrl  = '/nuremberg/catalog/nur:00641';
 
 // Override the path used to find UI images

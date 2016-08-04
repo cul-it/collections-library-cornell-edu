@@ -735,7 +735,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2803_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2803_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -793,7 +793,7 @@ br.numLeafs = 118;
 br.bookTitle= "The proceedings of a general court-martial : held in the council-chamber at Whitehall, on Wednesday the 14th, and continued by several adjournments to Tuesday the 20th of December 1757, upon the trial of Lieutenant-General Sir John Mordaunt, by virtue of his Majesty's warrant, bearing date the 3d day of the same month.";
 br.bookAuthor= "Mordaunt, John, Sir, 1697-1780.";
 br.bookPub= "London: Printed for A. Millar, in the Strand, 1758";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2803';
 
 // Override the path used to find UI images

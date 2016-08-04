@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01306_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01306_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Dear General Donovan / Office of United States Chief of Counsel for Prosecution of Axis Criminality";
 br.bookAuthor= "Robert H. Jackson";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-07";
-br.bookKeyword= "";
+br.bookKeyword= "Executive Order 9547; OSS; Evidence management;";
 br.bookUrl  = '/nuremberg/catalog/nur:01306';
 
 // Override the path used to find UI images

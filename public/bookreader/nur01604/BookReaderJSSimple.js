@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01604_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01604_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -95,9 +95,9 @@ br.numLeafs = 2;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Transfer into Concentration Camps of Jews arrested in course of actions / Secret State Police / Branch Office Wurzburg / Teletype Section / Flash Berlin NUE 245 493";
-br.bookAuthor= ""Hq Secret State Police / Berlin II D - General (allgemeine) / No. 38 304"";
+br.bookAuthor= "Hq Secret State Police / Berlin II D - General (allgemeine) / No. 38 304";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-14";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01604';
 
 // Override the path used to find UI images

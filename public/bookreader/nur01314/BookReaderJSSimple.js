@@ -105,7 +105,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01314_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01314_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -163,7 +163,7 @@ br.numLeafs = 13;
 br.bookTitle= "Progress Report on Preparation of Prosecution / Memorandum / SECRET";
 br.bookAuthor= "James B. Donovan";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-30";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01314';
 
 // Override the path used to find UI images

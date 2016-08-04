@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01345_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01345_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 7;
 br.bookTitle= "Organization and Functions of the Schutzstaffel";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Schutzstaffel (SS); Security Police; State Police; Criminal Police; Civil Police; Racial matters; Political education; Volksdeutsche matters";
 br.bookUrl  = '/nuremberg/catalog/nur:01345';
 
 // Override the path used to find UI images

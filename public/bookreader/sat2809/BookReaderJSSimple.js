@@ -1095,7 +1095,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2809_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2809_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1153,7 +1153,7 @@ br.numLeafs = 178;
 br.bookTitle= "Trial of Mrs. Elizabeth G. Wharton, on the charge of poisoning General W. S. Ketchum.  Tried at Annapolis, Md., December, 1871-January, 1872.";
 br.bookAuthor= "Wharton, Elizabeth G. (Nugent)";
 br.bookPub= "[Baltimore]: Reported and published by the Baltimore gazette, [1872]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2809';
 
 // Override the path used to find UI images

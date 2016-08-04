@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01667_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01667_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -95,9 +95,9 @@ br.numLeafs = 2;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Before a military commission which [sic] convened at Le Perray, France... / Headquarters Twelfth Army Group / APO 655 / Military Commission / Order Number 1";
-br.bookAuthor= "Leven C. Allen, Major General, GSC, Chief of Staff, "By command of Lieutenant General Bradley"";
+br.bookAuthor= "Leven C. Allen, Major General, GSC, Chief of Staff, 'By command of Lieutenant General Bradley'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01667';
 
 // Override the path used to find UI images

@@ -123,7 +123,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00530_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00530_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -181,7 +181,7 @@ br.numLeafs = 17;
 br.bookTitle= "OCC Brief, Section I: Introduction. ";
 br.bookAuthor= "Lt. Paul Johnston, USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi Party; Nazi conspiracy; NSDAP; Treaty of Versailles; Nazi Party Platform; Greater Germany; German Reich; German colonies; Mein Kampf; Lebensraum; Mv New Order; Racial supremacy; German blood; Master race; Fuehrerprinzip; The Fuehrer Principle; German power; German folk";
 br.bookUrl  = '/nuremberg/catalog/nur:00530';
 
 // Override the path used to find UI images

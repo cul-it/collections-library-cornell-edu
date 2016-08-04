@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01585_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01585_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum Through Colonel Brundage / For the Board of Review / Subject: Trial Brief on Defendant Streicher";
 br.bookAuthor= "J. R. Clagett, Captain, JAGD";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Evidence gathering; NSDAP documents; Freising; Blumenstein letter";
 br.bookUrl  = '/nuremberg/catalog/nur:01585';
 
 // Override the path used to find UI images

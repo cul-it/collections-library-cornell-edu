@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1008_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1008_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "In equity. Opinion, decree, &amp; injunction, in the case of Marcus Ormsbee vs. John Wood / Marcus Ormsbee.";
 br.bookAuthor= "Ormsbee, Marcus.";
 br.bookPub= "New York: Printed by T.F. Leslie &amp; co., 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1008';
 
 // Override the path used to find UI images

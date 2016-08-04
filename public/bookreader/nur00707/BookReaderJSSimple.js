@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00707_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00707_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 4;
 br.bookTitle= "Interview with General der Artillerie, Walter Warlimont, Deputy Chief of Wehrmachtsfiihrungsstab/ SECRET";
 br.bookAuthor= "Major Kenneth W. Hechler is the interviewer.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-02";
-br.bookKeyword= "";
+br.bookKeyword= "Eastern Front; Western Front; German High Command; France; Russia; Logistics; Military strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:00707';
 
 // Override the path used to find UI images

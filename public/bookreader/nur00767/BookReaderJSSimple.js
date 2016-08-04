@@ -111,7 +111,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00767_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00767_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -169,7 +169,7 @@ br.numLeafs = 14;
 br.bookTitle= "OCC Brief, Section 1 / The Nazi conspirators adopted and publicized a program of relentless persecution of Jews.";
 br.bookAuthor= "Lt. S. L. Sharp; Major S. M. Peyser";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Crimes against humanity; Persecution of Jews; NSDAP policy; Nazi racial policy; Nazi ideology; Propaganda; Anti-Semitism; 1933 Boycott; Jewish Problem; Nurnberg Laws; Nazi laws; Volksgemeinschaft; Racial community; Citizenship Laws; Civil rights; Economic persecution; Disenfranchisement; Final Solution; Voelkischer Beobachter";
 br.bookUrl  = '/nuremberg/catalog/nur:00767';
 
 // Override the path used to find UI images

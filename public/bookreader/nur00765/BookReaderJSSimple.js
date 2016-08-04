@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00765_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00765_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Von Der Einsatzgruppe A Durchgef&#252;hrte Judenexekutionen ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Execution of Jews; Crimes Against Humanity; Mass murder; Riga; Schaulen; Kauen; Minsk; Krasnogwardeisk; Dunaburg; Reval";
 br.bookUrl  = '/nuremberg/catalog/nur:00765';
 
 // Override the path used to find UI images

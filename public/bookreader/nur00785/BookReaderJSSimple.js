@@ -987,7 +987,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00785_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00785_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1045,7 +1045,7 @@ br.numLeafs = 155;
 br.bookTitle= " R &amp; A No. 2500.15 / German Military Government Over Europe: Economic Controls in Occupied Europe / Office of Strategic Services / Research and Analysis Branch / RESTRICTED";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-28";
-br.bookKeyword= "";
+br.bookKeyword= "Occupied territories; Occupied Europe; German military government; German economic policy; German economic control; German occupation; German military administration; German civil administration; Satellite states; Organization Todt; Incorporated territories; Economic occupation; Economic penetration; Spoliation; Sequestration of property; Currency; Banking; Soviet territories; Exploitation; Agriculture; Industry; Raw materials; Iron; Steel; Coal; Oil; Food stocks; Balkan countries; Foreign trade; Financial controls; Italian economy; French economy; German business firms; German cartels; Poland; Bohemia-Moravia; Czechoslovakia; Austria; Belgium; Danzig; Memel; Luxembourg; Netherlands; Serbia; Norway; Denmark; Nazi ideology; Bolshevism; New Order; German hegemony; Slave labor; Forced labor; Hague Convention; War crimes; German colonies; Germanization; OKW; Four Year Plan; Armaments; German war economy; Eastern territories; Speer Ministry; Reichsstellen; Transportation; German Armistice Commission; Reich Credit Institutions; RKK; Protectorate; Aryanization; French labor; Price control; Black markets; Gold; International clearing; Securities; Reichskreditkassen; Central banks; Persecution of Jews; Vichy France";
 br.bookUrl  = '/nuremberg/catalog/nur:00785';
 
 // Override the path used to find UI images

@@ -507,7 +507,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0107_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0107_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -565,7 +565,7 @@ br.numLeafs = 80;
 br.bookTitle= "Report of the trial of John G. Cooley, editor of T?he Reporter', a temperance paper, for an alledged [sic]libel upon K.H. Van Rensalaer, keeper of a fashionable grog shop in Stonington, styled the Waddawannuc, and one Lewis, keeper of a ninepin alley in connection therewith";
 br.bookAuthor= "Cooley, John G.";
 br.bookPub= "Norwich, Conn.: Published by John G. Cooley, 1847";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0107';
 
 // Override the path used to find UI images

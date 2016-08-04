@@ -309,7 +309,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0105_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0105_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -367,7 +367,7 @@ br.numLeafs = 47;
 br.bookTitle= "Trial of The Commonwealth versus Origen Bacheler, for a libel on the character of George B. Beals, deceased, at the Municipal Court, Boston, March term, A.D. 1829, before Hon. P.O. Thacher, judge, / reported by John W. Whitman.";
 br.bookAuthor= "Bacheler, Origen.";
 br.bookPub= "Boston: Published by John H. Belcher, no. 2, Faneuil Hall, 1829";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0105';
 
 // Override the path used to find UI images

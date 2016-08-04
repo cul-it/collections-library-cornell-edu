@@ -2469,7 +2469,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1301_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1301_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -2527,7 +2527,7 @@ br.numLeafs = 407;
 br.bookTitle= "Proceedings of an ecclesiastical concil, in the case of the proprietors of Hollis-street meeting-house and the Rev. John Pierpont, their pastor, prepared from the official journal and original documents / by Samuel K. Lothrop.";
 br.bookAuthor= "Pierpont, John, 1785-1866, defendant.";
 br.bookPub= "Boston: Press of W.W. Clapp, 1841";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1301';
 
 // Override the path used to find UI images

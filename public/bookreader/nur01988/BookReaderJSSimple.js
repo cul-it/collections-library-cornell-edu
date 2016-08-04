@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01988_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01988_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum for Colonel Storey";
 br.bookAuthor= "R. H. Jackson";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-17";
-br.bookKeyword= "";
+br.bookKeyword= "Documentation Division; London Evidence Collection and Analysis Section; Committees 1, 2, 3; Committee 4; Common plan conspiracy; Organizational responsibility; Individual responsibility";
 br.bookUrl  = '/nuremberg/catalog/nur:01988';
 
 // Override the path used to find UI images

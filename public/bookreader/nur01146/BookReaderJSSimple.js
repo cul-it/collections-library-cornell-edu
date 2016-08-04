@@ -327,7 +327,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01146_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01146_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -385,7 +385,7 @@ br.numLeafs = 47 + 3;
 br.bookTitle= "Women in Nazi Germany - II Employment";
 br.bookAuthor= "Ruth Kempner";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-07-27";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01146';
 
 // Override the path used to find UI images

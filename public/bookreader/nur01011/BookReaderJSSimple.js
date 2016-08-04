@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01011_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01011_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 5;
 br.bookTitle= "Goering Notes";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "German territorial expansion; Lebensraum; Poland; Russia; Versailles treaty; Nazi policy; My New Order; German industrialists; German trade unions; SA; SS; Nazi Labor Front; Gestapo; Aufbau Einer Nation; Concentration camps; Crimes against humanity; Communists; Social Democrats; Exterminations; Persecution of clergy; Roehm Purge; Propaganda; Editorial Law; Reich Press Association; Voelkischer Beobachter; Reich Propaganda Ministry; Reich Chamber of Culture; Censorship; German armed forces; Reichswehr; Sudetenland; Mein Kampf; Austria";
 br.bookUrl  = '/nuremberg/catalog/nur:01011';
 
 // Override the path used to find UI images

@@ -225,7 +225,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3909_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3909_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -283,7 +283,7 @@ br.numLeafs = 33;
 br.bookTitle= "The most foul and unparalleled murder in the annals of crime : life and confession of Reuben A. Dunbar, convicted and executed for the murder of Stephen V. and David L. Lester, (aged 8 and 10 years,) in Westerlo, Albany County, September 28, 1850.";
 br.bookAuthor= "L. F. B.";
 br.bookPub= "Albany, N.Y.: John D. Parsons; Weed, Parsons &amp; Co., printers), 1851";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3909';
 
 // Override the path used to find UI images

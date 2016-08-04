@@ -183,7 +183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2015_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2015_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -241,7 +241,7 @@ br.numLeafs = 26;
 br.bookTitle= "The trial at large, of Joseph Wall, esq. : late governor of Goree Island, on the coast of Africa, for the wilful murder, of Benjamin Armstrong, in July, 1782, by causing him to be tied to a gun-carriage, and flogged with a piece of rope, on his bare back, by Black Men: Who was tried, and found Guilty, at the Sessions-House in the Old-Bailey, on the 20th of January, 1802.";
 br.bookAuthor= "Wall, Joseph, 1737-1802.";
 br.bookPub= "London: Published by John Fairburn, 146, Minories; Printed by C. and W. Galabin, Ingram-Court, 1802";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2015';
 
 // Override the path used to find UI images

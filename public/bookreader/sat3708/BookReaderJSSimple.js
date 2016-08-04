@@ -405,7 +405,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3708_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3708_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -463,7 +463,7 @@ br.numLeafs = 63;
 br.bookTitle= "Trial of William Bushnell, M.D., Milton Fuller, M.D., Samuel Gregg, M.D., H. L. H. Hoffendahl, M.D., George Russell, M.D., I. T. Talbot, M.D., David Thayer, M.D., and Benj. H. West, M.D., all of Boston, for practising homoeopathy, while they were members";
 br.bookAuthor= "Bushnell, William, 1801-1879, defendant.";
 br.bookPub= "Boston: [s.n.], 1873";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3708';
 
 // Override the path used to find UI images

@@ -357,7 +357,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3804_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3804_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -415,7 +415,7 @@ br.numLeafs = 55;
 br.bookTitle= "Closing argument of Hon. George M. Curtis, counsel for respondent, in the matter of the inquiry into the sanity of William C. Rhinelander. Before commissioners Patterson, Detmold and Nolan. New York, September 2nd, 1884.";
 br.bookAuthor= "Curtis, Geo. M. (George Milton), 1843-1915.";
 br.bookPub= "New York: [s.n.], 1884";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3804';
 
 // Override the path used to find UI images

@@ -357,7 +357,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1502_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1502_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -415,7 +415,7 @@ br.numLeafs = 55;
 br.bookTitle= "A brief account of the trial of William Orr of Farranshane in the county of Antrim to which are annexed several interesting facts and authentic documents connected therewith.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Dublin: Printed by J. Chambers, 1797";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1502';
 
 // Override the path used to find UI images

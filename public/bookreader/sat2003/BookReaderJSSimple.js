@@ -117,7 +117,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2003_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2003_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -175,7 +175,7 @@ br.numLeafs = 15;
 br.bookTitle= "The trial of William Weldon, and Richard Weldon alias Dodson : before Baron Thompson, at Oakham, on Saturday the 14th of March, 1789, for the murder of Mr. John Freeman, of Edith-Weston and an account of the murder of Mr. Lumley, goaler at Oakham.";
 br.bookAuthor= "Weldon, William.";
 br.bookPub= "Lincoln, MA.: Printed and sold by W. Brooke, 1789";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2003';
 
 // Override the path used to find UI images

@@ -93,7 +93,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00527_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00527_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -151,7 +151,7 @@ br.numLeafs = 11;
 br.bookTitle= "Hitler's Accession to power  [title is handwritten]";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1933-01-28";
-br.bookKeyword= "";
+br.bookKeyword= "NSDAP; Notverordnung; Nazi seizure of power";
 br.bookUrl  = '/nuremberg/catalog/nur:00527';
 
 // Override the path used to find UI images

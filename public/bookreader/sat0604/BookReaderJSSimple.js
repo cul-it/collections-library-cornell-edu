@@ -969,7 +969,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0604_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0604_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1027,7 +1027,7 @@ br.numLeafs = 157;
 br.bookTitle= "Argument of George Ticknor Curtis and S.D. Law in the U.S. Circuit Court for the Southern District of New York : Before his honor, Justice Nelson, on behalf of the dentists as to their right to use hard rubber vulcanite in the manufacture of bases for artificial teeth, in the suits of H.B. Goodyear, et al., vs. Thomas G. Wait.";
 br.bookAuthor= "Curtis, George Ticknor, 1812-1894.";
 br.bookPub= "New York: Diossy &amp; Cockcroft, Law Booksellers and Publishers, 1867";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0604';
 
 // Override the path used to find UI images

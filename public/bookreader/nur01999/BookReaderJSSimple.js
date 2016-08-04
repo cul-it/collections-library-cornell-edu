@@ -63,7 +63,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01999_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01999_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -121,7 +121,7 @@ br.numLeafs = 6;
 br.bookTitle= "Memorandum to the Planning Committee / From : Commander Donovan";
 br.bookAuthor= "James B. Donovan, Commander, USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-19";
-br.bookKeyword= "";
+br.bookKeyword= "Visual evidence; Motion picture evidence; Evidentiary Charts; Trial Exhibits; Concentration Camp film (OCC production); SS films Concentration camps; Warsaw Ghetto; Mauthausen; Buchenwald; Persecution of Jews; Trial of July 20 Plotters (film); People's Court; The Nazi Plan (film)";
 br.bookUrl  = '/nuremberg/catalog/nur:01999';
 
 // Override the path used to find UI images

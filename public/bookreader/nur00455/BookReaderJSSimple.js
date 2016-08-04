@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00455_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00455_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 106;
 br.bookTitle= "Uber die Schuldfrage";
 br.bookAuthor= "Georg R. Thomas";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-12";
-br.bookKeyword= "";
+br.bookKeyword= "Versailles Treaty; Bolshevism;  Bolshevist; Seizure of power; Persecution of Jews; Jewish Question; Nuremberg  Laws; Blomberg Affair; Fritsch Affair; Gestapo; Invasion of Austria;  Beck-Witzleben opposition group; Invasion of Czechoslovakia; Invasion of  Poland; Armistice with France; Invasion of England; Opposition to Hitler;  German resistance; Complicity with Hitler; Nazi sympathizers; German  industrialists; German labor leaders; German Armed Forces; German people; War  against Russia; Occupied territories; Four Year Plan; Foreign laborers;  United States; Armament; Nazification; Corruption; Manuscripts";
 br.bookUrl  = '/nuremberg/catalog/nur:00455';
 
 // Override the path used to find UI images

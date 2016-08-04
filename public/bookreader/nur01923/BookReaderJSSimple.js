@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01923_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01923_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -209,9 +209,9 @@ br.numLeafs = 20;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "German Preparations for War: / Method of Planning - Method of Training to Carry out these Plans / Autobiographical Notes on the Military Career and Political Views of Gen. D. Art. Warlimont / Special Detention Center Ashcan / CCPWE # 32, APO 513/ Detailed Interrogation Report / [in two parts] / SECRET";
-br.bookAuthor= "Part I: "M. S. H."; Part II: Walter Warlimont";
+br.bookAuthor= "Part I: 'M. S. H.'; Part II: Walter Warlimont";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-29";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01923';
 
 // Override the path used to find UI images

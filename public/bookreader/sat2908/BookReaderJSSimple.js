@@ -615,7 +615,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2908_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2908_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -670,10 +670,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 98;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "Proc&#232;s de Darm&#232;s devant la Cour des pairs : attentat contre la vie du roi.";
-br.bookAuthor= "Darm&#232;s, Marius Ennemond, 1797-1841.";
+br.bookTitle= "Proc\350s de Darm\350s devant la Cour des pairs : attentat contre la vie du roi.";
+br.bookAuthor= "Darm\350s, Marius Ennemond, 1797-1841.";
 br.bookPub= "Paris: Pagnerre, 1840";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2908';
 
 // Override the path used to find UI images

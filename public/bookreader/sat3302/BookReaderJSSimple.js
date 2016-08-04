@@ -339,7 +339,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3302_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3302_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -397,7 +397,7 @@ br.numLeafs = 52;
 br.bookTitle= "A remarkable narrative of Whiting Sweeting : who was executed at Albany, in the state of New York for murder.";
 br.bookAuthor= "Sweeting, Whiting, d. 1791.";
 br.bookPub= "Exeter [N.H.]: Printed by Henry Ranlet, and sold at his book-store, in Main-Street., 1794";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3302';
 
 // Override the path used to find UI images

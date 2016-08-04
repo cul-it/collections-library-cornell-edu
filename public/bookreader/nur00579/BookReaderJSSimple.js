@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00579_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00579_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "NOTES / regarding the discussion between the FUEHRER and the Japanese Foreign Minister MATSUOKA in the presence of the Reich Foreign Minister and of the Minister of State MEISSNER in Berlin on the 4th of April 1941.  Translation of Document 1881-PS / Office of U. S. Chief of Counsel.";
 br.bookAuthor= "Schmidt; the translator is Ernst M. Cohn, Pfc. 33925738.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-04-04";
-br.bookKeyword= "";
+br.bookKeyword= "United States; Bolshevism; China; Submarines; Guerilla warfare; Technical improvements; Singapore; Military strategy";
 br.bookUrl  = '/nuremberg/catalog/nur:00579';
 
 // Override the path used to find UI images

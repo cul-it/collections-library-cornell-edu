@@ -273,7 +273,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3105_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3105_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -331,7 +331,7 @@ br.numLeafs = 41;
 br.bookTitle= "An alarme for sinners : containing the confession, prayers, letters, and last words of Robert Foulkes ... [executed for murder] with an account of his life ...";
 br.bookAuthor= "Foulkes, Robert, d. 1679.";
 br.bookPub= "London: Langley Curtis, 1679";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3105';
 
 // Override the path used to find UI images

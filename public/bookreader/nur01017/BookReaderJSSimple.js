@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01017_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01017_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "X";
 br.bookAuthor= "Herman Goering [?]";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "German rearmament; Austria; Danzig; Sudetenland; German foreign policy; Personal oath; Goering's loyalty; Hitler's inner circle";
 br.bookUrl  = '/nuremberg/catalog/nur:01017';
 
 // Override the path used to find UI images

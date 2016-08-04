@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01087_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01087_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "ONA 6 Stockholm Trials / Copyright, 1945, Overseas News Agency";
 br.bookAuthor= "Karl Frahm";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-10";
-br.bookKeyword= "";
+br.bookKeyword= "Finnish war criminals; Finnish Constitution; Soviet Armistice; Special court; Allied Armistice Commission";
 br.bookUrl  = '/nuremberg/catalog/nur:01087';
 
 // Override the path used to find UI images

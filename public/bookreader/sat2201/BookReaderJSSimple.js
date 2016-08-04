@@ -171,7 +171,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2201_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2201_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -229,7 +229,7 @@ br.numLeafs = 24;
 br.bookTitle= "The Pirates : a brief account of the horrid massacre of the captain, mate, and supercargo of the schooner Plattsburg, of Baltimore, on the high seas, in July 1816, by a part of the crew of said vessel ... : annexed, are some remarks relating to the trial ";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "Boston: Printed by H. Trumbull, 1819";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2201';
 
 // Override the path used to find UI images

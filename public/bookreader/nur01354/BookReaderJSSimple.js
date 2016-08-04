@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01354_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01354_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Counter Intelligence Report on Head of the RSHA Kaltenbrunner, Dr. Ernst / Headquarters Twelfth Army Group / Mobile Held Interrogation Unite No. 4.";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-25";
-br.bookKeyword= "";
+br.bookKeyword= "SS: NSDAP; \"Career\"; \"Early Life\"; \"Pre-Anschluss Activites\": \"Reorganization of Austrian Police\"; \"Leadership of RSHA\"; Dollfuss affair; Anschluss";
 br.bookUrl  = '/nuremberg/catalog/nur:01354';
 
 // Override the path used to find UI images

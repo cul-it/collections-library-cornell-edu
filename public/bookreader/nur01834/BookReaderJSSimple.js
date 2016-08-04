@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01834_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01834_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Brief of Interrogation of General von Falkenhausen / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Major J. J. Monigan is the interrogator.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-30";
-br.bookKeyword= "";
+br.bookKeyword= "OKH; German police; SD; Secret Field Police; Military Police; Court martial procedure; Civilian populations; Belgium; Military justice; Due process";
 br.bookUrl  = '/nuremberg/catalog/nur:01834';
 
 // Override the path used to find UI images

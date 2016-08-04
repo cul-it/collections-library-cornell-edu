@@ -1683,7 +1683,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3003_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3003_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1741,7 +1741,7 @@ br.numLeafs = 276;
 br.bookTitle= "Report of the trial of William Henry Theodore Durrant : indicted for the murder of Blanche Lamont, before the Superior Court of the city and county of San Francisco : including a full history of the case after defendant's conviction ... ; also including a complete synopsis of the evidence in possession of the authorities...";
 br.bookAuthor= "Durrant, William Henry Theodore, d. 1898.";
 br.bookPub= "Detroit: The Collector Publishing Company, 1899";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3003';
 
 // Override the path used to find UI images

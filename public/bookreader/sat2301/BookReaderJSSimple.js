@@ -405,7 +405,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2301_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2301_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -463,7 +463,7 @@ br.numLeafs = 63;
 br.bookTitle= "Trial by nisi prius in the Court of King's Bench, Ireland, in the case wherein Mr. John Hevey was plaintiff and Charles Henry Sirr, Esq., was defendant, on an action for an assault and false imprisonment : this trial was had before the Right Honourable Arthur Lord Viscount Kilwarden, Lord Chief Justice of the King's Bench, and a special jury.";
 br.bookAuthor= "Hevey, John.";
 br.bookPub= "Dublin: Printed by John Stockdale, 1802";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2301';
 
 // Override the path used to find UI images

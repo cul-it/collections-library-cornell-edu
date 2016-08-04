@@ -57,7 +57,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01581_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01581_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -115,7 +115,7 @@ br.numLeafs = 5;
 br.bookTitle= "Interrogation of: Speer, Albert / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Major John J. Monigan, Jr.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-10";
-br.bookKeyword= "";
+br.bookKeyword= "Foreign labor; France; Quotas; Arbeitseinsatzamt; Betriebsobmann; DAF; Labor Front; Factories; Living quarters; Concentration camp labor; SS; Employment of Jews; Chemical industry; Organization Todt; OT; POW labor";
 br.bookUrl  = '/nuremberg/catalog/nur:01581';
 
 // Override the path used to find UI images

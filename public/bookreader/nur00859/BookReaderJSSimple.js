@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00859_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00859_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Interrogation of the Former Commander of the German Securitv Police in Denmark. Otto Bovensiepen, in Kastell Copenhagen, 30 August 1945. ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-30";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Peter Group; City Hall affair; Aarhus; Counter-terror; Reich Plenipotentiary";
 br.bookUrl  = '/nuremberg/catalog/nur:00859';
 
 // Override the path used to find UI images

@@ -345,7 +345,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01253_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01253_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -403,7 +403,7 @@ br.numLeafs = 53;
 br.bookTitle= "Report on Kapit&#228;n z. See Freiher von Bechtolsheim / SECRET";
 br.bookAuthor= "T.P. Bugge [?] / Captain, R.A.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-03";
-br.bookKeyword= "";
+br.bookKeyword= "RSHA; Amt IV; Amt VI; Amt Mil A; Amt Mil-l German Navy; German foreign intelligence; Intelligence gathering; Deception work; Truppenabwehr; United German Intelligence Service; G.M.D.";
 br.bookUrl  = '/nuremberg/catalog/nur:01253';
 
 // Override the path used to find UI images

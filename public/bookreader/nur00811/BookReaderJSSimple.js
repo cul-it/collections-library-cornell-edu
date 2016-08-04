@@ -285,7 +285,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00811_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00811_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -343,7 +343,7 @@ br.numLeafs = 43;
 br.bookTitle= "R and A No. 3108 /The Treatment of Collaborationists in France / Office of Strategic Services / Research and Analysis Branch ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-15";
-br.bookKeyword= "";
+br.bookKeyword= "Collaborationists; Purge of French government; Purge of enterprises; Petain government; Vichy; French Resistance; Courts of Justice; Treason; High Courts of Justice; Provisional Government; Civic Chambers; Confiscation; Civic unworthiness; National degradation; Epuration; Economic collaboration; R&#233;sistance: France-Amerique; L'Echo d'Alger: L'Aube: Franc-Tireur: The New York Times: Le Figaro: Le Monde: L'Aurore: Retroactive law; Ex post facto law; Journal Officiel de 1a Republique Fran&#231;aise: Milice; Parti Populaire Fran&#231;ais; Groupe Collaboration; Rassemblement National Populaire; Military tribunals; OSS sources; Illicit profits; Riom trial; Fifth column activity; Anti-purge forces; Catholic Church; Academie Fran&#231;aise; Due process; Summary justice";
 br.bookUrl  = '/nuremberg/catalog/nur:00811';
 
 // Override the path used to find UI images

@@ -459,7 +459,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3703_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3703_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -517,7 +517,7 @@ br.numLeafs = 72;
 br.bookTitle= "The president, directors and company of the Mechanics' Bank in the City of New York, respondents, against the New York and New Haven Railroad Company, appellants / argument of Wm. Curtis Noyes, Esq. for the appellants";
 br.bookAuthor= "Noyes, William Curtis, 1805-1864.";
 br.bookPub= "New York: Baker &amp; Godwin, book and job printers, 1856";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3703';
 
 // Override the path used to find UI images

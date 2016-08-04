@@ -435,7 +435,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2021_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2021_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -493,7 +493,7 @@ br.numLeafs = 68;
 br.bookTitle= "Proceedings on the trial between Mr. John Carter, the chief mate, and Philip Skelton, captain of the ship Albion : for leaving the plaintiff on shore in the island of Celebes in the Indian Ocean.";
 br.bookAuthor= "Carter, John.";
 br.bookPub= "London: Printed by W. Barnes, No. 3, Kent Street, Borough; and Published by Effingham Wilson, Cornhill, corner of the Royal Exchange., [18--?]";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2021';
 
 // Override the path used to find UI images

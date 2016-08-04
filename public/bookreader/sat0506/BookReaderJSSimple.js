@@ -747,7 +747,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0506_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0506_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -805,7 +805,7 @@ br.numLeafs = 120;
 br.bookTitle= "Trial of Col. Thomas H. Cushing before a General court martial, which sat at Baton-Rouge, on charges preferred against him by Brig. Gen. Wade Hampton. Reported by the late judge advocate.";
 br.bookAuthor= "Cushing, Thomas H. (Thomas Humphrey), 1755-1822.";
 br.bookPub= "Philadelphia: Published by Moses Thomas, J. Maxwell, Printer, 1812";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0506';
 
 // Override the path used to find UI images

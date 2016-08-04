@@ -387,7 +387,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01340_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01340_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -445,7 +445,7 @@ br.numLeafs = 59;
 br.bookTitle= "Preliminary Trial Brief";
 br.bookAuthor= "Lieut. Whitney R. Harris, USNR / X-2 Branch, OSS";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Gestapo; Secret Police; Kripo; SS; NSDAP; RSHA; SD; SA; Mass murder; Torture; Criminal neglect; Starvation; Sterilization; Concentration camps; Mauthausen; Ravensbruck; Stutthof; Occupied territories; Nazi ideology; Ideological enemies; Prisoners of war; Informants; \"Night and Fog\" Decree; Foreign workers; Persecution of Jews; Organization of secret police, security and intelligence system; Polish frontier incidents; Penetration of Luxembourg; Forced labor; Annihilation camps; Auschwitz; Majdanek; Tremblinki; Deportation of Jews; Mass executions of Jews; Death vans; Murder hospitals; \"Rhineland Bastards\"; Dolfuss murder; Anschluss";
 br.bookUrl  = '/nuremberg/catalog/nur:01340';
 
 // Override the path used to find UI images

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00716_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00716_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Brief of Interrogation of Ernst Mantel / Oberlichter (Judge Advocate General) OKH / Office of U.S. Chief of Counsel / APO 403 / U.S. Army / Operations Section / Interrogation Division";
 br.bookAuthor= "Colonel Curtis L. Williams, IGD";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-08";
-br.bookKeyword= "";
+br.bookKeyword= "OKH; Field Army Justice Department; Commando Order; Geneva Convention; Partisan Order; Partisans; Kommissars";
 br.bookUrl  = '/nuremberg/catalog/nur:00716';
 
 // Override the path used to find UI images

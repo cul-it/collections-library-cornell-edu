@@ -99,7 +99,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0111_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0111_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -157,7 +157,7 @@ br.numLeafs = 12;
 br.bookTitle= "Trials between Edmund M. Blunt vs. Isaac Greenwood for a libel : and Edmund M. Blunt vs. Richard Patten for infringement on copy right.";
 br.bookAuthor= "Blunt, Edmund M. (Edmund March), 1770-1862.";
 br.bookPub= "New York: [s.n.], 1822";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0111';
 
 // Override the path used to find UI images

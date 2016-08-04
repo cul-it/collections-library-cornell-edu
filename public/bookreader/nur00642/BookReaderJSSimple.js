@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00642_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00642_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 2;
 br.bookTitle= "Statement / Translation of Affidavit No.6  / Office of U.S. Chief of Counsel";
 br.bookAuthor= "Franz Haider. The translator is Paul A. Neuland, Major, QMC, 0-385720";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-13";
-br.bookKeyword= "";
+br.bookKeyword= "OKW; General Staff; Operations Staff; German generals";
 br.bookUrl  = '/nuremberg/catalog/nur:00642';
 
 // Override the path used to find UI images

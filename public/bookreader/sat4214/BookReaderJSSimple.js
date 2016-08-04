@@ -333,7 +333,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4214_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4214_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -391,7 +391,7 @@ br.numLeafs = 51;
 br.bookTitle= "A Vindication and defense of the German Reformed Church, in the city of New-York, and its pastor : against the repeated attacks made upon them by certain members of the classis of New York.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "New-York: G.B. Maigne, 1851";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4214';
 
 // Override the path used to find UI images

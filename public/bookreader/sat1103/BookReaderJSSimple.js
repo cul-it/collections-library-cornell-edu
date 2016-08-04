@@ -615,7 +615,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1103_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1103_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -673,7 +673,7 @@ br.numLeafs = 98;
 br.bookTitle= "Influence of religion in the development of jurisprudence / by W.H. Platt.";
 br.bookAuthor= "Platt, W. H. (William Henry), 1821-1898.";
 br.bookPub= "San Francisco: W. H. Platt, 1877";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1103';
 
 // Override the path used to find UI images

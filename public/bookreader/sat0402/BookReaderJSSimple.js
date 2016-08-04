@@ -435,7 +435,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0402_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0402_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -493,7 +493,7 @@ br.numLeafs = 68;
 br.bookTitle= "In Court of Appeals. Edward H. Rulloff, Plaintiff in Error, vs. the People, Defendants in Error. Writ of Error. Boardman &amp; Finch, Att'ys and counsel for Pl'ff in Error. Marcus Lyon, District Attorney. D. S. Dickinson, of Counsel for Defendants in Error.";
 br.bookAuthor= "Rulloff, Edward H. (Edward Howard), 1819-1871.";
 br.bookPub= "Ithaca, N.Y.: Ithaca Journal Steam Press, 1858";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0402';
 
 // Override the path used to find UI images

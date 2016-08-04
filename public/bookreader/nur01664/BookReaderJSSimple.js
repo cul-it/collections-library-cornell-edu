@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01664_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01664_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Review of Record of Trial by Military Commission in the case of United States V. Rottenf&#252;hrer G&#252;nther Ohletz... / CONFIDENTIAL / Headquarters Twelfth Army Group / Office of the Judge Advocate / APO 655 / Memorandum for the Commanding General, Twelfth Army Group.";
 br.bookAuthor= "C. B. Mickelwait, Colonel, J.A.G.D.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-09-19";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01664';
 
 // Override the path used to find UI images

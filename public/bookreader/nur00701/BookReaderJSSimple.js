@@ -189,7 +189,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00701_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00701_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -247,7 +247,7 @@ br.numLeafs = 27;
 br.bookTitle= "I / Crimes Against Military Personnel ";
 br.bookAuthor= "Captain Seymour Krieger";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "War crimes; Commando order; Geneva Convention; Prisoner of War Convention; Saboteurs; Paratroopers; Partisans; Military missions; SIPO; SD; Lynching; Allied airmen; Soviet POWs; Russian POWs; Persecution of Communists; Persecution of Jews; Einsatzkommandos; RSHA; OT; Organization Todt; Mauthausen; Operation Kugel";
 br.bookUrl  = '/nuremberg/catalog/nur:00701';
 
 // Override the path used to find UI images

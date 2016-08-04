@@ -1101,7 +1101,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4208_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4208_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1159,7 +1159,7 @@ br.numLeafs = 179;
 br.bookTitle= "The process, testimony and opening argument of the prosecution, vote and final minutes : in the judicial trial of Rev. W.C. McCune / by the Presbytery of Cincinnati, from March 5 to March 27, 1877.";
 br.bookAuthor= "McCune, William Clement, 1821-1894, Defendant.";
 br.bookPub= "Cincinnati: Robert Clarke &amp; Co., 1877";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4208';
 
 // Override the path used to find UI images

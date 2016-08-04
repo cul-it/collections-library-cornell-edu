@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02154_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02154_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Subject: Potential Witnesses for Trial";
 br.bookAuthor= "John Harlan Amen";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-17";
-br.bookKeyword= "";
+br.bookKeyword= "Witnesses; Prosecution strategy; War crimes; Crimes against humanity; Anschluss; Aggressive war; Russian POWs; International law; Geneva Convention; British POWs; Einsatzgruppen; Persecution of Jews; Exterminations; Executions; Communists; SS; Mauthausen; Buchenwald; Medical experiments; Dachau; Concentration camps; Ravensbrueck; Belsen; RSHA; SD; Disarmament Conference; League of Nations; 100,000-man army; Rhineland; Czechoslovakia; Poland; Austria; Norway; Gestapo; Polish border incidents; Deportation of labor; Roehm Putsch";
 br.bookUrl  = '/nuremberg/catalog/nur:02154';
 
 // Override the path used to find UI images

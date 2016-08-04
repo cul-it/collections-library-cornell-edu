@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00799_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00799_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 10;
 br.bookTitle= "Index of Documents / The Execution of the Plan / to Invade Czechoslovakia / April 1938 to March 1939 / First Draft / To be appended to Trial Brief ";
 br.bookAuthor= "Lt. John M. Woolsey, Jr., USNR";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Documents; Documentary evidence; Crimes against peace";
 br.bookUrl  = '/nuremberg/catalog/nur:00799';
 
 // Override the path used to find UI images

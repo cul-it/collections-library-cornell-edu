@@ -837,7 +837,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00422_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00422_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -895,7 +895,7 @@ br.numLeafs = 135;
 br.bookTitle= "Nazi Plans for Dominating Germany  and Europe: 'The Master Plan' Vol. I. ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-12";
-br.bookKeyword= "";
+br.bookKeyword= "For 'Outline': Preparations to wage aggressive war; Versailles Treaty; 'Mein Kampf';  Free Corps; Freikorps; Nazi domestic policy; Political parties; Trade unions;  SA; Potempa murder; Nazi foreign policy; Lebensraum; Grossraumordnung; SS; Gestapo; Concentration camps; Extermination of Communists; Imprisonment of  clergymen; Nazi anti-Semitism; Extermination of the Jews; Persecution of  Jews; Rearmament; Spanish Civil War; Auslandsorganization; Nazi Fifth Column;  Economic penetration; Nazification of Germany industry; Arbeitsbereiche  (Activity Spheres); Economic exploitation; 'My New Order' (Hitler); 'Voelkischer  Beobachter'; 'Hitler's Speeches' (ed. Baynes); 'Die SA' (Ernst  Bayer); 'Hitler's Words' (ed. Gordon W. Prange); Spain; Austria;  Czechoslovakia. Additional  key words for 'Draft': NSDAP; Totalitarian control; Leadership principle; 'I  Paid Hitler' (Fritz Thyssen); 'Der Angriff' (Goebbels); 'Nationalsozialistisches  Jahrbuch'; Condor Legion; Polish border incidents; Military intervention;  Political infiltration; Nazi occupation policy.";
 br.bookUrl  = '/nuremberg/catalog/nur:00422';
 
 // Override the path used to find UI images

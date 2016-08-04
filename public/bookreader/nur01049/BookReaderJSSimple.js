@@ -69,7 +69,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01049_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01049_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -127,7 +127,7 @@ br.numLeafs = 7;
 br.bookTitle= "Report of Interrogation: # 5779 / PAV: Kessler, Ulrich / Rank: General der Flieger (Lt. Gen.) / SECRET";
 br.bookAuthor= "Captain Halle";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-20";
-br.bookKeyword= "";
+br.bookKeyword= "Luftwaffe; Nazi Party; Anti-Semitism; Jew-baiters; Assassination attempt; Lufthansa; Military aviation; German rearmament; Sudetenland; Czechoslovakia; British-German relations; German diplomacy; Preparations to wage aggressive war; England; France; Poland; United States; Netherlands; Holland; Belgium; Denmark; Norway; Sweden; Neutral countries; Military strategy; Italy; Italian navy; British navy; Gibraltar; Suez; British Commonwealth; German air force; Munich Agreement";
 br.bookUrl  = '/nuremberg/catalog/nur:01049';
 
 // Override the path used to find UI images

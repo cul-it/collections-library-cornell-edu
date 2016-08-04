@@ -615,7 +615,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0503_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0503_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -673,7 +673,7 @@ br.numLeafs = 98;
 br.bookTitle= "Incidents in the life of Milton W. Streeter : the jealous and infatuated murderer, who murdered his young and beautiful wife, Elvira W. Streeter, at Southbridge, Mass., October 23, 1848 ...Published by H.F.  Tingley.";
 br.bookAuthor= "Tingley, H. F. (Hosea F.)";
 br.bookPub= "Pawtucket, R.I.: A.W. Pearce, 1850";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0503';
 
 // Override the path used to find UI images

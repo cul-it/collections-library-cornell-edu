@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00951_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00951_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Memorandum to Accompany Trial Brief vs. Defendant Karl Doenitz";
 br.bookAuthor= "Richard Heller";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-12";
-br.bookKeyword= "";
+br.bookKeyword= "Versailles treaty; Preparation for aggressive war; Naval treaties; German Navy; U-boats; Submarine warfare; Sink at sight; the Athenian the Laconia; the Pelens; the San Carlos; Aggressive war; Conduct of war; Illegal war; War crimes";
 br.bookUrl  = '/nuremberg/catalog/nur:00951';
 
 // Override the path used to find UI images

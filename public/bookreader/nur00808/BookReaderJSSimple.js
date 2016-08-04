@@ -81,7 +81,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00808_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00808_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -137,9 +137,9 @@ br.numLeafs = 8;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "General Walter Warlimont on The Initial Attempts of a Military Cooperation Between Germany and France (1940/1941) / Special Detention Center Ashcan / CCPWE # 32, APO 513 / Detailed Interrogation Report / SECRET";
-br.bookAuthor= "Walter Warlimont; "For the A.C. of S. G-2, USFET, Ivo V. Giannini, Major, Infantry"";
+br.bookAuthor= "Walter Warlimont; 'For the A.C. of S. G-2, USFET, Ivo V. Giannini, Major, Infantry'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-31";
-br.bookKeyword= "";
+br.bookKeyword= "German-French relations; Paris Protocol; Armistice Commission; Tunisia; Italy; Dakar; Vichy; French North Africa; French collaboration; German-French military alliance";
 br.bookUrl  = '/nuremberg/catalog/nur:00808';
 
 // Override the path used to find UI images

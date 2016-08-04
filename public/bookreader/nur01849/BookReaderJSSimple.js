@@ -87,7 +87,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01849_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01849_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -145,7 +145,7 @@ br.numLeafs = 9;
 br.bookTitle= "The following are the relevant details of the PW mentioned in this report. / TOP SECRET / CSDIC/CMF/X 168";
 br.bookAuthor= "Not applicable";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-26";
-br.bookKeyword= "";
+br.bookKeyword= "Wolff's negotiations; Concentration camps; German surrender; German High Command; Hitler's death; Berlin; Italy; Capitulation; German Army Group South-West";
 br.bookUrl  = '/nuremberg/catalog/nur:01849';
 
 // Override the path used to find UI images

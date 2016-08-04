@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00532_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00532_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "B. Control Acquired ";
 br.bookAuthor= "Lt H. V. Atherton";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "Weimer Constitution; Reichstag fire; National Socialist German Worker's Party; Reich Cabinet; SA; SS; Reichs Chancellor; NSDAP";
 br.bookUrl  = '/nuremberg/catalog/nur:00532';
 
 // Override the path used to find UI images

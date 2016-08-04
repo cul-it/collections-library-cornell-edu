@@ -255,7 +255,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3406_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3406_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -313,7 +313,7 @@ br.numLeafs = 38;
 br.bookTitle= "Eccentricities &amp; anecdotes of Albert John Tirrell : the reputed murderer of the beautiful Maria Bickford, who met her untimely fate on the night of the 25th October 1845, in the moral and religious city of Boston : with an appendix presenting the most authentic evidence concerning the murder / by a lady of Weymouth, Mass.";
 br.bookAuthor= "Estabrook, Silas.";
 br.bookPub= "Boston: Published and for sale by all the periodical dealers, 1846";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3406';
 
 // Override the path used to find UI images

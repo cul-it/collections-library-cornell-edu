@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2210_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2210_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "Lady Flora Hastings. The court doctor dissected; with observations on the statements of Ladies Portman and Tavistock. / By John Fisher Murray.";
 br.bookAuthor= "Murray, John Fisher, 1811-1865.";
 br.bookPub= "London: William Edward Painter, 1839";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2210';
 
 // Override the path used to find UI images

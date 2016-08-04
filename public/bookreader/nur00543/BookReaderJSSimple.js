@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00543_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00543_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "The Program of The NSDAP.  Page 153 of: National Socialistic Yearbook 1941 (Nationalsozialistishes Jahrbuch 1941). Translation of Document 1708-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "The translator of this document is Fred Niebergall, 2nd Lt Inf, 0-1335567. The editor of The National Socialistic Yearbook 1941 was Dr. Robert Lev.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-19";
-br.bookKeyword= "";
+br.bookKeyword= "NSDAP; Greater Germany; Versailles; St. Germain; Colonies; German blood; Jew; Reich; Confiscation; Nationalization; German common law; Education; Land reform; Taxes; Welfare; Physical fitness; National army; German press; Christianity; Jewish-materialistic spirit; Central power";
 br.bookUrl  = '/nuremberg/catalog/nur:00543';
 
 // Override the path used to find UI images

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00468_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00468_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Berlin NUE 263367: To All Police Headquarters / Confidential";
 br.bookAuthor= "Heydrich";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-12-10";
-br.bookKeyword= "";
+br.bookKeyword= "Security Police; Criminal Police; Anti-Jewish Actions;  Non-prosecution; Pogroms; Persecution of Jews; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:00468';
 
 // Override the path used to find UI images

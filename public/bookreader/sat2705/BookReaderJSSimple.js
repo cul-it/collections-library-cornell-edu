@@ -315,7 +315,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2705_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2705_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -373,7 +373,7 @@ br.numLeafs = 48;
 br.bookTitle= "Reports of the trials of David T. Chase and John W. Fellows for an alleged conspiracy, &amp;c. : and of Jireh Bull on an indictment for perjury, in the Court of Sessions / reported by J.S. Carpentier.";
 br.bookAuthor= "Chase, David Tappan, b. 1802.";
 br.bookPub= "New York: [s.n.], 1829";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2705';
 
 // Override the path used to find UI images

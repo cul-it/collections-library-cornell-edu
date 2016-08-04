@@ -303,7 +303,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2509_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2509_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -361,7 +361,7 @@ br.numLeafs = 46;
 br.bookTitle= "Trial of Rev. Joy Hamlet Fairchild. On a charge of adultery with Miss Rhoda Davidson. Reported for the Boston daily times, by J. E. P. Weeks, esq.";
 br.bookAuthor= "Fairchild, J. H. (Joy Hamlet), 1790-1859, defendant.";
 br.bookPub= "Boston: Published at the "Times" Office, No. 3 and 5 State Street., 1845";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2509';
 
 // Override the path used to find UI images

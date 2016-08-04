@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01726_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01726_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Memorandum to General Donovan / From: Mr. Gaevernitz";
 br.bookAuthor= "Mr. Gaevernitz";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-20";
-br.bookKeyword= "";
+br.bookKeyword= "SS; Gestapo; Hitler assassination attempt; American intelligence; OSS sources; Munich; Switzerland; Espionage; German resistance; Allied agents";
 br.bookUrl  = '/nuremberg/catalog/nur:01726';
 
 // Override the path used to find UI images

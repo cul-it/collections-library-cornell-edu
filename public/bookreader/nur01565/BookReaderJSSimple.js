@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01565_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01565_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Interrogation of Baldur von Schirach / Office of U.S. Chief of Counsel for the Prosecution of Axis Criminality / Interrogation Division Summary";
 br.bookAuthor= "Lt. Col. Hinkel.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-11";
-br.bookKeyword= "";
+br.bookKeyword= "Youth indoctrination; Hitler Youth: Hitler Jugend: SA; Form and Revolution of Education: Pre-military training: Preparation for war document is a typewritten copy. Pages 1 and 3 are slightly browned but generally stable; page 2 is quite brown and more fragile.";
 br.bookUrl  = '/nuremberg/catalog/nur:01565';
 
 // Override the path used to find UI images

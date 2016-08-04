@@ -159,7 +159,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01353_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01353_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -217,7 +217,7 @@ br.numLeafs = 20;
 br.bookTitle= "Rhineland Bastards; Operation against 'Rhineland Bastards'; R.B. Matter; et. al.";
 br.bookAuthor= "Thorn; Dr. Ehaus; Moeltgen; Dr. Seitz; Stefan Berens; et. al.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1937-05-12";
-br.bookKeyword= "";
+br.bookKeyword= "Gestapo; Illegitimate children; Guardianship deeds; Evangelical Hospital; Stapo Cologne; Stapo Duesseldorf; Stapo Aachen; Stapo Coblenz; Stapo Trier; Stapo Frankfurt; Stapo Wiesbaden; Maple Case; \"Coloured bastards\"; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:01353';
 
 // Override the path used to find UI images

@@ -363,7 +363,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00419_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00419_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -421,7 +421,7 @@ br.numLeafs = 56;
 br.bookTitle= "R &amp; A No. 3081 / Nazi Changes  in Criminal Procedure  / Office of Strategic Services / Research and Analysis  Branch / RESTRICTED";
 br.bookAuthor= "The author's name is not given";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-07-10";
-br.bookKeyword= "";
+br.bookKeyword= "Nazi criminal law; Nazi criminal procedure; Special  courts; Jews; The People's Court; Fuehrer Edict; Amnesties; Juvenile  offenders; War legislation";
 br.bookUrl  = '/nuremberg/catalog/nur:00419';
 
 // Override the path used to find UI images

@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01835_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01835_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Brief of Interrogation of Josef Buehler / Office of U.S. Chief of Counsel / APO 403, U.S. Army / Interrogation Division";
 br.bookAuthor= "Lt. Colonel Thomas S. Hinkel is the interrogator";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-30";
-br.bookKeyword= "";
+br.bookKeyword= "Poland; Government General of Poland; German police; SS; Gestapo; Maidenak; Concentration camps; Lublin; Art; Polish art; Polish workers; Voluntary labor; Forced labor; Labor quotas; Food rations; Black market; Disease; Malnutrition; Polish educational system; Persecution of Jews; Ghettos; War crimes; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:01835';
 
 // Override the path used to find UI images

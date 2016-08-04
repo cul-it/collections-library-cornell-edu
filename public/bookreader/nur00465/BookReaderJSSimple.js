@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00465_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00465_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Dr. Munich No. 47 769: To the State Police of Augsburg, Nurnberg and Wurzburg. / Anti-Jewish Measures. ";
 br.bookAuthor= "Beutel, SS Oberfuhrer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Anti-Jewish demonstrations; Looting; State Police;  Criminal Police; Prisoners; Crimes against humanity; Pogroms; Persecution of  Jews; Atrocities";
 br.bookUrl  = '/nuremberg/catalog/nur:00465';
 
 // Override the path used to find UI images

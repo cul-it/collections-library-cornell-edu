@@ -411,7 +411,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2810_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2810_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -466,10 +466,10 @@ br.getPageNum = function(index) {
 br.numLeafs = 64;
 
 // Book title and the URL used for the book title link
-br.bookTitle= "The Allen trials; namely, Allen versus Hunter, Warner v. Griffen, Jobson v. Allen and Jobson against Sickles (Impending) with instructions, and the various scientific recipes, (European and American) for making ""continuous gum"", without either patent or risk of infringement, and an appendix, illustrative of Mr. Daniel E. Sickles's professional morality / David Wemyss Jobson.";
+br.bookTitle= "The Allen trials; namely, Allen versus Hunter, Warner v. Griffen, Jobson v. Allen and Jobson against Sickles (Impending) with instructions, and the various scientific recipes, (European and American) for making 'continuous gum', without either patent or risk of infringement, and an appendix, illustrative of Mr. Daniel E. Sickles's professional morality / David Wemyss Jobson.";
 br.bookAuthor= "Jobson, David Wemyss.";
 br.bookPub= "New York: Published by the author, 1857";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2810';
 
 // Override the path used to find UI images

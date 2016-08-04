@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00553_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00553_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "Excerpts from German Publications.   Translation of Document 2373-PS / Office of U.S. Chief of Counsel.";
 br.bookAuthor= "Hitler; Goering; Goebbels; Hess; Frank; the translator is Fred Niebergall, 21* Lt. Inf., 0-1335567";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-02";
-br.bookKeyword= "";
+br.bookKeyword= "Mein Kampf; God; Nazi ideology; Speeches";
 br.bookUrl  = '/nuremberg/catalog/nur:00553';
 
 // Override the path used to find UI images

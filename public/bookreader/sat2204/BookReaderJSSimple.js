@@ -543,7 +543,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2204_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2204_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -601,7 +601,7 @@ br.numLeafs = 86;
 br.bookTitle= "The trial of William Cruchley : for having maliciously preferred seven indictments for felony against his late clerk, who ... obtained 2000 pounds damages.";
 br.bookAuthor= "Cruchley, William.";
 br.bookPub= "London: Printed for J.M. Richardson, 1813";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2204';
 
 // Override the path used to find UI images

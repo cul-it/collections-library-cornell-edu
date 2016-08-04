@@ -675,7 +675,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3316_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3316_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -733,7 +733,7 @@ br.numLeafs = 108;
 br.bookTitle= "The Schoeppe murder trial : the trial of Dr. Paul Schoeppe in the Court of Oyer and Terminer of Cumberland County, Pa. : charged with the murder of Miss Maria M. Stennecke, by poison.";
 br.bookAuthor= "Schoeppe, Paul, defendant.";
 br.bookPub= "Philadelphia: M. Dahlem, Printer, 324 Chestnut Street., 1869";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3316';
 
 // Override the path used to find UI images

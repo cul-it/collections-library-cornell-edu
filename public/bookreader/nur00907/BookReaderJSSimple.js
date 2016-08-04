@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00907_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00907_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Matter for Chief / Memorandum / About the result of to-day discussion with the State Secretaries about Barbarossa / Translation of Document 2718-PS / Office of US. Chief of Counsel / May 2nd, 1941";
-br.bookAuthor= ""v.G"";
+br.bookAuthor= "v.G";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1941-05-02";
-br.bookKeyword= "";
+br.bookKeyword= "Russia; Barbarossa; Spoliation; Food resources; Starvation; Security";
 br.bookUrl  = '/nuremberg/catalog/nur:00907';
 
 // Override the path used to find UI images

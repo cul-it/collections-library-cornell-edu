@@ -1089,7 +1089,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00693_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00693_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1147,7 +1147,7 @@ br.numLeafs = 177;
 br.bookTitle= "Preliminary Report: Concealment of Ownership of Some I. G. Farben Selling Companies  / U. S. Group C. C. / Finance Division";
 br.bookAuthor= "John J. Purcell and Alexander Sacks";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-06-25";
-br.bookKeyword= "";
+br.bookKeyword= "I. G. Farben; \"Tarnung\"";
 br.bookUrl  = '/nuremberg/catalog/nur:00693';
 
 // Override the path used to find UI images

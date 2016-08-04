@@ -153,7 +153,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01622_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01622_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -211,7 +211,7 @@ br.numLeafs = 21;
 br.bookTitle= "Bruno Bettelheim being first duly sworn deposes and says:";
 br.bookAuthor= "Bruno Bettelheim";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, Not dated";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01622';
 
 // Override the path used to find UI images

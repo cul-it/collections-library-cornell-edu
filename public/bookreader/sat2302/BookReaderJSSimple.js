@@ -159,7 +159,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2302_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2302_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -217,7 +217,7 @@ br.numLeafs = 22;
 br.bookTitle= "The trial of Captain Elwin, for criminal conversation with the lady of Sir George Brograve, Bart. before the Right Hon. Lord Ellenborough, in the Court of King's Bench, Guildhall, on July the 8th, 1807.  With the intercepted letters.  Damages two thousand pounds!!! Embellished with a plate.";
 br.bookAuthor= "Elwin, Captain, defendant.";
 br.bookPub= "London: Printed and sold by J. Day, 1807";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2302';
 
 // Override the path used to find UI images

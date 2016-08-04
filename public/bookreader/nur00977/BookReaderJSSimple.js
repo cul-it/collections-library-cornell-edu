@@ -183,7 +183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00977_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00977_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -241,7 +241,7 @@ br.numLeafs = 26;
 br.bookTitle= "Testimony of Hans Frank, taken at Nuremberg, Germany on 3 October 1945, 1030-1215, by Lt Col Thomas S. Hinkel, IGD, OUSCC / SECRET";
 br.bookAuthor= "Lt. Col. Hinkel is the interrogation officer";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-03";
-br.bookKeyword= "";
+br.bookKeyword= "Poland; Government General of Poland; Art treasures; Artwork; Confiscation; Private property; Public property; Polish educational system; Polish universities; SS; Oranienburg; Concentration camps; Food rations; Food supply; War crimes; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:00977';
 
 // Override the path used to find UI images

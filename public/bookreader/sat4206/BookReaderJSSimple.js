@@ -243,7 +243,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:4206_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:4206_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -301,7 +301,7 @@ br.numLeafs = 36;
 br.bookTitle= "Plain statement of the facts in the case of Daniel L. Gear, and review of Rev. Dr. Parsons Cooke's defence, &amp;c.";
 br.bookAuthor= "Bagnall, William R., d. 1892.";
 br.bookPub= "Boston: M. Kendall, printer, 1859";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:4206';
 
 // Override the path used to find UI images

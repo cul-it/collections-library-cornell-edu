@@ -135,7 +135,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1602_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1602_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -193,7 +193,7 @@ br.numLeafs = 18;
 br.bookTitle= "The remarkable trial of Eugene Aram, of Knaresborough, in the county of York, schoolmaster; for the murder of Daniel Clark, shoemaker, committed on the 8th of February, 1744-5.";
 br.bookAuthor= "Aram, Eugene, 1704-1759.";
 br.bookPub= "London: John Hearne, 81 Strand., 1832";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1602';
 
 // Override the path used to find UI images

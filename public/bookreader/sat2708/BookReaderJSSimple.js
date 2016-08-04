@@ -261,7 +261,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2708_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2708_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -319,7 +319,7 @@ br.numLeafs = 39;
 br.bookTitle= "Exposition of the proceedings of John P. Darg, Henry W. Merritt, and others : in relation to the robbery of Darg, the elopement of his alleged slave, and the trial of Barney Corse, who was unjustly charged as an accessary.";
 br.bookAuthor= "Hopper, Isaac T. (Isaac Tatem), 1771-1852.";
 br.bookPub= "New York: Published by Isaac T. Hopper, 1840";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2708';
 
 // Override the path used to find UI images

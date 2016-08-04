@@ -351,7 +351,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2713_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2713_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -409,7 +409,7 @@ br.numLeafs = 54;
 br.bookTitle= "Full report of the trial of Samuel M. Andrews, for the murder of Cornelius Holmes.";
 br.bookAuthor= "Andrews, Samuel M., b. 1830, defendant.";
 br.bookPub= "Plymouth [Mass.]: Memorial Press, 1868";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2713';
 
 // Override the path used to find UI images

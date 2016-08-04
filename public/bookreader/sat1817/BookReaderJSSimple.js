@@ -321,7 +321,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1817_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1817_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -379,7 +379,7 @@ br.numLeafs = 49;
 br.bookTitle= "The trial of Lieutenant O'Halloran for defamation of the character of Lieutenant-Colonel Samuel Howe Showers.";
 br.bookAuthor= "O'Halloran, Joseph.";
 br.bookPub= "London: Printed for T. Gardiner., 1796";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1817';
 
 // Override the path used to find UI images

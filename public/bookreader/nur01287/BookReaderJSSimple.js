@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01287_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01287_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -101,9 +101,9 @@ br.numLeafs = 3;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Reichskulturkammer (National Department of Culture) / SECRET / Seventh Army Interrogation Center / APO 758 / U.S. Army";
-br.bookAuthor= "The interrogator is listed as "E.E."";
+br.bookAuthor= "The interrogator is listed as 'E.E.'";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-05-27";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01287';
 
 // Override the path used to find UI images

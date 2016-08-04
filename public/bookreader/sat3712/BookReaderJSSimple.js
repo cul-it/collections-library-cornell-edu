@@ -627,7 +627,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3712_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3712_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -685,7 +685,7 @@ br.numLeafs = 100;
 br.bookTitle= "The trials of James Forbes, Henry Handwich, William Graham, Mathew Handwich, George Graham, and William Brownlow in the Court of the King's Bench ... February 3, 1823, and following days, fo a conspiracy, riot, and an attempt to assault the ... Marquis Wellesley, Lord Lieutenant of Ireland ... on his visit to the theatre, 14th December, 1822 ...";
 br.bookAuthor= "Forbes, James, Orangeman.";
 br.bookPub= "Dublin: Printed by R. Grace, 1823";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3712';
 
 // Override the path used to find UI images

@@ -183,7 +183,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3010_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3010_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -241,7 +241,7 @@ br.numLeafs = 26;
 br.bookTitle= "The Trial of Weeping Billy, for the wilful murder of Ann Webb : also, the trials of William Duncan, for the wilful murder of W. Chivers, Esq., John Maycock and John Pope, for the wilful murder of A.M. Pooley, at Horsleydown, and John Augustus, for the wilful murder of his shipmate, Peter Williams.";
 br.bookAuthor= "Unknown Author";
 br.bookPub= "London: Published by F. Lye, Pichegru-Place, London-Road, Southwark; J. Taylor, Waller's Place, Lambeth Road; J. Bellamy, No. 10, Borough Road; J. Walker, No. 14, Dean-Street, Holborn; and E. Rich, Broad-Street, Bloomsbury., 1807";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3010';
 
 // Override the path used to find UI images

@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01605_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01605_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "All Jewish prisoners over the age of 50.... /Copy / Secret State Police / Branch Office Wuerzburg / Teletype Section / No. 15431 Berlin NUE 263.787";
 br.bookAuthor= "Heydrich";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-12-12";
-br.bookKeyword= "";
+br.bookKeyword= "None";
 br.bookUrl  = '/nuremberg/catalog/nur:01605';
 
 // Override the path used to find UI images

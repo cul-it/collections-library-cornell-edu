@@ -885,7 +885,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3902_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3902_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -943,7 +943,7 @@ br.numLeafs = 143;
 br.bookTitle= "A report of the trial of the Rev. Ephraim K. Avery, : before the Supreme Judical Court of Rhode Island, on an indictment for the murder of Sarah Maria Cornell; : containing a full statement of the testimony, together with the arguments of counsel, and the charge to the jury. / By Richard Hildreth, attorney at law. ; With a map.";
 br.bookAuthor= "Avery, Ephraim K., d. 1869.";
 br.bookPub= "Boston: Russell, Odiorne and Co. 134, Washington Street; David H. Ela, 62. Cornhill., 1833";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3902';
 
 // Override the path used to find UI images

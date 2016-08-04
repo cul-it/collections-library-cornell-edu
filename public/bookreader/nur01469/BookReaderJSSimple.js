@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01469_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01469_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "The Minister President's Proclamation Relating to the National Government. / Appendix 23";
 br.bookAuthor= "Vidkun Quisling";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1942-02-05";
-br.bookKeyword= "";
+br.bookKeyword= "Norway; Minister President; Norwegian Constitution; Occupation government";
 br.bookUrl  = '/nuremberg/catalog/nur:01469';
 
 // Override the path used to find UI images

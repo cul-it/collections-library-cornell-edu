@@ -279,7 +279,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:2702_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:2702_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -337,7 +337,7 @@ br.numLeafs = 42;
 br.bookTitle= "The declaration and confession of Robert Watt, / written, subscribed &amp; delivered by himself, the evening before his execution, for high treason, at Edinburgh, October 15. 1794. ; Attested by the Reverend Dr. Baird ... and the Reverend T.S. Jones ...";
 br.bookAuthor= "Watt, Robert, d. 1794?";
 br.bookPub= "Edinburgh: Printed for Bell &amp; Bradfute, 1794";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:2702';
 
 // Override the path used to find UI images

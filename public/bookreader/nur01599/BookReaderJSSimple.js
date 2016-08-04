@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01599_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01599_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -89,9 +89,9 @@ br.numLeafs = 1;
 
 // Book title and the URL used for the book title link
 br.bookTitle= "Munich 47768 / Urgent / Anti-Jewish Measures";
-br.bookAuthor= ""Freiherr von Eberstein, SS Obergruppenfuehrer and Chief of Police"";
+br.bookAuthor= "Freiherr von Eberstein, SS Obergruppenfuehrer and Chief of Police";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1938-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Persecution of Jews; Crimes against humanity";
 br.bookUrl  = '/nuremberg/catalog/nur:01599';
 
 // Override the path used to find UI images

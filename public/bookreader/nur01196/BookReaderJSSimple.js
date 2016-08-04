@@ -33,7 +33,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:01196_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:01196_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -91,7 +91,7 @@ br.numLeafs = 1;
 br.bookTitle= "Interrogations by Francis A. Mahoney of Edmund von Thermann and Hermann Rochling / SECRET";
 br.bookAuthor= "Frederick Burkhardt";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-08-17";
-br.bookKeyword= "";
+br.bookKeyword= "OSS interrogations; Thermann interrogation; Roechling interrogation";
 br.bookUrl  = '/nuremberg/catalog/nur:01196';
 
 // Override the path used to find UI images

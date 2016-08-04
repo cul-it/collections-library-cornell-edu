@@ -39,7 +39,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02053_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02053_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -97,7 +97,7 @@ br.numLeafs = 2;
 br.bookTitle= "MEMORANDUM / TO: Colonel Curtis L. Williams / FROM: Major B. D. Silliman / SUBJECT: Defense Anticipation";
 br.bookAuthor= "B. D. Silliman";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-10-27";
-br.bookKeyword= "";
+br.bookKeyword= "Defense anticipation; OCC trial preparation; Jurisdiction of International Military Tribunal; Prejudice of International Military Tribunal; Conspiracy; Superior orders; International law; Legal entity; German law";
 br.bookUrl  = '/nuremberg/catalog/nur:02053';
 
 // Override the path used to find UI images

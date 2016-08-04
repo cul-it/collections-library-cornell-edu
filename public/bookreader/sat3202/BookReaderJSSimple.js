@@ -1203,7 +1203,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3202_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3202_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1261,7 +1261,7 @@ br.numLeafs = 196;
 br.bookTitle= "The trial of Maurice Margarot, delegate from London to the British Convention : before the High Court of Justiciary, at Edinburgh, on the 13th and 14th of January, 1794, for sedition / taken in shorthand by Mr. Ramsey.";
 br.bookAuthor= "Margarot, Maurice, d. 1816.";
 br.bookPub= "Edinburgh: Printed for James Robertson ... and sold in London by D.I. Eaton ... [and 3 others], 1794";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3202';
 
 // Override the path used to find UI images

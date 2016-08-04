@@ -51,7 +51,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00482_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00482_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -109,7 +109,7 @@ br.numLeafs = 5;
 br.bookTitle= "Shot-down  enemy-flyers ; Lynching  of Captured Airmen  ; Kaltenbrunner  and AMT IV ";
 br.bookAuthor= "Wiebens (?); Bormann; unnamed";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1944-05-30";
-br.bookKeyword= "";
+br.bookKeyword= "Allied airmen; Lynch-law; Russian workers; Polish workers;  Concentration camps: Mauthausen, Ravensbruck, Buchenwald, Stutthof; Swedish  Red Cross; Jewish questions; Seydlitz committee; English POWs; American POWs;  Norwegian Jews; German traitors; Allied pilots; War crimes; Crimes against  military personnel; Crimes against civilians";
 br.bookUrl  = '/nuremberg/catalog/nur:00482';
 
 // Override the path used to find UI images

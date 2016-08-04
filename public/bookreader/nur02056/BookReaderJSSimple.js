@@ -45,7 +45,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:02056_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:02056_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -103,7 +103,7 @@ br.numLeafs = 3;
 br.bookTitle= "Excerpts From Some Of The Final Summations Of Defense Counsel At Belsen, as reported in the Neue Hamburger Presse of November 10, 1945";
 br.bookAuthor= "Neither author nor translator is named.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-11-10";
-br.bookKeyword= "";
+br.bookKeyword= "Belsen trials; Defense counsel; Defense summation; Defense argument; War Crimes";
 br.bookUrl  = '/nuremberg/catalog/nur:02056';
 
 // Override the path used to find UI images

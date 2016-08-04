@@ -531,7 +531,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:1107_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:1107_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -589,7 +589,7 @@ br.numLeafs = 84;
 br.bookTitle= "Minutes and proceedings of a division court martial ... holden at Boston ... October 29, 1805 : as they relate to the trial of Capt. Joseph Loring, Jr.";
 br.bookAuthor= "Loring, Joseph, 1767-1838.";
 br.bookPub= "Boston: Printed by E. Lincoln, 1806";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:1107';
 
 // Override the path used to find UI images

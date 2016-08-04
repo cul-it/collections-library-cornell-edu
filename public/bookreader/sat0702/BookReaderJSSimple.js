@@ -531,7 +531,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:0702_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:0702_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -589,7 +589,7 @@ br.numLeafs = 84;
 br.bookTitle= "The trial of Judge versus Berkeley and others : tried at Heresford, on Thursday, August 4, 1825. Before Sir James Burrough, Knt., one of the justices of His Majesty's Court of Common Pleas, and a special jury. / Take in short hand by J.A. Dowling.";
 br.bookAuthor= "Fitzhardinge, William Fitzhardinge Berkeley, Earl of, 1786-1857.";
 br.bookPub= "Cheltenham: S.C. Harper, 1825";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:0702';
 
 // Override the path used to find UI images

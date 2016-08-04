@@ -1107,7 +1107,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3508_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3508_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -1165,7 +1165,7 @@ br.numLeafs = 180;
 br.bookTitle= "The report of the Forrest divorce case : being a verbatim report of the testimony taken in the action for divorce by Catharine N. Forrest vs. Edwin Forrest, tried before Justice Oakley, in the New York Superior court, commenced Tuesday, December 16, 1851 / Reported by the law reporter of the New York Herald.";
 br.bookAuthor= "Forrest, Catharine Norton (Sinclair), 1818-1891, plaintiff.";
 br.bookPub= "New York: De Witt &amp; Davenport, 1852";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3508';
 
 // Override the path used to find UI images

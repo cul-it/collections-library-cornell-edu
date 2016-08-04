@@ -213,7 +213,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/sat:3714_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/sat:3714_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -271,7 +271,7 @@ br.numLeafs = 31;
 br.bookTitle= "Argument on trial of F.A. Tallmadge, before Board of Commissioners of Police; reported by P.H. Carey.";
 br.bookAuthor= "Noyes, William Curtis, 1805-1864.";
 br.bookPub= "New York: Baker &amp; Goodwin, printers, 1858";
-br.bookKeyword= "";
+br.bookKeyword= "Trial Pamphlets; Law";
 br.bookUrl  = '/trial/catalog/sat:3714';
 
 // Override the path used to find UI images

@@ -75,7 +75,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
     var imgStr = (index+1).toString();
-    var url = '/fedora/get/nur:00864_' + imgStr + '/digitalImage';
+    var url = 'http://hydrastg.library.cornell.edu/fedora/get/nur:00864_' + imgStr + '/digitalImage';
     return url;
 }
 
@@ -133,7 +133,7 @@ br.numLeafs = 8;
 br.bookTitle= "Vernehmung / des fr&#252;heren Befehlshabers der deutschen Sicherheitspolizei in D&#228;nemark. Otto Bovensiepen. / im Kastell. ";
 br.bookAuthor= "The author's name is not given.";
 br.bookPub= "Nuremberg, Germany: International Military Tribunal, 1945-09-03";
-br.bookKeyword= "";
+br.bookKeyword= "Denmark; Counter-terror; Peter Group; Terror-actions; Retaliatory murder; Reprisals; Asa; Nordisk Filmkompagni; Kinopalaest; Palladium; Danish Resistance; Lampe &amp; Lysekronefabrikken Lyfa; Oliemollen; Korsor Glasvaerk; Borsholt; Scandia; Magasin du Nord; Daells Varehus; Stjerneradio; Fyns Stiftstidende; Langelinie Pavillon; Domus Medica; C. B. Grundschule; Borgeraes Hus; Tivoli; Danish police affair; Nyhavn 51; Siroco; Goschs Taendstikfabrikker; Landsoldaten; Hellerup Taendstikfabrik; A/S Premier Is; Odinturm; Tuborg; Bang &amp; Olufsen; Apollo Theater; City Hall; Aarhus";
 br.bookUrl  = '/nuremberg/catalog/nur:00864';
 
 // Override the path used to find UI images
