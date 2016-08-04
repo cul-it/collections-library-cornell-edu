@@ -1,0 +1,21 @@
+if (index == 0) {
+     return 1015;
+    }
+if (index == 1) {
+     return 1030;
+    }
+if (index == 2) {
+     return 1015;
+    }
+if (index == 3) {
+     return 1025;
+    }
+if (index == 4) {
+     return 1023;
+    }
+if (index == 5) {
+     return 1019;
+    }
+if (index > 5) {
+    return 1200;
+    }

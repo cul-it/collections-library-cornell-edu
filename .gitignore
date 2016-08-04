@@ -15,6 +15,14 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+# Ignore all of the reader files except the BookReader directory with the custom CSS
+/public/bookreader/BookReaderDemo
+/public/bookreader/BookReaderIA
+/public/bookreader/liber*
+/public/bookreader/nur*
+/public/bookreader/sat*
+/public/bookreader/scott*
+
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp

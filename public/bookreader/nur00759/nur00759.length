@@ -1,0 +1,12 @@
+if (index == 0) {
+     return 1065;
+    }
+if (index == 1) {
+     return 1000;
+    }
+if (index == 2) {
+     return 1025;
+    }
+if (index > 2) {
+    return 1200;
+    }
