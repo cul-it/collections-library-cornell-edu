@@ -133,10 +133,18 @@ def digital_collection?(subject)
   end
 end
 
-  def link_to_document(doc, opts={:label=>nil, :counter => nil, :subject=>params[:subject]})
-    opts[:label] ||= document_show_link_field(doc)
-    label = render_document_index_label doc, opts
-    id=doc
+  def link_to_document(doc, field_or_opts = nil,opts={:counter => nil,:subject=>params[:subject]})
+    if field_or_opts.kind_of? Hash
+      opts = field_or_opts
+      if opts[:label]
+        Deprecation.warn self, "The second argument to link_to_document should now be the label."
+        field = opts.delete(:label)
+      end
+    else
+      field = field_or_opts
+    end
+    field ||= document_show_link_field(doc)
+    label = presenter(doc).render_document_index_label field, opts
     if params[:subject] || params[:controller] == 'bookmarks'
       if params[:subject].present?
         collection=params[:subject]
