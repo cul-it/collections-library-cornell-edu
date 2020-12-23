@@ -1,4 +1,5 @@
 <div class="util-links-other">
+  <%#= current_or_guest_user.inspect %>
   <% if current_or_guest_user %>
     <%= link_to t('blacklight.header_links.bookmarks'), bookmarks_path %>
   <% end %>

@@ -11,7 +11,8 @@ gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-gem 'mysql'
+#gem 'mysql'
+gem 'rake', '< 11.0'
 gem 'sprockets-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.1'
@@ -52,9 +53,13 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
-  gem 'capistrano'
-  gem 'capistrano-ext'
-  gem 'rvm-capistrano'
+#  gem 'capistrano'
+#  gem 'capistrano-ext'
+#  gem 'rvm-capistrano'
+gem 'net-ssh-gateway'
+gem 'net-sftp'
+gem 'net-scp'
+gem 'net-ssh'
 
 
 # Use debugger
@@ -73,6 +78,6 @@ group :development, :test do
 end
 
 gem "devise"
-gem "devise-guests", "~> 0.3"
+gem "devise-guests"#, "~> 0.3"
 group :development, :test do
 end
